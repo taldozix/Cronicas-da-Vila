@@ -19,9 +19,11 @@ import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.gossip.GossipType;
+import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 /**
@@ -38,6 +40,37 @@ public final class VanillaCompat {
 		return villager.getVillagerData().profession().unwrapKey()
 				.map(key -> key.identifier().getPath())
 				.orElse("none");
+	}
+
+	/** Tipo/bioma do aldeão (plains, desert, savanna, snow, taiga, jungle, swamp). */
+	public static String villagerType(Villager villager) {
+		return villager.getVillagerData().type().unwrapKey()
+				.map(key -> key.identifier().getPath())
+				.orElse("plains");
+	}
+
+	/** Faz o aldeão entrar em pânico e fugir, como foge de um zumbi. */
+	public static void villagerFlee(Villager villager, LivingEntity threat) {
+		villager.getBrain().setMemory(MemoryModuleType.NEAREST_HOSTILE, threat);
+	}
+
+	/** A criatura foi atacada por esse jogador nos últimos 5 segundos? */
+	public static boolean recentlyHurtBy(LivingEntity mob, LivingEntity attacker) {
+		return mob.getLastHurtByMob() == attacker && mob.tickCount - mob.getLastHurtByMobTimestamp() < 100;
+	}
+
+	public static boolean inOverworld(ServerPlayer player) {
+		return player.level().dimension() == Level.OVERWORLD;
+	}
+
+	public static boolean inNether(ServerPlayer player) {
+		return player.level().dimension() == Level.NETHER;
+	}
+
+	public static void setOnFire(ServerPlayer player, int ticks) {
+		if (player.getRemainingFireTicks() < ticks) {
+			player.setRemainingFireTicks(ticks);
+		}
 	}
 
 	/** Abre a tela de trocas vanilla (com os descontos de reputação aplicados pelo jogo). */

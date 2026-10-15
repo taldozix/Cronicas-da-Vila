@@ -26,6 +26,9 @@ public final class QuestRegistry {
 	private static final Map<String, Quest> BY_ID = new LinkedHashMap<>();
 	private static final Map<String, List<Quest>> BY_PROFESSION = new HashMap<>();
 	private static final Map<String, NpcDialogue> DIALOGUES = new HashMap<>();
+	private static final Map<String, NpcDialogue> BIOMES = new HashMap<>();
+	/** Tipos de vila do jogo, cada um com falas próprias. */
+	public static final List<String> VILLAGE_BIOMES = List.of("plains", "desert", "savanna", "snow", "taiga", "jungle", "swamp");
 	private static NpcDialogue common = new NpcDialogue();
 
 	private QuestRegistry() {
@@ -72,6 +75,16 @@ public final class QuestRegistry {
 			DIALOGUES.put(key, dialogue);
 		}
 
+		BIOMES.clear();
+
+		for (String biome : VILLAGE_BIOMES) {
+			NpcDialogue dialogue = readJson("/cronicasdavila/npcs/biomes/" + biome + ".json", NpcDialogue.class);
+
+			if (dialogue != null) {
+				BIOMES.put(biome, dialogue);
+			}
+		}
+
 		CronicasDaVila.LOGGER.info("Crônicas da Vila: {} missões carregadas para {} tipos de NPC.", BY_ID.size(), BY_PROFESSION.size());
 	}
 
@@ -111,6 +124,13 @@ public final class QuestRegistry {
 		}
 
 		return result;
+	}
+
+	/** Falas da profissão misturadas com as do bioma da vila (se houver). */
+	public static NpcDialogue dialogue(String key, String biome) {
+		NpcDialogue base = dialogue(key);
+		NpcDialogue biomeLines = biome == null ? null : BIOMES.get(biome);
+		return biomeLines == null ? base : base.mergedWith(biomeLines);
 	}
 
 	public static NpcDialogue dialogue(String key) {

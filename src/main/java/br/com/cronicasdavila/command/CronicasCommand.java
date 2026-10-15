@@ -24,6 +24,7 @@ import br.com.cronicasdavila.quest.QuestRegistry;
 import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.rank.Professions;
 import br.com.cronicasdavila.rank.Rank;
+import br.com.cronicasdavila.rank.VillainRank;
 import br.com.cronicasdavila.util.Text;
 
 /**
@@ -55,6 +56,14 @@ public final class CronicasCommand {
 							player.sendSystemMessage(Text.parse("<g>Nível por missões definido para " + data.questRank().displayName() + ".</g>"));
 							return 1;
 						})))
+						.then(literal("vilania").then(argument("nivel", IntegerArgumentType.integer(1, 5)).executes(ctx -> {
+							ServerPlayer player = ctx.getSource().getPlayerOrException();
+							PlayerData data = PlayerDataManager.get(player);
+							data.villainRank = IntegerArgumentType.getInteger(ctx, "nivel");
+							PlayerDataManager.save(player);
+							player.sendSystemMessage(Text.parse("<r>Vilania definida para " + VillainRank.ofTier(data.villainRank).displayName() + ".</r>"));
+							return 1;
+						})))
 						.then(literal("afinidade")
 								.then(argument("profissao", StringArgumentType.word())
 										.then(argument("nivel", IntegerArgumentType.integer(1, 5)).executes(ctx -> {
@@ -63,7 +72,7 @@ public final class CronicasCommand {
 
 											if (!Professions.givesQuests(profession)) {
 												player.sendSystemMessage(Text.parse("<r>Profissão desconhecida. Use: farmer, fisherman, shepherd, butcher, "
-														+ "leatherworker, fletcher, mason, toolsmith, weaponsmith, armorer, cartographer, librarian, cleric, piglin.</r>"));
+														+ "leatherworker, fletcher, mason, toolsmith, weaponsmith, armorer, cartographer, librarian, cleric, piglin, pillager, shulker.</r>"));
 												return 0;
 											}
 
@@ -110,6 +119,8 @@ public final class CronicasCommand {
 		player.sendSystemMessage(Text.parse("Nível: <o>" + rank.displayName() + "</o> <d>(por missões: " + data.questRank().displayName()
 				+ ", por XP: " + Rank.fromXpLevel(player.experienceLevel).displayName() + ")</d>"));
 		player.sendSystemMessage(Text.parse("Karma: <y>" + data.karma + "</y> — " + KarmaSystem.tier(data).displayName()));
+		player.sendSystemMessage(Text.parse("Vilania: <r>" + VillainRank.ofTier(data.villainRank).displayName() + "</r>"
+				+ (QuestService.isVillain(data) ? " <p>☠ Vilão da História</p>" : "")));
 		player.sendSystemMessage(Text.parse("Missões ativas: <y>" + data.active.size() + "</y> · concluídas: <y>" + data.totalCompleted
 				+ "</y> · profissões dominadas: <y>" + QuestService.masteredCount(data) + "/13</y>"));
 		player.sendSystemMessage(Text.parse("<d>Abra o Diário de Missões com a tecla J.</d>"));

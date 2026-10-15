@@ -19,6 +19,8 @@ public class DialogueSession {
 	public final String profession;
 	public final String npcName;
 	public final boolean piglin;
+	/** Tipo de NPC: "villager", "piglin", "pillager" ou "shulker". */
+	public final String kind;
 	public final NpcDialogue lines;
 	public final boolean previousNoAi;
 
@@ -28,12 +30,13 @@ public class DialogueSession {
 	public int loreIndex;
 	public int ticks;
 
-	public DialogueSession(ServerPlayer player, Mob npc, String profession, String npcName, boolean piglin, NpcDialogue lines) {
+	public DialogueSession(ServerPlayer player, Mob npc, String profession, String npcName, String kind, NpcDialogue lines) {
 		this.player = player;
 		this.npc = npc;
 		this.profession = profession;
 		this.npcName = npcName;
-		this.piglin = piglin;
+		this.kind = kind;
+		this.piglin = "piglin".equals(kind);
 		this.lines = lines;
 		this.previousNoAi = npc.isNoAi();
 		this.loreIndex = player.getRandom().nextInt(Math.max(1, lines.lore.size()));

@@ -37,8 +37,26 @@ public class Quest {
 	/** Pontos de experiência vanilla dados ao concluir (padrão: 15 por nível). */
 	public Integer xp;
 
+	/**
+	 * Karma da missão. Padrão: aldeões +10 por nível; saqueadores -20 por nível (missões de vilania);
+	 * piglins e shulkers 0 (neutros para a vila).
+	 */
 	public int karmaReward() {
-		return karma != null ? karma : tier * 10;
+		if (karma != null) {
+			return karma;
+		}
+
+		return switch (profession == null ? "" : profession) {
+			case br.com.cronicasdavila.rank.Professions.PILLAGER -> -tier * 20;
+			case br.com.cronicasdavila.rank.Professions.PIGLIN, br.com.cronicasdavila.rank.Professions.SHULKER -> 0;
+			default -> tier * 10;
+		};
+	}
+
+	/** Karma numa repetição (metade, mantendo o sinal). */
+	public int karmaReward(boolean repeat) {
+		int value = karmaReward();
+		return repeat ? value / 2 : value;
 	}
 
 	public int xpReward() {

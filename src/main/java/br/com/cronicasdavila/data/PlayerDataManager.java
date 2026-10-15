@@ -66,6 +66,14 @@ public final class PlayerDataManager {
 				data.tierCompletions = fixed;
 			}
 
+			if (data.villainTierCompletions == null || data.villainTierCompletions.length < 6) {
+				data.villainTierCompletions = new int[6];
+			}
+
+			if (data.villainRank < 1) {
+				data.villainRank = 1;
+			}
+
 			return data;
 		});
 	}

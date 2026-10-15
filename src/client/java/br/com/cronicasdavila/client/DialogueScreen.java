@@ -41,6 +41,7 @@ public class DialogueScreen extends Screen {
 	private String subtitle = "";
 	private String tone = "neutral";
 	private boolean nether;
+	private String kind = "villager";
 	private final List<String> pages = new ArrayList<>();
 	private final List<ChoiceView> choices = new ArrayList<>();
 
@@ -78,6 +79,7 @@ public class DialogueScreen extends Screen {
 		this.subtitle = node.has("subtitle") ? node.get("subtitle").getAsString() : "";
 		this.tone = node.has("tone") ? node.get("tone").getAsString() : "neutral";
 		this.nether = node.has("nether") && node.get("nether").getAsBoolean();
+		this.kind = node.has("kind") ? node.get("kind").getAsString() : (nether ? "piglin" : "villager");
 
 		this.pages.clear();
 
@@ -360,7 +362,12 @@ public class DialogueScreen extends Screen {
 		graphics.fill(boxX + 14, boxY + slide + 1, boxX + boxW - 14, boxY + slide + 2, Ui.argb((int) (170 * fade), accentColor()));
 
 		// Nome de quem fala
-		int nameColor = nether ? 0xFF8A3D : 0xFFD36B;
+		int nameColor = switch (kind) {
+			case "piglin" -> 0xFF8A3D;
+			case "pillager" -> 0xE05A5A;
+			case "shulker" -> 0xD08CFF;
+			default -> 0xFFD36B;
+		};
 		graphics.text(this.font, Component.literal(speaker).withStyle(style -> style.withBold(true)), boxX + 16, boxY + slide + 8,
 				Ui.argb((int) (255 * fade), nameColor), true);
 		int nameWidth = this.font.width(Component.literal(speaker).withStyle(style -> style.withBold(true)));
@@ -411,6 +418,8 @@ public class DialogueScreen extends Screen {
 			case "danger" -> 0xFF4444;
 			case "calm" -> 0x66FF88;
 			case "nether" -> 0xFF7733;
+			case "villain" -> 0xB01E2E;
+			case "end" -> 0xC77DFF;
 			default -> 0xFFFFFF;
 		};
 	}

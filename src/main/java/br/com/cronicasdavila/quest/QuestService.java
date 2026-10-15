@@ -26,6 +26,7 @@ import br.com.cronicasdavila.data.PlayerData;
 import br.com.cronicasdavila.data.PlayerDataManager;
 import br.com.cronicasdavila.rank.Professions;
 import br.com.cronicasdavila.rank.Rank;
+import br.com.cronicasdavila.rank.VillainRank;
 import br.com.cronicasdavila.util.Text;
 
 /**
@@ -49,10 +50,22 @@ public final class QuestService {
 		return byXp.tier() > byQuests.tier() ? byXp : byQuests;
 	}
 
+	/**
+	 * O "teto" de nível para as missões de cada lado:
+	 * aldeões usam o nível do herói; saqueadores e piglins usam a Vilania; shulkers aceitam o maior dos dois.
+	 */
+	public static int factionRank(ServerPlayer player, PlayerData data, String profession) {
+		return switch (Professions.faction(profession)) {
+			case GOOD -> effectiveRank(player, data).tier();
+			case VILLAIN -> data.villainRank;
+			case NEUTRAL -> Math.max(effectiveRank(player, data).tier(), data.villainRank);
+		};
+	}
+
 	/** Nível das missões que essa profissão vai oferecer agora. */
 	public static int offeredTier(ServerPlayer player, PlayerData data, String profession) {
 		int professionLevel = data.profession(profession).level;
-		return Math.min(professionLevel, effectiveRank(player, data).tier());
+		return Math.min(professionLevel, factionRank(player, data, profession));
 	}
 
 	/** Escolhe a próxima missão: primeiro as inéditas, depois repetições. */
@@ -86,7 +99,7 @@ public final class QuestService {
 
 	/** O jogador está "travado" pelo nível geral (a profissão já liberou mais, mas ele ainda não tem nível)? */
 	public static boolean blockedByRank(ServerPlayer player, PlayerData data, String profession) {
-		return data.profession(profession).level > effectiveRank(player, data).tier();
+		return data.profession(profession).level > factionRank(player, data, profession);
 	}
 
 	// ---------------------------------------------------------------------------------------------
@@ -398,7 +411,7 @@ public final class QuestService {
 			rewardText.append("</o>");
 		}
 
-		int karma = repeat ? Math.max(1, quest.karmaReward() / 2) : quest.karmaReward();
+		int karma = quest.karmaReward(repeat);
 		int xp = repeat ? quest.xpReward() / 2 : quest.xpReward();
 		data.addKarma(karma);
 
@@ -406,22 +419,42 @@ public final class QuestService {
 			player.giveExperiencePoints(xp);
 		}
 
-		lines.add("<g>Recompensa recebida:</g> " + rewardText + ". <a>+" + karma + " de karma</a>.");
+		lines.add("<g>Recompensa recebida:</g> " + rewardText + "." + karmaText(karma));
 
 		// Progresso geral
 		data.totalCompleted++;
 		boolean firstTime = data.completed.add(quest.id);
 
+		Professions.Faction faction = Professions.faction(profession);
+
+		if (faction == Professions.Faction.VILLAIN) {
+			data.villainQuests++;
+		}
+
 		if (!repeat || firstTime) {
-			Rank questRank = data.questRank();
+			if (faction == Professions.Faction.GOOD) {
+				Rank questRank = data.questRank();
 
-			if (quest.tier == questRank.tier() && questRank != Rank.MESTRE) {
-				data.tierCompletions[quest.tier]++;
+				if (quest.tier == questRank.tier() && questRank != Rank.MESTRE) {
+					data.tierCompletions[quest.tier]++;
 
-				if (data.tierCompletions[quest.tier] >= questRank.questsToPromote()) {
-					data.questRank = questRank.next().tier();
-					lines.add("<o>★ Você subiu de nível pelas missões! Agora você é " + questRank.next().displayName()
-							+ ".</o> Esse nível é seu para sempre, mesmo se perder XP.");
+					if (data.tierCompletions[quest.tier] >= questRank.questsToPromote()) {
+						data.questRank = questRank.next().tier();
+						lines.add("<o>★ Você subiu de nível pelas missões! Agora você é " + questRank.next().displayName()
+								+ ".</o> Esse nível é seu para sempre, mesmo se perder XP.");
+					}
+				}
+			} else if (faction == Professions.Faction.VILLAIN) {
+				VillainRank villainRank = VillainRank.ofTier(data.villainRank);
+
+				if (quest.tier == villainRank.tier() && villainRank != VillainRank.ARQUIVILAO) {
+					data.villainTierCompletions[quest.tier]++;
+
+					if (data.villainTierCompletions[quest.tier] >= villainRank.questsToPromote()) {
+						data.villainRank = villainRank.next().tier();
+						lines.add("<r>☠ Sua Vilania cresceu! Agora você é <b>" + villainRank.next().displayName()
+								+ "</b>.</r> <d>Os inimigos das vilas confiam missões piores a você.</d>");
+					}
 				}
 			}
 
@@ -431,7 +464,9 @@ public final class QuestService {
 
 			if (quest.tier == 5 && !prof.mastered) {
 				prof.mastered = true;
-				lines.add("<o>★ Você é MESTRE entre os " + plural(profession) + "!</o>");
+				lines.add(faction == Professions.Faction.VILLAIN
+						? "<r>☠ Os " + plural(profession) + " te reconhecem como <b>Arquivilão</b>!</r>"
+						: "<o>★ Você é MESTRE entre os " + plural(profession) + "!</o>");
 			} else if (quest.tier == prof.level && prof.level < 5) {
 				prof.doneAtLevel++;
 
@@ -439,7 +474,7 @@ public final class QuestService {
 					prof.level++;
 					prof.doneAtLevel = 0;
 					lines.add("<g>▲ Sua afinidade com os " + plural(profession) + " subiu para <o>"
-							+ Rank.ofTier(prof.level).displayName() + "</o>!</g> Missões mais difíceis (e melhores) foram liberadas.");
+							+ Professions.levelName(profession, prof.level) + "</o>!</g> Missões mais difíceis (e melhores) foram liberadas.");
 				}
 			}
 		}
@@ -508,12 +543,60 @@ public final class QuestService {
 			case "librarian" -> "bibliotecários";
 			case "cleric" -> "clérigos";
 			case "piglin" -> "piglins";
+			case "pillager" -> "saqueadores";
+			case "shulker" -> "shulkers";
 			default -> "aldeões";
 		};
 	}
 
-	/** Todas as profissões de aldeão dominadas? (efeito Herói da Vila) */
+	public static String karmaText(int karma) {
+		if (karma > 0) {
+			return " <a>+" + karma + " de karma</a>.";
+		}
+
+		return karma < 0 ? " <r>" + karma + " de karma</r>." : "";
+	}
+
+	/**
+	 * Vilão da História: Arquivilão, dominou todos os inimigos que dão missões (saqueadores e piglins)
+	 * e tem karma negativo.
+	 */
+	public static boolean isVillain(PlayerData data) {
+		if (data.villainRank < VillainRank.ARQUIVILAO.tier() || data.karma >= 0) {
+			return false;
+		}
+
+		for (String faction : Professions.VILLAIN_FACTIONS) {
+			PlayerData.ProfessionProgress progress = data.professions.get(faction);
+
+			if (progress == null || !progress.mastered) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	public static int villainMasteredCount(PlayerData data) {
+		int count = 0;
+
+		for (String faction : Professions.VILLAIN_FACTIONS) {
+			PlayerData.ProfessionProgress progress = data.professions.get(faction);
+
+			if (progress != null && progress.mastered) {
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	/** Todas as profissões de aldeão dominadas e karma não negativo? (efeito Herói da Vila) */
 	public static boolean isVillageHero(PlayerData data) {
+		if (data.karma < 0) {
+			return false;
+		}
+
 		for (String profession : Professions.VILLAGER_PROFESSIONS) {
 			PlayerData.ProfessionProgress progress = data.professions.get(profession);
 

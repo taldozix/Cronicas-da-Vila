@@ -25,7 +25,8 @@ import br.com.cronicasdavila.util.Text;
  */
 public class QuestJournalScreen extends Screen {
 	private static final int GOLD = 0xFFD36B;
-	private static final String[] TABS = {"Missões", "Reputação"};
+	private static final String[] TABS = {"Missões", "Reputação", "Vilania"};
+	private static final int VILLAIN_RED = 0xE05A5A;
 
 	private final Screen parent;
 	private int tab;
@@ -78,7 +79,7 @@ public class QuestJournalScreen extends Screen {
 	}
 
 	private int tabX(int index) {
-		return this.width / 2 - 110 + index * 112;
+		return this.width / 2 - 164 + index * 112;
 	}
 
 	// ---------------------------------------------------------------------------------------------
@@ -90,8 +91,13 @@ public class QuestJournalScreen extends Screen {
 		int key = event.key();
 		List<JsonObject> quests = ClientState.quests();
 
-		if (key == InputConstants.KEY_LEFT || key == InputConstants.KEY_RIGHT || key == InputConstants.KEY_TAB) {
-			tab = 1 - tab;
+		if (key == InputConstants.KEY_RIGHT || key == InputConstants.KEY_TAB) {
+			tab = (tab + 1) % TABS.length;
+			return true;
+		}
+
+		if (key == InputConstants.KEY_LEFT) {
+			tab = (tab + TABS.length - 1) % TABS.length;
 			return true;
 		}
 
@@ -241,8 +247,10 @@ public class QuestJournalScreen extends Screen {
 			drawProfile(graphics, panelX1() + 10, panelY1() + 8, leftWidth() - 20);
 			drawQuestList(graphics, mouseX, mouseY);
 			drawQuestDetails(graphics);
-		} else {
+		} else if (tab == 1) {
 			drawReputation(graphics);
+		} else {
+			drawVillainy(graphics);
 		}
 
 		String hint = tab == 0 ? "↑↓ escolher missão   T/Enter rastrear no HUD   ←→ trocar aba   Esc fechar" : "←→ trocar aba   Esc fechar";
@@ -397,7 +405,11 @@ public class QuestJournalScreen extends Screen {
 			addWrapped(lines, text, width, 0xFFFFFF);
 		}
 
-		addWrapped(lines, "  • <a>+" + ClientState.num(quest, "karmaReward", 0) + " de karma</a>", width, 0xFFFFFF);
+		int karmaReward = ClientState.num(quest, "karmaReward", 0);
+
+		if (karmaReward != 0) {
+			addWrapped(lines, karmaReward > 0 ? "  • <a>+" + karmaReward + " de karma</a>" : "  • <r>" + karmaReward + " de karma</r>", width, 0xFFFFFF);
+		}
 		lines.add(Line.SPACER);
 		lines.add(new Line(Component.literal("A história:").withStyle(style -> style.withBold(true)), GOLD));
 
@@ -524,7 +536,19 @@ public class QuestJournalScreen extends Screen {
 		graphics.text(this.font, "AFINIDADE COM CADA PROFISSÃO", x1, y, Ui.argb(255, GOLD), true);
 		y += 14;
 
-		List<JsonObject> professions = ClientState.professions();
+		List<JsonObject> professions = new ArrayList<>();
+
+		for (JsonObject profession : ClientState.professions()) {
+			if (!"VILLAIN".equals(ClientState.str(profession, "faction", "GOOD"))) {
+				professions.add(profession);
+			}
+		}
+
+		drawAffinityGrid(graphics, professions, x1, x2, y, false);
+	}
+
+	/** Grade com a afinidade de cada profissão/facção. */
+	private void drawAffinityGrid(GuiGraphicsExtractor graphics, List<JsonObject> professions, int x1, int x2, int y, boolean villainSide) {
 		int columns = 2;
 		int columnWidth = (x2 - x1 - 10) / columns;
 
@@ -539,23 +563,24 @@ public class QuestJournalScreen extends Screen {
 
 			boolean isMastered = profession.get("mastered").getAsBoolean();
 			int level = profession.get("level").getAsInt();
-			boolean nether = profession.get("key").getAsString().equals("piglin");
-			Ui.roundedRect(graphics, cx, cy, cx + columnWidth, cy + 20, Ui.argb(140, nether ? 0x2A1208 : 0x16161C));
+			boolean nether = profession.get("key").getAsString().equals("shulker");
+			int accent = villainSide ? VILLAIN_RED : GOLD;
+			Ui.roundedRect(graphics, cx, cy, cx + columnWidth, cy + 20, Ui.argb(140, villainSide ? 0x2A0A0E : (nether ? 0x1E0E2A : 0x16161C)));
 
 			if (isMastered) {
-				Ui.roundedOutline(graphics, cx, cy, cx + columnWidth, cy + 20, Ui.argb(255, GOLD));
+				Ui.roundedOutline(graphics, cx, cy, cx + columnWidth, cy + 20, Ui.argb(255, accent));
 			}
 
 			String name = profession.get("name").getAsString();
-			graphics.text(this.font, name, cx + 5, cy + 3, Ui.argb(255, nether ? 0xFF8A3D : 0xFFFFFF), true);
-			String levelText = isMastered ? "Mestre ★" : profession.get("levelName").getAsString();
+			graphics.text(this.font, name, cx + 5, cy + 3, Ui.argb(255, villainSide ? 0xFF9A7A : (nether ? 0xD08CFF : 0xFFFFFF)), true);
+			String levelText = isMastered ? (villainSide ? "Arquivilão ☠" : "Mestre ★") : profession.get("levelName").getAsString();
 			graphics.text(this.font, levelText, cx + columnWidth - 5 - this.font.width(levelText), cy + 3,
-					Ui.argb(255, isMastered ? GOLD : 0xBBBBBB), false);
+					Ui.argb(255, isMastered ? accent : 0xBBBBBB), false);
 
 			// 5 pips de nível
 			for (int pip = 0; pip < 5; pip++) {
 				int px = cx + 5 + pip * 9;
-				int color = pip < level ? (isMastered ? GOLD : 0x55FF55) : 0x333333;
+				int color = pip < level ? (isMastered ? accent : (villainSide ? 0xC03030 : 0x55FF55)) : 0x333333;
 				graphics.fill(px, cy + 13, px + 7, cy + 16, Ui.argb(255, color));
 			}
 
@@ -563,6 +588,82 @@ public class QuestJournalScreen extends Screen {
 				String progress = profession.get("done").getAsInt() + "/" + profession.get("need").getAsInt() + " p/ subir";
 				graphics.text(this.font, progress, cx + columnWidth - 5 - this.font.width(progress), cy + 11, Ui.argb(200, 0x888888), false);
 			}
+		}
+	}
+
+	private void drawVillainy(GuiGraphicsExtractor graphics) {
+		int x1 = panelX1() + 12;
+		int x2 = panelX2() - 12;
+		int y = panelY1() + 10;
+		int width = x2 - x1;
+		boolean villain = ClientState.getBool("villain");
+		int villainRank = ClientState.getInt("villainRank", 1);
+		int villainColor = ClientState.getInt("villainColor", VILLAIN_RED);
+		String name = ClientState.getString("villainName", "Arruaceiro");
+
+		if (ClientState.getInt("villainQuests", 0) == 0) {
+			name = "Inocente";
+		}
+
+		graphics.text(this.font, Component.literal("☠ VILANIA: " + name.toUpperCase()).withStyle(style -> style.withBold(true)), x1, y,
+				Ui.argb(255, villainColor), true);
+		String level = "Nível " + villainRank + "/5";
+		graphics.text(this.font, level, x2 - this.font.width(level), y, Ui.argb(255, 0xAAAAAA), false);
+		y += 13;
+
+		if (villainRank < 5) {
+			int done = ClientState.getInt("villainTierDone", 0);
+			int need = Math.max(1, ClientState.getInt("villainTierNeeded", 4));
+			graphics.text(this.font, "Serviços sujos: " + done + " / " + need + " → " + ClientState.getString("villainNextName", "Bandido")
+					+ "  (a XP não conta; a Vilania nunca cai)", x1, y, Ui.argb(255, 0xDDDDDD), false);
+			Ui.bar(graphics, x1, y + 11, width, 4, done / (float) need, Ui.argb(255, VILLAIN_RED));
+		} else {
+			graphics.text(this.font, "Você é o terror das vilas. Ninguém está acima de você.", x1, y, Ui.argb(255, VILLAIN_RED), false);
+		}
+
+		y += 22;
+		int mastered = ClientState.getInt("villainMastered", 0);
+		int factions = ClientState.getInt("villainFactions", 2);
+		String status = villain ? "☠ VILÃO DA HISTÓRIA ☠ — todo ser vivo foge de você"
+				: "Vilão da História: Arquivilão + dominar " + mastered + "/" + factions + " inimigos (missão máxima de cada) + karma negativo";
+
+		for (FormattedCharSequence line : this.font.split(Component.literal(status), width)) {
+			graphics.text(this.font, line, x1, y, Ui.argb(255, villain ? 0xD08CFF : 0xDDDDDD), true);
+			y += 10;
+		}
+
+		if (villain) {
+			long ticks = ClientState.getInt("overworldTicks", 0);
+			graphics.text(this.font, "Tempo no mundo normal: " + (ticks / 1200) + " / 20 min  (depois disso você queima; o Nether zera)", x1, y + 2,
+					Ui.argb(255, ticks >= 24000 ? 0xFF5555 : 0xDDDDDD), false);
+			Ui.bar(graphics, x1, y + 13, width, 4, ticks / 24000F, Ui.argb(255, 0xFF7733));
+			y += 20;
+		}
+
+		y += 8;
+		graphics.text(this.font, "AFINIDADE COM OS INIMIGOS DAS VILAS", x1, y, Ui.argb(255, VILLAIN_RED), true);
+		y += 14;
+		List<JsonObject> villains = new ArrayList<>();
+
+		for (JsonObject profession : ClientState.professions()) {
+			if ("VILLAIN".equals(ClientState.str(profession, "faction", "GOOD"))) {
+				villains.add(profession);
+			}
+		}
+
+		drawAffinityGrid(graphics, villains, x1, x2, y, true);
+		y += ((villains.size() + 1) / 2) * 22 + 8;
+
+		String info = "Converse com <r>saqueadores</r> segurando uma <p>garrafa ominosa</p> (ou com karma negativo) e com <n>piglins</n> usando ouro. "
+				+ "Missões de saqueadores dão <r>karma negativo</r>.";
+
+		for (FormattedCharSequence line : this.font.split(Text.parse(info), width)) {
+			if (y + 10 > panelY2() - 4) {
+				break;
+			}
+
+			graphics.text(this.font, line, x1, y, Ui.argb(255, 0xBBBBBB), false);
+			y += 10;
 		}
 	}
 }

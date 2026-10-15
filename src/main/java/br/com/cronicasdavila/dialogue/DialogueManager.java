@@ -35,6 +35,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import br.com.cronicasdavila.compat.VanillaCompat;
 import br.com.cronicasdavila.data.PlayerData;
 import br.com.cronicasdavila.data.PlayerDataManager;
+import br.com.cronicasdavila.karma.FactionSystem;
 import br.com.cronicasdavila.karma.KarmaSystem;
 import br.com.cronicasdavila.karma.KarmaTier;
 import br.com.cronicasdavila.net.ModPayloads;
@@ -45,6 +46,7 @@ import br.com.cronicasdavila.quest.QuestReward;
 import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.rank.Professions;
 import br.com.cronicasdavila.rank.Rank;
+import br.com.cronicasdavila.rank.VillainRank;
 
 /**
  * Controla as conversas: quem fala, o que fala e o que acontece em cada escolha.
@@ -92,7 +94,7 @@ public final class DialogueManager {
 			return !held.equals("minecraft:gold_ingot");
 		}
 
-		return false;
+		return type.equals("minecraft:pillager") || type.equals("minecraft:shulker");
 	}
 
 	public static InteractionResult onInteract(ServerPlayer player, Entity entity) {
@@ -111,18 +113,35 @@ public final class DialogueManager {
 			}
 		}
 
-		boolean piglin = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath().equals("piglin");
+		String kind = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath();
+		PlayerData playerData = PlayerDataManager.get(player);
+		String biome = null;
 
-		if (piglin && npc.getTarget() == player) {
+		if (kind.equals("piglin") && npc.getTarget() == player) {
 			// Piglin furioso não conversa: deixa o combate acontecer.
+			return InteractionResult.PASS;
+		}
+
+		// Saqueadores e shulkers no meio do ataque só conversam com quem eles reconhecem como aliado.
+		if (kind.equals("pillager") && npc.getTarget() == player && !FactionSystem.isPillagerAlly(player, playerData)) {
+			return InteractionResult.PASS;
+		}
+
+		if (kind.equals("shulker") && npc.getTarget() == player && !FactionSystem.isShulkerAlly(player, playerData)) {
 			return InteractionResult.PASS;
 		}
 
 		String profession;
 
-		if (piglin) {
+		if (kind.equals("piglin")) {
 			profession = Professions.PIGLIN;
+		} else if (kind.equals("pillager")) {
+			profession = Professions.PILLAGER;
+		} else if (kind.equals("shulker")) {
+			profession = Professions.SHULKER;
 		} else if (npc.isBaby()) {
+			kind = "villager";
+			biome = npc instanceof Villager villager ? VanillaCompat.villagerType(villager) : null;
 			profession = Professions.CHILD;
 		} else if (npc instanceof Villager villager) {
 			if (villager.isTrading()) {
@@ -130,12 +149,14 @@ public final class DialogueManager {
 			}
 
 			profession = VanillaCompat.professionKey(villager);
+			biome = VanillaCompat.villagerType(villager);
+			kind = "villager";
 		} else {
 			return InteractionResult.PASS;
 		}
 
-		NpcDialogue lines = QuestRegistry.dialogue(profession);
-		DialogueSession session = new DialogueSession(player, npc, profession, npcName(npc, lines), piglin, lines);
+		NpcDialogue lines = QuestRegistry.dialogue(profession, biome);
+		DialogueSession session = new DialogueSession(player, npc, profession, npcName(npc, lines), kind, lines);
 		SESSIONS.put(player.getUUID(), session);
 		freeze(session);
 		onConversationStart(session);
@@ -328,6 +349,7 @@ public final class DialogueManager {
 		json.addProperty("subtitle", subtitle(session));
 		json.addProperty("tone", tone);
 		json.addProperty("nether", session.piglin);
+		json.addProperty("kind", session.kind);
 
 		JsonArray pageArray = new JsonArray();
 
@@ -360,13 +382,21 @@ public final class DialogueManager {
 
 		PlayerData data = PlayerDataManager.get(session.player);
 		PlayerData.ProfessionProgress progress = data.profession(session.profession);
-		String affinity = progress.mastered ? "Mestre ★" : Rank.ofTier(progress.level).displayName();
+		String affinity = progress.mastered
+				? (Professions.faction(session.profession) == Professions.Faction.VILLAIN ? "Arquivilão ☠" : "Mestre ★")
+				: Professions.levelName(session.profession, progress.level);
 		return profession + "  ·  Sua afinidade: " + affinity;
 	}
 
 	private static void speak(DialogueSession session, SoundEvent villagerSound, SoundEvent piglinSound) {
 		ServerLevel level = (ServerLevel) session.npc.level();
-		SoundEvent sound = session.piglin ? piglinSound : villagerSound;
+		boolean happy = villagerSound == SoundEvents.VILLAGER_YES || villagerSound == SoundEvents.VILLAGER_CELEBRATE;
+		SoundEvent sound = switch (session.kind) {
+			case "piglin" -> piglinSound;
+			case "pillager" -> happy ? SoundEvents.PILLAGER_CELEBRATE : SoundEvents.PILLAGER_AMBIENT;
+			case "shulker" -> happy ? SoundEvents.SHULKER_AMBIENT : SoundEvents.SHULKER_OPEN;
+			default -> villagerSound;
+		};
 		level.playSound(null, session.npc.getX(), session.npc.getY(), session.npc.getZ(), sound, SoundSource.NEUTRAL, 1.0F,
 				session.npc.isBaby() ? 1.5F : 1.0F);
 	}
@@ -386,7 +416,12 @@ public final class DialogueManager {
 	}
 
 	private static String toneFor(DialogueSession session) {
-		return session.piglin ? "nether" : "neutral";
+		return switch (session.kind) {
+			case "piglin" -> "nether";
+			case "pillager" -> "villain";
+			case "shulker" -> "end";
+			default -> "neutral";
+		};
 	}
 
 	private static void openingNode(DialogueSession session) {
@@ -406,6 +441,23 @@ public final class DialogueManager {
 			return;
 		}
 
+		if (session.kind.equals("pillager")) {
+			pillagerOpening(session, data, karma);
+			return;
+		}
+
+		if (session.kind.equals("shulker")) {
+			shulkerOpening(session, data);
+			return;
+		}
+
+		if (session.kind.equals("villager") && QuestService.isVillain(data)) {
+			speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
+			show(session, List.of(pick(session, lines.extra("villain_seen"), "<r>É O VILÃO DA HISTÓRIA!</r> Socorro! Alguém chama o golem!")),
+					List.of(new Choice("bye", "<r>Muahaha...</r>", "danger", () -> close(session.player, true))), "danger");
+			return;
+		}
+
 		if (karma.atMost(KarmaTier.ODIADO)) {
 			hostileNode(session);
 			return;
@@ -422,6 +474,54 @@ public final class DialogueManager {
 		}
 
 		mainMenu(session, pick(session, greetings, "Olá, {player}."));
+	}
+
+	/** Saqueadores: odeiam heróis, gostam de quem já fez mal às vilas. */
+	private static void pillagerOpening(DialogueSession session, PlayerData data, KarmaTier karma) {
+		NpcDialogue lines = session.lines;
+		boolean ally = FactionSystem.isPillagerAlly(session.player, data);
+
+		if (!ally && data.karma > -100) {
+			if (karma.atLeast(KarmaTier.HONRADO)) {
+				speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
+				show(session, List.of(pick(session, lines.hostile, "<r>O queridinho dos narigudos?</r> Some antes que eu esqueça que estou de folga.")),
+						List.of(new Choice("bye", "Tô indo...", "neutral", () -> close(session.player, true))), "villain");
+				return;
+			}
+
+			show(session, List.of(pick(session, lines.extra("untrusted"),
+					"Hmpf. Não confio em você. Mostre uma <p>garrafa ominosa</p> na mão ou prove que já fez mal às vilas.")),
+					List.of(new Choice("bye", "Entendido.", "neutral", () -> close(session.player, true))), "villain");
+			return;
+		}
+
+		List<String> greetings;
+
+		if (data.karma <= -100 || QuestService.isVillain(data)) {
+			greetings = lines.greet_friendly;
+		} else if (data.karma >= 100) {
+			greetings = lines.greet_cold;
+		} else {
+			greetings = lines.greet_neutral;
+		}
+
+		mainMenu(session, pick(session, greetings, "Hmpf. Fala logo."));
+	}
+
+	/** Shulkers: só conversam com quem traz fruta do coro (ou já trabalhou para eles). */
+	private static void shulkerOpening(DialogueSession session, PlayerData data) {
+		NpcDialogue lines = session.lines;
+
+		if (!FactionSystem.isShulkerAlly(session.player, data)) {
+			show(session, List.of(pick(session, lines.extra("no_chorus"),
+					"<p>*clac*</p> ...Visitante sem <p>fruta do coro</p>. Volte com uma na mão. Ou volte flutuando, a escolha é sua.")),
+					List.of(new Choice("bye", "Já volto com a fruta.", "neutral", () -> close(session.player, true))), "end");
+			return;
+		}
+
+		PlayerData.ProfessionProgress progress = data.professions.get(Professions.SHULKER);
+		boolean known = progress != null && progress.totalDone > 0;
+		mainMenu(session, pick(session, known ? lines.greet_friendly : lines.greet_neutral, "<p>*clac*</p> ...Fale, criatura de fora."));
 	}
 
 	private static boolean wearsGold(ServerPlayer player) {
@@ -481,11 +581,13 @@ public final class DialogueManager {
 
 		KarmaTier karma = KarmaSystem.tier(data);
 
-		if (data.karma < 0) {
+		boolean friendlyKind = session.kind.equals("villager") || session.kind.equals("piglin");
+
+		if (data.karma < 0 && friendlyKind) {
 			addApologyChoice(session, choices);
 		}
 
-		if (karma.atLeast(KarmaTier.HONRADO) && !session.npc.isBaby() && !Professions.NITWIT.equals(session.profession)) {
+		if (friendlyKind && karma.atLeast(KarmaTier.HONRADO) && !session.npc.isBaby() && !Professions.NITWIT.equals(session.profession)) {
 			choices.add(new Choice("bless", "Pode abençoar minha ferramenta?", "magic", () -> bless(session)));
 		}
 
@@ -542,9 +644,15 @@ public final class DialogueManager {
 
 		if (offer.repeat()) {
 			if (QuestService.blockedByRank(player, data, session.profession)) {
-				Rank next = Rank.ofTier(QuestService.offeredTier(player, data, session.profession) + 1);
-				pages.add("Olha, eu até teria serviço maior... mas pra isso você precisa ser pelo menos <o>" + next.displayName()
-						+ "</o>. Ganhe experiência ou complete missões com outros aldeões.");
+				int nextTier = QuestService.offeredTier(player, data, session.profession) + 1;
+
+				if (Professions.faction(session.profession) == Professions.Faction.VILLAIN) {
+					pages.add("Eu teria um serviço mais sujo pra você... mas só confio isso a quem já é <r>"
+							+ VillainRank.ofTier(nextTier).displayName() + "</r>. Ganhe fama fazendo serviços pros saqueadores e pros piglins.");
+				} else {
+					pages.add("Olha, eu até teria serviço maior... mas pra isso você precisa ser pelo menos <o>" + Rank.ofTier(nextTier).displayName()
+							+ "</o>. Ganhe experiência ou complete missões com outros aldeões.");
+				}
 			}
 
 			pages.add(pick(session, session.lines.repeat, "Lembra daquele serviço? Pois é, precisei de novo. Paga menos, mas ajuda."));
@@ -557,8 +665,11 @@ public final class DialogueManager {
 	}
 
 	private static String tierLabel(Quest quest) {
-		Rank rank = Rank.ofTier(quest.tier);
-		return "<o>[" + rank.displayName() + "]</o>";
+		if (Professions.faction(quest.profession) == Professions.Faction.VILLAIN) {
+			return "<r>[" + VillainRank.ofTier(quest.tier).displayName() + "]</r>";
+		}
+
+		return "<o>[" + Rank.ofTier(quest.tier).displayName() + "]</o>";
 	}
 
 	private static String objectiveLine(Quest quest) {
@@ -698,7 +809,12 @@ public final class DialogueManager {
 		}
 
 		ServerLevel level = (ServerLevel) session.npc.level();
-		level.sendParticles(session.piglin ? ParticleTypes.FLAME : ParticleTypes.HAPPY_VILLAGER,
+		level.sendParticles(switch (session.kind) {
+					case "piglin" -> ParticleTypes.FLAME;
+					case "pillager" -> ParticleTypes.ANGRY_VILLAGER;
+					case "shulker" -> ParticleTypes.END_ROD;
+					default -> ParticleTypes.HAPPY_VILLAGER;
+				},
 				session.npc.getX(), session.npc.getEyeY() + 0.3, session.npc.getZ(), 12, 0.4, 0.3, 0.4, 0.02);
 		speak(session, SoundEvents.VILLAGER_CELEBRATE, SoundEvents.PIGLIN_CELEBRATE);
 
@@ -738,7 +854,10 @@ public final class DialogueManager {
 		pages.add("Pelo que dizem por aí, você é <" + color + "><b>" + karma.displayName() + "</b></" + color + "> (karma "
 				+ data.karma + "). <d>" + karma.description() + "</d>");
 
-		String affinity = progress.mastered ? "<o>Mestre ★</o>" : "<o>" + Rank.ofTier(progress.level).displayName() + "</o>";
+		boolean villainSide = Professions.faction(session.profession) == Professions.Faction.VILLAIN;
+		String affinity = progress.mastered
+				? (villainSide ? "<r>Arquivilão ☠</r>" : "<o>Mestre ★</o>")
+				: "<o>" + Professions.levelName(session.profession, progress.level) + "</o>";
 		String next = progress.mastered || progress.level >= 5
 				? (progress.mastered ? "Não tenho mais nada pra te ensinar." : "Falta só completar uma missão de Mestre.")
 				: "Mais <y>" + (QuestService.QUESTS_PER_PROFESSION_LEVEL - progress.doneAtLevel) + " missão(ões)</y> e confio coisas maiores a você.";
@@ -755,9 +874,28 @@ public final class DialogueManager {
 			rankLine += ". Não há mais nada acima de você.";
 		}
 
+		if (villainSide) {
+			VillainRank villainRank = VillainRank.ofTier(data.villainRank);
+			rankLine = "Sua <r>Vilania</r> é <r><b>" + villainRank.displayName() + "</b></r>";
+
+			if (villainRank != VillainRank.ARQUIVILAO) {
+				rankLine += ". Pra virar <r>" + villainRank.next().displayName() + "</r>: complete mais <y>"
+						+ Math.max(0, villainRank.questsToPromote() - data.villainTierCompletions[villainRank.tier()])
+						+ "</y> serviço(s) de " + villainRank.displayName() + " para saqueadores ou piglins. <d>(XP não conta aqui.)</d>";
+			} else {
+				rankLine += ". Ninguém é mais temido do que você.";
+			}
+
+			pages.add(rankLine);
+			pages.add("Quem vira <r>Arquivilão</r> e domina <y>saqueadores e piglins</y> recebe a marca do <p>Vilão da História</p>. Você já dominou <y>"
+					+ QuestService.villainMasteredCount(data) + "/" + Professions.VILLAIN_FACTIONS.size() + "</y>.");
+			show(session, pages, backOrBye(session), toneFor(session));
+			return;
+		}
+
 		pages.add(rankLine);
 
-		if (!session.piglin) {
+		if (session.kind.equals("villager")) {
 			int mastered = QuestService.masteredCount(data);
 			pages.add("Dizem que quem se torna Mestre em todas as <y>13 profissões</y> vira <o>Herói da Vila</o> pra sempre. Você já dominou <y>"
 					+ mastered + "/13</y>.");

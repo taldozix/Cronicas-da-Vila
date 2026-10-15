@@ -21,6 +21,7 @@ import br.com.cronicasdavila.quest.QuestReward;
 import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.rank.Professions;
 import br.com.cronicasdavila.rank.Rank;
+import br.com.cronicasdavila.rank.VillainRank;
 
 /**
  * Envia ao cliente o estado do jogador (para o Diário de Missões e o rastreador do HUD).
@@ -73,6 +74,19 @@ public final class SyncService {
 		root.addProperty("totalCompleted", data.totalCompleted);
 		root.addProperty("tracked", data.tracked == null ? "" : data.tracked);
 
+		VillainRank villainRank = VillainRank.ofTier(data.villainRank);
+		root.addProperty("villainRank", villainRank.tier());
+		root.addProperty("villainName", villainRank.displayName());
+		root.addProperty("villainColor", villainRank.color());
+		root.addProperty("villainNextName", villainRank.next().displayName());
+		root.addProperty("villainTierDone", data.villainTierCompletions[villainRank.tier()]);
+		root.addProperty("villainTierNeeded", villainRank.questsToPromote());
+		root.addProperty("villainQuests", data.villainQuests);
+		root.addProperty("villain", QuestService.isVillain(data));
+		root.addProperty("villainMastered", QuestService.villainMasteredCount(data));
+		root.addProperty("villainFactions", Professions.VILLAIN_FACTIONS.size());
+		root.addProperty("overworldTicks", data.overworldTicks);
+
 		JsonArray professions = new JsonArray();
 
 		for (String key : Professions.QUEST_GIVERS) {
@@ -81,7 +95,8 @@ public final class SyncService {
 			object.addProperty("key", key);
 			object.addProperty("name", Professions.displayName(key));
 			object.addProperty("level", progress.level);
-			object.addProperty("levelName", Rank.ofTier(progress.level).displayName());
+			object.addProperty("levelName", Professions.levelName(key, progress.level));
+			object.addProperty("faction", Professions.faction(key).name());
 			object.addProperty("done", progress.doneAtLevel);
 			object.addProperty("need", QuestService.QUESTS_PER_PROFESSION_LEVEL);
 			object.addProperty("mastered", progress.mastered);
@@ -107,7 +122,7 @@ public final class SyncService {
 			object.addProperty("id", quest.id);
 			object.addProperty("title", quest.title);
 			object.addProperty("tier", quest.tier);
-			object.addProperty("tierName", Rank.ofTier(quest.tier).displayName());
+			object.addProperty("tierName", Professions.levelName(entry.getKey(), quest.tier));
 			object.addProperty("tone", quest.tone);
 			object.addProperty("nether", Professions.isNether(entry.getKey()));
 			object.addProperty("giver", active.giverName);
@@ -151,7 +166,7 @@ public final class SyncService {
 			}
 
 			object.add("rewards", rewards);
-			object.addProperty("karmaReward", active.repeat ? Math.max(1, quest.karmaReward() / 2) : quest.karmaReward());
+			object.addProperty("karmaReward", quest.karmaReward(active.repeat));
 			quests.add(object);
 		}
 

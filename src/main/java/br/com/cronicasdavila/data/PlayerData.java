@@ -45,6 +45,14 @@ public class PlayerData {
 	public int lastTradeStat = -1;
 	public int lastRaidStat = -1;
 
+	// Vilania (só sobe com missões de saqueadores e piglins; nunca com XP)
+	public int villainRank = 1;
+	public int[] villainTierCompletions = new int[6];
+	public int villainQuests = 0;
+	public boolean villainAnnounced = false;
+	/** Tempo seguido no mundo normal sendo Vilão da História (zera ao voltar ao Nether). */
+	public long overworldTicks = 0;
+
 	public boolean heroAnnounced = false;
 	public int lastAnnouncedRank = 1;
 

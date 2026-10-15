@@ -23,6 +23,8 @@ import br.com.cronicasdavila.command.CronicasCommand;
 import br.com.cronicasdavila.compat.VanillaCompat;
 import br.com.cronicasdavila.data.PlayerDataManager;
 import br.com.cronicasdavila.dialogue.DialogueManager;
+import br.com.cronicasdavila.effect.ModEffects;
+import br.com.cronicasdavila.karma.FactionSystem;
 import br.com.cronicasdavila.karma.KarmaSystem;
 import br.com.cronicasdavila.net.ModPayloads;
 import br.com.cronicasdavila.net.SyncService;
@@ -48,6 +50,7 @@ public class CronicasDaVila implements ModInitializer {
 	public void onInitialize() {
 		PlayerDataManager.init();
 		DialogueManager.init();
+		ModEffects.init();
 		ModPayloads.register();
 		QuestRegistry.load();
 
@@ -112,6 +115,12 @@ public class CronicasDaVila implements ModInitializer {
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
 			DialogueManager.tick(server);
 			tickCounter++;
+
+			if (tickCounter % 10 == 0) {
+				for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+					FactionSystem.tickFast(player);
+				}
+			}
 
 			if (tickCounter % 20 != 0) {
 				return;

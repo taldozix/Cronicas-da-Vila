@@ -55,6 +55,29 @@ public class NpcDialogue {
 		return extra.getOrDefault(key, List.of());
 	}
 
+	/**
+	 * Junta estas falas com as do bioma da vila (deserto, neve, pântano...). Saudações, histórias,
+	 * "mais alguma coisa" e despedidas passam a misturar os dois; o resto continua igual.
+	 */
+	public NpcDialogue mergedWith(NpcDialogue biome) {
+		NpcDialogue merged = new NpcDialogue();
+		merged.fillFrom(this);
+		merged.greet_friendly = concat(greet_friendly, biome.greet_friendly);
+		merged.greet_neutral = concat(greet_neutral, biome.greet_neutral);
+		merged.greet_cold = concat(greet_cold, biome.greet_cold);
+		merged.followup = concat(followup, biome.followup);
+		merged.bye = concat(bye, biome.bye);
+		merged.lore = new ArrayList<>(biome.lore);
+		merged.lore.addAll(lore);
+		return merged;
+	}
+
+	private static List<String> concat(List<String> a, List<String> b) {
+		List<String> result = new ArrayList<>(a);
+		result.addAll(b);
+		return result;
+	}
+
 	public void fillFrom(NpcDialogue common) {
 		if (greet_friendly.isEmpty()) greet_friendly = common.greet_friendly;
 		if (greet_neutral.isEmpty()) greet_neutral = common.greet_neutral;

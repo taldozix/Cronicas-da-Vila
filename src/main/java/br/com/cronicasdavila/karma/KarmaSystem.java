@@ -20,6 +20,7 @@ import net.minecraft.world.phys.AABB;
 import br.com.cronicasdavila.compat.VanillaCompat;
 import br.com.cronicasdavila.data.PlayerData;
 import br.com.cronicasdavila.data.PlayerDataManager;
+import br.com.cronicasdavila.effect.ModEffects;
 import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.rank.Rank;
 import br.com.cronicasdavila.util.Text;
@@ -149,6 +150,7 @@ public final class KarmaSystem {
 		data.resetDailyIfNeeded(day(player));
 
 		checkStatKarma(player, data);
+		FactionSystem.tickSecond(player, data);
 		announceRank(player, data);
 
 		if (secondCounter % 5 == 0) {
@@ -241,6 +243,18 @@ public final class KarmaSystem {
 						+ "Seu nome será cantado em cada vila deste mundo.</g> <d>(Herói da Vila permanente)</d>"));
 			}
 		}
+
+		if (QuestService.isVillain(data)) {
+			effect(player, ModEffects.VILAO_DA_HISTORIA, 0);
+
+			if (!data.villainAnnounced) {
+				data.villainAnnounced = true;
+				PlayerDataManager.save(player);
+				player.sendSystemMessage(Text.parse("<r><b>☠☠☠ VILÃO DA HISTÓRIA ☠☠☠</b></r>\n<p>Saqueadores e piglins se curvam diante de você. "
+						+ "Toda criatura viva foge quando você se aproxima.</p> <d>Mas o mundo dos vivos te rejeita: fadiga no mundo normal "
+						+ "e, depois de um dia longe do Nether, você queima.</d>"));
+			}
+		}
 	}
 
 	private static void applyPunishments(ServerPlayer player, PlayerData data, int secondCounter) {
@@ -251,6 +265,13 @@ public final class KarmaSystem {
 		}
 
 		ServerLevel level = (ServerLevel) player.level();
+		boolean villain = QuestService.isVillain(data);
+
+		// O Vilão da História espanta todo mundo (aura de medo): golens, endermen e animais não o enfrentam.
+		if (villain) {
+			curse(player, level, tier, secondCounter);
+			return;
+		}
 
 		// Golens de ferro atacam (Mal-visto ou pior)
 		if (secondCounter % 2 == 0) {
@@ -292,6 +313,10 @@ public final class KarmaSystem {
 			}
 		}
 
+		curse(player, level, tier, secondCounter);
+	}
+
+	private static void curse(ServerPlayer player, ServerLevel level, KarmaTier tier, int secondCounter) {
 		if (!tier.atMost(KarmaTier.AMALDICOADO)) {
 			return;
 		}
