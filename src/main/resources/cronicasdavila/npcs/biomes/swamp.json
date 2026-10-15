@@ -1,0 +1,52 @@
+{
+	"greet_friendly": [
+		"{player}! Que bom te ver! Desculpa o cheiro, é o pântano. A gente nem sente mais.",
+		"Olha só quem atravessou a lama pra visitar a gente! Senta, {player}, que os sapos vão cantar pra você.",
+		"Que alegria! Até a bruxa da cabana do outro lado parou de jogar poção quando soube que você vinha."
+	],
+	"greet_neutral": [
+		"Hrmm. Bem-vindo ao pântano, viajante. Cuidado onde pisa: o chão às vezes é água, e a água às vezes é chão.",
+		"Olá! Você ouviu um \"plim plim\" lá atrás? Era um slime. Corre.",
+		"Bom dia, se é que o sol chega aqui. As árvores do manguezal tapam tudo.",
+		"Se a água ficar verde-escura, não bebe. Se ficar roxa, foge. É poção de bruxa."
+	],
+	"greet_cold": [
+		"Hmm. Você tem cheiro de lodo e de coisa errada. E olha que aqui no pântano a gente entende de cheiro.",
+		"Os sapos pararam de coaxar quando você chegou. Isso diz muito."
+	],
+	"followup": [
+		"Que mais? Fala antes que eu afunde mais um pouco na lama.",
+		"Pergunta. Os sapos também querem saber."
+	],
+	"bye": [
+		"Vai com cuidado! E não aceita nenhuma bebida de quem usa chapéu pontudo.",
+		"Até mais! Se um slime te seguir, ele só quer brincar. Ou te esmagar. Difícil saber."
+	],
+	"lore": [
+		[
+			"Morar no pântano é diferente, viajante. A gente vive no meio da lama, das raízes e da névoa.",
+			"As casas são em cima de palafitas, pra água não entrar. Mesmo assim entra. Sempre entra.",
+			"Mas o pântano dá o que nenhum outro lugar dá: argila, cogumelos, nenúfares... e muita paciência."
+		],
+		[
+			"Do outro lado do pântano tem uma <r>cabana de bruxa</r>. Ela mora lá desde antes de eu nascer.",
+			"Dizem que ela já foi uma aldeã, uma curandeira. Um raio caiu nela numa tempestade e ela nunca mais foi a mesma.",
+			"Às vezes ela joga poção na gente. Às vezes deixa ervas na nossa porta. Ninguém entende a bruxa."
+		],
+		[
+			"Os <a>sapos</a> do pântano mudam de cor dependendo de onde nasceram: laranja no calor, verde no meio-termo, branco no frio.",
+			"Eles comem slimes pequenos. Com uma lambida! É a coisa mais nojenta e mais bonita que você vai ver.",
+			"E quando comem cubo de magma do Nether, soltam uma luz que brilha. Os sapos são mais estranhos que a bruxa."
+		],
+		[
+			"Nas noites de lua cheia, os <r>slimes</r> saem da lama em bando. Quicam, quicam, quicam.",
+			"Os grandes se dividem quando você bate. Os pequenos se dividem de novo. Parece que nunca acaba.",
+			"A gente aprendeu a fazer bolinha de slime com eles. Serve pra pistão, pra corda e pra jogar no bobão da vila."
+		],
+		[
+			"Lá no manguezal, a lama esconde coisas antigas. Um dia o pedreiro achou um baú cheio de garrafas de vidro.",
+			"Dentro de cada uma tinha uma mensagem: \"Socorro, a bruxa me transformou em sapo.\"",
+			"A gente nunca descobriu se era brincadeira. Mas desde então, ninguém mais chuta sapo por aqui."
+		]
+	]
+}

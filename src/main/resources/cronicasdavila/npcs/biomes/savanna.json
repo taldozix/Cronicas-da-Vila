@@ -1,0 +1,47 @@
+{
+	"greet_friendly": [
+		"Eita, {player}! O sol da savana brilha mais quando você chega. Senta aqui na sombra da acácia!",
+		"{player}! As lhamas até pararam de cuspir quando souberam que você vinha. Isso é respeito.",
+		"Bem-vindo de volta! O capim tá alto e a vila tá feliz. Fica pra janta?"
+	],
+	"greet_neutral": [
+		"Hrmm. Calor, né? Aqui na savana o sol não tem dó de ninguém.",
+		"Bem-vindo à vila das acácias! Cuidado com a terra vermelha, ela mancha a roupa pra sempre.",
+		"Olá, viajante. Se ver uma lhama olhando torto, não encara. Ela cospe.",
+		"Bom dia! Aqui a gente acorda cedo pra trabalhar antes do calor. Você chegou tarde, mas tudo bem."
+	],
+	"greet_cold": [
+		"Hmm. Na savana, quem não respeita a terra seca não dura muito. Fique esperto.",
+		"Você pisou no nosso capim sagrado? Tô brincando. Mas não gosto de você mesmo assim."
+	],
+	"followup": [
+		"Que mais? Aproveita que a brisa chegou.",
+		"Fala. O sol tá forte, mas eu aguento."
+	],
+	"bye": [
+		"Até mais! Bebe água e passa protetor... ah, não existe protetor. Usa um chapéu.",
+		"Vai bem! Se ver um cavalo listrado, me avisa. Tô procurando há anos."
+	],
+	"lore": [
+		[
+			"As <a>acácias</a> são árvores tortas, mas fortes. Aguentam meses sem chuva.",
+			"Os aldeões da savana aprenderam com elas: dobrar, mas não quebrar. Por isso a gente é tão teimoso.",
+			"E a madeira laranja delas é a mais bonita pra construir casa. Nossa vila brilha no pôr do sol."
+		],
+		[
+			"A savana é o lar dos <a>cavalos</a> e das <a>lhamas</a>. Os mercadores ambulantes vêm aqui buscar as melhores.",
+			"Lhama é bicho de caravana: vai em fila, uma atrás da outra, levando baú nas costas.",
+			"Mas cuidado: se você mexer na lhama de alguém, ela cospe. Se mexer na lhama do mercador, as duas cospem."
+		],
+		[
+			"Lá pro sul, a savana vira uma terra quebrada, cheia de montanhas tortas e penhascos impossíveis.",
+			"Os mais velhos chamam de <a>Terra Despedaçada</a>. Dizem que foi um gigante que pisou forte demais.",
+			"Os cartógrafos odeiam desenhar aquilo. Nenhum mapa fica certo lá."
+		],
+		[
+			"Aqui tem os <a>tatus</a>, bichinhos que se enrolam quando ficam com medo. O coureiro adora eles.",
+			"As escamas que eles soltam viram armadura pros cachorros. Cachorro de armadura, já pensou?",
+			"A savana é assim, viajante: tudo é duro por fora, mas protege quem a gente ama."
+		]
+	]
+}

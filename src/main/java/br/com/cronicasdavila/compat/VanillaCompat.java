@@ -54,6 +54,12 @@ public final class VanillaCompat {
 		villager.getBrain().setMemory(MemoryModuleType.NEAREST_HOSTILE, threat);
 	}
 
+	/** Faz a criatura desistir de atacar (funciona tanto para IA de "goals" quanto para IA de "cérebro"). */
+	public static void forgetTarget(net.minecraft.world.entity.Mob mob) {
+		mob.setTarget(null);
+		mob.getBrain().eraseMemory(MemoryModuleType.ATTACK_TARGET);
+	}
+
 	/** A criatura foi atacada por esse jogador nos últimos 5 segundos? */
 	public static boolean recentlyHurtBy(LivingEntity mob, LivingEntity attacker) {
 		return mob.getLastHurtByMob() == attacker && mob.tickCount - mob.getLastHurtByMobTimestamp() < 100;

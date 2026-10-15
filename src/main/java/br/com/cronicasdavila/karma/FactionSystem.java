@@ -92,7 +92,7 @@ public final class FactionSystem {
 
 				// Se você bater neles, eles revidam normalmente.
 				if (ally && !VanillaCompat.recentlyHurtBy(mob, player)) {
-					mob.setTarget(null);
+					VanillaCompat.forgetTarget(mob);
 				}
 			}
 		}
@@ -116,7 +116,7 @@ public final class FactionSystem {
 			}
 
 			if (mob.getTarget() == player) {
-				mob.setTarget(null);
+				VanillaCompat.forgetTarget(mob);
 			}
 
 			if (mob instanceof Villager villager) {

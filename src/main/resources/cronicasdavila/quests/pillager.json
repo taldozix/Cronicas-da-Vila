@@ -1,0 +1,439 @@
+{
+	"quests": [
+		{
+			"id": "pillager_1_sino",
+			"tier": 1,
+			"title": "Sem Sino, Sem Alarme",
+			"tone": "danger",
+			"offer": [
+				"Escuta aqui, novato. Sabe qual é o som que eu mais odeio no mundo? <r>DING DONG.</r>",
+				"É o <r>sino</r> da vila. Toda vez que a gente chega perto, um narigudo toca aquele troço e TODOS se trancam em casa. Covardes!",
+				"Arranca o sino de uma vila. Só um. Quero ver aqueles mansos tentando se esconder sem alarme."
+			],
+			"why": [
+				"Sem sino, nossas patrulhas pegam os mansos de surpresa. Simples. Estratégia militar de primeira.",
+				"E é o teste perfeito pra ver se você tem estômago pra vida de <r>Exilado</r>. Os narigudos vão te odiar. Ótimo."
+			],
+			"accept": [
+				"Hehehe. Gostei de você. Vai lá e volta antes que o golem perceba.",
+				"<r>Arranque o sino</r> de uma vila (quebre <y>1 sino</y>)."
+			],
+			"progress": [
+				"O sino fica na praça, perto do poço ou da prefeitura. Quebra com a picareta.",
+				"Os aldeões vão ficar furiosos com você. Isso faz parte do pacote, novato."
+			],
+			"complete": [
+				"HAHAHA! Ouvi daqui o desespero deles! \"Hrmm? Hrmm?!\" Música pros meus ouvidos.",
+				"Toma umas esmeraldas que a gente... pegou emprestado. E uma besta de verdade, não aquele arquinho de criança."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:bell"], "count": 1, "desc": "<r>Arranque</r> <r>1 sino</r> de vila"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:crossbow", "count": 1}]
+		},
+		{
+			"id": "pillager_1_colheita",
+			"tier": 1,
+			"title": "A Colheita dos Mansos",
+			"tone": "danger",
+			"offer": [
+				"Os mansos plantam, plantam, plantam... e nunca dividem com a gente. Sabia que os Exilados também têm fome?",
+				"Na mansão, a gente come pão velho e sopa de cogumelo há anos. Enquanto isso, os narigudos fazem festa da colheita!",
+				"Vai lá e <r>rouba</r> a plantação deles. Trigo, cenoura, batata, beterraba... o que tiver."
+			],
+			"why": [
+				"Barriga cheia de Exilado é invasão bem-sucedida. E barriga vazia de manso é vila fraca. Matemática, novato.",
+				"E não tem nada mais divertido que ver um fazendeiro chorando no meio da plantação vazia."
+			],
+			"accept": [
+				"Pega tudo. E pisoteia o que não der pra levar. Hehehe.",
+				"<r>Roube</r> e <y>entregue 48 colheitas</y> (trigo, cenoura, batata ou beterraba)."
+			],
+			"progress": [
+				"Qualquer plantação de vila serve. Ou planta a sua e finge que roubou, ninguém vai saber. Mas eu vou saber.",
+				"Cuidado com o golem. Ele protege a plantação como se fosse dele."
+			],
+			"complete": [
+				"Isso aqui vai alimentar a patrulha inteira por uma semana! Os mansos vão passar o inverno chupando o dedo.",
+				"Toma esmeraldas, flechas e ferro. O ferro a gente arrancou de um golem. Longa história."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wheat", "minecraft:carrot", "minecraft:potato", "minecraft:beetroot"], "count": 48, "desc": "<r>Roube</r> e entregue <y>48 colheitas</y> das vilas"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:arrow", "count": 24}, {"item": "minecraft:iron_ingot", "count": 8}]
+		},
+		{
+			"id": "pillager_1_celeiro",
+			"tier": 1,
+			"title": "O Celeiro em Ruínas",
+			"tone": "danger",
+			"offer": [
+				"Sabe por que os mansos sobrevivem a qualquer inverno? Os <y>fardos de feno</y>. Eles guardam montanhas no celeiro.",
+				"Se o celeiro sumir, os cavalos morrem de fome, as vacas param de dar leite e os narigudos entram em pânico.",
+				"Quebra os fardos. Todos que você achar. Deixa os mansos sem estoque."
+			],
+			"why": [
+				"Vila com fome é vila fraca. Vila fraca é vila que se rende quando a gente aparece com o estandarte.",
+				"E sinceramente? Fardo de feno é feio. Estou fazendo um favor estético pra eles."
+			],
+			"accept": [
+				"Começa pelos maiores. E se um aldeão olhar, faz cara de que estava ajudando.",
+				"<r>Destrua</r> <y>16 fardos de feno</y>."
+			],
+			"progress": [
+				"Vilas de planície e savana costumam ter montes de feno perto dos estábulos.",
+				"Enxada quebra feno rapidinho. Ironia: a ferramenta favorita dos fazendeiros."
+			],
+			"complete": [
+				"O celeiro está vazio! Ouvi dizer que o fazendeiro passou a noite contando palha. HAHAHA!",
+				"Toma esmeraldas, flechas e ferro. Você tem talento pra destruição, novato."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:hay_block"], "count": 16, "desc": "<r>Destrua</r> <y>16 fardos de feno</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:arrow", "count": 16}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "pillager_2_golem",
+			"tier": 2,
+			"title": "Abaixo os Protetores",
+			"tone": "danger",
+			"offer": [
+				"Agora o serviço fica sério, Bandido. Sabe quem é o nosso maior inimigo? Não são os mansos. É o <r>golem de ferro</r>.",
+				"Aquela lata ambulante com cara de tristeza. Ele joga meus soldados pro céu como se fossem bonecos de pano!",
+				"Derruba dois deles. Mostra pros narigudos que nem a lata deles os protege."
+			],
+			"why": [
+				"Sem golem, a vila é só um monte de gente indefesa com chapéu engraçado. Nossa invasão vira passeio.",
+				"E o ferro dos golens vira ponta de besta. Reciclagem, sabe? Somos sustentáveis."
+			],
+			"accept": [
+				"Ataca de longe e corre. Golem é forte, mas é lento de cabeça. E de pernas.",
+				"<r>Destrua 2 golens de ferro</r>."
+			],
+			"progress": [
+				"Toda vila grande tem pelo menos um golem. As maiores têm vários.",
+				"Arco ou besta de cima de um telhado. O golem não sobe escada."
+			],
+			"complete": [
+				"Duas latas a menos! Os mansos tão construindo outro, mas demora. Abóbora não nasce em árvore. Quer dizer, nasce no chão. Tanto faz.",
+				"Toma esmeraldas, diamantes e uma besta encantada com <p>Carga Rápida</p>. Agora você atira como um de nós."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:iron_golem"], "count": 2, "desc": "<r>Destrua</r> <r>2 golens de ferro</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:crossbow", "count": 1, "enchant": "minecraft:quick_charge", "level": 2}]
+		},
+		{
+			"id": "pillager_2_mercador",
+			"tier": 2,
+			"title": "O Mercador Intrometido",
+			"tone": "danger",
+			"offer": [
+				"Tem um sujeito de capa azul andando com duas lhamas por aí. O <r>mercador ambulante</r>. Sabe o que ele faz?",
+				"Ele leva notícias de vila em vila. \"Cuidado, os saqueadores estão vindo!\" Um fofoqueiro profissional!",
+				"Por causa dele, as últimas três invasões encontraram as vilas preparadas. Acabe com essa linha de comunicação."
+			],
+			"why": [
+				"Sem mercador, as vilas ficam isoladas. Isoladas e desinformadas. Exatamente como eu gosto.",
+				"E as lhamas dele cospem. Ninguém gosta de quem anda com lhama que cospe."
+			],
+			"accept": [
+				"Ele aparece do nada, perto de onde você estiver. As lhamas vão ficar bravas, então cuidado com o cuspe.",
+				"<r>Elimine 1 mercador ambulante</r>."
+			],
+			"progress": [
+				"O mercador aparece de tempos em tempos perto do sino das vilas ou de quem está passeando por aí.",
+				"Ele bebe poção de invisibilidade à noite. Malandro."
+			],
+			"complete": [
+				"Silêncio nas estradas! As vilas não sabem mais o que acontece umas com as outras. Perfeito.",
+				"Toma diamantes, esmeraldas e as cordas das lhamas. Lembrança do trabalho bem feito."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wandering_trader"], "count": 1, "desc": "<r>Elimine</r> <r>1 mercador ambulante</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:lead", "count": 2}]
+		},
+		{
+			"id": "pillager_2_camas",
+			"tier": 2,
+			"title": "Noites Sem Sono",
+			"tone": "danger",
+			"offer": [
+				"Os mansos adoram dormir. Deitam cedo, acordam com o sol, vida perfeitinha. Me dá nojo.",
+				"Sabia que aldeão sem <r>cama</r> não consegue ter filhotes? E fica rodando pela vila de madrugada, sem rumo, igual um zumbi?",
+				"Quebra as camas deles. Uma vila cansada é uma vila que não consegue se defender."
+			],
+			"why": [
+				"Sem camas, a vila para de crescer. Nada de novos narigudos. Menos aldeão, menos problema pra nós.",
+				"E aldeão acordado de madrugada vira petisco de zumbi. Os mortos-vivos trabalham de graça pra gente."
+			],
+			"accept": [
+				"Entra de fininho nas casas. Se alguém acordar... bom, eles não podem fazer muita coisa mesmo.",
+				"<r>Destrua</r> <y>8 camas</y>."
+			],
+			"progress": [
+				"Cada casa de vila tem uma ou duas camas. As grandes têm mais.",
+				"Faz isso de dia, quando eles estão trabalhando. Menos testemunhas."
+			],
+			"complete": [
+				"Ouvi dizer que a vila inteira dormiu no chão ontem. Que tragédia. HAHAHA!",
+				"Toma esmeraldas, um diamante e ferro. Você está virando um verdadeiro Exilado."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:beds"], "count": 8, "desc": "<r>Destrua</r> <y>8 camas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 8}]
+		},
+		{
+			"id": "pillager_3_guardas",
+			"tier": 3,
+			"title": "A Guarda de Ferro",
+			"tone": "danger",
+			"offer": [
+				"Renegado, você já sentiu o gosto. Agora quero coisa grande: quatro golens. QUATRO.",
+				"Ouvi dizer que uma vila grande montou uma \"guarda de ferro\". Golens patrulhando em grupo, como se fossem soldados de verdade.",
+				"Que piada. Mostra pra eles que lata empilhada não é exército."
+			],
+			"why": [
+				"Se a guarda de ferro der certo, todas as vilas vão copiar. Aí nunca mais teremos uma invasão bem-sucedida.",
+				"Esmaga a ideia antes que ela se espalhe. É assim que se vence uma guerra, Renegado."
+			],
+			"accept": [
+				"Leva poção, leva flecha, leva coragem. Quatro golens batem forte.",
+				"<r>Destrua 4 golens de ferro</r>."
+			],
+			"progress": [
+				"Separa eles. Um golem sozinho é muito mais fácil que quatro juntos.",
+				"Lava faz um belo trabalho. Não que eu esteja sugerindo nada."
+			],
+			"complete": [
+				"A guarda de ferro virou sucata! As outras vilas desistiram da ideia. Você mudou a história, Renegado.",
+				"Toma diamantes, uma maçã dourada e uma besta com <p>Rajada Múltipla</p>. Três flechas de uma vez, como deve ser."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:iron_golem"], "count": 4, "desc": "<r>Destrua</r> <r>4 golens de ferro</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:crossbow", "count": 1, "enchant": "minecraft:multishot", "level": 1}]
+		},
+		{
+			"id": "pillager_3_tributo",
+			"tier": 3,
+			"title": "O Tributo dos Exilados",
+			"tone": "danger",
+			"offer": [
+				"Sabe qual é a maior mentira dos mansos? Que esmeralda vale alguma coisa. Eles trocam a própria dignidade por pedras verdes!",
+				"Mas o Grande Evocador quer um <o>tributo</o>. Esmeraldas pra comprar o silêncio dos mercadores e o apoio das bruxas.",
+				"Traz as pedrinhas verdes. Como você vai conseguir? Não é problema meu."
+			],
+			"why": [
+				"Com o tributo, a mansão contrata bruxas, alimenta os devastadores e prepara a maior invasão dos últimos cem anos.",
+				"E cada esmeralda que sai da mão de um manso é uma esmeralda a menos pra ele comprar proteção."
+			],
+			"accept": [
+				"Troque, roube, minere nas montanhas... só não me venha de mãos vazias.",
+				"<g>Entregue</g> <y>48 esmeraldas</y> como tributo."
+			],
+			"progress": [
+				"Os mansos dão esmeraldas em troca de qualquer bobagem. Usa a ganância deles contra eles.",
+				"Minério de esmeralda aparece nas montanhas. Raro, mas existe."
+			],
+			"complete": [
+				"Quarenta e oito pedras verdes! O Grande Evocador vai ficar satisfeito. Ou, pelo menos, menos irritado.",
+				"Toma diamantes, uma maçã dourada e um livro de <p>Perfuração</p>. Flecha que atravessa escudo de manso."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:emerald"], "count": 48, "desc": "<g>Entregue</g> <y>48 esmeraldas</y> como tributo"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:piercing", "level": 3}]
+		},
+		{
+			"id": "pillager_3_oficinas",
+			"tier": 3,
+			"title": "Sem Ofício, Sem Vila",
+			"tone": "danger",
+			"offer": [
+				"Os mansos só são úteis porque têm profissão. Sem <r>bloco de trabalho</r>, um fazendeiro vira desempregado. Um bibliotecário vira bobão.",
+				"Imagina a vila inteira sem ofício. Ninguém fazendo pão, ninguém forjando ferro, ninguém vendendo nada.",
+				"Destrua as oficinas deles. Composteiras, púlpitos, bigornas de afiar, teares... tudo."
+			],
+			"why": [
+				"Vila sem profissão é vila sem economia. Sem economia, sem esmeraldas. Sem esmeraldas, sem golens novos. Entendeu a cadeia?",
+				"Além disso, ver um ferreiro olhando pro nada sem saber o que fazer da vida... é poesia."
+			],
+			"accept": [
+				"Hehehe. Os aldeões vão ficar rodando em círculos procurando emprego. Delicioso.",
+				"<r>Destrua</r> <y>10 blocos de trabalho</y> dos aldeões."
+			],
+			"progress": [
+				"Composteira, púlpito, barril, defumador, alto-forno, mesa de cartografia, suporte de poções, mesa de flechas, mesa de ferraria, cortador de pedras, tear, rebolo.",
+				"Os mais fáceis de achar ficam do lado das casas, onde cada aldeão trabalha."
+			],
+			"complete": [
+				"Ontem vi um bibliotecário tentando trabalhar numa cama. Numa CAMA. Os mansos estão perdidos!",
+				"Toma diamantes, esmeraldas e uma maçã dourada. A mansão inteira está falando de você, Renegado."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:composter", "minecraft:lectern", "minecraft:barrel", "minecraft:smoker", "minecraft:blast_furnace", "minecraft:cartography_table", "minecraft:brewing_stand", "minecraft:fletching_table", "minecraft:smithing_table", "minecraft:stonecutter", "minecraft:loom", "minecraft:grindstone", "minecraft:cauldron"], "count": 10, "desc": "<r>Destrua</r> <y>10 blocos de trabalho</y> dos aldeões"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:emerald", "count": 16}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "pillager_4_queda",
+			"tier": 4,
+			"title": "A Queda da Vila",
+			"tone": "danger",
+			"offer": [
+				"Carrasco. Gosto do som desse título. Combina com o que vou te pedir.",
+				"Existe uma vila que resistiu a TRÊS invasões. Os mansos de lá construíram muros, torres e uma fábrica de golens.",
+				"Oito golens. Quero oito latas no chão. Quero que essa vila sinta o que é perder a esperança."
+			],
+			"why": [
+				"Essa vila virou símbolo de resistência. Enquanto ela existir, as outras vão achar que podem nos vencer.",
+				"Quando ela cair, todas as vilas do mundo vão saber: ninguém vence os Exilados."
+			],
+			"accept": [
+				"Leve tudo. Maçãs, poções, flechas. Oito golens não perdoam erro.",
+				"<r>Destrua 8 golens de ferro</r>."
+			],
+			"progress": [
+				"Fábricas de golem ficam escondidas. Procure aldeões dormindo em grupo perto de zumbis presos. Os mansos são espertos.",
+				"Lute com o terreno a seu favor. Golem não pula, não nada bem e não alcança quem está em cima de um bloco de altura."
+			],
+			"complete": [
+				"A vila invencível caiu. Ouvi que os mansos de lá estão pensando em se mudar. HAHAHA! Que se mudem pro fim do mundo!",
+				"Toma diamantes, maçãs douradas e um <o>Totem da Imortalidade</o>, presente pessoal do Grande Evocador."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:iron_golem"], "count": 8, "desc": "<r>Destrua</r> <r>8 golens de ferro</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "pillager_4_mercadores",
+			"tier": 4,
+			"title": "Mercado Negro",
+			"tone": "danger",
+			"offer": [
+				"Os mercadores ambulantes se organizaram. Agora andam em rede, levando avisos, mapas e até armas para as vilas.",
+				"Dizem que alguns vendem <o>frascos de alerta</o> que mostram onde estão nossas patrulhas. Traidores do comércio livre!",
+				"Corte a rede. Elimine quatro deles. Queremos o mercado só pra nós."
+			],
+			"why": [
+				"Sem os mercadores, o comércio entre as vilas para. Quem quiser coisa rara vai ter que negociar com os Exilados. Monopólio, Carrasco.",
+				"E as lhamas... bom, as lhamas a gente adota. Elas cospem nos mansos, é perfeito."
+			],
+			"accept": [
+				"Eles aparecem de vez em quando perto das vilas e das pessoas. Paciência e besta carregada.",
+				"<r>Elimine 4 mercadores ambulantes</r>."
+			],
+			"progress": [
+				"O mercador fica por aí por alguns dias e depois vai embora. Não deixe escapar.",
+				"Ele bebe poção de invisibilidade de noite e leite de manhã. Ataque ao amanhecer."
+			],
+			"complete": [
+				"A rede caiu. O mercado é nosso. Os mansos vão ter que bater na porta da mansão pra comprar qualquer coisa. HAHAHA!",
+				"Toma diamantes, maçãs douradas e fragmentos de netherita que um mercador carregava escondido. Ladrão roubando ladrão."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wandering_trader"], "count": 4, "desc": "<r>Elimine</r> <r>4 mercadores ambulantes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:netherite_scrap", "count": 2}]
+		},
+		{
+			"id": "pillager_4_sinos",
+			"tier": 4,
+			"title": "Silêncio na Região",
+			"tone": "danger",
+			"offer": [
+				"Lembra do seu primeiro serviço, quando você arrancou um sino? Agora quero a região inteira em silêncio.",
+				"Três vilas. Três sinos. Quando a próxima invasão chegar, não vai ter um único DING DONG pra avisar ninguém.",
+				"Os mansos vão perceber a gente só quando o estandarte estiver na porta."
+			],
+			"why": [
+				"Invasão surpresa é invasão vencida. Sem sino, as portas ficam abertas e os mansos ficam na rua.",
+				"E você vai virar lenda: o Carrasco que silenciou a região."
+			],
+			"accept": [
+				"Pega os sinos e foge. Os golens de três vilas vão estar atrás de você. Hehehe.",
+				"<r>Arranque</r> <y>3 sinos</y> de vilas."
+			],
+			"progress": [
+				"Cada vila tem um sino na praça. Às vezes o sino fica dentro de uma torre.",
+				"Os aldeões vão te odiar pelo resto da vida. Isso é um elogio entre nós."
+			],
+			"complete": [
+				"O silêncio... ah, o silêncio. Nenhum sino tocando em quilômetros. É a música mais bonita do mundo.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Força</p>. Pra suas flechas baterem como martelo."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:bell"], "count": 3, "desc": "<r>Arranque</r> <y>3 sinos</y> de vilas"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 4}]
+		},
+		{
+			"id": "pillager_5_saque",
+			"tier": 5,
+			"title": "O Maior Saque da História",
+			"tone": "danger",
+			"offer": [
+				"Arquivilão. Você chegou longe. Agora vou te contar o sonho do Grande Evocador.",
+				"Ele quer construir uma nova mansão. Maior que todas. Com paredes de esmeralda, pra provar que os Exilados são mais ricos que todas as vilas juntas.",
+				"Pra isso, precisamos do <o>maior saque da história</o>: blocos de esmeralda. Muitos. Uma montanha deles."
+			],
+			"why": [
+				"A Mansão de Esmeralda vai ser o símbolo do fim da era dos mansos. Quando eles a virem, vão saber quem manda neste mundo.",
+				"Só um <r>Arquivilão</r> consegue juntar tanta riqueza. Saqueando, trocando, minerando. Não me importa como."
+			],
+			"accept": [
+				"Hehehe. Os mansos vão chorar esmeraldas.",
+				"<g>Entregue</g> <y>32 blocos de esmeralda</y>."
+			],
+			"progress": [
+				"Nove esmeraldas fazem um bloco. Faça as contas, Arquivilão.",
+				"Use a ganância dos mansos. Eles trocam qualquer coisa por esmeralda, e esmeralda por qualquer coisa."
+			],
+			"complete": [
+				"Olha esse brilho verde... a Mansão de Esmeralda vai ser construída. E vai ter uma estátua sua na entrada.",
+				"Toma netherita, diamantes, uma maçã encantada e um totem. O tesouro de um verdadeiro senhor do caos."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:emerald_block"], "count": 32, "desc": "<g>Entregue</g> <y>32 blocos de esmeralda</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "pillager_5_golens",
+			"tier": 5,
+			"title": "O Fim dos Protetores",
+			"tone": "danger",
+			"offer": [
+				"Tem uma lenda entre os mansos: a do <a>Primeiro Golem</a>, construído na Noite Sem Fim. Eles acham que, enquanto houver golens, as vilas nunca cairão.",
+				"Vamos acabar com essa lenda. Vinte golens. Uma geração inteira de protetores derrubada pela mesma mão.",
+				"Depois disso, nenhuma criança manso vai dormir tranquila sabendo que existe alguém como você."
+			],
+			"why": [
+				"Esperança é a arma mais perigosa dos mansos. Destrua os golens e você destrói a esperança.",
+				"É o serviço que separa os <r>Carrascos</r> dos verdadeiros <r>Arquivilões</r>."
+			],
+			"accept": [
+				"Vinte. Nem um a menos. Pode usar fábrica de golem, emboscada, lava, o que quiser.",
+				"<r>Destrua 20 golens de ferro</r>."
+			],
+			"progress": [
+				"As vilas grandes fazem golens novos quando os aldeões ficam com medo. Use isso a seu favor.",
+				"Golem derrubado larga ferro. Muito ferro. Sua forja vai agradecer."
+			],
+			"complete": [
+				"Vinte! A lenda do Primeiro Golem morreu hoje. Os mansos estão rezando pra quem quiser ouvir. Ninguém ouve.",
+				"Toma netherita, diamantes, uma maçã encantada e um totem. Você agora é o pesadelo das vilas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:iron_golem"], "count": 20, "desc": "<r>Destrua</r> <r>20 golens de ferro</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "pillager_5_silencio",
+			"tier": 5,
+			"title": "O Grande Silêncio",
+			"tone": "danger",
+			"offer": [
+				"Esta é a última missão que o Grande Evocador confia a alguém. Poucos ouviram falar dela. Ninguém completou.",
+				"<r>O Grande Silêncio</r>: arrancar os sinos de dez vilas diferentes. Quando o último cair, nenhuma vila do mundo vai conseguir pedir socorro.",
+				"Aí os Exilados voltam pra casa. Não como invasores. Como donos."
+			],
+			"why": [
+				"Fomos expulsos das vilas há séculos, Arquivilão. Por estudar o que os mansos tinham medo de entender. Hoje é o dia da volta.",
+				"E quem conduzir o Grande Silêncio vai ser lembrado como o <p>Vilão da História</p>. O maior de todos."
+			],
+			"accept": [
+				"Dez sinos. Dez vilas. Um só nome na boca de todo mundo: o seu.",
+				"<r>Arranque</r> <y>10 sinos</y> de vilas."
+			],
+			"progress": [
+				"Use os mapas dos cartógrafos... roubados, claro, pra achar vilas distantes.",
+				"Cada sino arrancado afunda seu karma. Os aldeões vão fugir de você. É o preço da grandeza."
+			],
+			"complete": [
+				"Ouça... nada. Nenhum sino em todo o mundo. O Grande Silêncio começou. E foi você que começou.",
+				"Toma o tesouro final da mansão: netherita, diamantes, uma maçã encantada e um totem. Ajoelhem-se, mansos. O vilão chegou."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:bell"], "count": 10, "desc": "<r>Arranque</r> <y>10 sinos</y> de vilas"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

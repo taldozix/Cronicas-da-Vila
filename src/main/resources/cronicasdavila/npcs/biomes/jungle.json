@@ -1,0 +1,47 @@
+{
+	"greet_friendly": [
+		"{player}! Os papagaios estão cantando seu nome desde que você chegou! Ou pelo menos tentando.",
+		"Que alegria, {player}! Sente aqui debaixo da folha gigante, que a chuva vai voltar daqui a pouco.",
+		"Ah, amigo da selva! Separei um pouco de cacau pra você. Do bom!"
+	],
+	"greet_neutral": [
+		"Hrmm. Bem-vindo à selva, viajante. Aqui faz calor, chove todo dia e tudo quer te picar.",
+		"Olá! Você não é uma jaguatirica, né? Desculpa, é que elas aparecem do nada.",
+		"Cuidado com os cipós! Já vi gente subir num achando que era escada e cair no rio.",
+		"Bom dia! Ou boa tarde. Aqui na selva o sol quase não passa pelas folhas, a gente se perde nas horas."
+	],
+	"greet_cold": [
+		"Hmm. Até os papagaios ficaram quietos quando você chegou. Isso nunca é bom sinal.",
+		"A selva sabe esconder muita coisa, viajante. Inclusive a minha vontade de falar com você."
+	],
+	"followup": [
+		"Que mais? Fala antes que os mosquitos me levem.",
+		"Pode falar. Mas cuidado onde pisa, tem melancia em todo canto."
+	],
+	"bye": [
+		"Vai com cuidado! E se ver um templo cheio de cipó, não puxa nenhuma alavanca sem pensar.",
+		"Até mais! Leva um papagaio de lembrança. Ele vai repetir tudo que você falar. Tudo."
+	],
+	"lore": [
+		[
+			"Sabe por que quase não tem vila na selva? Porque a selva não deixa. As árvores crescem em cima das casas, os cipós entram pelas janelas.",
+			"Nós, aldeões da selva, vivemos espalhados, cada um numa clareira. É solitário, mas é bonito.",
+			"De vez em quando a gente se encontra na beira do rio pra trocar cacau e notícias. É a nossa festa."
+		],
+		[
+			"Os <a>templos da selva</a> são feitos de pedra coberta de musgo. Ninguém sabe quem construiu.",
+			"Lá dentro tem armadilhas de flecha, fios escondidos e um quebra-cabeça de alavancas.",
+			"O cartógrafo da vila vizinha tentou resolver o quebra-cabeça. Ainda tá tentando. Faz seis anos."
+		],
+		[
+			"As <a>jaguatiricas</a> são as rainhas da selva. Rápidas, silenciosas, desconfiadas.",
+			"Se você ficar parado com peixe na mão, uma delas pode chegar perto e confiar em você.",
+			"E sabe o melhor? Os creepers morrem de medo delas. A selva tem os melhores seguranças do mundo."
+		],
+		[
+			"O <a>cacau</a> cresce no tronco das árvores grandes da selva. Com ele a gente faz biscoito, que é a melhor coisa do mundo.",
+			"Os mercadores atravessam o mundo pra comprar nosso cacau. Pagam em esmeralda, em ferro, em histórias.",
+			"Só não dá biscoito pro papagaio. Faz muito mal pra eles. Dá semente, que eles adoram."
+		]
+	]
+}

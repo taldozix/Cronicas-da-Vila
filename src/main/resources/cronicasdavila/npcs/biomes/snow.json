@@ -1,0 +1,52 @@
+{
+	"greet_friendly": [
+		"Brrr... {player}! Entra, entra, que tem fogueira acesa e sopa quente! A vila inteira estava esperando você.",
+		"{player}! Seu calor humano vale mais que dez fogueiras aqui na neve.",
+		"Que alegria! Até os ursos polares pararam de rosnar quando você chegou. Ou estão com frio demais pra rosnar."
+	],
+	"greet_neutral": [
+		"Brrr! Viajante, fecha a porta! Ah, não tem porta, estamos ao ar livre. Fecha o casaco, então.",
+		"Hrmm. Bem-vindo à vila da neve. Aqui o inverno dura o ano inteiro e a gente nem reclama mais.",
+		"Cuidado com a neve fofa! Já perdemos um aldeão lá dentro. Achamos ele na primavera. Que não existe aqui.",
+		"Olá, viajante. Se veio buscar gelo, chegou no lugar certo. É a única coisa que temos de sobra."
+	],
+	"greet_cold": [
+		"Hmm. Aqui faz frio, mas você me deu um arrepio diferente.",
+		"Você trouxe o frio na alma, viajante. Fica longe da fogueira."
+	],
+	"followup": [
+		"Que mais? Fala rápido, que a minha barba está congelando.",
+		"Pergunta. Mas chega mais perto da fogueira."
+	],
+	"bye": [
+		"Vai com cuidado! E use botas de couro, senão você afunda na neve fofa.",
+		"Até mais! Se ver um urso polar com filhote, dá a volta. Bem longe."
+	],
+	"lore": [
+		[
+			"A vida na neve é a mais difícil do mundo, viajante. Nada cresce direito. Só batata, beterraba e paciência.",
+			"No inverno mais forte, a gente fica semanas sem ver o sol. Só neve, vento e o barulho do gelo rachando.",
+			"Mas sabe o que é bonito? Quando a vila inteira se junta na mesma fogueira pra contar histórias. Calor de verdade é gente."
+		],
+		[
+			"Os <r>errantes</r> vivem nas planícies geladas. São esqueletos congelados, com flechas que deixam a gente lento.",
+			"Dizem que são aventureiros que se perderam na nevasca e nunca encontraram o caminho de volta.",
+			"Por isso a gente acende tochas no caminho toda noite. Pra que nenhum viajante vire um deles."
+		],
+		[
+			"Os <a>ursos polares</a> são mansos... até você chegar perto do filhote. Aí viram um pesadelo branco.",
+			"Uma vez o pescador quis pegar o peixe que um urso pegou. Ele voltou sem o peixe, sem o chapéu e sem metade da dignidade.",
+			"Moral da história: no gelo, o peixe é de quem chegou primeiro."
+		],
+		[
+			"Já viu um <a>iglu</a>? Às vezes, embaixo do tapete, tem um alçapão escondido.",
+			"Lá embaixo, dizem, tem um laboratório com um aldeão zumbi e um clérigo preso. Ninguém sabe quem fez aquilo.",
+			"Eu acho que foi alguém tentando curar zumbis. Ou criando eles. No frio, as pessoas fazem coisas estranhas."
+		],
+		[
+			"O <a>Inverno Longo</a> nasceu aqui, sabia? Os fazendeiros das planícies contam como lenda. Pra nós, é só terça-feira.",
+			"Uma vez a nevasca durou tanto que a gente esqueceu como era a cor da grama.",
+			"Quando o primeiro viajante chegou de fora, a gente perguntou: \"A grama ainda é verde?\" Ele chorou. Não sei por quê."
+		]
+	]
+}

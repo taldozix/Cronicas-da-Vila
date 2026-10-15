@@ -1,0 +1,47 @@
+{
+	"greet_friendly": [
+		"Olá, {player}! Senta no tronco, que tem chá de frutas doces fervendo. A floresta fica mais calma com você aqui.",
+		"{player}! Até as raposas pararam de roubar nossas coisas quando souberam que você vinha.",
+		"Que bom te ver! O cheiro de pinheiro fica mais gostoso com amigo por perto."
+	],
+	"greet_neutral": [
+		"Hrmm. Bem-vindo à vila da taiga. Cuidado com os arbustos de frutas doces, eles espetam.",
+		"Olá, viajante. Veio pela floresta? Viu algum lobo? A gente conta eles todo dia.",
+		"Bom dia. Aqui na taiga chove bastante, mas pelo menos a floresta é cheirosa.",
+		"Se alguma raposa roubar sua comida, não persegue. Ela é mais rápida que você. E mais esperta também."
+	],
+	"greet_cold": [
+		"Hmm. Os lobos uivaram quando você chegou. Eles sentem as coisas antes da gente.",
+		"Você tem cheiro de machado e de coisa errada. Fique longe dos nossos pinheiros."
+	],
+	"followup": [
+		"Que mais? A chuva vai começar logo.",
+		"Fala. A floresta escuta, mas eu escuto melhor."
+	],
+	"bye": [
+		"Vai com cuidado na floresta. E não come cogumelo que não conhece.",
+		"Até mais! Se uma raposa te seguir, ela quer seu pão. Dá um pedaço, ela vira amiga."
+	],
+	"lore": [
+		[
+			"As <a>raposas</a> da taiga são as maiores ladras do mundo. Pegam ovo, pão, pena, espada, qualquer coisa.",
+			"Uma vez uma raposa roubou o chapéu do bibliotecário enquanto ele dormia. Ele procurou por uma semana.",
+			"Achamos o chapéu numa toca, com três filhotes dormindo dentro. O bibliotecário deixou eles ficarem com o chapéu."
+		],
+		[
+			"Os <a>lobos</a> andam em matilha pela taiga. Se você der osso, eles viram cachorros leais pra sempre.",
+			"Os caçadores antigos da vila tinham matilhas inteiras. Os lobos protegiam as casas contra tudo.",
+			"Hoje a gente tem só alguns, mas cada um tem nome. O meu se chama Pinha. Ele odeia esqueletos."
+		],
+		[
+			"Lá no meio da taiga velha, os pinheiros são tão altos que o céu some. E tem um chão de terra escura que chamam de <a>podzol</a>.",
+			"Dizem que é lá que os cogumelos gigantes crescem, e que os coelhos mais antigos se escondem.",
+			"Eu me perdi lá uma vez. Voltei três dias depois, cheio de frutas, com um coelho no bolso e nenhuma explicação."
+		],
+		[
+			"A vida na taiga é de muito trabalho. Madeira pra cortar, lenha pra empilhar, telhado pra consertar depois da chuva.",
+			"Mas é uma vida boa. A floresta dá tudo que a gente precisa, se a gente souber pedir.",
+			"Regra da taiga: pra cada árvore que você corta, planta duas. Senão a floresta fica brava. E floresta brava tem lobo."
+		]
+	]
+}

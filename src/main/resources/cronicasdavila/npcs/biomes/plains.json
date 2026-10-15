@@ -1,0 +1,47 @@
+{
+	"greet_friendly": [
+		"Que dia lindo pra você aparecer, {player}! O campo tá dourado e as flores tão cheirosas.",
+		"Olha só, {player}! Aqui nas planícies todo mundo te conhece. Até os cavalos relincham quando você passa.",
+		"Bem-vindo de volta! A vila tá em festa desde que soubemos que você vinha."
+	],
+	"greet_neutral": [
+		"Bom dia, viajante! Bem-vindo às planícies. Aqui o vento é manso e o horizonte não acaba.",
+		"Hrmm. Você chegou pela estrada de terra? Cuidado com os buracos, os coelhos cavaram tudo.",
+		"Olá! Se veio pelos girassóis, eles ficam ali pro leste. Sempre olhando pro nascer do sol.",
+		"Que bom ter visita. Aqui nas planícies a gente vê gente chegando de longe. E monstro também, infelizmente."
+	],
+	"greet_cold": [
+		"Hmm. Nas planícies não tem onde se esconder, viajante. Nem você, nem o que você fez.",
+		"Te vi chegando de longe. E não gostei do que vi."
+	],
+	"followup": [
+		"Que mais? O dia tá bonito, temos tempo.",
+		"Pode falar. Aqui ninguém tem pressa."
+	],
+	"bye": [
+		"Vá em paz! E se ver um cavalo bonito, me conta.",
+		"Até mais! Aproveita o pôr do sol, aqui ele é o mais bonito do mundo."
+	],
+	"lore": [
+		[
+			"As planícies são o lugar mais bonito pra viver, viajante. Mas também o mais perigoso.",
+			"Sem montanhas, sem florestas, sem muros naturais. Os saqueadores enxergam a vila de longe e vêm em linha reta.",
+			"Por isso a nossa vila tem o maior golem da região. E dois sinos. Um não basta."
+		],
+		[
+			"Já viu uma manada de <a>cavalos selvagens</a> correndo pelo campo? É a coisa mais bonita que existe.",
+			"Cada cavalo tem uma cor, uma mancha, uma personalidade. Alguns são rápidos, outros pulam alto, outros só comem.",
+			"Eu domei um quando era jovem. Ele me derrubou quarenta vezes. Na quadragésima primeira, virou meu melhor amigo."
+		],
+		[
+			"Os <a>girassóis</a> sempre apontam pro leste, pra onde o sol nasce. Os viajantes usam eles como bússola.",
+			"Dizem que o primeiro aldeão perdido nas planícies achou o caminho de casa seguindo os girassóis.",
+			"Desde então, toda vila de planície planta girassol na entrada. Pra ninguém se perder voltando pra casa."
+		],
+		[
+			"Aqui nas planícies a gente tem a melhor festa da colheita do mundo. Dura três dias.",
+			"Tem corrida de cavalo, concurso de abóbora e o bobão da vila tentando dançar. Esse é o melhor momento.",
+			"Ano passado ele dançou tanto que caiu dentro do poço. A gente tirou ele com balde. Ele saiu dançando."
+		]
+	]
+}

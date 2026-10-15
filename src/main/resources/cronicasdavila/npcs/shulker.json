@@ -1,0 +1,132 @@
+{
+	"greet_friendly": [
+		"<p>*clac*</p> ...{player}. A criatura de fora que não rouba cascas. Os anciões falam de você.",
+		"<p>*clac clac*</p> Você voltou. Que bom. O vazio fica menos vazio quando você está aqui.",
+		"Ah, {player}. Trouxe fruta do coro? Não precisa. Mas se trouxe... <p>*clac*</p>",
+		"Bem-vindo de novo ao Fim, amigo das cascas. Fique. O silêncio aqui é gentil com quem respeita."
+	],
+	"greet_neutral": [
+		"<p>*clac*</p> ...Uma criatura de fora. Com fruta do coro na mão. Interessante. Fale.",
+		"Você cheira a mundo verde e a fogo do Nether. Faz tempo que não sinto esses cheiros. Diga o que deseja.",
+		"<p>*clac*</p> Não, eu não sou uma caixa. Eu MORO numa caixa. É diferente. Fale.",
+		"Ora. Alguém que fala antes de atirar. Que novidade, depois de trezentos anos."
+	],
+	"greet_cold": [
+		"<p>*clac*</p> ...Você tem cheiro de casca roubada. Fale rápido.",
+		"Hmm. Conheço criaturas como você. Vêm, matam, levam. Fale antes que eu feche."
+	],
+	"hostile": [
+		"<p>*CLAC!*</p> Fora. Você vai flutuar até as estrelas e cair no esquecimento.",
+		"<r>Não.</r> Minha casca está fechada para você."
+	],
+	"followup": [
+		"<p>*clac*</p> ...Mais alguma coisa?",
+		"Fale. O tempo aqui não tem pressa.",
+		"Ainda aí? Bom. Pergunte.",
+		"O vazio escuta. Eu também."
+	],
+	"decline": [
+		"<p>*clac*</p> ...Tudo bem. Eu espero. Eu sou ótimo em esperar.",
+		"Entendo. Volte quando quiser. Daqui a um dia ou a cem anos. Eu vou estar aqui.",
+		"Hmm. Os Altos também dizem não para tudo. Mas eles não pedem desculpa depois."
+	],
+	"locked": [
+		"Este pedido exige alguém que já viu mais do mundo. Volte mais forte. <p>*clac*</p>",
+		"Ainda não, criatura de fora. Os anciões não confiam isso a qualquer um."
+	],
+	"repeat": [
+		"<p>*clac*</p> O vazio desfez o que você fez. Ele sempre desfaz. Faria de novo? A recompensa é menor; a gratidão, a mesma.",
+		"Lembra do pedido de antes? O Fim precisa dele outra vez."
+	],
+	"bye": [
+		"<p>*clac*</p> ...Vá em paz. E não caia no vazio. Ninguém volta de lá.",
+		"Até logo, criatura de fora. Que os Altos não te encarem.",
+		"<p>*clac clac*</p> Isso foi um tchau."
+	],
+	"abandon": [
+		"<p>*clac*</p> ...Tudo bem. O vazio também desiste de tudo um dia.",
+		"Entendo. Eu volto para dentro da casca agora."
+	],
+	"lore": [
+		[
+			"Antes de nós, antes dos Altos, viviam aqui os <a>Voadores</a>. Seres de asas largas que construíram as primeiras ilhas.",
+			"Um dia, eles abriram um portal para o seu mundo. E nunca mais voltaram. Só deixaram as asas para trás.",
+			"Nós construímos as cidades para esperar por eles. Já se passaram dez mil anos. <p>*clac*</p> Ainda esperamos."
+		],
+		[
+			"Vocês fazem caixas com as nossas cascas. Caixas que guardam coisas e não perdem nada quando quebram.",
+			"Sabe por que funciona? Porque uma casca de shulker nunca esquece o que guardou. Nem nós.",
+			"Eu lembro de cada criatura que passou por aqui. Algumas me deram fruta. A maioria me deu flechada. Eu lembro de todas."
+		],
+		[
+			"Nossas balas fazem as criaturas flutuarem. Vocês acham que é ataque. Não é. É um <p>convite</p>.",
+			"Antigamente, flutuar era como os habitantes do Fim se cumprimentavam. Um abraço que levanta do chão.",
+			"Infelizmente, vocês caem depois. Isso estraga o cumprimento."
+		],
+		[
+			"Os <r>Altos</r> eram nobres, sabia? Guardiões das ilhas. Até que o dragão chegou e tirou deles o que amavam.",
+			"Desde então, carregam blocos de um lugar para outro tentando reconstruir algo que nem lembram mais o que era.",
+			"Eu tenho pena deles. Mas não conte. Eles ficam bravos com pena também."
+		],
+		[
+			"O vazio embaixo das ilhas não tem fundo. Tudo que cai lá desaparece. Pedras, criaturas, memórias.",
+			"Alguns shulkers acreditam que o vazio é a porta para o lugar onde os Voadores foram.",
+			"Eu acho que o vazio é só o vazio. Mas não digo isso aos jovens. Esperança faz bem para a casca."
+		],
+		[
+			"Já reparou que nossas cascas mudam de cor quando vocês as tingem? Gostamos muito disso.",
+			"Ficar roxo por mil anos é monótono. Um shulker rosa de vez em quando alegra a cidade.",
+			"Se um dia você tingir uma caixa de amarelo, pense em mim. Sempre quis ser amarelo. <p>*clac*</p>"
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda com alguma coisa?",
+		"O Fim tem alguma tarefa para mim?",
+		"Posso fazer algo pelos shulkers?",
+		"Tem missão para uma criatura de fora?"
+	],
+	"player_accept": [
+		"Pode contar comigo.",
+		"Aceito. Pelo Fim.",
+		"Considere feito, amigo casca.",
+		"Vou fazer isso."
+	],
+	"player_why": [
+		"Por que isso é importante para vocês?",
+		"O que eu ganho com isso?",
+		"Por que você mesmo não faz?",
+		"Me conta mais."
+	],
+	"player_decline": [
+		"Agora não.",
+		"Passo, por enquanto.",
+		"Ainda não estou pronto.",
+		"Não posso agora."
+	],
+	"player_lore": [
+		"Me conta sobre o Fim.",
+		"Quem construiu as cidades?",
+		"Fala dos Voadores.",
+		"O que existe no vazio?"
+	],
+	"player_bye": [
+		"Até mais, amigo casca.",
+		"Fui. Cuida da casca.",
+		"Tchau. Não fecha pra sempre, hein.",
+		"Até a próxima."
+	],
+	"names": [
+		"Ancião Púrpura", "Casca-Velha", "Vigia do Vazio", "Mãe Coral", "Guardião Silencioso", "Clac-Clac", "Lilás", "Vazio-Profundo",
+		"Eco Antigo", "Torre-Alta"
+	],
+	"extra": {
+		"no_chorus": [
+			"<p>*clac*</p> ...Uma criatura de fora sem <p>fruta do coro</p>. Volte com uma na mão. Ou volte flutuando. A escolha é sua.",
+			"Nós só conversamos com quem traz o sabor do Fim. <p>Fruta do coro</p>, criatura de fora. Na mão.",
+			"<p>*CLAC*</p> Sem fruta do coro, sem conversa. Regra antiga. Mais antiga que suas vilas."
+		],
+		"sleeping": [
+			"<p>*...*</p> <d>(a casca está fechada. O shulker parece estar descansando.)</d>"
+		]
+	}
+}

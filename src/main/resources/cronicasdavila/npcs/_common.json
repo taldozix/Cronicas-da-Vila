@@ -108,8 +108,22 @@
 		"Fui!"
 	],
 	"names": [
-		"Seu Zé", "Dona Cida", "Tonhão", "Dona Benta", "Seu Lindolfo", "Mariazinha", "Dona Neném", "Seu Juca",
-		"Toninho", "Dona Fia", "Seu Valdomiro", "Rosinha", "Seu Bené", "Dona Lurdinha", "Chico", "Dona Zuleide"
+		"Seu Zé",
+		"Dona Cida",
+		"Tonhão",
+		"Dona Benta",
+		"Seu Lindolfo",
+		"Mariazinha",
+		"Dona Neném",
+		"Seu Juca",
+		"Toninho",
+		"Dona Fia",
+		"Seu Valdomiro",
+		"Rosinha",
+		"Seu Bené",
+		"Dona Lurdinha",
+		"Chico",
+		"Dona Zuleide"
 	],
 	"extra": {
 		"sleeping": [
@@ -120,6 +134,12 @@
 		"no_profession": [
 			"Trabalho? Eu nem tenho emprego, como é que vou te dar um? Se achar uma mesa de trabalho sobrando, me avisa.",
 			"Tô procurando uma profissão ainda. Pensei em ser bibliotecário, mas não sei ler. Pensei em pescador, mas tenho medo de água."
+		],
+		"villain_seen": [
+			"<r>É O VILÃO DA HISTÓRIA!</r> Socorro! Alguém toca o sino! Ah, é verdade... você arrancou o sino.",
+			"<r>Não me machuca!</r> Eu tenho família! Tenho três filhos e uma composteira!",
+			"Hrmm?! <r>HRMMMM!</r> <d>(o aldeão está tremendo tanto que não consegue formar uma frase)</d>",
+			"<r>Fica longe!</r> As histórias que contam de você chegam até as crianças. Elas não dormem mais."
 		]
 	}
 }

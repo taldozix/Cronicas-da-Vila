@@ -1,0 +1,52 @@
+{
+	"greet_friendly": [
+		"Ah, {player}! Que alegria. Tome um gole d'água do poço... só um gole, viu? Aqui no deserto cada gota é contada.",
+		"{player}! O vento quente trouxe você até nós. A vila inteira guarda a sombra mais fresca pra você.",
+		"Bem-vindo de volta, amigo da areia! Se as caravanas tivessem metade da sua coragem, o deserto seria um jardim."
+	],
+	"greet_neutral": [
+		"Hrmm. Viajante, você está queimado de sol. Aqui no deserto ninguém anda ao meio-dia, só os loucos e os zumbis.",
+		"Bem-vindo à vila de arenito. Água tem pouca, sombra tem menos, mas hospitalidade sobra.",
+		"Ufa, que calor! Desculpa o suor, viajante. Aqui a gente sua até pensando.",
+		"Cuidado com os cactos na entrada. Já perdemos três aldeões e um bode... digo, uma cabra. Não temos bodes. Calor demais."
+	],
+	"greet_cold": [
+		"Hmm. Você bebeu da nossa água sem pedir? A areia tem olhos, viajante.",
+		"Aqui no deserto, quem desperdiça água ou confiança não é bem-vindo. E você parece desperdiçar os dois."
+	],
+	"followup": [
+		"Mais alguma coisa? Fale enquanto ainda tem saliva.",
+		"Pergunte. Mas rápido, que a sombra está mudando de lugar."
+	],
+	"bye": [
+		"Vá com cuidado. E leve água. Muita água.",
+		"Até mais. Se ver uma pirâmide, não pise no meio da sala. Confie em mim."
+	],
+	"lore": [
+		[
+			"A vida no deserto é dura, viajante. Faz <y>três anos</y> que não chove direito aqui. As plantações de cacto são as únicas que aguentam.",
+			"O poço da vila está cada vez mais fundo. Toda semana alguém desce mais um pouco pra puxar água.",
+			"Meu avô dizia que antigamente tinha um oásis aqui, com palmeiras e peixes. Hoje só tem areia e saudade."
+		],
+		[
+			"Os <r>zumbis do deserto</r> são diferentes dos outros. O sol não queima eles. Ficam vagando de dia, com a pele seca e os olhos famintos.",
+			"Quando mordem, dão uma fome que não passa. Por isso aqui todo mundo carrega pão no bolso.",
+			"Eles são aldeões de vilas que secaram, sabia? A sede transformou eles. É por isso que a gente cuida tanto do poço."
+		],
+		[
+			"Já viu uma <a>pirâmide</a>? Ficam enterradas na areia, com quatro baús escondidos lá embaixo.",
+			"Os antigos construtores colocaram dinamite debaixo do chão, presa numa placa de pressão. Quem pisa sem cuidado... BUM.",
+			"Os mais jovens da vila acham que é lenda. Até o primo do pedreiro voltar sem as sobrancelhas."
+		],
+		[
+			"Os <a>camelos</a> são os melhores amigos do povo do deserto. Aguentam calor, carregam duas pessoas e nunca reclamam.",
+			"Bom, nunca reclamam em voz alta. Eles fazem uma cara de desprezo que diz tudo.",
+			"Se você domar um, cuide bem dele. Camelo lembra de quem foi gentil. E de quem não foi."
+		],
+		[
+			"Areia suspeita, viajante. Às vezes, nos poços abandonados do deserto, a areia esconde coisas antigas.",
+			"Com um pincel e muita paciência, a gente acha cerâmica de povos que viveram aqui antes da seca.",
+			"Os desenhos contam de rios, chuva e festas. Parece até outro mundo. Era o nosso mundo, antes."
+		]
+	]
+}

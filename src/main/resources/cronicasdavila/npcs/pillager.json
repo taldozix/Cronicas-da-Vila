@@ -1,0 +1,132 @@
+{
+	"greet_friendly": [
+		"Ora, ora... {player}! O pesadelo dos mansos em pessoa! Chega mais, a besta tá descarregada. Por enquanto.",
+		"HAHAHA! Olha quem apareceu! Os narigudos ainda choram quando ouvem seu nome, sabia?",
+		"{player}, meu cúmplice favorito. A mansão inteira brindou em sua homenagem ontem. Com suco de beterraba roubada.",
+		"Bem-vindo de volta, parceiro do caos. Qual vila a gente vai estragar hoje?"
+	],
+	"greet_neutral": [
+		"Hmpf. Você não fede a manso. Ainda. Fala logo o que quer.",
+		"Mais um curioso. Se veio vender esmeralda, errou de lugar. A gente não compra. A gente pega.",
+		"Olha só... alguém com coragem de chegar perto de um Exilado. Ou burrice. Vamos descobrir qual.",
+		"Abaixa a voz. Se um golem ouvir a gente conversando, o passeio acaba."
+	],
+	"greet_cold": [
+		"Tô sentindo cheiro de manso em você. Cheiro de pão quentinho e boas ações. Eca.",
+		"Você ajuda os narigudos, não é? Então por que está falando comigo? Espião?",
+		"Hmpf. Fala rápido, queridinho das vilas, antes que eu mude de ideia sobre não atirar."
+	],
+	"hostile": [
+		"<r>O herói dos mansos?!</r> Aqui não, aqui você é só um alvo com armadura bonita. <r>Some!</r>",
+		"<r>Eu conheço essa cara!</r> Foi você que estragou nossa última invasão. Volta pros seus narigudos!"
+	],
+	"followup": [
+		"Que mais, cúmplice?",
+		"Fala. Mas fala baixo.",
+		"E aí? Mais algum plano maligno?",
+		"Hmpf. Ainda aqui? Diz."
+	],
+	"decline": [
+		"Covarde. Mas tudo bem, os covardes vivem mais. Só não vivem bem.",
+		"Hmpf. Vai lá abraçar um golem então.",
+		"Tá bom. Vou mandar um vingador fazer. Ele vai quebrar a vila inteira, mas sem a sua elegância."
+	],
+	"locked": [
+		"Você ainda é peixe pequeno pros serviços grandes. Ganha fama fazendo trabalho sujo e volta.",
+		"Nem pensar. O Grande Evocador só confia serviço desses a quem já provou que não tem coração."
+	],
+	"repeat": [
+		"Os mansos reconstruíram tudo. Sempre reconstroem, os teimosos. Faz de novo? Paga menos, mas diverte igual.",
+		"Lembra daquele serviço? Pois é. Os narigudos não aprendem. A gente também não."
+	],
+	"bye": [
+		"Some daqui antes que alguém veja a gente junto.",
+		"Até a próxima invasão, cúmplice.",
+		"Vai. E se um manso perguntar, você nunca me viu."
+	],
+	"abandon": [
+		"Desistiu? Os Exilados não esquecem quem amarela.",
+		"Hmpf. Achei que você tinha estômago pra isso."
+	],
+	"lore": [
+		[
+			"Quer saber a verdade sobre os <r>Exilados</r>? Os mansos contam que a gente foi expulso por praticar magia proibida.",
+			"Mentira pela metade. A gente foi expulso por fazer perguntas. Por querer saber o que tinha além das plantações e das trocas por esmeralda.",
+			"Encontramos livros antigos, aprendemos a invocar, a enfeitiçar. E os mansos, com medo, nos chutaram pra floresta escura. Desde então, a gente devolve o favor."
+		],
+		[
+			"Sabe por que todo saqueador tem o nariz grande? Porque somos <a>primos</a> dos narigudos. Mesma família, lados diferentes.",
+			"Às vezes, numa invasão, eu olho pra um aldeão e vejo o rosto do meu avô. Aí eu lembro que meu avô era insuportável e sigo em frente."
+		],
+		[
+			"Já viu um <r>devastador</r>? É nosso bicho de estimação. Do tamanho de uma casa, com chifres que derrubam muralha.",
+			"A gente cria eles desde filhotes na mansão. Comem feno roubado e dormem em cima da gente.",
+			"Ele tem nome, sabia? O meu se chama Fofinho. Fofinho já destruiu dezessete vilas."
+		],
+		[
+			"O <a>Grande Evocador</a> mora na parte mais escura da mansão. Ninguém vê o rosto dele há anos.",
+			"Dizem que ele guarda o segredo do <o>Totem da Imortalidade</o>, que roubamos dos clérigos das vilas há séculos.",
+			"Os clérigos ainda choram por isso. Bem feito. Quem mandou deixar o artefato mais poderoso do mundo numa estante sem tranca?"
+		],
+		[
+			"Nosso estandarte tem um rosto cinza. Sabe de quem é? Do primeiro Exilado expulso da vila.",
+			"A gente carrega o rosto dele em cada patrulha, pra nunca esquecer por que luta.",
+			"Quando você mata um capitão e pega o estandarte, sente o <r>mau presságio</r>. É o rosto te olhando, cobrando vingança."
+		],
+		[
+			"Os <r>ilusionistas</r> eram os mais poderosos de nós. Faziam cópias de si mesmos, ficavam invisíveis...",
+			"Um dia, sumiram. Todos ao mesmo tempo. Uns dizem que foram pra outra dimensão. Outros dizem que foram esquecidos pelo próprio mundo.",
+			"Eu acho que eles ficaram tão bons em se esconder que se esconderam de si mesmos. Ilusionista é assim, exagera em tudo."
+		]
+	],
+	"player_work": [
+		"Tem algum serviço sujo pra mim?",
+		"Qual vila a gente estraga hoje?",
+		"Preciso de trabalho. Do tipo que os mansos odeiam.",
+		"O Grande Evocador precisa de alguma coisa?"
+	],
+	"player_accept": [
+		"Fechado. Os mansos que se preparem.",
+		"Muahaha... considera feito.",
+		"Pode deixar. Vou fazer com capricho.",
+		"Aceito. Ninguém vai saber que fui eu."
+	],
+	"player_why": [
+		"E por que eu faria isso?",
+		"O que eu ganho com isso?",
+		"O que os aldeões te fizeram, afinal?",
+		"Me convence."
+	],
+	"player_decline": [
+		"Hoje não, valeu.",
+		"Isso é baixo até pra mim.",
+		"Passo. Tenho consciência. Às vezes.",
+		"Nem pensar."
+	],
+	"player_lore": [
+		"Me conta a história dos Exilados.",
+		"Por que vocês odeiam tanto os aldeões?",
+		"Fala da mansão.",
+		"Quem é o Grande Evocador?"
+	],
+	"player_bye": [
+		"Até a próxima invasão.",
+		"Fui. Ninguém me viu aqui.",
+		"Tchau, primo narigudo.",
+		"Some você primeiro."
+	],
+	"names": [
+		"Capitão Rancor", "Mão-Leve", "Dona Vingança", "Sargento Ódio", "Trapaça", "Dona Cizânia", "Tormento", "Mau-Olhado",
+		"Capitão Fuligem", "Dona Discórdia", "Pé-de-Cabra", "Maldito Edgar"
+	],
+	"extra": {
+		"untrusted": [
+			"Abaixa as mãos e não se mexe. Você não é um de nós. Mostra uma <p>garrafa ominosa</p> na mão, ou volta quando os mansos tiverem motivo pra te odiar.",
+			"Hmpf. Quem me garante que você não é espião dos narigudos? Traz uma <p>garrafa ominosa</p> ou suja um pouco essa sua reputação limpinha.",
+			"Exilado não conversa com estranho. Prova que você é do nosso lado: <p>garrafa ominosa</p> na mão, ou um karma bem negativo."
+		],
+		"sleeping": [
+			"Zzz... <d>(o saqueador está cochilando encostado na besta. Melhor não acordar.)</d>"
+		]
+	}
+}
