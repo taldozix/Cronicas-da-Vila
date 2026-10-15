@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.UUID;
 
 import com.google.gson.JsonArray;
+import com.mojang.serialization.Codec;
 import com.google.gson.JsonObject;
 
 import net.minecraft.core.Holder;
@@ -27,6 +28,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 
+import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
+import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
 import br.com.cronicasdavila.compat.VanillaCompat;
@@ -48,12 +51,18 @@ import br.com.cronicasdavila.rank.Rank;
  * Toda a lógica roda no servidor; o cliente só desenha a caixa de diálogo.
  */
 public final class DialogueManager {
-	public static final String FROZEN_TAG = "cronicasdavila_conversando";
+	/** Marca o NPC congelado na conversa (guarda o valor anterior de NoAI). Fica salvo no mundo. */
+	public static final AttachmentType<Boolean> FROZEN = AttachmentRegistry.createPersistent(
+			br.com.cronicasdavila.CronicasDaVila.id("frozen_npc"), Codec.BOOL);
 	private static final double MAX_DISTANCE = 7.0;
 
 	private static final Map<UUID, DialogueSession> SESSIONS = new HashMap<>();
 
 	private DialogueManager() {
+	}
+
+	/** Força o registro do attachment antes de qualquer entidade carregar. */
+	public static void init() {
 	}
 
 	// ---------------------------------------------------------------------------------------------
@@ -149,23 +158,23 @@ public final class DialogueManager {
 	private static void freeze(DialogueSession session) {
 		Mob npc = session.npc;
 		npc.getNavigation().stop();
+		npc.setAttached(FROZEN, session.previousNoAi);
 		npc.setNoAi(true);
-		npc.addTag(FROZEN_TAG);
 		faceEachOther(session);
 	}
 
 	private static void unfreeze(DialogueSession session) {
 		Mob npc = session.npc;
 
-		if (npc.getTags().contains(FROZEN_TAG)) {
-			npc.removeTag(FROZEN_TAG);
+		if (npc.hasAttached(FROZEN)) {
+			npc.removeAttached(FROZEN);
 			npc.setNoAi(session.previousNoAi);
 		}
 	}
 
 	/** Se o servidor caiu no meio de uma conversa, o NPC volta ao normal quando carregar. */
 	public static void onEntityLoad(Entity entity) {
-		if (entity instanceof Mob mob && mob.getTags().contains(FROZEN_TAG)) {
+		if (entity instanceof Mob mob && mob.hasAttached(FROZEN)) {
 			boolean inSession = false;
 
 			for (DialogueSession session : SESSIONS.values()) {
@@ -176,8 +185,8 @@ public final class DialogueManager {
 			}
 
 			if (!inSession) {
-				mob.removeTag(FROZEN_TAG);
-				mob.setNoAi(false);
+				Boolean previous = mob.removeAttached(FROZEN);
+				mob.setNoAi(previous != null && previous);
 			}
 		}
 	}

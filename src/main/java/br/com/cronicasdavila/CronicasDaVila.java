@@ -47,6 +47,7 @@ public class CronicasDaVila implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		PlayerDataManager.init();
+		DialogueManager.init();
 		ModPayloads.register();
 		QuestRegistry.load();
 

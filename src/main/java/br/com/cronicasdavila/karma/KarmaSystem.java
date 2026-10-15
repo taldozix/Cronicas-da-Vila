@@ -287,9 +287,8 @@ public final class KarmaSystem {
 			if (distance > 1.9) {
 				animal.getNavigation().moveTo(player, 1.3);
 			} else if (player.getRandom().nextFloat() < 0.35F) {
-				animal.swing(net.minecraft.world.InteractionHand.MAIN_HAND);
+				// O dano de "ataque de criatura" já empurra o jogador para trás.
 				player.hurtServer(level, level.damageSources().mobAttack(animal), 1.0F);
-				player.knockback(0.5, animal.getX() - player.getX(), animal.getZ() - player.getZ());
 			}
 		}
 

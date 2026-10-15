@@ -14,6 +14,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -473,7 +474,8 @@ public final class QuestService {
 			}
 
 			if (!player.getInventory().add(stack)) {
-				player.drop(stack, false);
+				ServerLevel level = (ServerLevel) player.level();
+				level.addFreshEntity(new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack));
 			}
 		}
 	}
