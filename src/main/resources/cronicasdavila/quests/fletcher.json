@@ -1,0 +1,295 @@
+{
+	"quests": [
+		{
+			"id": "fletcher_1_penas",
+			"tier": 1,
+			"title": "Penas, Muitas Penas",
+			"tone": "calm",
+			"offer": [
+				"Orra, meu! Tu chegou bem na hora. Tipo assim, eu tô com um pedidão de flechas pra guarda da vila e ZERO penas.",
+				"Sem pena a flecha sai voando torto, saca? Parece o bobão da vila tentando dançar.",
+				"Preciso de penas de galinha. É o básico do básico, mano."
+			],
+			"why": [
+				"A guarda da vila treina toda semana no campo de tiro. Sem flecha, sem treino. Sem treino, a mira vai pro espaço.",
+				"E na hora que os saqueadores aparecerem, tu quer que a guarda erre? Eu não quero, meu."
+			],
+			"accept": [
+				"Da hora! Galinha tem em todo canto. Cria umas que é mais fácil.",
+				"<g>Traga</g> <y>24 penas</y>."
+			],
+			"progress": [
+				"Galinha bota ovo, ovo vira pintinho, pintinho vira galinha, galinha vira pena. Ciclo da vida, mano.",
+				"Joga semente pra elas se reproduzirem. Fica rápido."
+			],
+			"complete": [
+				"Penas fofinhas! Agora vai sair flecha que é uma beleza. Reta igual linha de metrô, meu.",
+				"Toma umas esmeraldas e flechas pra tu treinar também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:feather"], "count": 24, "desc": "<g>Entregue</g> <y>24 penas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:arrow", "count": 24}]
+		},
+		{
+			"id": "fletcher_1_tiro",
+			"tier": 1,
+			"title": "Concorrência Desleal",
+			"tone": "danger",
+			"offer": [
+				"Mano, tu sabe quem são meus maiores concorrentes? Os <r>esqueletos</r>. Eles têm arco, flecha e NENHUM respeito pelo mercado.",
+				"Ficam atirando de graça em todo mundo que passa na estrada. Como é que eu vou vender flecha assim?",
+				"Tipo assim, se tu derrubar uns, a gente resolve a crise econômica e de quebra salva vidas."
+			],
+			"why": [
+				"Sério agora: os esqueletos tão acertando os viajantes que vêm comprar na vila. Ninguém quer mais passar por aqui.",
+				"E os ossos que eles deixam viram farinha de osso pro fazendeiro. Todo mundo ganha, meu."
+			],
+			"accept": [
+				"Da hora! Usa escudo, que eles miram bem pra caramba.",
+				"<r>Elimine 15 esqueletos</r>."
+			],
+			"progress": [
+				"Eles fogem do sol e ficam nas sombras e cavernas. De noite saem em peso.",
+				"Chega perto em zigue-zague, meu. Eles têm que recalcular a mira."
+			],
+			"complete": [
+				"A estrada tá livre e o movimento voltou! Vendi três arcos hoje de manhã, orra!",
+				"Toma ferro e flechas. Usa elas bem, que flecha minha é artesanal."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:arrow", "count": 32}]
+		},
+		{
+			"id": "fletcher_2_pederneira",
+			"tier": 2,
+			"title": "Ponta Afiada",
+			"tone": "calm",
+			"offer": [
+				"Meu, sabe qual é o segredo de uma flecha que perfura armadura? A ponta. E a melhor ponta é de <y>sílex</y>.",
+				"Sílex sai do cascalho, mas só de vez em quando. Tem que quebrar muito cascalho pra juntar uma quantidade boa.",
+				"E eu tô ocupado demais com os pedidos. A guarda quer mil flechas pra ontem, mano."
+			],
+			"why": [
+				"Ponta de sílex atravessa armadura de saqueador. Sem isso, a flecha bate e cai que nem bolinha de papel.",
+				"Sílex também acende fogo com isqueiro. Útil pra caramba numa emergência."
+			],
+			"accept": [
+				"Da hora! Cascalho tem em rio, praia e montanha. Quebra com pá que é mais rápido.",
+				"<g>Traga</g> <y>32 sílex</y>."
+			],
+			"progress": [
+				"Se tu colocar o cascalho no chão e quebrar de novo, tem outra chance de sair sílex. Truque das antigas.",
+				"Encantamento de Fortuna na pá aumenta a chance."
+			],
+			"complete": [
+				"Sílex de primeira! As pontas vão ficar afiadas que nem a língua da minha sogra.",
+				"Toma esmeraldas e um livro de <p>Força</p>. Teu arco vai bater muito mais forte."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:flint"], "count": 32, "desc": "<g>Entregue</g> <y>32 sílex</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 2}]
+		},
+		{
+			"id": "fletcher_2_alvo",
+			"tier": 2,
+			"title": "Olho de Águia",
+			"tone": "calm",
+			"offer": [
+				"Mano, vai ter o <a>Torneio de Arco e Flecha</a> da região! Tipo, todas as vilas competindo.",
+				"Minha vila nunca ganhou. NUNCA, meu. Tô cansado de ver a vila do deserto levando o troféu todo ano.",
+				"Preciso de um atirador de verdade pra mostrar pros jovens como se acerta no centro do alvo."
+			],
+			"why": [
+				"Se a vila ganhar, a gente fica com o troféu e o respeito de todo mundo. E as caravanas preferem passar em vila respeitada.",
+				"Além do mais, mira boa salva vida. É treino de verdade disfarçado de diversão."
+			],
+			"accept": [
+				"Orra, valeu! Bloco-alvo se faz com feno e redstone. Atira de longe, que perto não vale.",
+				"<g>Acerte</g> <y>20 flechas em blocos-alvo</y>."
+			],
+			"progress": [
+				"Bloco-alvo: quatro redstone em volta de um fardo de feno.",
+				"Quanto mais perto do centro, mais forte o sinal de redstone. Os profissionais ligam uma lâmpada atrás."
+			],
+			"complete": [
+				"Que mira, meu! Os jovens ficaram de queixo caído. Esse ano o troféu é nosso!",
+				"Toma esmeraldas, uma besta e um diamante. Tu é o novo instrutor de tiro da vila. Sem salário, claro."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:target_hit"], "count": 20, "desc": "<g>Acerte</g> <y>20 flechas em blocos-alvo</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:crossbow", "count": 1}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "fletcher_3_saqueadores",
+			"tier": 3,
+			"title": "Bestas Contra Arcos",
+			"tone": "danger",
+			"offer": [
+				"Meu, tem uma <r>torre de vigia</r> dos saqueadores aqui perto. Os caras tão estudando a vila, tipo espionagem mesmo.",
+				"Eles usam besta, que é tipo um arco que se acha mais esperto. Recarrega devagar mas machuca pra caramba.",
+				"É questão de honra, mano: arco contra besta. Mostra pra eles quem manda."
+			],
+			"why": [
+				"Se eles terminarem de estudar a vila, vão mandar uma invasão. E aí não tem flecha que chegue.",
+				"Tu já é <o>Aventureiro</o>. Saqueador sozinho não assusta mais tu, né?"
+			],
+			"accept": [
+				"Da hora! Pega distância e aproveita o tempo de recarga deles.",
+				"<r>Elimine 10 saqueadores</r>."
+			],
+			"progress": [
+				"As torres de vigia são altas, de madeira escura. Tem uns golens de ferro presos às vezes, solta eles!",
+				"Patrulhas andam por aí também, com o capitão carregando o estandarte."
+			],
+			"complete": [
+				"Arco 10, besta 0! Que vitória, meu! Os espiões sumiram.",
+				"Toma diamantes, uma maçã dourada e um livro de <p>Carga Rápida</p>, caso tu queira usar besta. Não conto pra ninguém."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager"], "count": 10, "desc": "<r>Elimine</r> <r>10 saqueadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:quick_charge", "level": 2}]
+		},
+		{
+			"id": "fletcher_3_espectrais",
+			"tier": 3,
+			"title": "Flechas Espectrais",
+			"tone": "calm",
+			"offer": [
+				"Mano, tu já viu uma <p>flecha espectral</p>? Ela faz o alvo brilhar através das paredes. É tipo um GPS de monstro.",
+				"A guarda noturna pediu um estoque. Com elas, dá pra ver os inimigos escondidos no escuro.",
+				"Só que pra fazer precisa de <y>pó de pedra luminosa</y>, que vem lá do teto do Nether. Eu não vou no Nether, meu. Tenho rinite."
+			],
+			"why": [
+				"A guarda noturna perdeu dois golens semana passada por emboscada no escuro. Com flecha espectral, nada se esconde.",
+				"E sinceramente? Flecha que brilha é muito estilosa. Combina com tudo."
+			],
+			"accept": [
+				"Valeu, meu! Quatro de pó luminoso em volta de uma flecha dá duas espectrais.",
+				"<g>Traga</g> <y>32 flechas espectrais</y>."
+			],
+			"progress": [
+				"Pedra luminosa fica pendurada no teto do Nether. Quebra e vira pó.",
+				"Bruxas às vezes deixam pó de pedra luminosa também."
+			],
+			"complete": [
+				"Que brilho! A guarda noturna vai virar a guarda que tudo vê.",
+				"Toma diamantes, um livro de <p>Impacto</p> e frascos de experiência. Tu ilumina a noite, mano."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:spectral_arrow"], "count": 32, "desc": "<g>Entregue</g> <y>32 flechas espectrais</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:punch", "level": 2}, {"item": "minecraft:experience_bottle", "count": 10}]
+		},
+		{
+			"id": "fletcher_4_ghasts",
+			"tier": 4,
+			"title": "O Tiro Impossível",
+			"tone": "danger",
+			"offer": [
+				"Meu, tem uma lenda que todo flecheiro conhece: o <a>Tiro Impossível</a>. Acertar um <r>ghast</r> no céu do Nether.",
+				"Os ghasts são aquelas águas-vivas gigantes que choram e cospem bolas de fogo. Ficam voando alto, longe pra caramba.",
+				"Meu avô dizia que só um verdadeiro mestre do arco consegue. Eu nunca consegui. Mas tu..."
+			],
+			"why": [
+				"Os ghasts tão destruindo os portais que ligam a vila ao Nether. Sem portal, sem comércio com os piglins.",
+				"E sério: é um desafio de <o>Guerreiro</o>. Bola de fogo, lava, céu aberto. Só os melhores."
+			],
+			"accept": [
+				"Orra, tu vai mesmo! Dica: dá pra rebater a bola de fogo deles com um soco ou uma flechada.",
+				"<r>Elimine 8 ghasts</r>."
+			],
+			"progress": [
+				"Ghast tem pouca vida. O difícil é acertar de longe. Mira um pouquinho acima.",
+				"Quando ouvir o choro alto, ele vai cuspir. Prepara pra rebater."
+			],
+			"complete": [
+				"Tu fez o Tiro Impossível, meu! OITO VEZES! Meu avô tá dançando no túmulo!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Infinidade</p>. Nunca mais te falta flecha."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 8, "desc": "<r>Elimine</r> <r>8 ghasts</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:infinity", "level": 1}]
+		},
+		{
+			"id": "fletcher_4_ventos",
+			"tier": 4,
+			"title": "As Flechas do Vento",
+			"tone": "danger",
+			"offer": [
+				"Mano, tu conhece as <a>Câmaras de Provação</a>? Ruínas de cobre e tufo lá embaixo da terra, cheias de armadilhas.",
+				"Lá dentro vivem as <r>brisas</r>: criaturas de vento que pulam pra todo lado e atiram rajadas.",
+				"As hastes delas guardam o poder do vento. Com isso eu faço flechas que voam o dobro da distância!"
+			],
+			"why": [
+				"Flecha que voa o dobro é guarda que protege o dobro da vila. Simples assim, meu.",
+				"E dizem que as câmaras guardam tesouros incríveis. Coisa pra <o>Guerreiro</o>."
+			],
+			"accept": [
+				"Da hora! Cuidado com as rajadas, elas te jogam longe. E os geradores, que viram ominosos se tu tiver o presságio.",
+				"<g>Traga</g> <y>16 hastes de brisa</y>."
+			],
+			"progress": [
+				"Brisas desviam de flechas! Pra elas é melhor espada ou tridente.",
+				"Os geradores das câmaras soltam a chave quando tu vence todas as ondas."
+			],
+			"complete": [
+				"Sente o vento nessas hastes, meu! Vou fazer as flechas mais rápidas do mundo.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Chama</p>. Flecha de fogo, mano. Nada mais estiloso."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:breeze_rod"], "count": 16, "desc": "<g>Entregue</g> <y>16 hastes de brisa</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:flame", "level": 1}]
+		},
+		{
+			"id": "fletcher_5_dragao",
+			"tier": 5,
+			"title": "O Olho do Dragão",
+			"tone": "danger",
+			"offer": [
+				"Meu, vou te contar a história mais antiga dos flecheiros. Nem é piada dessa vez. Senta.",
+				"No fim do mundo, numa ilha flutuando no vazio, vive o <r>Dragão do Ender</r>. Cercado de torres de obsidiana com cristais que curam ele.",
+				"O primeiro flecheiro da história foi até lá. Destruiu os cristais um por um, de longe, com o arco. Mas a última flecha... errou. Ele nunca voltou."
+			],
+			"why": [
+				"Todo flecheiro carrega essa lenda como uma dívida. A guilda inteira espera há gerações que alguém termine o trabalho.",
+				"E dizem que enquanto o dragão reinar, os endermen nunca vão ter paz. Isso é missão de <o>Mestre</o>, mano."
+			],
+			"accept": [
+				"Orra... tu vai mesmo. Leva arco, muita flecha, abóbora na cabeça pros endermen e água pra cair.",
+				"<r>Derrote o Dragão do Ender</r>."
+			],
+			"progress": [
+				"Os olhos do ender guiam até a fortaleza. Lá embaixo tem o portal pro Fim.",
+				"Destrói os cristais primeiro. Alguns ficam em gaiolas de ferro: sobe e quebra.",
+				"Não olha pros endermen. Sério. Abóbora na cabeça resolve."
+			],
+			"complete": [
+				"A última flecha acertou. Depois de séculos... a guilda tá chorando, meu. EU tô chorando.",
+				"Toma uma maçã encantada, netherita e diamantes. E teu nome vai ser entalhado no arco da guilda pra sempre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 1, "desc": "<r>Derrote</r> <r>o Dragão do Ender</r>"},
+			"rewards": [{"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}]
+		},
+		{
+			"id": "fletcher_5_mestre_arqueiro",
+			"tier": 5,
+			"title": "O Mestre Arqueiro",
+			"tone": "danger",
+			"offer": [
+				"Mano, tu sabe como alguém vira <a>Mestre Arqueiro</a> na guilda? Não é com um tiro. É com cem.",
+				"A prova é derrubar cem arqueiros inimigos: esqueletos, errantes, encharcados. Todos que usam arco pra fazer o mal.",
+				"Faz duzentos anos que ninguém completa a prova. O último tentou e desistiu no noventa e oito. Tipo, NOVENTA E OITO, meu."
+			],
+			"why": [
+				"Cada esqueleto a menos é uma estrada mais segura, uma criança que dorme tranquila.",
+				"E o título de Mestre Arqueiro abre a porta da guilda pra sempre. Só um <o>Mestre</o> encara essa maratona."
+			],
+			"accept": [
+				"Da hora! Faz uma fazenda de esqueletos com gerador se quiser. Vale tudo, menos desistir no noventa e oito.",
+				"<r>Elimine 100 esqueletos, errantes ou encharcados</r>."
+			],
+			"progress": [
+				"Geradores de esqueleto nas masmorras ajudam muito. Cerca bem e espera.",
+				"Fortalezas e câmaras de provação têm encharcados e esqueletos pra dar e vender."
+			],
+			"complete": [
+				"CEM! Cem certinho, meu! Bem-vindo à guilda, Mestre Arqueiro!",
+				"Toma diamantes, o livro de <p>Remendo</p> e um totem da imortalidade. Arqueiro que não morre é arqueiro que não erra."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 100, "desc": "<r>Elimine</r> <r>100 esqueletos, errantes ou encharcados</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"greet_friendly": [
+		"Oi, {player}! Ainda tô desempregado, mas pelo menos tenho amigos como você.",
+		"Opa! Se souber de alguma mesa de trabalho sobrando, me fala. Tô aceitando qualquer profissão!"
+	],
+	"greet_neutral": [
+		"Olá. Desculpa a cara de desânimo, é que eu ainda não achei minha vocação.",
+		"Hrmm. Tá contratando? Eu sei... hmm... eu sei existir. É uma habilidade."
+	],
+	"greet_cold": [
+		"Já não basta eu estar desempregado, ainda tenho que falar com você?"
+	],
+	"bye": [
+		"Tchau! Se ver um tear, uma composteira ou um púlpito sobrando, lembra de mim!",
+		"Até mais. Vou ali procurar emprego. De novo."
+	],
+	"lore": [
+		[
+			"Sabia que a profissão de um aldeão depende do bloco de trabalho que ele encontra?",
+			"Composteira vira <g>fazendeiro</g>, púlpito vira <a>bibliotecário</a>, barril vira <a>pescador</a>... Eu só encontrei um baú. Baú não dá emprego."
+		],
+		[
+			"Meu primo virou <a>bibliotecário</a> e agora vende livro de <p>Remendo</p> por uma fortuna.",
+			"Família, né? Nem desconto ele me dá."
+		],
+		[
+			"Dizem que tem gente que coloca e quebra o bloco de trabalho várias vezes pra mudar as trocas de um aldeão.",
+			"Isso é tipo ser demitido e recontratado mil vezes no mesmo dia. Sinto que tem algo errado nisso."
+		]
+	],
+	"names": ["Juvenal", "Cleiton", "Dona Gertrudes", "Rodinei", "Silvana", "Seu Agenor", "Kelly", "Wanderlei"]
+}

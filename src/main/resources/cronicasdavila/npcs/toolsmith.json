@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Ah, {player}! Minha pessoa favorita, segundo meus cálculos. E eu calculei bastante.",
+		"Olá, {player}. Sua presença aumenta a produtividade da vila em 12%. Dado real.",
+		"{player}! Chegou na hora. Acabei de inventar uma coisa e preciso de alguém para não explodir junto comigo.",
+		"Que bom te ver. Organizei minhas ferramentas por ordem alfabética em sua homenagem."
+	],
+	"greet_neutral": [
+		"Olá. Por favor, não toque em nada. Tudo aqui está calibrado.",
+		"Hrmm. Visitante. Probabilidade de compra: média. Probabilidade de conversa longa: alta.",
+		"Bom dia. Ou boa tarde. O relógio de redstone parou de novo.",
+		"Ah, um aventureiro. Suas ferramentas estão em péssimo estado. Isso é uma observação, não uma crítica. Talvez uma crítica."
+	],
+	"greet_cold": [
+		"Hmm. Você. Os dados sobre você não são bons.",
+		"Mantenha distância. Tecnicamente, você é um risco.",
+		"Fale rápido. Meu tempo é otimizado e você não está no cronograma."
+	],
+	"hostile": [
+		"<r>Acesso negado.</r> Seus registros de comportamento são inaceitáveis. Retire-se.",
+		"<r>Afaste-se.</r> Tenho um mecanismo de defesa de redstone e não tenho medo de testá-lo em você."
+	],
+	"followup": [
+		"Mais alguma consulta?",
+		"Prossiga.",
+		"Algo mais? Estou no meio de um experimento.",
+		"Hmm? Mais uma pergunta. Pode fazer."
+	],
+	"decline": [
+		"Compreensível. Recalculando os planos.",
+		"Tudo bem. A proposta continua válida por tempo indeterminado.",
+		"Ok. Vou perguntar ao bobão da vila. Probabilidade de sucesso: 3%. Talvez 2%."
+	],
+	"locked": [
+		"Pelos meus cálculos, você ainda não está preparado para o próximo projeto. Ganhe experiência e volte.",
+		"O próximo trabalho exige competência de nível superior. Não é pessoal, é estatística."
+	],
+	"repeat": [
+		"Aquele serviço que você fez? Precisei de novo. Desgaste de material é inevitável.",
+		"Repetição é a base do aprendizado. E da produção industrial. Faz de novo? Pago menos, por eficiência."
+	],
+	"apology_thanks": [
+		"Pedido de desculpas registrado. Revisando sua classificação... levemente melhor.",
+		"Aceito. Mas o histórico permanece no arquivo."
+	],
+	"bless": [
+		"Aplicando bênção. Afiação perfeita, ângulo ideal, durabilidade otimizada.",
+		"Pronto. Esta ferramenta agora tem a minha aprovação técnica. Isso vale muito."
+	],
+	"bye": [
+		"Até mais. Lembre-se: ferramenta bem cuidada dura o dobro.",
+		"Tchau. Volte quando precisar de algo... calibrado.",
+		"Até. E por favor, pare de usar a picareta para cavar terra. Use uma pá."
+	],
+	"abandon": [
+		"Abandono de projeto registrado. Isso afeta as métricas, sabia?",
+		"Lamentável. Eficiência zero."
+	],
+	"lore": [
+		[
+			"Sabia que a <a>redstone</a> foi descoberta por acidente? Um mineiro tropeçou num minério e ele brilhou.",
+			"Ele achou que era mágica. Era só eletricidade. Mas, tecnicamente, eletricidade é a coisa mais próxima de mágica que existe.",
+			"Hoje dá pra fazer portas, fazendas automáticas, até computadores. Computadores! Com pó vermelho!"
+		],
+		[
+			"Os <a>golens de ferro</a> são a maior invenção da história das vilas. Mas ninguém sabe exatamente como eles ganham vida.",
+			"Ferro e abóbora. Só isso. Nenhum circuito, nenhum mecanismo. Desafia toda a lógica.",
+			"Passo noites tentando entender. O clérigo diz que é a alma da vila. Eu digo que é um bug muito conveniente."
+		],
+		[
+			"As ferramentas de <y>ouro</y> são as mais rápidas, sabia? Mais rápidas que diamante.",
+			"Só que quebram em segundos. São como fogos de artifício: lindas, rápidas e efêmeras.",
+			"Os piglins adoram. Eu respeito, mas não entendo. É como comprar um carro que dura uma semana."
+		],
+		[
+			"Já pensou que a gente minera blocos que pesam toneladas e carrega 64 deles no bolso?",
+			"Física não existe neste mundo. Nem gravidade direito: areia cai, mas pedra flutua.",
+			"Eu tentei explicar isso no conselho da vila. Me mandaram ir dormir."
+		],
+		[
+			"Teve um ferramenteiro que tentou fazer uma picareta de madeira encantada com Remendo.",
+			"Ele passou anos melhorando ela. Quando terminou, era a ferramenta mais encantada do mundo... e ainda era de madeira.",
+			"Lição: otimize o que importa. Não o que é sentimental. Mas eu entendo ele. Um pouco."
+		]
+	],
+	"player_work": [
+		"Tem algum projeto pra mim?",
+		"Precisa de ajuda com a forja?",
+		"Qual é o próximo experimento?"
+	],
+	"names": [
+		"Seu Euclides", "Dona Ada", "Seu Newton", "Dona Hipátia", "Seu Arquimedes", "Dona Marie", "Seu Tesla",
+		"Dona Grace", "Seu Pitágoras", "Dona Emmy"
+	]
+}

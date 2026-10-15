@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Orra, meu! {player}! O melhor atirador da região! Chega aí, mano!",
+		"E aí, {player}? Tipo assim, tu é praticamente uma celebridade na vila, sabia?",
+		"Mano do céu, olha quem apareceu! Bora tomar um suco e falar de flecha?",
+		"{player}! Fiz uma flecha com teu nome gravado. Tá, não fiz, mas vou fazer, meu."
+	],
+	"greet_neutral": [
+		"E aí, meu? Quer comprar flecha ou tá só passando?",
+		"Opa. Cuidado que ali é o campo de tiro, tipo, área de risco mesmo.",
+		"Fala, mano. Tô meio corrido, mas pode falar.",
+		"Hrmm. Tu tem cara de quem nunca acertou um alvo na vida, meu. Brincadeira. Ou não."
+	],
+	"greet_cold": [
+		"Meu, tu de novo? A galera tá falando mal de tu, sabia?",
+		"Fala rápido, mano. Tô de olho.",
+		"Tipo assim... não tô muito a fim de conversar contigo não."
+	],
+	"hostile": [
+		"<r>Vaza, meu!</r> Tu machucou gente da vila. Aqui tu não compra nem um graveto!",
+		"<r>Sai daqui</r> antes que eu esqueça que tô do lado das flechas e não do alvo!"
+	],
+	"followup": [
+		"Que mais, meu?",
+		"Fala aí, mano.",
+		"Mais alguma coisa? As flechas não se fazem sozinhas.",
+		"Tipo, ainda tem pergunta? Manda."
+	],
+	"decline": [
+		"Suave, meu. Fica pra próxima.",
+		"Tranquilo, mano. Tu que sabe.",
+		"Orra, sério? Tá bom. Vou pedir pro bobão. Ele vai atirar no próprio pé, mas beleza."
+	],
+	"locked": [
+		"Meu, o próximo serviço é pesado. Tipo, nível chefe. Ganha experiência e volta.",
+		"Ainda não, mano. Treina a mira primeiro."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Então, meu... deu ruim de novo.",
+		"Tu já fez isso antes, né? Faz de novo, mano? Pago menos, mas é por uma boa causa."
+	],
+	"apology_thanks": [
+		"Hmm... tá, meu. Todo mundo erra o alvo de vez em quando.",
+		"Beleza, aceito. Mas não vacila de novo, hein, mano."
+	],
+	"bless": [
+		"Que essa ferramenta acerte sempre no centro do alvo, meu.",
+		"Abençoada, mano! Agora vai lá e faz bonito."
+	],
+	"bye": [
+		"Falou, meu! Mira no centro!",
+		"Tchau, mano! Volta sempre.",
+		"Até mais! E não esquece: escudo contra esqueleto, sempre."
+	],
+	"abandon": [
+		"Orra, meu... desistiu? Que nem flecha que cai antes do alvo.",
+		"Que pena, mano. Achei que tu ia até o fim."
+	],
+	"lore": [
+		[
+			"Meu, tu sabia que o <a>arco</a> foi a primeira arma inventada neste mundo? Antes até da espada.",
+			"Os primeiros aldeões usavam pra caçar e se proteger dos mortos-vivos. A espada veio depois, quando os ferreiros ficaram metidos.",
+			"Por isso o flecheiro é a profissão mais antiga da vila. Não conta pro ferreiro, ele fica bravo."
+		],
+		[
+			"Já reparou que esqueleto às vezes acerta outro esqueleto sem querer? Aí eles brigam entre si.",
+			"Tipo assim, é a coisa mais engraçada do mundo. Dois esqueletos se estapeando por causa de uma flecha perdida.",
+			"Moral da história, meu: até os monstros têm treta interna."
+		],
+		[
+			"Lá no <n>Nether</n>, os piglins usam besta de ouro. Ouro, mano! Que desperdício!",
+			"Ouro é mole, quebra rápido. Mas eles não ligam. Dizem que o importante é brilhar.",
+			"Respeito a coragem estética deles."
+		],
+		[
+			"Sabe o <a>tridente</a>? Aquele garfo de três pontas que os afogados usam? Dá pra jogar ele igual flecha.",
+			"E se encantar com <p>Canalização</p>, ele puxa raio do céu durante tempestade. RAIO, meu!",
+			"Eu daria tudo pra ter um. Mas tenho medo de água. Coisa de paulistano, sei lá."
+		],
+		[
+			"Teve uma época que os <r>Exilados</r> roubaram todos os arcos da vila numa noite só.",
+			"Daí o flecheiro da época teve uma ideia: fazer flechas que brilham. Assim, de longe, dava pra ver quem tinha roubado.",
+			"Foi assim que nasceu a flecha espectral. Toda grande invenção nasce de um perrengue, mano."
+		]
+	],
+	"player_work": [
+		"E aí, meu, tem trampo pra mim?",
+		"Precisa de ajuda com as flechas?",
+		"Mano, bora trabalhar! Tem missão?"
+	],
+	"names": [
+		"Seu Robson", "Dona Vanessa", "Seu Wellington", "Dona Priscila", "Seu Anderson", "Dona Cris", "Seu Edson",
+		"Dona Simone", "Seu Rogério", "Dona Jéssica"
+	]
+}

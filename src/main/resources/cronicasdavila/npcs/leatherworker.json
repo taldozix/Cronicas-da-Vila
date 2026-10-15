@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Vixe, olha quem chegou! {player}, meu cabra arretado! Chega, chega!",
+		"Égua, {player}! Tu tá mais bonito que bota nova, rapaz!",
+		"Oxente, se não é o herói da vila! Tô costurando um gibão com teu nome, sabia?",
+		"Ô, {player}! Que alegria, cabra. Chegou na hora do cuscuz."
+	],
+	"greet_neutral": [
+		"Oxente, gente nova. Quer uma roupa de couro? Tem de todas as cores.",
+		"Hrmm. Tu tá precisando de um chapéu, cabra. Esse sol vai fritar teu juízo.",
+		"Bom dia, viu? Cuidado com o tanque de curtir couro, que o cheiro é forte.",
+		"E aí, rapaz? Veio negociar ou só bisbilhotar?"
+	],
+	"greet_cold": [
+		"Vixe. Tu de novo. O povo fala de tu, sabia?",
+		"Hmm. Fala logo, que eu tô ocupado e meio desconfiado.",
+		"Oxente, que cara é essa? Aprontou de novo, foi?"
+	],
+	"hostile": [
+		"<r>Sai daqui, cabra safado!</r> Quem faz mal pra vila não ganha nem um remendo de mim!",
+		"<r>Vai embora</r>, que eu tenho agulha grande e paciência curta!"
+	],
+	"followup": [
+		"Que mais, cabra?",
+		"Fala, rapaz, tô ouvindo.",
+		"Mais alguma coisa? O couro tá secando.",
+		"Oxente, ainda tem pergunta? Manda ver."
+	],
+	"decline": [
+		"Tá certo, cabra. Cada um no seu tempo.",
+		"Sem problema, rapaz. Mas se mudar de ideia, tu sabe onde me achar.",
+		"Égua, tudo bem. Vou pedir pro bobão... não, deixa, ele vai costurar a própria mão."
+	],
+	"locked": [
+		"Rapaz, o próximo serviço é pesado. Tu ainda tá verde que nem couro cru. Volta mais experiente.",
+		"Ainda não, cabra. Treina mais um pouco e vem."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, cabra, precisei de novo. Couro gasta, né?",
+		"Tu já fez isso pra mim antes. Faz de novo? Pago menos, mas pago com carinho."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, cabra. Todo mundo erra. Até eu, que costurei uma bota com dois pés esquerdos.",
+		"Aceito. Mas vê se toma jeito, rapaz."
+	],
+	"bless": [
+		"Que essa peça aguente igual couro de boi: firme, resistente e com cheiro de coragem.",
+		"Abençoada, cabra! Arretada que só."
+	],
+	"bye": [
+		"Vai com Deus, cabra! E passa protetor solar.",
+		"Até mais, rapaz! Volta quando precisar de uma roupa nova.",
+		"Tchau, viu? Não some, não!"
+	],
+	"abandon": [
+		"Vixe, largou na metade? Que nem costura sem nó, desmancha tudo.",
+		"Que pena, cabra. Achei que tu era mais firme."
+	],
+	"lore": [
+		[
+			"Tu sabia que antigamente os aventureiros usavam armadura de couro tingida com a cor da vila deles?",
+			"Era assim que se reconhecia de onde a pessoa vinha. Azul era da costa, verde da floresta, vermelho do deserto.",
+			"Hoje todo mundo usa ferro e diamante. Tudo cinza e azul. Perdeu a graça, cabra."
+		],
+		[
+			"O <a>mercador ambulante</a> anda com duas lhamas que cospem. CUSPEM, rapaz!",
+			"Uma vez eu tentei comprar couro de lhama dele. A lhama ouviu e cuspiu na minha cara.",
+			"Desde então eu e as lhamas temos um acordo: eu não olho pra elas, elas não cospem em mim."
+		],
+		[
+			"Lá no <a>Fim</a>, dizem que tem uns bichos chamados <r>shulkers</r>. Ficam escondidos dentro de uma caixa.",
+			"A casca deles vira uma caixa mágica que guarda coisas e não perde nada quando quebra.",
+			"Eu sonho com uma bolsa feita disso. Imagina: tu carrega o mundo inteiro numa bolsinha."
+		],
+		[
+			"Os <r>Exilados</r> usam um estandarte com um rosto cinza assustador. Sabe quem costurou o primeiro?",
+			"Um coureiro! Ele foi expulso da vila e levou a agulha junto. Dizem que foi o primeiro <r>Evocador</r>.",
+			"Por isso a gente sempre conta a história pros aprendizes: agulha serve pra unir, não pra assustar."
+		],
+		[
+			"Tu já viu um <a>cavalo esqueleto</a>? Aparece quando cai raio em dia de tempestade.",
+			"Vem com quatro cavaleiros esqueletos montados. É assustador, rapaz!",
+			"Mas se tu ganhar a briga, fica com os cavalos. Eles não se afogam e nunca ficam com fome. Arretado demais."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda, cabra?",
+		"Tem serviço pra mim no couro?",
+		"Bora trabalhar, rapaz! O que tu tem?"
+	],
+	"names": [
+		"Seu Genival", "Dona Socorro", "Seu Chicó", "Dona Rosinha", "Seu João Grilo", "Dona Dorinha", "Seu Mané",
+		"Dona Marieta", "Seu Vavá", "Dona Cotinha"
+	]
+}

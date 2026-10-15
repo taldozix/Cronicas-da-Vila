@@ -1,0 +1,94 @@
+{
+	"greet_friendly": [
+		"Ô trem bão! {player}, cê por aqui! Chega mais, que tem broa no forno.",
+		"Uai, sô! Se não é o maior amigo da lavoura! Senta aí, quer um café?",
+		"Nó, {player}! Desde que cê apareceu, minha plantação nunca mais foi pisoteada. Deus te pague!",
+		"Ê, que alegria! Cê chegou bem na hora que o milho... digo, o trigo, tá no ponto."
+	],
+	"greet_neutral": [
+		"Bão? Cuidado onde pisa, que isso aí é plantação de beterraba, sô.",
+		"Uai, gente nova na vila? Cê não é ladrão de cenoura não, né?",
+		"Bom dia! Ou boa tarde. Fazendeiro acorda tão cedo que pra mim já é quase noite.",
+		"Opa. Se veio comprar trigo, é com a troca. Se veio conversar, tô aqui."
+	],
+	"greet_cold": [
+		"Hmm. Cê de novo. Fica longe das minhas galinhas, viu?",
+		"Ouvi umas histórias suas aí, sô. Num gostei não.",
+		"Fala logo o que quer, que eu tenho trigo pra colher e pouca paciência."
+	],
+	"hostile": [
+		"<r>Sai da minha roça!</r> Cê machucou gente daqui. Aqui cê não planta nem colhe nada!",
+		"Já peguei a enxada, ó. <r>Vai embora</r> antes que eu esqueça que sou um homem de paz."
+	],
+	"followup": [
+		"Que mais, sô?",
+		"Fala, fala. Minha enxada espera.",
+		"Mais alguma coisa? A broa tá esfriando.",
+		"Uai, ainda tem pergunta? Pode mandar."
+	],
+	"decline": [
+		"Tá bom, sô. Cada um sabe da sua roça.",
+		"Sem problema. Mas se mudar de ideia, cê sabe onde é a plantação mais bonita da vila.",
+		"Entendo... vou chamar o bobão da vila. Ele vai pisar em tudo, mas paciência."
+	],
+	"locked": [
+		"Ô, meu filho, o próximo serviço é pesado demais pra quem ainda tá começando. Ganha experiência e volta.",
+		"Agora não tenho nada do seu tamanho, sô. Volta mais forte que eu te arrumo serviço."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, o trem voltou a acontecer. Natureza é assim, sô: tudo volta.",
+		"Cê já me ajudou com isso antes. Quer ajudar de novo? Pago menos, mas pago com carinho."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, sô. Até erva daninha vira adubo um dia. Vamos ver se cê vira gente boa.",
+		"Aceito. Mas a patroa ainda tá brava. Ela não esquece nada."
+	],
+	"bless": [
+		"Que essa ferramenta te sirva como uma boa enxada: forte, fiel e sem frescura.",
+		"Abençoada com a força da terra, sô. Cuida bem que ela cuida de você."
+	],
+	"bye": [
+		"Vai com Deus, sô! E come direito, cê tá magrinho.",
+		"Até mais! Se ver um coelho perto da cenoura, espanta pra mim.",
+		"Tchau! Volta pra comer uma broa quando quiser."
+	],
+	"abandon": [
+		"Uai... cê vai largar o serviço no meio? Igual cerca pela metade, não segura nada.",
+		"Que pena, sô. Achei que cê era de confiança."
+	],
+	"lore": [
+		[
+			"Cê sabia que toda vila nasce perto de um poço? É que o primeiro aldeão do mundo era fazendeiro.",
+			"Ele cavou um buraco procurando água e achou foi um diamante. Jogou fora, porque diamante não mata sede.",
+			"Os outros aldeões viram aquilo e ficaram doidos. Desde então, a gente troca tudo por <o>esmeralda</o>. Mas eu ainda acho que água vale mais."
+		],
+		[
+			"Lá perto da floresta escura tem uma mansão enorme. Dizem que é dos <r>Exilados</r>.",
+			"Eles eram aldeões também, sabia? Mas um dia acharam que plantar era coisa de gente fraca e foram estudar magia proibida.",
+			"Hoje eles atacam as vilas com bestas e machados. Família é complicado, sô."
+		],
+		[
+			"As abelhas são as melhores amigas do fazendeiro. Elas polinizam a plantação e ainda fazem mel.",
+			"Mas não vai mexer na colmeia sem fogueira embaixo, não! Uma vez o bobão da vila tentou. Ele ficou parecendo uma batata inchada uma semana."
+		],
+		[
+			"Já reparou que tem umas vilas no deserto, na neve, na savana...? Cada uma planta uma coisa diferente.",
+			"Na neve eles plantam beterraba e batata. No deserto, cacto e... mais cacto. Coitados.",
+			"Mas todo aldeão, em qualquer canto do mundo, fala \"hrmm\". É assim que a gente reconhece a família."
+		],
+		[
+			"Cê já ouviu falar do <a>Inverno Longo</a>? Meu bisavô viveu um. Neve até o telhado por meses.",
+			"A vila sobreviveu porque cada família guardou feno, pão e batata. Desde então, todo fazendeiro guarda um pouco de tudo.",
+			"Por isso eu nunca jogo comida fora. Nem aquela batata verde venenosa. Vai que precisa, né?"
+		]
+	],
+	"player_work": [
+		"Tem serviço na roça pra mim?",
+		"Precisa de ajuda na plantação?",
+		"Bora trabalhar, sô! O que tem pra hoje?"
+	],
+	"names": [
+		"Seu Tião", "Dona Zefa", "Seu Geraldo", "Dona Conceição", "Seu Nonato", "Dona Tereza", "Seu Raimundo",
+		"Dona Ditinha", "Seu Joaquim", "Dona Biluca"
+	]
+}

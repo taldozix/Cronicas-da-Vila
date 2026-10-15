@@ -1,0 +1,142 @@
+{
+	"greet_friendly": [
+		"<n>HRRNF!</n> É o {player}! O humano favorito do bastião! Piglin até lavou a cara pra te receber.",
+		"{player}! Amigo do Reino Dourado! Chega mais, chega mais, mas não encosta no ouro.",
+		"<n>HRRNF HRRNF!</n> O humano que brilha! Piglin sabia que tu vinha. Piglin sentiu o cheiro de ouro de longe.",
+		"Olha só quem desceu pro Nether! O humano que os piglins respeitam. Raríssimo. Tu é tipo um unicórnio dourado."
+	],
+	"greet_neutral": [
+		"<n>Hrrnf.</n> Humano. Com ouro. Tá bom, piglin conversa. Mas rapidinho.",
+		"Piglin tá de olho no teu capacete, humano. Bonito. Muito bonito. Vende?",
+		"<n>HRRNF?</n> O que humano faz no Nether? Turismo? Aqui é quente, tem lava e ghast chorando. Péssimo hotel.",
+		"Humano de cara lisa! Fala logo, que piglin tem ouro pra admirar."
+	],
+	"greet_cold": [
+		"<n>Hrrnf...</n> Piglin ouviu coisas de tu. Coisas ruins. Piglin desconfia.",
+		"Humano tem cheiro de encrenca. E não é o cheiro bom de encrenca com ouro.",
+		"Fala rápido. Piglin tá segurando a besta. Só por precaução."
+	],
+	"hostile": [
+		"<r>HRRNF!!</r> Humano mau! Nem com todo o ouro do mundo piglin conversa contigo!",
+		"<r>Some daqui</r> antes que piglin chame os brutos! E os brutos NÃO são educados como piglin!"
+	],
+	"followup": [
+		"<n>Hrrnf?</n> Que mais, humano?",
+		"Fala, fala. Piglin tá ouvindo. Mas olhando pro ouro.",
+		"Mais alguma coisa? O ouro não vai se admirar sozinho.",
+		"Humano ainda tem pergunta? Pergunta, piglin responde. Se for sobre ouro, piglin responde com paixão."
+	],
+	"decline": [
+		"<n>Hrrnf.</n> Humano covarde. Mas piglin entende. Nether assusta mesmo.",
+		"Tá bom, tá bom. Piglin pede pro Torresmo. Ele vai cair na lava de novo, mas pelo menos tenta.",
+		"Humano não quer? Piglin fica triste. Piglin vai olhar pro ouro pra se acalmar."
+	],
+	"locked": [
+		"<n>HRRNF!</n> Humano ainda é fraquinho pra isso. Volta mais forte. Com mais ouro também.",
+		"Não, não. Missão grande é pra humano grande. Tu ainda é humano médio."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Precisou de novo. Nether é assim: tudo volta, menos o ouro que piglin gasta.",
+		"Humano já fez isso antes! Faz de novo! Piglin paga menos, porque piglin é pão-duro. Mas paga."
+	],
+	"apology_thanks": [
+		"<n>HRRNF!</n> OURO! ...Digo, desculpas aceitas. Ouro é a melhor desculpa que existe.",
+		"Hmm... três lingotes. Piglin perdoa. Piglin perdoaria por dois, mas não conta pra ninguém."
+	],
+	"bless": [
+		"<n>HRRNF!</n> Piglin cospe na ferramenta! Brincadeira. Piglin abençoa com o fogo do Nether. Fica quente, mas fica forte.",
+		"Pelo Grande Porcão e pelo Reino Dourado: que essa coisa nunca quebre. E que um dia vire ouro."
+	],
+	"bye": [
+		"<n>Hrrnf!</n> Vai, humano. E não morre na lava, que o ouro derrete junto.",
+		"Tchau! Volta com mais ouro. Sempre com mais ouro.",
+		"Até mais, humano! Cuidado com os Ossudos. E com os Chorões. E com a lava. E com tudo, na verdade."
+	],
+	"abandon": [
+		"<n>HRRNF!</n> Humano desistiu? Piglin sabia. Humano é igual pepita: brilha pouco.",
+		"Tá bom. Piglin vai contar pra todo o bastião. Vergonha!"
+	],
+	"lore": [
+		[
+			"Humano sabe por que piglin ama ouro? Os anciãos dizem que é saudade do <a>Reino Dourado</a>.",
+			"Antes da Besta de Três Cabeças, os bastiões eram palácios. Tudo de ouro. Os piglins eram reis, ferreiros, poetas.",
+			"Agora a gente só junta ouro e fica olhando. Tentando lembrar como era. Piglin acha triste. E bonito. Mas principalmente brilhante."
+		],
+		[
+			"Tu já viu um piglin ir pro mundo de cima? Ele fica tremendo, babando e depois... vira <r>Esverdeado</r>.",
+			"O ar de lá estraga piglin. Ninguém sabe por quê. Os anciãos dizem que é porque lá tem água demais. Água é nojenta.",
+			"Por isso piglin nunca atravessa o portal. Piglin fica aqui, no quentinho, com a lava. Lar doce lar."
+		],
+		[
+			"Humano conhece o <a>andarilho</a>? Aquele bicho vermelho de perna comprida que anda na lava?",
+			"Ele fica roxo e tremendo quando sai da lava. Piglin acha engraçado. O andarilho não acha.",
+			"Se tu botar sela e usar um fungo distorcido na vara, ele te leva pela lava. Melhor transporte do Nether. Piglin usa pra ir trabalhar."
+		],
+		[
+			"Escambo! Tu joga ouro pro piglin, piglin te dá alguma coisa. Pode ser pérola, pode ser obsidiana, pode ser cascalho.",
+			"Humano sempre reclama quando ganha cascalho. Mas piglin não escolhe! O ouro escolhe! É a vontade do ouro!",
+			"...Tá, às vezes piglin escolhe. Quando humano é feio, piglin dá cascalho. Brincadeira. Ou não."
+		],
+		[
+			"Os <r>hoglins</r> e os piglins têm uma história antiga. A gente caça eles, eles caçam a gente.",
+			"Mas os hoglins têm medo do <a>fungo distorcido</a>, aquele azul. Ninguém sabe por quê.",
+			"Piglin acha que é porque o fungo azul tem cheiro de chulé. Piglin cheirou. Tem mesmo."
+		],
+		[
+			"No Nether não tem dia nem noite. Piglin dorme quando cansa e acorda quando ouve barulho de ouro.",
+			"Uma vez um humano deixou cair um lingote do outro lado do bastião. Todos os piglins acordaram ao mesmo tempo.",
+			"Foi a maior correria da história. Três piglins caíram na lava. Valeu a pena? Piglin acha que sim."
+		]
+	],
+	"player_work": [
+		"Tem trabalho pra humano?",
+		"Piglin precisa de ajuda?",
+		"<n>Hrrnf!</n> ...Tem missão?",
+		"O que eu ganho de ouro hoje?"
+	],
+	"player_accept": [
+		"Pode deixar comigo!",
+		"Pelo ouro! Aceito!",
+		"Fechado. Prepara o ouro.",
+		"<n>Hrrnf!</n> ...Isso foi um sim."
+	],
+	"player_why": [
+		"E por que um humano ajudaria um piglin?",
+		"O que eu ganho com isso?",
+		"Explica melhor, porquinho.",
+		"Por que você mesmo não vai?"
+	],
+	"player_decline": [
+		"Hoje não, valeu.",
+		"Nem por todo o ouro do Nether.",
+		"Tô ocupado fugindo de ghast.",
+		"Passo."
+	],
+	"player_lore": [
+		"Me conta sobre o Nether.",
+		"Por que vocês amam tanto ouro?",
+		"Alguma história de piglin?",
+		"Me fala dos bastiões."
+	],
+	"player_bye": [
+		"Até mais, porquinho!",
+		"Tchau! Cuida do ouro.",
+		"Fui, antes que a lava me pegue.",
+		"Hrrnf! ...Isso foi um tchau."
+	],
+	"names": [
+		"Grunhildo", "Toicinho", "Torresmo", "Pernil", "Bacongo", "Lombardo", "Porcolino", "Salsichão", "Leitãozinho",
+		"Dona Pururuca", "Dona Linguiça", "Copa-Lombo", "Dona Bisteca", "Chouriço", "Dona Panceta"
+	],
+	"extra": {
+		"no_gold": [
+			"<n>HRRNF!</n> Cadê o <o>ouro</o>, humano?! Sem ouro no corpo, piglin não conversa. Piglin ataca!",
+			"Humano pelado de ouro? Que vergonha. Volta com pelo menos uma bota dourada. Aí piglin pensa em conversar.",
+			"<n>Hrrnf...</n> Humano sem brilho é humano sem respeito. <o>Veste ouro</o> e volta."
+		],
+		"sleeping": [
+			"<n>Zzz... hrrnf... ouro... muito ouro... Zzz...</n>",
+			"<n>Zzz...</n> <d>(o piglin está sonhando com uma montanha de ouro e não quer ser incomodado)</d>"
+		]
+	}
+}

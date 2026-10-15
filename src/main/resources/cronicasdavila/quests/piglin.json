@@ -1,0 +1,439 @@
+{
+	"quests": [
+		{
+			"id": "piglin_1_pepitas",
+			"tier": 1,
+			"title": "Ouro, Ouro, OURO!",
+			"tone": "calm",
+			"offer": [
+				"<n>HRRNF!</n> Humano de capacete dourado! Humano tem bom gosto. Piglin gosta.",
+				"Escuta: amanhã é o <o>Dia do Brilho</o>. Todo piglin enfeita a cara com ouro pra impressionar o chefe. Eu tô sem nadinha. Vergonha!",
+				"Tu pega <y>pepitas de ouro</y> pra mim? Elas ficam escondidas na pedra do Nether. Brilhinho no meio do vermelho."
+			],
+			"why": [
+				"Piglin sem ouro no Dia do Brilho fica sem banquete. Fica sem dança. Fica sem respeito. Fica TRISTE.",
+				"E piglin triste fica bravo. E piglin bravo bate em humano. Tu não quer isso. Eu também não. Talvez."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Humano bom! Quebra a pedra brilhante do Nether, sai pepita.",
+				"<g>Traga</g> <y>32 pepitas de ouro</y>. Mas não quebra perto de outros piglins, que eles ficam com ciúme!"
+			],
+			"progress": [
+				"Minério de ouro do Nether: pedra vermelha com pontinhos dourados. Fica em todo canto.",
+				"Os Esverdeados, aqueles piglins zumbis, às vezes deixam pepita. Mas não bate num só que vem a família toda!"
+			],
+			"complete": [
+				"OUUUURO! Olha o brilho! O chefe vai me dar o melhor pedaço de hoglin do banquete!",
+				"Toma: pérola do ender e quartzo. Coisas que piglin não liga, mas humano gosta. Piglin generoso hoje."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_nugget"], "count": 32, "desc": "<g>Entregue</g> <y>32 pepitas de ouro</y>"},
+			"rewards": [{"item": "minecraft:ender_pearl", "count": 2}, {"item": "minecraft:quartz", "count": 16}]
+		},
+		{
+			"id": "piglin_1_magma",
+			"tier": 1,
+			"title": "Os Cubos Saltitantes",
+			"tone": "danger",
+			"offer": [
+				"Humano, tu viu os <r>cubos de magma</r>? Uns quadradões que pulam, pulam, PULAM. Piglin fica tonto só de olhar.",
+				"Eles invadiram o caminho até o bastião. A gente não consegue passar sem levar uma cabeçada quente na cara.",
+				"E quando tu bate num, ele vira dois menores. E os menores viram mais menores! É uma praga quadrada!"
+			],
+			"why": [
+				"O caminho é por onde os piglins levam ouro pro bastião. Sem caminho, ouro fica parado. Ouro parado é ouro triste.",
+				"E tu ganha creme de magma, que o curandeiro humano usa pra poção de fogo. Todo mundo ganha!"
+			],
+			"accept": [
+				"<n>HRRNF!</n> Cuidado com os pulos. Eles pulam alto e caem forte.",
+				"<r>Elimine 10 cubos de magma</r> (os pequenos contam também)."
+			],
+			"progress": [
+				"Os cubos gostam do Vale de Basalto, aquele lugar cinza e cheio de pilares. E das fortalezas.",
+				"Eles não pegam fogo. Óbvio, são de magma. Piglin acha isso trapaça."
+			],
+			"complete": [
+				"O caminho tá livre! Os piglins passaram com o ouro cantando. Cantar de piglin é feio, mas é alegre.",
+				"Toma ferro e cargas de fogo. Humano gosta de fogo? Piglin gosta. Nether é todo fogo. Bom."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:magma_cube"], "count": 10, "desc": "<r>Elimine</r> <r>10 cubos de magma</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:fire_charge", "count": 6}]
+		},
+		{
+			"id": "piglin_1_fungos",
+			"tier": 1,
+			"title": "O Banquete dos Fungos",
+			"tone": "calm",
+			"offer": [
+				"Humano sabe o que hoglin gosta? <y>Fungo carmesim</y>. Aquele cogumelo vermelho da floresta carmesim.",
+				"Os piglins usam fungo pra atrair hoglin pra caçada. Hoglin vê fungo, hoglin vem correndo, piglin... bom, tu imagina.",
+				"Mas os fungos acabaram. E a caçada é depois de amanhã. Piglin preguiçoso não quer ir buscar. Tu vai?"
+			],
+			"why": [
+				"Sem caçada, sem carne. Sem carne, piglin come... ouro? Não, ouro não se come. Piglin já tentou. Dói.",
+				"E a caçada é a festa mais importante depois do Dia do Brilho. Tu ajuda, tu vira amigo de piglin."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Floresta vermelha. Fungo vermelho. Fácil até pra humano.",
+				"<g>Traga</g> <y>16 fungos carmesins</y>."
+			],
+			"progress": [
+				"Fungo carmesim cresce no chão da floresta carmesim. Pequeno, vermelho, cheiroso.",
+				"Cuidado com os hoglins na floresta. Eles também gostam de fungo. E não gostam de humano."
+			],
+			"complete": [
+				"Cheirinho de fungo! Os hoglins vão vir de longe. Caçada garantida!",
+				"Toma obsidiana e flechas. Coisa que piglin acha em todo canto. Humano adora pedra roxa, piglin nunca entendeu."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:crimson_fungus"], "count": 16, "desc": "<g>Entregue</g> <y>16 fungos carmesins</y>"},
+			"rewards": [{"item": "minecraft:obsidian", "count": 6}, {"item": "minecraft:arrow", "count": 16}]
+		},
+		{
+			"id": "piglin_2_hoglins",
+			"tier": 2,
+			"title": "A Grande Caçada",
+			"tone": "danger",
+			"offer": [
+				"Humano! A <a>Grande Caçada</a> começou! Todo piglin forte sai pra caçar hoglin. E tu é forte. Pra humano.",
+				"Os hoglins são bravos. Presas grandes, cabeçada forte. Eles jogam piglin longe que nem bola.",
+				"Ano passado o Torresmo voou tão longe que caiu num lago de lava. Ele tá bem. Mais ou menos. Agora ele é \"Torresmo\" de verdade."
+			],
+			"why": [
+				"Carne de hoglin alimenta o bastião inteiro no inverno. Inverno no Nether é igual verão, mas piglin chama de inverno porque sim.",
+				"E quem caça bem ganha respeito. Respeito de piglin vale mais que ouro. Quase."
+			],
+			"accept": [
+				"<n>HRRNF HRRNF!</n> Grande caçada! Segura fungo distorcido que hoglin foge. Ou segura espada que hoglin cai.",
+				"<r>Elimine 8 hoglins</r>."
+			],
+			"progress": [
+				"Floresta carmesim. É lá que eles moram, em bando.",
+				"Hoglin bebê é rápido e chato. Hoglin adulto é lento e muito chato."
+			],
+			"complete": [
+				"Oito hoglins! Humano é caçador de verdade! O bastião vai comer bem!",
+				"Toma ouro e pérolas do ender. Dar ouro dói o coração do piglin... mas tu merece. Um pouquinho."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 8, "desc": "<r>Elimine</r> <r>8 hoglins</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:ender_pearl", "count": 4}]
+		},
+		{
+			"id": "piglin_2_almas",
+			"tier": 2,
+			"title": "O Vale das Almas",
+			"tone": "danger",
+			"offer": [
+				"Humano conhece o <a>Vale das Almas</a>? Lugar azul, triste, cheio de ossos gigantes e fogo azul.",
+				"Lá vivem os <r>esqueletos</r>. Os mesmos da tua terra, mas mais azedos. Eles atiram em piglin de longe, covardes!",
+				"Piglin precisa passar pelo vale pra chegar no outro bastião. Mas ninguém tem coragem. Piglin é corajoso só com ouro na mão."
+			],
+			"why": [
+				"O outro bastião é da prima Linguiça. Ela tá sozinha lá, cercada de ouro e sem ninguém pra admirar junto. Tragédia.",
+				"E a areia do vale dá velocidade se tu tiver o encantamento certo. Piglin conhece o segredo. Piglin conta se tu ajudar."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Cuidado: areia das almas deixa lento. E os fantasmas... ah, não, não tem fantasma. Acho.",
+				"<r>Elimine 15 esqueletos</r> no Nether."
+			],
+			"progress": [
+				"O Vale das Almas é azulado e tem fogo azul. Os esqueletos ficam por lá em bando.",
+				"Os ghasts também gostam do vale. Olha pra cima de vez em quando."
+			],
+			"complete": [
+				"O vale tá limpo! A prima Linguiça mandou dizer que tu é o humano menos feio que ela já viu. Elogio grande!",
+				"Toma ouro e o livro do segredo: <p>Velocidade das Almas</p>. Com isso tu corre na areia triste igual piglin com pressa."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r> no Vale das Almas"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:soul_speed", "level": 1}]
+		},
+		{
+			"id": "piglin_2_quartzo",
+			"tier": 2,
+			"title": "Pedras Brancas Pro Trono",
+			"tone": "calm",
+			"offer": [
+				"Humano! O chefe do bastião quer reformar o trono. Diz que o trono atual tá \"sem brilho\". O trono é de OURO, humano. Mas ele quer MAIS brilho.",
+				"A ideia dele é colocar <y>quartzo</y> branco em volta do ouro, pra o ouro parecer mais dourado. Piglin acha genial.",
+				"Quartzo fica nas paredes do Nether, branquinho. Mas piglin não gosta de minerar coisa que não é ouro. Dá preguiça."
+			],
+			"why": [
+				"Chefe feliz é bastião feliz. Chefe triste manda os brutos ficarem bravos com todo mundo.",
+				"E piglin descobriu que humano usa quartzo pra construir coisa bonita. Tu pode guardar um pouco. Piglin não conta."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Pedra branca com risquinho. Fácil de achar, chata de carregar.",
+				"<g>Traga</g> <y>48 quartzos do Nether</y>."
+			],
+			"progress": [
+				"O minério de quartzo aparece em todo canto do Nether, em pedra vermelha.",
+				"Fortuna na picareta dá mais quartzo. Piglin não sabe o que é fortuna. Fortuna é ouro?"
+			],
+			"complete": [
+				"O trono vai brilhar tanto que o chefe vai precisar de óculos escuros! <n>HRRNF!</n>",
+				"Toma ouro, um diamante e obsidiana. Diamante é pedra azul sem graça, piglin não quer. Mas humano ama, né?"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:quartz"], "count": 48, "desc": "<g>Entregue</g> <y>48 quartzos do Nether</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:obsidian", "count": 8}]
+		},
+		{
+			"id": "piglin_3_choroes",
+			"tier": 3,
+			"title": "Os Chorões do Céu",
+			"tone": "danger",
+			"offer": [
+				"Humano, tu ouviu o choro? \"Uuuuaaa... uuuaaa...\" São os <r>ghasts</r>. Os Chorões do Céu.",
+				"Eles choram o dia todo, a noite toda. No Nether não tem noite, então é o tempo todo. Piglin não dorme há SEMANAS.",
+				"E quando param de chorar, cospem bola de fogo. Explodiram metade do muro do bastião ontem."
+			],
+			"why": [
+				"Piglin cansado não admira ouro direito. E admirar ouro é a coisa mais importante da vida de piglin.",
+				"E as lágrimas deles? Humano usa pra poção de cura. Piglin usa pra... nada. Mas humano gosta, então pega."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Bate na bola de fogo e devolve pra eles! Piglin viu um humano fazer isso. Foi lindo.",
+				"<r>Elimine 6 ghasts</r>."
+			],
+			"progress": [
+				"Os ghasts voam alto, sobre os lagos de lava. Arco ajuda muito.",
+				"Quando eles abrirem a boca e o olho ficar vermelho, a bola tá vindo. Prepara o soco."
+			],
+			"complete": [
+				"Silêncio! SILÊNCIO! Piglin dormiu ontem pela primeira vez em semanas! Sonhou com montanha de ouro!",
+				"Toma ouro, uma maçã dourada e o livro de <p>Velocidade das Almas II</p>. Piglin generoso porque descansado."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 6, "desc": "<r>Elimine</r> <r>6 ghasts</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:soul_speed", "level": 2}]
+		},
+		{
+			"id": "piglin_3_ossudos",
+			"tier": 3,
+			"title": "Guerra Contra os Ossudos",
+			"tone": "danger",
+			"offer": [
+				"Humano, piglin vai te contar um ódio antigo. Os <r>Ossudos</r>. Os esqueletos pretos das fortalezas. Os <r>esqueletos murchos</r>.",
+				"Piglin e Ossudo brigam desde o começo do Nether. Ninguém lembra por quê. Piglin acha que foi por causa de ouro. Sempre é.",
+				"Eles atacam piglin assim que veem. Sem conversa, sem negociar, sem ouro. Bárbaros!"
+			],
+			"why": [
+				"Os Ossudos tão chegando perto do bastião. Se chegarem, é guerra. E guerra suja o ouro de sangue. Piglin odeia ouro sujo.",
+				"Tu já é <o>Aventureiro</o>. Mostra pros Ossudos que piglin tem amigos fortes agora!"
+			],
+			"accept": [
+				"<n>HRRNF!</n> Cuidado com o toque deles. Deixa tu murcho, preto, seco. Bebe leite!",
+				"<r>Elimine 12 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Os Ossudos ficam nas fortalezas: construções de tijolo escuro, enormes, com pontes sobre a lava.",
+				"Eles são altos. Buraco de dois blocos de altura eles não passam. Piglin passa. Tu também."
+			],
+			"complete": [
+				"Os Ossudos recuaram! O bastião comemorou com uma dança. Tu perdeu, foi pena. Piglin dança mal, mas com paixão.",
+				"Toma ouro, pedras azuis e uma maçã dourada. Pedra azul o humano gosta, eu sei. Piglin pesquisou."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 12, "desc": "<r>Elimine</r> <r>12 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_3_esverdeados",
+			"tier": 3,
+			"title": "Os Primos Esverdeados",
+			"tone": "danger",
+			"offer": [
+				"Humano... piglin tem uma coisa triste pra contar. Tu conhece os <r>piglins zumbis</r>? Os <a>Esverdeados</a>?",
+				"Eles eram piglins normais. Mas foram pro mundo de cima, pro teu mundo, e o ar de lá... estragou eles. Viraram zumbis. Esqueceram o ouro.",
+				"Agora eles vagam pelo Nether com espada na mão, sem lembrar de ninguém. Meu tio Pernil é um deles."
+			],
+			"why": [
+				"Eles atacam em bando quando alguém machuca um. Os piglins jovens morrem de medo de chegar perto.",
+				"Libertar eles é dar descanso pra família. Piglin chora por dentro. Por fora, só grunhe."
+			],
+			"accept": [
+				"<n>hrrnf...</n> Bate em um e todos vêm. Escolhe bem o lugar. E não fica triste por eles. Eles já foram embora faz tempo.",
+				"<r>Elimine 30 piglins zumbis</r>."
+			],
+			"progress": [
+				"Eles vivem em todo canto do Nether, principalmente perto da lava.",
+				"Lute num corredor estreito. Eles vêm de todos os lados quando ficam bravos."
+			],
+			"complete": [
+				"Os Esverdeados descansaram. Tio Pernil... piglin acha que viu ele sorrindo no final. Ou foi a lava refletindo.",
+				"Toma ouro, pedras azuis e uma maçã dourada. Piglin não chora. Piglin tá com fumaça no olho."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombified_piglin"], "count": 30, "desc": "<r>Elimine</r> <r>30 piglins zumbis</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_4_fortaleza",
+			"tier": 4,
+			"title": "A Queda da Fortaleza",
+			"tone": "danger",
+			"offer": [
+				"Humano, a guerra contra os Ossudos piorou. Eles juntaram um exército na <a>Fortaleza Negra</a>, a maior do Nether.",
+				"Os espiões piglins viram mais de vinte Ossudos e um monte de <r>blazes</r> de guarda. Eles tão preparando um ataque ao bastião.",
+				"Se o bastião cair, os Ossudos ficam com todo o ouro. TODO O OURO, humano. Imagina a tragédia."
+			],
+			"why": [
+				"Piglin sem bastião vira piglin sem casa. Piglin sem casa vai pro mundo de cima. Piglin no mundo de cima vira Esverdeado.",
+				"Só um <o>Guerreiro</o> invade uma fortaleza dessas. Piglin confia em tu. Piglin nunca confiou em humano antes."
+			],
+			"accept": [
+				"<n>HRRNF!!</n> Pelo ouro! Pelo bastião! Pelo... ouro de novo!",
+				"<r>Elimine 25 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Cerque os geradores de blaze antes de enfrentar os Ossudos. Dois inimigos de uma vez é pedir pra morrer.",
+				"Leite. Muito leite. Piglin não sabe de onde vem leite, mas humano sabe."
+			],
+			"complete": [
+				"A Fortaleza Negra caiu! Os Ossudos fugiram! Tu é o primeiro humano com nome entalhado no trono do bastião!",
+				"Toma o que o bastião tem de mais precioso: fragmentos de netherita, pedras azuis e maçãs douradas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 25, "desc": "<r>Elimine</r> <r>25 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 3}]
+		},
+		{
+			"id": "piglin_4_reliquias",
+			"tier": 4,
+			"title": "As Relíquias dos Ancestrais",
+			"tone": "calm",
+			"offer": [
+				"Humano, piglin vai contar um segredo do bastião. Os piglins antigos não ligavam só pro ouro. Eles forjavam uma coisa melhor.",
+				"Os <y>detritos antigos</y>. Pedras enterradas no fundo do Nether que viram <o>netherita</o>. Os ancestrais faziam armaduras que nem a lava derretia.",
+				"Mas piglin esqueceu como fazer. Piglin só lembra do ouro agora. Os anciãos querem as relíquias de volta no altar."
+			],
+			"why": [
+				"Com as relíquias no altar, os jovens piglins vão lembrar que um dia foram grandes ferreiros. Não só colecionadores de brilho.",
+				"E é trabalho de <o>Guerreiro</o>: lá no fundo do Nether a lava está em todo lado e as camas explodem."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Os detritos são pretos com riscos marrons. Bem fundo. Bem quente.",
+				"<g>Traga</g> <y>6 detritos antigos</y>."
+			],
+			"progress": [
+				"Os anciãos dizem: altura 15, longe da lava. Túneis retos e paciência.",
+				"Baús dos bastiões às vezes têm detritos. Mas se tu pegar de lá, o bastião fica bravo. Ironia."
+			],
+			"complete": [
+				"As relíquias estão no altar! Os jovens piglins ficaram olhando a noite toda. Um deles disse: \"é mais bonito que ouro\". Escândalo!",
+				"Toma um molde dos ancestrais, ouro e pedras azuis. O molde é a chave pra netherita. Usa bem."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ancient_debris"], "count": 6, "desc": "<g>Entregue</g> <y>6 detritos antigos</y>"},
+			"rewards": [{"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}, {"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 8}]
+		},
+		{
+			"id": "piglin_4_brutos",
+			"tier": 4,
+			"title": "Os Brutos Traidores",
+			"tone": "danger",
+			"offer": [
+				"Humano... é vergonhoso. Os <r>piglins brutos</r>, os guardas do bastião, se rebelaram. Dizem que piglin comerciante é fraco.",
+				"Eles não aceitam ouro. NÃO ACEITAM OURO, humano! Isso é traição contra tudo que é sagrado!",
+				"Eles trancaram a sala do tesouro e ninguém mais entra. O chefe tá desesperado."
+			],
+			"why": [
+				"Sem a sala do tesouro, o bastião perde o coração. E piglin sem tesouro é só um porco com espada.",
+				"Os brutos são os mais fortes do Nether. Só um <o>Guerreiro</o> com armadura de verdade aguenta o machado deles."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Cuidado: eles não têm medo de ouro e batem muito forte. Escudo!",
+				"<r>Elimine 6 piglins brutos</r>."
+			],
+			"progress": [
+				"Os brutos ficam nos bastiões, perto dos baús e das pontes.",
+				"Eles não voltam depois de derrotados. Cada um é um a menos pra sempre."
+			],
+			"complete": [
+				"A sala do tesouro foi reaberta! O chefe chorou em cima do ouro. Literalmente deitou em cima do ouro e chorou.",
+				"Toma pedras azuis, maçãs douradas e o livro de <p>Velocidade das Almas III</p>. O melhor segredo do bastião."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:piglin_brute"], "count": 6, "desc": "<r>Elimine</r> <r>6 piglins brutos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:soul_speed", "level": 3}]
+		},
+		{
+			"id": "piglin_5_porcao",
+			"tier": 5,
+			"title": "A Vingança do Grande Porcão",
+			"tone": "danger",
+			"offer": [
+				"Humano. Mestre. Senta. Piglin vai contar a história que todo piglin aprende antes de aprender a admirar ouro.",
+				"Há muito tempo, existia o <a>Reino Dourado</a>, governado pelo <a>Grande Porcão</a>, o maior rei piglin. Os bastiões eram palácios, não ruínas.",
+				"Um dia, os Ossudos juntaram três crânios e invocaram a <r>Besta de Três Cabeças</r>: o <r>Wither</r>. Ela destruiu o reino em uma noite. O Grande Porcão caiu defendendo o trono."
+			],
+			"why": [
+				"Desde aquele dia, os piglins vivem nas ruínas, juntando ouro pra tentar lembrar como era o reino. Por isso piglin ama tanto ouro, humano. É saudade.",
+				"Só um <o>Mestre</o> pode vingar o Grande Porcão. Derruba a Besta. Devolve a honra pros piglins."
+			],
+			"accept": [
+				"<n>HRRNF... HRRNF!!!</n> Pelo Grande Porcão! Pelo Reino Dourado! Piglin vai chorar e fingir que é fumaça.",
+				"<r>Derrote o Wither</r>."
+			],
+			"progress": [
+				"Três crânios dos Ossudos. Quatro areias das almas em forma de T. Crânios em cima.",
+				"Faz a luta longe do bastião. Piglin já perdeu um reino, não quer perder outro."
+			],
+			"complete": [
+				"A Besta caiu. O Grande Porcão pode descansar. Esta noite, todos os bastiões vão acender fogo azul em tua homenagem.",
+				"Toma a estrela da Besta, a maçã encantada do tesouro real e netherita. Tu agora é <o>Amigo do Reino Dourado</o>. Pra sempre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>o Wither</r>, a Besta de Três Cabeças"},
+			"rewards": [{"item": "minecraft:nether_star", "count": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 16}]
+		},
+		{
+			"id": "piglin_5_tesouro",
+			"tier": 5,
+			"title": "O Bastião Dourado",
+			"tone": "calm",
+			"offer": [
+				"Humano Mestre, os anciãos tiveram um sonho: reconstruir o <a>Bastião Dourado</a>, o palácio do Grande Porcão. Todo de ouro.",
+				"Não ouro de pepita. Não ouro de lingote. <y>Blocos de ouro</y>. Paredes inteiras brilhando. O piglin que olhar vai desmaiar de felicidade.",
+				"Piglin junta ouro há mil anos, mas piglin também GASTA ouro olhando pra ele. É um ciclo trágico."
+			],
+			"why": [
+				"O Bastião Dourado vai ser o símbolo do renascimento dos piglins. A prova de que o reino pode voltar.",
+				"Só um <o>Mestre</o> junta tanto ouro assim. Piglin sabe. Piglin fez as contas. Contas com ouro, claro."
+			],
+			"accept": [
+				"<n>HRRNF!!!</n> Tu vai mesmo? Piglin vai desmaiar agora. ...Pronto, voltei.",
+				"<g>Traga</g> <y>32 blocos de ouro</y>."
+			],
+			"progress": [
+				"Os Esverdeados dão pepitas. Pepitas viram lingotes. Lingotes viram blocos. Fazenda de Esverdeados é o segredo dos humanos espertos.",
+				"Nove lingotes fazem um bloco. Faz as contas, humano. Piglin já fez: é MUITO ouro."
+			],
+			"complete": [
+				"<n>HRRNNNNNNF!!!</n> <d>(o piglin desmaiou de alegria. Depois de um minuto, ele acorda)</d> ...É real. É tudo real.",
+				"Toma o tesouro que piglin guardou pra esse dia: netherita, pedras azuis e o totem do Grande Porcão. Piglin nunca deu nada tão valioso. Nunca."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_block"], "count": 32, "desc": "<g>Entregue</g> <y>32 blocos de ouro</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_5_choroes",
+			"tier": 5,
+			"title": "O Fim do Lamento",
+			"tone": "danger",
+			"offer": [
+				"Humano Mestre, piglin descobriu a verdade sobre os Chorões do Céu. Os anciãos contaram ontem.",
+				"Os <r>ghasts</r> eram os guardas do Reino Dourado. Quando a Besta destruiu o reino, eles ficaram presos no céu do Nether, chorando a derrota pra sempre.",
+				"Enquanto eles chorarem, o Nether não tem paz. Os anciãos dizem que só depois de cinquenta caírem o lamento acaba."
+			],
+			"why": [
+				"Os guardas merecem descansar. Eles falharam uma vez, mas choraram mil anos por isso. Já chega.",
+				"Só um <o>Mestre</o> tem paciência e mira pra libertar cinquenta Chorões. Piglin confia."
+			],
+			"accept": [
+				"<n>hrrnf...</n> Obrigado, humano. Piglin nunca pensou que diria obrigado pra um humano.",
+				"<r>Elimine 50 ghasts</r>."
+			],
+			"progress": [
+				"Arco com Força e Infinidade. Paciência de pescador. Coragem de piglin com ouro na mão.",
+				"Os ghasts aparecem mais nos desertos de areia das almas e nos mares de lava."
+			],
+			"complete": [
+				"Escuta, humano... nada. Silêncio. Pela primeira vez em mil anos, o céu do Nether não chora.",
+				"Toma netherita, pedras azuis e a maçã encantada que os guardas protegiam. Eles iam querer que fosse tua."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 50, "desc": "<r>Elimine</r> <r>50 ghasts</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		}
+	]
+}

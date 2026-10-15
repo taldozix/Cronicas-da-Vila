@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Bah, tchê! {player}! Chega mais, que a costela tá no fogo desde as cinco da manhã!",
+		"Mas olha só quem apareceu! O parceiro mais tri da vila!",
+		"Barbaridade, {player}! Tu é sempre bem-vindo no meu açougue. Quer um chimarrão? ...Ah é, aldeão não toma chimarrão. Quer água então.",
+		"Tchê, que alegria! Guardei a melhor picanha pra ti."
+	],
+	"greet_neutral": [
+		"Buenas, vivente. Veio comprar carne ou só olhar?",
+		"Bah, gente nova. Tu não é vegetariano, né? Aqui o negócio é carne.",
+		"E aí, guri? Fala logo que o fogo não espera.",
+		"Hrmm. Tu tem cara de quem nunca comeu um churrasco de verdade."
+	],
+	"greet_cold": [
+		"Hmm. Tu de novo. Não me faz perder a paciência, que eu tenho faca na mão.",
+		"Ouvi umas histórias tuas, tchê. Não gostei nem um pouco.",
+		"Fala o que quer e vai embora. Tô ocupado."
+	],
+	"hostile": [
+		"<r>Some daqui, tongo!</r> Quem machuca gente da vila não come nem a gordura do meu churrasco!",
+		"Tchê, <r>vai embora</r> antes que eu esqueça que sou açougueiro e não guerreiro."
+	],
+	"followup": [
+		"Que mais, tchê?",
+		"Fala, guri. Tô ouvindo.",
+		"Mais alguma coisa? A carne tá passando do ponto.",
+		"Bah, ainda tem pergunta? Manda."
+	],
+	"decline": [
+		"Bah, tudo bem. Mas tu tá perdendo, hein.",
+		"Sem problema, tchê. Quando mudar de ideia, tu sabe onde fica o melhor açougue da região.",
+		"Tá bom. Vou pedir pro bobão da vila. Ele vai trazer um balde de terra achando que é carne."
+	],
+	"locked": [
+		"Guri, o próximo serviço é pra gente grande. Ganha experiência e volta, que eu te espero.",
+		"Calma, tchê. Tu ainda não tá pronto pra esse. Vai treinar."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, guri. Deu problema de novo. Vida de açougueiro é isso.",
+		"Tu já me ajudou nisso antes. Faz de novo? Pago menos, mas o churrasco é por minha conta."
+	],
+	"apology_thanks": [
+		"Hmm. Tá bom, tchê. Gaúcho... digo, açougueiro, não guarda rancor. Só a faca.",
+		"Aceito. Mas vou ficar de olho, guri."
+	],
+	"bless": [
+		"Que essa lâmina corte reto como faca de churrasqueiro e nunca perca o fio.",
+		"Abençoada, tchê. Com o calor do fogo de chão e a força de um gaúcho... digo, aldeão."
+	],
+	"bye": [
+		"Vai com Deus, tchê! E não esquece: carne boa é carne mal passada.",
+		"Até mais, guri! Volta domingo pro churrasco.",
+		"Tchau, vivente! Cuidado com os creepers."
+	],
+	"abandon": [
+		"Bah... largou na metade? Isso é que nem tirar a carne do fogo crua, tchê.",
+		"Que pena. Achei que tu era de palavra."
+	],
+	"lore": [
+		[
+			"Sabe por que todo açougue tem defumador? É uma história antiga, tchê.",
+			"Os primeiros açougueiros guardavam carne no sal, mas o sal acabou numa seca braba. Daí um guri deixou carne perto da fogueira e esqueceu.",
+			"No outro dia tava defumada e deliciosa. O guri virou o primeiro açougueiro da história. E até hoje a gente esquece a carne no fogo de propósito."
+		],
+		[
+			"Os <r>Exilados</r> não comem carne, sabia? Só comem... sei lá o que eles comem. Ódio, eu acho.",
+			"Dizem que o primeiro <r>vingador</r> era um açougueiro que foi expulso da vila por usar o machado pra brigar.",
+			"Desde então, todo açougueiro guarda a faca na bainha e só tira pra cortar carne. Questão de honra, tchê."
+		],
+		[
+			"Tu sabia que a <a>vaca de cogumelo</a> existe? Uma vaca vermelha, cheia de cogumelo nas costas, numa ilha no meio do mar.",
+			"Ela dá sopa em vez de leite. Sopa! Bah, isso é que é eficiência.",
+			"Já tentei criar uma aqui. Ela ficou triste e o cogumelo murchou. Não é qualquer pasto que serve pra ela."
+		],
+		[
+			"Lá no <n>Nether</n>, os piglins caçam hoglins. São tipo nossos primos, só que de ouro.",
+			"Eles me ensinaram que fungo distorcido espanta os hoglins. Fungo carmesim atrai.",
+			"Achei bonito eles terem caçada própria. Respeito quem caça a própria comida, tchê."
+		],
+		[
+			"Já reparou que galinha bota ovo em qualquer lugar? Fogão, telhado, poço, cabeça do bobão...",
+			"Uma vez nasceram TRÊS pintinhos de um ovo só. A vila fez festa uma semana.",
+			"Moral da história, guri: nunca subestime um ovo."
+		]
+	],
+	"player_work": [
+		"Tchê, tem serviço pra mim?",
+		"Precisa de ajuda no açougue?",
+		"Bah, bora trabalhar! O que tu precisa?"
+	],
+	"names": [
+		"Seu Bento", "Dona Prenda", "Seu Ademar", "Dona Ilse", "Seu Gumercindo", "Dona Valquíria", "Seu Tadeu",
+		"Dona Olga", "Seu Arlindo", "Dona Brígida"
+	]
+}

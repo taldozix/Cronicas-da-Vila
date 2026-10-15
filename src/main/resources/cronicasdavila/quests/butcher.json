@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "butcher_1_churrasco",
+			"tier": 1,
+			"title": "Churrasco de Domingo",
+			"tone": "calm",
+			"offer": [
+				"Bah, tchê! Tu chegou na hora certa. Domingo tem o <a>Churrasco da Vila</a>, tradição sagrada desde o tempo do meu bisavô.",
+				"Só que o fornecedor de carne sumiu. Dizem que foi atrás de um coelho e nunca mais voltou. Bem capaz de ter se perdido, o tongo.",
+				"Preciso de carne crua, das boas. Boi, porco, ovelha, frango, o que tiver."
+			],
+			"why": [
+				"Churrasco não é só comida, guri. É onde a vila conversa, faz as pazes, combina casamento, resolve briga.",
+				"Sem churrasco, o fazendeiro e o pescador vão brigar de novo por causa de quem tem a comida melhor. E aí ninguém aguenta."
+			],
+			"accept": [
+				"Barbaridade, tu é dos meus! Carne crua, hein? Assar é comigo, que tu não tem o dom.",
+				"<g>Traga</g> <y>24 carnes cruas</y> (boi, porco, ovelha ou frango)."
+			],
+			"progress": [
+				"Vaca, porco, ovelha e galinha tem em quase todo campo. Faz criação que é mais sustentável, tchê.",
+				"Se a carne sair assada porque o bicho pegou fogo, não serve, hein! Quero crua!"
+			],
+			"complete": [
+				"Mas que bela carne! Vai ser o churrasco do ano, tchê!",
+				"Toma umas esmeraldas e carvão. Tu vai precisar pra fazer teu próprio fogo de chão."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:beef", "minecraft:porkchop", "minecraft:mutton", "minecraft:chicken"], "count": 24, "desc": "<g>Entregue</g> <y>24 carnes cruas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:coal", "count": 16}]
+		},
+		{
+			"id": "butcher_1_creepers",
+			"tier": 1,
+			"title": "Explodiram Minha Churrasqueira!",
+			"tone": "danger",
+			"offer": [
+				"Tchê, tu viu aquele buraco atrás do açougue? Era minha churrasqueira. ERA.",
+				"Um <r>creeper</r> chegou de mansinho, fez \"ssssss\" e BUM! Foi carne, carvão e tijolo pra tudo que é lado.",
+				"E não foi só um. Eles tão rondando a vila toda noite. Um desaforo!"
+			],
+			"why": [
+				"Se um creeper explode perto de uma casa, a família perde tudo. Já vi gente chorando por causa de parede derrubada.",
+				"E tu sabia que se um raio cai num creeper ele fica carregado e explode três vezes mais forte? Imagina isso perto da escola."
+			],
+			"accept": [
+				"Bah, tu é corajoso! Ataca e recua, ataca e recua. Não deixa ele chegar perto.",
+				"<r>Elimine 10 creepers</r>. E de preferência longe do meu açougue!"
+			],
+			"progress": [
+				"Creeper anda quietinho. Presta atenção no \"ssss\" e sai correndo pra trás.",
+				"Arco é o melhor amigo do homem contra creeper. Depois do cachorro. E do gato — creeper morre de medo de gato!"
+			],
+			"complete": [
+				"Tchê, a vila tá um silêncio que dá gosto! Nenhum \"ssss\" de madrugada.",
+				"Toma ferro pra reforçar tuas armas e carne assada da churrasqueira nova. Construí ela de pedra, agora quero ver explodir."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 10, "desc": "<r>Elimine</r> <r>10 creepers</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_beef", "count": 12}]
+		},
+		{
+			"id": "butcher_2_defumados",
+			"tier": 2,
+			"title": "Estoque do Defumador",
+			"tone": "calm",
+			"offer": [
+				"Escuta essa, guri: as caravanas de mercadores vão passar pela vila no fim do mês. Eles pagam bem por carne assada e bem conservada.",
+				"Se eu tiver estoque, a vila ganha esmeralda pra consertar o poço, a ponte e o telhado da igreja.",
+				"Mas sozinho eu não dou conta. O defumador é pequeno e eu sou um só."
+			],
+			"why": [
+				"Com o dinheiro das caravanas, a vila inteira melhora. Até o bobão ganha um chapéu novo.",
+				"E carne assada dura muito mais que crua. É comida pra viagem, pra guerra, pro inverno."
+			],
+			"accept": [
+				"Beleza! Fornalha, defumador, fogueira... qualquer jeito de assar vale.",
+				"<g>Traga</g> <y>32 carnes assadas</y>."
+			],
+			"progress": [
+				"Defumador assa duas vezes mais rápido que a fornalha. Faz um com uma fornalha e quatro troncos.",
+				"Fogueira assa de graça, sem carvão. Coloca a carne em cima e espera."
+			],
+			"complete": [
+				"Barbaridade, que estoque! As caravanas vão pagar uma fortuna!",
+				"Toma ferro e um diamante. Tu ajudou a vila inteira hoje, tchê."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:cooked_beef", "minecraft:cooked_porkchop", "minecraft:cooked_mutton", "minecraft:cooked_chicken", "minecraft:cooked_rabbit"], "count": 32, "desc": "<g>Entregue</g> <y>32 carnes assadas</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "butcher_2_despensa",
+			"tier": 2,
+			"title": "Aranhas na Despensa",
+			"tone": "danger",
+			"offer": [
+				"Tchê, eu cavei um porão embaixo do açougue pra guardar a carne no frio. Cavei, cavei... e achei um túnel de mina abandonada.",
+				"Daí subiram umas <r>aranhas venenosas</r>, aquelas azuladas pequenas. Elas se escondem em teia e picam com veneno.",
+				"Agora eu não consigo descer no meu próprio porão. Tô guardando a carne debaixo da cama. A patroa não tá feliz."
+			],
+			"why": [
+				"Se elas subirem pra vila, vão picar as crianças. Veneno de aranha da caverna não é brincadeira, guri.",
+				"E mina abandonada às vezes tem baú com coisa boa. Tu pode sair ganhando duas vezes."
+			],
+			"accept": [
+				"Leva tocha, muita tocha. E balde de leite pro veneno.",
+				"<r>Elimine 12 aranhas de caverna</r>. Elas vêm de geradores nas minas abandonadas."
+			],
+			"progress": [
+				"O gerador tem uma aranha girando dentro. Quebra ele ou cerca de tocha pra parar de nascer bicho.",
+				"As teias te deixam lento. Espada corta teia rapidinho, tesoura mais ainda."
+			],
+			"complete": [
+				"Meu porão tá livre! Agora sim, carne no frio como manda o figurino.",
+				"Toma ferro, um diamante e carne de porco assada. A patroa mandou agradecer também."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:cave_spider"], "count": 12, "desc": "<r>Elimine</r> <r>12 aranhas de caverna</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:cooked_porkchop", "count": 12}]
+		},
+		{
+			"id": "butcher_3_hoglins",
+			"tier": 3,
+			"title": "Javali do Inferno",
+			"tone": "danger",
+			"offer": [
+				"Tu já ouviu falar dos <r>hoglins</r>, tchê? São javalis do <n>Nether</n>. Uns bichos enormes, com presas do tamanho do meu braço.",
+				"Os piglins caçam eles na floresta carmesim. Dizem que a carne é a melhor que existe. Defumada no fogo do Nether, então...",
+				"Eu sonho com essa carne desde guri. Quero fazer o <a>Churrasco Lendário</a> antes de morrer."
+			],
+			"why": [
+				"Eles atacam qualquer coisa que se mexe na floresta carmesim. Os piglins vão te agradecer por diminuir o bando.",
+				"E tu já é <o>Aventureiro</o>, guri. Hora de provar coisa nova. O mundo não é só vaca e porco."
+			],
+			"accept": [
+				"Cuidado: hoglin te joga longe com a presa. E não deixa ele ir pro mundo normal, que vira zumbi!",
+				"<r>Elimine 10 hoglins</r> no Nether."
+			],
+			"progress": [
+				"Hoglin tem medo de fungo distorcido. Segura um na mão e eles fogem.",
+				"Floresta carmesim, aquela vermelha do Nether. É onde eles moram."
+			],
+			"complete": [
+				"Mas que bicho bem criado! O Churrasco Lendário vai sair, tchê! Tu tá convidado de honra!",
+				"Toma diamantes, uma maçã dourada e um pouco de carne de porco assada que sobrou do treino."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 10, "desc": "<r>Elimine</r> <r>10 hoglins</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:cooked_porkchop", "count": 16}]
+		},
+		{
+			"id": "butcher_3_coelho",
+			"tier": 3,
+			"title": "Pé de Coelho da Sorte",
+			"tone": "calm",
+			"offer": [
+				"Tchê, vou te contar um segredo de família. O pé de coelho dá sorte de verdade. Não é superstição, é <p>alquimia</p>.",
+				"O clérigo usa pra fazer poção de salto. E os caçadores antigos carregavam um no bolso pra nunca errar a mira.",
+				"Os coelhos são ligeiros que nem raio. Eu fiquei pra trás. Literalmente: torci o tornozelo correndo atrás de um."
+			],
+			"why": [
+				"Com os pés, o clérigo faz poções pros guardas da vila pularem os muros em caso de ataque.",
+				"E dizem que um pé de coelho no bolso ajuda a encontrar tesouros. Tu vai querer um também, acredita."
+			],
+			"accept": [
+				"Coelho mora em deserto, floresta, neve e campo de flores. Ele foge rápido, então vai de arco ou de emboscada.",
+				"<g>Traga</g> <y>6 pés de coelho</y>."
+			],
+			"progress": [
+				"Nem todo coelho deixa o pé. Tem que ter paciência.",
+				"Encantamento de Saque na espada aumenta a chance. Fica a dica, tchê."
+			],
+			"complete": [
+				"Seis pezinhos da sorte! Bah, vou dar um pro clérigo e guardar o resto no cofre.",
+				"Toma diamantes e um livro de <p>Saque</p>. Agora tu vai arrancar o dobro de tudo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:rabbit_foot"], "count": 6, "desc": "<g>Entregue</g> <y>6 pés de coelho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 2}]
+		},
+		{
+			"id": "butcher_4_banquete",
+			"tier": 4,
+			"title": "O Banquete do Conselho",
+			"tone": "calm",
+			"offer": [
+				"Guri, esse ano a vila foi escolhida pra receber o <a>Conselho das Vilas</a>. Representantes de todo canto do mundo vão vir pra cá.",
+				"Vem gente do deserto, da savana, da neve, da taiga. Todo mundo com fome e opinião.",
+				"Preciso fazer o maior banquete da história. Se faltar comida, a vila vira piada no mundo inteiro."
+			],
+			"why": [
+				"No Conselho, as vilas decidem como se defender juntas contra os Exilados. Barriga cheia, cabeça boa, decisão certa.",
+				"E é a honra da vila, tchê. Gaúcho... digo, açougueiro que se preze não deixa visita com fome."
+			],
+			"accept": [
+				"Barbaridade, tu é parceiro mesmo! Prepara a criação e a fornalha.",
+				"<g>Traga</g> <y>64 carnes assadas</y>."
+			],
+			"progress": [
+				"Faz uma fazenda de vacas e galinhas. Galinha bota ovo, ovo vira galinha, galinha vira janta.",
+				"Fornalha com cinco ou seis do lado da outra acelera tudo."
+			],
+			"complete": [
+				"O Conselho comeu, bebeu e assinou um tratado de defesa! Tudo graças à tua carne, tchê!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Aspecto Flamejante</p>: tua espada vai assar os bichos na hora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:cooked_beef", "minecraft:cooked_porkchop", "minecraft:cooked_mutton", "minecraft:cooked_chicken", "minecraft:cooked_rabbit"], "count": 64, "desc": "<g>Entregue</g> <y>64 carnes assadas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_aspect", "level": 2}]
+		},
+		{
+			"id": "butcher_4_brutos",
+			"tier": 4,
+			"title": "Os Brutamontes do Bastião",
+			"tone": "danger",
+			"offer": [
+				"Lembra dos hoglins? Pois então. Os piglins que caçam eles vivem nos <a>Bastiões</a>, castelos negros no Nether.",
+				"Só que os bastiões são guardados pelos <r>piglins brutos</r>. Uns brutamontes de machado de ouro que não aceitam suborno nem conversa.",
+				"Eles tão impedindo os piglins comerciantes de sair pra caçar. E sem caça, nada de carne de hoglin pro meu churrasco."
+			],
+			"why": [
+				"Os próprios piglins comerciantes tão com medo dos brutos. Ajudar eles abre o caminho pro comércio entre as vilas e o Nether.",
+				"E bastião tem tesouro, tchê. Muito ouro. Tu sai rico se sair vivo. Isso é coisa de <o>Guerreiro</o>."
+			],
+			"accept": [
+				"Leva armadura boa. Bruto não tem medo de ouro e bate forte que nem coice de mula.",
+				"<r>Elimine 5 piglins brutos</r> nos bastiões."
+			],
+			"progress": [
+				"Eles não renascem. Ficam de guarda no bastião. Vai com calma, um por vez.",
+				"Os outros piglins ficam bravos se tu abrir baús ou quebrar ouro no bastião. Cuidado!"
+			],
+			"complete": [
+				"Os piglins comerciantes saíram pra caçar! A carne de hoglin vai chegar toda semana agora!",
+				"Toma diamantes, maçãs douradas e um fragmento de netherita que um piglin me deu de presente. Disse que era \"pro guerreiro rosadinho\"."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:piglin_brute"], "count": 5, "desc": "<r>Elimine</r> <r>5 piglins brutos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:netherite_scrap", "count": 1}]
+		},
+		{
+			"id": "butcher_5_rei_gado",
+			"tier": 5,
+			"title": "O Rei do Gado Infernal",
+			"tone": "danger",
+			"offer": [
+				"Agora escuta com atenção, que essa é séria. Os piglins me contaram de um <r>Rei Hoglin</r> que lidera manadas imensas.",
+				"Quando um hoglin pisa no mundo normal ou no End, ele vira <r>zoglin</r>: um morto-vivo que ataca TUDO, até os próprios irmãos.",
+				"Os portais do Nether tão espalhando zoglins por aí. Se essas manadas atravessarem pro mundo normal, acabou a paz."
+			],
+			"why": [
+				"Um zoglin sozinho já destrói um curral. Uma manada destrói uma vila. Várias destroem o mundo.",
+				"Isso não é mais caça, guri. É guerra. E guerra precisa de um <o>Mestre</o>."
+			],
+			"accept": [
+				"Vai com tudo que tu tem. Os bichos vêm em bando.",
+				"<r>Elimine 50 hoglins ou zoglins</r>."
+			],
+			"progress": [
+				"Hoglins andam em manada na floresta carmesim. Zoglins aparecem perto de portais.",
+				"Fica num lugar alto e estreito. Eles não pulam bem."
+			],
+			"complete": [
+				"Os piglins mandaram dizer que as manadas acalmaram. O Nether tá em paz, e o mundo também. Tu é uma lenda, tchê.",
+				"Toma o melhor que eu tenho: netherita, diamantes e uma maçã encantada que guardei pra quando o mundo fosse salvo."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin", "minecraft:zoglin"], "count": 50, "desc": "<r>Elimine</r> <r>50 hoglins ou zoglins</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		},
+		{
+			"id": "butcher_5_devastadores",
+			"tier": 5,
+			"title": "As Feras dos Exilados",
+			"tone": "danger",
+			"offer": [
+				"Tu já viu um <r>devastador</r>? É uma fera de guerra dos Exilados. Do tamanho de uma casa, com chifres que derrubam muralha.",
+				"Eles vêm nas <r>invasões</r>, carregando os saqueadores nas costas. Esmagam plantação, curral, cerca... e gente.",
+				"Meu avô perdeu o açougue dele para um desses. Desde então, a família jurou: um dia, a gente revida."
+			],
+			"why": [
+				"Só derrotando os devastadores a gente mostra que as vilas não têm medo dos Exilados.",
+				"Eles só aparecem nas invasões mais fortes. Coisa de <o>Mestre</o>, tchê."
+			],
+			"accept": [
+				"Barbaridade, que coragem! Defende uma vila numa invasão e espera eles chegarem.",
+				"<r>Elimine 5 devastadores</r>."
+			],
+			"progress": [
+				"Eles aparecem nas ondas mais avançadas das invasões. Tu pode provocar uma com o mau presságio.",
+				"O rugido deles empurra tudo. Ataca depois do rugido, quando ele tá atordoado."
+			],
+			"complete": [
+				"Vô, tu tá vendo? A família vingou o açougue! Tchê, eu tô até emocionado.",
+				"Toma uma maçã encantada, netherita e diamantes. E tu tem churrasco de graça pelo resto da vida."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ravager"], "count": 5, "desc": "<r>Elimine</r> <r>5 devastadores</r>"},
+			"rewards": [{"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}]
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Caraca, {player}! Meu parceiro de obra! Chega aí, mermão!",
+		"Olha quem chegou! O cara mais sinistro da vila! E aí, tudo na paz?",
+		"Ô {player}! Fiz uma estátua tua na praça. Tá, é um bloco de pedra com um chapéu, mas a intenção valeu.",
+		"Mermão, que bom te ver! A obra anda bem mais rápido quando tu tá por perto."
+	],
+	"greet_neutral": [
+		"E aí, mermão? Cuidado aí que o cimento tá fresco.",
+		"Opa, gente nova. Tá procurando casa? Eu construo, mas é caro.",
+		"Fala, parceiro. Tô no meio de uma obra, mas pode falar.",
+		"Hrmm. Tu tem cara de quem nunca assentou um tijolo na vida, mermão."
+	],
+	"greet_cold": [
+		"Caraca, tu de novo? Fica longe do meu andaime, tá ligado?",
+		"Mermão, a galera tá falando umas paradas tuas que não são maneiras.",
+		"Fala logo. Tô de olho em tu."
+	],
+	"hostile": [
+		"<r>Rala, mermão!</r> Quem faz mal pra vila não chega nem perto da minha obra!",
+		"<r>Vaza daqui</r>, que eu tenho uma picareta e não tenho medo de usar!"
+	],
+	"followup": [
+		"Que mais, mermão?",
+		"Fala, parceiro.",
+		"Mais alguma parada? A massa tá secando.",
+		"Caraca, ainda tem pergunta? Manda aí."
+	],
+	"decline": [
+		"Suave, mermão. Fica pra próxima.",
+		"Tranquilo, parceiro. Obra boa não tem pressa.",
+		"Beleza. Vou chamar o bobão... não, pera, ele derrubou a última parede que encostou."
+	],
+	"locked": [
+		"Mermão, o próximo serviço é obra pesada. Tu ainda tá no nível de areia. Volta mais experiente.",
+		"Calma, parceiro. Primeiro aprende a levantar parede, depois constrói castelo."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, mermão. Obra nunca acaba, sempre tem retoque.",
+		"Tu já fez isso antes, né? Faz de novo pra mim? Pago menos, mas pago."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, mermão. Parede rachada a gente remenda. Gente também.",
+		"Aceito, parceiro. Mas não pisa na bola de novo, tá ligado?"
+	],
+	"bless": [
+		"Que essa ferramenta seja firme como alicerce de obsidiana, mermão.",
+		"Abençoada! Agora vai lá e constrói alguma coisa sinistra."
+	],
+	"bye": [
+		"Falou, mermão! Cuidado com os buracos.",
+		"Até mais, parceiro! Volta pra ver a obra pronta.",
+		"Tchau! Usa capacete, que pedra cai."
+	],
+	"abandon": [
+		"Caraca, largou a obra no meio? Prédio sem teto não protege ninguém, mermão.",
+		"Que pena, parceiro. Achei que tu era firme igual concreto."
+	],
+	"lore": [
+		[
+			"Mermão, tu sabia que as vilas antigas eram feitas só de pedregulho?",
+			"Daí um pedreiro descobriu que dava pra cozinhar o pedregulho na fornalha e virava pedra lisa. Revolução arquitetônica, tá ligado?",
+			"Hoje tem pedra polida, tijolo, ladrilho, tudo. Mas o pedregulho continua sendo a base de tudo. Humildade, mermão."
+		],
+		[
+			"Lá no deserto tem as <a>pirâmides</a>. Templos de arenito com armadilha de dinamite embaixo.",
+			"Quem construiu fez de propósito pra explodir os ladrões. Sinistro, né?",
+			"Pedreiro esperto. Mas eu nunca faria isso. Dinamite estraga o acabamento."
+		],
+		[
+			"Tu já viu as <a>mansões da floresta escura</a>? Construção dos Exilados. Enorme, com dezenas de salas.",
+			"Dizem que eles construíram com madeira escura roubada das vilas. Cada tábua tem uma história de saque.",
+			"Mas tenho que admitir, mermão: o projeto arquitetônico é bom pra caramba."
+		],
+		[
+			"Já reparou que a vila não tem prefeitura de verdade? É que o prefeito vive mudando de ideia.",
+			"Uma semana ele quer de madeira, outra de pedra, outra de vidro. Já reconstruí aquele prédio sete vezes.",
+			"Agora eu só construo a fachada e espero ele decidir. Truque de pedreiro experiente."
+		],
+		[
+			"Os <a>golens de ferro</a> são feitos de bloco de ferro e uma abóbora. Mas sabia que tem o <a>golem de cobre</a> também?",
+			"Ele é pequenininho, aperta botões e organiza baús. Fica verde com o tempo se ninguém raspa ele.",
+			"Eu adoro o golem de cobre. É o único colega de obra que nunca reclama."
+		]
+	],
+	"player_work": [
+		"E aí, mermão, tem obra pra mim?",
+		"Precisa de ajuda com a construção?",
+		"Bora trabalhar, parceiro! Qual é a parada?"
+	],
+	"names": [
+		"Seu Jurandir", "Dona Tânia", "Seu Juninho", "Dona Glória", "Seu Wagner", "Dona Cátia", "Seu Marcão",
+		"Dona Bete", "Seu Tião Pedreira", "Dona Solange"
+	]
+}

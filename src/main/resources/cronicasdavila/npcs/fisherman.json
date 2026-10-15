@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Ôxe, olha quem chegou! Meu rei {player}! Senta aqui no cais, o pôr do sol tá lindo hoje.",
+		"Eita, meu rei! Tava pensando em você agora mesmo. Pesquei um peixe com a sua cara.",
+		"{player}! Cê é a melhor coisa que aconteceu nessa costa desde o peixe frito com farofa.",
+		"Ô painho, que alegria! Cê chegou e o mar até acalmou."
+	],
+	"greet_neutral": [
+		"E aí, meu rei? Vai pescar ou só tá passando?",
+		"Oxe, gente nova! Cuidado no cais, que a madeira tá meio podre ali na ponta.",
+		"Bom dia, visse? O mar tá agitado hoje. Bom pra pescar, ruim pra nadar.",
+		"Hrmm. Chegou de mansinho, igual peixe desconfiado."
+	],
+	"greet_cold": [
+		"Ôxe. Você. Fica longe das minhas redes, viu?",
+		"Ouvi umas coisas suas, meu rei... e não foi coisa boa não.",
+		"Hmm. O mar ficou mais frio quando cê chegou."
+	],
+	"hostile": [
+		"<r>Sai do meu cais!</r> Quem machuca a vila não pesca aqui nem um lambari!",
+		"<r>Vaza</r>, que eu te jogo no mar com âncora e tudo!"
+	],
+	"followup": [
+		"Que mais, meu rei?",
+		"Fala, painho, tô ouvindo. O peixe espera.",
+		"Mais alguma coisa? A maré tá subindo.",
+		"Oxe, ainda tem pergunta? Pode mandar."
+	],
+	"decline": [
+		"Tudo bem, meu rei. Pressa não combina com pescador mesmo.",
+		"Sem problema, visse? O mar tá sempre aqui. E eu também.",
+		"Tá certo. Vou ver se o bobão da vila sabe pescar. ...Não sabe."
+	],
+	"locked": [
+		"Ô meu rei, o próximo serviço é mar aberto. Ainda não é pra você. Ganha experiência e volta.",
+		"Calma, painho. Primeiro aprende a nadar, depois enfrenta tubarão."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, o mar trouxe o problema de volta. A maré sempre volta, visse?",
+		"Cê já fez isso antes, né? Faz de novo pra mim? Pago menos, mas pago com peixe frito também."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, meu rei. O mar perdoa. Eu demoro um pouquinho mais.",
+		"Aceito. Mas fica esperto, que o golem ainda te olha torto."
+	],
+	"bless": [
+		"Que essa ferramenta te leve como a maré leva o barco: firme e sem medo.",
+		"Abençoada com água salgada e boa vontade. Vai com fé, meu rei."
+	],
+	"bye": [
+		"Vai na paz, meu rei! E não esquece de levar um peixinho.",
+		"Até mais, painho! Se ver um afogado, manda lembranças. Com a espada.",
+		"Tchau, visse? O mar vai sentir sua falta. Eu também, um pouquinho."
+	],
+	"abandon": [
+		"Oxe... largou a rede no meio do mar? Isso dá azar, meu rei.",
+		"Que pena. O mar não perdoa quem desiste fácil."
+	],
+	"lore": [
+		[
+			"Cê sabia que os golfinhos levam a gente até tesouros? É só dar peixe pra eles e seguir.",
+			"Meu avô dizia que os golfinhos são os guardiões dos naufrágios. Eles lembram de cada navio que afundou.",
+			"Eu acho que eles só querem peixe mesmo. Mas a história do vovô é mais bonita."
+		],
+		[
+			"Lá no fundo do mar tem os <a>Monumentos Submersos</a>. Ninguém sabe quem construiu.",
+			"Uns dizem que foi um povo antigo que vivia debaixo d'água. Outros dizem que foram os próprios guardiões.",
+			"Eu acho que foi um arquiteto muito ruim, porque quem faz uma casa sem porta e cheia de água?"
+		],
+		[
+			"Já ouviu falar das <a>tartarugas</a>? Elas sempre voltam pra praia onde nasceram pra botar os ovos.",
+			"Não importa o quão longe elas nadem. Sempre voltam pra casa.",
+			"Eu acho bonito isso, meu rei. Todo mundo devia ter um lugar pra voltar."
+		],
+		[
+			"Teve uma época que o mar engoliu uma vila inteira. A <a>Vila Afogada</a>, a gente chama.",
+			"Dizem que os afogados são os moradores de lá que nunca saíram. Por isso eles ficam vagando, procurando o caminho de casa.",
+			"Toda vez que eu vejo um afogado, fico meio triste. Mas aí ele joga um tridente em mim e passa a tristeza."
+		],
+		[
+			"O mercador ambulante passa aqui de vez em quando com duas lhamas. Vende coisa de tudo que é canto do mundo.",
+			"Uma vez eu troquei uma esmeralda por um peixe-baiacu. Ele inchou na minha mão e eu fiquei envenenado dois dias.",
+			"Moral da história: nem tudo que vem de longe é bom. Às vezes é só um baiacu."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda no mar?",
+		"Tem serviço de pescador pra mim?",
+		"Oxe, bora trabalhar! Qual é a boa?"
+	],
+	"names": [
+		"Seu Zuza", "Dona Iara", "Painho Dorival", "Dona Marinalva", "Seu Caymmi", "Dona Janaína", "Seu Raimundinho",
+		"Dona Lindalva", "Seu Bira", "Dona Nalvinha"
+	]
+}

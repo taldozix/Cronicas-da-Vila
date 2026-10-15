@@ -1,0 +1,226 @@
+# Crônicas da Vila
+
+Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões e os piglins passam a contar histórias, dar missões e lembrar de como você os trata.
+
+- **145 missões** com história própria: 13 profissões de aldeão × 10 missões, mais 15 missões exclusivas dos piglins no Nether.
+- **Caixa de diálogo no estilo Zelda: Breath of the Wild.** O texto aparece letra por letra, as respostas ficam à direita e dá para escolher com o mouse ou com as setas do teclado.
+- **Conversa em modo cinema.** O NPC para e fica olhando para você, a câmera trava no rosto dele e o HUD some enquanto vocês conversam.
+- **Cinco níveis:** Amador → Aprendiz → Aventureiro → Guerreiro → Mestre.
+- **Karma** no estilo da honra de Red Dead Redemption 2, com bênçãos e castigos.
+- **Diário de Missões** como uma nova aba do inventário, além de um rastreador da missão atual no HUD.
+- **Herói da Vila permanente** para quem chega a Mestre em todas as 13 profissões.
+- Tudo em **português do Brasil**, com sotaques e personalidades diferentes para cada profissão.
+
+---
+
+## Requisitos
+
+| O quê | Versão |
+|---|---|
+| Minecraft Java Edition | 26.3 |
+| Fabric Loader | 0.19.5 ou mais novo |
+| Fabric API | 0.162.0+26.3 ou mais nova |
+| Java (só para compilar) | 25 |
+
+## Como compilar e instalar
+
+1. Instale o **JDK 25** (por exemplo, o Temurin 25).
+2. Dentro desta pasta, rode:
+   ```bash
+   ./gradlew build        # no Windows: gradlew.bat build
+   ```
+3. O mod fica em `build/libs/cronicas-da-vila-1.0.0.jar`.
+4. Instale o [Fabric Loader](https://fabricmc.net/use/) para a versão 26.3 e coloque na pasta `.minecraft/mods` o `.jar` do mod e o da [Fabric API](https://modrinth.com/mod/fabric-api).
+
+Para testar direto do código, use `./gradlew runClient`.
+
+> **Se a compilação acusar algum nome que não existe:** quase toda chamada ao Minecraft que costuma mudar entre versões está isolada em `src/main/java/br/com/cronicasdavila/compat/VanillaCompat.java`. Ajustar esse arquivo costuma resolver.
+
+---
+
+## Como jogar
+
+| Ação | Controle |
+|---|---|
+| Conversar com um aldeão | Botão direito |
+| Conversar com um piglin | Botão direito **usando pelo menos uma peça de armadura de ouro** e **sem** um lingote de ouro na mão (com o lingote na mão, o piglin faz o escambo normal) |
+| Trocar com o aldeão sem conversar | Shift + botão direito, ou a opção "Bora negociar" no diálogo |
+| Avançar o texto | Clique, Enter, Espaço ou E |
+| Escolher uma resposta | Mouse, ↑ ↓, W/S, a rodinha do mouse ou as teclas 1 a 9 |
+| Sair da conversa | Esc |
+| Abrir o Diário de Missões | **J**, ou o botão **✦ Missões** no inventário |
+
+Durante a conversa:
+
+- Você não anda nem mexe a câmera, e o NPC fica parado olhando para você.
+- O HUD (barra de itens, vida, mira) é escondido e surgem faixas pretas no topo e na base da tela, como num filme.
+- A conversa termina sozinha se você se afastar, se o NPC morrer ou se você levar dano.
+
+### Cores no diálogo
+
+| Cor | Uso |
+|---|---|
+| 🔴 Vermelho | Ações perigosas e importantes: "**Elimine** 25 esqueletos" |
+| 🟢 Verde | Ações tranquilas: "**Colha**", "**Entregue**" |
+| 🟡 Amarelo | Quantidades e itens pedidos |
+| 🟠 Dourado | Recompensas e níveis |
+| 🔵 Ciano | Lugares e pessoas |
+| 🟣 Roxo | Magia e encantamentos |
+
+---
+
+## Os sistemas
+
+### Níveis
+
+| Nível | Pela XP do jogo | Pelas missões |
+|---|---|---|
+| 1. Amador | 0–19 | começo |
+| 2. Aprendiz | 20–39 | 5 missões de Amador |
+| 3. Aventureiro | 40–59 | 6 missões de Aprendiz |
+| 4. Guerreiro | 60–199 | 8 missões de Aventureiro |
+| 5. Mestre | 200+ | 10 missões de Guerreiro |
+
+- O seu nível é sempre o **maior** entre o nível pela XP e o nível pelas missões.
+- O nível conquistado pelas **missões é seu para sempre**.
+- O nível que veio **só da XP se perde** se você perder XP. Por exemplo: chegou a Guerreiro só pela XP, morreu e voltou ao nível 10 de XP → volta a ser o que tinha conquistado pelas missões.
+- Missões de um nível só aparecem depois que você chega a esse nível.
+
+### Afinidade com cada profissão
+
+Cada profissão tem a sua própria afinidade com você, que também vai de Amador a Mestre:
+
+- Completar **2 missões** do nível atual de uma profissão sobe a afinidade com ela.
+- O aldeão oferece missões do nível da afinidade, limitado ao seu nível geral.
+- Só dá para ter **uma missão ativa por profissão**. Para pegar outra, termine (ou abandone) a atual.
+- Ao falar de novo com um aldeão daquela profissão, ele relembra a missão, dá dicas, mostra o seu progresso e recebe a entrega.
+- Quando as missões inéditas de um nível acabam, o NPC repete uma missão antiga pagando **metade** da recompensa.
+- Ao entregar uma missão, o aldeão ganha experiência de troca: na próxima troca ele sobe de nível e libera trocas melhores.
+
+### Herói da Vila
+
+Complete **uma missão de Mestre de cada uma das 13 profissões** de aldeão e ganhe o efeito **Herói da Vila II permanente**.
+
+### Karma (de -1000 a +1000)
+
+| Faixa | Karma | Efeito |
+|---|---|---|
+| Lendário | ≥ 750 | Força I, Velocidade I, Sorte I, bênção diária de ferramenta, melhores preços |
+| Honrado | ≥ 500 | Velocidade I, Sorte I, bênção diária de ferramenta |
+| Respeitado | ≥ 250 | Sorte I, trocas mais baratas |
+| Confiável | ≥ 100 | Trocas um pouco mais baratas |
+| Neutro | -99 a 99 | — |
+| Suspeito | ≤ -100 | Azar, trocas mais caras |
+| Mal-visto | ≤ -300 | Golens de ferro te atacam quando te veem |
+| Odiado | ≤ -500 | Endermen te atacam, animais pacíficos vêm dar cabeçadas e os aldeões param de dar missões |
+| Amaldiçoado | ≤ -750 | Raios caem em você durante tempestades e a fome te persegue |
+
+- A **bênção** melhora a ferramenta, arma ou armadura que está na sua mão, sem quebrar o equilíbrio: Afiação até III, Eficiência até III, Força até III, Proteção até II ou Inquebrável até III. Uma vez por dia do jogo.
+- Os descontos usam o sistema de "fofoca" do próprio Minecraft, então se somam aos descontos normais.
+
+**Ganha karma:**
+
+| Ação | Karma |
+|---|---|
+| Completar uma missão | +10 por nível da missão |
+| Trocar com aldeões | +2 por troca, até 30 por dia |
+| Matar monstros dentro da vila | +1 (+3 se for servo dos Exilados), até 25 por dia |
+| Vencer uma invasão | +100 |
+| Pedir desculpas no diálogo (3 esmeraldas; 3 lingotes de ouro para piglins) | +15, uma vez por dia |
+
+**Perde karma:**
+
+| Ação | Karma |
+|---|---|
+| Machucar um aldeão | -10 (criança: -25) |
+| Matar um aldeão | -150 (criança: -250) |
+| Atacar um golem de ferro | -3 |
+| Destruir um golem de ferro | -30 |
+| Atacar um mercador ambulante | -5 |
+| Matar um mercador ambulante | -40 |
+| Matar um piglin | -10 |
+| Quebrar o sino da vila | -40 |
+| Quebrar cama ou bloco de trabalho dentro da vila | -8 |
+| Desistir de uma missão | -5 |
+
+### Diário de Missões (tecla J)
+
+- **Aba Missões:** o seu nível, uma barra de progresso pela XP e pelas missões, a barra de karma e a lista de missões ativas. Cada missão mostra quem pediu e onde essa pessoa está, o objetivo com barra de progresso, as recompensas, a história e dicas.
+- **Rastrear no HUD (tecla T):** a missão escolhida aparece no canto da tela.
+- **Desistir:** clique duas vezes para confirmar.
+- **Aba Reputação:** afinidade com as 14 profissões (13 de aldeão e os piglins), karma e o progresso até o Herói da Vila.
+
+---
+
+## As profissões e as personalidades
+
+| Profissão | Personalidade | Exemplos de missões |
+|---|---|---|
+| Fazendeiro | Caipira mineiro ("uai, sô") | Zumbis na plantação, Inverno Longo, **derrotar o Wither** pela Terra Morta |
+| Pescador | Baiano ("oxe, meu rei") | Afogados na praia, guardiã anciã, **as Três Anciãs** |
+| Pastor | Poeta sereno do sertão | Phantoms, saqueadores, **o Warden** que levou o irmão gêmeo |
+| Açougueiro | Gaúcho ("bah, tchê") | Churrasco, hoglins, **5 devastadores** |
+| Coureiro | Nordestino ("vixe, arretado") | Zumbis do deserto, tatu, **élitro** do Fim |
+| Flecheiro | Paulistano ("orra, meu") | Tiro ao alvo, ghasts, **Dragão do Ender** |
+| Pedreiro | Carioca ("caraca, mermão") | Traças, Câmaras de Provação, **montar um sinalizador** |
+| Ferramenteiro | Engenheiro nerd | Redstone, detritos antigos, **núcleo pesado** |
+| Ferreiro de Armas | Veterano esquentado ("POR MIL BIGORNAS!") | Evocadores, vencer uma invasão, **200 servos dos Exilados** |
+| Armeiro | Guardião estoico | Moldes de ornamento, shulkers, **Wither** |
+| Cartógrafo | Navegador português ("ó pá, fixe!") | Pântano, mansão, **cabeça de dragão** |
+| Bibliotecário | Erudito pomposo | Grimório roubado, fragmentos de eco, **o Warden e a Grande Maldição** |
+| Clérigo | Místico solene | Lágrimas de ghast, crânios profanos, **dois Withers** |
+| **Piglin** (Nether) | Obcecado por ouro ("HRRNF!") | Cubos de magma, Ossudos, **vingar o Grande Porcão** |
+
+Também têm falas próprias o **bobão da vila**, os **desempregados** e as **crianças**.
+
+### A história do mundo
+
+As histórias de cada NPC se ligam umas às outras:
+
+- A **Grande Maldição**, que roubou a fala dos aldeões e só deixou o "hrmm".
+- Os **Exilados** (illagers), aldeões expulsos por praticar magia proibida.
+- A **Noite Sem Fim** e o **Primeiro Golem**.
+- As **Cidades Antigas** e o despertar do **Warden**.
+- O **Reino Dourado** dos piglins, destruído pela Besta de Três Cabeças (o Wither).
+
+---
+
+## Comandos
+
+| Comando | Para que serve |
+|---|---|
+| `/cronicas` | Mostra o seu status |
+| `/cronicas admin karma <valor>` | Define o karma (só operadores) |
+| `/cronicas admin nivel <1-5>` | Define o nível conquistado pelas missões |
+| `/cronicas admin afinidade <profissão> <1-5>` | Define a afinidade com uma profissão (`farmer`, `piglin`...) |
+| `/cronicas admin completar` | Completa os objetivos de abate, mineração e estatística das missões ativas (para testes) |
+| `/cronicas admin resetar` | Zera todo o seu progresso |
+
+---
+
+## Como editar ou criar missões
+
+Tudo fica em JSON, fácil de editar:
+
+- `src/main/resources/cronicasdavila/quests/<profissão>.json`: as missões.
+- `src/main/resources/cronicasdavila/npcs/<profissão>.json`: saudações, histórias, nomes e respostas do jogador.
+- `src/main/resources/cronicasdavila/npcs/_common.json`: as falas padrão.
+
+Tipos de objetivo:
+
+| Tipo | O que conta |
+|---|---|
+| `kill` | Criaturas derrotadas |
+| `deliver` | Itens entregues ao NPC (aceita tags com `#`) |
+| `mine` | Blocos quebrados |
+| `stat` | Estatísticas do jogo, como `minecraft:fish_caught`, `minecraft:animals_bred`, `minecraft:raid_win` ou `minecraft:enchant_item` |
+| `craft` | Itens fabricados |
+
+Marcação de cor nos textos:
+
+- Cores: `<r>vermelho</r>`, `<g>verde</g>`, `<y>amarelo</y>`, `<o>dourado</o>`, `<a>ciano</a>`, `<p>roxo</p>`, `<n>laranja-Nether</n>` e `<d>cinza</d>`.
+- Estilos: `<b>negrito</b>` e `<i>itálico</i>`.
+- Nomes traduzidos automaticamente: `{item:minecraft:diamond}`, `{entity:minecraft:zombie}` e `{ench:minecraft:mending}`.
+- Substituições: `{player}` vira o nome do jogador e `{npc}` vira o nome do NPC.
+
+Ao iniciar o servidor, o mod confere todos os ids de itens, criaturas e blocos das missões e avisa no log se algum não existir.

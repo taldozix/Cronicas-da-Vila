@@ -1,0 +1,60 @@
+{
+	"greet_friendly": [
+		"EEEI, {player}! Meu melhor amigo! Você é meu melhor amigo, né? Fala que sim.",
+		"Olha quem chegou! Eu tava aqui olhando pro nada. É muito difícil, sabia? O nada é bem grande.",
+		"{player}! Sabia que se você girar bem rápido o mundo gira junto? Eu testei. Vomitei."
+	],
+	"greet_neutral": [
+		"Oi! Você também tá perdido? Eu tô perdido desde que nasci.",
+		"Hrmm? Ah, desculpa, tava tentando lembrar meu nome. Acho que é Bobão. Todo mundo me chama assim.",
+		"Ei, você! Sabe fazer pão? Eu tentei uma vez e saiu uma bota."
+	],
+	"greet_cold": [
+		"Eu sei o que você fez... não sei direito o quê, mas sei que fez!",
+		"Os outros falaram pra eu não conversar com você. Mas eu sou rebelde. Oi."
+	],
+	"hostile": [
+		"Até EU, o bobão, sei que você é do mal. Isso diz muita coisa, hein?",
+		"<r>Não chega perto!</r> Eu sei kung fu! Mentira, eu não sei nem amarrar o sapato. Mas sai!"
+	],
+	"followup": [
+		"Que mais? Que mais? Que mais?",
+		"Pergunta mais coisa! Eu adoro pergunta. Nunca sei as respostas, mas adoro.",
+		"Ainda aqui? Que legal! Ninguém fica muito tempo comigo."
+	],
+	"bye": [
+		"Tchau! Volta logo! Ou não, sei lá, eu esqueço as pessoas rapidinho.",
+		"Até mais! Se encontrar meu cérebro por aí, me devolve.",
+		"Tchau tchau! Cuidado com a vaca da esquina, ela me olha estranho."
+	],
+	"lore": [
+		[
+			"Uma vez eu tentei ser fazendeiro. Plantei uma batata e reguei com leite.",
+			"Nasceu um bolo! ...Mentira, nasceu nada. Mas eu comi a batata e foi bom do mesmo jeito."
+		],
+		[
+			"Sabe o golem de ferro? Ele dá flores pras crianças. Eu fiquei na fila três dias.",
+			"Ele me deu um soco. Acho que ele me confundiu com um zumbi. Acontece direto, eu tenho cara de zumbi."
+		],
+		[
+			"Dizem que no <n>Nether</n> tem porcos que usam roupa de ouro e são mais espertos que eu.",
+			"Isso não é difícil, né? Mas mesmo assim fiquei ofendido."
+		],
+		[
+			"Eu sou o único aldeão que não tem profissão. Sabe por quê? Porque eu sou <o>livre</o>!",
+			"...E também porque eu quebrei todas as mesas de trabalho da vila sem querer. Mas principalmente porque sou livre."
+		],
+		[
+			"Uma vez um creeper chegou perto de mim e fez \"ssssss\".",
+			"Eu fiz \"ssssss\" de volta. Ele ficou tão confuso que foi embora. Sou um gênio da diplomacia."
+		]
+	],
+	"names": ["Bobão", "Zé Ruela", "Tico", "Pateta", "Lelé", "Dodói", "Bocó", "Toquinho"],
+	"extra": {
+		"no_profession": [
+			"TRABALHO?! Hahahaha! Ai, você é engraçado. A última vez que eu trabalhei a vila pegou fogo.",
+			"Missão? Eu tenho uma missão: descobrir por que as galinhas atravessam o caminho. Quer ajudar? Não tem recompensa.",
+			"Eu podia te dar uma missão, mas ia esquecer qual era antes de você voltar. Pergunta pros outros, eles são mais espertos."
+		]
+	}
+}

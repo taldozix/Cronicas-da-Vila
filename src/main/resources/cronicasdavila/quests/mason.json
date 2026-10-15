@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "mason_1_pedra",
+			"tier": 1,
+			"title": "Pedra Pra Obra",
+			"tone": "calm",
+			"offer": [
+				"Caraca, mermão! Tu chegou na hora. Tô com a obra do muro da vila parada por falta de pedra.",
+				"O prefeito quer o muro pronto antes da próxima lua cheia. E eu aqui com a colher de pedreiro na mão e nada pra assentar.",
+				"Preciso de alguém que <g>minere</g> pedra pra mim. Muita pedra, tá ligado?"
+			],
+			"why": [
+				"Muro é segurança, mermão. Zumbi não pula muro. Saqueador demora pra passar. A vila dorme tranquila.",
+				"E muro bonito valoriza a vila. Depois que eu fizer, vai ter fila de aldeão querendo morar aqui."
+			],
+			"accept": [
+				"Maneiro! Picareta na mão e bora quebrar pedra. Qualquer pedra natural serve.",
+				"<g>Minere</g> <y>64 blocos de pedra</y> (pedra, granito, diorito, andesito, ardósia, tufo...)."
+			],
+			"progress": [
+				"Pedra tem em todo canto debaixo da terra. Cava uma escada pra baixo e vai embora.",
+				"Picareta de pedra já dá conta. Mas de ferro é bem mais rápida, sinistro."
+			],
+			"complete": [
+				"Que pedreira, mermão! O muro vai sair mais rápido que fofoca na vila.",
+				"Toma ferro e umas esmeraldas. Bom trabalho, parceiro."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:base_stone_overworld"], "count": 64, "desc": "<g>Minere</g> <y>64 blocos de pedra</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 4}]
+		},
+		{
+			"id": "mason_1_tijolos",
+			"tier": 1,
+			"title": "Tijolo por Tijolo",
+			"tone": "calm",
+			"offer": [
+				"Mermão, a escola da vila tá com o telhado caindo. Literalmente. Ontem caiu uma telha na cabeça do professor.",
+				"Ele tá bem, mas agora só fala em rima. Sinistro, né?",
+				"Quero reconstruir com <y>tijolo</y>, que é forte e bonito. Mas a fornalha da vila só faz um por vez."
+			],
+			"why": [
+				"Escola é o futuro da vila, tá ligado? Sem escola, as crianças vão crescer sem saber trocar esmeralda direito.",
+				"E eu não aguento mais ouvir o professor rimando. \"Bom dia, alegria, que bela fantasia\". Me ajuda, pelo amor."
+			],
+			"accept": [
+				"Caraca, valeu! Argila tem no fundo dos rios e lagos. Cozinha na fornalha que vira tijolo.",
+				"<g>Traga</g> <y>32 tijolos</y>."
+			],
+			"progress": [
+				"Argila fica no fundo da água rasa, cinzinha. Cada bloco dá quatro bolas de argila.",
+				"Cozinha as bolas de argila na fornalha. Cada uma vira um tijolo."
+			],
+			"complete": [
+				"Tijolinhos perfeitos! A escola vai ficar mais firme que a minha vontade de tirar férias.",
+				"Toma esmeraldas e ferro. As crianças mandaram um desenho teu de agradecimento. Tá meio torto, mas é de coração."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:brick"], "count": 32, "desc": "<g>Entregue</g> <y>32 tijolos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "mason_2_calcita",
+			"tier": 2,
+			"title": "A Pedra Branca",
+			"tone": "calm",
+			"offer": [
+				"Mermão, tu já viu a <y>calcita</y>? Pedra branquinha, linda, que fica nas montanhas e em volta dos <a>geodos de ametista</a>.",
+				"A capela da vila precisa de um altar novo. E o clérigo quer de pedra branca. Diz que dá \"energia boa\".",
+				"Eu acho que é frescura, mas quem sou eu pra discutir com o cara que conversa com os espíritos?"
+			],
+			"why": [
+				"A capela é onde o povo vai quando tá triste, doente, com medo. Merece ficar bonita.",
+				"E sinceramente, mermão, se o clérigo ficar feliz, ele para de me pedir pra trocar o piso toda semana."
+			],
+			"accept": [
+				"Maneiro! Geodo de ametista é uma bola roxa escondida embaixo da terra. A calcita forma a camada branca em volta.",
+				"<g>Traga</g> <y>32 calcitas</y>."
+			],
+			"progress": [
+				"Geodo aparece no subterrâneo, às vezes até com um buraquinho que dá pra ver por fora.",
+				"Picos com pedra branca também têm muita calcita, sinistro."
+			],
+			"complete": [
+				"Que brancura! O clérigo vai chorar quando ver o altar.",
+				"Toma esmeraldas, um diamante e um livro de <p>Eficiência</p>. Tua picareta vai cortar pedra igual manteiga."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:calcite"], "count": 32, "desc": "<g>Entregue</g> <y>32 calcitas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 2}]
+		},
+		{
+			"id": "mason_2_cupins",
+			"tier": 2,
+			"title": "Cupins de Pedra",
+			"tone": "danger",
+			"offer": [
+				"Mermão, tu sabe o que é <r>traça</r>? Aqueles bichinhos cinza que vivem DENTRO da pedra?",
+				"Fui pegar pedra lá na montanha e quando quebrei um bloco, saiu uma traça. Ela chamou as amigas. E as amigas chamaram as primas.",
+				"Saí correndo com quinze traças me mordendo o tornozelo. Nunca senti tanta vergonha na vida."
+			],
+			"why": [
+				"Elas tão infestando a pedreira da vila. Se eu levar pedra infestada pro muro, vira um ninho de traça dentro da vila. Sinistro!",
+				"E pedreiro que tem medo de pedra é que nem pescador com medo de peixe. Minha reputação tá em jogo, tá ligado?"
+			],
+			"accept": [
+				"Caraca, valeu! Elas ficam em pedras infestadas nas montanhas e nas fortalezas.",
+				"<r>Elimine 15 traças</r>."
+			],
+			"progress": [
+				"Pedra infestada quebra mais rápido que pedra normal. Se reparar nisso, prepara a espada.",
+				"Mata uma de cada vez. Quando uma apanha, ela chama as outras de dentro das pedras."
+			],
+			"complete": [
+				"A pedreira tá limpa! Agora posso quebrar pedra sem dançar sapateado.",
+				"Toma ferro e um diamante. E nunca conta pra ninguém que eu fugi de uma traça, mermão."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:silverfish"], "count": 15, "desc": "<r>Elimine</r> <r>15 traças</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "mason_3_obsidiana",
+			"tier": 3,
+			"title": "A Pedra do Portal",
+			"tone": "calm",
+			"offer": [
+				"Mermão, os piglins mandaram um recado: querem fazer comércio com a vila. Ouro do Nether em troca de coisas daqui.",
+				"Mas pra isso a gente precisa de um <a>portal</a> fixo, bem construído, seguro. Não aquelas gambiarras que os aventureiros fazem.",
+				"E portal é feito de <y>obsidiana</y>, a pedra mais dura que existe. Picareta de diamante e paciência de monge."
+			],
+			"why": [
+				"Comércio com o Nether vai trazer ouro, quartzo e coisas que a gente nunca viu. A vila vai crescer demais, tá ligado?",
+				"E portal bem feito, com moldura de pedra, protege a vila de coisa ruim que tente atravessar."
+			],
+			"accept": [
+				"Maneiro! Obsidiana se forma quando água encosta em lava parada. Só picareta de diamante quebra.",
+				"<g>Traga</g> <y>16 obsidianas</y>."
+			],
+			"progress": [
+				"Lagos de lava no subterrâneo. Joga água em cima com cuidado e vira obsidiana.",
+				"Portais em ruínas também têm obsidiana sobrando. E às vezes um baú."
+			],
+			"complete": [
+				"Obsidiana de primeira! O portal vai ficar sinistro de bonito. Os piglins vão adorar.",
+				"Toma diamantes, frascos de experiência e um livro de <p>Eficiência</p> nível alto. Tu merece, mermão."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:obsidian"], "count": 16, "desc": "<g>Entregue</g> <y>16 obsidianas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 3}]
+		},
+		{
+			"id": "mason_3_ardosia",
+			"tier": 3,
+			"title": "O Escavador das Profundezas",
+			"tone": "calm",
+			"offer": [
+				"Caraca, mermão, tu sabia que lá embaixo, bem fundo, a pedra muda de cor? Vira <y>ardósia</y>: escura, pesada, linda.",
+				"O prefeito quer uma praça nova com piso de ardósia. Diz que é chique. Eu acho que ele viu numa revista.",
+				"Só que ardósia é dura de quebrar e fica lá no fundão, perto das cavernas mais perigosas."
+			],
+			"why": [
+				"A praça é onde a vila se encontra. Festa, feira, casamento. Tudo acontece lá.",
+				"E sendo bem sincero? Quem cava fundo assim acaba achando diamante pelo caminho. Tu sai no lucro, parceiro."
+			],
+			"accept": [
+				"Sinistro! Desce até onde a pedra fica escura e começa a cavar.",
+				"<g>Minere</g> <y>256 blocos de ardósia</y>."
+			],
+			"progress": [
+				"A ardósia começa abaixo da altura zero, mais ou menos. Leva muita tocha.",
+				"Picareta com Eficiência ajuda demais. Ardósia é bem mais lenta de quebrar."
+			],
+			"complete": [
+				"Que montanha de ardósia, mermão! A praça vai ficar parecendo de cidade grande.",
+				"Toma diamantes e uma maçã dourada. E se achou diamante cavando, esse é teu também, eu não vi nada."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:deepslate", "minecraft:cobbled_deepslate"], "count": 256, "desc": "<g>Minere</g> <y>256 blocos de ardósia</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "mason_4_brisas",
+			"tier": 4,
+			"title": "Os Arquitetos do Vento",
+			"tone": "danger",
+			"offer": [
+				"Mermão, quem construiu as <a>Câmaras de Provação</a>? Cobre, tufo, mecanismos... arquitetura sinistra!",
+				"Eu quero estudar aquilo. Mas toda vez que alguém entra, as <r>brisas</r> expulsam com rajadas de vento.",
+				"Elas pulam, rodopiam e jogam tudo longe. O último pedreiro que foi lá voltou voando. VOANDO, mermão."
+			],
+			"why": [
+				"Se eu aprender as técnicas de lá, a vila vai ter portas automáticas, elevadores de vento, muralhas que se defendem sozinhas.",
+				"É lugar de <o>Guerreiro</o>, tá ligado? Armadilhas, monstros e um gerador atrás do outro."
+			],
+			"accept": [
+				"Caraca, tu é corajoso! Espada ou machado contra elas, que flecha elas desviam.",
+				"<r>Elimine 10 brisas</r> nas Câmaras de Provação."
+			],
+			"progress": [
+				"As câmaras ficam bem embaixo da terra. Procura cobre e tufo nas paredes das cavernas.",
+				"As rajadas te jogam pra trás. Luta longe de buracos!"
+			],
+			"complete": [
+				"Os corredores tão livres! Já mandei os aprendizes desenharem cada parede.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Inquebrável</p>. Tu é um parceiraço, mermão."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:breeze"], "count": 10, "desc": "<r>Elimine</r> <r>10 brisas</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "mason_4_muralha",
+			"tier": 4,
+			"title": "A Grande Muralha",
+			"tone": "calm",
+			"offer": [
+				"Mermão, depois da última invasão dos Exilados, o Conselho decidiu: a vila precisa de uma <a>Grande Muralha</a>.",
+				"Não aquele murinho de pedra. Uma muralha DE VERDADE. Com ladrilho de ardósia, que é a pedra mais nobre que tem.",
+				"É a maior obra da minha vida. E eu preciso de um parceiro à altura."
+			],
+			"why": [
+				"Com a muralha, nenhuma invasão vai pegar a vila de surpresa. Os devastadores vão bater a cara na pedra.",
+				"Trabalho de <o>Guerreiro</o>, tá ligado? Não é só força. É disciplina, e tu tem."
+			],
+			"accept": [
+				"Sinistro! Ardósia lapidada vira tijolo de ardósia, que vira ladrilho no cortador de pedras.",
+				"<g>Traga</g> <y>64 ladrilhos de ardósia</y>."
+			],
+			"progress": [
+				"Cortador de pedras faz tudo mais rápido e sem desperdício.",
+				"Cidades antigas têm ladrilho de ardósia sobrando. Mas lá mora coisa pior que traça, hein."
+			],
+			"complete": [
+				"Caraca... a muralha tá de pé. Olha só, mermão! Parece coisa de reino!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Fortuna</p>. Teus minérios vão render o dobro."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:deepslate_tiles"], "count": 64, "desc": "<g>Entregue</g> <y>64 ladrilhos de ardósia</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 2}]
+		},
+		{
+			"id": "mason_5_farol",
+			"tier": 5,
+			"title": "O Farol do Mundo",
+			"tone": "danger",
+			"offer": [
+				"Mermão, existe uma construção que todo pedreiro sonha em ver: o <o>sinalizador</o>. Um farol de luz que sobe até o céu.",
+				"Ele dá força, velocidade e proteção pra todo mundo em volta. Mas o coração dele é uma <o>estrela do Nether</o>.",
+				"E pra conseguir uma estrela, alguém tem que derrotar o <r>Wither</r>. Ninguém da vila tem coragem. Nem eu, que já enfrentei traça."
+			],
+			"why": [
+				"Com um sinalizador no centro da vila, os guardas ficam mais fortes, os mineiros mais rápidos, e todo viajante vê a luz de longe.",
+				"Seria o símbolo de que esta vila é protegida por um <o>Mestre</o>. Teu símbolo, parceiro."
+			],
+			"accept": [
+				"Caraca, tu vai mesmo enfrentar o bicho? Derrota ele, pega a estrela e monta o sinalizador.",
+				"<g>Traga</g> <y>1 sinalizador</y> pronto."
+			],
+			"progress": [
+				"Sinalizador: estrela do Nether, três obsidianas e cinco vidros.",
+				"A estrela vem do Wither. E o Wither vem de três crânios de esqueleto murcho. Boa sorte, mermão."
+			],
+			"complete": [
+				"Olha essa luz, mermão... olha essa luz subindo pro céu. Os aldeões tão chorando na praça.",
+				"Toma netherita, diamantes e uma maçã encantada. Este farol vai brilhar com teu nome pra sempre."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:beacon"], "count": 1, "desc": "<g>Entregue</g> <y>1 sinalizador</y> (requer derrotar o Wither)"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		},
+		{
+			"id": "mason_5_cidade",
+			"tier": 5,
+			"title": "Os Ecos da Cidade Antiga",
+			"tone": "danger",
+			"offer": [
+				"Mermão, tem uma coisa que me tira o sono. Lá no fundo do mundo, abaixo de tudo, existe uma <a>Cidade Antiga</a>.",
+				"Quem construiu? Ninguém sabe. Mas a arquitetura é perfeita: ardósia, colunas, um portal enorme no centro que nunca funcionou.",
+				"Nos baús de lá tem uns <y>fragmentos de eco</y>, cristais que guardam sons do passado. Eu quero ouvir a voz de quem construiu aquilo."
+			],
+			"why": [
+				"Se a gente entender quem fez a cidade, talvez entenda o que deu errado. Pra não repetir o erro deles aqui em cima.",
+				"Lá mora o <r>Warden</r>, mermão. Só um <o>Mestre</o> anda naquele silêncio e volta pra contar."
+			],
+			"accept": [
+				"Anda agachado, não pisa no sculk e não faz barulho. Sério, nenhum barulho.",
+				"<g>Traga</g> <y>24 fragmentos de eco</y>."
+			],
+			"progress": [
+				"Os fragmentos ficam nos baús espalhados pela cidade antiga. Pode precisar visitar mais de uma.",
+				"Lã abafa o som. Coloca lã por cima do sculk que ele não escuta teus passos."
+			],
+			"complete": [
+				"Escuta... <d>(ele aproxima um fragmento do ouvido)</d> ...tem vozes aqui, mermão. Eles falavam de uma luz que acenderam no portal. Sinistro demais.",
+				"Toma netherita, diamantes e um livro de <p>Furtividade Ágil</p>. Tu é o único que eu conheço que voltou de lá."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:echo_shard"], "count": 24, "desc": "<g>Entregue</g> <y>24 fragmentos de eco</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:swift_sneak", "level": 3}]
+		}
+	]
+}

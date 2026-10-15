@@ -1,0 +1,125 @@
+{
+	"greet_friendly": [
+		"Ô, {player}! Que bom te ver por aqui. A vila inteira só fala de você.",
+		"Olha só quem apareceu! O herói da vila em pessoa. Chega mais!",
+		"{player}! Chegou na hora certa. Senta aí, quer dizer... fica em pé mesmo, a gente não tem cadeira."
+	],
+	"greet_neutral": [
+		"Hrmm. Olá, viajante. Precisa de alguma coisa?",
+		"Bom dia... ou boa tarde? Aqui na vila a gente mede o tempo pelo sino.",
+		"Opa. Você é novo por aqui, né? Ainda não sei se gosto de você."
+	],
+	"greet_cold": [
+		"Hmpf. É você. Os outros me contaram umas coisas sobre você, sabia?",
+		"Fala rápido. Tô de olho em você.",
+		"Ah, {player}... As pessoas cochicham quando você passa. Por que será, hein?"
+	],
+	"hostile": [
+		"<r>Some daqui!</r> Você machucou gente desta vila. <r>Não</r> vou te dar trabalho nenhum.",
+		"<r>GOLEEEEM!</r> Ah, ele não tá vindo... Mas sai de perto de mim mesmo assim!",
+		"Eu lembro do que você fez. A vila inteira lembra. <r>Vai embora.</r>"
+	],
+	"followup": [
+		"Mais alguma coisa, {player}?",
+		"E aí, o que mais?",
+		"Pode falar, tô ouvindo.",
+		"Hrmm? Ainda tá aí? Diz."
+	],
+	"decline": [
+		"Tudo bem, tudo bem. Se mudar de ideia, eu tô sempre por aqui. Literalmente. Eu nunca saio daqui.",
+		"Entendo. Nem todo mundo nasceu pra ajudar os outros...",
+		"Sem problema. Vou perguntar pro bobão da vila. Ele vai fazer tudo errado, mas pelo menos vai fazer."
+	],
+	"locked": [
+		"No momento não tenho nada que combine com você. Volte quando tiver mais experiência.",
+		"Hmm, agora não tenho serviço. Dá uma volta e passa aqui depois."
+	],
+	"repeat": [
+		"Lembra daquele serviço que você fez pra mim? Pois é... o problema voltou. Paga menos, mas ajuda muito.",
+		"Sabe o que é engraçado? Precisei de novo da mesma coisa. A vida na vila é assim, um eterno replay."
+	],
+	"apology_thanks": [
+		"Hmm... tá. Aceito. Mas é só porque esmeralda não tem cheiro de culpa.",
+		"Tudo bem. Todo mundo merece uma segunda chance. Até você. Talvez."
+	],
+	"bless": [
+		"Segura firme. Que os ventos da vila guiem cada golpe dessa ferramenta.",
+		"Pronto! Abençoada com o carinho de quem você ajudou. Cuida bem dela."
+	],
+	"bye": [
+		"Até mais, {player}! Cuidado com os creepers.",
+		"Vai com Deus... ou com o Notch, sei lá em quem você acredita.",
+		"Tchau! E não esquece de dormir à noite, os phantoms não perdoam."
+	],
+	"abandon": [
+		"Ah... tá bom. Achei que podia contar com você.",
+		"Que pena. Vou ter que me virar sozinho de novo."
+	],
+	"lore": [
+		[
+			"Sabe por que todo aldeão faz \"hrmm\"? Dizem que no começo do mundo a gente sabia falar com todo mundo.",
+			"Aí veio a <p>Grande Maldição dos Exilados</p>, e só sobrou o \"hrmm\" pra quem não é da vila. Você é sortudo de me entender!"
+		],
+		[
+			"Os mais velhos contam da <a>Noite Sem Fim</a>, quando os mortos-vivos cercaram as vilas por dias e dias.",
+			"Foi aí que os ferreiros forjaram o <a>Primeiro Golem</a>. Ferro, abóbora e muita reza. Desde então, toda vila tem o seu."
+		]
+	],
+	"player_work": [
+		"Tem algum trabalho pra mim?",
+		"Precisa de ajuda com alguma coisa?",
+		"Bora, me dá uma missão!",
+		"Tô procurando serviço. Tem algo aí?"
+	],
+	"player_accept": [
+		"Pode deixar comigo!",
+		"Fechado. Considere feito.",
+		"Tô dentro!",
+		"Missão aceita. Bora!"
+	],
+	"player_why": [
+		"E por que eu deveria ajudar?",
+		"O que eu ganho com isso?",
+		"Me explica melhor, por que isso é importante?",
+		"Por que você mesmo não faz?"
+	],
+	"player_decline": [
+		"Agora não, valeu.",
+		"Hmm, passo dessa vez.",
+		"Tô ocupado, quem sabe depois.",
+		"Nem pensar."
+	],
+	"player_lore": [
+		"Me conta uma história.",
+		"O que você sabe sobre este mundo?",
+		"Alguma fofoca boa?",
+		"Me fala mais sobre a vila."
+	],
+	"player_more_lore": [
+		"Conta outra!",
+		"E o que mais?",
+		"Continua, tô curtindo.",
+		"Sabe mais alguma?"
+	],
+	"player_bye": [
+		"Até mais!",
+		"Falou, tchau!",
+		"Preciso ir. Até!",
+		"Fui!"
+	],
+	"names": [
+		"Seu Zé", "Dona Cida", "Tonhão", "Dona Benta", "Seu Lindolfo", "Mariazinha", "Dona Neném", "Seu Juca",
+		"Toninho", "Dona Fia", "Seu Valdomiro", "Rosinha", "Seu Bené", "Dona Lurdinha", "Chico", "Dona Zuleide"
+	],
+	"extra": {
+		"sleeping": [
+			"Zzz... nãão, mãe... só mais cinco minutinhos... Zzz...",
+			"Zzz... hrmm... esmeralda... muita esmeralda... Zzz...",
+			"Zzz... <d>(ele está dormindo profundamente. Melhor voltar de dia.)</d>"
+		],
+		"no_profession": [
+			"Trabalho? Eu nem tenho emprego, como é que vou te dar um? Se achar uma mesa de trabalho sobrando, me avisa.",
+			"Tô procurando uma profissão ainda. Pensei em ser bibliotecário, mas não sei ler. Pensei em pescador, mas tenho medo de água."
+		]
+	}
+}

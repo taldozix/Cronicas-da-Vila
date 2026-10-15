@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "weaponsmith_1_ossos",
+			"tier": 1,
+			"title": "Ossos pra Têmpera",
+			"tone": "calm",
+			"offer": [
+				"HA! Um recruta! Chega mais, que eu não mordo. Só grito. Muito.",
+				"Escuta aqui: o segredo de uma boa lâmina é a <a>têmpera</a>. E a melhor têmpera se faz com pó de osso misturado na água.",
+				"Meu estoque de <y>ossos</y> acabou! Como é que eu vou forjar espada decente assim? POR MIL BIGORNAS!"
+			],
+			"why": [
+				"Espada mal temperada quebra na primeira pancada. E espada quebrada na hora errada é soldado morto, entendeu?",
+				"E de quebra você aprende a caçar esqueleto. Treino de combate grátis. De nada!"
+			],
+			"accept": [
+				"ISSO! Assim que eu gosto! Esqueleto dá osso. Mata eles e traz tudo.",
+				"<g>Traga</g> <y>24 ossos</y>."
+			],
+			"progress": [
+				"Esqueletos aparecem de noite e em cavernas. Também dá pra achar osso em fósseis, debaixo da terra no deserto.",
+				"Peixe às vezes vem com osso no anzol. Pergunta pro pescador, ele vive reclamando disso."
+			],
+			"complete": [
+				"Ossos de qualidade! A têmpera vai ficar perfeita! HA HA!",
+				"Toma ferro e uma espada de ferro feita por mim. Cuida bem dela que ela cuida de você!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:bone"], "count": 24, "desc": "<g>Entregue</g> <y>24 ossos</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:iron_sword", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_1_batismo",
+			"tier": 1,
+			"title": "Batismo de Fogo",
+			"tone": "danger",
+			"offer": [
+				"Você tem cara de quem nunca lutou de verdade. Tá na hora do seu <a>Batismo de Fogo</a>, recruta!",
+				"Na minha época, todo jovem da vila tinha que provar o valor enfrentando os <r>creepers</r>. Os bichos mais traiçoeiros do mundo!",
+				"Eles não atacam de frente. Chegam de fininho e BUM! Quem sobrevive a isso, sobrevive a tudo."
+			],
+			"why": [
+				"Porque a vila precisa de defensores, e defensor se forma no fogo! Literalmente, nesse caso.",
+				"E porque eu tô velho, minha perna range e meu joelho estala. Alguém tem que continuar o legado!"
+			],
+			"accept": [
+				"ESSE É O ESPÍRITO! Ataca e recua. Ataca e recua. Nunca deixa ele te abraçar!",
+				"<r>Elimine 8 creepers</r>."
+			],
+			"progress": [
+				"Escuta o \"ssss\". Se ouvir, corre pra trás e volta depois.",
+				"Uma espadada com corrida joga ele pra trás. Use isso!"
+			],
+			"complete": [
+				"Você sobreviveu ao Batismo! HA HA HA! Agora você é oficialmente um <a>Defensor da Vila</a>!",
+				"Toma ferro e pólvora. A pólvora dos creepers que você derrotou. Troféu de guerra!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 8, "desc": "<r>Elimine</r> <r>8 creepers</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:gunpowder", "count": 8}]
+		},
+		{
+			"id": "weaponsmith_2_ronda",
+			"tier": 2,
+			"title": "A Ronda Noturna",
+			"tone": "danger",
+			"offer": [
+				"Recruta, os guardas da ronda noturna tão exaustos. Três noites seguidas de ataque!",
+				"Zumbi, esqueleto, aranha, creeper... vem de tudo. Parece que os monstros combinaram um festival na nossa porta!",
+				"Preciso de alguém pra cobrir uma ronda inteira. Alguém que não tenha medo do escuro. VOCÊ!"
+			],
+			"why": [
+				"Guarda cansado comete erro. Erro na ronda é monstro dentro da vila. Monstro dentro da vila é criança chorando!",
+				"E você já é <o>Aprendiz</o>. Hora de provar que o treino serviu pra alguma coisa!"
+			],
+			"accept": [
+				"BOA! Fica perto da vila, de olho nas sombras.",
+				"<r>Elimine 30 monstros</r> (zumbis, esqueletos, aranhas ou creepers)."
+			],
+			"progress": [
+				"Os monstros vêm do escuro. Ilumina a vila e eles vão aparecer só nas bordas.",
+				"Faz uma ronda circular. Nunca fica parado no mesmo lugar, recruta!"
+			],
+			"complete": [
+				"Os guardas dormiram a noite toda! Tão até de bom humor! Isso é um MILAGRE!",
+				"Toma ferro, um diamante e um livro de <p>Afiação</p>. Lâmina afiada, inimigo derrubado!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:skeleton", "minecraft:spider", "minecraft:creeper", "minecraft:husk", "minecraft:stray", "minecraft:cave_spider"], "count": 30, "desc": "<r>Elimine</r> <r>30 monstros</r> (zumbis, esqueletos, aranhas, creepers)"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 2}]
+		},
+		{
+			"id": "weaponsmith_2_arsenal",
+			"tier": 2,
+			"title": "Arsenal da Guarda",
+			"tone": "calm",
+			"offer": [
+				"Recruta, olha esse arsenal! <d>(ele aponta para um rack quase vazio)</d> É uma VERGONHA!",
+				"Os guardas tão lutando com espada de pedra! PEDRA! Na minha época, pelo menos era de ferro!",
+				"Preciso de <y>lingotes de ferro</y> pra forjar um lote decente de armas. Muitos lingotes!"
+			],
+			"why": [
+				"Guarda bem armado é vila em paz. Simples assim. Não tem filosofia nenhuma nisso!",
+				"E eu tenho orgulho da minha forja! Não vou deixar a guarda passar vergonha na frente da vila vizinha!"
+			],
+			"accept": [
+				"ISSO! Ferro bruto derretido na fornalha vira lingote. Mina, derrete, traz!",
+				"<g>Traga</g> <y>48 lingotes de ferro</y>."
+			],
+			"progress": [
+				"Fazenda de golem dá ferro infinito, mas isso é coisa de engenheiro. Eu prefiro o jeito antigo: picareta!",
+				"Ferro tem em montanhas e cavernas. Veio grande fica bem fundo."
+			],
+			"complete": [
+				"Agora sim! O arsenal vai estar cheio até a próxima lua! A guarda vai brilhar!",
+				"Toma esmeraldas, um diamante e um escudo novo. Ninguém entra em batalha sem escudo, recruta!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:iron_ingot"], "count": 48, "desc": "<g>Entregue</g> <y>48 lingotes de ferro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 14}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:shield", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_3_endermen",
+			"tier": 3,
+			"title": "Olhos que Não Devem Ser Vistos",
+			"tone": "danger",
+			"offer": [
+				"Recruta, você já olhou nos olhos de um <r>enderman</r>? NUNCA FAÇA ISSO! Eles ficam furiosos e te teleportam pro além. Quer dizer, eles se teleportam e te batem.",
+				"Esses vultos altos andam pela vila de noite roubando blocos. Levaram metade do muro e a porta da minha forja!",
+				"A PORTA DA MINHA FORJA! POR MIL BIGORNAS!"
+			],
+			"why": [
+				"Sem muro, a vila fica aberta pra qualquer monstro. E sem porta, eu tô dormindo com o vento na cara!",
+				"E as pérolas deles são preciosas. Dizem que mostram o caminho pro fim do mundo. Você já é <o>Aventureiro</o>, aguenta um enderman!"
+			],
+			"accept": [
+				"Usa abóbora na cabeça se não quiser que eles fiquem bravos. Ou olha pra eles de propósito e luta de costas pra parede!",
+				"<r>Elimine 12 endermen</r>."
+			],
+			"progress": [
+				"Endermen odeiam água. Lute perto de um lago, ou embaixo de um teto de dois blocos de altura.",
+				"Eles aparecem de noite em qualquer lugar, mas no deserto e no Nether tem muito mais."
+			],
+			"complete": [
+				"Doze endermen! E olha, minha porta voltou! Um deles largou ela no meio do campo de trigo!",
+				"Toma diamantes, uma maçã dourada e pérolas do ender. Elas vão te levar longe, recruta. Literalmente."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 12, "desc": "<r>Elimine</r> <r>12 endermen</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:ender_pearl", "count": 4}]
+		},
+		{
+			"id": "weaponsmith_3_tridente",
+			"tier": 3,
+			"title": "A Lança dos Afogados",
+			"tone": "danger",
+			"offer": [
+				"Recruta, existe uma arma que eu nunca consegui forjar: o <o>tridente</o>. Ninguém sabe forjar. Ninguém!",
+				"A única forma de conseguir um é tomando de um <r>afogado</r> que carrega um. E eles NÃO entregam por bem!",
+				"Eu quero estudar a lâmina. Ver o metal, o equilíbrio, o segredo. Antes de morrer, eu quero entender essa arma!"
+			],
+			"why": [
+				"Se eu entender o tridente, a guarda pode ter lanças que voltam pra mão depois de jogadas! Imagina a vantagem!",
+				"É missão de <o>Aventureiro</o>: mar, escuridão e lança voando na sua direção!"
+			],
+			"accept": [
+				"Os afogados com tridente atiram de longe. Escudo, recruta! ESCUDO!",
+				"<g>Traga</g> <y>1 tridente</y>."
+			],
+			"progress": [
+				"Só os afogados que nascem naturalmente carregam tridente. Procure em oceanos e rios fundos de noite.",
+				"Encantamento de Saque aumenta a chance dele largar a arma."
+			],
+			"complete": [
+				"OLHA ESSA LÂMINA! Três pontas perfeitas! Equilíbrio impecável! Eu tô... eu tô emocionado. NÃO CONTA PRA NINGUÉM!",
+				"Toma diamantes, maçã dourada e um livro de <p>Lealdade</p>, pra quando você tiver o seu próprio."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:trident"], "count": 1, "desc": "<g>Entregue</g> <y>1 tridente</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:loyalty", "level": 3}]
+		},
+		{
+			"id": "weaponsmith_4_evocadores",
+			"tier": 4,
+			"title": "A Mansão dos Feiticeiros",
+			"tone": "danger",
+			"offer": [
+				"Recruta, senta. Essa é séria. Na floresta escura tem uma <a>mansão</a> dos Exilados. E lá moram os <r>evocadores</r>.",
+				"Eles invocam presas que saem do chão e espíritos voadores chamados <r>vexes</r>. Magia proibida, da pior espécie!",
+				"Eu perdi meu melhor amigo pra um deles. Ele foi lá sozinho. Eu deveria ter ido junto."
+			],
+			"why": [
+				"Os evocadores são o cérebro das invasões. Sem eles, os Exilados ficam desorganizados. Cortar a cabeça da cobra!",
+				"E eles carregam o <o>Totem da Imortalidade</o>. Um artefato que te salva da morte. Só um <o>Guerreiro</o> encara essa batalha."
+			],
+			"accept": [
+				"Leva escudo pros vexes e corre quando o chão brilhar. As presas sobem bem rápido.",
+				"<r>Elimine 3 evocadores</r>."
+			],
+			"progress": [
+				"A mansão fica na floresta escura, longe pra caramba. Use o mapa do cartógrafo!",
+				"Mata o evocador rápido. Quanto mais tempo ele vive, mais vexes aparecem."
+			],
+			"complete": [
+				"Três evocadores... Meu amigo pode descansar agora. Obrigado, recruta. Quer dizer... Guerreiro.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Afiação IV</p>. E guarda os totens que você pegou: eles salvam vidas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:evoker"], "count": 3, "desc": "<r>Elimine</r> <r>3 evocadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 4}]
+		},
+		{
+			"id": "weaponsmith_4_invasao",
+			"tier": 4,
+			"title": "Defesa da Vila",
+			"tone": "danger",
+			"offer": [
+				"Recruta, tem uma coisa que separa os guerreiros dos aventureiros: defender uma vila de uma <r>INVASÃO</r>.",
+				"Ondas e ondas de saqueadores, vingadores, bruxas, evocadores, devastadores. Tudo de uma vez, contra uma vila só.",
+				"Eu defendi três na minha juventude. Ganhei essa cicatriz, essa outra e essa aqui que não posso mostrar."
+			],
+			"why": [
+				"Invasão não vencida é vila destruída. E vila destruída é gente sem casa, criança sem pai, aldeão sem esmeralda!",
+				"Quem vence uma invasão vira lenda. É o rito final de todo <o>Guerreiro</o>!"
+			],
+			"accept": [
+				"Para começar uma invasão, derrote um capitão saqueador e entre numa vila com o mau presságio. Prepare tudo antes!",
+				"<r>Vença 1 invasão</r>."
+			],
+			"progress": [
+				"Construa muros, coloque os aldeões em casas fechadas e acenda tudo. Os saqueadores atacam de todos os lados.",
+				"As ondas ficam mais difíceis. Na última vêm os devastadores e evocadores. Guarde maçãs douradas pra ela."
+			],
+			"complete": [
+				"VOCÊ VENCEU! A vila tá de pé! Os sinos tão tocando de alegria! HA HA HA!",
+				"Toma diamantes, maçãs douradas e o meu <o>Totem da Imortalidade</o>. Ele me salvou uma vez. Agora salva você."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:raid_win"], "count": 1, "desc": "<r>Vença</r> <r>1 invasão</r> de saqueadores"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_5_lamina",
+			"tier": 5,
+			"title": "A Lâmina Lendária",
+			"tone": "danger",
+			"offer": [
+				"Recruta... não. <o>Mestre</o>. Você merece saber a história da <a>Lâmina Lendária</a>.",
+				"O primeiro ferreiro de armas forjou uma espada com o coração de uma estrela do Nether. Ninguém nunca viu igual.",
+				"A espada se perdeu numa guerra. E desde então, todo ferreiro sonha em forjar outra. Pra isso, preciso de uma <y>espada de netherita</y> como base."
+			],
+			"why": [
+				"Uma lâmina assim protege a vila por gerações. Ela vai ficar pendurada na praça, pronta pro próximo herói.",
+				"E eu quero, antes de me aposentar de vez, forjar uma obra digna dos antigos. É o sonho da minha vida!"
+			],
+			"accept": [
+				"Espada de diamante, lingote de netherita e o molde de melhoria. Mesa de ferraria. Você sabe o caminho.",
+				"<g>Traga</g> <y>1 espada de netherita</y>."
+			],
+			"progress": [
+				"O molde de melhoria fica nos baús dos bastiões. Os detritos ficam no fundo do Nether.",
+				"Não precisa estar encantada. Eu cuido do resto."
+			],
+			"complete": [
+				"Que peso perfeito. Que equilíbrio. Vou forjar a Lâmina Lendária com isso. E ela vai levar seu nome.",
+				"Toma o melhor que eu tenho: netherita, diamantes, o livro de <p>Remendo</p> e uma maçã encantada. VOCÊ É LENDA!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_sword"], "count": 1, "desc": "<g>Entregue</g> <y>1 espada de netherita</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_5_campeao",
+			"tier": 5,
+			"title": "O Campeão dos Mil Combates",
+			"tone": "danger",
+			"offer": [
+				"Mestre, existe um título que só três pessoas tiveram na história: <a>Campeão dos Mil Combates</a>.",
+				"A prova é simples de explicar e quase impossível de cumprir: derrotar duzentos inimigos que ameaçam as vilas.",
+				"Saqueadores, vingadores, bruxas, evocadores, devastadores, vexes. Todos os servos dos Exilados."
+			],
+			"why": [
+				"Quando os Exilados souberem que existe um Campeão, eles vão pensar duas vezes antes de atacar qualquer vila.",
+				"É a prova final de um <o>Mestre</o> das armas. Nada mais, nada menos!"
+			],
+			"accept": [
+				"HA! Eu sabia que você ia aceitar! Invasões, patrulhas, mansões, torres... vale tudo!",
+				"<r>Elimine 200 servos dos Exilados</r>."
+			],
+			"progress": [
+				"Mau presságio + vila = invasão. Invasão = dezenas de inimigos de uma vez.",
+				"Fazendas de saqueadores perto das torres de vigia também funcionam. Não é bonito, mas é eficiente."
+			],
+			"complete": [
+				"DUZENTOS! O quarto Campeão dos Mil Combates da história está na minha frente! Eu vou chorar e ninguém pode me impedir!",
+				"Toma tudo: netherita, diamantes, maçã encantada e dois totens. Os Exilados vão tremer ao ouvir seu nome!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager", "minecraft:vindicator", "minecraft:evoker", "minecraft:ravager", "minecraft:vex", "minecraft:witch", "minecraft:illusioner"], "count": 200, "desc": "<r>Elimine</r> <r>200 servos dos Exilados</r> (saqueadores, vingadores, evocadores, devastadores, vexes, bruxas)"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 2}]
+		}
+	]
+}

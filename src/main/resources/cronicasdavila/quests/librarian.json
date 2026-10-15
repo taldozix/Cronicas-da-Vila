@@ -1,0 +1,295 @@
+{
+	"quests": [
+		{
+			"id": "librarian_1_livros",
+			"tier": 1,
+			"title": "Estantes Vazias",
+			"tone": "calm",
+			"offer": [
+				"Ah, um visitante! Seja bem-vindo à <a>Biblioteca da Vila</a>, o mais nobre recinto do saber desta região. Ou o único.",
+				"Contemple estas estantes. Vazias! Uma infestação de traças devorou metade do acervo. Uma tragédia de proporções épicas.",
+				"Necessito de <y>livros</y>. Simples, sem encantamento, para reconstruir o catálogo. Papel e couro: os ingredientes da civilização."
+			],
+			"why": [
+				"Uma vila sem livros é uma vila sem memória, caro jovem. Esquecemos receitas, histórias, nomes dos fundadores...",
+				"Além disso, as estantes cheias aumentam o poder das mesas de encantamento. Conhecimento literalmente vira magia aqui."
+			],
+			"accept": [
+				"Deveras grato! Três folhas de papel e um couro fazem um livro.",
+				"<g>Traga</g> <y>12 livros</y>."
+			],
+			"progress": [
+				"O papel vem da cana-de-açúcar. O couro, das vacas. A sabedoria, de ambos.",
+				"Também se encontram livros em baús de vilas e fortalezas. Furtar não é recomendado. Encontrar é aceitável."
+			],
+			"complete": [
+				"Magnífico! Que aroma de papel novo! Já posso ouvir as histórias a sussurrarem dentro deles.",
+				"Aceite estas esmeraldas e uma pena com tinta. Escreva algo memorável. Ou ao menos legível."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:book"], "count": 12, "desc": "<g>Entregue</g> <y>12 livros</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:writable_book", "count": 1}, {"item": "minecraft:lapis_lazuli", "count": 8}]
+		},
+		{
+			"id": "librarian_1_aranhas",
+			"tier": 1,
+			"title": "Silêncio na Biblioteca",
+			"tone": "danger",
+			"offer": [
+				"Psst. Fale baixo. Esta é uma biblioteca. Infelizmente, os <r>morcegos</r>... não, não é isso. Os <r>zumbis</r> não respeitam o silêncio.",
+				"Toda noite, eles se aglomeram junto às janelas e gemem. \"Uuurgh\". \"Uuuurgh\". Como se estivessem a criticar a minha coleção.",
+				"Não consigo concentrar-me na leitura. Estou relendo o mesmo parágrafo há sete noites."
+			],
+			"why": [
+				"A biblioteca é aberta à noite para os estudantes da vila. Com os zumbis lá fora, ninguém ousa vir.",
+				"E o conhecimento, caro jovem, não pode ter hora para acabar. Muito menos por causa de cadáveres mal-educados."
+			],
+			"accept": [
+				"Agradeço sobremaneira. Mas, por gentileza, combata-os longe das estantes.",
+				"<r>Elimine 15 zumbis</r>."
+			],
+			"progress": [
+				"Os zumbis vêm atraídos pelos aldeões. Fique perto da vila à noite.",
+				"Eles derrubam portas no modo difícil. Uma porta de ferro seria prudente."
+			],
+			"complete": [
+				"Ah, o silêncio. O doce silêncio. Finalmente terminei o parágrafo. Era sobre... zumbis. Que ironia.",
+				"Aceite este ferro e um livro sobre história. Encantado, claro. Não sou nenhum selvagem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "count": 15, "desc": "<r>Elimine</r> <r>15 zumbis</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 1}]
+		},
+		{
+			"id": "librarian_2_estantes",
+			"tier": 2,
+			"title": "A Grande Biblioteca",
+			"tone": "calm",
+			"offer": [
+				"Caro jovem, tenho um projeto ambicioso: ampliar a biblioteca para que ela se torne a <a>Grande Biblioteca</a> da região.",
+				"Para tanto, necessito de <y>estantes de livros</y>. Muitas. Cada uma com três livros e madeira de primeira.",
+				"Estudiosos de todas as vilas virão consultar o nosso acervo. Seremos célebres! Bem, eu serei. Você também, um pouco."
+			],
+			"why": [
+				"Uma grande biblioteca atrai sábios, curandeiros, inventores. A vila inteira prospera com o saber.",
+				"E, de forma muito prática, quinze estantes ao redor de uma mesa de encantamento permitem os encantamentos mais poderosos."
+			],
+			"accept": [
+				"Esplêndido! Seis tábuas e três livros fazem uma estante.",
+				"<g>Traga</g> <y>15 estantes de livros</y>."
+			],
+			"progress": [
+				"Para quebrar uma estante e recuperá-la inteira, use toque suave. Senão, ela vira só livros.",
+				"Fortalezas e mansões têm estantes. Mas reciclar é sempre mais nobre."
+			],
+			"complete": [
+				"A Grande Biblioteca toma forma! Já recebi uma carta de um estudioso da vila do deserto. Ele quer vir!",
+				"Aceite esmeraldas, um diamante e lápis-lazúli. Encante algo digno com eles."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:bookshelf"], "count": 15, "desc": "<g>Entregue</g> <y>15 estantes de livros</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:lapis_lazuli", "count": 16}]
+		},
+		{
+			"id": "librarian_2_bruxas",
+			"tier": 2,
+			"title": "O Grimório Roubado",
+			"tone": "danger",
+			"offer": [
+				"Uma catástrofe! O <a>Grimório da Vila</a>, livro com séculos de receitas de cura, foi furtado!",
+				"Testemunhas afirmam ter visto uma figura de chapéu pontudo a fugir para a floresta. Uma <r>bruxa</r>, sem sombra de dúvida.",
+				"E não age sozinha. Elas compartilham as receitas entre si. Precisamos recuperá-lo antes que todas o leiam."
+			],
+			"why": [
+				"Sem o Grimório, o clérigo não conseguirá preparar as poções de cura para o inverno. Gente vai adoecer.",
+				"E as bruxas, com essas receitas, ficariam ainda mais perigosas. É uma questão de segurança pública e acadêmica."
+			],
+			"accept": [
+				"Leve leite, por gentileza. As bruxas têm o péssimo hábito de arremessar venenos.",
+				"<r>Elimine 4 bruxas</r>."
+			],
+			"progress": [
+				"Elas aparecem nos pântanos, nas cabanas sobre palafitas, e às vezes à noite em qualquer lugar.",
+				"Quando um raio atinge um aldeão, ele vira bruxa. Por isso nunca leio durante tempestades perto da janela."
+			],
+			"complete": [
+				"O Grimório! Um tanto chamuscado, com cheiro de cogumelo, mas íntegro. Que alívio indizível.",
+				"Aceite este ferro, um diamante e um livro de <p>Proteção</p>. Recomendo leitura atenta."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:witch"], "count": 4, "desc": "<r>Elimine</r> <r>4 bruxas</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 2}]
+		},
+		{
+			"id": "librarian_3_encantar",
+			"tier": 3,
+			"title": "O Estudo da Magia",
+			"tone": "calm",
+			"offer": [
+				"Estou a escrever um tratado: <a>Da Natureza dos Encantamentos</a>. Uma obra-prima, se me permite a modéstia.",
+				"Contudo, preciso de dados empíricos. Alguém que encante objetos repetidamente, para que eu observe os padrões.",
+				"Os símbolos da mesa de encantamento, a <p>Língua Galáctica</p>, guardam segredos que ninguém decifrou. Talvez possamos fazê-lo juntos."
+			],
+			"why": [
+				"Se compreendermos os encantamentos, poderemos ensinar a magia a todos os aldeões. Uma revolução intelectual!",
+				"E você, como <o>Aventureiro</o>, sairá com o equipamento mais poderoso da região. Ganham a ciência e a sua espada."
+			],
+			"accept": [
+				"Esplêndido! Use a mesa de encantamento com lápis-lazúli. Cada encantamento conta.",
+				"<g>Encante itens</g> <y>12 vezes</y> na mesa de encantamento."
+			],
+			"progress": [
+				"Mais estantes em volta da mesa permitem encantamentos mais fortes. Até quinze.",
+				"Livros encantados podem ser combinados na bigorna. Mas isso é outro capítulo."
+			],
+			"complete": [
+				"Fascinante! Notei um padrão: a palavra \"klaatu\" aparece mais vezes nos encantamentos de proteção. Ou era sono meu.",
+				"Aceite diamantes, frascos de experiência e um livro de <p>Eficiência III</p>. A ciência agradece."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:enchant_item"], "count": 12, "desc": "<g>Encante itens</g> <y>12 vezes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 3}]
+		},
+		{
+			"id": "librarian_3_fortaleza",
+			"tier": 3,
+			"title": "A Biblioteca Esquecida",
+			"tone": "danger",
+			"offer": [
+				"Caro jovem, deparei-me com um mapa antigo que menciona uma <a>biblioteca subterrânea</a>, dentro de uma <a>Fortaleza</a>.",
+				"Dizem que lá jazem livros encantados que nenhum bibliotecário vivo jamais viu. O sonho de qualquer erudito!",
+				"Entretanto, as fortalezas estão infestadas de <r>traças</r> e de <r>esqueletos</r> que guardam aqueles corredores há séculos."
+			],
+			"why": [
+				"Esses livros contêm conhecimento de antes da Grande Maldição. Talvez a resposta para por que os aldeões só dizem \"hrmm\".",
+				"Uma expedição digna de um <o>Aventureiro</o>. E eu... prefiro aguardar aqui, junto da lareira."
+			],
+			"accept": [
+				"Siga os olhos do ender até a fortaleza. E, por favor, não queime nenhum livro.",
+				"<r>Elimine 20 traças ou esqueletos</r> nas profundezas."
+			],
+			"progress": [
+				"Os blocos infestados soltam traças quando quebrados. A fortaleza está cheia deles.",
+				"As bibliotecas das fortalezas têm candelabros, teias e duas alturas de estantes."
+			],
+			"complete": [
+				"Os corredores estão livres. A expedição de estudiosos parte amanhã. Eu? Fico. Alguém precisa cuidar daqui.",
+				"Aceite diamantes, uma maçã dourada e um livro de <p>Toque Suave</p>, para recolher estantes sem danificá-las."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:silverfish", "minecraft:skeleton"], "count": 20, "desc": "<r>Elimine</r> <r>20 traças ou esqueletos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
+		},
+		{
+			"id": "librarian_4_eco",
+			"tier": 4,
+			"title": "O Idioma Perdido",
+			"tone": "danger",
+			"offer": [
+				"Prepare-se para a revelação mais extraordinária da minha carreira: encontrei menções a uma língua antiga, falada antes da Grande Maldição.",
+				"Ela está registrada nos <y>fragmentos de eco</y> das <a>Cidades Antigas</a>. Cristais que guardam as vozes de um povo esquecido.",
+				"Se eu reunir fragmentos suficientes, poderei reconstruir palavras. Talvez frases. Talvez... a verdade."
+			],
+			"why": [
+				"A Grande Maldição tirou a fala dos aldeões. Esta pode ser a chave para devolvê-la. Imagine: aldeões a conversar livremente com todos!",
+				"As Cidades Antigas são guardadas pelo <r>Warden</r>. Somente um <o>Guerreiro</o> deve arriscar-se no silêncio delas."
+			],
+			"accept": [
+				"Caminhe agachado, como quem atravessa uma biblioteca à meia-noite. Silêncio absoluto.",
+				"<g>Traga</g> <y>8 fragmentos de eco</y>."
+			],
+			"progress": [
+				"Os fragmentos ficam nos baús das Cidades Antigas, nas profundezas, abaixo da camada zero.",
+				"Os guinchos do sculk invocam o Warden. Evite os sensores. Lã abafa os passos."
+			],
+			"complete": [
+				"Ouça... <d>(ele aproxima os fragmentos)</d> \"...a luz... o portal... nós escolhemos...\" Extraordinário! Uma frase completa!",
+				"Aceite diamantes, maçãs douradas e um livro de <p>Remendo</p>. O mais valioso do meu acervo, depois deste momento."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:echo_shard"], "count": 8, "desc": "<g>Entregue</g> <y>8 fragmentos de eco</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "librarian_4_vexes",
+			"tier": 4,
+			"title": "Os Espíritos dos Livros Proibidos",
+			"tone": "danger",
+			"offer": [
+				"Confesso algo vergonhoso: num momento de curiosidade excessiva, li em voz alta um trecho de um livro proibido dos Exilados.",
+				"Desde então, <r>vexes</r>, aqueles espíritos alados com espadas, aparecem pela biblioteca. Eles rasgam as páginas e riem.",
+				"São invocados pelos <r>evocadores</r>. Se derrotarmos os espíritos e quem os chama, o feitiço se desfaz."
+			],
+			"why": [
+				"Os vexes atravessam paredes. Se saírem da biblioteca, nenhuma casa estará segura.",
+				"E, admito, é culpa minha. Preciso de um <o>Guerreiro</o> para reparar o meu erro."
+			],
+			"accept": [
+				"Leve escudo. Os vexes atacam de todos os lados, inclusive de dentro das paredes.",
+				"<r>Elimine 20 vexes ou evocadores</r>."
+			],
+			"progress": [
+				"Os evocadores vivem nas mansões da floresta escura e aparecem nas invasões.",
+				"Os vexes morrem sozinhos depois de algum tempo. Mas o evocador invoca mais. Derrote-o primeiro."
+			],
+			"complete": [
+				"A biblioteca está em paz. Prometo nunca mais ler em voz alta algo escrito com tinta vermelha.",
+				"Aceite diamantes, maçãs douradas e um livro de <p>Julgamento</p>. Para criaturas profanas como aquelas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vex", "minecraft:evoker"], "count": 20, "desc": "<r>Elimine</r> <r>20 vexes ou evocadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:smite", "level": 4}]
+		},
+		{
+			"id": "librarian_5_maldicao",
+			"tier": 5,
+			"title": "A Verdade da Grande Maldição",
+			"tone": "danger",
+			"offer": [
+				"Mestre, depois de anos de estudo, compreendi a origem da <a>Grande Maldição</a>. Sente-se. É uma história longa.",
+				"Os povos antigos construíram as Cidades Antigas e tentaram abrir um portal para outro mundo. O portal despertou algo: o <r>Warden</r>, o guardião do silêncio.",
+				"O silêncio dele espalhou-se pelo mundo como uma praga e roubou a fala dos aldeões. Só restou o \"hrmm\". Enquanto ele vigiar as profundezas, a maldição permanece."
+			],
+			"why": [
+				"Se o guardião cair, talvez as vozes dos aldeões retornem. Gradualmente. Uma palavra de cada vez.",
+				"É a missão mais importante que já confiei a alguém. Só um <o>Mestre</o> pode encarar o silêncio e voltar."
+			],
+			"accept": [
+				"Que a sabedoria dos antigos o proteja. Leve tudo o que tiver de melhor.",
+				"<r>Derrote o Warden</r>."
+			],
+			"progress": [
+				"O Warden é cego. Ele sente vibrações e cheiro. Quanto mais você se mexe, mais ele o encontra.",
+				"O grito sônico ignora armaduras. Mantenha distância quando ele inflar o peito.",
+				"Nenhuma vergonha em fugir e voltar preparado. Os antigos não tiveram essa sorte."
+			],
+			"complete": [
+				"Esta manhã, uma criança da vila disse \"bom dia\" em vez de \"hrmm\". Uma palavra. Uma única palavra... e chorei como nunca.",
+				"Aceite, Mestre: uma maçã encantada, netherita, diamantes e o livro de <p>Remendo</p>. Nenhuma recompensa está à altura disto."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:warden"], "count": 1, "desc": "<r>Derrote</r> <r>o Warden</r>"},
+			"rewards": [{"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "librarian_5_enciclopedia",
+			"tier": 5,
+			"title": "A Enciclopédia do Mundo",
+			"tone": "calm",
+			"offer": [
+				"Mestre, há um livro que todo bibliotecário sonha escrever e nenhum conseguiu: a <a>Enciclopédia do Mundo</a>.",
+				"Um volume sobre cada criatura, cada lugar, cada segredo. Mas para isso preciso de experiência. Experiência real. A sua.",
+				"Cada encantamento que você faz revela algo sobre a magia do mundo. Preciso de muitos. Muitíssimos."
+			],
+			"why": [
+				"A Enciclopédia ficará na Grande Biblioteca para sempre. Gerações vão aprender com ela.",
+				"E somente um <o>Mestre</o> possui a disciplina para uma pesquisa desta magnitude."
+			],
+			"accept": [
+				"Esplêndido! Encante, combine, experimente. Cada uso da mesa de encantamento é uma página.",
+				"<g>Encante itens</g> <y>100 vezes</y> na mesa de encantamento."
+			],
+			"progress": [
+				"Uma fazenda de experiência ajuda imensamente. Os sábios não se envergonham de ser eficientes.",
+				"Encante livros! Eles são baratos e cada encantamento conta."
+			],
+			"complete": [
+				"Cem encantamentos. A última página está escrita. A Enciclopédia do Mundo existe. Graças a você.",
+				"Aceite netherita, diamantes, o livro de <p>Remendo</p> e um totem. Você agora é coautor da obra mais importante da história."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:enchant_item"], "count": 100, "desc": "<g>Encante itens</g> <y>100 vezes</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

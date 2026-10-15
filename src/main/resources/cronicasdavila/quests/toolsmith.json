@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "toolsmith_1_carvao",
+			"tier": 1,
+			"title": "Combustível pra Forja",
+			"tone": "calm",
+			"offer": [
+				"Ah, olá. Deixa eu ajustar os óculos... Pronto. Tecnicamente, você chegou num momento crítico.",
+				"A forja da vila apagou. Sabe o que isso significa? Zero ferramentas novas. Zero consertos. Zero produtividade.",
+				"O problema é simples: falta <y>carvão</y>. A solução também é simples: alguém precisa buscar. Esse alguém pode ser você."
+			],
+			"why": [
+				"Fiz as contas: sem forja, em uma semana metade das enxadas da vila quebra. Em duas, a colheita cai 47%. Em três, caos.",
+				"Os números não mentem. E eu odeio caos. Caos não tem planilha."
+			],
+			"accept": [
+				"Excelente. Carvão aparece como manchas pretas na pedra. Qualquer picareta resolve.",
+				"<g>Traga</g> <y>32 carvões</y>. Carvão vegetal também serve, tecnicamente é a mesma energia."
+			],
+			"progress": [
+				"Minério de carvão é o mais comum que existe. Montanhas e cavernas rasas estão cheias.",
+				"Alternativa: queime troncos na fornalha para fazer carvão vegetal. Ineficiente, mas funciona."
+			],
+			"complete": [
+				"Fogo aceso, temperatura ideal, eficiência restaurada. Isso me dá uma satisfação quase indescritível.",
+				"Tome: umas esmeraldas e uma picareta de ferro forjada agora mesmo. Calibrada por mim, claro."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:coal", "minecraft:charcoal"], "count": 32, "desc": "<g>Entregue</g> <y>32 carvões</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_pickaxe", "count": 1}]
+		},
+		{
+			"id": "toolsmith_1_ferro",
+			"tier": 1,
+			"title": "Matéria-Prima",
+			"tone": "calm",
+			"offer": [
+				"Sabe qual é o metal mais importante da civilização? Não é ouro, não é diamante. É o <y>ferro</y>.",
+				"Ferramentas, baldes, trilhos, golens. Tudo começa com ferro. E o estoque da forja está... deixa eu ver a planilha... vazio.",
+				"Preciso de <y>ferro bruto</y>, direto da mina. Eu mesmo derreto, que ninguém faz isso com a precisão que eu faço."
+			],
+			"why": [
+				"Ferro vira os baldes do fazendeiro, as armaduras dos guardas e o corpo dos golens. A vila depende literalmente disso.",
+				"E tem um bônus: aprender a minerar ferro é o primeiro passo de todo aventureiro. Você me ajuda e evolui. Ganha-ganha."
+			],
+			"accept": [
+				"Ótimo. Ferro aparece como pedra com manchinhas bege. Precisa de picareta de pedra ou melhor.",
+				"<g>Traga</g> <y>16 ferros brutos</y>."
+			],
+			"progress": [
+				"Ferro é muito comum em montanhas e cavernas. Os veios grandes ficam mais embaixo.",
+				"Não derreta antes de entregar, por favor. Eu tenho um processo específico."
+			],
+			"complete": [
+				"Ferro bruto de excelente qualidade. Pureza estimada: alta. Fico emocionado, do meu jeito contido.",
+				"Tome esmeraldas e um machado de ferro. Afiei com ângulo de 23 graus, o ideal."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:raw_iron"], "count": 16, "desc": "<g>Entregue</g> <y>16 ferros brutos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_axe", "count": 1}]
+		},
+		{
+			"id": "toolsmith_2_veio",
+			"tier": 2,
+			"title": "O Grande Veio",
+			"tone": "calm",
+			"offer": [
+				"Tenho uma teoria. Lá embaixo, bem fundo, existem <a>veios gigantes</a> de minério. Faixas de ferro e cobre que se estendem por dezenas de blocos.",
+				"Se a vila tiver uma rota de mineração estável, nossa produção de ferramentas triplica. Eu fiz os cálculos três vezes.",
+				"Mas preciso de dados reais. Preciso de alguém que vá lá e minere de verdade."
+			],
+			"why": [
+				"Ferramentas melhores significam mineiros mais rápidos, fazendeiros mais eficientes, guardas mais bem armados. Efeito cascata.",
+				"E você vai ficar com a experiência. E, convenhamos, com bastante ferro também."
+			],
+			"accept": [
+				"Excelente. Qualquer minério de ferro conta, normal ou de ardósia.",
+				"<g>Minere</g> <y>48 minérios de ferro</y>."
+			],
+			"progress": [
+				"Os veios gigantes de ferro ficam abaixo da altura zero, misturados com tufo.",
+				"Use Fortuna se tiver. Mais ferro por bloco é eficiência pura."
+			],
+			"complete": [
+				"Os dados confirmam minha teoria! A rota de mineração vai ser implantada amanhã. Que dia histórico.",
+				"Tome esmeraldas, um diamante e um livro de <p>Eficiência</p>. Ferramentas mais rápidas para quem trabalha rápido."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:iron_ores"], "count": 48, "desc": "<g>Minere</g> <y>48 minérios de ferro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 2}]
+		},
+		{
+			"id": "toolsmith_2_redstone",
+			"tier": 2,
+			"title": "Engrenagens Vermelhas",
+			"tone": "calm",
+			"offer": [
+				"Vou te mostrar uma coisa. <d>(ele aponta para um desenho cheio de linhas vermelhas)</d> Isto é o projeto de uma <a>porta automática</a> para a vila.",
+				"Com <y>redstone</y>, posso fazer portas que abrem sozinhas, lâmpadas que acendem de noite e sinos que tocam quando um zumbi se aproxima.",
+				"O problema é que redstone acaba rápido. Já gastei todo o meu estoque testando o protótipo. Ele explodiu. Duas vezes."
+			],
+			"why": [
+				"Automação é o futuro, meu caro. Uma vila automatizada é uma vila que se defende sozinha enquanto todos dormem.",
+				"E sinceramente, eu quero provar para o bibliotecário que redstone é mais útil que poesia. Ele disse que não é. Ele está errado."
+			],
+			"accept": [
+				"Perfeito. Redstone fica bem fundo, como pedras com pontinhos vermelhos que brilham quando você toca.",
+				"<g>Traga</g> <y>64 pós de redstone</y>."
+			],
+			"progress": [
+				"Minério de redstone aparece nas camadas mais profundas. Cada bloco dá vários pós.",
+				"Bruxas também deixam redstone às vezes. Mas eu não recomendo pedir para elas."
+			],
+			"complete": [
+				"Agora sim, o protótipo vai funcionar. Ou explodir uma terceira vez, mas estatisticamente as chances caíram.",
+				"Tome esmeraldas, um diamante e um relógio. Pontualidade é uma virtude."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:redstone"], "count": 64, "desc": "<g>Entregue</g> <y>64 pós de redstone</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:clock", "count": 1}]
+		},
+		{
+			"id": "toolsmith_3_ouro",
+			"tier": 3,
+			"title": "Prospecção Dourada",
+			"tone": "calm",
+			"offer": [
+				"Você sabia que o <y>ouro</y> conduz energia melhor que qualquer outro metal? Tecnicamente, é perfeito para mecanismos de precisão.",
+				"Os trilhos elétricos que eu projetei precisam de ouro. E as maçãs douradas do clérigo também. E os piglins só falam com quem usa ouro.",
+				"Resumindo: a vila precisa de ouro. E precisa de alguém que saiba minerar com competência."
+			],
+			"why": [
+				"Com trilhos elétricos, os carrinhos de mina andam sozinhos. A produção de minério dobra.",
+				"E as badlands, a terra vermelha, estão cheias de ouro. Você já é <o>Aventureiro</o>, sabe se virar lá."
+			],
+			"accept": [
+				"Excelente. Minério de ouro fica nas camadas mais fundas, mas nas badlands aparece até na superfície.",
+				"<g>Minere</g> <y>24 minérios de ouro</y> (do mundo normal ou do Nether)."
+			],
+			"progress": [
+				"Badlands: terra laranja e vermelha, cheia de minas abandonadas. Paraíso dourado.",
+				"O ouro do Nether também conta. Mas cuidado: os piglins ficam bravos se você minerar perto deles."
+			],
+			"complete": [
+				"Que rendimento! Os trilhos vão ser instalados ainda esta semana.",
+				"Tome diamantes e um livro de <p>Fortuna</p>. Matematicamente, você vai ficar rico."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:gold_ores"], "count": 24, "desc": "<g>Minere</g> <y>24 minérios de ouro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 2}]
+		},
+		{
+			"id": "toolsmith_3_blaze",
+			"tier": 3,
+			"title": "Fogo Eterno",
+			"tone": "danger",
+			"offer": [
+				"Tenho um problema de engenharia. A forja não chega na temperatura necessária para trabalhar com metais avançados.",
+				"A solução existe: <y>varas de blaze</y>. As <r>blazes</r> são criaturas de fogo das fortalezas do Nether. A vara delas queima para sempre.",
+				"Só que elas voam, atiram bolas de fogo e não aceitam suborno. Já tentei. Com uma planilha. Não funcionou."
+			],
+			"why": [
+				"Com fogo eterno, eu posso forjar ferramentas que hoje são impossíveis. E o clérigo precisa delas para os suportes de poção.",
+				"Isso é trabalho para <o>Aventureiro</o>. Fogo, lava, fortaleza... um ambiente estatisticamente hostil."
+			],
+			"accept": [
+				"Leve poção de resistência ao fogo. E bolas de neve, que causam dano nelas. Física é linda.",
+				"<g>Traga</g> <y>10 varas de blaze</y>."
+			],
+			"progress": [
+				"As blazes nascem de geradores dentro das fortalezas do Nether. Cerque com blocos para não ser atacado de todos os lados.",
+				"Elas atiram três bolas de fogo seguidas e depois param. Ataque na pausa."
+			],
+			"complete": [
+				"Fogo eterno! A forja atingiu a temperatura ideal. Estou... estou sorrindo? Que estranho.",
+				"Tome diamantes, uma maçã dourada e um livro de <p>Inquebrável</p>. Ferramenta boa dura."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:blaze_rod"], "count": 10, "desc": "<g>Entregue</g> <y>10 varas de blaze</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
+		},
+		{
+			"id": "toolsmith_4_detritos",
+			"tier": 4,
+			"title": "A Liga Perdida",
+			"tone": "danger",
+			"offer": [
+				"Agora vamos falar de ciência séria. Existe um material mais forte que o diamante: a <o>netherita</o>.",
+				"Ela vem dos <y>detritos antigos</y>, enterrados no fundo do Nether, quase na altura da lava. Resistem até a explosões.",
+				"Ninguém na vila sabe trabalhar com isso. Eu quero ser o primeiro. Preciso estudar o material bruto."
+			],
+			"why": [
+				"Ferramentas de netherita não queimam na lava e duram muito mais. Imagine os mineiros da vila com uma picareta dessas.",
+				"E, cá entre nós, é o desafio técnico da minha vida. Trabalho para <o>Guerreiro</o>: o fundo do Nether não perdoa erros."
+			],
+			"accept": [
+				"Os detritos ficam escondidos dentro da rocha do Nether. Camas explodem lá, use com responsabilidade.",
+				"<g>Traga</g> <y>4 detritos antigos</y>."
+			],
+			"progress": [
+				"Altura 15 no Nether é o ponto ótimo. Faça túneis em linha reta.",
+				"Bastiões às vezes têm detritos e até lingotes nos baús."
+			],
+			"complete": [
+				"Fascinante. A densidade, a cor, o brilho... vou passar meses estudando isso.",
+				"Tome diamantes, maçãs douradas e um <o>molde de melhoria de netherita</o>. Você vai precisar dele mais do que eu."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ancient_debris"], "count": 4, "desc": "<g>Entregue</g> <y>4 detritos antigos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}]
+		},
+		{
+			"id": "toolsmith_4_chaves",
+			"tier": 4,
+			"title": "Os Mecanismos de Provação",
+			"tone": "danger",
+			"offer": [
+				"Estudei os registros das <a>Câmaras de Provação</a>. A engenharia de lá é... perfeita. Cofres que só abrem com <y>chaves de provação</y>.",
+				"As chaves saem dos geradores de provação quando alguém derrota todas as criaturas. É um teste. Uma prova de valor.",
+				"Quero estudar a mecânica das chaves. E abrir os cofres no processo, claro. Para fins científicos."
+			],
+			"why": [
+				"Se eu entender o mecanismo, posso fazer cofres assim para a vila. Nenhum ladrão vai conseguir abrir o tesouro da vila.",
+				"Os geradores ficam mais fortes com mais gente. Mas um <o>Guerreiro</o> sozinho dá conta."
+			],
+			"accept": [
+				"Cada gerador solta chaves ao ser derrotado. Depois ele descansa por um tempo.",
+				"<g>Traga</g> <y>6 chaves de provação</y>."
+			],
+			"progress": [
+				"Os geradores ficam nas salas das Câmaras de Provação, debaixo da terra, entre cobre e tufo.",
+				"Não use as chaves nos cofres. Eu quero elas intactas. Os cofres você abre outra hora."
+			],
+			"complete": [
+				"Seis chaves. Seis mecanismos perfeitos. Vou começar a desmontar uma agora. Com delicadeza.",
+				"Tome diamantes e um livro de <p>Eficiência IV</p>. Suas ferramentas vão parecer mágicas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:trial_key"], "count": 6, "desc": "<g>Entregue</g> <y>6 chaves de provação</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 4}]
+		},
+		{
+			"id": "toolsmith_5_netherita",
+			"tier": 5,
+			"title": "A Obra-Prima",
+			"tone": "calm",
+			"offer": [
+				"Depois de anos de estudo, finalmente entendi a netherita. Sei forjar. Sei temperar. Sei ligar ao diamante.",
+				"Quero criar minha obra-prima: um conjunto de ferramentas de netherita para a vila. Para durar mil anos.",
+				"Mas cada lingote exige quatro detritos e quatro ouros. É o material mais raro deste mundo. Preciso de um <o>Mestre</o> para isso."
+			],
+			"why": [
+				"Ferramentas que passam de geração em geração. Os netos dos netos dos mineiros de hoje vão trabalhar com elas.",
+				"É o legado da forja. E, tecnicamente, o meu também."
+			],
+			"accept": [
+				"Quatro detritos, derretidos, mais quatro lingotes de ouro na bancada. Simples na teoria.",
+				"<g>Traga</g> <y>2 lingotes de netherita</y>."
+			],
+			"progress": [
+				"Use as camas como explosivo no Nether para achar detritos mais rápido. Fique bem longe da explosão.",
+				"Os bastiões guardam lingotes prontos às vezes. Os piglins não vão gostar, mas..."
+			],
+			"complete": [
+				"A forja está pronta para a obra-prima. Em cem anos, vão contar sobre o dia em que um Mestre trouxe netherita para a vila.",
+				"Tome: dois moldes de melhoria, diamantes, o livro de <p>Remendo</p> e uma maçã encantada. Investimento de longo prazo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_ingot"], "count": 2, "desc": "<g>Entregue</g> <y>2 lingotes de netherita</y>"},
+			"rewards": [{"item": "minecraft:netherite_upgrade_smithing_template", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		},
+		{
+			"id": "toolsmith_5_nucleo",
+			"tier": 5,
+			"title": "O Martelo dos Céus",
+			"tone": "danger",
+			"offer": [
+				"Existe uma arma que desafia a física: a <o>maça</o>. Quanto maior a queda, mais forte o golpe. Gravidade como arma. Genial!",
+				"O coração dela é o <y>núcleo pesado</y>, guardado nos <r>cofres ominosos</r> das Câmaras de Provação.",
+				"Esses cofres só abrem com chaves ominosas, de geradores enfurecidos pelo mau presságio. É o teste mais difícil das câmaras."
+			],
+			"why": [
+				"Com um núcleo pesado, eu finalmente entendo a física da maça. E posso projetar defesas que usam a gravidade.",
+				"Só um <o>Mestre</o> enfrenta os geradores ominosos. As criaturas lá são mais fortes, mais rápidas e mais numerosas."
+			],
+			"accept": [
+				"Beba uma garrafa ominosa antes de entrar nas câmaras. Os geradores vão ficar furiosos.",
+				"<g>Traga</g> <y>1 núcleo pesado</y>."
+			],
+			"progress": [
+				"Garrafas ominosas caem dos capitães saqueadores. Beba e entre nas câmaras.",
+				"O núcleo pesado é raro nos cofres ominosos. Pode precisar de várias tentativas."
+			],
+			"complete": [
+				"Que peso. Que densidade. Que perfeição. Física pura em forma de bloco.",
+				"Tome netherita, diamantes e um livro de <p>Explosão de Vento</p>. A gravidade agora trabalha para você."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:heavy_core"], "count": 1, "desc": "<g>Entregue</g> <y>1 núcleo pesado</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:wind_burst", "level": 3}]
+		}
+	]
+}

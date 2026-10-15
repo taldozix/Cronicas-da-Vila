@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"{player}. É uma honra receber você na minha forja. Sente-se perto do fogo.",
+		"Guardião {player}. A vila dorme tranquila porque você existe. Eu sei disso.",
+		"Bem-vindo de volta. Sua armadura está gasta. Deixe-me dar uma olhada depois.",
+		"Ah, {player}. Os guardas mais novos falam de você como uma lenda. Eu digo que é só alguém que não desiste."
+	],
+	"greet_neutral": [
+		"Viajante. Não toque nas peças em resfriamento.",
+		"Hrmm. Você anda sem proteção adequada. Isso é preocupante.",
+		"Boa tarde. Se busca armadura, posso ajudar. Se busca conversa, também.",
+		"Aproxime-se. Mas devagar. A forja está quente."
+	],
+	"greet_cold": [
+		"Você. Já ouvi o suficiente sobre suas ações.",
+		"Mantenha distância da forja. E de mim.",
+		"Fale o necessário. Nada mais."
+	],
+	"hostile": [
+		"<r>Retire-se.</r> Minha forja protege a vila. Não forjo nada para quem a ameaça.",
+		"<r>Afaste-se.</r> Eu já enfrentei coisas piores que você. Não me teste."
+	],
+	"followup": [
+		"Algo mais?",
+		"Prossiga.",
+		"Estou ouvindo.",
+		"Mais alguma questão, viajante?"
+	],
+	"decline": [
+		"Entendo. Nem todo dever é para todos.",
+		"Tudo bem. A oferta permanece.",
+		"Compreendo. Talvez outro dia."
+	],
+	"locked": [
+		"Este trabalho exige experiência que você ainda não tem. Volte quando estiver pronto.",
+		"Ainda não. Um escudo forjado às pressas quebra no primeiro golpe. Você também."
+	],
+	"repeat": [
+		"Lembra daquele serviço? A necessidade voltou. Armaduras se desgastam. Guardas também.",
+		"Você já fez isso antes. Faria de novo? A recompensa é menor, mas a vila agradece igual."
+	],
+	"apology_thanks": [
+		"Reconhecer o erro é o primeiro passo de qualquer guardião. Aceito.",
+		"Está bem. Mas confiança se reconstrói devagar, como uma armadura: peça por peça."
+	],
+	"bless": [
+		"Que esta peça seja um abraço de ferro em volta de você.",
+		"Forjada com cuidado. Abençoada com respeito. Que ela te traga de volta para casa."
+	],
+	"bye": [
+		"Volte inteiro, viajante.",
+		"Que sua armadura nunca falhe.",
+		"Até logo. E levante o escudo antes do golpe, não depois."
+	],
+	"abandon": [
+		"Desistir também é uma escolha. Mas é uma escolha que pesa.",
+		"Lamento. Achei que você iria até o fim."
+	],
+	"lore": [
+		[
+			"Sabe por que a armadura de ferro tem aquele formato? Ela foi desenhada a partir do <a>golem de ferro</a>.",
+			"Os primeiros armeiros estudaram como o golem protegia a vila e tentaram vestir os aldeões com a mesma força.",
+			"Não deu muito certo. Aldeões são mais lentos com armadura. Por isso deixamos a proteção para os golens e para vocês, aventureiros."
+		],
+		[
+			"Existe uma cor de armadura que conta história: o couro tingido de <r>vermelho</r>.",
+			"Na época da <a>Noite Sem Fim</a>, os defensores pintavam a armadura de vermelho para se reconhecerem no escuro.",
+			"Até hoje, alguns velhos guardas pintam a armadura de vermelho na noite de lua cheia. Em memória."
+		],
+		[
+			"A <o>netherita</o> não queima. Ela boia na lava. É o material mais teimoso do mundo.",
+			"Os piglins antigos conheciam o segredo. Mas esqueceram, como esquecem quase tudo que não brilha.",
+			"Às vezes penso que o ouro foi a maldição deles. Brilho demais cega."
+		],
+		[
+			"O <a>capacete de tartaruga</a> deixa você respirar debaixo d'água por mais tempo. É feito das escamas de filhotes que cresceram.",
+			"Cada capacete significa que pelo menos cinco tartarugas nasceram e cresceram em segurança.",
+			"É a única armadura que nasce da proteção de outra vida. Acho isso bonito."
+		],
+		[
+			"Já reparou que os <r>esqueletos</r> usam armadura às vezes? Armadura que eles encontram ou roubam.",
+			"Uma vez um esqueleto apareceu com um capacete de diamante feito por mim. Eu reconheci a marca.",
+			"Derrotei o esqueleto, recuperei o capacete e o devolvi ao dono. Ele tinha caído numa caverna dez anos antes."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda com as armaduras?",
+		"Há algum trabalho para mim?",
+		"Em que posso ajudar a guarda?"
+	],
+	"names": [
+		"Comandante Hilda", "Seu Leônidas", "Dona Amélia", "Capitão Otávio", "Dona Matilde", "Seu Horácio", "Dona Teodora",
+		"Seu Bartolomeu", "Dona Leocádia", "Seu Feliciano"
+	]
+}

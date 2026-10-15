@@ -1,0 +1,297 @@
+{
+	"quests": [
+		{
+			"id": "farmer_1_zumbis",
+			"tier": 1,
+			"title": "Praga na Lavoura",
+			"tone": "danger",
+			"offer": [
+				"Uai, sô... cê não vai acreditar no trem que tá acontecendo. Toda noite os <r>zumbis</r> invadem minha plantação.",
+				"Eles não comem nada, só ficam pisoteando o trigo e gemendo \"uuuurgh\". Parece meu cunhado depois do almoço de domingo.",
+				"Semana passada pisotearam metade da colheita. Se continuar assim, a vila vai passar fome no inverno."
+			],
+			"why": [
+				"Ó, meu filho, sem trigo não tem pão. Sem pão, a vila passa fome. Com fome, o povo fica bravo. Povo bravo vira bagunça.",
+				"Eu sou velho pra sair de noite com enxada na mão. Mas cê tem cara de quem aguenta uns bichos podre."
+			],
+			"accept": [
+				"Nó, que alívio! Eles aparecem quando escurece, principalmente perto das plantações.",
+				"<r>Elimine 20 zumbis</r> e volte aqui. E ó: não pisa no meu trigo, hein!"
+			],
+			"progress": [
+				"Os zumbis aparecem à noite e em lugares escuros. Se o sol nascer, eles pegam fogo — mas os de capacete aguentam.",
+				"Dica de caipira: dorme cedo não, que zumbi de dia é difícil de achar."
+			],
+			"complete": [
+				"Cê é bom de briga, hein, sô! Ontem à noite foi o primeiro silêncio em semanas. Até as galinhas dormiram tranquilas.",
+				"Toma aqui, ó. Ferro pra você fazer umas ferramentas boas e pão quentinho que a patroa assou agorinha."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "count": 20, "desc": "<r>Elimine</r> <r>20 zumbis</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:bread", "count": 15}]
+		},
+		{
+			"id": "farmer_1_colheita",
+			"tier": 1,
+			"title": "Colheita Atrasada",
+			"tone": "calm",
+			"offer": [
+				"Ai, ai, ai... minha coluna travou de novo. Bem na época da colheita, cê acredita?",
+				"O moinho precisa de trigo pra fazer a farinha da festa do sino. E eu aqui, entrevado igual um espantalho.",
+				"Se cê pudesse <g>colher</g> um trigo pra mim, ia ser uma bênção."
+			],
+			"why": [
+				"A festa do sino é a coisa mais importante do ano aqui na vila. Tem pão, tem bolo, tem o bobão da vila dançando...",
+				"Sem farinha, nada de festa. E sem festa, o povo fica triste. Cê não quer ver aldeão triste, quer? É uma cena feia."
+			],
+			"accept": [
+				"Deus te pague! Bom, eu pago também, que Deus anda ocupado.",
+				"<g>Traga</g> <y>32 trigos</y>. Pode colher do meu campo mesmo, só lembra de <g>replantar</g> as sementes, tá?"
+			],
+			"progress": [
+				"Trigo bom é trigo dourado. Se tiver verdinho, ainda não tá no ponto.",
+				"Farinha de osso faz o trigo crescer rapidinho. Truque de vó."
+			],
+			"complete": [
+				"Que trigo bonito, sô! Parece até cabelo de anjo.",
+				"Toma, ó. Umas esmeraldas e farinha de osso pra cê começar sua própria plantação. Todo mundo devia ter uma horta."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wheat"], "count": 32, "desc": "<g>Entregue</g> <y>32 trigos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:bone_meal", "count": 12}]
+		},
+		{
+			"id": "farmer_2_aboboras",
+			"tier": 2,
+			"title": "Abóboras para o Festival",
+			"tone": "calm",
+			"offer": [
+				"Cê sabe que dia é amanhã? Não? É o <a>Dia do Golem</a>! O dia em que o primeiro golem de ferro foi construído.",
+				"A tradição é enfeitar a vila inteira com abóboras. Mas esse ano a plantação deu tudo errado: os coelhos comeram as mudas.",
+				"Preciso de abóboras. Muitas abóboras. Tipo, uma quantidade vergonhosa de abóboras."
+			],
+			"why": [
+				"Diz a lenda que o primeiro golem tinha uma abóbora no lugar da cabeça. Por isso todo golem precisa de uma pra nascer.",
+				"Se a vila não honrar o Dia do Golem, os mais velhos dizem que os golens ficam preguiçosos. E golem preguiçoso não protege ninguém."
+			],
+			"accept": [
+				"Que beleza! Abóbora nasce em grama perto de água, ou cê pode plantar as sementes.",
+				"<g>Traga</g> <y>16 abóboras</y> inteiras. Nada de abóbora esculpida, que essa é pra golem e lanterna!"
+			],
+			"progress": [
+				"Abóbora selvagem aparece em campos de grama. Também dá pra plantar: a semente cresce do lado de um bloco de terra livre.",
+				"Usa um machado pra colher mais rápido. Não pode quebrar com a mão que demora uma eternidade."
+			],
+			"complete": [
+				"Nó! Agora sim a vila vai ficar bonita. Já até tô vendo as crianças correndo entre as abóboras.",
+				"Toma umas esmeraldas e cenouras douradas. Dizem que cenoura dourada faz bem pros olhos. Eu como uma por dia e nunca vi um creeper chegando. Espera..."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:pumpkin"], "count": 16, "desc": "<g>Entregue</g> <y>16 abóboras</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:golden_carrot", "count": 8}]
+		},
+		{
+			"id": "farmer_2_esqueletos",
+			"tier": 2,
+			"title": "Os Corvos de Osso",
+			"tone": "danger",
+			"offer": [
+				"Cê viu o espantalho lá na plantação? Pois é. Ele tá cheio de <r>flecha</r>.",
+				"Não fui eu que fiz tiro ao alvo, não. Foram os <r>esqueletos</r>. Eles ficam na beira da floresta atirando em tudo que se mexe.",
+				"Ontem acertaram a vaca Mimosa. A coitada tá traumatizada, só dá leite azedo."
+			],
+			"why": [
+				"Sem as vacas, sem leite. Sem leite, sem bolo. Sem bolo, sem aniversário da vovó Neném. Cê quer estragar o aniversário da vovó?",
+				"E tem mais: se os esqueletos acertarem um aldeão no caminho, o golem não dá conta de tudo sozinho."
+			],
+			"accept": [
+				"Ah, que bom! Leva escudo, sô. Esqueleto não erra muito, não.",
+				"<r>Elimine 25 esqueletos</r>. Pode ser qualquer tipo de esqueleto ossudo, que todos eles são encrenca."
+			],
+			"progress": [
+				"Esqueleto foge do sol que nem eu fujo da sogra. Procura nas cavernas ou de noite.",
+				"Escudo levantado e chega perto em zigue-zague. Eles demoram pra puxar o arco."
+			],
+			"complete": [
+				"Cê limpou a beira da floresta, sô! A Mimosa já tá dando leite fresquinho de novo.",
+				"Toma ferro, um diamante que eu achei no poço — não pergunta — e pão pra viagem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 25, "desc": "<r>Elimine</r> <r>25 esqueletos</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:bread", "count": 16}]
+		},
+		{
+			"id": "farmer_3_bruxas",
+			"tier": 3,
+			"title": "O Pó da Bruxa",
+			"tone": "danger",
+			"offer": [
+				"Senta aqui, que o trem é sério. A terra lá do norte da vila tá morrendo. Planta nada. Nem mato nasce.",
+				"Eu segui umas pegadas e achei uma cabana no pântano. Lá dentro: <r>bruxas</r>. Elas jogam um pó roxo na terra pra fazer poção.",
+				"Já tentei conversar. Ela jogou uma poção de lentidão em mim. Levei três dias pra voltar pra casa."
+			],
+			"why": [
+				"Se a terra morrer, cê sabe o que vem depois? <a>A Grande Seca</a>, igual a que meu avô viveu. Metade da vila foi embora.",
+				"Cê já é <o>Aventureiro</o>. Bruxa joga veneno, fraqueza e cura a si mesma. Precisa de alguém que saiba o que tá fazendo."
+			],
+			"accept": [
+				"Leva leite, sô! Leite tira os efeitos das poções. Sabedoria de fazendeiro.",
+				"<r>Elimine 5 bruxas</r>. Elas aparecem nos pântanos, nas cabanas e às vezes de noite em qualquer canto."
+			],
+			"progress": [
+				"Bruxa bebe poção de cura quando apanha. Ataca rápido, não dá tempo pra ela respirar.",
+				"Balde de leite na mão, que veneno de bruxa não é brincadeira."
+			],
+			"complete": [
+				"Cê acredita que a terra já tá esverdeando de novo? Brotou até uma flor no meio do campo seco. Chorei, não vou mentir.",
+				"Toma, isso aqui é sério: diamantes, uma maçã dourada e esmeraldas. Cê merece cada uma."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:witch"], "count": 5, "desc": "<r>Elimine</r> <r>5 bruxas</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:emerald", "count": 10}]
+		},
+		{
+			"id": "farmer_3_sementes",
+			"tier": 3,
+			"title": "Sementes de Outra Era",
+			"tone": "calm",
+			"offer": [
+				"Cê já ouviu falar dos <a>farejadores</a>? Bichão grande, de nariz comprido, que vivia aqui antes de qualquer vila.",
+				"Dizem que eles farejavam sementes de plantas que não existem mais. Flores de outra era, sô!",
+				"Meu sonho de velho é ter um canteiro dessas flores antigas. A <g>flor-tocha</g>, que brilha igual chama."
+			],
+			"why": [
+				"As flores-tocha alimentam as abelhas melhor que qualquer outra. Mais abelha, mais polinização, mais colheita. A vila inteira ganha.",
+				"E vou te contar um segredo: eu prometi pra minha falecida esposa que um dia ia plantar uma pra ela."
+			],
+			"accept": [
+				"Que bom, sô! Os ovos de farejador ficam escondidos em ruínas no fundo do mar, dentro de areia suspeita.",
+				"<g>Traga</g> <y>4 sementes de flor-tocha</y>. Choca o ovo, cuida do filhote, e deixa ele farejar a grama."
+			],
+			"progress": [
+				"Areia suspeita nas ruínas oceânicas quentes. Use um pincel com calma, igual arqueólogo.",
+				"Farejador adulto cava a grama e acha as sementes sozinho. É só ter paciência."
+			],
+			"complete": [
+				"Olha só... igualzinha ao desenho do livro do bibliotecário. Ela vai ficar linda no canteiro da minha velha.",
+				"Toma diamantes e uns frascos de experiência. Obrigado de coração, {player}."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:torchflower_seeds"], "count": 4, "desc": "<g>Entregue</g> <y>4 sementes de flor-tocha</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 12}]
+		},
+		{
+			"id": "farmer_4_seca",
+			"tier": 4,
+			"title": "Estoque para o Inverno Longo",
+			"tone": "calm",
+			"offer": [
+				"Os velhos do conselho leram os sinais: as abelhas sumiram cedo, os lobos uivaram três noites seguidas... vem aí um <a>Inverno Longo</a>.",
+				"Da última vez, a neve cobriu tudo por meses. A vila sobreviveu porque tinha fardos de feno guardados no celeiro.",
+				"Esse ano o celeiro tá quase vazio. Preciso de <g>muito</g> feno. Muito mesmo."
+			],
+			"why": [
+				"Feno alimenta os cavalos, as vacas, as ovelhas. Sem eles a gente não tem leite, carne nem lã pra se aquecer.",
+				"Cê já é <o>Guerreiro</o>, já viu muita coisa. Mas fome é o inimigo que nenhuma espada mata."
+			],
+			"accept": [
+				"Deus abençoe! Nove trigos fazem um fardo. Faz as contas e prepara a enxada.",
+				"<g>Traga</g> <y>32 fardos de feno</y>. É serviço de formiguinha, mas vai salvar muita gente."
+			],
+			"progress": [
+				"Faz uma plantação grande perto da água e usa farinha de osso. Trigo cresce mais rápido com luz.",
+				"Fardo de feno também aparece nas vilas da planície. Mas não pega dos vizinhos, que isso é roubo, hein!"
+			],
+			"complete": [
+				"O celeiro tá cheio até o teto! Agora que venha a neve. A gente tá pronto.",
+				"Toma, isso aqui é o que eu guardei a vida inteira: diamantes, maçãs douradas e um livro de <p>Inquebrável</p>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:hay_block"], "count": 32, "desc": "<g>Entregue</g> <y>32 fardos de feno</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "farmer_4_horda",
+			"tier": 4,
+			"title": "A Noite dos Mil Mortos",
+			"tone": "danger",
+			"offer": [
+				"Cê ouviu os sinos tocando de madrugada? Não era festa. Era aviso.",
+				"Os batedores viram uma <r>horda</r> de mortos-vivos saindo do pântano e das cavernas. Zumbi, zumbi afogado, zumbi do deserto... tudo junto.",
+				"Os golens seguraram até agora, mas eles tão amassados igual lata velha. Precisamos de um <o>Guerreiro</o>."
+			],
+			"why": [
+				"Se a horda passar, não sobra plantação, não sobra casa e não sobra aldeão. Simples assim.",
+				"E dizem que zumbi que morde aldeão transforma ele em zumbi também. Cê quer ver o bobão da vila virando zumbi? ...Ninguém ia notar a diferença, mas mesmo assim."
+			],
+			"accept": [
+				"Que Deus te proteja, sô. Leva comida, armadura e muita coragem.",
+				"<r>Elimine 50 mortos-vivos</r>. Zumbis, afogados, zumbis do deserto e aldeões zumbis contam."
+			],
+			"progress": [
+				"Eles atacam em grupo. Fica num lugar alto e luta um de cada vez.",
+				"Dica: aldeão zumbi dá pra curar com poção de fraqueza e maçã dourada. Se puder salvar um, salva."
+			],
+			"complete": [
+				"A horda acabou! Cê é uma lenda, sô! Os bardos vão cantar sobre essa noite por gerações.",
+				"Toma tudo isso. Diamantes, maçãs douradas... a vila inteira juntou pra te agradecer."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager"], "count": 50, "desc": "<r>Elimine</r> <r>50 mortos-vivos</r> (zumbis, afogados e zumbis do deserto)"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:emerald", "count": 20}]
+		},
+		{
+			"id": "farmer_5_wither",
+			"tier": 5,
+			"title": "O Ceifador de Três Cabeças",
+			"tone": "danger",
+			"offer": [
+				"Senta, {player}. Essa história eu nunca contei pra ninguém de fora da vila.",
+				"Há muito tempo, alguém juntou <r>crânios de esqueletos murchos</r> e areia das almas e acordou uma fera: o <r>Wither</r>. Três cabeças, nenhuma piedade.",
+				"Por onde ele passou, a terra morreu. Até hoje tem um pedaço do vale onde nada nasce. Meu avô chamava de <a>Terra Morta</a>.",
+				"Os sábios dizem que, enquanto o espírito dele vagar, a maldição não sai do solo. A fera precisa cair de vez."
+			],
+			"why": [
+				"A <a>Terra Morta</a> cresce um pouquinho todo ano. Um dia ela chega na vila. E aí acabou tudo: plantação, gado, gente.",
+				"Ninguém aqui tem força pra isso. Só um <o>Mestre</o>. E cê é a única pessoa que eu conheço que pode ser chamada assim."
+			],
+			"accept": [
+				"Cê é louco, sô. Louco e corajoso. Igual meu avô.",
+				"<r>Invoque e derrote o Wither</r>. Faz isso longe da vila, pelo amor de Deus. E leva leite, que o efeito de murchar é cruel."
+			],
+			"progress": [
+				"Três crânios de esqueleto murcho, da fortaleza do <n>Nether</n>. Quatro blocos de areia das almas em forma de T.",
+				"Quando ele fica com metade da vida, ganha uma armadura que bloqueia flechas. Aí é na espada.",
+				"Luta debaixo da terra, num lugar fechado, pra ele não fugir voando e destruir tudo."
+			],
+			"complete": [
+				"Eu senti, sô. Hoje cedo o vento mudou. A <a>Terra Morta</a> amanheceu com orvalho. ORVALHO! Faz cinquenta anos que não tinha orvalho lá.",
+				"Isso aqui é o tesouro da minha família: a estrela que a fera deixou cair, a maçã encantada do meu avô e todos os diamantes que a gente juntou em três gerações.",
+				"Seu nome vai ser plantado junto com a primeira semente na Terra Morta. Obrigado, Mestre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>o Wither</r>"},
+			"rewards": [{"item": "minecraft:nether_star", "count": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 32}]
+		},
+		{
+			"id": "farmer_5_pomos",
+			"tier": 5,
+			"title": "Os Pomos Sagrados",
+			"tone": "calm",
+			"offer": [
+				"Cê sabe de onde vêm as <o>maçãs douradas encantadas</o>? Ninguém sabe fazer mais. A receita se perdeu há séculos.",
+				"Diz a lenda que elas vinham da <a>Árvore Dourada</a>, que ficava no centro da primeira vila do mundo.",
+				"Eu passei a vida estudando. Acho que se eu juntar duas delas, consigo plantar as sementes e fazer a árvore renascer."
+			],
+			"why": [
+				"Uma árvore dessas mudaria o mundo, {player}. Comida que cura, que protege... nenhuma vila ia passar fome nunca mais.",
+				"Elas só aparecem em tesouros antigos: masmorras, templos, portais em ruínas, cidades antigas. Lugares que só um <o>Mestre</o> visita e volta vivo."
+			],
+			"accept": [
+				"Cê vai mesmo? Ah, sô... meus olhos tão marejando.",
+				"<g>Encontre e traga</g> <y>2 maçãs douradas encantadas</y>. Procure em baús de lugares antigos."
+			],
+			"progress": [
+				"Portais em ruínas, masmorras, templos do deserto, cidades antigas e bastiões têm as melhores chances.",
+				"Paciência. Lenda nenhuma se cumpre num dia só."
+			],
+			"complete": [
+				"Elas brilham... Igualzinho meu avô descreveu. Agora é plantar, regar e esperar uns cem anos. Cê volta pra ver?",
+				"Toma: netherita, diamantes e o livro de <p>Remendo</p> que eu guardava pra uma ocasião especial. Essa é a ocasião."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:enchanted_golden_apple"], "count": 2, "desc": "<g>Entregue</g> <y>2 maçãs douradas encantadas</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		}
+	]
+}

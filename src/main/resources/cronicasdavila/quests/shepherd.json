@@ -1,0 +1,295 @@
+{
+	"quests": [
+		{
+			"id": "shepherd_1_la",
+			"tier": 1,
+			"title": "Lã para o Inverno",
+			"tone": "calm",
+			"offer": [
+				"Ah, minha gente... o vento já tá com cheiro de frio. Sente? É o outono se despedindo.",
+				"Todo ano eu teço cobertores pras crianças da vila. Mas esse ano uma raposa assustou meu rebanho e as ovelhas fugiram pro morro.",
+				"Se você pudesse me trazer um pouco de <g>lã branca</g>, eu começo a tecer hoje mesmo."
+			],
+			"why": [
+				"Criança com frio não dorme. Criança que não dorme chora. E choro de criança de madrugada é um tormento até pro golem.",
+				"Além do mais, um cobertor tecido com carinho aquece duas vezes: o corpo e o coração."
+			],
+			"accept": [
+				"Que coisa boa. Tesoura nas ovelhas é mais gentil que espada, viu? Elas nem sentem.",
+				"<g>Traga</g> <y>24 lãs brancas</y>."
+			],
+			"progress": [
+				"Tesoura: dois lingotes de ferro na diagonal. A ovelha fica peladinha, mas a lã cresce de novo quando ela come grama.",
+				"Se não achar ovelha branca, quatro linhas de aranha fazem uma lã também."
+			],
+			"complete": [
+				"Que lã macia... parece nuvem. As crianças vão dormir como anjinhos esse inverno.",
+				"Aceita essas esmeraldas e um pão. É pouco, mas é de coração."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:white_wool"], "count": 24, "desc": "<g>Entregue</g> <y>24 lãs brancas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:bread", "count": 8}]
+		},
+		{
+			"id": "shepherd_1_aranhas",
+			"tier": 1,
+			"title": "Olhos Vermelhos no Pasto",
+			"tone": "danger",
+			"offer": [
+				"Toda noite, quando a lua sobe, aparecem <r>olhos vermelhos</r> na beira do pasto. Oito olhos cada um.",
+				"São <r>aranhas</r>. Elas sobem pelas cercas como se não fossem nada e assustam o rebanho inteiro.",
+				"Ontem a ovelha Florzinha pulou o cercado de tanto medo e caiu no rio. Coitada, ficou encharcada e ofendida."
+			],
+			"why": [
+				"Ovelha assustada não dá lã boa, sabia? Fica toda arrepiada e embolada.",
+				"E rebanho espalhado vira comida de lobo. Cada ovelha que eu perco é um cobertor a menos no inverno."
+			],
+			"accept": [
+				"Obrigado, minha gente. De dia elas ficam mansinhas, mas de noite...",
+				"<r>Elimine 12 aranhas</r>. As grandes e as das cavernas, todas contam."
+			],
+			"progress": [
+				"Aranha sobe parede. Não adianta se esconder atrás de muro baixo.",
+				"Elas deixam linha quando caem. Guarda que serve pra fazer arco e lã."
+			],
+			"complete": [
+				"Que noite tranquila foi a de ontem... as ovelhas dormiram encostadinhas umas nas outras, como deve ser.",
+				"Toma ferro e carneiro assado. A Florzinha mandou um \"béé\" de agradecimento."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 12, "desc": "<r>Elimine</r> <r>12 aranhas</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_mutton", "count": 8}]
+		},
+		{
+			"id": "shepherd_2_arcoiris",
+			"tier": 2,
+			"title": "A Tapeçaria do Arco-Íris",
+			"tone": "calm",
+			"offer": [
+				"Você sabia que esta vila foi fundada depois de uma tempestade? Quando o céu abriu, apareceu um <a>arco-íris</a> enorme bem aqui.",
+				"Os fundadores fizeram uma tapeçaria colorida pra lembrar aquele dia. Ela ficava na prefeitura... até as traças comerem.",
+				"Quero tecer uma nova. Mas preciso de lã de todas as cores do céu."
+			],
+			"why": [
+				"Uma vila que esquece de onde veio perde o rumo, minha gente. A tapeçaria lembra todo mundo que depois da tempestade vem a calmaria.",
+				"E sinceramente? A prefeitura tá muito sem graça. Só tem parede de madeira e um bibliotecário dormindo."
+			],
+			"accept": [
+				"Que alegria! Pode tingir as ovelhas antes de tosquiar, que a lã já sai colorida e a ovelha fica estilosa.",
+				"<g>Traga</g> <y>32 lãs coloridas</y> (qualquer cor, menos branca — quanto mais variado, melhor)."
+			],
+			"progress": [
+				"Flores viram corante. Papoula dá vermelho, dente-de-leão dá amarelo, centáurea dá azul...",
+				"Ovelha tingida continua da cor quando a lã cresce de novo. É uma fábrica de arco-íris!"
+			],
+			"complete": [
+				"Olha que coisa linda... Já consigo imaginar a tapeçaria pendurada, o sol batendo nela de manhã...",
+				"Leve essas esmeraldas, um diamante que achei no ninho de uma galinha (sério) e uma etiqueta pra nomear seu bichinho."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:orange_wool", "minecraft:magenta_wool", "minecraft:light_blue_wool", "minecraft:yellow_wool", "minecraft:lime_wool", "minecraft:pink_wool", "minecraft:gray_wool", "minecraft:light_gray_wool", "minecraft:cyan_wool", "minecraft:purple_wool", "minecraft:blue_wool", "minecraft:brown_wool", "minecraft:green_wool", "minecraft:red_wool", "minecraft:black_wool"], "count": 32, "desc": "<g>Entregue</g> <y>32 lãs coloridas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:name_tag", "count": 1}]
+		},
+		{
+			"id": "shepherd_2_rebanho",
+			"tier": 2,
+			"title": "Um Rebanho Novo",
+			"tone": "calm",
+			"offer": [
+				"Uma doença estranha passou pelo vale, minha gente. Perdi metade do rebanho. Vacas, porcos, ovelhas...",
+				"A vida tem que continuar. E a vida continua quando nasce vida nova.",
+				"Preciso que alguém ajude os animais a formarem família de novo. Eu sou um só e eles são muitos."
+			],
+			"why": [
+				"Sem animais, a vila perde leite, lã, carne, ovos. É como perder um pedaço da alma da vila.",
+				"E tem coisa mais bonita que ver um filhotinho dando os primeiros passos no pasto? Eu choro toda vez."
+			],
+			"accept": [
+				"Que bênção. Trigo pras vacas e ovelhas, cenoura pros porcos, sementes pras galinhas.",
+				"<g>Faça os animais terem</g> <y>20 filhotes</y>. Qualquer animal conta."
+			],
+			"progress": [
+				"Os pais precisam descansar uns cinco minutinhos antes de terem outro filhote.",
+				"Coelho gosta de cenoura, lobo de carne, gato de peixe. Cada um com seu gosto."
+			],
+			"complete": [
+				"O pasto tá cheio de vida de novo! Os filhotes correndo, os pais mugindo... que música bonita.",
+				"Leve essas esmeraldas, uma sela e duas cordas. Um dia você vai querer cavalgar por aí."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 20, "desc": "<g>Faça os animais terem</g> <y>20 filhotes</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:saddle", "count": 1}, {"item": "minecraft:lead", "count": 2}]
+		},
+		{
+			"id": "shepherd_3_phantoms",
+			"tier": 3,
+			"title": "Os Pesadelos Alados",
+			"tone": "danger",
+			"offer": [
+				"Você dorme bem, minha gente? Eu não durmo há dias. Fico vigiando o rebanho a noite toda.",
+				"E aí que tá o problema: quem passa noites sem dormir atrai os <r>phantoms</r>. Criaturas do céu que mergulham sobre os insones.",
+				"Agora eles mergulham sobre mim e sobre as ovelhas. Virou um ciclo de pesadelo."
+			],
+			"why": [
+				"Se eu dormir, as aranhas pegam o rebanho. Se eu não dormir, os phantoms pegam. Preciso de alguém que quebre esse ciclo.",
+				"Você já é <o>Aventureiro</o>. E os phantoms precisam ser enfrentados por alguém que também passe a noite acordado. Ironia, né?"
+			],
+			"accept": [
+				"Fique três noites sem dormir que eles vêm atrás de você. Aí é com a espada e o arco.",
+				"<r>Elimine 10 phantoms</r>."
+			],
+			"progress": [
+				"Eles aparecem quando você passa três noites ou mais sem dormir. Olhe pro céu e ouça o grito.",
+				"Na hora que mergulharem, dê um passo pro lado e acerte. Arco também funciona bem."
+			],
+			"complete": [
+				"Hoje eu dormi. Dormi a noite inteira. Sonhei com nuvens em forma de ovelha. Obrigado, de verdade.",
+				"Leve diamantes, uma maçã dourada e essas membranas que eles deixaram. Dizem que consertam asas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:phantom"], "count": 10, "desc": "<r>Elimine</r> <r>10 phantoms</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:phantom_membrane", "count": 4}]
+		},
+		{
+			"id": "shepherd_3_estandartes",
+			"tier": 3,
+			"title": "Os Estandartes da Vila",
+			"tone": "calm",
+			"offer": [
+				"Antigamente, cada família da vila tinha um <a>estandarte</a> pendurado na porta. Com desenhos, cores, histórias.",
+				"Quando os <r>Exilados</r> atacaram, queimaram quase todos. Hoje as portas tão nuas e as famílias esqueceram seus símbolos.",
+				"Quero devolver isso pra eles. Um estandarte por família, tecido com lã e esperança."
+			],
+			"why": [
+				"Um estandarte é memória, minha gente. Mostra quem você é e de onde veio.",
+				"E os Exilados também usam estandartes. Se a vila tiver os dela, as crianças vão saber reconhecer quem é amigo e quem é inimigo."
+			],
+			"accept": [
+				"Que bonito da sua parte. Seis lãs e um graveto fazem um estandarte. Use o tear pra desenhar.",
+				"<g>Traga</g> <y>6 estandartes</y> (qualquer cor ou desenho)."
+			],
+			"progress": [
+				"No tear você pode fazer listras, cruzes, bordas... Seja criativo!",
+				"Se quiser fazer algo especial, use corante de várias cores. Cada família merece um estandarte único."
+			],
+			"complete": [
+				"Que obra de arte! A dona Cida chorou quando viu o estandarte com as flores dela.",
+				"Leve diamantes, esmeraldas e frascos de experiência. A vila tem cor de novo graças a você."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:banners"], "count": 6, "desc": "<g>Entregue</g> <y>6 estandartes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
+			"id": "shepherd_4_saqueadores",
+			"tier": 4,
+			"title": "Os Ladrões de Rebanho",
+			"tone": "danger",
+			"offer": [
+				"Minha gente, aconteceu. Os <r>saqueadores</r> vieram de noite e levaram dez ovelhas, três vacas e o cachorro do bibliotecário.",
+				"Eles carregam um estandarte com um rosto cinza. Andam em patrulha pela região, com bestas e machados.",
+				"Os <r>vingadores</r>, aqueles de machado, são os piores. Não conversam, não negociam. Só atacam."
+			],
+			"why": [
+				"Se eles acharem que a vila é fácil, vão voltar com uma <r>invasão</r> inteira. Já vi vila sumir do mapa assim.",
+				"Isso precisa de um <o>Guerreiro</o>. Alguém que mostre pra eles que esta vila tem quem a defenda."
+			],
+			"accept": [
+				"Cuidado com o capitão, o que carrega o estandarte. Se você derrotar ele, fica com o mau presságio e a invasão vem atrás de você.",
+				"<r>Elimine 20 saqueadores ou vingadores</r>."
+			],
+			"progress": [
+				"As patrulhas andam em grupo de três a cinco. Também tem muitos em torres de vigia e na mansão da floresta escura.",
+				"Escudo contra as bestas. Distância contra os machados."
+			],
+			"complete": [
+				"As patrulhas sumiram da região. Dizem que eles agora contam histórias de terror sobre você nos acampamentos deles.",
+				"Leve diamantes, maçãs douradas e um livro de <p>Peso-Pena</p>. E ah: o cachorro do bibliotecário voltou sozinho! Ele é esperto."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager", "minecraft:vindicator"], "count": 20, "desc": "<r>Elimine</r> <r>20 saqueadores ou vingadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "shepherd_4_cabras",
+			"tier": 4,
+			"title": "O Chamado das Montanhas",
+			"tone": "calm",
+			"offer": [
+				"Lá no alto dos picos nevados vivem as <a>cabras</a>. Elas pulam de pedra em pedra como se voassem.",
+				"Quando uma cabra dá uma cabeçada numa rocha, às vezes ela solta o próprio chifre. E esse chifre, minha gente, canta.",
+				"Os pastores antigos usavam os chifres pra chamar o rebanho de volta de muito longe. A música atravessa vales inteiros."
+			],
+			"why": [
+				"Com os chifres, eu consigo guiar o rebanho mesmo no meio da neblina e da tempestade. Nenhuma ovelha se perde mais.",
+				"Os picos são traiçoeiros: neve fofa, quedas, frio. É viagem pra <o>Guerreiro</o>."
+			],
+			"accept": [
+				"Leve botas de couro, que elas te deixam andar na neve fofa sem afundar.",
+				"<g>Traga</g> <y>4 chifres de cabra</y>."
+			],
+			"progress": [
+				"Cabra solta o chifre quando bate com a cabeça em pedra, tronco, minério ou gelo compacto. Desvie das cabeçadas perto de uma rocha!",
+				"Postos avançados de saqueadores também guardam chifres nos baús. Mas aí tem briga."
+			],
+			"complete": [
+				"Escuta... <d>(ele sopra o chifre e um som longo ecoa pelo vale)</d> ...as ovelhas todas viraram a cabeça pra cá. Funcionou!",
+				"Leve diamantes e maçãs douradas. As montanhas te devem uma, e eu também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:goat_horn"], "count": 4, "desc": "<g>Entregue</g> <y>4 chifres de cabra</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "shepherd_5_warden",
+			"tier": 5,
+			"title": "O Guardião do Silêncio",
+			"tone": "danger",
+			"offer": [
+				"Vou te contar uma coisa que eu nunca contei. Há muitos anos, meu irmão gêmeo era pastor também.",
+				"Um dia uma ovelha dele caiu numa fenda funda, e ele desceu atrás. Desceu, desceu... até chegar numa <a>cidade antiga</a>, coberta de uma coisa azul que pulsa.",
+				"Ele fez barulho. E algo acordou: o <r>Warden</r>. Cego, enorme, que caça pelo som e pelo cheiro. Meu irmão nunca voltou."
+			],
+			"why": [
+				"Toda noite eu ouço, bem lá no fundo, um coração batendo debaixo da terra. Não durmo há anos por causa disso.",
+				"Talvez, se o guardião cair, meu irmão finalmente descanse. Isso só um <o>Mestre</o> consegue fazer."
+			],
+			"accept": [
+				"Ande agachado. Não pise no sculk. Não faça barulho. Se ele aparecer, não corra em linha reta.",
+				"<r>Derrote o Warden</r> nas profundezas da escuridão."
+			],
+			"progress": [
+				"Ele fica cego, mas sente vibrações. Bolas de neve jogadas longe distraem ele.",
+				"O ataque sônico dele atravessa paredes e escudos. Mantenha distância quando ele encher o peito.",
+				"Poções de força, maçã encantada, armadura de netherita. Vá com tudo que tiver."
+			],
+			"complete": [
+				"Hoje eu não ouvi o coração. Pela primeira vez em vinte anos, o silêncio foi só silêncio.",
+				"Leve isso, Mestre: uma maçã encantada, diamantes e o livro de <p>Furtividade Ágil</p> que meu irmão trouxe de uma viagem. Ele ia querer que fosse seu."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:warden"], "count": 1, "desc": "<r>Derrote</r> <r>o Warden</r>"},
+			"rewards": [{"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:swift_sneak", "level": 3}]
+		},
+		{
+			"id": "shepherd_5_dourado",
+			"tier": 5,
+			"title": "O Rebanho Dourado",
+			"tone": "calm",
+			"offer": [
+				"Existe uma profecia antiga entre os pastores: quando um rebanho chegar a <a>duzentos nascimentos</a> pelas mãos da mesma pessoa, a terra floresce.",
+				"Dizem que a última vez que isso aconteceu, nasceu a primeira ovelha rosa do mundo. Mas faz mil anos.",
+				"Eu já tô velho pra isso. Mas você, minha gente... você tem mãos de pastor e coração de Mestre."
+			],
+			"why": [
+				"Não é sobre a profecia. É sobre provar que cuidar é tão nobre quanto lutar.",
+				"Os jovens da vila só querem ser guerreiros. Se um <o>Mestre</o> fizer isso, eles vão entender que proteger a vida também é heroísmo."
+			],
+			"accept": [
+				"Que alegria me dá ouvir isso. Comece com calma. O rebanho sente a pressa.",
+				"<g>Faça os animais terem</g> <y>200 filhotes</y>."
+			],
+			"progress": [
+				"Faça currais grandes, com bastante comida guardada. Abelhas, tartarugas, raposas... todos contam.",
+				"Use o Diário pra acompanhar. Cada filhote é um verso do poema."
+			],
+			"complete": [
+				"Olhe pro pasto. Está vendo? As flores nasceram sozinhas em volta do cercado. A profecia... era verdade.",
+				"Leve netherita, diamantes e um totem da imortalidade. Que sua vida seja longa, para cuidar de muitas outras."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 200, "desc": "<g>Faça os animais terem</g> <y>200 filhotes</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

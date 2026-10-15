@@ -1,0 +1,897 @@
+package br.com.cronicasdavila.dialogue;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import net.minecraft.core.Holder;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.npc.villager.Villager;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+
+import br.com.cronicasdavila.compat.VanillaCompat;
+import br.com.cronicasdavila.data.PlayerData;
+import br.com.cronicasdavila.data.PlayerDataManager;
+import br.com.cronicasdavila.karma.KarmaSystem;
+import br.com.cronicasdavila.karma.KarmaTier;
+import br.com.cronicasdavila.net.ModPayloads;
+import br.com.cronicasdavila.quest.NpcDialogue;
+import br.com.cronicasdavila.quest.Quest;
+import br.com.cronicasdavila.quest.QuestRegistry;
+import br.com.cronicasdavila.quest.QuestReward;
+import br.com.cronicasdavila.quest.QuestService;
+import br.com.cronicasdavila.rank.Professions;
+import br.com.cronicasdavila.rank.Rank;
+
+/**
+ * Controla as conversas: quem fala, o que fala e o que acontece em cada escolha.
+ * Toda a lógica roda no servidor; o cliente só desenha a caixa de diálogo.
+ */
+public final class DialogueManager {
+	public static final String FROZEN_TAG = "cronicasdavila_conversando";
+	private static final double MAX_DISTANCE = 7.0;
+
+	private static final Map<UUID, DialogueSession> SESSIONS = new HashMap<>();
+
+	private DialogueManager() {
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Abrir / fechar
+	// ---------------------------------------------------------------------------------------------
+
+	/** Decide, dos dois lados (cliente e servidor), se o clique abre o nosso diálogo. */
+	public static boolean wantsDialogue(net.minecraft.world.entity.player.Player player, Entity entity) {
+		if (player.isSpectator() || player.isShiftKeyDown()) {
+			return false;
+		}
+
+		String type = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString();
+		String held = BuiltInRegistries.ITEM.getKey(player.getMainHandItem().getItem()).toString();
+
+		// Etiqueta de nome e ovos de spawn continuam funcionando normalmente.
+		if (held.equals("minecraft:name_tag") || held.endsWith("_spawn_egg")) {
+			return false;
+		}
+
+		if (type.equals("minecraft:villager")) {
+			return true;
+		}
+
+		if (type.equals("minecraft:piglin")) {
+			// Segurando ouro = escambo normal dos piglins.
+			return !held.equals("minecraft:gold_ingot");
+		}
+
+		return false;
+	}
+
+	public static InteractionResult onInteract(ServerPlayer player, Entity entity) {
+		if (!wantsDialogue(player, entity) || !(entity instanceof Mob npc) || !npc.isAlive()) {
+			return InteractionResult.PASS;
+		}
+
+		if (SESSIONS.containsKey(player.getUUID())) {
+			return InteractionResult.SUCCESS;
+		}
+
+		for (DialogueSession other : SESSIONS.values()) {
+			if (other.npc == npc) {
+				player.sendOverlayMessage(br.com.cronicasdavila.util.Text.parse("<y>Esse NPC já está conversando com outra pessoa.</y>"));
+				return InteractionResult.SUCCESS;
+			}
+		}
+
+		boolean piglin = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath().equals("piglin");
+
+		if (piglin && npc.getTarget() == player) {
+			// Piglin furioso não conversa: deixa o combate acontecer.
+			return InteractionResult.PASS;
+		}
+
+		String profession;
+
+		if (piglin) {
+			profession = Professions.PIGLIN;
+		} else if (npc.isBaby()) {
+			profession = Professions.CHILD;
+		} else if (npc instanceof Villager villager) {
+			if (villager.isTrading()) {
+				return InteractionResult.PASS;
+			}
+
+			profession = VanillaCompat.professionKey(villager);
+		} else {
+			return InteractionResult.PASS;
+		}
+
+		NpcDialogue lines = QuestRegistry.dialogue(profession);
+		DialogueSession session = new DialogueSession(player, npc, profession, npcName(npc, lines), piglin, lines);
+		SESSIONS.put(player.getUUID(), session);
+		freeze(session);
+		onConversationStart(session);
+		openingNode(session);
+		return InteractionResult.SUCCESS;
+	}
+
+	private static String npcName(Mob npc, NpcDialogue lines) {
+		if (npc.hasCustomName() && npc.getCustomName() != null) {
+			return npc.getCustomName().getString();
+		}
+
+		if (lines.names.isEmpty()) {
+			return "Aldeão";
+		}
+
+		return lines.names.get(Math.floorMod(npc.getUUID().hashCode(), lines.names.size()));
+	}
+
+	private static void freeze(DialogueSession session) {
+		Mob npc = session.npc;
+		npc.getNavigation().stop();
+		npc.setNoAi(true);
+		npc.addTag(FROZEN_TAG);
+		faceEachOther(session);
+	}
+
+	private static void unfreeze(DialogueSession session) {
+		Mob npc = session.npc;
+
+		if (npc.getTags().contains(FROZEN_TAG)) {
+			npc.removeTag(FROZEN_TAG);
+			npc.setNoAi(session.previousNoAi);
+		}
+	}
+
+	/** Se o servidor caiu no meio de uma conversa, o NPC volta ao normal quando carregar. */
+	public static void onEntityLoad(Entity entity) {
+		if (entity instanceof Mob mob && mob.getTags().contains(FROZEN_TAG)) {
+			boolean inSession = false;
+
+			for (DialogueSession session : SESSIONS.values()) {
+				if (session.npc == mob) {
+					inSession = true;
+					break;
+				}
+			}
+
+			if (!inSession) {
+				mob.removeTag(FROZEN_TAG);
+				mob.setNoAi(false);
+			}
+		}
+	}
+
+	private static void faceEachOther(DialogueSession session) {
+		Mob npc = session.npc;
+		ServerPlayer player = session.player;
+		double dx = player.getX() - npc.getX();
+		double dz = player.getZ() - npc.getZ();
+		double dy = player.getEyeY() - npc.getEyeY();
+		double horizontal = Math.sqrt(dx * dx + dz * dz);
+		float yaw = (float) (Math.toDegrees(Math.atan2(dz, dx)) - 90.0);
+		float pitch = (float) -Math.toDegrees(Math.atan2(dy, horizontal));
+		npc.setYRot(yaw);
+		npc.setYHeadRot(yaw);
+		npc.setYBodyRot(yaw);
+		npc.setXRot(pitch);
+	}
+
+	public static void close(ServerPlayer player, boolean notifyClient) {
+		DialogueSession session = SESSIONS.remove(player.getUUID());
+
+		if (session != null) {
+			unfreeze(session);
+		}
+
+		if (notifyClient) {
+			JsonObject json = new JsonObject();
+			json.addProperty("type", "close");
+			ServerPlayNetworking.send(player, new ModPayloads.DialoguePayload(json.toString()));
+		}
+	}
+
+	public static void closeAll() {
+		for (DialogueSession session : new ArrayList<>(SESSIONS.values())) {
+			unfreeze(session);
+		}
+
+		SESSIONS.clear();
+	}
+
+	public static boolean inDialogue(ServerPlayer player) {
+		return SESSIONS.containsKey(player.getUUID());
+	}
+
+	public static void tick(MinecraftServer server) {
+		for (DialogueSession session : new ArrayList<>(SESSIONS.values())) {
+			session.ticks++;
+			boolean invalid = session.player.isRemoved() || !session.npc.isAlive() || session.npc.isRemoved()
+					|| session.npc.level() != session.player.level()
+					|| session.npc.distanceTo(session.player) > MAX_DISTANCE;
+
+			if (invalid) {
+				close(session.player, true);
+				continue;
+			}
+
+			faceEachOther(session);
+		}
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Ações vindas do cliente
+	// ---------------------------------------------------------------------------------------------
+
+	public static void onAction(ServerPlayer player, String action) {
+		if (action.equals("close")) {
+			close(player, false);
+			return;
+		}
+
+		if (action.startsWith("choice:")) {
+			DialogueSession session = SESSIONS.get(player.getUUID());
+
+			if (session == null) {
+				close(player, true);
+				return;
+			}
+
+			Runnable handler = session.handlers.get(action.substring("choice:".length()));
+
+			if (handler != null) {
+				handler.run();
+			}
+
+			return;
+		}
+
+		PlayerData data = PlayerDataManager.get(player);
+
+		if (action.startsWith("abandon:")) {
+			String profession = action.substring("abandon:".length());
+			Quest quest = data.active.containsKey(profession) ? QuestRegistry.get(data.active.get(profession).questId) : null;
+			QuestService.abandon(player, data, profession);
+
+			if (quest != null) {
+				player.sendSystemMessage(br.com.cronicasdavila.util.Text.parse("<r>Você desistiu da missão</r> <y>" + quest.title + "</y>. <d>(-5 karma)</d>"));
+			}
+		} else if (action.startsWith("track:")) {
+			String profession = action.substring("track:".length());
+
+			if (data.active.containsKey(profession)) {
+				data.tracked = profession;
+			} else if (profession.equals("none")) {
+				data.tracked = null;
+			}
+
+			PlayerDataManager.save(player);
+		}
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Montagem dos "nós" do diálogo
+	// ---------------------------------------------------------------------------------------------
+
+	private record Choice(String id, String text, String style, Runnable action) {
+	}
+
+	private static String pick(DialogueSession session, List<String> options, String fallback) {
+		if (options == null || options.isEmpty()) {
+			return fallback;
+		}
+
+		return options.get(session.player.getRandom().nextInt(options.size()));
+	}
+
+	private static String fill(DialogueSession session, String text) {
+		return text.replace("{player}", session.player.getScoreboardName())
+				.replace("{npc}", session.npcName)
+				.replace("{profissao}", Professions.displayName(session.profession));
+	}
+
+	private static void show(DialogueSession session, List<String> pages, List<Choice> choices, String tone) {
+		session.handlers.clear();
+		JsonObject json = new JsonObject();
+		json.addProperty("type", "open");
+		json.addProperty("entity", session.npc.getId());
+		json.addProperty("speaker", session.npcName);
+		json.addProperty("subtitle", subtitle(session));
+		json.addProperty("tone", tone);
+		json.addProperty("nether", session.piglin);
+
+		JsonArray pageArray = new JsonArray();
+
+		for (String page : pages) {
+			pageArray.add(fill(session, page));
+		}
+
+		json.add("pages", pageArray);
+		JsonArray choiceArray = new JsonArray();
+
+		for (Choice choice : choices) {
+			JsonObject object = new JsonObject();
+			object.addProperty("id", choice.id());
+			object.addProperty("text", fill(session, choice.text()));
+			object.addProperty("style", choice.style());
+			choiceArray.add(object);
+			session.handlers.put(choice.id(), choice.action());
+		}
+
+		json.add("choices", choiceArray);
+		ServerPlayNetworking.send(session.player, new ModPayloads.DialoguePayload(json.toString()));
+	}
+
+	private static String subtitle(DialogueSession session) {
+		String profession = Professions.displayName(session.profession);
+
+		if (!Professions.givesQuests(session.profession)) {
+			return profession;
+		}
+
+		PlayerData data = PlayerDataManager.get(session.player);
+		PlayerData.ProfessionProgress progress = data.profession(session.profession);
+		String affinity = progress.mastered ? "Mestre ★" : Rank.ofTier(progress.level).displayName();
+		return profession + "  ·  Sua afinidade: " + affinity;
+	}
+
+	private static void speak(DialogueSession session, SoundEvent villagerSound, SoundEvent piglinSound) {
+		ServerLevel level = (ServerLevel) session.npc.level();
+		SoundEvent sound = session.piglin ? piglinSound : villagerSound;
+		level.playSound(null, session.npc.getX(), session.npc.getY(), session.npc.getZ(), sound, SoundSource.NEUTRAL, 1.0F,
+				session.npc.isBaby() ? 1.5F : 1.0F);
+	}
+
+	private static void onConversationStart(DialogueSession session) {
+		speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
+		PlayerData data = PlayerDataManager.get(session.player);
+
+		// O karma mexe nos preços através da "fofoca" do próprio jogo.
+		if (session.npc instanceof Villager villager) {
+			if (data.karma >= 100) {
+				VanillaCompat.addGossip(villager, session.player.getUUID(), true, Math.min(10, data.karma / 100));
+			} else if (data.karma <= -100) {
+				VanillaCompat.addGossip(villager, session.player.getUUID(), false, Math.min(10, -data.karma / 100));
+			}
+		}
+	}
+
+	private static String toneFor(DialogueSession session) {
+		return session.piglin ? "nether" : "neutral";
+	}
+
+	private static void openingNode(DialogueSession session) {
+		PlayerData data = PlayerDataManager.get(session.player);
+		KarmaTier karma = KarmaSystem.tier(data);
+		NpcDialogue lines = session.lines;
+
+		if (session.npc.isSleeping()) {
+			show(session, List.of(pick(session, lines.extra("sleeping"), "Zzz... só mais cinco minutinhos... Zzz...")),
+					List.of(new Choice("bye", "Deixa ele dormir.", "neutral", () -> close(session.player, true))), "neutral");
+			return;
+		}
+
+		if (session.piglin && !wearsGold(session.player)) {
+			show(session, List.of(pick(session, lines.extra("no_gold"), "<n>HRRNF!</n> Cadê o <o>ouro</o>? Sem ouro, sem conversa!")),
+					List.of(new Choice("bye", "Ops... já volto com ouro.", "neutral", () -> close(session.player, true))), "nether");
+			return;
+		}
+
+		if (karma.atMost(KarmaTier.ODIADO)) {
+			hostileNode(session);
+			return;
+		}
+
+		List<String> greetings;
+
+		if (karma.atLeast(KarmaTier.CONFIAVEL)) {
+			greetings = lines.greet_friendly;
+		} else if (karma.atMost(KarmaTier.SUSPEITO)) {
+			greetings = lines.greet_cold;
+		} else {
+			greetings = lines.greet_neutral;
+		}
+
+		mainMenu(session, pick(session, greetings, "Olá, {player}."));
+	}
+
+	private static boolean wearsGold(ServerPlayer player) {
+		for (EquipmentSlot slot : new EquipmentSlot[] {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}) {
+			String id = BuiltInRegistries.ITEM.getKey(player.getItemBySlot(slot).getItem()).getPath();
+
+			if (id.startsWith("golden_")) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	private static void hostileNode(DialogueSession session) {
+		List<Choice> choices = new ArrayList<>();
+		addApologyChoice(session, choices);
+		choices.add(new Choice("bye", "Tá bom, tô indo...", "neutral", () -> close(session.player, true)));
+		speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
+		show(session, List.of(pick(session, session.lines.hostile, "<r>Sai daqui!</r> Não quero conversa com gente como você.")), choices, "danger");
+	}
+
+	private static void mainMenu(DialogueSession session, String line) {
+		PlayerData data = PlayerDataManager.get(session.player);
+		List<Choice> choices = new ArrayList<>();
+		boolean questGiver = Professions.givesQuests(session.profession);
+
+		if (questGiver) {
+			PlayerData.ActiveQuest active = data.active.get(session.profession);
+			Quest quest = active != null ? QuestRegistry.get(active.questId) : null;
+
+			if (quest != null) {
+				if (QuestService.isComplete(session.player, active, quest)) {
+					choices.add(new Choice("turnin", "<g>Missão cumprida!</g> \"" + quest.title + "\"", "accept", () -> turnIn(session)));
+				}
+
+				choices.add(new Choice("info", "Sobre a missão \"" + quest.title + "\"...", "info", () -> questInfo(session)));
+			} else {
+				choices.add(new Choice("work", pick(session, session.lines.player_work, "Tem algum trabalho pra mim?"), "quest", () -> offerQuest(session)));
+			}
+		} else if (Professions.UNEMPLOYED.equals(session.profession) || Professions.NITWIT.equals(session.profession)
+				|| Professions.CHILD.equals(session.profession)) {
+			choices.add(new Choice("work", pick(session, session.lines.player_work, "Tem algum trabalho pra mim?"), "quest", () -> noWork(session)));
+		}
+
+		if (!session.lines.lore.isEmpty()) {
+			choices.add(new Choice("lore", pick(session, session.lines.player_lore, "Me conta alguma história."), "info", () -> lore(session)));
+		}
+
+		if (questGiver) {
+			choices.add(new Choice("rep", "Como eu tô com vocês?", "info", () -> reputation(session)));
+		}
+
+		if (session.npc instanceof Villager && questGiver && !session.npc.isBaby()) {
+			choices.add(new Choice("trade", "Bora negociar.", "trade", () -> trade(session)));
+		}
+
+		KarmaTier karma = KarmaSystem.tier(data);
+
+		if (data.karma < 0) {
+			addApologyChoice(session, choices);
+		}
+
+		if (karma.atLeast(KarmaTier.HONRADO) && !session.npc.isBaby() && !Professions.NITWIT.equals(session.profession)) {
+			choices.add(new Choice("bless", "Pode abençoar minha ferramenta?", "magic", () -> bless(session)));
+		}
+
+		choices.add(new Choice("bye", pick(session, session.lines.player_bye, "Até mais!"), "neutral", () -> bye(session)));
+		show(session, List.of(line), choices, toneFor(session));
+	}
+
+	private static void backToMenu(DialogueSession session) {
+		mainMenu(session, pick(session, session.lines.followup, "Mais alguma coisa?"));
+	}
+
+	private static List<Choice> backOrBye(DialogueSession session) {
+		List<Choice> choices = new ArrayList<>();
+		choices.add(new Choice("back", "Mais uma coisa...", "neutral", () -> backToMenu(session)));
+		choices.add(new Choice("bye", pick(session, session.lines.player_bye, "Até mais!"), "neutral", () -> bye(session)));
+		return choices;
+	}
+
+	private static void bye(DialogueSession session) {
+		speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
+		show(session, List.of(pick(session, session.lines.bye, "Até mais, {player}!")), List.of(), toneFor(session));
+		SESSIONS.remove(session.player.getUUID());
+		unfreeze(session);
+	}
+
+	private static void noWork(DialogueSession session) {
+		show(session, List.of(pick(session, session.lines.extra("no_profession"),
+				"Trabalho? Eu? Nem eu tenho trabalho, como é que vou te dar um?")), backOrBye(session), toneFor(session));
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Missões
+	// ---------------------------------------------------------------------------------------------
+
+	private static void offerQuest(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+
+		if (data.active.containsKey(session.profession)) {
+			questInfo(session);
+			return;
+		}
+
+		QuestService.Offer offer = QuestService.pickQuest(player, data, session.profession);
+
+		if (offer == null) {
+			show(session, List.of(pick(session, session.lines.locked, "Agora não tenho nada pra você. Volte outra hora.")), backOrBye(session), toneFor(session));
+			return;
+		}
+
+		session.pendingOffer = offer;
+		Quest quest = offer.quest();
+		List<String> pages = new ArrayList<>();
+
+		if (offer.repeat()) {
+			if (QuestService.blockedByRank(player, data, session.profession)) {
+				Rank next = Rank.ofTier(QuestService.offeredTier(player, data, session.profession) + 1);
+				pages.add("Olha, eu até teria serviço maior... mas pra isso você precisa ser pelo menos <o>" + next.displayName()
+						+ "</o>. Ganhe experiência ou complete missões com outros aldeões.");
+			}
+
+			pages.add(pick(session, session.lines.repeat, "Lembra daquele serviço? Pois é, precisei de novo. Paga menos, mas ajuda."));
+		}
+
+		pages.addAll(quest.offer);
+		pages.add(objectiveLine(quest));
+		speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
+		show(session, pages, offerChoices(session, quest, true), quest.isDanger() ? "danger" : "calm");
+	}
+
+	private static String tierLabel(Quest quest) {
+		Rank rank = Rank.ofTier(quest.tier);
+		return "<o>[" + rank.displayName() + "]</o>";
+	}
+
+	private static String objectiveLine(Quest quest) {
+		return tierLabel(quest) + " <b>" + quest.title + "</b> — " + quest.objective.desc + ".";
+	}
+
+	private static List<Choice> offerChoices(DialogueSession session, Quest quest, boolean allowWhy) {
+		List<Choice> choices = new ArrayList<>();
+		choices.add(new Choice("accept", pick(session, session.lines.player_accept, "Pode contar comigo!"), "accept", () -> acceptQuest(session)));
+
+		if (allowWhy) {
+			choices.add(new Choice("why", pick(session, session.lines.player_why, "E por que eu deveria ajudar?"), "info", () -> whyQuest(session)));
+		}
+
+		choices.add(new Choice("decline", pick(session, session.lines.player_decline, "Agora não, valeu."), "decline", () -> declineQuest(session)));
+		return choices;
+	}
+
+	private static void whyQuest(DialogueSession session) {
+		Quest quest = session.pendingOffer.quest();
+		List<String> pages = new ArrayList<>(quest.why);
+		pages.add(rewardLine(quest, session.pendingOffer.repeat()));
+		show(session, pages, offerChoices(session, quest, false), quest.isDanger() ? "danger" : "calm");
+	}
+
+	private static String rewardLine(Quest quest, boolean repeat) {
+		StringBuilder builder = new StringBuilder("Se der conta do recado, te pago ");
+
+		for (int i = 0; i < quest.rewards.size(); i++) {
+			QuestReward reward = quest.rewards.get(i);
+			int count = repeat ? Math.max(1, reward.count / 2) : reward.count;
+
+			if (i > 0) {
+				builder.append(i == quest.rewards.size() - 1 ? " e " : ", ");
+			}
+
+			builder.append("<o>").append(count).append("x {item:").append(reward.item).append("}");
+
+			if (reward.enchant != null) {
+				builder.append(" de {ench:").append(reward.enchant).append("} ").append(reward.level);
+			}
+
+			builder.append("</o>");
+		}
+
+		builder.append(". Palavra de quem honra o que diz.");
+		return builder.toString();
+	}
+
+	private static void acceptQuest(DialogueSession session) {
+		if (session.pendingOffer == null) {
+			backToMenu(session);
+			return;
+		}
+
+		Quest quest = session.pendingOffer.quest();
+		QuestService.accept(session.player, PlayerDataManager.get(session.player), quest, session.pendingOffer.repeat(), session.npc, session.npcName);
+		session.pendingOffer = null;
+		speak(session, SoundEvents.VILLAGER_YES, SoundEvents.PIGLIN_ADMIRING_ITEM);
+
+		List<String> pages = new ArrayList<>(quest.accept);
+		pages.add("<a>Missão adicionada ao seu Diário</a> <d>(tecla J ou o botão \"Missões\" no inventário)</d>.");
+		show(session, pages, backOrBye(session), quest.isDanger() ? "danger" : "calm");
+	}
+
+	private static void declineQuest(DialogueSession session) {
+		session.pendingOffer = null;
+		speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_AMBIENT);
+		show(session, List.of(pick(session, session.lines.decline, "Tudo bem. Se mudar de ideia, sabe onde me achar.")), backOrBye(session), toneFor(session));
+	}
+
+	private static void questInfo(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		PlayerData.ActiveQuest active = data.active.get(session.profession);
+		Quest quest = active != null ? QuestRegistry.get(active.questId) : null;
+
+		if (quest == null) {
+			backToMenu(session);
+			return;
+		}
+
+		int progress = QuestService.progress(player, active, quest);
+		boolean complete = progress >= quest.objective.count;
+		List<String> pages = new ArrayList<>();
+
+		if (!active.giverUuid.equals(session.npc.getUUID().toString())) {
+			pages.add("Ah, quem te pediu isso foi <a>" + active.giverName + "</a>, né? Fiquei sabendo. Pode resolver comigo mesmo.");
+		}
+
+		pages.addAll(quest.progress);
+		String verb = quest.objective.isDeliver() ? "Você tem" : "Progresso:";
+		pages.add(objectiveLine(quest) + " " + verb + " <y>" + progress + "/" + quest.objective.count + "</y>."
+				+ (complete ? " <g>Já dá pra entregar!</g>" : ""));
+
+		List<Choice> choices = new ArrayList<>();
+
+		if (complete) {
+			choices.add(new Choice("turnin", "<g>Aqui está! Missão cumprida.</g>", "accept", () -> turnIn(session)));
+		}
+
+		choices.add(new Choice("reward", "E a recompensa mesmo, qual era?", "info", () -> {
+			show(session, List.of(rewardLine(quest, active.repeat)), backOrBye(session), toneFor(session));
+		}));
+		choices.add(new Choice("abandon", "<r>Quero desistir dessa missão.</r>", "danger", () -> confirmAbandon(session, quest)));
+		choices.add(new Choice("back", "Beleza, vou continuar.", "neutral", () -> backToMenu(session)));
+		show(session, pages, choices, quest.isDanger() ? "danger" : "calm");
+	}
+
+	private static void confirmAbandon(DialogueSession session, Quest quest) {
+		List<Choice> choices = List.of(
+				new Choice("yes", "<r>Sim, desisto.</r> (-5 karma)", "danger", () -> {
+					QuestService.abandon(session.player, PlayerDataManager.get(session.player), session.profession);
+					speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
+					show(session, List.of(pick(session, session.lines.abandon, "Que pena... achei que podia confiar em você.")), backOrBye(session), toneFor(session));
+				}),
+				new Choice("no", "Não, pensei melhor.", "neutral", () -> questInfo(session))
+		);
+		show(session, List.of("Tem certeza que vai largar <y>" + quest.title + "</y> pela metade? Vou ter que procurar outra pessoa..."), choices, "danger");
+	}
+
+	private static void turnIn(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		PlayerData.ActiveQuest active = data.active.get(session.profession);
+		Quest quest = active != null ? QuestRegistry.get(active.questId) : null;
+		List<String> extra = QuestService.turnIn(player, data, session.profession);
+
+		if (quest == null || extra == null) {
+			show(session, List.of("Hmm... ainda não está completo. Dá uma olhada no seu Diário."), backOrBye(session), toneFor(session));
+			return;
+		}
+
+		if (session.npc instanceof Villager villager) {
+			VanillaCompat.addVillagerXp(villager, quest.tier * 8);
+			VanillaCompat.addGossip(villager, player.getUUID(), true, quest.tier * 2);
+		}
+
+		ServerLevel level = (ServerLevel) session.npc.level();
+		level.sendParticles(session.piglin ? ParticleTypes.FLAME : ParticleTypes.HAPPY_VILLAGER,
+				session.npc.getX(), session.npc.getEyeY() + 0.3, session.npc.getZ(), 12, 0.4, 0.3, 0.4, 0.02);
+		speak(session, SoundEvents.VILLAGER_CELEBRATE, SoundEvents.PIGLIN_CELEBRATE);
+
+		List<String> pages = new ArrayList<>(quest.complete);
+		pages.addAll(extra);
+		show(session, pages, backOrBye(session), "calm");
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Conversa, reputação, trocas, desculpas, bênçãos
+	// ---------------------------------------------------------------------------------------------
+
+	private static void lore(DialogueSession session) {
+		List<List<String>> stories = session.lines.lore;
+		List<String> story = stories.get(Math.floorMod(session.loreIndex, stories.size()));
+		session.loreIndex++;
+
+		List<Choice> choices = new ArrayList<>();
+
+		if (stories.size() > 1) {
+			choices.add(new Choice("more", pick(session, session.lines.player_more_lore, "Conta outra!"), "info", () -> lore(session)));
+		}
+
+		choices.addAll(backOrBye(session));
+		show(session, story, choices, toneFor(session));
+	}
+
+	private static void reputation(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		KarmaTier karma = KarmaSystem.tier(data);
+		PlayerData.ProfessionProgress progress = data.profession(session.profession);
+		Rank rank = QuestService.effectiveRank(player, data);
+		List<String> pages = new ArrayList<>();
+		String color = karma.atLeast(KarmaTier.CONFIAVEL) ? "g" : (karma.atMost(KarmaTier.SUSPEITO) ? "r" : "y");
+
+		pages.add("Pelo que dizem por aí, você é <" + color + "><b>" + karma.displayName() + "</b></" + color + "> (karma "
+				+ data.karma + "). <d>" + karma.description() + "</d>");
+
+		String affinity = progress.mastered ? "<o>Mestre ★</o>" : "<o>" + Rank.ofTier(progress.level).displayName() + "</o>";
+		String next = progress.mastered || progress.level >= 5
+				? (progress.mastered ? "Não tenho mais nada pra te ensinar." : "Falta só completar uma missão de Mestre.")
+				: "Mais <y>" + (QuestService.QUESTS_PER_PROFESSION_LEVEL - progress.doneAtLevel) + " missão(ões)</y> e confio coisas maiores a você.";
+		pages.add("Entre nós, " + QuestService.plural(session.profession) + ", sua afinidade é " + affinity + ". " + next);
+
+		String rankLine = "No geral você é <o>" + rank.displayName() + "</o>";
+
+		if (rank != Rank.MESTRE) {
+			Rank questRank = data.questRank();
+			rankLine += ". Pra virar <o>" + rank.next().displayName() + "</o>: chegue ao nível <y>" + rank.next().minXpLevel()
+					+ "</y> de XP, ou complete mais <y>" + Math.max(0, questRank.questsToPromote() - data.tierCompletions[questRank.tier()])
+					+ "</y> missão(ões) de " + questRank.displayName() + " (esse nível fica pra sempre).";
+		} else {
+			rankLine += ". Não há mais nada acima de você.";
+		}
+
+		pages.add(rankLine);
+
+		if (!session.piglin) {
+			int mastered = QuestService.masteredCount(data);
+			pages.add("Dizem que quem se torna Mestre em todas as <y>13 profissões</y> vira <o>Herói da Vila</o> pra sempre. Você já dominou <y>"
+					+ mastered + "/13</y>.");
+		}
+
+		show(session, pages, backOrBye(session), toneFor(session));
+	}
+
+	private static void trade(DialogueSession session) {
+		ServerPlayer player = session.player;
+
+		if (!(session.npc instanceof Villager villager)) {
+			backToMenu(session);
+			return;
+		}
+
+		close(player, true);
+		VanillaCompat.openTrade(villager, player);
+	}
+
+	private static void addApologyChoice(DialogueSession session, List<Choice> choices) {
+		PlayerData data = PlayerDataManager.get(session.player);
+		long day = session.player.level().getGameTime() / 24000L;
+
+		if (data.lastApologyDay == day) {
+			return;
+		}
+
+		String cost = session.piglin ? "3 lingotes de ouro" : "3 esmeraldas";
+		choices.add(new Choice("apology", "Quero me redimir. <o>(" + cost + ")</o>", "magic", () -> apology(session)));
+	}
+
+	private static void apology(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		String item = session.piglin ? "minecraft:gold_ingot" : "minecraft:emerald";
+
+		if (QuestService.countInInventory(player, List.of(item)) < 3) {
+			show(session, List.of(session.piglin
+					? "<n>HRRNF!</n> Desculpa sem <o>ouro</o> é só barulho. Volta com <o>3 lingotes</o>."
+					: "Palavras são bonitas, mas não enchem barriga. Volte com <o>3 esmeraldas</o>."), backOrBye(session), "danger");
+			return;
+		}
+
+		int removed = 0;
+
+		for (int i = 0; i < player.getInventory().getContainerSize() && removed < 3; i++) {
+			ItemStack stack = player.getInventory().getItem(i);
+
+			if (BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals(item)) {
+				int take = Math.min(3 - removed, stack.getCount());
+				stack.shrink(take);
+				removed += take;
+			}
+		}
+
+		data.lastApologyDay = player.level().getGameTime() / 24000L;
+		data.addKarma(15);
+		PlayerDataManager.save(player);
+		speak(session, SoundEvents.VILLAGER_YES, SoundEvents.PIGLIN_ADMIRING_ITEM);
+		List<String> pages = new ArrayList<>();
+		pages.add(pick(session, session.lines.apology_thanks, "Tá bom... vou tentar esquecer. Mas estou de olho."));
+		pages.add("<g>+15 karma.</g> <d>(Uma vez por dia.)</d>");
+
+		if (KarmaSystem.tier(data).atMost(KarmaTier.ODIADO)) {
+			show(session, pages, List.of(new Choice("bye", "Obrigado...", "neutral", () -> close(player, true))), "neutral");
+		} else {
+			show(session, pages, backOrBye(session), toneFor(session));
+		}
+	}
+
+	private static void bless(DialogueSession session) {
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		long day = player.level().getGameTime() / 24000L;
+
+		if (data.lastBlessDay == day) {
+			show(session, List.of("Uma bênção por dia, {player}. Até a magia precisa descansar."), backOrBye(session), toneFor(session));
+			return;
+		}
+
+		ItemStack stack = player.getMainHandItem();
+
+		if (stack.isEmpty() || !stack.isDamageableItem()) {
+			show(session, List.of("Segure na mão a ferramenta, arma ou armadura que você quer que eu abençoe."), backOrBye(session), toneFor(session));
+			return;
+		}
+
+		String path = BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath();
+		String primary;
+		int primaryMax;
+
+		if (path.endsWith("_sword")) {
+			primary = "minecraft:sharpness";
+			primaryMax = 3;
+		} else if (path.endsWith("_pickaxe") || path.endsWith("_axe") || path.endsWith("_shovel") || path.endsWith("_hoe")) {
+			primary = "minecraft:efficiency";
+			primaryMax = 3;
+		} else if (path.equals("bow")) {
+			primary = "minecraft:power";
+			primaryMax = 3;
+		} else if (path.endsWith("_helmet") || path.endsWith("_chestplate") || path.endsWith("_leggings") || path.endsWith("_boots")) {
+			primary = "minecraft:protection";
+			primaryMax = 2;
+		} else {
+			primary = "minecraft:unbreaking";
+			primaryMax = 3;
+		}
+
+		ServerLevel level = (ServerLevel) player.level();
+		String applied = tryUpgrade(level, stack, primary, primaryMax);
+
+		if (applied == null) {
+			applied = tryUpgrade(level, stack, "minecraft:unbreaking", 3);
+		}
+
+		if (applied == null) {
+			show(session, List.of("Essa aí já está abençoada até o talo. Mais que isso seria abuso!"), backOrBye(session), toneFor(session));
+			return;
+		}
+
+		data.lastBlessDay = day;
+		PlayerDataManager.save(player);
+		level.sendParticles(ParticleTypes.ENCHANT, player.getX(), player.getY() + 1.0, player.getZ(), 40, 0.5, 0.8, 0.5, 0.5);
+		level.playSound(null, player.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
+		show(session, List.of(pick(session, session.lines.bless, "Que essa ferramenta te sirva bem."),
+				"<p>Bênção recebida:</p> " + applied + "."), backOrBye(session), "calm");
+	}
+
+	private static String tryUpgrade(ServerLevel level, ItemStack stack, String enchantmentId, int max) {
+		Holder<Enchantment> enchantment = VanillaCompat.enchantment(level, enchantmentId);
+
+		if (enchantment == null || !enchantment.value().canEnchant(stack)) {
+			return null;
+		}
+
+		int current = EnchantmentHelper.getItemEnchantmentLevel(enchantment, stack);
+
+		if (current >= max) {
+			return null;
+		}
+
+		stack.enchant(enchantment, current + 1);
+		return "<p>{ench:" + enchantmentId + "} " + Rank.ofTier(current + 1).roman() + "</p>";
+	}
+}

@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "armorer_1_ferro",
+			"tier": 1,
+			"title": "Malha de Ferro",
+			"tone": "calm",
+			"offer": [
+				"Aproxime-se, viajante. Vejo que você anda por aí sem armadura. Isso é imprudência, não coragem.",
+				"Eu forjo as armaduras da guarda da vila. Uma armadura é um <a>abraço de ferro</a>: protege quem você ama enquanto você protege os outros.",
+				"Mas meu estoque de <y>pepitas de ferro</y> acabou. Sem elas, não consigo fazer os elos da malha."
+			],
+			"why": [
+				"Os guardas mais novos estão patrulhando com roupas de couro. Couro não para flecha de esqueleto.",
+				"Cada malha que eu forjo é uma vida protegida. É simples assim. E você ainda aprende algo sobre forja."
+			],
+			"accept": [
+				"Obrigado. Um lingote de ferro na mesa de trabalho vira nove pepitas.",
+				"<g>Traga</g> <y>64 pepitas de ferro</y>."
+			],
+			"progress": [
+				"Derreter ferramentas e armaduras de ferro velhas na fornalha também dá pepitas. Nada se perde.",
+				"Zumbis às vezes deixam ferro. Golens também, mas não ouse atacar um golem."
+			],
+			"complete": [
+				"Pepitas perfeitas. Esta noite, os guardas novos vão dormir sabendo que estão protegidos.",
+				"Aceite este ferro e um capacete de ferro. Proteja sempre a cabeça. Ela é o que te mantém vivo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:iron_nugget"], "count": 64, "desc": "<g>Entregue</g> <y>64 pepitas de ferro</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:iron_helmet", "count": 1}]
+		},
+		{
+			"id": "armorer_1_zumbis",
+			"tier": 1,
+			"title": "Teste de Resistência",
+			"tone": "danger",
+			"offer": [
+				"Uma armadura só prova seu valor em combate. Eu forjo, mas preciso saber se o que forjo funciona.",
+				"Os <r>zumbis</r> têm uma mordida forte e insistente. São o teste perfeito para uma armadura nova.",
+				"Lute com eles. Volte inteiro. Me conte como a armadura se comportou."
+			],
+			"why": [
+				"Se a armadura falhar com você, ela vai falhar com a guarda. E isso eu não admito.",
+				"Além disso, cada zumbi derrubado é um a menos rondando as casas das crianças."
+			],
+			"accept": [
+				"Vá. E lembre-se: mantenha distância, ataque, recue. Nunca fique cercado.",
+				"<r>Elimine 15 zumbis</r>."
+			],
+			"progress": [
+				"Zumbis atacam em grupo quando um é ferido. Cuidado com os reforços.",
+				"Os pequenos são rápidos. Muito rápidos. Não os subestime."
+			],
+			"complete": [
+				"Você voltou inteiro. A armadura cumpriu seu papel. E você também.",
+				"Aceite este ferro e um peitoral de couro reforçado... digo, de ferro. Força do hábito."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "count": 15, "desc": "<r>Elimine</r> <r>15 zumbis</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:iron_chestplate", "count": 1}]
+		},
+		{
+			"id": "armorer_2_ouro",
+			"tier": 2,
+			"title": "O Brilho que Engana",
+			"tone": "calm",
+			"offer": [
+				"Os piglins do Nether respeitam quem usa <o>ouro</o>. Quem não usa, eles atacam sem hesitar.",
+				"A vila quer enviar mensageiros ao Nether para negociar. Eles precisam de armaduras de ouro para não serem atacados.",
+				"Ouro é fraco como proteção, mas é forte como diplomacia. Preciso de lingotes."
+			],
+			"why": [
+				"Uma ponte comercial com os piglins traria materiais que nunca tivemos. Mas um mensageiro morto não traz nada.",
+				"E você vai aprender algo valioso: às vezes, a melhor armadura é a que evita a batalha."
+			],
+			"accept": [
+				"Ouro aparece fundo no subsolo, ou nas terras áridas. No Nether também há ouro em pepitas.",
+				"<g>Traga</g> <y>24 lingotes de ouro</y>."
+			],
+			"progress": [
+				"Badlands, as terras vermelhas, têm ouro até na superfície.",
+				"Zumbis piglins deixam pepitas de ouro. Nove pepitas fazem um lingote."
+			],
+			"complete": [
+				"Brilho suficiente para cegar um piglin de alegria. Os mensageiros partem amanhã.",
+				"Aceite esmeraldas, um diamante e um livro de <p>Proteção</p>. Proteção verdadeira, não só brilho."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_ingot"], "count": 24, "desc": "<g>Entregue</g> <y>24 lingotes de ouro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 2}]
+		},
+		{
+			"id": "armorer_2_aranhas",
+			"tier": 2,
+			"title": "Fios de Seda",
+			"tone": "danger",
+			"offer": [
+				"Por baixo de cada armadura existe uma camada de tecido. Ela impede que o metal machuque a pele.",
+				"O melhor tecido é feito com <y>linha de aranha</y>. Leve, resistente, macio. Mas as aranhas não doam seda de bom grado.",
+				"E há outro problema: elas estão subindo pelos muros da vila à noite. Dois coelhos já foram vistos enrolados em teia."
+			],
+			"why": [
+				"Armadura sem forro machuca quem a usa. Guardas feridos pela própria armadura não protegem ninguém.",
+				"E aranhas nos muros são um risco para todos. Resolver as duas coisas de uma vez é eficiência de soldado."
+			],
+			"accept": [
+				"Aranhas são lentas de dia e perigosas à noite. Lute com elas onde puder enxergar.",
+				"<r>Elimine 25 aranhas</r>."
+			],
+			"progress": [
+				"Aranhas grandes ficam calmas sob o sol, a menos que você as ataque.",
+				"Aranhas de caverna envenenam. Leve leite."
+			],
+			"complete": [
+				"Muros limpos e seda suficiente para forrar todas as armaduras da guarda. Bom trabalho.",
+				"Aceite este ferro, um diamante e um escudo. A primeira linha de defesa é sempre o escudo."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 25, "desc": "<r>Elimine</r> <r>25 aranhas</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:shield", "count": 1}]
+		},
+		{
+			"id": "armorer_3_moldes",
+			"tier": 3,
+			"title": "Os Moldes Perdidos",
+			"tone": "calm",
+			"offer": [
+				"Antigamente, cada povo decorava sua armadura com <a>moldes de ornamento</a>. Desenhos que contavam de onde o guerreiro vinha.",
+				"Os moldes se espalharam pelo mundo: em templos, naufrágios, torres, fortalezas. Ninguém sabe mais fazê-los do zero.",
+				"Quero restaurar essa tradição na vila. Cada guarda com o símbolo da sua família."
+			],
+			"why": [
+				"Um guarda que carrega o símbolo da família luta com mais coragem. Não é só ferro: é identidade.",
+				"E cada molde vem de um lugar perigoso. Você já é <o>Aventureiro</o>. Encare isso como uma viagem pelo mundo."
+			],
+			"accept": [
+				"Qualquer molde de ornamento serve. Cada um vem de uma estrutura diferente.",
+				"<g>Traga</g> <y>4 moldes de ornamento de armadura</y>."
+			],
+			"progress": [
+				"Postos avançados, naufrágios, templos do deserto e da selva, monumentos, fortalezas... todos guardam moldes.",
+				"Um molde pode ser duplicado com diamantes. Mas eu quero os originais."
+			],
+			"complete": [
+				"Estes desenhos... há gerações não eram vistos nesta vila. Obrigado por trazê-los de volta.",
+				"Aceite diamantes, frascos de experiência e um livro de <p>Proteção III</p>."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:trim_templates"], "count": 4, "desc": "<g>Entregue</g> <y>4 moldes de ornamento</y> de armadura"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 12}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 3}]
+		},
+		{
+			"id": "armorer_3_afogados",
+			"tier": 3,
+			"title": "A Armadura que Afunda",
+			"tone": "danger",
+			"offer": [
+				"Há uma guarnição da vila que vigia a costa. Eles usam armaduras de ferro. E ferro afunda.",
+				"Os <r>afogados</r> perceberam isso. Agora eles puxam os guardas para a água à noite. Já perdemos dois. Eles voltaram... verdes.",
+				"Preciso que alguém limpe a costa enquanto eu desenvolvo uma armadura que não afunde."
+			],
+			"why": [
+				"A guarnição da costa protege o porto. Sem eles, os afogados entram na vila pelos rios.",
+				"Você já é <o>Aventureiro</o>. Lutar na água exige frieza. Eu confio na sua."
+			],
+			"accept": [
+				"Atraia-os para a terra firme. Na água, eles são rápidos e você é lento.",
+				"<r>Elimine 20 afogados</r>."
+			],
+			"progress": [
+				"Afogados aparecem em rios e oceanos, principalmente à noite.",
+				"Os que carregam tridente são os mais perigosos. Escudo levantado."
+			],
+			"complete": [
+				"A costa está segura. E descobri algo: escamas de tartaruga deixam a armadura mais leve na água.",
+				"Aceite diamantes, uma maçã dourada e um livro de <p>Afinidade Aquática</p>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 20, "desc": "<r>Elimine</r> <r>20 afogados</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:aqua_affinity", "level": 1}]
+		},
+		{
+			"id": "armorer_4_shulkers",
+			"tier": 4,
+			"title": "Cascas do Fim",
+			"tone": "danger",
+			"offer": [
+				"Existe um material lendário no fim do mundo: as <y>cascas de shulker</y>. Leves, quase indestrutíveis.",
+				"Os <r>shulkers</r> vivem nas cidades do Fim, escondidos em suas cascas, atirando projéteis que fazem as pessoas flutuarem.",
+				"Quero estudar essas cascas. Se eu conseguir imitar a estrutura delas, posso criar armaduras mais leves que o couro e mais fortes que o ferro."
+			],
+			"why": [
+				"Armaduras leves significam guardas mais rápidos. Rapidez salva vidas em combate.",
+				"É viagem para <o>Guerreiro</o>. O Fim é silencioso, vazio e mortal."
+			],
+			"accept": [
+				"Cuidado com a levitação. Leve baldes de água e leite. E não olhe para os endermen.",
+				"<g>Traga</g> <y>6 cascas de shulker</y>."
+			],
+			"progress": [
+				"Os shulkers ficam presos às paredes das cidades do Fim, parecendo blocos roxos.",
+				"Quando a casca se abre, ataque. Fechado, eles quase não sofrem dano."
+			],
+			"complete": [
+				"Que estrutura fascinante. Em camadas, como escamas. A natureza do Fim é estranha e perfeita.",
+				"Aceite diamantes, maçãs douradas e um livro de <p>Proteção IV</p>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 6, "desc": "<g>Entregue</g> <y>6 cascas de shulker</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "armorer_4_diamante",
+			"tier": 4,
+			"title": "A Armadura do Capitão",
+			"tone": "calm",
+			"offer": [
+				"O capitão da guarda vai se aposentar. Trinta anos protegendo esta vila. Nunca pediu nada em troca.",
+				"A tradição diz que o capitão que se aposenta recebe uma armadura completa de <y>diamante</y>, para pendurar na parede de casa.",
+				"Mas diamantes não aparecem por aí. Preciso de alguém que os encontre nas profundezas."
+			],
+			"why": [
+				"Trinta anos de serviço merecem honra. Se não honrarmos os velhos guardiões, quem vai querer ser guardião?",
+				"E o caminho até os diamantes passa por lava, cavernas e escuridão. Trabalho de <o>Guerreiro</o>."
+			],
+			"accept": [
+				"Diamantes ficam bem fundo, perto da lava. Leve balde de água e muita tocha.",
+				"<g>Traga</g> <y>24 diamantes</y>."
+			],
+			"progress": [
+				"Os diamantes são mais comuns perto da camada -58. Cuidado com a lava.",
+				"Fortuna na picareta multiplica os diamantes. Use com sabedoria."
+			],
+			"complete": [
+				"Uma armadura digna de um herói. O capitão vai chorar. Eu talvez também. Não conte a ninguém.",
+				"Aceite esta parte do tesouro da guarda: esmeraldas, maçãs douradas e um livro de <p>Espinhos</p>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:diamond"], "count": 24, "desc": "<g>Entregue</g> <y>24 diamantes</y>"},
+			"rewards": [{"item": "minecraft:emerald_block", "count": 3}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:thorns", "level": 3}, {"item": "minecraft:netherite_scrap", "count": 2}]
+		},
+		{
+			"id": "armorer_5_wither",
+			"tier": 5,
+			"title": "Escudo Contra a Morte",
+			"tone": "danger",
+			"offer": [
+				"Mestre, vou ser direto. Existe uma ameaça que nenhuma armadura pode conter: o <r>Wither</r>.",
+				"Os Exilados descobriram como invocá-lo. Estão juntando crânios de esqueletos murchos. Se conseguirem, nenhuma vila sobrevive.",
+				"A única defesa é derrotá-lo primeiro. Invocá-lo em lugar controlado, preparado, e destruí-lo antes que eles o façam."
+			],
+			"why": [
+				"Se o Wither for invocado pelos Exilados, ele vai ser solto no meio de uma vila. Nenhuma armadura salva ninguém disso.",
+				"Só um <o>Mestre</o> pode encarar o Wither. E só alguém de confiança pode fazer isso sem colocar o mundo em risco."
+			],
+			"accept": [
+				"Prepare-se como nunca. Armadura de netherita, poções de força e cura, leite contra o efeito murcho.",
+				"<r>Derrote o Wither</r>."
+			],
+			"progress": [
+				"Invoque-o embaixo da terra, num espaço fechado, para ele não escapar voando.",
+				"Na metade da vida, ele fica imune a flechas. Espada com <p>Julgamento</p> faz muito estrago nele."
+			],
+			"complete": [
+				"Os Exilados perderam sua arma mais terrível. Graças a você, Mestre, as vilas respiram.",
+				"Aceite a estrela que ele deixou, uma maçã encantada e diamantes. E isto: um <o>totem</o>, porque você vai continuar arriscando a vida por nós."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>o Wither</r>"},
+			"rewards": [{"item": "minecraft:nether_star", "count": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "armorer_5_netherita",
+			"tier": 5,
+			"title": "A Armadura Imortal",
+			"tone": "calm",
+			"offer": [
+				"Durante toda a minha vida, eu sonhei em forjar a armadura perfeita. Hoje eu sei como.",
+				"Mas preciso estudar a <o>netherita</o> em forma de armadura. Botas, de preferência: a peça mais difícil de equilibrar.",
+				"Com elas, vou criar o primeiro conjunto de netherita da história da vila, para o próximo capitão da guarda."
+			],
+			"why": [
+				"O novo capitão vai proteger a vila pelos próximos trinta anos. Ele precisa da melhor armadura que existe.",
+				"Só um <o>Mestre</o> tem acesso a netherita. E só um Mestre entende o valor de proteger, e não só de lutar."
+			],
+			"accept": [
+				"Botas de diamante, lingote de netherita e molde de melhoria. Mesa de ferraria.",
+				"<g>Traga</g> <y>1 bota de netherita</y>."
+			],
+			"progress": [
+				"Os moldes de melhoria de netherita ficam nos baús dos bastiões.",
+				"Detritos antigos ficam fundo no Nether. Quatro deles fazem um lingote, com ouro."
+			],
+			"complete": [
+				"Perfeitas. O peso distribuído com maestria. Agora sei exatamente como forjar o resto.",
+				"Aceite meu agradecimento: diamantes, o livro de <p>Remendo</p>, uma maçã encantada e um molde de melhoria."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_boots"], "count": 1, "desc": "<g>Entregue</g> <y>1 bota de netherita</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}]
+		}
+	]
+}

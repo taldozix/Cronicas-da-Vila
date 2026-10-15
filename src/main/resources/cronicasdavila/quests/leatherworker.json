@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "leatherworker_1_couro",
+			"tier": 1,
+			"title": "Couro Bom, Bota Boa",
+			"tone": "calm",
+			"offer": [
+				"Vixe Maria, cabra! Tu chegou na hora certa. Tô com um pedido de botas pra vila inteira e nem um pedacinho de couro.",
+				"O inverno vem aí e o povo tá andando de pé no chão na neve. Já tem aldeão com o dedão roxo, rapaz.",
+				"Se tu me arrumar couro, eu faço as botas mais arretadas que esse vale já viu."
+			],
+			"why": [
+				"Pé frio é a porta da doença, cabra. Aldeão gripado não trabalha, não troca, só espirra.",
+				"E com bota boa os guardas da vila andam na neve sem afundar. É questão de segurança também."
+			],
+			"accept": [
+				"Égua! Vaca dá couro, cavalo também, e as lhamas do mercador... bom, essas não, que ele fica bravo.",
+				"<g>Traga</g> <y>16 couros</y>."
+			],
+			"progress": [
+				"Faz um curral de vacas. Duas vacas e trigo, e logo tu tem uma criação inteira.",
+				"Coelho também dá couro: quatro peles de coelho viram um couro na mesa de trabalho."
+			],
+			"complete": [
+				"Que couro bonito, rapaz! Vai dar bota pra vila toda e ainda sobra pra uma bolsa.",
+				"Toma ferro e umas esmeraldas. E se precisar de armadura de couro, já sabe onde é."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:leather"], "count": 16, "desc": "<g>Entregue</g> <y>16 couros</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 4}]
+		},
+		{
+			"id": "leatherworker_1_caravana",
+			"tier": 1,
+			"title": "A Caravana do Deserto",
+			"tone": "danger",
+			"offer": [
+				"Oxente, tu sabe da caravana que traz couro do deserto? Pois ela parou de chegar.",
+				"O tropeiro que sobreviveu disse que foram os <r>zumbis do deserto</r>, aqueles queimados de sol. Eles não pegam fogo de dia, os danados!",
+				"Atacaram as lhamas, espalharam a carga e o pobre tropeiro voltou só de ceroulas."
+			],
+			"why": [
+				"Sem caravana, sem couro, sem trabalho pra mim e sem armadura pros guardas. É uma corrente, cabra.",
+				"E o tropeiro é meu cumpadre. Ele tá com vergonha até de sair de casa depois daquilo."
+			],
+			"accept": [
+				"Arretado! Leva água e chapéu, que o sol do deserto é mais quente que língua de fofoqueira.",
+				"<r>Elimine 12 zumbis do deserto</r>. Eles andam no deserto de dia e de noite."
+			],
+			"progress": [
+				"Zumbi do deserto deixa a gente com fome quando bate. Leva comida extra.",
+				"Eles aparecem nos desertos e perto das vilas de arenito."
+			],
+			"complete": [
+				"A caravana chegou hoje cedo! E o cumpadre veio de calça, graças a Deus!",
+				"Toma ferro e coelho assado. Coelho do deserto é o mais saboroso, tu vai ver."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:husk"], "count": 12, "desc": "<r>Elimine</r> <r>12 zumbis do deserto</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_rabbit", "count": 8}]
+		},
+		{
+			"id": "leatherworker_2_tartarugas",
+			"tier": 2,
+			"title": "O Casco Protetor",
+			"tone": "calm",
+			"offer": [
+				"Cabra, tu sabia que o casco da tartaruga é uma das armaduras mais antigas do mundo?",
+				"Os mergulhadores antigos usavam um capacete de casco pra respirar mais tempo debaixo d'água. Arretado demais!",
+				"O pescador tá pedindo um pra ele. Mas pra fazer, preciso das escamas que os filhotes soltam quando crescem."
+			],
+			"why": [
+				"O pescador já quase se afogou três vezes esse ano, rapaz. Com o capacete, ele vai mergulhar em paz.",
+				"E tem mais: tartaruga só bota ovo na praia onde nasceu. Ajudar elas é ajudar a natureza a continuar."
+			],
+			"accept": [
+				"Vixe, que maravilha! Tartaruga gosta de capim-marinho. Cria elas na praia e espera os filhotes crescerem.",
+				"<g>Traga</g> <y>3 escamas de tartaruga</y>."
+			],
+			"progress": [
+				"O filhote solta a escama quando vira adulto. Cuida bem dos ovos, que zumbi adora pisotear!",
+				"Os ovos chocam mais rápido de noite. Natureza é sábia."
+			],
+			"complete": [
+				"Olha que escamas lindas! O capacete do pescador vai ficar uma beleza.",
+				"Toma esmeraldas, um diamante e um livro de <p>Inquebrável</p> pra tuas roupas durarem mais."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:turtle_scute"], "count": 3, "desc": "<g>Entregue</g> <y>3 escamas de tartaruga</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
+		},
+		{
+			"id": "leatherworker_2_membranas",
+			"tier": 2,
+			"title": "Remendo Celestial",
+			"tone": "danger",
+			"offer": [
+				"Rapaz, tu vê aquelas tendas do mercado? Furaram todas. Foram os <r>phantoms</r>, que mergulham do céu de madrugada.",
+				"O mais irônico é que a <y>membrana</y> deles é o melhor material pra consertar tenda. Leve, firme e à prova d'água.",
+				"Ou seja: os bichos que estragam são os mesmos que consertam. A vida tem dessas, cabra."
+			],
+			"why": [
+				"Sem tenda, os mercadores não vêm. Sem mercador, a vila não vende. Sem venda, todo mundo empobrece.",
+				"E dizem que essa membrana conserta até asas mágicas. Quem sabe tu não precisa um dia?"
+			],
+			"accept": [
+				"Tu tem que ficar umas noites sem dormir pra eles aparecerem. Sacrifício pelo bem da vila!",
+				"<g>Traga</g> <y>12 membranas de phantom</y>."
+			],
+			"progress": [
+				"Três noites sem dormir e eles aparecem gritando. Olha pro céu.",
+				"Arco ajuda bastante. Eles mergulham em linha reta."
+			],
+			"complete": [
+				"Tendas novinhas! O mercado tá mais cheio que feira de domingo.",
+				"Toma esmeraldas e um diamante. E vai dormir, cabra, tu tá com uma olheira de dar medo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:phantom_membrane"], "count": 12, "desc": "<g>Entregue</g> <y>12 membranas de phantom</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "leatherworker_3_errantes",
+			"tier": 3,
+			"title": "Os Errantes do Gelo",
+			"tone": "danger",
+			"offer": [
+				"Vixe, cabra, deixa eu te contar do meu irmão. Ele foi buscar pele de urso polar pra fazer casaco de inverno.",
+				"Lá nas planícies geladas ele encontrou os <r>errantes</r>: esqueletos congelados que atiram flechas de lentidão.",
+				"Ele voltou devagarzinho, que nem lesma, com três flechas nas costas e nenhum urso."
+			],
+			"why": [
+				"Os errantes tão atacando os viajantes que trazem pele e lã das terras do norte. As rotas tão todas paradas.",
+				"Tu já é <o>Aventureiro</o>, rapaz. Gelo, neve e esqueleto mal-humorado é passeio pra ti."
+			],
+			"accept": [
+				"Leva roupa quentinha e não cai na neve fofa, que tu congela.",
+				"<r>Elimine 12 errantes</r> nas terras geladas."
+			],
+			"progress": [
+				"Errantes aparecem em biomas de neve e gelo, à noite ou em lugares escuros.",
+				"A flecha deles deixa lento. Leva leite pra tirar o efeito."
+			],
+			"complete": [
+				"As rotas do norte tão abertas de novo! Meu irmão até voltou a andar na velocidade normal.",
+				"Toma diamantes, uma maçã dourada e flechas. As deles, inclusive. Agora tu pode deixar os outros lentos."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:stray"], "count": 12, "desc": "<r>Elimine</r> <r>12 errantes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:arrow", "count": 32}]
+		},
+		{
+			"id": "leatherworker_3_tatu",
+			"tier": 3,
+			"title": "A Armadura do Lobo",
+			"tone": "calm",
+			"offer": [
+				"Rapaz, tu conhece o <a>tatu</a>? Bichinho arretado que se enrola numa bolinha quando tá com medo.",
+				"De vez em quando ele solta uma escama. E com essas escamas dá pra fazer uma <o>armadura pra lobo</o>!",
+				"Os cães de guarda da vila tão sofrendo nas brigas com os mortos-vivos. Quero proteger os bichinhos."
+			],
+			"why": [
+				"Cachorro é o melhor amigo do aldeão, cabra. Ele avisa de perigo antes do golem perceber.",
+				"Lobo protegido é vila protegida. E é bonito demais ver os cachorros de armadura, parecem soldadinhos."
+			],
+			"accept": [
+				"Tatu vive na savana e nas terras áridas. Escova ele com o pincel com carinho que a escama cai.",
+				"<g>Traga</g> <y>12 escamas de tatu</y>."
+			],
+			"progress": [
+				"Pincel é graveto, linha e cobre. Escova o tatu de leve.",
+				"Os tatus também soltam escama sozinhos de vez em quando. Paciência."
+			],
+			"complete": [
+				"Que coisa linda! Os cães de guarda vão ficar uma beleza de armadura.",
+				"Toma diamantes e uma maçã dourada. Os cachorros mandaram uma lambida, mas eu poupei tu."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:armadillo_scute"], "count": 12, "desc": "<g>Entregue</g> <y>12 escamas de tatu</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "leatherworker_4_montaria",
+			"tier": 4,
+			"title": "Montaria de Guerra",
+			"tone": "calm",
+			"offer": [
+				"Cabra, os guardas da vila querem formar uma <a>cavalaria</a>. Cavalo rápido, cavaleiro corajoso, pra patrulhar as estradas.",
+				"Só que cavalo sem armadura é alvo fácil pra saqueador. E armadura de diamante pra cavalo ninguém sabe mais fazer.",
+				"Só se acha em tesouros antigos: masmorras, templos, fortalezas. Coisa de lenda."
+			],
+			"why": [
+				"Com a cavalaria, as estradas ficam seguras, as caravanas voltam a circular e a vila cresce.",
+				"Isso é viagem pra <o>Guerreiro</o>, cabra. Tesouro desses não fica desprotegido."
+			],
+			"accept": [
+				"Arretado! Procura nos baús mais escondidos que tu achar.",
+				"<g>Encontre e traga</g> <y>2 armaduras de diamante para cavalo</y>."
+			],
+			"progress": [
+				"Templos do deserto, masmorras, fortalezas do Nether e cidades do End costumam ter.",
+				"Às vezes o pescador puxa coisa estranha do rio também. Vai saber."
+			],
+			"complete": [
+				"Que armaduras brilhantes! A cavalaria vai parecer um desfile de rei.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Peso-Pena</p>, que cavaleiro também cai do cavalo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:diamond_horse_armor"], "count": 2, "desc": "<g>Entregue</g> <y>2 armaduras de diamante para cavalo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "leatherworker_4_murchos",
+			"tier": 4,
+			"title": "Couro dos Condenados",
+			"tone": "danger",
+			"offer": [
+				"Rapaz, tu já ouviu falar dos <r>esqueletos murchos</r>? Esqueletos pretos, altos, que vivem nas fortalezas do Nether.",
+				"Quem leva uma espadada deles fica <r>murcho</r>: a vida vai secando que nem couro no sol.",
+				"Os guardas que foram explorar as fortalezas voltaram assim. Murchos, fracos, tristes."
+			],
+			"why": [
+				"A gente precisa mostrar que as fortalezas podem ser vencidas. Senão o medo toma conta da vila.",
+				"E dizem que os crânios deles são a chave pra uma coisa terrível. Melhor tu pegar antes que alguém mal-intencionado pegue."
+			],
+			"accept": [
+				"Leva leite, muito leite, pra tirar o efeito de murchar.",
+				"<r>Elimine 20 esqueletos murchos</r> nas fortalezas do Nether."
+			],
+			"progress": [
+				"Eles são altos: um buraco de dois blocos de altura impede eles de passar.",
+				"Fortaleza do Nether é feita de tijolo escuro. Procura no Nether, ela é enorme."
+			],
+			"complete": [
+				"Vixe! Tu limpou a fortaleza? Os guardas tão até querendo voltar lá pra explorar.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Proteção</p> do bom. Tu mereceu, cabra da peste."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 20, "desc": "<r>Elimine</r> <r>20 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "leatherworker_5_asas",
+			"tier": 5,
+			"title": "As Asas do Fim",
+			"tone": "danger",
+			"offer": [
+				"Cabra, deixa eu te contar o maior sonho de todo coureiro: costurar um par de <o>asas</o>.",
+				"Dizem que lá no <a>Fim</a>, depois do dragão, existem cidades flutuantes. E nos navios dessas cidades tem asas de verdade: os <o>élitros</o>.",
+				"Eu não quero voar, não. Tenho medo de altura. Eu quero ESTUDAR. Ver as costuras, o material, o segredo."
+			],
+			"why": [
+				"Se eu entender como são feitas, um dia os coureiros vão poder costurar asas pra todo mundo. Imagina a vila voando!",
+				"Só um <o>Mestre</o> chega no Fim, vence o dragão e volta. É a viagem mais perigosa do mundo."
+			],
+			"accept": [
+				"Égua, tu vai mesmo? Leva pérola do ender e muita coragem.",
+				"<g>Encontre e traga</g> <y>1 élitro</y> das cidades do Fim."
+			],
+			"progress": [
+				"Depois do dragão, aparece um portal pequeno flutuando. Joga uma pérola do ender nele.",
+				"Os <r>shulkers</r> das cidades fazem tu flutuar. Cuidado pra não cair no vazio."
+			],
+			"complete": [
+				"Olha essas costuras... Que coisa mais linda. Ninguém nesse mundo faz um trabalho desses.",
+				"Toma netherita, diamantes e uma maçã encantada. E um dia eu te devolvo um par de asas costurado por mim. Prometo!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:elytra"], "count": 1, "desc": "<g>Encontre e entregue</g> <y>1 élitro</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
+		},
+		{
+			"id": "leatherworker_5_couraca",
+			"tier": 5,
+			"title": "A Couraça Lendária",
+			"tone": "calm",
+			"offer": [
+				"Cabra, existe uma armadura que nenhum coureiro jamais remendou: a couraça de <o>netherita</o>.",
+				"Feita com detritos antigos do fundo do Nether, mais resistente que diamante e que nem a lava consegue queimar.",
+				"Quero fazer uma réplica de couro pra exposição da vila. Mas pra isso preciso da original pra tirar as medidas."
+			],
+			"why": [
+				"A exposição vai mostrar pras crianças tudo que um herói pode conquistar. Vai inspirar uma geração inteira, rapaz.",
+				"E eu vou te devolver em dobro: o que eu tenho de mais precioso é teu."
+			],
+			"accept": [
+				"Tu tem coragem de entregar uma couraça dessas? Arretado demais!",
+				"<g>Traga</g> <y>1 peitoral de netherita</y>."
+			],
+			"progress": [
+				"Detritos antigos ficam no fundo do Nether, perto da altura 15. Cama explode lá embaixo, usa com cuidado.",
+				"Peitoral de diamante + lingote de netherita + molde de melhoria na mesa de ferraria."
+			],
+			"complete": [
+				"Que peça! Pesada, brilhante, perfeita. Vai ser o centro da exposição.",
+				"Toma, como prometido: diamantes, o livro de <p>Remendo</p>, uma maçã encantada e um totem da imortalidade."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_chestplate"], "count": 1, "desc": "<g>Entregue</g> <y>1 peitoral de netherita</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

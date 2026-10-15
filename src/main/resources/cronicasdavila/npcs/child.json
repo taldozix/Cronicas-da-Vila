@@ -1,0 +1,54 @@
+{
+	"greet_friendly": [
+		"Tio {player}! Tia {player}! Você é o herói que minha mãe falou! Me ensina a matar creeper?",
+		"É VOCÊ! Eu fiz um desenho seu! Ficou parecendo uma batata, mas é você.",
+		"Oiii! Vamos brincar de pega-pega? Você é o zumbi!"
+	],
+	"greet_neutral": [
+		"Oi! Você é um aventureiro? Cadê sua espada? Posso segurar?",
+		"Moço/moça, você sabia que se pular na cama ela não quebra? Eu testei várias vezes.",
+		"Minha mãe falou pra eu não falar com estranhos. Mas você parece legal. Você é legal?"
+	],
+	"greet_cold": [
+		"Minha mãe falou pra eu correr se você chegar perto...",
+		"Você é o malvado que todo mundo fala? Você não parece malvado. Parece só cansado."
+	],
+	"hostile": [
+		"<r>MÃÃÃÃÃE!</r> O MALVADO TÁ AQUI!",
+		"<r>Sai!</r> O golem vai te pegar! GOLEEEEM!"
+	],
+	"followup": [
+		"Que mais? Me conta mais coisa!",
+		"Por quê? Por quê? Por quê?",
+		"Você vai brincar comigo agora?"
+	],
+	"bye": [
+		"Tchau! Volta pra gente brincar!",
+		"Tchauzinho! Quando eu crescer quero ser igual você!",
+		"Tchau! Não conta pra minha mãe que eu saí de casa de noite."
+	],
+	"lore": [
+		[
+			"Sabia que o golem de ferro dá florzinha pra criança? Eu tenho DEZ flores! Tô guardando pra fazer um jardim.",
+			"Quando eu tiver cem flores, vou casar com o golem. Ele é muito forte e muito quietinho."
+		],
+		[
+			"Meu avô disse que quando ele era criança, os <r>exilados</r> roubaram a vila dele.",
+			"Ele disse que eles têm um nariz enorme igual o da gente. Por isso que a gente não pode confiar em ninguém narigudo. ...Espera."
+		],
+		[
+			"Tem um aldeão de verde que só fala besteira. Mamãe chama ele de bobão.",
+			"Mas ele é o meu favorito! Ele sabe fazer barulho de vaca, de porco e de creeper!"
+		],
+		[
+			"Eu vi um morcego ontem! Ele tava de cabeça pra baixo!",
+			"Eu tentei ficar de cabeça pra baixo também e caí da cama. Morcego é muito melhor que eu."
+		]
+	],
+	"names": ["Pedrinho", "Juju", "Tetê", "Lulu", "Biel", "Nina", "Dudu", "Cacau", "Zezinho", "Mel"],
+	"extra": {
+		"no_profession": [
+			"Eu sou criança, bobo! Criança não trabalha, criança brinca!"
+		]
+	}
+}

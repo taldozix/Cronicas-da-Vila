@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "fisherman_1_almoco",
+			"tier": 1,
+			"title": "Peixe pro Almoço",
+			"tone": "calm",
+			"offer": [
+				"Oxe, meu rei, chegou na hora boa! Tô aqui com um problemão.",
+				"Prometi uma moqueca pra vila inteira no sábado. Só que minha vara de pescar quebrou e meu barco afundou. Tudo na mesma manhã!",
+				"Se eu não aparecer com peixe, o povo vai me jogar no rio. E eu nem sei nadar direito, visse?"
+			],
+			"why": [
+				"Moqueca de sábado é tradição, painho. Junta todo mundo, até o açougueiro e o bibliotecário, que vivem brigando.",
+				"Comida boa une a vila. Sem ela, cada um fica no seu canto resmungando. E aldeão resmungando é \"hrmm\" pra todo lado."
+			],
+			"accept": [
+				"Barril dobrado! Pode pescar no rio, no mar, onde quiser.",
+				"<g>Traga</g> <y>16 bacalhaus crus</y>. Cru, hein? Que o tempero é comigo."
+			],
+			"progress": [
+				"Vara de pescar se faz com três gravetos e dois fios. Joga na água, espera a boia afundar e puxa!",
+				"Bacalhau aparece mais no oceano. Mas se tiver paciência, vem no rio também."
+			],
+			"complete": [
+				"Que peixe bonito, meu rei! Sábado vai ter moqueca de rachar!",
+				"Toma umas esmeraldas e essa vara de pescar com <p>Isca</p>. Era do meu pai. Ela puxa peixe que nem imã."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:cod"], "count": 16, "desc": "<g>Entregue</g> <y>16 bacalhaus crus</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:fishing_rod", "count": 1, "enchant": "minecraft:lure", "level": 1}]
+		},
+		{
+			"id": "fisherman_1_afogados",
+			"tier": 1,
+			"title": "Afogados na Praia",
+			"tone": "danger",
+			"offer": [
+				"Ô meu rei, cê já viu um <r>afogado</r>? É um zumbi que passou tempo demais na água. Fica todo verde e mal-humorado.",
+				"Eles tão saindo do rio de noite e roubando minhas redes. Ontem um deles saiu andando com meu chapéu!",
+				"Eu gostava daquele chapéu, visse? Era de palha legítima."
+			],
+			"why": [
+				"Sem rede não tem peixe, sem peixe a vila come só pão. E o fazendeiro vai ficar se achando o rei da comida. Não posso permitir.",
+				"E tem outra: afogado às vezes carrega um <o>tridente</o>. Isso machuca bem mais que um chapéu roubado."
+			],
+			"accept": [
+				"Vai com cuidado, meu rei. Na água eles são rápidos.",
+				"<r>Elimine 10 afogados</r>. Eles aparecem em rios e oceanos, principalmente de noite."
+			],
+			"progress": [
+				"Atrai eles pra areia. Na terra firme eles são lentos que nem eu de segunda-feira.",
+				"Se algum tiver tridente, se esconde atrás de um bloco. Ele joga longe!"
+			],
+			"complete": [
+				"Oxe, que coragem! A praia tá limpinha. E olha... cê achou meu chapéu? Não? Tudo bem, eu faço outro.",
+				"Toma ferro e um salmão assado que eu fiz agorinha. Tá quentinho ainda."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 10, "desc": "<r>Elimine</r> <r>10 afogados</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_salmon", "count": 12}]
+		},
+		{
+			"id": "fisherman_2_paciencia",
+			"tier": 2,
+			"title": "A Arte da Paciência",
+			"tone": "calm",
+			"offer": [
+				"Sabe qual o segredo do pescador, meu rei? <g>Paciência</g>. Coisa que a juventude de hoje não tem.",
+				"Tô organizando o <a>Torneio de Pesca da Lua Cheia</a>. Mas preciso que alguém mostre pros jovens da vila como se faz.",
+				"Se cê pescar bastante, eles vão ver que dá pra ser aventureiro e ter calma ao mesmo tempo."
+			],
+			"why": [
+				"As crianças da vila só querem saber de explorar caverna e brigar com creeper. Ninguém mais quer pescar.",
+				"Se a pesca morrer, a vila perde uma tradição de séculos. E perde o melhor peixe frito da região, que é o meu."
+			],
+			"accept": [
+				"Eita, que maravilha! Pega sua vara e acha um lugar bonito. O pôr do sol ajuda.",
+				"<g>Pesque</g> <y>30 vezes</y>. Qualquer coisa que vier do anzol conta: peixe, bota velha, tesouro..."
+			],
+			"progress": [
+				"Pescar na chuva é mais rápido, visse? O peixe gosta de chuvinha.",
+				"Às vezes vem tesouro: livro encantado, arco, até sela! Pesca é uma caixinha de surpresas."
+			],
+			"complete": [
+				"Agora sim! As crianças ficaram de boca aberta. Uma delas já pediu uma vara de presente.",
+				"Toma esmeraldas, um diamante e esse livro de <p>Sorte do Mar</p>. Que seus anzóis nunca voltem vazios."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:fish_caught"], "count": 30, "desc": "<g>Pesque</g> <y>30 vezes</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:luck_of_the_sea", "level": 2}]
+		},
+		{
+			"id": "fisherman_2_conchas",
+			"tier": 2,
+			"title": "Conchas do Fundo",
+			"tone": "calm",
+			"offer": [
+				"Minha filha vai se casar com o filho do cartógrafo! Já pensou? Peixe com mapa. Vai dar o que falar.",
+				"Aqui na beira-mar, a tradição é a noiva usar um colar de <y>conchas de náutilo</y>. Só que concha de náutilo é raríssima.",
+				"Os afogados às vezes seguram uma na mão. E de vez em quando vem uma no anzol, se o mar estiver de bom humor."
+			],
+			"why": [
+				"É o dia mais importante da vida dela, meu rei. Se não tiver o colar, a sogra vai falar disso até o fim dos tempos.",
+				"E o casamento vai unir as duas famílias mais importantes da costa. Paz entre pescador e cartógrafo é paz na vila toda."
+			],
+			"accept": [
+				"Cê é um anjo! Um anjo de água salgada.",
+				"<g>Traga</g> <y>4 conchas de náutilo</y>. Afogados com concha na mão deixam ela cair. Pescar também ajuda."
+			],
+			"progress": [
+				"Repara na mão esquerda dos afogados. Se tiver uma concha brilhando, é esse que cê quer.",
+				"O mercador ambulante às vezes vende também. Mas cobra caro, o safado."
+			],
+			"complete": [
+				"Que conchas lindas! Minha filha vai ser a noiva mais bonita da costa.",
+				"Toma, de coração: diamantes e ouro. Ouro pro seu casamento, se um dia cê casar. Hehe."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:nautilus_shell"], "count": 4, "desc": "<g>Entregue</g> <y>4 conchas de náutilo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:gold_ingot", "count": 10}]
+		},
+		{
+			"id": "fisherman_3_guardioes",
+			"tier": 3,
+			"title": "O Olho do Templo",
+			"tone": "danger",
+			"offer": [
+				"Lá no meio do oceano tem um <a>Monumento Submerso</a>. Templo antigo, de prismarinho, cheio de luz e mistério.",
+				"Ninguém sabe quem construiu. Mas sabem quem guarda: os <r>guardiões</r>, peixes enormes com um olho só que atiram raio laser.",
+				"Eles tão espantando os cardumes da região toda. Já faz semanas que não pego um peixe grande."
+			],
+			"why": [
+				"Sem os cardumes, a vila da costa vai morrer de fome. A gente depende do mar como o fazendeiro depende da terra.",
+				"Cê já é <o>Aventureiro</o>. E aventureiro de verdade precisa conhecer o fundo do mar. Pensa nas histórias que cê vai contar!"
+			],
+			"accept": [
+				"Leva poção de respiração aquática e um balde de leite pro cansaço de mineração que eles jogam. Confia em mim.",
+				"<r>Elimine 10 guardiões</r> perto do monumento submerso."
+			],
+			"progress": [
+				"O raio deles carrega devagar. Quando o olho começar a brilhar, se esconde atrás de um pilar.",
+				"Porta, placa ou escada perto de você criam bolhas de ar. Truque velho de pescador."
+			],
+			"complete": [
+				"Os cardumes voltaram! Hoje cedo puxei um bacalhau do tamanho do bobão da vila!",
+				"Toma diamantes e um livro de <p>Respiração</p>. Agora cê é quase um peixe. Um peixe valente."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:guardian"], "count": 10, "desc": "<r>Elimine</r> <r>10 guardiões</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
+		},
+		{
+			"id": "fisherman_3_tinta",
+			"tier": 3,
+			"title": "Luzes das Profundezas",
+			"tone": "calm",
+			"offer": [
+				"Cê já viu uma <g>lula brilhante</g>? Ela vive nas cavernas alagadas, lá embaixo, onde o sol nunca chega.",
+				"A tinta dela brilha no escuro. Os velhos pescadores usavam pra marcar as placas do cais e não se perder de noite.",
+				"Só que as placas apagaram com o tempo. Ano passado o barco do Seu Zuza bateu nas pedras por causa disso."
+			],
+			"why": [
+				"O cais iluminado salva vidas, meu rei. Pescador sai antes do sol nascer e volta depois que ele se põe.",
+				"E é bonito demais, viu? O cais todo brilhando azulzinho de noite. Parece coisa de outro mundo."
+			],
+			"accept": [
+				"Que beleza! As lulas brilhantes aparecem em água bem escura, no fundo das cavernas.",
+				"<g>Traga</g> <y>16 bolsas de tinta brilhante</y>."
+			],
+			"progress": [
+				"Procure lagos subterrâneos bem fundo, onde não bate luz nenhuma.",
+				"Elas não atacam, coitadas. Só nadam e brilham. Seja rápido e gentil."
+			],
+			"complete": [
+				"Olha que brilho! Hoje à noite o cais vai parecer um céu estrelado.",
+				"Toma diamantes e frascos de experiência. Cê iluminou a costa, meu rei."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:glow_ink_sac"], "count": 16, "desc": "<g>Entregue</g> <y>16 bolsas de tinta brilhante</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:experience_bottle", "count": 12}]
+		},
+		{
+			"id": "fisherman_4_ancia",
+			"tier": 4,
+			"title": "A Anciã das Profundezas",
+			"tone": "danger",
+			"offer": [
+				"Lembra dos guardiões? Pois é. Eles tinham uma mãe. Uma <r>guardiã anciã</r>, do tamanho de uma casa.",
+				"Ela vive no coração do monumento e amaldiçoa qualquer um que chega perto. Os pescadores voltam cansados, com os braços pesados, sem conseguir puxar a rede.",
+				"Os mais supersticiosos já tão falando em abandonar a costa. Isso não pode acontecer, visse?"
+			],
+			"why": [
+				"Se a costa for abandonada, a vila perde metade da comida e o mar vira território dos afogados e guardiões.",
+				"Só um <o>Guerreiro</o> encara isso. E dizem que dentro do monumento tem blocos de ouro escondidos. Fica a dica."
+			],
+			"accept": [
+				"Vai que eu fico rezando aqui na beira, meu rei.",
+				"<r>Derrote 1 guardiã anciã</r> dentro do monumento submerso."
+			],
+			"progress": [
+				"A maldição dela deixa você minerando devagar. Leite tira, mas ela joga de novo. Vai preparado.",
+				"Ela fica nas salas maiores do monumento. Geralmente tem três no monumento todo."
+			],
+			"complete": [
+				"Eu senti, meu rei! Puxei a rede hoje e meus braços tavam leves, leves! A maldição sumiu!",
+				"Toma, tudo isso é seu: diamantes, maçãs douradas e um livro de <p>Passos Profundos</p> pra cê nadar igual golfinho."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:elder_guardian"], "count": 1, "desc": "<r>Derrote</r> <r>1 guardiã anciã</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:depth_strider", "level": 3}]
+		},
+		{
+			"id": "fisherman_4_coracao",
+			"tier": 4,
+			"title": "O Coração do Mar",
+			"tone": "calm",
+			"offer": [
+				"Existe uma joia que todo pescador sonha em ver: o <o>Coração do Mar</o>. Ela pulsa, meu rei. Como se estivesse viva.",
+				"Os piratas antigos enterravam ela em ilhas e praias, com mapas do tesouro escondidos em navios naufragados.",
+				"Meu avô procurou a vida toda. Morreu sem achar. Eu prometi pra ele que um dia ia ver uma de perto."
+			],
+			"why": [
+				"Com um coração do mar, dá pra montar um <a>Conduíte</a>: um artefato que deixa a gente respirar embaixo d'água e espanta os monstros do mar.",
+				"Imagina a vila da costa protegida pra sempre. Nenhum afogado chegando perto das redes. Seria o fim de séculos de medo."
+			],
+			"accept": [
+				"Procura um navio naufragado e o baú do mapa. O \"X\" marca o lugar, igual nos contos.",
+				"<g>Encontre e traga</g> <y>1 Coração do Mar</y>."
+			],
+			"progress": [
+				"O mapa do tesouro fica no baú do naufrágio. Segue o mapa até o \"X\" e cava.",
+				"As ruínas oceânicas às vezes também têm mapa. Olha tudo com calma."
+			],
+			"complete": [
+				"Ele pulsa... Vovô, cê tá vendo isso? Eu tô segurando o Coração do Mar.",
+				"Toma meu tridente, que eu nunca usei porque tenho medo de jogar e perder. E diamantes pra você fazer história."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:heart_of_the_sea"], "count": 1, "desc": "<g>Entregue</g> <y>1 Coração do Mar</y>"},
+			"rewards": [{"item": "minecraft:trident", "count": 1}, {"item": "minecraft:diamond", "count": 6}]
+		},
+		{
+			"id": "fisherman_5_ancias",
+			"tier": 5,
+			"title": "As Três Anciãs",
+			"tone": "danger",
+			"offer": [
+				"Tem uma história que todo pescador da costa conhece, mas ninguém fala em voz alta.",
+				"Dizem que as <r>guardiãs anciãs</r> são três irmãs. Juntas, elas mantêm o mar inteiro sob uma maldição: o <a>Lamento das Marés</a>.",
+				"Enquanto as três viverem, nenhum barco atravessa o oceano grande. Por isso as vilas do outro lado nunca respondem nossas cartas."
+			],
+			"why": [
+				"Do outro lado do mar pode ter vilas inteiras esperando ajuda, meu rei. Família que a gente nunca conheceu.",
+				"Isso é coisa pra <o>Mestre</o>. Três monumentos, três anciãs, um mar inteiro pra libertar."
+			],
+			"accept": [
+				"Que o mar te proteja, meu rei. E que as ondas te tragam de volta.",
+				"<r>Derrote 3 guardiãs anciãs</r>. Podem ser do mesmo monumento ou de monumentos diferentes."
+			],
+			"progress": [
+				"Cada monumento tem três anciãs. Se cê limpar um inteiro, já resolve.",
+				"Esponja molhada sai dos monumentos. Seca na fornalha e usa pra drenar as salas."
+			],
+			"complete": [
+				"Ontem à noite chegou uma garrafa na praia. Dentro, uma carta de uma vila do outro lado do mar. <g>Eles existem</g>, meu rei!",
+				"Isso é tudo que eu tenho de mais precioso: um tridente encantado com <p>Lealdade</p>, uma maçã encantada e diamantes pra uma vida inteira."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:elder_guardian"], "count": 3, "desc": "<r>Derrote</r> <r>3 guardiãs anciãs</r>"},
+			"rewards": [{"item": "minecraft:trident", "count": 1, "enchant": "minecraft:loyalty", "level": 3}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 24}]
+		},
+		{
+			"id": "fisherman_5_lenda",
+			"tier": 5,
+			"title": "O Pescador Lendário",
+			"tone": "calm",
+			"offer": [
+				"Cê sabe quem foi <a>Mestre Dorival</a>? O maior pescador que já existiu. Dizem que pescou trezentas vezes sem sair do mesmo lugar.",
+				"Ele dizia que na trecentésima vez, o mar conta um segredo pra quem tem paciência.",
+				"Eu nunca consegui. Sou ansioso demais. Mas cê... cê tem cara de quem escuta o mar."
+			],
+			"why": [
+				"Não é sobre peixe, meu rei. É sobre provar que a calma vence a pressa. Os jovens precisam ver isso.",
+				"E o título de <o>Pescador Lendário</o> só pode ser dado por um mestre pescador. Eu sou o último que restou."
+			],
+			"accept": [
+				"Leva um banquinho e uma boa companhia. Vai ser longo.",
+				"<g>Pesque</g> <y>300 vezes</y>. Sem pressa."
+			],
+			"progress": [
+				"Sorte do Mar e Isca na vara ajudam muito. E lembra: chuva acelera.",
+				"Escuta o barulho das ondas. Cada uma conta uma história."
+			],
+			"complete": [
+				"E então? O mar te contou o segredo? ...Não precisa falar. Tá no seu olhar.",
+				"Bem-vindo à linhagem de <a>Mestre Dorival</a>, Pescador Lendário. Toma netherita, diamantes e o livro de <p>Remendo</p> dele."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:fish_caught"], "count": 300, "desc": "<g>Pesque</g> <y>300 vezes</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		}
+	]
+}

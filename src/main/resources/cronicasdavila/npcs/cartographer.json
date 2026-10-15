@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Ó pá, {player}! O maior explorador que esta vila já conheceu! Sente-se, sente-se!",
+		"Fixe, é o {player}! Tenho um mapa novo para lhe mostrar. Há uma ilha em forma de cogumelo!",
+		"Rapaz, que alegria! O seu nome já está em três mapas meus, sabia? \"Colina do {player}\". Soa bem, não soa?",
+		"Ora viva, {player}! Os ventos trouxeram-no na hora certa."
+	],
+	"greet_neutral": [
+		"Bom dia, rapaz. Está perdido? Tenho um mapa para isso.",
+		"Ó pá, um viajante! De onde vem? Já mapeei essa zona? Mostre-me no mapa!",
+		"Hrmm. Cuidado com os papéis, rapaz. Isso aí são três semanas de trabalho.",
+		"Ora viva. Precisa de orientação ou só está a passear?"
+	],
+	"greet_cold": [
+		"Hmm. É você. Os mapas não mentem e as histórias sobre si também não.",
+		"Rapaz, não sei se quero conversar consigo.",
+		"Fale depressa. Não confio em quem anda por caminhos tortos."
+	],
+	"hostile": [
+		"<r>Rua!</r> Quem faz mal à vila não merece nem um mapa para sair daqui!",
+		"<r>Vá-se embora</r>, pá! Vou riscar o seu nome de todos os meus mapas!"
+	],
+	"followup": [
+		"Que mais, rapaz?",
+		"Diga, diga.",
+		"Mais alguma coisa? Os mapas não se desenham sozinhos.",
+		"Ó pá, ainda tem perguntas? Força!"
+	],
+	"decline": [
+		"Não faz mal, pá. O mundo não vai a lado nenhum.",
+		"Tudo bem. Volte quando lhe apetecer explorar.",
+		"Pronto, está bem. Vou pedir ao bobão. Ele vai perder-se na própria vila, mas paciência."
+	],
+	"locked": [
+		"Rapaz, o próximo destino é perigoso demais para quem ainda está a começar. Ganhe experiência e volte.",
+		"Ainda não, pá. Primeiro aprenda a ler o mapa, depois vá aos sítios perigosos."
+	],
+	"repeat": [
+		"Lembra-se daquele serviço? Pois é, o mundo muda e o mapa tem de mudar com ele.",
+		"Já fez isso por mim antes, não foi? Faria outra vez? Pago menos, mas a gratidão é a mesma."
+	],
+	"apology_thanks": [
+		"Hmm... está bem, rapaz. Todo o explorador se perde de vez em quando.",
+		"Aceito. Mas vou estar de olho na sua bússola moral."
+	],
+	"bless": [
+		"Que esta ferramenta o guie como uma estrela guia o navegador.",
+		"Abençoada, pá! Que nunca se perca no caminho."
+	],
+	"bye": [
+		"Boa viagem, rapaz! Que o vento esteja sempre de feição.",
+		"Até à próxima, pá! E traga-me notícias de terras distantes.",
+		"Adeus! Não se esqueça da bússola."
+	],
+	"abandon": [
+		"Ó pá, desistiu a meio do caminho? Um mapa inacabado é uma tristeza.",
+		"Que pena. Pensei que fosse um verdadeiro explorador."
+	],
+	"lore": [
+		[
+			"Sabia que o mundo é praticamente infinito? Dizem que há uma <a>Borda do Mundo</a>, muito, muito longe.",
+			"Os meus antepassados navegadores tentaram chegar lá. Navegaram meses num barco de carvalho.",
+			"Voltaram com escorbuto, um papagaio e a certeza de que o mundo é maior do que qualquer mapa. Mas o papagaio era fixe."
+		],
+		[
+			"Há uns sítios estranhos chamados <a>ilhas de cogumelos</a>. Lá não aparece nenhum monstro, nunca!",
+			"Só vivem lá vacas vermelhas com cogumelos nas costas. Os <a>coguvacas</a>.",
+			"Se um dia o mundo acabar, eu mudo-me para lá. Leite, sopa e zero creepers. É o paraíso, pá."
+		],
+		[
+			"Os <a>olhos do ender</a> apontam sempre para as fortalezas. Mas ninguém sabe porquê.",
+			"Uma teoria diz que os endermen querem voltar para casa, e os olhos são a saudade deles a apontar o caminho.",
+			"Eu acho isso muito poético. Os endermen são uns emigrantes saudosos, como os meus avós."
+		],
+		[
+			"Já viu um <a>mapa do tesouro</a>? Aparecem em naufrágios e ruínas, com um \"X\" a marcar o sítio.",
+			"Os piratas antigos enterravam lá o <o>Coração do Mar</o>. Ninguém sabe quem eram esses piratas.",
+			"Eu suspeito que eram cartógrafos falhados. Quem mais teria tanto mapa?"
+		],
+		[
+			"Há uma lenda sobre a <a>Vila Perdida</a>, que desapareceu sem deixar rasto. Só ficou o sino.",
+			"Dizem que o sino ainda toca nas noites de tempestade, chamando os aldeões que se perderam.",
+			"Eu desenhei o sítio onde ela ficava. Mas sempre que lá volto, o lugar parece diferente. Arrepiante, pá."
+		]
+	],
+	"player_work": [
+		"Precisa de um explorador?",
+		"Tem alguma expedição para mim?",
+		"Ó pá, há trabalho? Estou pronto para explorar!"
+	],
+	"names": [
+		"Senhor Vasco", "Dona Inês", "Senhor Fernão", "Dona Leonor", "Senhor Bartolomeu", "Dona Beatriz", "Senhor Pedro Álvares",
+		"Dona Catarina", "Senhor Gil", "Dona Filipa"
+	]
+}

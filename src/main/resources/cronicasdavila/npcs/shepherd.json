@@ -1,0 +1,92 @@
+{
+	"greet_friendly": [
+		"Ah, minha gente... {player}. Que alegria. O sol brilha mais quando você passa.",
+		"Bem-vindo, amigo das ovelhas. Elas sempre balem mais feliz quando você chega.",
+		"Olha só... {player}. Senta aqui na grama, que a tarde tá mansa.",
+		"Você voltou. As ovelhas sentiram sua falta. Eu também, um pouquinho."
+	],
+	"greet_neutral": [
+		"Olá, viajante. Cuidado pra não assustar o rebanho, viu?",
+		"Hrmm... boa tarde. O vento hoje tá contando histórias.",
+		"Bem-vindo ao pasto. Pode ficar, só não pise nas flores.",
+		"Ah, uma visita. As ovelhas tão curiosas com você."
+	],
+	"greet_cold": [
+		"Hmm. As ovelhas ficaram inquietas quando você chegou. Elas sentem as coisas.",
+		"Ouvi umas histórias suas, minha gente. Histórias tristes.",
+		"Fala baixo, por favor. O rebanho não gosta de você."
+	],
+	"hostile": [
+		"Até as ovelhas fogem de você. <r>Vá embora</r>, por favor. Não há lugar aqui pra quem machuca os outros.",
+		"Eu sou um homem de paz. Mas por você, <r>eu chamo o golem</r>."
+	],
+	"followup": [
+		"O que mais, minha gente?",
+		"Pode falar. O tempo no pasto não tem pressa.",
+		"Mais alguma coisa? As ovelhas estão ouvindo também.",
+		"Diga."
+	],
+	"decline": [
+		"Tudo bem. Cada um tem seu tempo, como cada flor tem sua estação.",
+		"Sem problema, minha gente. A porta do pasto está sempre aberta.",
+		"Entendo. Vou conversar com as ovelhas, elas nunca dizem não."
+	],
+	"locked": [
+		"Ainda não, minha gente. Algumas coisas só se aprende vivendo. Volte quando tiver mais experiência.",
+		"O que eu preciso agora pede um coração mais calejado. Volte mais tarde."
+	],
+	"repeat": [
+		"Lembra daquele serviço? A vida é feita de ciclos, minha gente. E esse ciclo voltou.",
+		"Você me ajudou com isso uma vez. Ajudaria de novo? A recompensa é menor, a gratidão é a mesma."
+	],
+	"apology_thanks": [
+		"O arrependimento é como chuva: lava o pasto e faz a grama crescer de novo. Obrigado.",
+		"Aceito, minha gente. Todo mundo merece voltar pra casa."
+	],
+	"bless": [
+		"Que essa ferramenta seja leve como lã e forte como a fé de um pastor.",
+		"Abençoada. Que ela proteja quem você ama."
+	],
+	"bye": [
+		"Vá em paz, minha gente. E durma bem esta noite.",
+		"Até logo. Se encontrar uma ovelha perdida, traz pra mim?",
+		"Tchau. Que o vento sopre a seu favor."
+	],
+	"abandon": [
+		"Tudo bem... às vezes a gente desiste do caminho pra encontrar outro.",
+		"Que pena. Mas eu entendo. Nem todo mundo aguenta o peso das promessas."
+	],
+	"lore": [
+		[
+			"Já reparou que existe ovelha <p>rosa</p>? É raríssima. Uma em cada mil.",
+			"Os antigos dizem que ela nasce quando alguém na vila está apaixonado de verdade.",
+			"Eu tive uma ovelha rosa quando era jovem. Não vou contar por quê. Hehe."
+		],
+		[
+			"Lá nas montanhas tem as <a>cabras</a>. Elas gritam como gente às vezes. Morro de rir.",
+			"Uma vez uma delas me deu uma cabeçada e eu voei do penhasco direto num lago.",
+			"Saí molhado, com um peixe no bolso e uma lição: nunca fique de costas pra uma cabra."
+		],
+		[
+			"Sabe por que o lobo vira cachorro quando ganha osso? Porque ele está procurando família.",
+			"Todo ser vivo neste mundo quer só isso, minha gente: uma família. Até o creeper, eu acho. Ele só não sabe abraçar."
+		],
+		[
+			"Os <a>farejadores</a> eram os pastores do mundo antigo. Eles cuidavam das sementes das flores que hoje não existem mais.",
+			"Quando eles sumiram, as flores sumiram junto. Às vezes a gente só percebe quanto alguém era importante depois que ele se vai."
+		],
+		[
+			"Já ouviu as abelhas cantando ao meio-dia? Elas cantam mais quando tem flor por perto.",
+			"Eu planto flores em volta do pasto só pra ouvir. O mundo fica mais bonito com trilha sonora."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda com o rebanho?",
+		"Tem alguma tarefa pra mim no pasto?",
+		"Posso ajudar em alguma coisa?"
+	],
+	"names": [
+		"Seu Cícero", "Dona Rosário", "Seu Aurélio", "Dona Flor", "Seu Damião", "Dona Celeste", "Seu Severino",
+		"Dona Esperança", "Seu Inocêncio", "Dona Serena"
+	]
+}

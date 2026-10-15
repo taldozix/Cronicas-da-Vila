@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Ah, o ínclito {player}! A sua presença ilumina este recinto mais do que qualquer lanterna.",
+		"{player}! Separei um livro que é a sua cara. Literalmente: tem um desenho seu na capa. Fui eu que fiz.",
+		"Que honra! O célebre {player} na minha humilde biblioteca. Fale baixo, mas fale.",
+		"Saudações, caro amigo. Os livros e eu sentimos a sua falta."
+	],
+	"greet_neutral": [
+		"Psst. Biblioteca. Fale baixo, por gentileza.",
+		"Saudações, visitante. Procura algum título em particular? Ou apenas conhecimento genérico?",
+		"Hrmm. Não toque nos livros com as mãos sujas de terra. Grato.",
+		"Ah, um leitor! Ou um curioso. Ambos são bem-vindos. Moderadamente."
+	],
+	"greet_cold": [
+		"Hmm. Você. Os registros a seu respeito não são lisonjeiros.",
+		"Mantenha distância das estantes. Por precaução.",
+		"Seja breve. A sua reputação o precede, e não de forma elogiosa."
+	],
+	"hostile": [
+		"<r>Retire-se imediatamente!</r> Pessoas como você queimaram bibliotecas inteiras na história!",
+		"<r>Fora!</r> Não empresto livros a quem fere inocentes. Nem um panfleto!"
+	],
+	"followup": [
+		"Algo mais, caro jovem?",
+		"Prossiga. Estou todo ouvidos. E todo livros.",
+		"Mais alguma consulta?",
+		"Hmm? Deseja saber mais alguma coisa?"
+	],
+	"decline": [
+		"Compreendo. A leitura de certas missões exige o momento certo.",
+		"Deveras, nem todos nasceram para a grandeza. Mas a oferta permanece.",
+		"Pois bem. Pedirei ao bobão da vila. Ele vai comer as páginas, provavelmente."
+	],
+	"locked": [
+		"Receio que este capítulo ainda não lhe pertença. Acumule experiência e retorne.",
+		"Não é falta de confiança, é cronologia. Primeiro os capítulos iniciais, depois o clímax."
+	],
+	"repeat": [
+		"Lembra-se daquele serviço? A necessidade, como a história, tende a repetir-se.",
+		"Uma reedição, por assim dizer. Recompensa menor, mesma importância."
+	],
+	"apology_thanks": [
+		"Hum. Aceito as suas desculpas. Anotarei no seu verbete: \"arrependeu-se\".",
+		"Muito bem. Todo livro tem capítulos ruins. O importante é virar a página."
+	],
+	"bless": [
+		"Pelos saberes dos antigos e pela tinta dos sábios: que este objeto seja digno de uma lenda.",
+		"Abençoado. Recomendo registrar as suas façanhas com ele. Eu leria."
+	],
+	"bye": [
+		"Até breve. E devolva os livros no prazo.",
+		"Adeus, caro jovem. Que o conhecimento o acompanhe.",
+		"Tenha um bom dia. Ou uma boa noite. Perco a noção do tempo entre os livros."
+	],
+	"abandon": [
+		"Abandonou a missão? Como um livro deixado pela metade. Imperdoável.",
+		"Lamentável. Anotarei no seu verbete: \"desistiu\"."
+	],
+	"lore": [
+		[
+			"Já se perguntou por que os aldeões dizem apenas \"hrmm\"? Os textos antigos falam da <a>Grande Maldição</a>.",
+			"Antes dela, todos os povos conversavam: aldeões, piglins, até os endermen. Depois, cada um ficou preso à sua própria língua.",
+			"Você é raro, caro jovem. Por alguma razão, nos compreende. Talvez seja a chave para algo maior."
+		],
+		[
+			"Os <r>Exilados</r>, também chamados de illagers, eram aldeões. Disso não há dúvida: os narizes são idênticos.",
+			"Foram expulsos por praticar magia proibida, aprendida com livros que encontraram nas <a>Cidades Antigas</a>.",
+			"Desde então, odeiam as vilas. É a mais antiga briga de família do mundo."
+		],
+		[
+			"A mesa de encantamento usa a <p>Língua Galáctica</p>. Ninguém sabe ler, mas todos usam.",
+			"É como assinar um contrato sem ler as letras miúdas. Funciona. Até o dia em que não funciona.",
+			"Eu passo as noites tentando decifrar. Até agora, acho que descobri a palavra \"batata\". Mas não tenho certeza."
+		],
+		[
+			"Sabia que os endermen eram altos guardiões do <a>Fim</a>? Uma teoria diz que eles foram derrotados pelo dragão.",
+			"Desde então, vagam pelo mundo pegando blocos, como se tentassem reconstruir algo que perderam.",
+			"Por isso detestam ser encarados. Ninguém gosta de ser observado no momento da sua vergonha."
+		],
+		[
+			"Há um livro proibido nesta biblioteca. Fica trancado numa estante especial. Eu nunca o abri.",
+			"A capa diz <r>\"Não leia em voz alta\"</r>. É o único livro que eu respeito mais do que desejo ler.",
+			"...Está bem, li uma página uma vez. Mas foi em silêncio. Quase."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda com algum estudo?",
+		"Tem alguma pesquisa para mim?",
+		"Posso ajudar a biblioteca de alguma forma?"
+	],
+	"names": [
+		"Doutor Machado", "Dona Cecília", "Professor Rui", "Dona Clarice", "Mestre Joaquim", "Dona Rachel", "Professor Graciliano",
+		"Dona Lygia", "Doutor Érico", "Dona Adélia"
+	]
+}

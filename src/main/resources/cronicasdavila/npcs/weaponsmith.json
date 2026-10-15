@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"HA HA! {player}! O MAIOR GUERREIRO DESTA VILA! Chega aqui, que eu te dou um abraço de quebrar costela!",
+		"POR MIL BIGORNAS, é você! Sente o calor da forja, campeão! É o calor da minha admiração!",
+		"{player}! Sabe aquela espada que eu tô forjando? Tô pensando em você a cada martelada!",
+		"Olha só, o orgulho da vila! Senta aí! Ah, não tem cadeira. FICA EM PÉ COM ORGULHO!"
+	],
+	"greet_neutral": [
+		"HA! Um forasteiro! Você tem cara de quem nunca segurou uma espada direito!",
+		"Hrmm! Cuidado com a bigorna, recruta! Ela é mais pesada que sua coragem!",
+		"Quer arma? Tem que provar que merece! Aqui não é loja de brinquedo!",
+		"E aí, recruta? Fala alto, que meu ouvido não é mais o mesmo depois de tanta martelada!"
+	],
+	"greet_cold": [
+		"Hmpf. Você. Não gosto do que ouvi sobre você, recruta.",
+		"Fala rápido, que eu tô com o martelo na mão e a paciência curta!",
+		"Você tem cara de encrenca. E eu conheço encrenca de longe!"
+	],
+	"hostile": [
+		"<r>FORA DA MINHA FORJA!</r> Covarde que machuca aldeão não toca em arma minha NUNCA!",
+		"<r>SAI!</r> Eu lutei em três invasões e não tenho medo de gente como você!"
+	],
+	"followup": [
+		"Que mais, recruta?",
+		"Fala! O ferro tá esfriando!",
+		"Mais alguma coisa? Rápido, que a forja não espera!",
+		"HA! Ainda tem pergunta? Manda!"
+	],
+	"decline": [
+		"HMPF! Covardia não combina com você, recruta. Mas tudo bem. Por enquanto.",
+		"Tá bom, tá bom. Volta quando tiver coragem!",
+		"Vou chamar o bobão da vila. Ele vai fugir no primeiro barulho, mas pelo menos vai TENTAR!"
+	],
+	"locked": [
+		"Recruta, essa missão é pra gente de couro grosso. Você ainda tá verde! Vai treinar!",
+		"Calma, calma! Primeiro aprende a segurar a espada pelo lado certo. Depois a gente conversa."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Tá na hora de repetir! Treino é repetição, recruta!",
+		"De novo! De novo! É assim que se forja um guerreiro! Paga menos, mas fortalece mais!"
+	],
+	"apology_thanks": [
+		"Hmpf. Tá bom. Todo guerreiro erra. O importante é reconhecer! HA!",
+		"Aceito. Mas tô de olho, recruta. Um passo em falso e acabou!"
+	],
+	"bless": [
+		"Pela bigorna dos antigos e pelo fogo da forja: que essa lâmina nunca falhe!",
+		"ABENÇOADA! Vai lá e faz os monstros tremerem! HA HA!"
+	],
+	"bye": [
+		"Vai, recruta! E volta com histórias de batalha!",
+		"Até mais! Escudo levantado, espada afiada!",
+		"Tchau! E não morre, que dá trabalho fazer outro herói!"
+	],
+	"abandon": [
+		"DESISTIU?! Na minha época, quem desistia ficava limpando a forja por um mês!",
+		"Hmpf. Que decepção, recruta."
+	],
+	"lore": [
+		[
+			"Escuta essa, recruta. Quando eu era jovem, defendi a vila de uma <r>invasão</r> com uma espada de pedra e uma frigideira.",
+			"Uma FRIGIDEIRA! Derrubei um vingador com ela. Ele ficou tão humilhado que voltou pra mansão chorando.",
+			"Desde então, todo ferreiro de armas guarda uma frigideira na forja. Tradição é tradição!"
+		],
+		[
+			"Sabia que a <a>espada</a> e o <a>machado</a> têm uma rivalidade antiga? Os ferreiros brigam até hoje sobre qual é melhor.",
+			"O machado bate mais forte e quebra escudo. A espada é mais rápida e varre vários inimigos de uma vez.",
+			"Eu? Eu uso os dois. UM EM CADA MÃO! ...Tá, não dá. Mas seria incrível."
+		],
+		[
+			"Os <r>vingadores</r> dos Exilados usam machado de ferro. FERRO DE VILA! Roubado das nossas forjas!",
+			"Toda vez que eu vejo um machado deles, eu reconheço a marca do ferreiro. Tem um com a marca do meu avô.",
+			"Um dia eu recupero aquele machado. UM DIA!"
+		],
+		[
+			"Já ouviu falar da <a>maça</a>? Uma arma nova, feita com o núcleo pesado das Câmaras de Provação.",
+			"Quanto mais alto você cai, mais forte ela bate! Já imaginou pular de um prédio e esmagar um devastador?",
+			"Eu tentei pular do telhado da forja pra testar a teoria. Sem a maça. Quebrei duas costelas. Não recomendo."
+		],
+		[
+			"O <a>escudo</a> é a arma mais subestimada do mundo! Bloqueia flecha, bloqueia espada, bloqueia explosão de creeper!",
+			"Os jovens querem espada de diamante encantada. Mas o escudo de madeira com ferro salvou mais vidas que qualquer espada!",
+			"Lembra disso, recruta: o melhor ataque começa com uma boa defesa!"
+		]
+	],
+	"player_work": [
+		"Tem missão de combate pra mim?",
+		"Me põe pra lutar, chefe!",
+		"Precisa de um guerreiro?"
+	],
+	"names": [
+		"Sargento Brutus", "Dona Valquíria", "Capitão Bigorna", "Dona Brunilda", "Seu Aquiles", "Dona Joana", "Seu Ferrabrás",
+		"Dona Hércula", "Sargento Tonhão", "Dona Xena"
+	]
+}

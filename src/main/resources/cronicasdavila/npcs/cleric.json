@@ -1,0 +1,95 @@
+{
+	"greet_friendly": [
+		"Ah... {player}. Os espíritos cantam quando você se aproxima. Bem-vindo, filho das estrelas.",
+		"A luz brilha forte em você hoje, {player}. Os ancestrais estão orgulhosos.",
+		"{player}! Acendi uma vela por você esta manhã. Ela queimou azul. Isso é um ótimo sinal.",
+		"Bem-vindo, protetor. Sinto que trouxe paz consigo."
+	],
+	"greet_neutral": [
+		"Os espíritos me disseram que alguém viria. Não disseram que seria você. Mas tudo bem.",
+		"Hrmm... sente o cheiro de incenso? É mirra. Ou meu caldeirão queimando. Difícil saber.",
+		"Saudações, viajante. Que a luz te guie. Ou pelo menos uma tocha.",
+		"Aproxime-se. Não tenha medo do brilho roxo. É só uma poção. Provavelmente."
+	],
+	"greet_cold": [
+		"Hmm. Sua aura está escura, viajante. Muito escura.",
+		"Os espíritos sussurram coisas sobre você. Coisas sombrias.",
+		"Não chegue perto do caldeirão. Não confio em suas mãos."
+	],
+	"hostile": [
+		"<r>Afaste-se, alma corrompida!</r> Os ancestrais não te protegem mais. Nem eu.",
+		"<r>Vá embora.</r> Sua sombra apaga até as velas do templo."
+	],
+	"followup": [
+		"Algo mais, filho das estrelas?",
+		"Os espíritos aguardam sua próxima pergunta.",
+		"Mais alguma coisa? O caldeirão está borbulhando.",
+		"Fale. Estou ouvindo. Os mortos também."
+	],
+	"decline": [
+		"O destino tem paciência. Eu também.",
+		"Os espíritos dizem que você voltará. Eles costumam acertar.",
+		"Tudo bem. Vou consultar o bobão da vila... não, os espíritos riram só de eu pensar nisso."
+	],
+	"locked": [
+		"Seu caminho ainda não chegou a este ponto. Os astros dizem: ganhe experiência e volte.",
+		"Não é sua hora, filho das estrelas. Ainda não."
+	],
+	"repeat": [
+		"A roda da vida gira, e o mesmo problema retorna. Ajudaria novamente?",
+		"Você já fez isso uma vez. Os espíritos pedem que faça de novo. A recompensa é menor, a bênção é a mesma."
+	],
+	"apology_thanks": [
+		"O arrependimento sincero acende uma vela na escuridão. Sua aura clareou um pouco.",
+		"Os espíritos aceitam sua oferenda. Eu também. Caminhe na luz agora."
+	],
+	"bless": [
+		"Pela luz dos ancestrais e pelo fogo das velas: abençoado seja este objeto.",
+		"Sinto a magia fluir para ele. Que o proteja nas horas mais escuras."
+	],
+	"bye": [
+		"Vá em paz, filho das estrelas. E não pise nas sombras.",
+		"Que a luz o acompanhe. Ou ao menos uma tocha.",
+		"Até breve. Os espíritos vão sentir sua falta. Eles são carentes."
+	],
+	"abandon": [
+		"Abandonar o caminho também é um caminho. Mas os espíritos ficaram decepcionados.",
+		"A vela que acendi por você apagou. Coincidência? Talvez."
+	],
+	"lore": [
+		[
+			"Sabia que os clérigos foram os primeiros a usar o <a>lápis-lazúli</a>? Achávamos que era o céu que caiu na terra.",
+			"Moíamos a pedra e misturávamos com tinta para pintar as estrelas nos templos.",
+			"Hoje, os aventureiros usam lápis para encantar espadas. O céu virou arma. Os tempos mudam."
+		],
+		[
+			"O <r>Wither</r> não é uma criatura natural. Foi criado.",
+			"Os textos antigos dizem que um evocador juntou as almas mais amargas do Nether em três crânios e as prendeu em areia das almas.",
+			"Desde então, quem repete o ritual desperta a fera. Algumas coisas nunca deveriam ser repetidas."
+		],
+		[
+			"Já viu o <a>Herói da Vila</a>? É um título dado a quem salva uma vila de uma invasão.",
+			"Os aldeões jogam presentes, abaixam os preços e falam bem do herói por todo canto.",
+			"Mas o título verdadeiro, o permanente, só pertence a quem conquista o respeito de <o>todas as profissões</o>. Pouquíssimos conseguiram."
+		],
+		[
+			"As bruxas e eu temos algo em comum: ambos sabemos fazer poções. A diferença é a intenção.",
+			"Eu faço poções de cura. Elas fazem poções de veneno. Mas o caldeirão é o mesmo.",
+			"Lembre-se: a ferramenta não é boa nem má. O coração de quem a usa é que decide."
+		],
+		[
+			"Dizem que quando um raio cai num aldeão, ele vira uma <r>bruxa</r>. Por isso eu nunca saio na tempestade.",
+			"E quando cai num porco, ele vira um <n>piglin zumbi</n>. E num creeper, ele fica carregado.",
+			"O raio é a forma do céu reescrever o destino. Às vezes com péssima caligrafia."
+		]
+	],
+	"player_work": [
+		"Os espíritos têm alguma tarefa para mim?",
+		"Precisa de ajuda com as poções?",
+		"Há alguma missão sagrada?"
+	],
+	"names": [
+		"Irmão Benedito", "Irmã Clara", "Padre Aurélio", "Madre Celina", "Irmão Francisco", "Irmã Lúcia", "Frei Tobias",
+		"Irmã Glória", "Irmão Anselmo", "Irmã Rita"
+	]
+}

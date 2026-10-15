@@ -1,0 +1,294 @@
+{
+	"quests": [
+		{
+			"id": "cleric_1_carne",
+			"tier": 1,
+			"title": "Restos dos Inquietos",
+			"tone": "calm",
+			"offer": [
+				"Aproxime-se, filho das estrelas. Os espíritos sussurraram que você viria.",
+				"Para preparar o <p>Unguento da Purificação</p>, preciso de um ingrediente... peculiar: <y>carne podre</y>, aquela que os zumbis deixam para trás.",
+				"Não faça essa cara. A magia muitas vezes nasce do que os outros desprezam."
+			],
+			"why": [
+				"Com o unguento, protejo as portas da vila contra os mortos-vivos. Eles sentem o próprio cheiro e desviam, confusos.",
+				"E transformar o que é podre em proteção... é a essência de toda cura. Lembre-se disso."
+			],
+			"accept": [
+				"Que os ancestrais guiem seus passos. E que seu estômago seja forte.",
+				"<g>Traga</g> <y>24 carnes podres</y>."
+			],
+			"progress": [
+				"Os zumbis deixam carne podre ao serem derrotados. Às vezes ela vem no anzol também. Não pergunte.",
+				"Não coma. Repito: <r>não coma</r>. A menos que esteja muito desesperado."
+			],
+			"complete": [
+				"O fedor é perfeito. Os espíritos aprovam. Eu... tolero.",
+				"Receba estas esmeraldas e um pouco de pó de redstone, que amplifica as poções. A luz agradece."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:rotten_flesh"], "count": 24, "desc": "<g>Entregue</g> <y>24 carnes podres</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:redstone", "count": 16}]
+		},
+		{
+			"id": "cleric_1_cemiterio",
+			"tier": 1,
+			"title": "Os que Não Descansam",
+			"tone": "danger",
+			"offer": [
+				"Há um cemitério antigo ao norte da vila. Os mais velhos o evitam. E com razão.",
+				"Toda lua nova, <r>esqueletos</r> se levantam de lá. Ossos de guerreiros esquecidos que não encontraram descanso.",
+				"Eles vagam, procurando algo. Talvez seus nomes. Talvez vingança. Talvez apenas companhia."
+			],
+			"why": [
+				"Libertar um espírito inquieto é um ato de misericórdia, filho das estrelas. Para eles e para os vivos.",
+				"E se ninguém os detiver, eles vão chegar à vila. Ossos não sentem cansaço."
+			],
+			"accept": [
+				"Que a luz te acompanhe. E que tua flecha seja mais rápida que a deles.",
+				"<r>Elimine 15 esqueletos</r>."
+			],
+			"progress": [
+				"Eles evitam o sol. Mas na escuridão, são incansáveis.",
+				"Quando derrubá-los, sussurre algo gentil. Os ancestrais escutam."
+			],
+			"complete": [
+				"O cemitério está em silêncio. Um silêncio bom. Os espíritos agradecem através de mim.",
+				"Receba este ferro e algumas garrafas de experiência. A sabedoria dos que partiram."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:experience_bottle", "count": 6}]
+		},
+		{
+			"id": "cleric_2_verruga",
+			"tier": 2,
+			"title": "A Raiz de Toda Poção",
+			"tone": "calm",
+			"offer": [
+				"Toda poção começa com o mesmo ingrediente sagrado: a <y>verruga do Nether</y>. Sem ela, só se faz água de garrafa.",
+				"Ela cresce na areia das almas, nas fortalezas do mundo inferior. Lá onde a esperança evapora como água na lava.",
+				"Meu canteiro secou. E com ele, a capacidade de curar esta vila."
+			],
+			"why": [
+				"Poções de cura, de regeneração, de força. Tudo depende dela. Sem verruga, um ferimento simples pode ser fatal.",
+				"E um peregrino como você precisa conhecer o mundo inferior. Esta é uma boa primeira visita."
+			],
+			"accept": [
+				"Procure as escadarias das fortalezas do Nether. A verruga cresce lá, em pequenos jardins.",
+				"<g>Traga</g> <y>16 verrugas do Nether</y>."
+			],
+			"progress": [
+				"Os bastiões dos piglins às vezes também têm verrugas plantadas.",
+				"Ela pode ser replantada em areia das almas aqui no mundo superior. Traga um pouco de areia também, se puder."
+			],
+			"complete": [
+				"A raiz da cura retorna. Sinto as poções vibrando de expectativa.",
+				"Receba esmeraldas, um diamante e estas fatias de melancia reluzente, o coração das poções de cura. Que nunca precise delas. Mas, se precisar, que estejam por perto."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:nether_wart"], "count": 16, "desc": "<g>Entregue</g> <y>16 verrugas do Nether</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:glistering_melon_slice", "count": 4}]
+		},
+		{
+			"id": "cleric_2_curar",
+			"tier": 2,
+			"title": "As Almas Aprisionadas",
+			"tone": "danger",
+			"offer": [
+				"Sabe o que é um <r>aldeão zumbi</r>? É um de nós. Alguém que foi mordido e perdeu a alma para a podridão.",
+				"Mas existe esperança. Eu sei curá-los. Porém, primeiro, os zumbis que espalham a doença precisam ser contidos.",
+				"Há um bando deles rondando a estrada. Cada mordida pode criar mais um irmão perdido."
+			],
+			"why": [
+				"Cada zumbi derrotado é uma mordida a menos. Cada mordida a menos é um aldeão a mais com sua alma.",
+				"E se você encontrar um aldeão zumbi, saiba: poção de fraqueza e maçã dourada o trazem de volta."
+			],
+			"accept": [
+				"Que a luz te guie. E, se puder, salve um irmão em vez de derrubá-lo.",
+				"<r>Elimine 25 zumbis</r> (de qualquer tipo)."
+			],
+			"progress": [
+				"Os aldeões zumbis curados ficam gratos para sempre. Trocas baratíssimas. A gratidão é a melhor moeda.",
+				"Zumbis bebês são rápidos e pequenos. Mire baixo."
+			],
+			"complete": [
+				"A estrada está segura. E esta manhã, um irmão perdido voltou a falar \"hrmm\". Isso é o som da esperança.",
+				"Receba este ferro, um diamante e uma maçã dourada. Use-a para curar, não apenas para lutar."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager"], "count": 25, "desc": "<r>Elimine</r> <r>25 zumbis</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "cleric_3_lagrimas",
+			"tier": 3,
+			"title": "As Lágrimas do Ghast",
+			"tone": "danger",
+			"offer": [
+				"Já ouviu o choro de um <r>ghast</r>, filho das estrelas? É o som mais triste do mundo inferior.",
+				"Dizem que os ghasts eram almas de grandes guerreiros que se perderam no Nether e choram desde então.",
+				"Suas <y>lágrimas</y> são a base da <p>poção de regeneração</p>. Cura nascida da tristeza. A vida é estranha assim."
+			],
+			"why": [
+				"Com a poção de regeneração, os guardas feridos se curam em segundos. Muitas vidas serão poupadas.",
+				"E talvez, ao libertar um ghast, você dê descanso a uma alma que chora há séculos. Missão digna de um <o>Aventureiro</o>."
+			],
+			"accept": [
+				"Cuidado: as lágrimas caem onde o ghast cai. Se ele estiver sobre lava, elas se perdem.",
+				"<g>Traga</g> <y>4 lágrimas de ghast</y>."
+			],
+			"progress": [
+				"Os ghasts flutuam sobre os mares de lava e os vales de areia das almas.",
+				"Rebata as bolas de fogo deles. É poético: devolver a dor a quem a envia."
+			],
+			"complete": [
+				"Quatro lágrimas. Quatro almas em paz. Eu as ouvi suspirar quando você as trouxe.",
+				"Receba diamantes, uma maçã dourada e garrafas de experiência. A sabedoria das almas é sua agora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ghast_tear"], "count": 4, "desc": "<g>Entregue</g> <y>4 lágrimas de ghast</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 10}]
+		},
+		{
+			"id": "cleric_3_po",
+			"tier": 3,
+			"title": "O Pó das Chamas",
+			"tone": "danger",
+			"offer": [
+				"O suporte de poções precisa de fogo eterno para funcionar. E fogo eterno vem de um único lugar: as <r>blazes</r>.",
+				"Elas são espíritos de fogo puro, nascidos nas fortalezas do Nether. Selvagens, furiosos, eternos.",
+				"Meu suporte apagou. Sem ele, nada de poções. Sem poções, a vila fica desprotegida contra doença e veneno."
+			],
+			"why": [
+				"A vila confia em mim para curar. Eu confio em você para que eu possa curar. Assim gira a roda da vida.",
+				"É provação de <o>Aventureiro</o>. O fogo testa a coragem."
+			],
+			"accept": [
+				"Leve poções de resistência ao fogo. Eu preparei duas para você, mas... ah, sem pó de blaze não consigo. Ironia.",
+				"<r>Elimine 10 blazes</r>."
+			],
+			"progress": [
+				"Elas surgem de geradores nas fortalezas do Nether. Cerque o gerador de tochas para retardar.",
+				"Bolas de neve as ferem. A água do mundo superior é veneno para elas."
+			],
+			"complete": [
+				"Sinto o calor delas nas varas. O suporte de poções voltou a respirar fogo.",
+				"Receba diamantes, uma maçã dourada e um livro de <p>Proteção contra Fogo</p>, para que as chamas não te reconheçam."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 10, "desc": "<r>Elimine</r> <r>10 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 3}]
+		},
+		{
+			"id": "cleric_4_totem",
+			"tier": 4,
+			"title": "O Totem Roubado",
+			"tone": "danger",
+			"offer": [
+				"Vou lhe contar um segredo que só os clérigos sabem. O <o>Totem da Imortalidade</o> não foi criado pelos Exilados.",
+				"Foi criado por <a>nós</a>, os clérigos antigos. Era o artefato sagrado das vilas, capaz de devolver a vida a quem a perdia.",
+				"Quando os Exilados foram expulsos, roubaram o segredo. Hoje, só os <r>evocadores</r> carregam totens."
+			],
+			"why": [
+				"Recuperar os totens é recuperar parte da nossa história. E salvar vidas que um dia vão precisar de uma segunda chance.",
+				"Só um <o>Guerreiro</o> encara um evocador. Eles invocam presas e espíritos, e não temem a morte, porque carregam a cura dela."
+			],
+			"accept": [
+				"Que a luz dos antigos te proteja. E que nenhum totem seja gasto à toa.",
+				"<g>Traga</g> <y>2 Totens da Imortalidade</y>."
+			],
+			"progress": [
+				"Os evocadores vivem nas mansões da floresta escura e aparecem nas grandes invasões.",
+				"Quando você derrota um evocador, o totem cai no chão. Não deixe a lava levá-lo."
+			],
+			"complete": [
+				"Os totens retornam ao templo. Sinto a presença dos clérigos antigos. Eles sorriem.",
+				"Receba diamantes, maçãs douradas e um livro de <p>Proteção IV</p>. A vida é preciosa. A sua também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:totem_of_undying"], "count": 2, "desc": "<g>Entregue</g> <y>2 Totens da Imortalidade</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "cleric_4_cranios",
+			"tier": 4,
+			"title": "Os Crânios Profanos",
+			"tone": "danger",
+			"offer": [
+				"Tive uma visão, filho das estrelas. Uma visão terrível. Três crânios negros, uma figura de três cabeças e o céu escurecendo.",
+				"Os <y>crânios de esqueleto murcho</y> estão nas fortalezas do Nether. Nas mãos erradas, eles invocam o <r>Wither</r>.",
+				"Os Exilados estão procurando por eles. Precisamos encontrá-los primeiro e guardá-los em local sagrado."
+			],
+			"why": [
+				"Se três crânios caírem nas mãos dos Exilados, a minha visão vai se cumprir. E não haverá vila para proteger.",
+				"Os esqueletos murchos são guerreiros implacáveis. Só um <o>Guerreiro</o> pode enfrentá-los."
+			],
+			"accept": [
+				"Guarde os crânios com respeito. São restos de almas atormentadas.",
+				"<g>Traga</g> <y>3 crânios de esqueleto murcho</y>."
+			],
+			"progress": [
+				"Nem todo esqueleto murcho deixa o crânio. Saque na espada ajuda os espíritos a serem generosos.",
+				"Leve leite. O efeito murcho seca a vida como sol seca a flor."
+			],
+			"complete": [
+				"Os crânios estão seguros no templo, selados com água benta e cera de abelha. A visão se desfez. Respiro de novo.",
+				"Receba diamantes, maçãs douradas e um livro de <p>Saque III</p>. Os espíritos foram generosos com você, e eu também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wither_skeleton_skull"], "count": 3, "desc": "<g>Entregue</g> <y>3 crânios de esqueleto murcho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
+		},
+		{
+			"id": "cleric_5_profecia",
+			"tier": 5,
+			"title": "A Profecia das Três Bestas",
+			"tone": "danger",
+			"offer": [
+				"Mestre. Há uma profecia que os clérigos guardam há mil anos. Eu nunca a recitei em voz alta. Hoje vou recitar.",
+				"\"Quando o herói da vila derrubar a <r>Fera das Três Cabeças</r>, o mundo inferior se curvará e as vozes dos aldeões começarão a voltar.\"",
+				"A Fera é o <r>Wither</r>. Mas a profecia é clara: ele precisa ser derrotado mais de uma vez, até que sua essência se apague."
+			],
+			"why": [
+				"Cada vez que o Wither renasce, a maldição se fortalece. Cada vez que cai, ela enfraquece.",
+				"É a provação final de um <o>Mestre</o>. Dois Withers. Duas batalhas. Uma lenda."
+			],
+			"accept": [
+				"Que todos os ancestrais estejam ao seu lado. Eu acenderei velas no templo por cada batalha.",
+				"<r>Derrote o Wither 2 vezes</r>."
+			],
+			"progress": [
+				"Seis crânios de esqueleto murcho no total. A fortaleza vai sentir sua presença.",
+				"Faça uma arena subterrânea. Leite, poções de cura, maçãs douradas. Prepare-se como se fosse a última vez."
+			],
+			"complete": [
+				"Está feito. A profecia se cumpriu. Ouviu? O sino da vila tocou sozinho esta manhã.",
+				"Receba as estrelas das feras, uma maçã encantada e diamantes. E saiba que seu nome está nos pergaminhos sagrados agora."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 2, "desc": "<r>Derrote</r> <r>o Wither 2 vezes</r>"},
+			"rewards": [{"item": "minecraft:nether_star", "count": 2}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 28}]
+		},
+		{
+			"id": "cleric_5_ovo",
+			"tier": 5,
+			"title": "O Sopro do Dragão",
+			"tone": "danger",
+			"offer": [
+				"Existe uma poção que nenhum clérigo vivo preparou: a <p>Poção Persistente</p>, que permanece no ar como uma névoa de cura.",
+				"Para prepará-la, preciso do <y>sopro do dragão</y>. O hálito roxo do <r>Dragão do Ender</r>, coletado em garrafas durante a batalha.",
+				"Com essa névoa, eu poderia curar uma vila inteira de uma só vez em tempos de praga ou invasão."
+			],
+			"why": [
+				"Uma única garrafa pode salvar dezenas de vidas. Imagine o que vinte garrafas fariam.",
+				"Coletar o sopro durante a batalha com o dragão... só um <o>Mestre</o> teria tal ousadia."
+			],
+			"accept": [
+				"Quando o dragão pousar e soprar, encha as garrafas na nuvem roxa. Rápido, antes que ela se dissipe.",
+				"<g>Traga</g> <y>12 garrafas de sopro do dragão</y>."
+			],
+			"progress": [
+				"O dragão sopra quando pousa no portal central, e também lança bolas de ácido.",
+				"A nuvem roxa machuca. Encha as garrafas e se afaste."
+			],
+			"complete": [
+				"Que essência... posso ver as estrelas dentro dela. A primeira Poção Persistente em mil anos será preparada hoje.",
+				"Receba netherita, diamantes, o livro de <p>Remendo</p> e um totem. Que a vida o abrace sempre."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_breath"], "count": 12, "desc": "<g>Entregue</g> <y>12 garrafas de sopro do dragão</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

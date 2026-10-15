@@ -1,0 +1,295 @@
+{
+	"quests": [
+		{
+			"id": "cartographer_1_papel",
+			"tier": 1,
+			"title": "Papel para Mapas",
+			"tone": "calm",
+			"offer": [
+				"Ó pá, que bom ver um rosto novo! Sou cartógrafo, navegador, explorador... e neste momento, um homem sem papel.",
+				"Sabe o que é um cartógrafo sem papel? É como um pescador sem barco. Um poeta sem tinta. Um aldeão sem \"hrmm\".",
+				"Preciso de <y>papel</y> para desenhar os mapas da região. E o papel faz-se de <y>cana-de-açúcar</y>, que cresce junto à água."
+			],
+			"why": [
+				"Os viajantes perdem-se nesta região todos os dias. Sem mapas, as caravanas não chegam e os aventureiros desaparecem.",
+				"E um mapa bem feito, rapaz, é a coisa mais bonita do mundo. Cada rio, cada montanha, cada segredo... tudo no papel."
+			],
+			"accept": [
+				"Fixe! A cana cresce à beira de rios e lagos. Três canas fazem três folhas.",
+				"<g>Traga</g> <y>24 folhas de papel</y>."
+			],
+			"progress": [
+				"Corte a cana de cima, deixando a base, que ela volta a crescer. Plantação infinita!",
+				"Baús de naufrágios e de vilas também têm papel às vezes."
+			],
+			"complete": [
+				"Papel de primeira! Já estou a ver os mapas: a vila, os rios, as florestas...",
+				"Tome lá umas esmeraldas e uma bússola. Quem tem bússola nunca se perde, pá. Bom, quase nunca."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:paper"], "count": 24, "desc": "<g>Entregue</g> <y>24 folhas de papel</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:compass", "count": 1}]
+		},
+		{
+			"id": "cartographer_1_estrada",
+			"tier": 1,
+			"title": "A Estrada das Caravanas",
+			"tone": "danger",
+			"offer": [
+				"Rapaz, estive a mapear a estrada que liga esta vila à vila vizinha. E descobri porque é que ninguém a usa.",
+				"Há <r>esqueletos e zumbis</r> escondidos ao longo de todo o caminho, nas sombras das árvores. Uma emboscada constante!",
+				"Eu fugi tão depressa que o mapa ficou pela metade. E o meu chapéu ficou para trás. Gostava muito do chapéu."
+			],
+			"why": [
+				"Se a estrada ficar segura, as duas vilas podem fazer comércio. Mais esmeraldas, mais pão, mais amigos.",
+				"E eu termino o mapa. Um mapa pela metade é como uma história sem fim, pá. Insuportável."
+			],
+			"accept": [
+				"Fixe! Vá de dia para eles estarem só nas sombras, ou à noite se gosta de emoção.",
+				"<r>Elimine 15 zumbis ou esqueletos</r>."
+			],
+			"progress": [
+				"Eles escondem-se debaixo das árvores durante o dia, onde o sol não os queima.",
+				"Quanto mais tochas pelo caminho, menos monstros aparecem. Dica de explorador."
+			],
+			"complete": [
+				"A estrada está limpa! E... ó pá, o meu chapéu! Encontrou o meu chapéu? Não? Ah, paciência.",
+				"Tome lá ferro e um mapa vazio. Comece a desenhar a sua própria aventura!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:skeleton", "minecraft:husk", "minecraft:stray"], "count": 15, "desc": "<r>Elimine</r> <r>15 zumbis ou esqueletos</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:map", "count": 2}]
+		},
+		{
+			"id": "cartographer_2_mapas",
+			"tier": 2,
+			"title": "O Atlas da Região",
+			"tone": "calm",
+			"offer": [
+				"Ó pá, tenho um projeto ambicioso: o <a>Atlas da Região</a>! Um livro com todos os mapas daqui até ao horizonte.",
+				"Mas eu sou só um, e o mundo é enorme. Preciso que alguém explore e faça mapas por mim.",
+				"Cada mapa que me trouxer será uma página do atlas. E o seu nome ficará na capa, como coautor!"
+			],
+			"why": [
+				"Com o atlas, qualquer aldeão pode viajar sem medo. As crianças vão aprender geografia. Os guardas vão saber de onde vêm os perigos.",
+				"E convenhamos, rapaz: explorar é a coisa mais fixe que existe. Estou a oferecer-lhe aventura e ainda pago!"
+			],
+			"accept": [
+				"Fixe! Faça um mapa na mesa de cartografia ou na bancada, ande por aí até ele se preencher.",
+				"<g>Traga</g> <y>6 mapas preenchidos</y>."
+			],
+			"progress": [
+				"O mapa preenche-se enquanto o segura e anda. Explore lugares diferentes para cada um.",
+				"A mesa de cartografia pode ampliar os mapas. Mapa grande vale o mesmo, mas é mais bonito."
+			],
+			"complete": [
+				"Que mapas maravilhosos! Florestas, montanhas, rios... O atlas está a ganhar vida!",
+				"Tome lá esmeraldas, um diamante e um livro de <p>Fortuna</p>. Explore, enriqueça e volte para me contar, pá!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:filled_map"], "count": 6, "desc": "<g>Entregue</g> <y>6 mapas preenchidos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 1}]
+		},
+		{
+			"id": "cartographer_2_bruxa",
+			"tier": 2,
+			"title": "O Pântano Proibido",
+			"tone": "danger",
+			"offer": [
+				"Rapaz, há um pedaço do mapa que ninguém consegue preencher: o <a>Pântano Proibido</a>.",
+				"Quem entra volta envenenado, lento ou com a pele verde. Os mais velhos dizem que é amaldiçoado.",
+				"Eu acho que é coisa de <r>slimes</r>. Montes deles, a saltar pela lama, a dividirem-se quando atacados. Uma praga gelatinosa!"
+			],
+			"why": [
+				"O pântano é o caminho mais curto até à costa. Se ficar seguro, a viagem até ao porto diminui para metade.",
+				"E dizem que há uma cabana antiga lá no meio. Talvez guarde algum segredo. Um explorador não descansa até saber!"
+			],
+			"accept": [
+				"Ótimo! Os slimes aparecem nos pântanos à noite, sobretudo com lua cheia.",
+				"<r>Elimine 20 slimes</r> (os pequenos também contam)."
+			],
+			"progress": [
+				"Slime grande divide-se em médios, médio divide-se em pequenos. Paciência e espada!",
+				"Também aparecem em certas zonas das cavernas, perto da camada 40. São zonas especiais, pá."
+			],
+			"complete": [
+				"O pântano está transitável! Já desenhei o caminho até à costa. E a cabana... era só de uma bruxa. Fugi a correr.",
+				"Tome lá ferro, um diamante e bolas de slime. Dão para fazer pistões, ou para atirar ao bobão da vila."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 20, "desc": "<r>Elimine</r> <r>20 slimes</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:slime_ball", "count": 8}]
+		},
+		{
+			"id": "cartographer_3_olhos",
+			"tier": 3,
+			"title": "Os Olhos que Apontam",
+			"tone": "calm",
+			"offer": [
+				"Ó pá, encontrei num livro antigo uma referência às <a>Fortalezas</a>: construções enterradas que guardam portais para o fim do mundo.",
+				"A única forma de as encontrar é com <o>olhos do ender</o>. Quando os atira, eles voam na direção da fortaleza mais próxima!",
+				"Quero mapear todas as fortalezas da região. Mas para isso preciso de olhos. Muitos olhos."
+			],
+			"why": [
+				"As fortalezas guardam bibliotecas antigas, tesouros e o segredo de como chegar ao Fim. Conhecimento perdido!",
+				"E o senhor já é <o>Aventureiro</o>. Pérolas do ender e pó de blaze não se encontram em qualquer esquina."
+			],
+			"accept": [
+				"Fixe! Pérola do ender mais pó de blaze faz um olho. Os endermen dão as pérolas, as blazes dão as varas.",
+				"<g>Traga</g> <y>8 olhos do ender</y>."
+			],
+			"progress": [
+				"As blazes vivem nas fortalezas do Nether. A vara delas vira pó na bancada.",
+				"Os endermen aparecem à noite em todo o lado. No deserto há muitos."
+			],
+			"complete": [
+				"Que olhos tão bonitos... e tão assustadores. Vou já testar um. <d>(ele atira um olho, que voa para longe)</d> Ali! Para nordeste!",
+				"Tome lá diamantes, frascos de experiência e uma luneta. Para ver as coisas antes que elas o vejam a si."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ender_eye"], "count": 8, "desc": "<g>Entregue</g> <y>8 olhos do ender</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 12}, {"item": "minecraft:spyglass", "count": 1}]
+		},
+		{
+			"id": "cartographer_3_arqueologia",
+			"tier": 3,
+			"title": "Ecos do Passado",
+			"tone": "calm",
+			"offer": [
+				"Rapaz, já ouviu falar das <a>Ruínas da Trilha</a>? São vilas antigas enterradas debaixo da terra, cheias de cerâmica e vitrais.",
+				"Os arqueólogos dizem que pertenciam ao povo que existia antes das vilas atuais. Os nossos antepassados!",
+				"Nos <y>fragmentos de cerâmica</y> há desenhos que contam a história deles. Quero coleccionar... digo, colecionar todos."
+			],
+			"why": [
+				"Um povo que não conhece o passado está condenado a perder-se. Os mapas não são só de lugares, pá, são de tempo também.",
+				"E a arqueologia exige paciência e cuidado. Coisas que um verdadeiro <o>Aventureiro</o> tem."
+			],
+			"accept": [
+				"Use um pincel nos blocos de cascalho e areia suspeitos. Com calma, como quem acaricia um gato.",
+				"<g>Traga</g> <y>6 fragmentos de cerâmica</y>."
+			],
+			"progress": [
+				"Ruínas da trilha, poços do deserto, templos e ruínas oceânicas têm areia ou cascalho suspeito.",
+				"Os blocos suspeitos parecem normais mas têm uma textura ligeiramente diferente. Olhe com atenção."
+			],
+			"complete": [
+				"Olhe para estes desenhos... um ceifador, um coração, uma flecha. Estavam a contar uma história de amor e guerra!",
+				"Tome lá diamantes, uma maçã dourada e um pincel novo. Continue a escavar, pá. O passado tem pressa de ser lembrado."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:decorated_pot_sherds"], "count": 6, "desc": "<g>Entregue</g> <y>6 fragmentos de cerâmica</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:brush", "count": 1}]
+		},
+		{
+			"id": "cartographer_4_mansao",
+			"tier": 4,
+			"title": "O Mapa da Floresta Escura",
+			"tone": "danger",
+			"offer": [
+				"Tenho aqui um mapa especial, rapaz. Um <a>mapa de explorador da floresta</a>. Mostra o caminho até a <a>Mansão dos Exilados</a>.",
+				"Mas mapa não chega. Quero informação real: quantos são, onde guardam as armas, por onde entram.",
+				"E a única forma de saber é ir lá e enfrentar os <r>vingadores</r>, os soldados de machado da mansão."
+			],
+			"why": [
+				"Se soubermos como a mansão funciona, as vilas podem preparar-se para as invasões. Informação é a melhor defesa.",
+				"É uma expedição de <o>Guerreiro</o>. A floresta escura é tão densa que nem o sol entra."
+			],
+			"accept": [
+				"Leve o mapa, muita comida e coragem. A mansão é enorme e cheia de salas secretas.",
+				"<r>Elimine 15 vingadores</r>."
+			],
+			"progress": [
+				"Vingadores atacam rápido e forte. Escudo, sempre escudo.",
+				"Mapas de explorador da floresta compram-se aos cartógrafos mais experientes. Eu sou um deles, pá."
+			],
+			"complete": [
+				"Que informação preciosa! Já desenhei a planta da mansão inteira. As vilas vão estar preparadas!",
+				"Tome lá diamantes, maçãs douradas e uma bússola de recuperação: ela aponta sempre para o sítio onde caiu pela última vez. Útil para quem vive perigosamente."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vindicator"], "count": 15, "desc": "<r>Elimine</r> <r>15 vingadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:recovery_compass", "count": 1}]
+		},
+		{
+			"id": "cartographer_4_estrelas",
+			"tier": 4,
+			"title": "Para Lá das Estrelas",
+			"tone": "danger",
+			"offer": [
+				"Ó pá, depois de mapear tudo o que existe à superfície, olhei para o céu e pensei: e se o mundo tiver outros andares?",
+				"O <n>Nether</n> é um. Mas as <a>fortalezas do Nether</a> são labirintos enormes e ninguém as mapeou bem.",
+				"Os guardas delas são as <r>blazes</r>. Criaturas de fogo que voam e cospem bolas de chama. Péssimas para quem segura papel."
+			],
+			"why": [
+				"Um mapa das fortalezas salvaria todos os aventureiros que se perdem lá. E salvaria o meu papel de pegar fogo.",
+				"É território de <o>Guerreiro</o>. Lava, fogo e criaturas que voam."
+			],
+			"accept": [
+				"Leve poção de resistência ao fogo. E muita, muita água... ah, não, água no Nether não funciona. Leve neve!",
+				"<r>Elimine 15 blazes</r>."
+			],
+			"progress": [
+				"As blazes nascem nos geradores das fortalezas. Bolas de neve fazem-lhes muito dano.",
+				"Esconda-se atrás de um pilar quando elas carregarem o fogo."
+			],
+			"complete": [
+				"Fixe! Com as suas descrições, desenhei a primeira planta de uma fortaleza do Nether. É histórico, rapaz!",
+				"Tome lá diamantes, maçãs douradas e um livro de <p>Proteção contra Fogo</p>. Para a próxima viagem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 15, "desc": "<r>Elimine</r> <r>15 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "cartographer_5_fim",
+			"tier": 5,
+			"title": "O Fim do Mapa",
+			"tone": "danger",
+			"offer": [
+				"Rapaz... Mestre. Há uma página do atlas que nunca foi desenhada. A última. A do <a>Fim</a>.",
+				"Dizem que lá há ilhas flutuantes no vazio, cidades roxas e um dragão que governa tudo. Os meus antepassados navegadores nunca lá chegaram.",
+				"Eu quero completar o mapa do mundo. Mas para isso alguém tem de abrir o caminho. Alguém tem de derrotar o <r>dragão</r>."
+			],
+			"why": [
+				"Enquanto o dragão reinar, ninguém pode explorar o Fim. Cidades, navios, tesouros... tudo inalcançável.",
+				"Os navegadores da minha família esperam por isto há gerações. Só um <o>Mestre</o> pode cumprir o sonho deles."
+			],
+			"accept": [
+				"Ó pá... vai mesmo. Vou rezar aos ventos por si. Leve muitas flechas, abóbora na cabeça e água.",
+				"<r>Derrote o Dragão do Ender</r>."
+			],
+			"progress": [
+				"Os olhos do ender levam à fortaleza. O portal precisa de doze olhos.",
+				"Os cristais nas torres curam o dragão. Destrua-os primeiro.",
+				"Depois do dragão, aparece um portal pequeno. É o caminho para as cidades do Fim."
+			],
+			"complete": [
+				"O mapa do mundo está completo. Do Nether ao Fim. Os meus antepassados podem descansar. E eu também.",
+				"Tome lá uma maçã encantada, netherita e diamantes. E o atlas, quando estiver pronto, terá o seu nome na primeira página."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 1, "desc": "<r>Derrote</r> <r>o Dragão do Ender</r>"},
+			"rewards": [{"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 28}]
+		},
+		{
+			"id": "cartographer_5_cabeca",
+			"tier": 5,
+			"title": "O Troféu do Explorador",
+			"tone": "danger",
+			"offer": [
+				"Há um costume antigo entre os grandes exploradores: trazer um troféu de cada canto do mundo.",
+				"O mais raro de todos é a <o>cabeça de dragão</o>, que fica na proa dos navios das <a>cidades do Fim</a>.",
+				"Nenhum explorador da minha família trouxe uma. Seria a peça central do museu da vila. A prova de que chegámos ao fim do mundo."
+			],
+			"why": [
+				"O museu vai inspirar gerações de exploradores. Crianças que vão crescer a sonhar com ilhas flutuantes.",
+				"As cidades do Fim são guardadas por shulkers e ficam suspensas sobre o vazio. Trabalho para um <o>Mestre</o>."
+			],
+			"accept": [
+				"Depois de derrotar o dragão, procure os portais pequenos no limite da ilha. Os navios ficam junto a algumas cidades.",
+				"<g>Traga</g> <y>1 cabeça de dragão</y>."
+			],
+			"progress": [
+				"Nem todas as cidades do Fim têm navio. Procure com paciência.",
+				"A cabeça fica pendurada na proa do navio. Quebre-a com cuidado."
+			],
+			"complete": [
+				"Ó pá... é verdadeira. Os olhos parecem vivos! Vai ficar no centro do museu, com uma placa dourada.",
+				"Tome lá netherita, diamantes, o livro de <p>Remendo</p> e um totem. Os maiores exploradores merecem voltar sempre para casa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_head"], "count": 1, "desc": "<g>Encontre e entregue</g> <y>1 cabeça de dragão</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}
