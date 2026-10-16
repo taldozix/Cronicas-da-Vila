@@ -1,11 +1,9 @@
 package br.com.cronicasdavila.client;
 
-import org.lwjgl.glfw.GLFW;
-
 import net.minecraft.client.Minecraft;
 
 /**
- * Lê o botão esquerdo do mouse direto da janela, a cada quadro.
+ * Lê o botão esquerdo do mouse direto do jogo, a cada quadro.
  *
  * <p>Em algumas instalações o evento de clique do jogo não chega às telas do mod. Assim, a tela
  * confere sozinha se o botão acabou de ser apertado e usa a posição do mouse que recebe ao ser
@@ -23,13 +21,12 @@ final class MousePoll {
 		wasDown = isDown();
 	}
 
-	private static boolean isDown() {
-		try {
-			long window = Minecraft.getInstance().getWindow().handle();
-			return GLFW.glfwGetMouseButton(window, GLFW.GLFW_MOUSE_BUTTON_LEFT) == GLFW.GLFW_PRESS;
-		} catch (Throwable ignored) {
-			return false;
-		}
+	/** Contadores para o diagnóstico do clique (aparecem no rodapé do menu). */
+	static int eventClicks;
+	static int polledClicks;
+
+	static boolean isDown() {
+		return Minecraft.getInstance().mouseHandler.isLeftPressed();
 	}
 
 	/** O botão acabou de ser apertado neste quadro? */
@@ -37,6 +34,11 @@ final class MousePoll {
 		boolean down = isDown();
 		boolean edge = down && !wasDown;
 		wasDown = down;
+
+		if (edge) {
+			polledClicks++;
+		}
+
 		return edge;
 	}
 

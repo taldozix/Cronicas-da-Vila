@@ -172,9 +172,13 @@ public class MenuScreen extends Screen {
 	// ---------------------------------------------------------------------------------------------
 
 	private final MousePoll mouse = new MousePoll();
+	private String lastEvent = "-";
 
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
+		MousePoll.eventClicks++;
+		lastEvent = (int) event.x() + "," + (int) event.y() + " b" + event.button();
+
 		if (Ui.isLeftClick(event)) {
 			if (mouse.claim()) {
 				click(event.x(), event.y());
@@ -421,6 +425,11 @@ public class MenuScreen extends Screen {
 		graphics.disableScissor();
 
 		lastHits = hits;
+
+		// Diagnóstico do clique (versão de teste): eventos recebidos, cliques lidos e posição do mouse.
+		String debug = "clique: eventos " + MousePoll.eventClicks + " (" + lastEvent + ") · lidos " + MousePoll.polledClicks
+				+ " · mouse " + mouseX + "," + mouseY + (MousePoll.isDown() ? " [apertado]" : "") + " · tela " + this.width + "x" + this.height;
+		graphics.text(this.font, debug, (this.width - this.font.width(debug)) / 2, this.height - 12, Ui.argb(170, 0xFFFF55), false);
 
 		if (!hoveredItem.isEmpty()) {
 			graphics.setTooltipForNextFrame(this.font, hoveredItem, mouseX, mouseY);
