@@ -22,6 +22,7 @@ com o `.jar` automaticamente, usando as notas desta página.
 - **Comandos abrem o menu:** `/cronicas`, `/cronicas missoes`, `reputacao`, `guia`, `opcoes` e `/cronicas hud completo|compacto|oculto`.
 
 ### Mudanças
+- **Cada aba com o seu atalho:** teclas **1 a 5** no menu e um botão para cada aba ao lado do inventário. O menu e a conversa com os NPCs soltam o mouse ao abrir, para dar para clicar.
 - O antigo Diário de Missões foi substituído pelo menu novo, com menos texto espalhado e sem o tutorial de como pegar missões.
 
 ## [1.2.0] - 2026-10-16 — Bruxas, barganha e equilíbrio entre herói e vilão

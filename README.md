@@ -245,6 +245,7 @@ Um painel no estilo das telas de servidores modded: título grande no topo, bot�
 - **Guia:** como o mod funciona, todos os comandos e as teclas.
 - **Opções:** o "mod menu" (veja abaixo).
 - O botão lilás **HUD** no canto do painel troca o rastreador de missões.
+- Atalhos: teclas **1 a 5** abrem cada aba direto, **Tab** ou **← →** trocam de aba, e no inventário há um botão para cada aba.
 
 ### Sons e comemorações
 

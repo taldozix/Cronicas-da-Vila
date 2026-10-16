@@ -61,9 +61,9 @@ final class Guide {
 			},
 			{
 					"Teclas",
-					"<y>J</y> — abre e fecha este menu. Também tem o botão <o>✦ Missões</o> no inventário.",
+					"<y>J</y> — abre e fecha este menu. No inventário também há um botão para cada aba (Início, Missões, Reputação, Guia e Opções).",
 					"<y>H</y> — alterna o rastreador: completo, compacto (só os ícones e a porcentagem, na lateral) ou oculto.",
-					"No menu: <y>Tab</y> ou <y>← →</y> trocam de aba; na aba Missões, <y>↑ ↓</y> escolhem e <y>T</y> rastreia no HUD.",
+					"No menu: <y>1</y> a <y>5</y> abrem cada aba direto; <y>Tab</y> ou <y>← →</y> trocam de aba; na aba Missões, <y>↑ ↓</y> escolhem e <y>T</y> rastreia no HUD.",
 					"Na conversa: clique, Enter, Espaço ou E avançam o texto; mouse, setas, W/S ou 1 a 9 escolhem a resposta; Esc sai.",
 					"<d>As teclas podem ser trocadas em Opções → Controles.</d>"
 			}

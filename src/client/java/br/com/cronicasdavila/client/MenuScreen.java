@@ -101,6 +101,11 @@ public class MenuScreen extends Screen {
 
 	@Override
 	protected void init() {
+		// Aberto pela tecla J no meio do jogo, o mouse ainda está "preso" na câmera: solta para dar para clicar.
+		if (this.minecraft != null) {
+			this.minecraft.mouseHandler.releaseMouse();
+		}
+
 		if (!openSoundPlayed) {
 			openSoundPlayed = true;
 			Sfx.open();
@@ -262,6 +267,16 @@ public class MenuScreen extends Screen {
 	@Override
 	public boolean keyPressed(KeyEvent event) {
 		int key = event.key();
+
+		// Teclas 1 a 5 abrem cada aba direto.
+		int[] numbers = {InputConstants.KEY_1, InputConstants.KEY_2, InputConstants.KEY_3, InputConstants.KEY_4, InputConstants.KEY_5};
+
+		for (int i = 0; i < numbers.length; i++) {
+			if (key == numbers[i]) {
+				changeTab(i);
+				return true;
+			}
+		}
 
 		if (key == InputConstants.KEY_TAB || key == InputConstants.KEY_RIGHT) {
 			changeTab((tab + 1) % TAB_KEYS.length);
@@ -448,7 +463,7 @@ public class MenuScreen extends Screen {
 			boolean hovered = hover(x, y, x + SIDE_W, y + BUTTON_H);
 			hoverAnim[i] = approach(hoverAnim[i], hovered ? 1F : 0F, dt);
 			selectAnim[i] = approach(selectAnim[i], !close && i == tab ? 1F : 0F, dt);
-			Ui.animatedButton(graphics, this.font, x, y, x + SIDE_W, y + BUTTON_H, close ? "FECHAR" : TAB_NAMES[i], selectAnim[i], hoverAnim[i]);
+			Ui.animatedButton(graphics, this.font, x, y, x + SIDE_W, y + BUTTON_H, close ? "FECHAR  (Esc)" : (i + 1) + "  " + TAB_NAMES[i], selectAnim[i], hoverAnim[i]);
 			y += BUTTON_H + 6;
 		}
 	}

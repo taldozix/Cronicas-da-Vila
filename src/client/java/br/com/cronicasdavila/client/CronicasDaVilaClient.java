@@ -79,6 +79,17 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 				int y = height / 2 - 83 - 22;
 				Screens.getWidgets(screen).add(Button.builder(Component.literal("§6✦ Missões"),
 						button -> client.gui.setScreen(new MenuScreen(screen, "missoes"))).bounds(x, y, 62, 20).build());
+
+				// Atalhos para cada aba do menu, ao lado do inventário.
+				String[] names = {"Início", "Missões", "Reputação", "Guia", "Opções"};
+				int bx = width / 2 - 88 - 72;
+				int by = height / 2 - 83;
+
+				for (int i = 0; i < names.length; i++) {
+					String tab = MenuScreen.TAB_KEYS[i];
+					Screens.getWidgets(screen).add(Button.builder(Component.literal(names[i]),
+							button -> client.gui.setScreen(new MenuScreen(screen, tab))).bounds(bx, by + i * 22, 68, 20).build());
+				}
 			}
 
 			// Botão "Barganhar" na tela de trocas, para quem tem afinidade alta com a profissão.

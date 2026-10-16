@@ -68,6 +68,14 @@ public class DialogueScreen extends Screen {
 		setNode(node);
 	}
 
+	@Override
+	protected void init() {
+		// Solta o mouse para dar para clicar nas respostas (a câmera continua travada no NPC).
+		if (this.minecraft != null) {
+			this.minecraft.mouseHandler.releaseMouse();
+		}
+	}
+
 	public int entityId() {
 		return entityId;
 	}
