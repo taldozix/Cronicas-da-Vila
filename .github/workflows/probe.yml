@@ -1,0 +1,25 @@
+name: Sondar API
+on:
+  push:
+    branches: [ "probe/**" ]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Sondar
+        run: |
+          chmod +x gradlew
+          ./gradlew compileJava -q > /dev/null 2>&1 || true
+          CP=$(find ~/.gradle .gradle -name "*.jar" 2>/dev/null | grep -i minecraft | grep -v sources | paste -sd:)
+          echo "=== MouseButtonEvent"; javap -c -p -cp "$CP" net.minecraft.client.input.MouseButtonEvent | grep -A12 "public int button()\|public int input()"
+          echo "=== MouseButtonInfo"; javap -p -cp "$CP" net.minecraft.client.input.MouseButtonInfo
+          echo "=== MouseHandler"; javap -c -p -cp "$CP" net.minecraft.client.MouseHandler | grep -n "mouseClicked\|mouseReleased\|Method\|private void onButton\|onPress\|getScaled\|MouseButtonEvent.\"<init>\"" | head -80
+          echo "=== Screen mouse"; javap -c -p -cp "$CP" net.minecraft.client.gui.screens.Screen | grep -n "mouseClicked\|mouseReleased" | head
+          echo "=== AbstractContainerEventHandler"; javap -c -p -cp "$CP" net.minecraft.client.gui.components.events.AbstractContainerEventHandler | grep -B2 -A30 "public boolean mouseClicked" | head -60
+          echo "=== ContainerEventHandler"; javap -c -p -cp "$CP" net.minecraft.client.gui.components.events.ContainerEventHandler | grep -A40 "public boolean mouseClicked" | head -60
