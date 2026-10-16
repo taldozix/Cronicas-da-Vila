@@ -1,0 +1,33 @@
+name: Sondar API
+on:
+  push:
+    branches: [ "probe/**" ]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Sondar
+        run: |
+          chmod +x gradlew
+          ./gradlew compileJava -q > /dev/null 2>&1 || true
+          CP=$(find ~/.gradle .gradle -name "*.jar" 2>/dev/null | grep -i minecraft | grep -v sources | paste -sd:)
+          for J in $(echo $CP | tr ':' ' '); do unzip -l "$J" 2>/dev/null | grep -E "PlayerFace|SkinManager.class|PlayerSkin.class" ; done | sort -u
+          p() { echo "=================== $1 ($2)"; javap -cp "$CP" "$1" 2>&1 | grep -iE "$2" | head -60; }
+          p net.minecraft.client.gui.screens.inventory.InventoryScreen "static"
+          p net.minecraft.server.MinecraftServer "Singleplayer|Owner|isDedicated|isPublished|getPlayerList"
+          p net.minecraft.server.players.PlayerList "isOp|op"
+          p net.minecraft.server.level.ServerPlayer "createCommandSourceStack|permission|nameAndId|getGameProfile"
+          p net.minecraft.world.entity.player.Player "nameAndId|getGameProfile|getName"
+          p net.minecraft.client.gui.components.PlayerFaceRenderer "static"
+          p net.minecraft.client.gui.components.PlayerFaceExtractor "static"
+          p net.minecraft.client.player.AbstractClientPlayer "Skin"
+          p org.joml.Matrix3x2fStack "push|pop"
+          p org.joml.Matrix3x2f "scale\(float, float\)|translate\(float, float\)"
+          p net.minecraft.client.Minecraft "getUser|player|gui"
+          p net.fabricmc.loader.api.FabricLoader "getConfigDir"
