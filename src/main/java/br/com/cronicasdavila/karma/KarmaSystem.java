@@ -199,6 +199,10 @@ public final class KarmaSystem {
 		Rank rank = QuestService.effectiveRank(player, data);
 
 		if (rank.tier() != data.lastAnnouncedRank) {
+			if (rank.tier() > data.lastAnnouncedRank && data.lastAnnouncedRank >= 1) {
+				br.com.cronicasdavila.net.Notify.celebrate(player, "SUBIU DE NÍVEL!", "Agora você é " + rank.displayName(), rank.color());
+			}
+
 			if (rank.tier() > data.lastAnnouncedRank) {
 				br.com.cronicasdavila.net.Notify.send(player, ("<o>★ Novo nível: <b>" + rank.displayName() + "</b>!</o> Missões de nível "
 						+ rank.displayName() + " foram liberadas com os aldeões e shulkers."));

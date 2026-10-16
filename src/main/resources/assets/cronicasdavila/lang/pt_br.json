@@ -3,5 +3,10 @@
 	"key.cronicasdavila.tracker": "Rastreador: completo, compacto ou oculto",
 	"key.categories.cronicasdavila.main": "Crônicas da Vila",
 	"key.category.cronicasdavila.main": "Crônicas da Vila",
-	"effect.cronicasdavila.vilao_da_historia": "Vilão da História"
+	"effect.cronicasdavila.vilao_da_historia": "Vilão da História",
+	"subtitles.cronicasdavila.quest.accept": "Missão aceita",
+	"subtitles.cronicasdavila.quest.ready": "Objetivo cumprido",
+	"subtitles.cronicasdavila.quest.complete": "Missão concluída",
+	"subtitles.cronicasdavila.quest.abandon": "Missão abandonada",
+	"subtitles.cronicasdavila.quest.levelup": "Subiu de nível"
 }

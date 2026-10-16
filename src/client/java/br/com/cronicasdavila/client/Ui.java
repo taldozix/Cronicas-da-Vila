@@ -93,6 +93,33 @@ public final class Ui {
 		g.text(font, label, x1 + (x2 - x1 - w) / 2, y1 + (y2 - y1 - 8) / 2, argb(255, active || hovered ? 0xFFFFFF : 0xC9CDD2), active);
 	}
 
+	/** Texto ampliado com transparência (cores já em ARGB). */
+	public static void bigTextArgb(GuiGraphicsExtractor g, Font font, String text, int x, int y, float scale, int argbColor, int argbShadow) {
+		g.pose().pushMatrix();
+		g.pose().scale(scale, scale);
+		int sx = Math.round(x / scale);
+		int sy = Math.round(y / scale);
+		g.text(font, text, sx + 1, sy + 1, argbShadow, false);
+		g.text(font, text, sx, sy, argbColor, false);
+		g.pose().popMatrix();
+	}
+
+	/** Passa um pouco do ponto e volta (efeito de "pulo"). */
+	public static float easeOutBack(float t) {
+		t = Math.max(0F, Math.min(1F, t));
+		float c1 = 1.70158F;
+		float c3 = c1 + 1F;
+		return 1F + c3 * (float) Math.pow(t - 1F, 3) + c1 * (float) Math.pow(t - 1F, 2);
+	}
+
+	/** Escurece uma cor RGB (para sombras). */
+	public static int darker(int rgb, float factor) {
+		int r = (int) (((rgb >> 16) & 0xFF) * factor);
+		int gr = (int) (((rgb >> 8) & 0xFF) * factor);
+		int b = (int) ((rgb & 0xFF) * factor);
+		return (r << 16) | (gr << 8) | b;
+	}
+
 	/** Texto ampliado (o título grande do menu). */
 	public static void bigText(GuiGraphicsExtractor g, Font font, String text, int x, int y, float scale, int color, int shadowColor) {
 		g.pose().pushMatrix();

@@ -1,0 +1,55 @@
+{
+	"ui.typing": {
+		"sounds": [
+			"cronicasdavila:ui/typing1",
+			"cronicasdavila:ui/typing2",
+			"cronicasdavila:ui/typing3",
+			"cronicasdavila:ui/typing4"
+		]
+	},
+	"ui.select": {
+		"sounds": [
+			"cronicasdavila:ui/select"
+		]
+	},
+	"ui.open": {
+		"sounds": [
+			"cronicasdavila:ui/open"
+		]
+	},
+	"ui.hud": {
+		"sounds": [
+			"cronicasdavila:ui/hud"
+		]
+	},
+	"quest.accept": {
+		"subtitle": "subtitles.cronicasdavila.quest.accept",
+		"sounds": [
+			"cronicasdavila:quest/accept"
+		]
+	},
+	"quest.ready": {
+		"subtitle": "subtitles.cronicasdavila.quest.ready",
+		"sounds": [
+			"cronicasdavila:quest/ready"
+		]
+	},
+	"quest.complete": {
+		"subtitle": "subtitles.cronicasdavila.quest.complete",
+		"sounds": [
+			"cronicasdavila:quest/complete"
+		]
+	},
+	"quest.abandon": {
+		"subtitle": "subtitles.cronicasdavila.quest.abandon",
+		"sounds": [
+			"cronicasdavila:quest/abandon"
+		]
+	},
+	"quest.levelup": {
+		"subtitle": "subtitles.cronicasdavila.quest.levelup",
+		"sounds": [
+			"cronicasdavila:quest/levelup"
+		]
+	}
+}

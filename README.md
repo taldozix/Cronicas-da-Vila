@@ -246,6 +246,12 @@ Um painel no estilo das telas de servidores modded: título grande no topo, bot�
 - **Opções:** o "mod menu" (veja abaixo).
 - O botão lilás **HUD** no canto do painel troca o rastreador de missões.
 
+### Sons e comemorações
+
+- O mod tem sons próprios: a "voz" das letras quando os NPCs falam (crianças mais agudas, piglins e shulkers mais graves), cliques do menu, missão aceita, objetivo cumprido, missão concluída, missão abandonada e a fanfarra de subir de nível.
+- Ao subir de nível, de afinidade ou de Vilania, e ao virar Mestre ou Arquivilão, aparece uma comemoração animada no meio da tela.
+- Os sons podem ser desligados em **Opções → Sua tela**.
+
 ### Rastreador de missões
 
 - **Completo:** um painel com a missão rastreada (ícone, objetivo e barra).
@@ -255,7 +261,7 @@ Um painel no estilo das telas de servidores modded: título grande no topo, bot�
 
 ### Opções
 
-**Sua tela** (só no seu computador): modo e lado do rastreador e avisos na tela.
+**Sua tela** (só no seu computador): modo e lado do rastreador, sons do mod e avisos na tela.
 
 **Mundo** (só o dono do mundo ou um operador muda; vale para todos):
 

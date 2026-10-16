@@ -3,5 +3,10 @@
 	"key.cronicasdavila.tracker": "Quest tracker: full, compact or hidden",
 	"key.categories.cronicasdavila.main": "Village Chronicles",
 	"key.category.cronicasdavila.main": "Village Chronicles",
-	"effect.cronicasdavila.vilao_da_historia": "Villain of the Story"
+	"effect.cronicasdavila.vilao_da_historia": "Villain of the Story",
+	"subtitles.cronicasdavila.quest.accept": "Quest accepted",
+	"subtitles.cronicasdavila.quest.ready": "Objective done",
+	"subtitles.cronicasdavila.quest.complete": "Quest complete",
+	"subtitles.cronicasdavila.quest.abandon": "Quest abandoned",
+	"subtitles.cronicasdavila.quest.levelup": "Level up"
 }

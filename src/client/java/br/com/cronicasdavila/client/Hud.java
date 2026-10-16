@@ -1,6 +1,8 @@
 package br.com.cronicasdavila.client;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 import com.google.gson.JsonObject;
@@ -153,6 +155,101 @@ final class Hud {
 			String text = done ? "✔" : percent + "%";
 			int tx = right ? x - 3 - client.font.width(text) : x + box + 3;
 			graphics.text(client.font, text, tx, by + 7, Ui.argb(255, done ? Ui.GOOD : 0xFFFFFF), true);
+		}
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Comemoração ao subir de nível
+	// ---------------------------------------------------------------------------------------------
+
+	private record Celebration(String title, String subtitle, int color) {
+	}
+
+	private static final Deque<Celebration> CELEBRATIONS = new ArrayDeque<>();
+	private static final float CELEBRATION_SECONDS = 3.8F;
+	private static Celebration current;
+	private static long currentStart;
+
+	static void celebrate(String title, String subtitle, int color) {
+		if (CELEBRATIONS.size() < 6) {
+			CELEBRATIONS.add(new Celebration(title, subtitle, color));
+		}
+	}
+
+	/**
+	 * Faixa no meio da tela: abre do centro para os lados, o título "salta" para dentro,
+	 * um brilho passa por cima e faíscas giram em volta. Uma comemoração por vez.
+	 */
+	static void drawCelebration(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker) {
+		Minecraft client = Minecraft.getInstance();
+		long now = System.currentTimeMillis();
+
+		if (current == null) {
+			current = CELEBRATIONS.poll();
+
+			if (current == null || client.player == null) {
+				current = null;
+				return;
+			}
+
+			currentStart = now;
+			Sfx.byId("quest.levelup");
+		}
+
+		float t = (now - currentStart) / 1000F;
+
+		if (t > CELEBRATION_SECONDS) {
+			current = null;
+			return;
+		}
+
+		float fade = t > CELEBRATION_SECONDS - 0.6F ? (CELEBRATION_SECONDS - t) / 0.6F : Math.min(1F, t / 0.15F);
+		fade = Math.max(0.04F, fade);
+		int screenW = client.getWindow().getGuiScaledWidth();
+		int screenH = client.getWindow().getGuiScaledHeight();
+		int cx = screenW / 2;
+		int cy = (int) (screenH * 0.30);
+		int color = current.color();
+
+		// Faixa que abre do centro
+		int half = (int) (Math.min(220, screenW * 0.36F) * Ui.ease(t / 0.35F));
+		graphics.fill(cx - half, cy - 22, cx + half, cy + 26, Ui.argb((int) (175 * fade), Ui.PANEL));
+		graphics.fill(cx - half, cy - 22, cx + half, cy - 21, Ui.argb((int) (255 * fade), color));
+		graphics.fill(cx - half, cy + 25, cx + half, cy + 26, Ui.argb((int) (255 * fade), color));
+
+		// Brilho passando por cima
+		if (t > 0.3F && t < 1.2F && half > 20) {
+			int sweep = cx - half + (int) (2 * half * ((t - 0.3F) / 0.9F));
+			graphics.fill(Math.max(cx - half, sweep - 10), cy - 21, Math.min(cx + half, sweep + 10), cy + 25, Ui.argb((int) (55 * fade), 0xFFFFFF));
+		}
+
+		// Título com "pulo"
+		float scale = 2.4F * Math.max(0.2F, Ui.easeOutBack(t / 0.45F));
+		int titleW = (int) (client.font.width(current.title()) * scale);
+		Ui.bigTextArgb(graphics, client.font, current.title(), cx - titleW / 2, cy - 4 - (int) (9 * scale / 2) - 4, scale,
+				Ui.argb((int) (255 * fade), color), Ui.argb((int) (255 * fade), Ui.darker(color, 0.35F)));
+
+		// Estrelas dos lados
+		int bob = (int) (Math.sin(t * 6) * 2);
+		int starX = Math.max(titleW / 2 + 12, 40);
+		graphics.text(client.font, "★", cx - starX - 6, cy - 9 + bob, Ui.argb((int) (255 * fade), color), true);
+		graphics.text(client.font, "★", cx + starX, cy - 9 - bob, Ui.argb((int) (255 * fade), color), true);
+
+		// Subtítulo
+		if (t > 0.25F) {
+			float subFade = fade * Math.min(1F, (t - 0.25F) / 0.3F);
+			int subW = client.font.width(current.subtitle());
+			graphics.text(client.font, current.subtitle(), cx - subW / 2, cy + 12, Ui.argb((int) (255 * Math.max(0.04F, subFade)), 0xFFFFFF), true);
+		}
+
+		// Faíscas girando em volta
+		for (int i = 0; i < 14; i++) {
+			double angle = i * (Math.PI * 2 / 14) + t * 1.3;
+			double radius = 30 + 90 * Ui.ease(t / 0.8F);
+			int px = cx + (int) (Math.cos(angle) * radius * 1.9);
+			int py = cy + 2 + (int) (Math.sin(angle) * radius * 0.45) - (int) (t * 6);
+			int size = i % 3 == 0 ? 2 : 1;
+			graphics.fill(px, py, px + size, py + size, Ui.argb((int) (220 * fade), i % 2 == 0 ? color : 0xFFFFFF));
 		}
 	}
 

@@ -593,7 +593,7 @@ public final class QuestService {
 				changed = true;
 				br.com.cronicasdavila.net.Notify.send(player, ("<g>✔ Objetivo cumprido:</g> <y>" + quest.title + "</y>. Volte e fale com <a>"
 						+ active.giverName + "</a> (" + Professions.displayName(quest.profession) + ") para receber a recompensa."));
-				player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.6F, 1.4F);
+				br.com.cronicasdavila.net.Notify.sound(player, "quest.ready");
 			} else if (!complete && active.notified && quest.objective.isDeliver()) {
 				// Itens saíram do inventário: volta a mostrar como pendente.
 				active.notified = false;
@@ -641,6 +641,8 @@ public final class QuestService {
 		}
 
 		List<String> lines = new ArrayList<>();
+		// Comemorações na tela (subir de nível, afinidade, Mestre...): título, subtítulo e cor.
+		List<String[]> celebrations = new ArrayList<>();
 		boolean repeat = active.repeat;
 		data.active.remove(profession);
 
@@ -686,8 +688,11 @@ public final class QuestService {
 
 					if (data.tierCompletions[quest.tier] >= questRank.questsToPromote()) {
 						data.questRank = questRank.next().tier();
+						// A comemoração já sai aqui; o aviso de "novo nível" pela XP não precisa repetir.
+						data.lastAnnouncedRank = Math.max(data.lastAnnouncedRank, effectiveRank(player, data).tier());
 						lines.add("<o>★ Você subiu de nível pelas missões! Agora você é " + questRank.next().displayName()
 								+ ".</o> Esse nível é seu para sempre, mesmo se perder XP.");
+						celebrations.add(new String[] {"SUBIU DE NÍVEL!", "Agora você é " + questRank.next().displayName(), String.valueOf(0xFFD36B)});
 					}
 				}
 			} else if (faction == Professions.Faction.VILLAIN) {
@@ -700,6 +705,7 @@ public final class QuestService {
 						data.villainRank = villainRank.next().tier();
 						lines.add("<r>☠ Sua Vilania cresceu! Agora você é <b>" + villainRank.next().displayName()
 								+ "</b>.</r> <d>Os inimigos das vilas confiam missões piores a você.</d>");
+						celebrations.add(new String[] {"VILANIA AUMENTOU!", "Agora você é " + villainRank.next().displayName(), String.valueOf(0xE05A5A)});
 					}
 				}
 			}
@@ -713,6 +719,9 @@ public final class QuestService {
 				lines.add(faction == Professions.Faction.VILLAIN
 						? "<r>☠ " + capitalize(withArticle(profession)) + " te reconhecem como <b>Arquivilão</b>!</r>"
 						: "<o>★ Você é MESTRE entre " + withArticle(profession) + "!</o>");
+				celebrations.add(faction == Professions.Faction.VILLAIN
+						? new String[] {"ARQUIVILÃO!", capitalize(withArticle(profession)) + " te temem", String.valueOf(0xE05A5A)}
+						: new String[] {"MESTRE!", "Você domina a arte " + (profession.equals(Professions.WITCH) ? "das " : "dos ") + plural(profession), String.valueOf(0xFFAA00)});
 			} else if (quest.tier == prof.level && prof.level < 5) {
 				prof.doneAtLevel++;
 
@@ -721,12 +730,19 @@ public final class QuestService {
 					prof.doneAtLevel = 0;
 					lines.add("<g>▲ Sua afinidade com " + withArticle(profession) + " subiu para <o>"
 							+ Professions.levelName(profession, prof.level) + "</o>!</g> Missões mais difíceis (e melhores) foram liberadas.");
+					celebrations.add(new String[] {"AFINIDADE!", capitalize(plural(profession)) + ": " + Professions.levelName(profession, prof.level),
+							String.valueOf(faction == Professions.Faction.VILLAIN ? 0xE05A5A : 0x5EC4D1)});
 				}
 			}
 		}
 
-		ServerLevel level = (ServerLevel) player.level();
-		level.playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8F, 1.0F);
+		// Som da missão concluída e, se subiu algum nível, a comemoração na tela (com a fanfarra).
+		br.com.cronicasdavila.net.Notify.sound(player, "quest.complete");
+
+		for (String[] celebration : celebrations) {
+			br.com.cronicasdavila.net.Notify.celebrate(player, celebration[0], celebration[1], Integer.parseInt(celebration[2]));
+		}
+
 		PlayerDataManager.save(player);
 		return lines;
 	}
@@ -775,6 +791,7 @@ public final class QuestService {
 	public static void abandon(ServerPlayer player, PlayerData data, String profession) {
 		if (data.active.remove(profession) != null) {
 			data.addKarma(abandonKarma(profession));
+			br.com.cronicasdavila.net.Notify.sound(player, "quest.abandon");
 
 			if (profession.equals(data.tracked)) {
 				data.tracked = data.active.isEmpty() ? null : data.active.keySet().iterator().next();

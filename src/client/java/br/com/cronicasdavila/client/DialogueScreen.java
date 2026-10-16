@@ -106,8 +106,12 @@ public class DialogueScreen extends Screen {
 		showPage(0);
 	}
 
+	/** Quantas letras já "fizeram barulho" nesta página (som de escrita). */
+	private int typedChars;
+
 	private void showPage(int index) {
 		this.pageIndex = index;
+		this.typedChars = 0;
 		this.segments = Text.segments(pages.get(index));
 		this.pageLength = Text.visibleLength(segments);
 		this.pageStart = System.currentTimeMillis();
@@ -165,6 +169,7 @@ public class DialogueScreen extends Screen {
 		}
 
 		waitingServer = true;
+		Sfx.select();
 		ClientPlayNetworking.send(new ModPayloads.ActionPayload("choice:" + choices.get(index).id()));
 	}
 
@@ -173,7 +178,12 @@ public class DialogueScreen extends Screen {
 			return;
 		}
 
+		int before = selected;
 		selected = Math.floorMod(selected + delta, choices.size());
+
+		if (selected != before) {
+			Sfx.play(br.com.cronicasdavila.sound.ModSounds.SELECT, 1.25F, 0.3F);
+		}
 	}
 
 	@Override
@@ -377,8 +387,15 @@ public class DialogueScreen extends Screen {
 			graphics.text(this.font, subtitle, boxX + 22 + nameWidth, boxY + slide + 8, Ui.argb((int) (150 * fade), 0xBBBBBB), false);
 		}
 
-		// Texto com efeito de máquina de escrever
-		List<FormattedCharSequence> lines = wrapped(visibleChars());
+		// Texto com efeito de máquina de escrever (e o "blip" da voz de cada NPC)
+		int visible = visibleChars();
+
+		if (visible > typedChars && visible < pageLength) {
+			Sfx.typing(kind, subtitle.startsWith("Criança"));
+		}
+
+		typedChars = visible;
+		List<FormattedCharSequence> lines = wrapped(visible);
 		int textY = boxY + slide + 22;
 
 		for (FormattedCharSequence line : lines) {

@@ -788,6 +788,7 @@ public final class DialogueManager {
 		QuestService.Offer offer = session.pendingOffer;
 		Quest quest = offer.quest();
 		QuestService.accept(session.player, PlayerDataManager.get(session.player), offer, session.npc, session.npcName);
+		br.com.cronicasdavila.net.Notify.sound(session.player, "quest.accept");
 		session.pendingOffer = null;
 		speak(session, SoundEvents.VILLAGER_YES, SoundEvents.PIGLIN_ADMIRING_ITEM);
 

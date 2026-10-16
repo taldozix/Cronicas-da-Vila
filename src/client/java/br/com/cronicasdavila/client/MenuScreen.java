@@ -97,6 +97,16 @@ public class MenuScreen extends Screen {
 		}
 	}
 
+	private boolean openSoundPlayed;
+
+	@Override
+	protected void init() {
+		if (!openSoundPlayed) {
+			openSoundPlayed = true;
+			Sfx.open();
+		}
+	}
+
 	@Override
 	public boolean isPauseScreen() {
 		return false;
@@ -211,6 +221,7 @@ public class MenuScreen extends Screen {
 
 		if (x >= hudRight - hudW && x < hudRight && y >= contentTop() - 18 && y < contentTop()) {
 			ClientConfig.cycleTrackerMode();
+			Sfx.hud();
 			return true;
 		}
 
@@ -219,6 +230,7 @@ public class MenuScreen extends Screen {
 
 		for (int i = snapshot.size() - 1; i >= 0; i--) {
 			if (snapshot.get(i).contains(x, y)) {
+				Sfx.select();
 				snapshot.get(i).action().run();
 				return true;
 			}
@@ -265,11 +277,13 @@ public class MenuScreen extends Screen {
 
 		if (tab == 1 && !quests.isEmpty()) {
 			if (key == InputConstants.KEY_UP || key == InputConstants.KEY_W) {
+				Sfx.select();
 				selectQuest(Math.floorMod(selectedQuest - 1, quests.size()));
 				return true;
 			}
 
 			if (key == InputConstants.KEY_DOWN || key == InputConstants.KEY_S) {
+				Sfx.select();
 				selectQuest(Math.floorMod(selectedQuest + 1, quests.size()));
 				return true;
 			}
@@ -290,6 +304,7 @@ public class MenuScreen extends Screen {
 
 	private void changeTab(int index) {
 		if (index != tab) {
+			Sfx.select();
 			tabDirection = index > tab ? 1 : -1;
 			tabChangedAt = System.currentTimeMillis();
 		}
@@ -985,6 +1000,12 @@ public class MenuScreen extends Screen {
 				new String[] {"Esquerda", "Direita"}, ClientConfig.trackerOnRight() ? 1 : 0, index -> {
 					if ((index == 1) != ClientConfig.trackerOnRight()) {
 						ClientConfig.toggleTrackerSide();
+					}
+				});
+		y = choiceRow(graphics, x1, x2, y, top, bottom, "Sons do mod", "Escrita dos NPCs, cliques do menu, missões e a fanfarra de subir de nível.",
+				new String[] {"Ligado", "Desligado"}, ClientConfig.sounds() ? 0 : 1, index -> {
+					if ((index == 0) != ClientConfig.sounds()) {
+						ClientConfig.toggleSounds();
 					}
 				});
 		y = choiceRow(graphics, x1, x2, y, top, bottom, "Avisos na tela", "Os avisos do mod aparecem por alguns segundos no canto da tela.",

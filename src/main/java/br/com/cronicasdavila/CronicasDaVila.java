@@ -61,6 +61,7 @@ public class CronicasDaVila implements ModInitializer {
 		PlayerDataManager.init();
 		DialogueManager.init();
 		ModEffects.init();
+		br.com.cronicasdavila.sound.ModSounds.init();
 		ModPayloads.register();
 		QuestRegistry.load();
 

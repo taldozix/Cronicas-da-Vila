@@ -63,6 +63,7 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 			while (trackerKey.consumeClick()) {
 				if (client.player != null) {
 					ClientConfig.cycleTrackerMode();
+					Sfx.hud();
 				}
 			}
 		});
@@ -106,6 +107,7 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		// Rastreador de missão (completo ou compacto) e os avisos do mod, no lugar do chat.
 		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("quest_tracker"), Hud::drawTracker);
 		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("notices"), Hud::drawNotices);
+		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("celebration"), Hud::drawCelebration);
 	}
 
 	public static boolean isJournalKey(int key) {
@@ -120,6 +122,16 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 
 		if (type.equals("trade_context")) {
 			ClientState.setTradeContext(node);
+			return;
+		}
+
+		if (type.equals("sound")) {
+			Sfx.byId(node.get("id").getAsString());
+			return;
+		}
+
+		if (type.equals("celebrate")) {
+			Hud.celebrate(node.get("title").getAsString(), node.get("subtitle").getAsString(), node.get("color").getAsInt());
 			return;
 		}
 

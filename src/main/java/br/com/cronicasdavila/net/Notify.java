@@ -29,6 +29,24 @@ public final class Notify {
 		ServerPlayNetworking.send(player, new ModPayloads.DialoguePayload(json.toString()));
 	}
 
+	/** Toca um som do mod só para esse jogador ("quest.complete", "quest.levelup"...). */
+	public static void sound(ServerPlayer player, String sound) {
+		JsonObject json = new JsonObject();
+		json.addProperty("type", "sound");
+		json.addProperty("id", sound);
+		ServerPlayNetworking.send(player, new ModPayloads.DialoguePayload(json.toString()));
+	}
+
+	/** Comemoração na tela (subir de nível, afinidade, Vilania...), com o som de subir de nível. */
+	public static void celebrate(ServerPlayer player, String title, String subtitle, int color) {
+		JsonObject json = new JsonObject();
+		json.addProperty("type", "celebrate");
+		json.addProperty("title", title);
+		json.addProperty("subtitle", subtitle);
+		json.addProperty("color", color);
+		ServerPlayNetworking.send(player, new ModPayloads.DialoguePayload(json.toString()));
+	}
+
 	/** Muda o modo do rastreador de missões no HUD do jogador ("completo", "compacto", "oculto"). */
 	public static void hudMode(ServerPlayer player, String mode) {
 		JsonObject json = new JsonObject();

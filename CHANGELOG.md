@@ -17,6 +17,8 @@ com o `.jar` automaticamente, usando as notas desta página.
 - **Rastreador compacto:** só os ícones das missões e a porcentagem na lateral da tela, como no Pixelmon. Tecla **H** alterna entre completo, compacto e oculto.
 - **Nada no chat:** os avisos do mod e o resultado dos comandos aparecem por alguns segundos no canto da tela.
 - **Animações:** o menu abre com os botões deslizando da esquerda e o painel da direita; o destaque dos botões desliza ao passar o mouse; o conteúdo desliza ao trocar de aba; o rastreador de missões e os avisos entram e saem deslizando pela lateral.
+- **Sons próprios do mod:** a "voz" das letras quando os NPCs falam (cada tipo com um tom), cliques do menu, deslize ao abrir o menu e ao trocar o HUD, missão aceita, objetivo cumprido, missão concluída, missão abandonada e a fanfarra de subir de nível. Dá para desligar em Opções.
+- **Comemoração na tela** ao subir de nível, de afinidade ou de Vilania e ao virar Mestre/Arquivilão: uma faixa animada com o título, estrelas e faíscas.
 - **Comandos abrem o menu:** `/cronicas`, `/cronicas missoes`, `reputacao`, `guia`, `opcoes` e `/cronicas hud completo|compacto|oculto`.
 
 ### Mudanças

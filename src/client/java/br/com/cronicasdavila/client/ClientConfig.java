@@ -27,6 +27,8 @@ public final class ClientConfig {
 		String trackerSide = "esquerda";
 		/** Mostrar os avisos do mod na tela. */
 		boolean notices = true;
+		/** Sons do mod (escrita, menu, missões, subir de nível). */
+		boolean sounds = true;
 	}
 
 	private static Values values = new Values();
@@ -118,6 +120,15 @@ public final class ClientConfig {
 
 	public static void toggleTrackerSide() {
 		values.trackerSide = trackerOnRight() ? "esquerda" : "direita";
+		save();
+	}
+
+	public static boolean sounds() {
+		return values.sounds;
+	}
+
+	public static void toggleSounds() {
+		values.sounds = !values.sounds;
 		save();
 	}
 
