@@ -37,7 +37,8 @@ public final class Ui {
 	 * então usamos a constante do próprio Minecraft.
 	 */
 	public static boolean isLeftClick(net.minecraft.client.input.MouseButtonEvent event) {
-		return event.button() == com.mojang.blaze3d.platform.InputConstants.MOUSE_BUTTON_LEFT;
+		// No 26.3 o esquerdo chega como 1 (o direito e o do meio têm outros números).
+		return event.button() == com.mojang.blaze3d.platform.InputConstants.MOUSE_BUTTON_LEFT || event.button() == 1;
 	}
 
 	/** Painel chapado e escuro, sem bordas (como na tela de referência). */
