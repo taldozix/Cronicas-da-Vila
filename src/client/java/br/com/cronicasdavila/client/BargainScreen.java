@@ -38,7 +38,8 @@ public class BargainScreen extends Screen {
 	private int selectedSlot = -1;
 	private int scroll;
 	private boolean waiting;
-	private Button tryButton;
+	private final MousePoll mouse = new MousePoll();
+	private boolean canTry;
 
 	public BargainScreen(JsonObject node) {
 		super(Component.literal("Barganha"));
@@ -106,12 +107,26 @@ public class BargainScreen extends Screen {
 
 	@Override
 	protected void init() {
-		tryButton = addRenderableWidget(Button.builder(Component.literal("§e⚖ Tentar barganha"), button -> attempt())
-				.bounds(x0() + W - 8 - 130, y0() + H - 26, 130, 20).build());
-		addRenderableWidget(Button.builder(Component.literal("Voltar às trocas"), button -> {
-			ClientPlayNetworking.send(new ModPayloads.ActionPayload("bargain_back"));
-			onClose();
-		}).bounds(x0() + 8, y0() + H - 26, 110, 20).build());
+		if (this.minecraft != null) {
+			this.minecraft.mouseHandler.releaseMouse();
+		}
+	}
+
+	private int tryX1() {
+		return x0() + W - 8 - 130;
+	}
+
+	private int backX2() {
+		return x0() + 8 + 110;
+	}
+
+	private int buttonsY() {
+		return y0() + H - 26;
+	}
+
+	private void goBack() {
+		ClientPlayNetworking.send(new ModPayloads.ActionPayload("bargain_back"));
+		onClose();
 	}
 
 	private void attempt() {
@@ -205,24 +220,50 @@ public class BargainScreen extends Screen {
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
 		if (Ui.isLeftClick(event)) {
-			int mouseX = (int) event.x();
-			int mouseY = (int) event.y();
-			int offer = offerAt(mouseX, mouseY);
-
-			if (offer >= 0) {
-				selectedOffer = offer;
-				return true;
+			if (mouse.claim()) {
+				click((int) event.x(), (int) event.y());
 			}
 
-			int slot = slotAt(mouseX, mouseY);
-
-			if (slot >= 0) {
-				selectedSlot = inventoryItem(slot).isEmpty() ? -1 : slot;
-				return true;
-			}
+			return true;
 		}
 
 		return super.mouseClicked(event, doubleClick);
+	}
+
+	private void click(int mouseX, int mouseY) {
+		int by = buttonsY();
+
+		if (mouseY >= by && mouseY < by + 20) {
+			if (mouseX >= tryX1() && mouseX < tryX1() + 130) {
+				if (canTry) {
+					Sfx.select();
+					attempt();
+				}
+
+				return;
+			}
+
+			if (mouseX >= x0() + 8 && mouseX < backX2()) {
+				Sfx.select();
+				goBack();
+				return;
+			}
+		}
+
+		int offer = offerAt(mouseX, mouseY);
+
+		if (offer >= 0) {
+			Sfx.select();
+			selectedOffer = offer;
+			return;
+		}
+
+		int slot = slotAt(mouseX, mouseY);
+
+		if (slot >= 0) {
+			Sfx.select();
+			selectedSlot = inventoryItem(slot).isEmpty() ? -1 : slot;
+		}
 	}
 
 	@Override
@@ -246,8 +287,21 @@ public class BargainScreen extends Screen {
 	public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
 		boolean refused = node.has("refused") && node.get("refused").getAsBoolean();
 		int chance = chance();
-		tryButton.active = !waiting && !refused && chance >= 0 && selectedOffer >= 0 && !offers.get(selectedOffer).get("out").getAsBoolean();
+		canTry = !waiting && !refused && chance >= 0 && selectedOffer >= 0 && !offers.get(selectedOffer).get("out").getAsBoolean();
 		super.extractRenderState(graphics, mouseX, mouseY, delta);
+
+		// Clique lido direto do mouse (funciona mesmo se o evento do jogo não chegar).
+		if (mouse.pressed() && mouse.claim()) {
+			click(mouseX, mouseY);
+		}
+
+		// Botões
+		int by = buttonsY();
+		boolean tryHover = mouseX >= tryX1() && mouseX < tryX1() + 130 && mouseY >= by && mouseY < by + 20;
+		boolean backHover = mouseX >= x0() + 8 && mouseX < backX2() && mouseY >= by && mouseY < by + 20;
+		Ui.smallButton(graphics, this.font, tryX1(), by, tryX1() + 130, by + 20, canTry ? "⚖ TENTAR BARGANHA" : "ESCOLHA TROCA E ITEM",
+				Ui.CYAN, canTry && tryHover, canTry && tryHover);
+		Ui.smallButton(graphics, this.font, x0() + 8, by, backX2(), by + 20, "VOLTAR ÀS TROCAS", Ui.CYAN, false, backHover);
 
 		int x0 = x0();
 		int y0 = y0();

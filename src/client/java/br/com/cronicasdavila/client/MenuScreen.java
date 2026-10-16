@@ -56,7 +56,6 @@ public class MenuScreen extends Screen {
 	private List<Hit> hits = new ArrayList<>();
 	/** As áreas do último quadro completo (o clique usa esta cópia, que nunca está pela metade). */
 	private volatile List<Hit> lastHits = List.of();
-	private boolean clickHandled;
 	private final int[] scroll = new int[TAB_KEYS.length];
 	private final int[] contentHeight = new int[TAB_KEYS.length];
 	private int tab;
@@ -172,28 +171,19 @@ public class MenuScreen extends Screen {
 	// Entrada
 	// ---------------------------------------------------------------------------------------------
 
+	private final MousePoll mouse = new MousePoll();
+
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
 		if (Ui.isLeftClick(event)) {
-			clickHandled = true;
-
-			if (click(event.x(), event.y())) {
-				return true;
+			if (mouse.claim()) {
+				click(event.x(), event.y());
 			}
+
+			return true;
 		}
 
 		return super.mouseClicked(event, doubleClick);
-	}
-
-	/** Reserva: se o clique não chegou, o soltar do botão faz a ação. */
-	@Override
-	public boolean mouseReleased(MouseButtonEvent event) {
-		if (Ui.isLeftClick(event) && !clickHandled) {
-			click(event.x(), event.y());
-		}
-
-		clickHandled = false;
-		return super.mouseReleased(event);
 	}
 
 	private boolean click(double x, double y) {
@@ -388,6 +378,12 @@ public class MenuScreen extends Screen {
 		super.extractRenderState(graphics, mouseX, mouseY, delta);
 		this.mouseX = mouseX;
 		this.mouseY = mouseY;
+
+		// Clique lido direto do mouse (funciona mesmo se o evento do jogo não chegar).
+		if (mouse.pressed() && mouse.claim()) {
+			click(mouseX, mouseY);
+		}
+
 		this.hits = new ArrayList<>();
 		this.hoveredItem = ItemStack.EMPTY;
 		this.hoveredText = null;

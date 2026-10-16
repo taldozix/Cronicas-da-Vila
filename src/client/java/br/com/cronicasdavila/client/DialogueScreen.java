@@ -253,25 +253,31 @@ public class DialogueScreen extends Screen {
 		return super.keyPressed(event);
 	}
 
+	private final MousePoll mouse = new MousePoll();
+
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-		if (!Ui.isLeftClick(event)) {
-			return true;
+		if (Ui.isLeftClick(event) && mouse.claim()) {
+			click((int) event.x(), (int) event.y());
 		}
 
+		return true;
+	}
+
+	/** Clique: escolhe a resposta embaixo do mouse ou avança o texto. */
+	private void click(int x, int y) {
 		if (choicesVisible()) {
-			int index = choiceAt((int) event.x(), (int) event.y());
+			int index = choiceAt(x, y);
 
 			if (index >= 0) {
 				selected = index;
 				confirm(index);
 			}
 
-			return true;
+			return;
 		}
 
 		advance();
-		return true;
 	}
 
 	@Override
@@ -367,6 +373,11 @@ public class DialogueScreen extends Screen {
 	public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
 		lockCamera();
 		super.extractRenderState(graphics, mouseX, mouseY, delta);
+
+		// Clique lido direto do mouse (funciona mesmo se o evento do jogo não chegar).
+		if (mouse.pressed() && mouse.claim()) {
+			click(mouseX, mouseY);
+		}
 
 		float fade = Ui.ease((System.currentTimeMillis() - openedAt) / 250F);
 		int boxX = boxX();
