@@ -1,9 +1,15 @@
 name: Compilar mod
 
+# Compila a cada envio. No branch main, se a versão do gradle.properties ainda não
+# tiver uma release, publica automaticamente a release "vX.Y.Z" com o .jar do mod.
+
 on:
   push:
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -25,8 +31,50 @@ jobs:
           chmod +x gradlew
           ./gradlew build --stacktrace
 
+      - name: Ler a versão do mod
+        id: versao
+        run: echo "versao=$(grep '^version=' gradle.properties | cut -d= -f2 | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+
       - name: Enviar o .jar
         uses: actions/upload-artifact@v4
         with:
-          name: cronicas-da-vila
-          path: build/libs/*.jar
+          name: cronicas-da-vila-${{ steps.versao.outputs.versao }}
+          path: build/libs/cronicas-da-vila-${{ steps.versao.outputs.versao }}.jar
+
+      - name: Ver se essa versão já foi lançada
+        id: release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if git ls-remote --exit-code --tags origin "refs/tags/v${{ steps.versao.outputs.versao }}" > /dev/null; then
+            echo "nova=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "nova=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Montar as notas da release
+        if: steps.release.outputs.nova == 'true'
+        run: |
+          VERSAO="${{ steps.versao.outputs.versao }}"
+          # Pega a seção "## [VERSAO]" do CHANGELOG.md, até a próxima versão.
+          awk -v v="## [$VERSAO]" 'index($0, v) == 1 {found=1; next} found && /^## \[/ {exit} found {print}' CHANGELOG.md > notas.md
+          cat >> notas.md <<'TXT'
+
+          ---
+
+          ### Como instalar
+          1. Instale o [Fabric Loader](https://fabricmc.net/use/) para o **Minecraft Java 26.3**.
+          2. Baixe a [Fabric API](https://modrinth.com/mod/fabric-api) para a 26.3.
+          3. Coloque a Fabric API e o arquivo **cronicas-da-vila-*.jar** abaixo na pasta `.minecraft/mods`.
+          4. Abra o jogo com o perfil do Fabric e clique com o botão direito em um aldeão!
+          TXT
+
+      - name: Publicar a release
+        if: steps.release.outputs.nova == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.versao.outputs.versao }}
+          target_commitish: ${{ github.sha }}
+          name: Crônicas da Vila ${{ steps.versao.outputs.versao }}
+          body_path: notas.md
+          files: build/libs/cronicas-da-vila-${{ steps.versao.outputs.versao }}.jar
+          make_latest: true

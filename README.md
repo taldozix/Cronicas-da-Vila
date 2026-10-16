@@ -35,7 +35,7 @@ Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões e os pigli
    ```bash
    ./gradlew build        # no Windows: gradlew.bat build
    ```
-3. O mod fica em `build/libs/cronicas-da-vila-1.1.0.jar`.
+3. O mod fica em `build/libs/cronicas-da-vila-1.1.0.jar`. Se preferir não compilar, baixe o `.jar` pronto na página de [Releases](https://github.com/taldozix/Cronicas-da-Vila/releases).
 4. Instale o [Fabric Loader](https://fabricmc.net/use/) para a versão 26.3 e coloque na pasta `.minecraft/mods` o `.jar` do mod e o da [Fabric API](https://modrinth.com/mod/fabric-api).
 
 Para testar direto do código, use `./gradlew runClient`.
