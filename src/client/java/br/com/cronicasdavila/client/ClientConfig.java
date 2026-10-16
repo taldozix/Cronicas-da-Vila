@@ -30,6 +30,9 @@ public final class ClientConfig {
 	}
 
 	private static Values values = new Values();
+	/** Modo anterior e quando mudou (para o rastreador sair/entrar deslizando). */
+	private static String previousMode = FULL;
+	private static long changedAt = 0L;
 
 	private ClientConfig() {
 	}
@@ -51,6 +54,8 @@ public final class ClientConfig {
 		}
 
 		setTrackerMode(values.trackerMode);
+		previousMode = values.trackerMode;
+		changedAt = 0L;
 	}
 
 	private static void save() {
@@ -70,8 +75,23 @@ public final class ClientConfig {
 	}
 
 	public static void setTrackerMode(String mode) {
-		values.trackerMode = mode == null || !(mode.equals(FULL) || mode.equals(COMPACT) || mode.equals(HIDDEN)) ? FULL : mode;
+		String next = mode == null || !(mode.equals(FULL) || mode.equals(COMPACT) || mode.equals(HIDDEN)) ? FULL : mode;
+
+		if (!next.equals(values.trackerMode)) {
+			previousMode = values.trackerMode;
+			changedAt = System.currentTimeMillis();
+		}
+
+		values.trackerMode = next;
 		save();
+	}
+
+	public static String previousTrackerMode() {
+		return previousMode;
+	}
+
+	public static long trackerChangedAt() {
+		return changedAt;
 	}
 
 	/** Completo → Compacto → Oculto → Completo. */

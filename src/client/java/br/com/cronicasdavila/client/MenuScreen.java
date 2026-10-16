@@ -73,6 +73,16 @@ public class MenuScreen extends Screen {
 	private ItemStack hoveredItem = ItemStack.EMPTY;
 	private Component hoveredText;
 
+	// Animações
+	private final long openTime = System.currentTimeMillis();
+	private long tabChangedAt;
+	private int tabDirection = 1;
+	private long lastFrame = System.currentTimeMillis();
+	/** Progresso (0 a 1) do destaque de cada botão lateral: mouse em cima e selecionado. */
+	private final float[] hoverAnim = new float[TAB_KEYS.length + 1];
+	private final float[] selectAnim = new float[TAB_KEYS.length + 1];
+	private float hudAnim;
+
 	public MenuScreen(Screen parent, String tabKey) {
 		super(Component.literal("Crônicas da Vila"));
 		this.parent = parent;
@@ -173,31 +183,33 @@ public class MenuScreen extends Screen {
 
 	private boolean click(double x, double y) {
 		// Barra lateral, Fechar e o botão do HUD: calculados direto pela posição.
-		int sx = sideX();
 		int by = contentTop() + 10;
 
-		if (x >= sx && x < sx + SIDE_W) {
-			for (int i = 0; i < TAB_KEYS.length; i++) {
-				if (y >= by && y < by + BUTTON_H) {
+		for (int i = 0; i <= TAB_KEYS.length; i++) {
+			if (i == TAB_KEYS.length) {
+				by += 6;
+			}
+
+			int sx = sideX() + sideOffset(i);
+
+			if (x >= sx && x < sx + SIDE_W && y >= by && y < by + BUTTON_H) {
+				if (i == TAB_KEYS.length) {
+					onClose();
+				} else {
 					changeTab(i);
-					return true;
 				}
 
-				by += BUTTON_H + 6;
-			}
-
-			by += 6;
-
-			if (y >= by && y < by + BUTTON_H) {
-				onClose();
 				return true;
 			}
+
+			by += BUTTON_H + 6;
 		}
 
 		String label = "HUD: " + ClientConfig.modeName(ClientConfig.trackerMode()).toUpperCase();
 		int hudW = Math.max(110, this.font.width(label) + 20);
+		int hudRight = panelX2() + panelOffset();
 
-		if (x >= panelX2() - hudW && x < panelX2() && y >= contentTop() - 18 && y < contentTop()) {
+		if (x >= hudRight - hudW && x < hudRight && y >= contentTop() - 18 && y < contentTop()) {
 			ClientConfig.cycleTrackerMode();
 			return true;
 		}
@@ -277,8 +289,47 @@ public class MenuScreen extends Screen {
 	}
 
 	private void changeTab(int index) {
+		if (index != tab) {
+			tabDirection = index > tab ? 1 : -1;
+			tabChangedAt = System.currentTimeMillis();
+		}
+
 		tab = index;
 		confirmAbandon = false;
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// Animações (deslizar ao abrir, ao trocar de aba e ao passar o mouse)
+	// ---------------------------------------------------------------------------------------------
+
+	private float since(long start, long delay, float duration) {
+		return Ui.ease((System.currentTimeMillis() - start - delay) / duration);
+	}
+
+	/** Os botões entram da esquerda, um depois do outro. */
+	private int sideOffset(int index) {
+		float e = since(openTime, index * 45L, 280F);
+		return (int) (-(1F - e) * (SIDE_W + sideX() + 10));
+	}
+
+	/** O painel entra da direita. */
+	private int panelOffset() {
+		return (int) ((1F - since(openTime, 60L, 320F)) * 60);
+	}
+
+	/** O conteúdo desliza para o lado da aba escolhida. */
+	private int contentOffset() {
+		return (int) ((1F - since(tabChangedAt, 0L, 220F)) * 28 * tabDirection);
+	}
+
+	/** O título desce um pouco ao abrir. */
+	private int titleOffset() {
+		return (int) (-(1F - since(openTime, 0L, 300F)) * 18);
+	}
+
+	private static float approach(float current, float target, float dt) {
+		float speed = Math.min(1F, dt * 14F);
+		return current + (target - current) * speed;
 	}
 
 	private void selectQuest(int index) {
@@ -315,25 +366,33 @@ public class MenuScreen extends Screen {
 		drawSidebar(graphics);
 		drawFooter(graphics);
 
-		int x1 = panelX1();
-		int x2 = panelX2();
+		int x1 = panelX1() + panelOffset();
+		int x2 = panelX2() + panelOffset();
 		int y1 = contentTop();
 		int y2 = contentBottom();
 		Ui.flatPanel(graphics, x1, y1, x2, y2, 215);
 		drawQuickToggle(graphics, x2, y1);
 
+		// O conteúdo da aba desliza dentro do painel.
+		int slide = contentOffset();
+		int cx1 = x1 + slide;
+		int cx2 = x2 + slide;
+		graphics.enableScissor(x1, y1, x2, y2);
+
 		if (!ClientState.hasData()) {
 			String text = "Carregando...";
-			graphics.text(this.font, text, (x1 + x2 - this.font.width(text)) / 2, (y1 + y2) / 2, Ui.argb(255, Ui.MUTED), false);
+			graphics.text(this.font, text, (cx1 + cx2 - this.font.width(text)) / 2, (y1 + y2) / 2, Ui.argb(255, Ui.MUTED), false);
 		} else {
 			switch (tab) {
-				case 0 -> drawHome(graphics, x1, y1, x2, y2);
-				case 1 -> drawQuests(graphics, x1, y1, x2, y2);
-				case 2 -> drawReputation(graphics, x1, y1, x2, y2);
-				case 3 -> drawGuide(graphics, x1, y1, x2, y2);
-				default -> drawOptions(graphics, x1, y1, x2, y2);
+				case 0 -> drawHome(graphics, cx1, y1, cx2, y2);
+				case 1 -> drawQuests(graphics, cx1, y1, cx2, y2);
+				case 2 -> drawReputation(graphics, cx1, y1, cx2, y2);
+				case 3 -> drawGuide(graphics, cx1, y1, cx2, y2);
+				default -> drawOptions(graphics, cx1, y1, cx2, y2);
 			}
 		}
+
+		graphics.disableScissor();
 
 		lastHits = hits;
 
@@ -348,30 +407,35 @@ public class MenuScreen extends Screen {
 		String title = "CRÔNICAS DA VILA";
 		float scale = this.width >= 560 && this.height >= 300 ? 3.0F : 2.0F;
 		int titleWidth = (int) (this.font.width(title) * scale);
-		Ui.bigText(graphics, this.font, title, (this.width - titleWidth) / 2, 8, scale, Ui.CREAM, Ui.CREAM_SHADOW);
+		int top = 8 + titleOffset();
+		Ui.bigText(graphics, this.font, title, (this.width - titleWidth) / 2, top, scale, Ui.CREAM, Ui.CREAM_SHADOW);
 
 		String subtitle = "DIÁRIO DE AVENTURAS";
 		int spacing = scale >= 3.0F ? 4 : 2;
 		int subtitleWidth = Ui.spacedWidth(this.font, subtitle, spacing);
-		Ui.spacedText(graphics, this.font, subtitle, (this.width - subtitleWidth) / 2, 8 + (int) (9 * scale) + 4, spacing, 0xFFFFFF);
+		Ui.spacedText(graphics, this.font, subtitle, (this.width - subtitleWidth) / 2, top + (int) (9 * scale) + 4, spacing, 0xFFFFFF);
 	}
 
 	private void drawSidebar(GuiGraphicsExtractor graphics) {
-		int x = sideX();
+		long now = System.currentTimeMillis();
+		float dt = Math.min(0.1F, (now - lastFrame) / 1000F);
+		lastFrame = now;
 		int y = contentTop() + 10;
 
-		for (int i = 0; i < TAB_KEYS.length; i++) {
-			int index = i;
+		for (int i = 0; i <= TAB_KEYS.length; i++) {
+			boolean close = i == TAB_KEYS.length;
+
+			if (close) {
+				y += 6;
+			}
+
+			int x = sideX() + sideOffset(i);
 			boolean hovered = hover(x, y, x + SIDE_W, y + BUTTON_H);
-			Ui.flatButton(graphics, this.font, x, y, x + SIDE_W, y + BUTTON_H, TAB_NAMES[i], i == tab, hovered, true);
-			hit(x, y, x + SIDE_W, y + BUTTON_H, () -> changeTab(index));
+			hoverAnim[i] = approach(hoverAnim[i], hovered ? 1F : 0F, dt);
+			selectAnim[i] = approach(selectAnim[i], !close && i == tab ? 1F : 0F, dt);
+			Ui.animatedButton(graphics, this.font, x, y, x + SIDE_W, y + BUTTON_H, close ? "FECHAR" : TAB_NAMES[i], selectAnim[i], hoverAnim[i]);
 			y += BUTTON_H + 6;
 		}
-
-		y += 6;
-		boolean hovered = hover(x, y, x + SIDE_W, y + BUTTON_H);
-		Ui.flatButton(graphics, this.font, x, y, x + SIDE_W, y + BUTTON_H, "FECHAR", false, hovered, true);
-		hit(x, y, x + SIDE_W, y + BUTTON_H, this::onClose);
 	}
 
 	/** Botão lilás acima do painel (como o "Discord" da referência): troca o rastreador do HUD. */
@@ -381,7 +445,9 @@ public class MenuScreen extends Screen {
 		int x1 = panelRight - w;
 		int y1 = panelTop - 18;
 		boolean hovered = hover(x1, y1, panelRight, panelTop);
-		graphics.fill(x1, y1, panelRight, panelTop, Ui.argb(hovered ? 255 : 230, hovered ? 0x9EA2E6 : Ui.LAVENDER));
+		hudAnim = approach(hudAnim, hovered ? 1F : 0F, 0.016F);
+		graphics.fill(x1, y1, panelRight, panelTop, Ui.argb(230, Ui.LAVENDER));
+		graphics.fill(x1, y1, x1 + (int) (w * hudAnim), panelTop, Ui.argb(255, 0xA9ADEC));
 		graphics.text(this.font, label, x1 + (w - this.font.width(label)) / 2, y1 + 5, Ui.argb(255, 0xFFFFFF), true);
 		hit(x1, y1, panelRight, panelTop, ClientConfig::cycleTrackerMode);
 

@@ -51,6 +51,34 @@ public final class Ui {
 		g.text(font, label, x1 + 10, y1 + (y2 - y1 - 8) / 2, argb(255, color), selected);
 	}
 
+	/**
+	 * Botão da barra lateral com animação: o destaque do mouse e o ciano da seleção
+	 * deslizam da esquerda para a direita, e o texto anda um pouco para o lado.
+	 */
+	public static void animatedButton(GuiGraphicsExtractor g, Font font, int x1, int y1, int x2, int y2, String label,
+			float selected, float hovered) {
+		int width = x2 - x1;
+		g.fill(x1, y1, x2, y2, argb(215, BUTTON));
+
+		if (hovered > 0.01F) {
+			g.fill(x1, y1, x1 + (int) (width * hovered), y2, argb(230, BUTTON_HOVER));
+		}
+
+		if (selected > 0.01F) {
+			g.fill(x1, y1, x1 + (int) (width * selected), y2, argb(240, CYAN));
+		}
+
+		if (hovered > 0.01F && selected < 0.5F) {
+			int barH = (int) ((y2 - y1) * hovered);
+			int top = y1 + (y2 - y1 - barH) / 2;
+			g.fill(x1, top, x1 + 2, top + barH, argb(255, CYAN));
+		}
+
+		float lift = Math.max(selected, hovered);
+		int color = selected > 0.5F || hovered > 0.5F ? 0xFFFFFF : 0xC9CDD2;
+		g.text(font, label, x1 + 10 + (int) (4 * lift), y1 + (y2 - y1 - 8) / 2, argb(255, color), selected > 0.5F);
+	}
+
 	/** Botão pequeno com o texto centralizado (para ações dentro dos painéis). */
 	public static void smallButton(GuiGraphicsExtractor g, Font font, int x1, int y1, int x2, int y2, String label,
 			int accent, boolean active, boolean hovered) {

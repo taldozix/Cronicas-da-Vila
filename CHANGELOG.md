@@ -16,6 +16,7 @@ com o `.jar` automaticamente, usando as notas desta página.
 - **Opções do mundo** (dono do mundo ou operador): XP e recompensas das missões, recompensas variadas, chance de bônus da sorte, missões sorteadas, intensidade do karma, chance e afinidade da barganha, folga dos trabalhos pesados, roubo de baús, curiosidade por dia e maldição do Vilão.
 - **Rastreador compacto:** só os ícones das missões e a porcentagem na lateral da tela, como no Pixelmon. Tecla **H** alterna entre completo, compacto e oculto.
 - **Nada no chat:** os avisos do mod e o resultado dos comandos aparecem por alguns segundos no canto da tela.
+- **Animações:** o menu abre com os botões deslizando da esquerda e o painel da direita; o destaque dos botões desliza ao passar o mouse; o conteúdo desliza ao trocar de aba; o rastreador de missões e os avisos entram e saem deslizando pela lateral.
 - **Comandos abrem o menu:** `/cronicas`, `/cronicas missoes`, `reputacao`, `guia`, `opcoes` e `/cronicas hud completo|compacto|oculto`.
 
 ### Mudanças

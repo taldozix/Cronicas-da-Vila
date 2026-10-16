@@ -33,11 +33,23 @@ final class Hud {
 			return;
 		}
 
-		switch (ClientConfig.trackerMode()) {
-			case ClientConfig.COMPACT -> drawCompact(graphics, client);
+		// Ao trocar de modo, o antigo sai deslizando para a lateral e o novo entra.
+		float t = Ui.ease((System.currentTimeMillis() - ClientConfig.trackerChangedAt()) / 280F);
+
+		if (t < 1F) {
+			draw(graphics, client, ClientConfig.previousTrackerMode(), t);
+		}
+
+		draw(graphics, client, ClientConfig.trackerMode(), 1F - t);
+	}
+
+	/** Desenha um modo deslocado para fora da tela ("hidden" = 0 é no lugar, 1 é totalmente fora). */
+	private static void draw(GuiGraphicsExtractor graphics, Minecraft client, String mode, float hidden) {
+		switch (mode) {
+			case ClientConfig.COMPACT -> drawCompact(graphics, client, hidden);
 			case ClientConfig.HIDDEN -> {
 			}
-			default -> drawFull(graphics, client);
+			default -> drawFull(graphics, client, hidden);
 		}
 	}
 
@@ -47,7 +59,7 @@ final class Hud {
 	}
 
 	/** Painel com a missão rastreada: ícone, título, objetivo e barra. */
-	private static void drawFull(GuiGraphicsExtractor graphics, Minecraft client) {
+	private static void drawFull(GuiGraphicsExtractor graphics, Minecraft client, float hidden) {
 		JsonObject quest = ClientState.trackedQuest();
 
 		if (quest == null) {
@@ -58,7 +70,7 @@ final class Hud {
 		int target = Math.max(1, ClientState.num(quest, "target", 1));
 		boolean done = progress >= target;
 		int width = 196;
-		int x = 6;
+		int x = 6 - (int) ((width + 12) * hidden);
 		int y = 6;
 
 		List<FormattedCharSequence> objective = client.font.split(Text.parse(done
@@ -93,7 +105,7 @@ final class Hud {
 	 * Versão reduzida: uma coluna de ícones na lateral da tela (como o time de pokémons do Pixelmon),
 	 * cada um com a porcentagem da missão. A rastreada fica com borda ciano.
 	 */
-	private static void drawCompact(GuiGraphicsExtractor graphics, Minecraft client) {
+	private static void drawCompact(GuiGraphicsExtractor graphics, Minecraft client, float hidden) {
 		List<JsonObject> quests = new ArrayList<>(ClientState.quests());
 
 		if (quests.isEmpty()) {
@@ -113,7 +125,8 @@ final class Hud {
 		int screenW = client.getWindow().getGuiScaledWidth();
 		int screenH = client.getWindow().getGuiScaledHeight();
 		boolean right = ClientConfig.trackerOnRight();
-		int x = right ? screenW - box - 4 : 4;
+		int out = (int) ((box + 40) * hidden);
+		int x = right ? screenW - box - 4 + out : 4 - out;
 		int y = (screenH - count * (box + gap)) / 2;
 
 		for (int i = 0; i < count; i++) {
@@ -168,14 +181,18 @@ final class Hud {
 			}
 
 			float alpha = Math.max(0.05F, age > NOTICE_MS - 600 ? (NOTICE_MS - age) / 600F : 1F);
+			// Entra deslizando pela direita e sai deslizando de volta.
+			float in = Ui.ease(age / 250F);
+			float outT = age > NOTICE_MS - 400 ? Ui.ease((age - (NOTICE_MS - 400)) / 400F) : 0F;
+			int nx = x + (int) ((width + 10) * Math.max(1F - in, outT));
 			List<FormattedCharSequence> lines = client.font.split(Text.parse(notice.text()), width - 14);
 			int count = Math.min(4, lines.size());
 			int height = 8 + count * 10;
-			graphics.fill(x, y, x + width, y + height, Ui.argb((int) (190 * alpha), Ui.PANEL));
-			graphics.fill(x, y, x + 2, y + height, Ui.argb((int) (255 * alpha), Ui.CYAN));
+			graphics.fill(nx, y, nx + width, y + height, Ui.argb((int) (190 * alpha), Ui.PANEL));
+			graphics.fill(nx, y, nx + 2, y + height, Ui.argb((int) (255 * alpha), Ui.CYAN));
 
 			for (int i = 0; i < count; i++) {
-				graphics.text(client.font, lines.get(i), x + 8, y + 5 + i * 10, Ui.argb((int) (255 * alpha), 0xFFFFFF), true);
+				graphics.text(client.font, lines.get(i), nx + 8, y + 5 + i * 10, Ui.argb((int) (255 * alpha), 0xFFFFFF), true);
 			}
 
 			y += height + 4;
