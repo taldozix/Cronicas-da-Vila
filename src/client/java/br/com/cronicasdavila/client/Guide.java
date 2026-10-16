@@ -57,7 +57,7 @@ final class Guide {
 					"<y>/cronicas admin afinidade <profissão> <1-5></y> — define a afinidade (farmer, piglin, witch...).",
 					"<y>/cronicas admin completar</y> — completa os objetivos das missões ativas (menos entregas).",
 					"<y>/cronicas admin resetar</y> — zera o seu progresso.",
-					"<d>O resultado dos comandos aparece no Registro da aba Início, não no chat.</d>"
+					"<d>O resultado dos comandos aparece num aviso no canto da tela, não no chat.</d>"
 			},
 			{
 					"Teclas",

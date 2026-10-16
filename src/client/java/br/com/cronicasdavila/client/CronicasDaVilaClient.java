@@ -62,7 +62,7 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 
 			while (trackerKey.consumeClick()) {
 				if (client.player != null) {
-					ClientState.addNotice("<a>Rastreador de missões:</a> " + ClientConfig.modeName(ClientConfig.cycleTrackerMode()));
+					ClientConfig.cycleTrackerMode();
 				}
 			}
 		});
@@ -142,9 +142,6 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 
 		if (type.equals("hud_mode")) {
 			ClientConfig.setTrackerMode(node.get("mode").getAsString());
-
-			ClientState.addNotice("<a>Rastreador de missões:</a> " + ClientConfig.modeName(ClientConfig.trackerMode()));
-
 			return;
 		}
 

@@ -8,14 +8,14 @@ com o `.jar` automaticamente, usando as notas desta página.
 
 ### Novidades
 - **Menu novo (tecla J)** no estilo das telas de servidores modded: título grande, botões à esquerda com destaque ciano e painel escuro à direita.
-  - **Início:** o seu boneco, o seu status e o Registro com os últimos avisos e resultados de comandos.
+  - **Início:** o seu boneco e o seu resumo (nível, karma, Vilania, missões, Herói e Vilão).
   - **Missões:** lista com ícone e porcentagem; detalhes com objetivo, recompensas em ícones, dicas e história.
   - **Reputação:** lado herói e lado vilão lado a lado, mais a afinidade com cada profissão e inimigo.
   - **Guia:** como o mod funciona, todos os comandos e as teclas.
   - **Opções:** o "mod menu" do Crônicas da Vila.
 - **Opções do mundo** (dono do mundo ou operador): XP e recompensas das missões, recompensas variadas, chance de bônus da sorte, missões sorteadas, intensidade do karma, chance e afinidade da barganha, folga dos trabalhos pesados, roubo de baús, curiosidade por dia e maldição do Vilão.
 - **Rastreador compacto:** só os ícones das missões e a porcentagem na lateral da tela, como no Pixelmon. Tecla **H** alterna entre completo, compacto e oculto.
-- **Nada no chat:** os avisos do mod aparecem no canto da tela e ficam no Registro do menu.
+- **Nada no chat:** os avisos do mod e o resultado dos comandos aparecem por alguns segundos no canto da tela.
 - **Comandos abrem o menu:** `/cronicas`, `/cronicas missoes`, `reputacao`, `guia`, `opcoes` e `/cronicas hud completo|compacto|oculto`.
 
 ### Mudanças

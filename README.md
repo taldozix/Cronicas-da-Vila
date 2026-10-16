@@ -237,9 +237,9 @@ Desistir de uma missão de vilão (saqueador, piglin ou bruxa) dá **+5** de kar
 
 ### O menu do mod (tecla J)
 
-Um painel no estilo das telas de servidores modded: título grande no topo, botões à esquerda (o selecionado fica em ciano) e o conteúdo à direita. Nada do mod vai para o chat; os avisos aparecem no canto da tela e ficam guardados no menu.
+Um painel no estilo das telas de servidores modded: título grande no topo, botões à esquerda (o selecionado fica em ciano) e o conteúdo à direita. Nada do mod vai para o chat; os avisos aparecem por alguns segundos no canto da tela.
 
-- **Início:** o seu boneco, nível, karma, Vilania, missões e o **Registro** ("O que aconteceu?") com os últimos avisos do mod e os resultados dos comandos.
+- **Início:** o seu boneco e o seu resumo: nível (pelas missões e pela XP), karma, Vilania, missões e o caminho até o Herói da Vila e o Vilão da História.
 - **Missões:** a lista das missões ativas (ícone, título e porcentagem) e, ao lado, os detalhes: quem pediu e onde, o objetivo com barra, as recompensas em ícones, dicas ou história. Botões para **rastrear no HUD** e **desistir**. Missões de vilão em **vermelho** e de shulker em **roxo**.
 - **Reputação:** os dois lados lado a lado (karma e Herói da Vila; Vilania e Vilão da História) e a afinidade com cada profissão e inimigo.
 - **Guia:** como o mod funciona, todos os comandos e as teclas.
@@ -316,7 +316,7 @@ As histórias de cada NPC se ligam umas às outras:
 
 ## Comandos
 
-Os comandos abrem o menu na aba certa; o resultado aparece no Registro da aba Início, não no chat.
+Os comandos abrem o menu na aba certa. O resultado dos comandos de teste aparece num aviso no canto da tela, não no chat.
 
 | Comando | Para que serve |
 |---|---|

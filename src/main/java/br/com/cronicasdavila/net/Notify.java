@@ -7,8 +7,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
 /**
- * Avisos do mod sem poluir o chat: aparecem como um aviso na tela e ficam guardados
- * no "Registro" da aba Início do menu (tecla J).
+ * Avisos do mod sem poluir o chat: aparecem por alguns segundos no canto da tela.
  */
 public final class Notify {
 	private Notify() {

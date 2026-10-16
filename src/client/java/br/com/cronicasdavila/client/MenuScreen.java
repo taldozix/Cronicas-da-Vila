@@ -492,8 +492,9 @@ public class MenuScreen extends Screen {
 		int villainQuests = ClientState.getInt("villainQuests", 0);
 		boolean villain = ClientState.getBool("villain");
 		String[][] rows = {
-				{"Nível", "<o>" + ClientState.getString("rankName", "Amador") + "</o> <d>(missões: " + ClientState.getString("rankQuestName", "")
-						+ " · XP: " + ClientState.getString("rankXpName", "") + ")</d>"},
+				{"Nível", "<o>" + ClientState.getString("rankName", "Amador") + "</o>"},
+				{"Pelas missões", ClientState.getString("rankQuestName", "Amador") + " <d>(fica para sempre)</d>"},
+				{"Pela XP", ClientState.getString("rankXpName", "Amador")},
 				{"Karma", ClientState.getString("karmaTier", "Neutro") + " <d>(" + ClientState.getInt("karma", 0) + ")</d>"},
 				{"Vilania", villainQuests == 0 ? "<d>Inocente</d>"
 						: "<r>" + ClientState.getString("villainName", "") + "</r> <d>· " + ClientState.getInt("villainPercent", 0) + "%</d>"},
@@ -513,26 +514,7 @@ public class MenuScreen extends Screen {
 			graphics.text(this.font, row[0], x, y, Ui.argb(255, Ui.MUTED), false);
 			int valueColor = row[0].equals("Karma") ? ClientState.getInt("karmaColor", 0xFFFFFF) : Ui.TEXT;
 			graphics.text(this.font, Ui.trimComponent(this.font, Text.parse(row[1]), width - labelW - 10), x + labelW + 10, y, Ui.argb(255, valueColor), false);
-			y += 12;
-		}
-
-		y += 10;
-		Ui.bigText(graphics, this.font, Component.literal("O que aconteceu?"), x, y, 1.5F, 0xFFFFFF);
-		y += 20;
-
-		List<ClientState.Notice> notices = ClientState.notices();
-
-		if (notices.isEmpty()) {
-			wrap(graphics, "<d>Nada por enquanto. Os seus feitos, subidas de nível e avisos do mod aparecem aqui.</d>", x + 4, y, width - 4, Ui.TEXT, py2 - pad);
-			return;
-		}
-
-		for (ClientState.Notice notice : notices) {
-			if (y + 9 > py2 - pad) {
-				break;
-			}
-
-			y = wrap(graphics, "• " + notice.text(), x + 4, y, width - 4, Ui.TEXT, py2 - pad) + 4;
+			y += 14;
 		}
 	}
 
@@ -939,7 +921,7 @@ public class MenuScreen extends Screen {
 						ClientConfig.toggleTrackerSide();
 					}
 				});
-		y = choiceRow(graphics, x1, x2, y, top, bottom, "Avisos na tela", "Os avisos do mod aparecem no canto da tela (e sempre ficam no Registro do Início).",
+		y = choiceRow(graphics, x1, x2, y, top, bottom, "Avisos na tela", "Os avisos do mod aparecem por alguns segundos no canto da tela.",
 				new String[] {"Ligado", "Desligado"}, ClientConfig.notices() ? 0 : 1, index -> {
 					if ((index == 0) != ClientConfig.notices()) {
 						ClientConfig.toggleNotices();

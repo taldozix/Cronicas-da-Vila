@@ -32,7 +32,7 @@ public final class ClientState {
 		tradeContext = new JsonObject();
 	}
 
-	/** Um aviso do mod (aparece na tela e fica no Registro da aba Início). */
+	/** Um aviso do mod (aparece por alguns segundos no canto da tela). */
 	public record Notice(String text, long time) {
 	}
 
@@ -41,7 +41,7 @@ public final class ClientState {
 	public static void addNotice(String text) {
 		NOTICES.add(0, new Notice(text, System.currentTimeMillis()));
 
-		while (NOTICES.size() > 40) {
+		while (NOTICES.size() > 5) {
 			NOTICES.remove(NOTICES.size() - 1);
 		}
 	}

@@ -32,7 +32,7 @@ import br.com.cronicasdavila.rank.VillainRank;
  * <ul>
  *     <li>/cronicas, /cronicas missoes, /cronicas reputacao, /cronicas guia, /cronicas opcoes: abrem a aba.</li>
  *     <li>/cronicas hud completo|compacto|oculto: muda o rastreador de missões.</li>
- *     <li>/cronicas admin ...: comandos de teste (operador). O resultado aparece no Registro do menu.</li>
+ *     <li>/cronicas admin ...: comandos de teste (operador). O resultado aparece num aviso no canto da tela.</li>
  * </ul>
  */
 public final class CronicasCommand {
@@ -48,10 +48,9 @@ public final class CronicasCommand {
 		return 1;
 	}
 
-	/** Resultado de um comando de teste: vai para o Registro e abre o menu na aba Início. */
+	/** Resultado de um comando de teste: um aviso no canto da tela (nada no chat). */
 	private static int done(ServerPlayer player, String markup) {
 		Notify.send(player, markup);
-		Notify.openMenu(player, "inicio");
 		return 1;
 	}
 
