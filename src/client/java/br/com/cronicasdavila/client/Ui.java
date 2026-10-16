@@ -1,13 +1,132 @@
 package br.com.cronicasdavila.client;
 
+import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.ItemStack;
 
 /**
  * Pequenos utilitários de desenho para a interface "estilo Breath of the Wild":
  * painéis escuros translúcidos com cantos arredondados e contornos suaves.
  */
 public final class Ui {
+	/** Paleta do menu (inspirada nas telas de servidores modded: painéis escuros chapados e um destaque ciano). */
+	public static final int CYAN = 0x5EC4D1;
+	public static final int CYAN_LIGHT = 0x9BE7F0;
+	public static final int LAVENDER = 0x8B8FD8;
+	public static final int CREAM = 0xF2E2B3;
+	public static final int CREAM_SHADOW = 0x5E4E30;
+	public static final int PANEL = 0x0E1013;
+	public static final int BUTTON = 0x17191D;
+	public static final int BUTTON_HOVER = 0x24282E;
+	public static final int CARD = 0x1A1D22;
+	public static final int TEXT = 0xE8E8E8;
+	public static final int MUTED = 0x9AA0A6;
+	public static final int VILLAIN = 0xE05A5A;
+	public static final int END = 0xC48CFF;
+	public static final int GOLD = 0xFFD36B;
+	public static final int GOOD = 0x6EE07A;
+
 	private Ui() {
+	}
+
+	/** Painel chapado e escuro, sem bordas (como na tela de referência). */
+	public static void flatPanel(GuiGraphicsExtractor g, int x1, int y1, int x2, int y2, int alpha) {
+		g.fill(x1, y1, x2, y2, argb(alpha, PANEL));
+	}
+
+	/** Botão reto do menu lateral. Selecionado = ciano. */
+	public static void flatButton(GuiGraphicsExtractor g, Font font, int x1, int y1, int x2, int y2, String label,
+			boolean selected, boolean hovered, boolean enabled) {
+		int bg = selected ? CYAN : (hovered && enabled ? BUTTON_HOVER : BUTTON);
+		g.fill(x1, y1, x2, y2, argb(selected ? 235 : 215, bg));
+		int color = !enabled ? 0x666A70 : (selected ? 0xFFFFFF : (hovered ? 0xFFFFFF : 0xC9CDD2));
+		g.text(font, label, x1 + 10, y1 + (y2 - y1 - 8) / 2, argb(255, color), selected);
+	}
+
+	/** Botão pequeno com o texto centralizado (para ações dentro dos painéis). */
+	public static void smallButton(GuiGraphicsExtractor g, Font font, int x1, int y1, int x2, int y2, String label,
+			int accent, boolean active, boolean hovered) {
+		int bg = active ? accent : (hovered ? BUTTON_HOVER : BUTTON);
+		g.fill(x1, y1, x2, y2, argb(active ? 230 : 220, bg));
+
+		if (!active) {
+			g.fill(x1, y2 - 1, x2, y2, argb(160, accent));
+		}
+
+		int w = font.width(label);
+		g.text(font, label, x1 + (x2 - x1 - w) / 2, y1 + (y2 - y1 - 8) / 2, argb(255, active || hovered ? 0xFFFFFF : 0xC9CDD2), active);
+	}
+
+	/** Texto ampliado (o título grande do menu). */
+	public static void bigText(GuiGraphicsExtractor g, Font font, String text, int x, int y, float scale, int color, int shadowColor) {
+		g.pose().pushMatrix();
+		g.pose().scale(scale, scale);
+		int sx = Math.round(x / scale);
+		int sy = Math.round(y / scale);
+
+		if (shadowColor != 0) {
+			g.text(font, text, sx + 1, sy + 1, argb(255, shadowColor), false);
+		}
+
+		g.text(font, text, sx, sy, argb(255, color), false);
+		g.pose().popMatrix();
+	}
+
+	public static void bigText(GuiGraphicsExtractor g, Font font, Component text, int x, int y, float scale, int color) {
+		g.pose().pushMatrix();
+		g.pose().scale(scale, scale);
+		g.text(font, text, Math.round(x / scale), Math.round(y / scale), argb(255, color), true);
+		g.pose().popMatrix();
+	}
+
+	/** Largura do texto com espaço entre as letras ("M O D D E D   S M P"). */
+	public static int spacedWidth(Font font, String text, int spacing) {
+		int width = 0;
+
+		for (int i = 0; i < text.length(); i++) {
+			width += font.width(String.valueOf(text.charAt(i))) + spacing;
+		}
+
+		return Math.max(0, width - spacing);
+	}
+
+	public static void spacedText(GuiGraphicsExtractor g, Font font, String text, int x, int y, int spacing, int color) {
+		int cx = x;
+
+		for (int i = 0; i < text.length(); i++) {
+			String letter = String.valueOf(text.charAt(i));
+			g.text(font, letter, cx, y, argb(255, color), true);
+			cx += font.width(letter) + spacing;
+		}
+	}
+
+	/** Pilha de item a partir do id ("minecraft:diamond"). */
+	public static ItemStack stack(String id, int count) {
+		Identifier identifier = id == null ? null : Identifier.tryParse(id);
+
+		if (identifier == null) {
+			return ItemStack.EMPTY;
+		}
+
+		return new ItemStack(BuiltInRegistries.ITEM.getValue(identifier), Math.max(1, count));
+	}
+
+	/** Primeira linha de um texto colorido que cabe na largura. */
+	public static net.minecraft.util.FormattedCharSequence trimComponent(Font font, Component text, int width) {
+		java.util.List<net.minecraft.util.FormattedCharSequence> lines = font.split(text, Math.max(10, width));
+		return lines.isEmpty() ? net.minecraft.util.FormattedCharSequence.EMPTY : lines.get(0);
+	}
+
+	/** Corta o texto com "…" para caber na largura. */
+	public static String trim(Font font, String text, int width) {
+		if (font.width(text) <= width) {
+			return text;
+		}
+
+		return font.plainSubstrByWidth(text, Math.max(0, width - font.width("…"))) + "…";
 	}
 
 	public static int argb(int alpha, int rgb) {

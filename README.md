@@ -12,7 +12,7 @@ Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões, piglins, 
 - **Conversa em modo cinema.** O NPC para e fica olhando para você, a câmera trava no rosto dele e o HUD some enquanto vocês conversam.
 - **Cinco níveis:** Amador → Aprendiz → Aventureiro → Guerreiro → Mestre.
 - **Karma** no estilo da honra de Red Dead Redemption 2, com bênçãos e castigos.
-- **Diário de Missões** como uma nova aba do inventário, além de um rastreador da missão atual no HUD.
+- **Menu do mod (tecla J)** com Início, Missões, Reputação, Guia e Opções, e um **rastreador de missões** no HUD (completo, compacto ou oculto).
 - **Herói da Vila permanente** para quem chega a Mestre em todas as 13 profissões.
 - **O lado do mal:** a **Vilania**, com 5 níveis (Arruaceiro → Bandido → Renegado → Carrasco → Arquivilão), e o efeito novo **Vilão da História**.
 - **Falas por bioma:** cada tipo de vila (planície, deserto, savana, neve, taiga, selva e pântano) tem histórias e problemas próprios.
@@ -36,7 +36,7 @@ Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões, piglins, 
    ```bash
    ./gradlew build        # no Windows: gradlew.bat build
    ```
-3. O mod fica em `build/libs/cronicas-da-vila-1.2.0.jar`. Se preferir não compilar, baixe o `.jar` pronto na página de [Releases](https://github.com/taldozix/Cronicas-da-Vila/releases).
+3. O mod fica em `build/libs/cronicas-da-vila-1.3.0.jar`. Se preferir não compilar, baixe o `.jar` pronto na página de [Releases](https://github.com/taldozix/Cronicas-da-Vila/releases).
 4. Instale o [Fabric Loader](https://fabricmc.net/use/) para a versão 26.3 e coloque na pasta `.minecraft/mods` o `.jar` do mod e o da [Fabric API](https://modrinth.com/mod/fabric-api).
 
 Para testar direto do código, use `./gradlew runClient`.
@@ -59,7 +59,8 @@ Para testar direto do código, use `./gradlew runClient`.
 | Avançar o texto | Clique, Enter, Espaço ou E |
 | Escolher uma resposta | Mouse, ↑ ↓, W/S, a rodinha do mouse ou as teclas 1 a 9 |
 | Sair da conversa | Esc |
-| Abrir o Diário de Missões | **J**, ou o botão **✦ Missões** no inventário |
+| Abrir o menu do mod | **J**, ou o botão **✦ Missões** no inventário |
+| Rastreador de missões: completo, compacto ou oculto | **H** |
 
 Durante a conversa:
 
@@ -234,13 +235,46 @@ O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não
 
 Desistir de uma missão de vilão (saqueador, piglin ou bruxa) dá **+5** de karma.
 
-### Diário de Missões (tecla J)
+### O menu do mod (tecla J)
 
-- **Aba Missões:** o seu nível, uma barra de progresso pela XP e pelas missões, a barra de karma e a lista de missões ativas. Cada missão mostra quem pediu e onde essa pessoa está, o objetivo com barra de progresso, as recompensas, a história e dicas.
-- **Rastrear no HUD (tecla T):** a missão escolhida aparece no canto da tela.
-- **Desistir:** clique duas vezes para confirmar.
-- **Aba Reputação:** karma, progresso até o Herói da Vila e afinidade com as 13 profissões de aldeão e com os shulkers (em roxo). Rolando para baixo, o lado vilão em vermelho: nível e porcentagem de Vilania, afinidade com saqueadores, piglins e bruxas, status de Vilão da História e o tempo que falta para você queimar no mundo normal.
-- Na lista de missões, as de vilão aparecem em **vermelho** e as dos shulkers em **roxo**.
+Um painel no estilo das telas de servidores modded: título grande no topo, botões à esquerda (o selecionado fica em ciano) e o conteúdo à direita. Nada do mod vai para o chat; os avisos aparecem no canto da tela e ficam guardados no menu.
+
+- **Início:** o seu boneco, nível, karma, Vilania, missões e o **Registro** ("O que aconteceu?") com os últimos avisos do mod e os resultados dos comandos.
+- **Missões:** a lista das missões ativas (ícone, título e porcentagem) e, ao lado, os detalhes: quem pediu e onde, o objetivo com barra, as recompensas em ícones, dicas ou história. Botões para **rastrear no HUD** e **desistir**. Missões de vilão em **vermelho** e de shulker em **roxo**.
+- **Reputação:** os dois lados lado a lado (karma e Herói da Vila; Vilania e Vilão da História) e a afinidade com cada profissão e inimigo.
+- **Guia:** como o mod funciona, todos os comandos e as teclas.
+- **Opções:** o "mod menu" (veja abaixo).
+- O botão lilás **HUD** no canto do painel troca o rastreador de missões.
+
+### Rastreador de missões
+
+- **Completo:** um painel com a missão rastreada (ícone, objetivo e barra).
+- **Compacto:** só uma coluna de ícones na lateral da tela, cada um com a porcentagem da missão (o item, o bloco ou o ovo do mob que você precisa buscar), como o time de pokémons do Pixelmon. A missão rastreada fica com borda ciano.
+- **Oculto:** nada na tela.
+- Troque com a tecla **H**, pelo botão **HUD** do menu, na aba Opções ou com `/cronicas hud completo|compacto|oculto`.
+
+### Opções
+
+**Sua tela** (só no seu computador): modo e lado do rastreador e avisos na tela.
+
+**Mundo** (só o dono do mundo ou um operador muda; vale para todos):
+
+| Opção | Padrão |
+|---|---|
+| XP das missões | 100% |
+| Recompensas das missões | 100% |
+| Recompensas variadas (itens surpresa de valor parecido) | Desligado |
+| Chance de bônus da sorte | 30% |
+| Missões sorteadas | Ligado |
+| Intensidade do karma | 100% |
+| Chance extra na barganha | 0% |
+| Afinidade para barganhar | 3 (Aventureiro) |
+| Folga dos trabalhos pesados | Ligado, 1 dia a cada 3 |
+| Vigiar roubo de baús | Ligado |
+| Uma curiosidade por dia | Ligado |
+| Maldição do Vilão (fadiga e fogo longe do Nether) | Ligado |
+
+As opções do mundo ficam em `config/cronicasdavila.json`.
 
 ---
 
@@ -282,9 +316,13 @@ As histórias de cada NPC se ligam umas às outras:
 
 ## Comandos
 
+Os comandos abrem o menu na aba certa; o resultado aparece no Registro da aba Início, não no chat.
+
 | Comando | Para que serve |
 |---|---|
-| `/cronicas` | Mostra o seu status |
+| `/cronicas` | Abre o menu na aba Início |
+| `/cronicas missoes`, `reputacao`, `guia`, `opcoes` | Abre o menu na aba |
+| `/cronicas hud completo\|compacto\|oculto` | Muda o rastreador de missões |
 | `/cronicas admin karma <valor>` | Define o karma (só operadores) |
 | `/cronicas admin nivel <1-5>` | Define o nível conquistado pelas missões |
 | `/cronicas admin vilania <1-5>` | Define o nível de Vilania |

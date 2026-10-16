@@ -56,6 +56,8 @@ public final class KarmaSystem {
 	}
 
 	public static void change(ServerPlayer player, int amount, String reason) {
+		amount = (int) Math.round(amount * br.com.cronicasdavila.config.ModSettings.get().karmaRate / 100.0);
+
 		if (amount == 0 || player.isCreative() || player.isSpectator()) {
 			return;
 		}
@@ -71,7 +73,7 @@ public final class KarmaSystem {
 
 		if (before != after) {
 			String color = after.ordinal() > before.ordinal() ? "g" : "r";
-			player.sendSystemMessage(Text.parse("<" + color + ">Seu karma mudou: agora você é <b>" + after.displayName()
+			br.com.cronicasdavila.net.Notify.send(player, ("<" + color + ">Seu karma mudou: agora você é <b>" + after.displayName()
 					+ "</b>.</" + color + "> <d>" + after.description() + "</d>"));
 		}
 	}
@@ -198,10 +200,10 @@ public final class KarmaSystem {
 
 		if (rank.tier() != data.lastAnnouncedRank) {
 			if (rank.tier() > data.lastAnnouncedRank) {
-				player.sendSystemMessage(Text.parse("<o>★ Novo nível: <b>" + rank.displayName() + "</b>!</o> Missões de nível "
+				br.com.cronicasdavila.net.Notify.send(player, ("<o>★ Novo nível: <b>" + rank.displayName() + "</b>!</o> Missões de nível "
 						+ rank.displayName() + " foram liberadas com os aldeões e shulkers."));
 			} else {
-				player.sendSystemMessage(Text.parse("<r>Você perdeu experiência e voltou a ser " + rank.displayName()
+				br.com.cronicasdavila.net.Notify.send(player, ("<r>Você perdeu experiência e voltou a ser " + rank.displayName()
 						+ ".</r> <d>Complete missões para garantir seu nível de forma permanente.</d>"));
 			}
 
@@ -246,7 +248,7 @@ public final class KarmaSystem {
 
 		if (QuestService.checkPermanentVillain(data)) {
 			PlayerDataManager.save(player);
-			player.sendSystemMessage(Text.parse("<r><b>☠ 100% DE VILANIA ☠</b></r>\n<p>Todas as missões de vilão feitas, karma no fundo do poço "
+			br.com.cronicasdavila.net.Notify.send(player, ("<r><b>☠ 100% DE VILANIA ☠</b></r>\n<p>Todas as missões de vilão feitas, karma no fundo do poço "
 					+ "e o nível máximo de Vilania. O Vilão da História agora é seu <b>para sempre</b>.</p>"));
 		}
 
@@ -256,7 +258,7 @@ public final class KarmaSystem {
 			if (!data.heroAnnounced) {
 				data.heroAnnounced = true;
 				PlayerDataManager.save(player);
-				player.sendSystemMessage(Text.parse("<o><b>★★★ HERÓI DA VILA ★★★</b></o>\n<g>Você dominou todas as profissões dos aldeões. "
+				br.com.cronicasdavila.net.Notify.send(player, ("<o><b>★★★ HERÓI DA VILA ★★★</b></o>\n<g>Você dominou todas as profissões dos aldeões. "
 						+ "Seu nome será cantado em cada vila deste mundo.</g> <d>(Herói da Vila permanente)</d>"));
 			}
 		}
@@ -267,7 +269,7 @@ public final class KarmaSystem {
 			if (!data.villainAnnounced) {
 				data.villainAnnounced = true;
 				PlayerDataManager.save(player);
-				player.sendSystemMessage(Text.parse("<r><b>☠☠☠ VILÃO DA HISTÓRIA ☠☠☠</b></r>\n<p>Saqueadores, piglins e bruxas se curvam diante de você. "
+				br.com.cronicasdavila.net.Notify.send(player, ("<r><b>☠☠☠ VILÃO DA HISTÓRIA ☠☠☠</b></r>\n<p>Saqueadores, piglins e bruxas se curvam diante de você. "
 						+ "Toda criatura viva foge quando você se aproxima.</p> <d>Mas o mundo dos vivos te rejeita: fadiga no mundo normal "
 						+ "e, depois de um dia longe do Nether, você queima.</d>"));
 			}

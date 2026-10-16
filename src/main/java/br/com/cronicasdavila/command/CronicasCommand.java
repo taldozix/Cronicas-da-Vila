@@ -6,6 +6,7 @@ import static net.minecraft.commands.Commands.literal;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 
@@ -19,25 +20,54 @@ import br.com.cronicasdavila.CronicasDaVila;
 import br.com.cronicasdavila.data.PlayerData;
 import br.com.cronicasdavila.data.PlayerDataManager;
 import br.com.cronicasdavila.karma.KarmaSystem;
+import br.com.cronicasdavila.net.Notify;
 import br.com.cronicasdavila.quest.Quest;
 import br.com.cronicasdavila.quest.QuestRegistry;
 import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.rank.Professions;
-import br.com.cronicasdavila.rank.Rank;
 import br.com.cronicasdavila.rank.VillainRank;
-import br.com.cronicasdavila.util.Text;
 
 /**
- * /cronicas — mostra seu status.
- * /cronicas admin ... — comandos de teste (precisa ser operador).
+ * /cronicas — abre o menu do mod (nada vai para o chat).
+ * <ul>
+ *     <li>/cronicas, /cronicas missoes, /cronicas reputacao, /cronicas guia, /cronicas opcoes: abrem a aba.</li>
+ *     <li>/cronicas hud completo|compacto|oculto: muda o rastreador de missões.</li>
+ *     <li>/cronicas admin ...: comandos de teste (operador). O resultado aparece no Registro do menu.</li>
+ * </ul>
  */
 public final class CronicasCommand {
 	private CronicasCommand() {
 	}
 
+	private static LiteralArgumentBuilder<CommandSourceStack> tab(String name, String tab) {
+		return literal(name).executes(ctx -> open(ctx, tab));
+	}
+
+	private static int open(CommandContext<CommandSourceStack> ctx, String tab) throws CommandSyntaxException {
+		Notify.openMenu(ctx.getSource().getPlayerOrException(), tab);
+		return 1;
+	}
+
+	/** Resultado de um comando de teste: vai para o Registro e abre o menu na aba Início. */
+	private static int done(ServerPlayer player, String markup) {
+		Notify.send(player, markup);
+		Notify.openMenu(player, "inicio");
+		return 1;
+	}
+
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
 		dispatcher.register(literal("cronicas")
-				.executes(CronicasCommand::status)
+				.executes(ctx -> open(ctx, "inicio"))
+				.then(tab("inicio", "inicio"))
+				.then(tab("missoes", "missoes"))
+				.then(tab("reputacao", "reputacao"))
+				.then(tab("guia", "guia"))
+				.then(tab("comandos", "guia"))
+				.then(tab("opcoes", "opcoes"))
+				.then(literal("hud")
+						.then(literal("completo").executes(ctx -> hud(ctx, "completo")))
+						.then(literal("compacto").executes(ctx -> hud(ctx, "compacto")))
+						.then(literal("oculto").executes(ctx -> hud(ctx, "oculto"))))
 				.then(literal("admin")
 						.requires(PermissionPredicates.require(CronicasDaVila.id("admin"), PermissionLevel.GAMEMASTERS))
 						.then(literal("karma").then(argument("valor", IntegerArgumentType.integer(-1000, 1000)).executes(ctx -> {
@@ -45,24 +75,21 @@ public final class CronicasCommand {
 							PlayerData data = PlayerDataManager.get(player);
 							data.karma = IntegerArgumentType.getInteger(ctx, "valor");
 							PlayerDataManager.save(player);
-							player.sendSystemMessage(Text.parse("<g>Karma definido para " + data.karma + " (" + KarmaSystem.tier(data).displayName() + ").</g>"));
-							return 1;
+							return done(player, "<g>Karma definido para " + data.karma + " (" + KarmaSystem.tier(data).displayName() + ").</g>");
 						})))
 						.then(literal("nivel").then(argument("nivel", IntegerArgumentType.integer(1, 5)).executes(ctx -> {
 							ServerPlayer player = ctx.getSource().getPlayerOrException();
 							PlayerData data = PlayerDataManager.get(player);
 							data.questRank = IntegerArgumentType.getInteger(ctx, "nivel");
 							PlayerDataManager.save(player);
-							player.sendSystemMessage(Text.parse("<g>Nível por missões definido para " + data.questRank().displayName() + ".</g>"));
-							return 1;
+							return done(player, "<g>Nível por missões definido para " + data.questRank().displayName() + ".</g>");
 						})))
 						.then(literal("vilania").then(argument("nivel", IntegerArgumentType.integer(1, 5)).executes(ctx -> {
 							ServerPlayer player = ctx.getSource().getPlayerOrException();
 							PlayerData data = PlayerDataManager.get(player);
 							data.villainRank = IntegerArgumentType.getInteger(ctx, "nivel");
 							PlayerDataManager.save(player);
-							player.sendSystemMessage(Text.parse("<r>Vilania definida para " + VillainRank.ofTier(data.villainRank).displayName() + ".</r>"));
-							return 1;
+							return done(player, "<r>Vilania definida para " + VillainRank.ofTier(data.villainRank).displayName() + ".</r>");
 						})))
 						.then(literal("afinidade")
 								.then(argument("profissao", StringArgumentType.word())
@@ -71,9 +98,7 @@ public final class CronicasCommand {
 											String profession = StringArgumentType.getString(ctx, "profissao");
 
 											if (!Professions.givesQuests(profession)) {
-												player.sendSystemMessage(Text.parse("<r>Profissão desconhecida. Use: farmer, fisherman, shepherd, butcher, "
-														+ "leatherworker, fletcher, mason, toolsmith, weaponsmith, armorer, cartographer, librarian, cleric, piglin, pillager, shulker.</r>"));
-												return 0;
+												return done(player, "<r>Profissão desconhecida.</r> Use: " + String.join(", ", Professions.QUEST_GIVERS) + ".");
 											}
 
 											PlayerData data = PlayerDataManager.get(player);
@@ -81,9 +106,8 @@ public final class CronicasCommand {
 											progress.level = IntegerArgumentType.getInteger(ctx, "nivel");
 											progress.doneAtLevel = 0;
 											PlayerDataManager.save(player);
-											player.sendSystemMessage(Text.parse("<g>Afinidade com " + Professions.displayName(profession) + ": "
-													+ Rank.ofTier(progress.level).displayName() + ".</g>"));
-											return 1;
+											return done(player, "<g>Afinidade com " + Professions.displayName(profession) + ": "
+													+ Professions.levelName(profession, progress.level) + ".</g>");
 										}))))
 						.then(literal("completar").executes(ctx -> {
 							ServerPlayer player = ctx.getSource().getPlayerOrException();
@@ -93,37 +117,24 @@ public final class CronicasCommand {
 								Quest quest = QuestRegistry.get(active.questId);
 
 								if (quest != null && (quest.objective.isKill() || quest.objective.isMine())) {
-									active.progress = br.com.cronicasdavila.quest.QuestService.target(active, quest);
+									active.progress = QuestService.target(active, quest);
 								} else if (quest != null && (quest.objective.isStat() || quest.objective.isCraft())) {
-									active.baseline -= br.com.cronicasdavila.quest.QuestService.target(active, quest);
+									active.baseline -= QuestService.target(active, quest);
 								}
 							}
 
 							PlayerDataManager.save(player);
-							player.sendSystemMessage(Text.parse("<g>Objetivos de abate/mineração/estatística completados (entregas ainda pedem os itens).</g>"));
-							return 1;
+							return done(player, "<g>Objetivos de abate, mineração e estatística completados</g> <d>(entregas ainda pedem os itens).</d>");
 						}))
 						.then(literal("resetar").executes(ctx -> {
 							ServerPlayer player = ctx.getSource().getPlayerOrException();
 							PlayerDataManager.reset(player);
-							player.sendSystemMessage(Text.parse("<y>Seu progresso no Crônicas da Vila foi zerado.</y>"));
-							return 1;
+							return done(player, "<y>Seu progresso no Crônicas da Vila foi zerado.</y>");
 						}))));
 	}
 
-	private static int status(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {
-		ServerPlayer player = ctx.getSource().getPlayerOrException();
-		PlayerData data = PlayerDataManager.get(player);
-		Rank rank = QuestService.effectiveRank(player, data);
-		player.sendSystemMessage(Text.parse("<o><b>— Crônicas da Vila —</b></o>"));
-		player.sendSystemMessage(Text.parse("Nível: <o>" + rank.displayName() + "</o> <d>(por missões: " + data.questRank().displayName()
-				+ ", por XP: " + Rank.fromXpLevel(player.experienceLevel).displayName() + ")</d>"));
-		player.sendSystemMessage(Text.parse("Karma: <y>" + data.karma + "</y> — " + KarmaSystem.tier(data).displayName()));
-		player.sendSystemMessage(Text.parse("Vilania: <r>" + VillainRank.ofTier(data.villainRank).displayName() + "</r>"
-				+ (QuestService.isVillain(data) ? " <p>☠ Vilão da História</p>" : "")));
-		player.sendSystemMessage(Text.parse("Missões ativas: <y>" + data.active.size() + "</y> · concluídas: <y>" + data.totalCompleted
-				+ "</y> · profissões dominadas: <y>" + QuestService.masteredCount(data) + "/13</y>"));
-		player.sendSystemMessage(Text.parse("<d>Abra o Diário de Missões com a tecla J.</d>"));
+	private static int hud(CommandContext<CommandSourceStack> ctx, String mode) throws CommandSyntaxException {
+		Notify.hudMode(ctx.getSource().getPlayerOrException(), mode);
 		return 1;
 	}
 }

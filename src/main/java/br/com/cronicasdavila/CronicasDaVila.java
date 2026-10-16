@@ -45,12 +45,19 @@ public class CronicasDaVila implements ModInitializer {
 	private static int tickCounter = 0;
 	private static int secondCounter = 0;
 
+	/** Versão do mod (a mesma do .jar). */
+	public static String version() {
+		return net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer(MOD_ID)
+				.map(container -> container.getMetadata().getVersion().getFriendlyString()).orElse("?");
+	}
+
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
 
 	@Override
 	public void onInitialize() {
+		br.com.cronicasdavila.config.ModSettings.load();
 		PlayerDataManager.init();
 		DialogueManager.init();
 		ModEffects.init();

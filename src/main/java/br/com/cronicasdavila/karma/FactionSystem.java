@@ -145,7 +145,8 @@ public final class FactionSystem {
 
 	/** A cada segundo: a maldição do mundo normal para o Vilão da História. */
 	public static void tickSecond(ServerPlayer player, PlayerData data) {
-		if (!QuestService.isVillain(data) || player.isCreative() || player.isSpectator()) {
+		if (!QuestService.isVillain(data) || player.isCreative() || player.isSpectator()
+				|| !br.com.cronicasdavila.config.ModSettings.get().villainCurse) {
 			data.overworldTicks = 0;
 			return;
 		}
@@ -169,12 +170,12 @@ public final class FactionSystem {
 		data.overworldTicks += 20;
 
 		if (crossed(before, data.overworldTicks, ONE_DAY / 2)) {
-			player.sendSystemMessage(Text.parse("<r>☠ O mundo dos vivos te rejeita.</r> <d>Meio dia longe do Nether. Volte antes que o sol te queime.</d>"));
+			br.com.cronicasdavila.net.Notify.send(player, ("<r>☠ O mundo dos vivos te rejeita.</r> <d>Meio dia longe do Nether. Volte antes que o sol te queime.</d>"));
 			PlayerDataManager.save(player);
 		} else if (crossed(before, data.overworldTicks, ONE_DAY - 2400)) {
-			player.sendSystemMessage(Text.parse("<r>☠ Sua pele começa a fumegar...</r> <d>Faltam 2 minutos para você pegar fogo. Corra para o Nether!</d>"));
+			br.com.cronicasdavila.net.Notify.send(player, ("<r>☠ Sua pele começa a fumegar...</r> <d>Faltam 2 minutos para você pegar fogo. Corra para o Nether!</d>"));
 		} else if (crossed(before, data.overworldTicks, ONE_DAY)) {
-			player.sendSystemMessage(Text.parse("<r><b>☠ VOCÊ ESTÁ QUEIMANDO!</b></r> <d>O Vilão da História não pertence a este mundo. Volte ao Nether.</d>"));
+			br.com.cronicasdavila.net.Notify.send(player, ("<r><b>☠ VOCÊ ESTÁ QUEIMANDO!</b></r> <d>O Vilão da História não pertence a este mundo. Volte ao Nether.</d>"));
 			PlayerDataManager.save(player);
 		}
 

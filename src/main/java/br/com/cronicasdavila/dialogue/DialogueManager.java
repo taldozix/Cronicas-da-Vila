@@ -280,7 +280,8 @@ public final class DialogueManager {
 	// ---------------------------------------------------------------------------------------------
 
 	public static void onAction(ServerPlayer player, String action) {
-		if (br.com.cronicasdavila.trade.BargainSystem.onAction(player, action)) {
+		if (br.com.cronicasdavila.trade.BargainSystem.onAction(player, action)
+				|| br.com.cronicasdavila.config.SettingsService.onAction(player, action)) {
 			return;
 		}
 
@@ -315,7 +316,7 @@ public final class DialogueManager {
 
 			if (quest != null) {
 				int karma = QuestService.abandonKarma(profession);
-				player.sendSystemMessage(br.com.cronicasdavila.util.Text.parse("<r>Você desistiu da missão</r> <y>" + quest.title + "</y>. <d>("
+				br.com.cronicasdavila.net.Notify.send(player, ("<r>Você desistiu da missão</r> <y>" + quest.title + "</y>. <d>("
 						+ (karma > 0 ? "+" : "") + karma + " karma)</d>"));
 			}
 		} else if (action.startsWith("track:")) {
@@ -905,7 +906,7 @@ public final class DialogueManager {
 		String npc = session.npc.getUUID().toString();
 		Long told = data.loreDay.get(npc);
 
-		if (told != null && told == day) {
+		if (told != null && told == day && br.com.cronicasdavila.config.ModSettings.get().loreOncePerDay) {
 			show(session, List.of(pick(session, session.lines.lore_done,
 					"Já te contei a minha de hoje, {player}. Pergunta pros outros, ou volta amanhã que eu lembro de mais alguma.")),
 					backOrBye(session), toneFor(session));
@@ -926,13 +927,16 @@ public final class DialogueManager {
 
 	/** Aldeões de trabalho pesado só trabalham um dia a cada 3 (cada um no seu dia, para a vila não parar). */
 	public static boolean onDayOff(DialogueSession session) {
-		if (!(session.npc instanceof Villager) || !Professions.HEAVY_PROFESSIONS.contains(session.profession)) {
+		br.com.cronicasdavila.config.ModSettings.Values settings = br.com.cronicasdavila.config.ModSettings.get();
+
+		if (!settings.heavyDayOff || !(session.npc instanceof Villager) || !Professions.HEAVY_PROFESSIONS.contains(session.profession)) {
 			return false;
 		}
 
+		int every = Math.max(1, settings.heavyEveryDays);
 		long day = VanillaCompat.day(session.npc.level());
-		int offset = Math.floorMod(session.npc.getUUID().hashCode(), Professions.HEAVY_WORK_EVERY_DAYS);
-		return (day + offset) % Professions.HEAVY_WORK_EVERY_DAYS != 0;
+		int offset = Math.floorMod(session.npc.getUUID().hashCode(), every);
+		return (day + offset) % every != 0;
 	}
 
 	private static void reputation(DialogueSession session) {

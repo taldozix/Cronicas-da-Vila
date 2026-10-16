@@ -71,7 +71,7 @@ public final class BargainSystem {
 		}
 
 		PlayerData.ProfessionProgress progress = data.profession(profession);
-		return progress.mastered || progress.level >= BargainMath.MIN_AFFINITY;
+		return progress.mastered || progress.level >= br.com.cronicasdavila.config.ModSettings.get().bargainMinAffinity;
 	}
 
 	private static boolean refusedToday(PlayerData data, Villager villager) {
@@ -93,6 +93,7 @@ public final class BargainSystem {
 		json.addProperty("karma", data.karma);
 		json.addProperty("canBargain", eligible(data, profession));
 		json.addProperty("refused", refusedToday(data, villager));
+		json.addProperty("bonus", br.com.cronicasdavila.config.ModSettings.get().bargainBonus);
 		return json;
 	}
 
@@ -183,7 +184,8 @@ public final class BargainSystem {
 		}
 
 		PlayerData.ProfessionProgress progress = data.profession(VanillaCompat.professionKey(villager));
-		int chance = BargainMath.chance(BargainMath.value(offered), cost(offer), progress.level, progress.mastered, data.karma);
+		int chance = BargainMath.chance(BargainMath.value(offered), cost(offer), progress.level, progress.mastered, data.karma,
+				br.com.cronicasdavila.config.ModSettings.get().bargainBonus);
 		ServerLevel level = (ServerLevel) player.level();
 		boolean success = player.getRandom().nextInt(100) < chance;
 

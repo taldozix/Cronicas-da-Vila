@@ -87,6 +87,13 @@ public final class SyncService {
 		root.addProperty("villainFactions", Professions.VILLAIN_FACTIONS.size());
 		root.addProperty("overworldTicks", data.overworldTicks);
 		root.addProperty("villainPercent", QuestService.villainPercent(data));
+		root.addProperty("rankXpName", Rank.fromXpLevel(player.experienceLevel).displayName());
+		root.addProperty("rankQuestName", questRank.displayName());
+		root.addProperty("onVillainPath", KarmaSystem.onVillainPath(data));
+		root.addProperty("totalQuests", QuestRegistry.all().size());
+		root.addProperty("version", br.com.cronicasdavila.CronicasDaVila.version());
+		root.add("settings", br.com.cronicasdavila.config.ModSettings.toJson());
+		root.addProperty("canEditSettings", br.com.cronicasdavila.config.SettingsService.canEdit(player));
 		root.addProperty("villainPermanent", data.villainPermanent);
 
 		JsonArray professions = new JsonArray();
@@ -133,6 +140,8 @@ public final class SyncService {
 			object.addProperty("giverDim", active.giverDimension);
 			object.addProperty("objective", QuestService.objectiveDesc(active, quest));
 			object.addProperty("type", quest.objective.type);
+			object.addProperty("icon", QuestService.icon(quest));
+			object.addProperty("xp", QuestService.xpFor(quest, active.repeat));
 			int unit = quest.objective.displayUnit();
 			object.addProperty("progress", QuestService.progress(player, active, quest) / unit);
 			object.addProperty("target", QuestService.target(active, quest) / unit);

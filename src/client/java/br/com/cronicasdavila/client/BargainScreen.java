@@ -30,7 +30,7 @@ public class BargainScreen extends Screen {
 	private static final int W = 380;
 	private static final int H = 236;
 	private static final int ROW = 22;
-	private static final int GOLD = 0xFFD36B;
+	private static final int GOLD = 0x5EC4D1;
 
 	private JsonObject node;
 	private final List<JsonObject> offers = new ArrayList<>();
@@ -195,7 +195,7 @@ public class BargainScreen extends Screen {
 
 		JsonObject offer = offers.get(selectedOffer);
 		return BargainMath.chance(BargainMath.value(offered), offer.get("cost").getAsDouble(), ClientState.num(node, "level", 1),
-				node.has("mastered") && node.get("mastered").getAsBoolean(), ClientState.num(node, "karma", 0));
+				node.has("mastered") && node.get("mastered").getAsBoolean(), ClientState.num(node, "karma", 0), ClientState.num(node, "bonus", 0));
 	}
 
 	// ---------------------------------------------------------------------------------------------

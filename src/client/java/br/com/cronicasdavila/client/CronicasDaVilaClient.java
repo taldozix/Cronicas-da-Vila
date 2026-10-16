@@ -34,6 +34,7 @@ import br.com.cronicasdavila.util.Text;
 
 public class CronicasDaVilaClient implements ClientModInitializer {
 	public static KeyMapping journalKey;
+	public static KeyMapping trackerKey;
 
 	/** Elementos do HUD escondidos durante a conversa (visual "cinema"). */
 	private static final List<Identifier> HIDDEN_DURING_DIALOGUE = List.of(
@@ -48,11 +49,20 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		KeyMapping.Category category = KeyMapping.Category.register(CronicasDaVila.id("main"));
 		journalKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.cronicasdavila.journal", InputConstants.Type.KEYBOARD,
 				InputConstants.KEY_J, category));
+		trackerKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.cronicasdavila.tracker", InputConstants.Type.KEYBOARD,
+				InputConstants.KEY_H, category));
+		ClientConfig.load();
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (journalKey.consumeClick()) {
 				if (client.player != null && client.gui.screen() == null) {
-					client.gui.setScreen(new QuestJournalScreen(null));
+					client.gui.setScreen(new MenuScreen(null, "inicio"));
+				}
+			}
+
+			while (trackerKey.consumeClick()) {
+				if (client.player != null) {
+					ClientState.addNotice("<a>Rastreador de missões:</a> " + ClientConfig.modeName(ClientConfig.cycleTrackerMode()));
 				}
 			}
 		});
@@ -67,7 +77,7 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 				int x = width / 2 + 88 - 62;
 				int y = height / 2 - 83 - 22;
 				Screens.getWidgets(screen).add(Button.builder(Component.literal("§6✦ Missões"),
-						button -> client.gui.setScreen(new QuestJournalScreen(screen))).bounds(x, y, 62, 20).build());
+						button -> client.gui.setScreen(new MenuScreen(screen, "missoes"))).bounds(x, y, 62, 20).build());
 			}
 
 			// Botão "Barganhar" na tela de trocas, para quem tem afinidade alta com a profissão.
@@ -93,8 +103,9 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 			});
 		}
 
-		// Rastreador de missão no canto da tela.
-		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("quest_tracker"), CronicasDaVilaClient::drawTracker);
+		// Rastreador de missão (completo ou compacto) e os avisos do mod, no lugar do chat.
+		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("quest_tracker"), Hud::drawTracker);
+		HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, CronicasDaVila.id("notices"), Hud::drawNotices);
 	}
 
 	public static boolean isJournalKey(int key) {
@@ -109,6 +120,31 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 
 		if (type.equals("trade_context")) {
 			ClientState.setTradeContext(node);
+			return;
+		}
+
+		if (type.equals("notify")) {
+			ClientState.addNotice(node.get("text").getAsString());
+			return;
+		}
+
+		if (type.equals("open_menu")) {
+			String tab = node.get("tab").getAsString();
+
+			if (current instanceof MenuScreen menu) {
+				menu.setTab(tab);
+			} else {
+				client.gui.setScreen(new MenuScreen(null, tab));
+			}
+
+			return;
+		}
+
+		if (type.equals("hud_mode")) {
+			ClientConfig.setTrackerMode(node.get("mode").getAsString());
+
+			ClientState.addNotice("<a>Rastreador de missões:</a> " + ClientConfig.modeName(ClientConfig.trackerMode()));
+
 			return;
 		}
 
@@ -138,46 +174,5 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		} else {
 			client.gui.setScreen(new DialogueScreen(node));
 		}
-	}
-
-	private static void drawTracker(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker) {
-		Minecraft client = Minecraft.getInstance();
-
-		if (client.player == null || client.gui.screen() != null) {
-			return;
-		}
-
-		JsonObject quest = ClientState.trackedQuest();
-
-		if (quest == null) {
-			return;
-		}
-
-		int progress = ClientState.num(quest, "progress", 0);
-		int target = Math.max(1, ClientState.num(quest, "target", 1));
-		boolean done = progress >= target;
-		boolean danger = "danger".equals(ClientState.str(quest, "tone", ""));
-		int width = 190;
-		int x = 6;
-		int y = 6;
-
-		List<FormattedCharSequence> objective = client.font.split(Text.parse(done
-				? "<g>✔ Volte e fale com " + ClientState.str(quest, "giver", "?") + "</g>"
-				: ClientState.str(quest, "objective", "")), width - 12);
-		int lines = Math.min(3, objective.size());
-		int height = 30 + lines * 10;
-
-		Ui.roundedRect(graphics, x, y, x + width, y + height, Ui.argb(150, 0x0B0B0F));
-		graphics.fill(x + 1, y + 2, x + 3, y + height - 2, Ui.argb(255, done ? 0x55FF55 : (danger ? 0xFF5555 : 0xFFD24A)));
-		graphics.text(client.font, "◆ " + ClientState.str(quest, "title", ""), x + 8, y + 5,
-				Ui.argb(255, danger ? 0xFF8080 : 0xFFD36B), true);
-
-		for (int i = 0; i < lines; i++) {
-			graphics.text(client.font, objective.get(i), x + 8, y + 16 + i * 10, Ui.argb(255, 0xEEEEEE), true);
-		}
-
-		int barY = y + 18 + lines * 10;
-		Ui.bar(graphics, x + 8, barY, width - 50, 3, progress / (float) target, Ui.argb(255, done ? 0x55FF55 : 0xFFD24A));
-		graphics.text(client.font, progress + "/" + target, x + width - 38, barY - 3, Ui.argb(255, done ? 0x8CFF8C : 0xFFFFFF), false);
 	}
 }

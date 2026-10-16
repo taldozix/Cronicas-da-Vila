@@ -32,6 +32,28 @@ public final class ClientState {
 		tradeContext = new JsonObject();
 	}
 
+	/** Um aviso do mod (aparece na tela e fica no Registro da aba Início). */
+	public record Notice(String text, long time) {
+	}
+
+	private static final List<Notice> NOTICES = new ArrayList<>();
+
+	public static void addNotice(String text) {
+		NOTICES.add(0, new Notice(text, System.currentTimeMillis()));
+
+		while (NOTICES.size() > 40) {
+			NOTICES.remove(NOTICES.size() - 1);
+		}
+	}
+
+	public static List<Notice> notices() {
+		return NOTICES;
+	}
+
+	public static List<JsonObject> settings() {
+		return list("settings");
+	}
+
 	public static void setTradeContext(JsonObject context) {
 		tradeContext = context;
 	}

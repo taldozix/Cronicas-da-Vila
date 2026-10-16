@@ -11,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
  * Os valores são em "esmeraldas": quanto um aldeão acha que cada item vale.
  */
 public final class BargainMath {
-	/** Afinidade mínima com a profissão para o aldeão aceitar barganhar (Aventureiro). */
+	/** Afinidade padrão para barganhar (Aventureiro); a opção do mundo pode mudar. */
 	public static final int MIN_AFFINITY = 3;
 
 	private static final Map<String, Double> VALUES = new HashMap<>();
@@ -97,11 +97,12 @@ public final class BargainMath {
 	 * Chance (0 a 100) de o aldeão aceitar: depende de quanto vale o que você oferece comparado ao preço,
 	 * da sua afinidade com a profissão e do seu karma. Nunca é garantido (máximo 95%), nem impossível (mínimo 5%).
 	 */
-	public static int chance(double offered, double cost, int affinity, boolean mastered, int karma) {
+	public static int chance(double offered, double cost, int affinity, boolean mastered, int karma, int bonus) {
 		double ratio = offered / Math.max(0.05, cost);
 		double chance = ratio >= 1.0 ? 0.6 + 0.3 * Math.min(1.0, ratio - 1.0) : 0.6 * Math.pow(ratio, 1.2);
 		chance += (Math.min(5, affinity) - MIN_AFFINITY) * 0.06 + (mastered ? 0.04 : 0.0);
 		chance += karma / 1000.0 * 0.08;
+		chance += bonus / 100.0;
 		return (int) Math.round(Math.max(0.05, Math.min(0.95, chance)) * 100);
 	}
 }

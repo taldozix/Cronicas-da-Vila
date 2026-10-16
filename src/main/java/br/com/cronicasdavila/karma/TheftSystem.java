@@ -64,7 +64,7 @@ public final class TheftSystem {
 
 	/** Botão direito num bloco: se for um baú da vila que não é do jogador, começa a vigiar. */
 	public static void onUseBlock(ServerPlayer player, ServerLevel level, BlockPos pos) {
-		if (player.isCreative() || player.isSpectator()) {
+		if (player.isCreative() || player.isSpectator() || !br.com.cronicasdavila.config.ModSettings.get().theft) {
 			return;
 		}
 
@@ -174,7 +174,7 @@ public final class TheftSystem {
 		NpcDialogue lines = QuestRegistry.dialogue(profession, VanillaCompat.villagerType(first));
 		List<String> shouts = lines.extra("thief_seen");
 		String shout = shouts.isEmpty() ? "<r>Ladrão!</r> Socorro, golem!" : shouts.get(player.getRandom().nextInt(shouts.size()));
-		player.sendSystemMessage(Text.parse("<y>" + DialogueManager.npcName(first, lines) + ":</y> "
+		br.com.cronicasdavila.net.Notify.send(player, ("<y>" + DialogueManager.npcName(first, lines) + ":</y> "
 				+ shout.replace("{player}", player.getScoreboardName())));
 
 		for (Villager villager : witnesses) {

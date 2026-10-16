@@ -116,7 +116,6 @@ public final class QuestService {
 	public record Offer(Quest quest, boolean repeat, int target, List<QuestReward> rewards) {
 	}
 
-	private static final double BONUS_CHANCE = 0.3;
 
 	/** Bônus da sorte por nível da missão: {item, quantidade}. */
 	private static final String[][][] BONUS_POOL = {
@@ -137,7 +136,9 @@ public final class QuestService {
 		double ratio = 1.0;
 
 		// Chefes e pedidos pequenos (1 a 3) continuam exatos.
-		if (base >= 4) {
+		br.com.cronicasdavila.config.ModSettings.Values settings = br.com.cronicasdavila.config.ModSettings.get();
+
+		if (base >= 4 && settings.questVariation) {
 			double factor = 0.75 + player.getRandom().nextDouble() * 0.6;
 			int rolled = Math.max(4, (int) Math.round(base * factor));
 
@@ -161,16 +162,33 @@ public final class QuestService {
 				count = Math.max(1, (int) Math.round(count * (0.4 + 0.6 * ratio)));
 			}
 
+			// Opção "Recompensas das missões" (multiplica o que é empilhável).
+			if (count >= 2 || settings.questRewards >= 200) {
+				count = Math.max(1, (int) Math.round(count * settings.questRewards / 100.0));
+			}
+
+			QuestReward rolled = reward.copyWithCount(count);
+
+			// Opção "Recompensas variadas": às vezes troca por um item surpresa de valor parecido.
+			if (settings.variedRewards && reward.enchant == null && count >= 3 && player.getRandom().nextDouble() < 0.35) {
+				QuestReward surprise = surprise(player, rolled);
+
+				if (surprise != null) {
+					rolled = surprise;
+					count = rolled.count;
+				}
+			}
+
 			if (repeat) {
 				count = Math.max(1, count / 2);
 			}
 
-			rewards.add(reward.copyWithCount(count));
+			rewards.add(rolled.copyWithCount(count));
 		}
 
 		int tier = Math.max(1, Math.min(5, quest.tier));
 
-		if (!repeat && player.getRandom().nextDouble() < BONUS_CHANCE) {
+		if (!repeat && player.getRandom().nextInt(100) < settings.luckyBonus) {
 			String[] bonus = BONUS_POOL[tier][player.getRandom().nextInt(BONUS_POOL[tier].length)];
 			QuestReward extra = new QuestReward(bonus[0], Integer.parseInt(bonus[1]));
 			extra.bonus = true;
@@ -178,6 +196,88 @@ public final class QuestService {
 		}
 
 		return new Offer(quest, repeat, target, rewards);
+	}
+
+	/** Itens que podem aparecer no lugar de uma recompensa (opção "Recompensas variadas"). */
+	private static final String[] SURPRISES = {
+			"minecraft:emerald", "minecraft:gold_ingot", "minecraft:iron_ingot", "minecraft:experience_bottle", "minecraft:ender_pearl",
+			"minecraft:diamond", "minecraft:golden_apple", "minecraft:blaze_rod", "minecraft:amethyst_shard", "minecraft:lapis_lazuli"
+	};
+
+	private static QuestReward surprise(ServerPlayer player, QuestReward original) {
+		Item originalItem = item(original.item);
+
+		if (originalItem == null) {
+			return null;
+		}
+
+		double total = br.com.cronicasdavila.trade.BargainMath.value(new ItemStack(originalItem, original.count));
+
+		for (int tries = 0; tries < 6; tries++) {
+			String id = SURPRISES[player.getRandom().nextInt(SURPRISES.length)];
+			Item item = item(id);
+
+			if (item == null || id.equals(original.item)) {
+				continue;
+			}
+
+			double each = br.com.cronicasdavila.trade.BargainMath.value(new ItemStack(item));
+			int count = (int) Math.round(total / Math.max(0.01, each));
+
+			if (count >= 1 && count <= 64) {
+				return new QuestReward(id, count);
+			}
+		}
+
+		return null;
+	}
+
+	/** Ícone (id de item) da missão para o rastreador do HUD: o item, o bloco, o ovo do mob ou algo que lembre o objetivo. */
+	public static String icon(Quest quest) {
+		QuestObjective objective = quest.objective;
+
+		if (objective.isStat()) {
+			String stat = objective.targets.isEmpty() ? "" : objective.targets.get(0);
+			return switch (stat.replace("minecraft:", "")) {
+				case "aviate_one_cm" -> "minecraft:elytra";
+				case "boat_one_cm" -> "minecraft:oak_boat";
+				case "strider_one_cm" -> "minecraft:warped_fungus_on_a_stick";
+				case "raid_trigger" -> "minecraft:ominous_bottle";
+				case "raid_win" -> "minecraft:bell";
+				case "interact_with_brewingstand" -> "minecraft:brewing_stand";
+				case "animals_bred" -> "minecraft:wheat";
+				case "fish_caught" -> "minecraft:fishing_rod";
+				case "enchant_item" -> "minecraft:enchanting_table";
+				case "target_hit" -> "minecraft:target";
+				default -> "minecraft:clock";
+			};
+		}
+
+		for (String target : objective.targets) {
+			String candidate;
+
+			if (target.startsWith("#")) {
+				candidate = switch (target.substring(1).replace("minecraft:", "")) {
+					case "crops" -> "minecraft:wheat";
+					case "wooden_doors" -> "minecraft:oak_door";
+					case "beds" -> "minecraft:red_bed";
+					case "logs" -> "minecraft:oak_log";
+					case "wool" -> "minecraft:white_wool";
+					case "flowers", "small_flowers" -> "minecraft:poppy";
+					default -> null;
+				};
+			} else if (objective.isKill()) {
+				candidate = target + "_spawn_egg";
+			} else {
+				candidate = target;
+			}
+
+			if (candidate != null && item(candidate) != null) {
+				return candidate;
+			}
+		}
+
+		return objective.isKill() ? "minecraft:iron_sword" : "minecraft:chest";
 	}
 
 	/** Quantidade que este jogador precisa cumprir. */
@@ -491,7 +591,7 @@ public final class QuestService {
 			if (complete && !active.notified) {
 				active.notified = true;
 				changed = true;
-				player.sendSystemMessage(Text.parse("<g>✔ Objetivo cumprido:</g> <y>" + quest.title + "</y>. Volte e fale com <a>"
+				br.com.cronicasdavila.net.Notify.send(player, ("<g>✔ Objetivo cumprido:</g> <y>" + quest.title + "</y>. Volte e fale com <a>"
 						+ active.giverName + "</a> (" + Professions.displayName(quest.profession) + ") para receber a recompensa."));
 				player.level().playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.6F, 1.4F);
 			} else if (!complete && active.notified && quest.objective.isDeliver()) {
@@ -557,8 +657,8 @@ public final class QuestService {
 
 		String rewardText = rewardList(rewards);
 
-		int karma = quest.karmaReward(repeat);
-		int xp = repeat ? quest.xpReward() / 2 : quest.xpReward();
+		int karma = (int) Math.round(quest.karmaReward(repeat) * br.com.cronicasdavila.config.ModSettings.get().karmaRate / 100.0);
+		int xp = xpFor(quest, repeat);
 		data.addKarma(karma);
 
 		if (xp > 0) {
@@ -659,6 +759,12 @@ public final class QuestService {
 				level.addFreshEntity(new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack));
 			}
 		}
+	}
+
+	/** XP que a missão entrega (já com a opção "XP das missões"). */
+	public static int xpFor(Quest quest, boolean repeat) {
+		int base = repeat ? quest.xpReward() / 2 : quest.xpReward();
+		return (int) Math.round(base * br.com.cronicasdavila.config.ModSettings.get().questXp / 100.0);
 	}
 
 	/** Karma ao desistir: largar um serviço de vilão é um ato de bondade (+5); largar um aldeão na mão, não (-5). */
