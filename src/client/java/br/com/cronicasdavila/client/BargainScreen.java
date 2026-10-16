@@ -204,7 +204,7 @@ public class BargainScreen extends Screen {
 
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-		if (event.button() == 0) {
+		if (Ui.isLeftClick(event)) {
 			int mouseX = (int) event.x();
 			int mouseY = (int) event.y();
 			int offer = offerAt(mouseX, mouseY);

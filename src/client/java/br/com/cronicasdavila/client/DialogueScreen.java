@@ -237,7 +237,7 @@ public class DialogueScreen extends Screen {
 
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-		if (event.button() != 0) {
+		if (!Ui.isLeftClick(event)) {
 			return true;
 		}
 

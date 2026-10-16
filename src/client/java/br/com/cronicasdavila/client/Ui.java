@@ -32,6 +32,11 @@ public final class Ui {
 	private Ui() {
 	}
 
+	/** Clique com o botão esquerdo (aceita as duas formas que o jogo usa para dizer qual botão foi). */
+	public static boolean isLeftClick(net.minecraft.client.input.MouseButtonEvent event) {
+		return event.button() == 0 || event.input() == 0;
+	}
+
 	/** Painel chapado e escuro, sem bordas (como na tela de referência). */
 	public static void flatPanel(GuiGraphicsExtractor g, int x1, int y1, int x2, int y2, int alpha) {
 		g.fill(x1, y1, x2, y2, argb(alpha, PANEL));

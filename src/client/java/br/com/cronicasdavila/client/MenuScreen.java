@@ -52,7 +52,11 @@ public class MenuScreen extends Screen {
 	}
 
 	private final Screen parent;
-	private final List<Hit> hits = new ArrayList<>();
+	/** Áreas clicáveis sendo montadas neste quadro. */
+	private List<Hit> hits = new ArrayList<>();
+	/** As áreas do último quadro completo (o clique usa esta cópia, que nunca está pela metade). */
+	private volatile List<Hit> lastHits = List.of();
+	private boolean clickHandled;
 	private final int[] scroll = new int[TAB_KEYS.length];
 	private final int[] contentHeight = new int[TAB_KEYS.length];
 	private int tab;
@@ -145,16 +149,70 @@ public class MenuScreen extends Screen {
 
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-		if (event.button() == 0) {
-			for (int i = hits.size() - 1; i >= 0; i--) {
-				if (hits.get(i).contains(event.x(), event.y())) {
-					hits.get(i).action().run();
-					return true;
-				}
+		if (Ui.isLeftClick(event)) {
+			clickHandled = true;
+
+			if (click(event.x(), event.y())) {
+				return true;
 			}
 		}
 
 		return super.mouseClicked(event, doubleClick);
+	}
+
+	/** Reserva: se o clique não chegou, o soltar do botão faz a ação. */
+	@Override
+	public boolean mouseReleased(MouseButtonEvent event) {
+		if (Ui.isLeftClick(event) && !clickHandled) {
+			click(event.x(), event.y());
+		}
+
+		clickHandled = false;
+		return super.mouseReleased(event);
+	}
+
+	private boolean click(double x, double y) {
+		// Barra lateral, Fechar e o botão do HUD: calculados direto pela posição.
+		int sx = sideX();
+		int by = contentTop() + 10;
+
+		if (x >= sx && x < sx + SIDE_W) {
+			for (int i = 0; i < TAB_KEYS.length; i++) {
+				if (y >= by && y < by + BUTTON_H) {
+					changeTab(i);
+					return true;
+				}
+
+				by += BUTTON_H + 6;
+			}
+
+			by += 6;
+
+			if (y >= by && y < by + BUTTON_H) {
+				onClose();
+				return true;
+			}
+		}
+
+		String label = "HUD: " + ClientConfig.modeName(ClientConfig.trackerMode()).toUpperCase();
+		int hudW = Math.max(110, this.font.width(label) + 20);
+
+		if (x >= panelX2() - hudW && x < panelX2() && y >= contentTop() - 18 && y < contentTop()) {
+			ClientConfig.cycleTrackerMode();
+			return true;
+		}
+
+		// O resto (cartões, botões das abas, opções) usa as áreas do último quadro desenhado.
+		List<Hit> snapshot = lastHits;
+
+		for (int i = snapshot.size() - 1; i >= 0; i--) {
+			if (snapshot.get(i).contains(x, y)) {
+				snapshot.get(i).action().run();
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	@Override
@@ -249,7 +307,7 @@ public class MenuScreen extends Screen {
 		super.extractRenderState(graphics, mouseX, mouseY, delta);
 		this.mouseX = mouseX;
 		this.mouseY = mouseY;
-		this.hits.clear();
+		this.hits = new ArrayList<>();
 		this.hoveredItem = ItemStack.EMPTY;
 		this.hoveredText = null;
 
@@ -276,6 +334,8 @@ public class MenuScreen extends Screen {
 				default -> drawOptions(graphics, x1, y1, x2, y2);
 			}
 		}
+
+		lastHits = hits;
 
 		if (!hoveredItem.isEmpty()) {
 			graphics.setTooltipForNextFrame(this.font, hoveredItem, mouseX, mouseY);
