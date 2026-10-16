@@ -45,7 +45,7 @@ public class PlayerData {
 	public int lastTradeStat = -1;
 	public int lastRaidStat = -1;
 
-	// Vilania (só sobe com missões de saqueadores e piglins; nunca com XP)
+	// Vilania (só sobe com missões de saqueadores, piglins e bruxas; nunca com XP)
 	public int villainRank = 1;
 	public int[] villainTierCompletions = new int[6];
 	public int villainQuests = 0;

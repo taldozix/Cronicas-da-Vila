@@ -52,7 +52,7 @@ public final class QuestService {
 
 	/**
 	 * O "teto" de nível para as missões de cada lado:
-	 * aldeões usam o nível do herói; saqueadores e piglins usam a Vilania; shulkers aceitam o maior dos dois.
+	 * aldeões usam o nível do herói; saqueadores, piglins e bruxas usam a Vilania; shulkers aceitam o maior dos dois.
 	 */
 	public static int factionRank(ServerPlayer player, PlayerData data, String profession) {
 		return switch (Professions.faction(profession)) {
@@ -86,8 +86,23 @@ public final class QuestService {
 		}
 
 		if (!fresh.isEmpty()) {
-			// Oferece em ordem, para a história de cada profissão fazer sentido.
-			return new Offer(fresh.get(0), false);
+			// Sorteia entre as que o jogador ainda não fez, para cada conversa ser uma surpresa.
+			return new Offer(fresh.get(player.getRandom().nextInt(fresh.size())), false);
+		}
+
+		// Acabaram as novas deste nível? Antes de repetir, oferece alguma nova de um nível abaixo.
+		for (int lower = tier - 1; lower >= 1; lower--) {
+			List<Quest> older = new ArrayList<>();
+
+			for (Quest quest : QuestRegistry.forProfessionAndTier(profession, lower)) {
+				if (!data.completed.contains(quest.id)) {
+					older.add(quest);
+				}
+			}
+
+			if (!older.isEmpty()) {
+				return new Offer(older.get(player.getRandom().nextInt(older.size())), false);
+			}
 		}
 
 		Quest repeat = candidates.get(player.getRandom().nextInt(candidates.size()));
@@ -465,15 +480,15 @@ public final class QuestService {
 			if (quest.tier == 5 && !prof.mastered) {
 				prof.mastered = true;
 				lines.add(faction == Professions.Faction.VILLAIN
-						? "<r>☠ Os " + plural(profession) + " te reconhecem como <b>Arquivilão</b>!</r>"
-						: "<o>★ Você é MESTRE entre os " + plural(profession) + "!</o>");
+						? "<r>☠ " + capitalize(withArticle(profession)) + " te reconhecem como <b>Arquivilão</b>!</r>"
+						: "<o>★ Você é MESTRE entre " + withArticle(profession) + "!</o>");
 			} else if (quest.tier == prof.level && prof.level < 5) {
 				prof.doneAtLevel++;
 
 				if (prof.doneAtLevel >= QUESTS_PER_PROFESSION_LEVEL) {
 					prof.level++;
 					prof.doneAtLevel = 0;
-					lines.add("<g>▲ Sua afinidade com os " + plural(profession) + " subiu para <o>"
+					lines.add("<g>▲ Sua afinidade com " + withArticle(profession) + " subiu para <o>"
 							+ Professions.levelName(profession, prof.level) + "</o>!</g> Missões mais difíceis (e melhores) foram liberadas.");
 				}
 			}
@@ -545,8 +560,18 @@ public final class QuestService {
 			case "piglin" -> "piglins";
 			case "pillager" -> "saqueadores";
 			case "shulker" -> "shulkers";
+			case "witch" -> "bruxas";
 			default -> "aldeões";
 		};
+	}
+
+	/** "os saqueadores", "as bruxas"... */
+	public static String withArticle(String profession) {
+		return (Professions.WITCH.equals(profession) ? "as " : "os ") + plural(profession);
+	}
+
+	private static String capitalize(String text) {
+		return text.isEmpty() ? text : Character.toUpperCase(text.charAt(0)) + text.substring(1);
 	}
 
 	public static String karmaText(int karma) {
@@ -558,7 +583,7 @@ public final class QuestService {
 	}
 
 	/**
-	 * Vilão da História: Arquivilão, dominou todos os inimigos que dão missões (saqueadores e piglins)
+	 * Vilão da História: Arquivilão, dominou todos os inimigos que dão missões (saqueadores, piglins e bruxas)
 	 * e tem karma negativo.
 	 */
 	public static boolean isVillain(PlayerData data) {

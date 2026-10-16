@@ -199,7 +199,7 @@ public final class KarmaSystem {
 		if (rank.tier() != data.lastAnnouncedRank) {
 			if (rank.tier() > data.lastAnnouncedRank) {
 				player.sendSystemMessage(Text.parse("<o>★ Novo nível: <b>" + rank.displayName() + "</b>!</o> Missões de nível "
-						+ rank.displayName() + " foram liberadas com os aldeões e piglins."));
+						+ rank.displayName() + " foram liberadas com os aldeões e shulkers."));
 			} else {
 				player.sendSystemMessage(Text.parse("<r>Você perdeu experiência e voltou a ser " + rank.displayName()
 						+ ".</r> <d>Complete missões para garantir seu nível de forma permanente.</d>"));
@@ -250,7 +250,7 @@ public final class KarmaSystem {
 			if (!data.villainAnnounced) {
 				data.villainAnnounced = true;
 				PlayerDataManager.save(player);
-				player.sendSystemMessage(Text.parse("<r><b>☠☠☠ VILÃO DA HISTÓRIA ☠☠☠</b></r>\n<p>Saqueadores e piglins se curvam diante de você. "
+				player.sendSystemMessage(Text.parse("<r><b>☠☠☠ VILÃO DA HISTÓRIA ☠☠☠</b></r>\n<p>Saqueadores, piglins e bruxas se curvam diante de você. "
 						+ "Toda criatura viva foge quando você se aproxima.</p> <d>Mas o mundo dos vivos te rejeita: fadiga no mundo normal "
 						+ "e, depois de um dia longe do Nether, você queima.</d>"));
 			}

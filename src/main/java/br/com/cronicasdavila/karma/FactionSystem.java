@@ -20,7 +20,7 @@ import br.com.cronicasdavila.rank.Professions;
 import br.com.cronicasdavila.util.Text;
 
 /**
- * Alianças com os inimigos das vilas (saqueadores, shulkers) e os poderes/maldições do Vilão da História.
+ * Alianças com os inimigos das vilas (saqueadores, bruxas, shulkers) e os poderes/maldições do Vilão da História.
  */
 public final class FactionSystem {
 	/** Os saqueadores e seus aliados das invasões. */
@@ -72,6 +72,16 @@ public final class FactionSystem {
 		return progress != null && progress.totalDone > 0;
 	}
 
+	/** As bruxas te deixam em paz? (frasco de vidro na mão, missão ativa, ou já ajudou alguma bruxa) */
+	public static boolean isWitchAlly(ServerPlayer player, PlayerData data) {
+		if (held(player).equals("minecraft:glass_bottle") || data.active.containsKey(Professions.WITCH)) {
+			return true;
+		}
+
+		PlayerData.ProfessionProgress progress = data.professions.get(Professions.WITCH);
+		return progress != null && progress.totalDone > 0;
+	}
+
 	/** A cada meio segundo: aliados param de atacar e, se for o Vilão, as criaturas fogem. */
 	public static void tickFast(ServerPlayer player) {
 		if (player.isSpectator()) {
@@ -82,13 +92,16 @@ public final class FactionSystem {
 		ServerLevel level = (ServerLevel) player.level();
 		boolean pillagerAlly = isPillagerAlly(player, data);
 		boolean shulkerAlly = isShulkerAlly(player, data);
+		boolean witchAlly = isWitchAlly(player, data);
 
-		if (pillagerAlly || shulkerAlly) {
+		if (pillagerAlly || shulkerAlly || witchAlly) {
 			List<Mob> attackers = level.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(32), mob -> mob.getTarget() == player);
 
 			for (Mob mob : attackers) {
 				String id = typeId(mob);
-				boolean ally = (pillagerAlly && ILLAGERS.contains(id)) || (shulkerAlly && id.equals("minecraft:shulker"));
+				boolean ally = (pillagerAlly && ILLAGERS.contains(id))
+						|| (shulkerAlly && id.equals("minecraft:shulker"))
+						|| (witchAlly && id.equals("minecraft:witch"));
 
 				// Se você bater neles, eles revidam normalmente.
 				if (ally && !VanillaCompat.recentlyHurtBy(mob, player)) {

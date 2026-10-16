@@ -59,6 +59,122 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
 		},
 		{
+			"id": "shulker_1_pedra",
+			"tier": 1,
+			"title": "Pedra Que Não Queima",
+			"tone": "calm",
+			"offer": [
+				"<p>*clac*</p> Está vendo o chão sob seus pés, criatura de fora? <y>Pedra do Fim</y>. Amarela, porosa, sem graça. A melhor pedra que existe.",
+				"O dragão quebra quase tudo que toca. Menos ela. Por isso toda cidade começa com pedra do Fim nos alicerces.",
+				"Os alicerces da minha torre estão gastos. Preciso de pedra fresca, cortada por mãos. Eu não tenho mãos. Já comentei?"
+			],
+			"why": [
+				"Uma torre sem alicerce é só uma escada para o vazio. E eu moro no topo.",
+				"Além disso, quem quer andar pelo Fim precisa aprender a ler o chão dele. Comece cavando."
+			],
+			"accept": [
+				"<p>*clac clac*</p> Traga a picareta. Sem picareta, a pedra se desfaz e não sobra nada.",
+				"<g>Minere</g> <y>128 blocos de pedra do Fim</y>."
+			],
+			"progress": [
+				"Pedra do Fim só cai se for quebrada com picareta. Com Eficiência, vai bem mais rápido.",
+				"O Dragão do Ender não consegue destruir pedra do Fim. Um muro dela é abrigo seguro durante a luta."
+			],
+			"complete": [
+				"<p>*clac*</p> ...Ouço os alicerces assentando. Um som que eu não ouvia há quatro séculos.",
+				"Tome pedras azuis e pérolas dos Altos. Eles esquecem as pérolas por aí. Nós não esquecemos nada."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:end_stone"], "count": 128, "desc": "<g>Minere</g> <y>128 blocos de pedra do Fim</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:ender_pearl", "count": 8}]
+		},
+		{
+			"id": "shulker_1_olhos",
+			"tier": 1,
+			"title": "Os Doze Olhos",
+			"tone": "danger",
+			"offer": [
+				"Os <a>Voadores</a> abriram o portal para o seu mundo com doze olhos. Doze. Nem um a mais, nem um a menos.",
+				"Vocês, criaturas de fora, fazem esses olhos com pérolas dos Altos e o pó das criaturas de fogo do <n>Nether</n>. Um jeito barulhento de fazer algo sagrado.",
+				"Quero doze <y>olhos do ender</y> para o santuário. Para lembrar a porta que eles atravessaram."
+			],
+			"why": [
+				"Um olho do ender sempre aponta para o portal. Nós achamos que ele sente saudade de casa. Igual a nós.",
+				"E se um dia os Voadores voltarem, vão procurar os olhos. Quero que encontrem."
+			],
+			"accept": [
+				"<p>*clac*</p> Cuidado com as criaturas de fogo. Elas não gostam de visitas.",
+				"<g>Entregue</g> <y>12 olhos do ender</y>."
+			],
+			"progress": [
+				"Pó de blaze e uma pérola do ender fazem um olho. O pó vem das varas que os <r>blazes</r> deixam cair nas fortalezas do Nether.",
+				"Um olho lançado ao ar pode se quebrar no caminho. Se for seguir um até o portal, leve olhos de sobra."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Doze olhos. Todos olhando para o mesmo lugar. Que coisa bonita. E um pouco assustadora.",
+				"Tome pedras azuis, uma maçã dourada e frascos de experiência. Você gastou muito de si fazendo isso."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ender_eye"], "count": 12, "desc": "<g>Entregue</g> <y>12 olhos do ender</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
+			"id": "shulker_1_foguetes",
+			"tier": 1,
+			"title": "Fogo Para as Asas",
+			"tone": "calm",
+			"offer": [
+				"Vocês descobriram um truque que nem os <a>Voadores</a> conheciam: asas com fogo. <o>Foguetes</o>, vocês dizem.",
+				"Eu vi uma criatura de fora passar voando por aqui, há cem anos. Ela gritava de alegria. Depois gritou de outra coisa e caiu no vazio.",
+				"Quem quiser voar entre as ilhas vai precisar de foguetes. Muitos. Aprenda a fazê-los antes de precisar deles."
+			],
+			"why": [
+				"Ninguém atravessa o vazio sem impulso. Nem os Voadores, que tinham penas. Vocês só têm teimosia.",
+				"E aprender a fazer o próprio fogo é o primeiro passo para quem um dia vai usar as asas antigas."
+			],
+			"accept": [
+				"<p>*clac*</p> Papel e pó de explosão. Simples. Só não exploda perto de mim.",
+				"<g>Fabrique</g> <y>32 foguetes de artifício</y>."
+			],
+			"progress": [
+				"Um papel e uma pólvora na bancada fazem três foguetes. Com mais pólvora, até três, eles voam mais longe.",
+				"Foguete sem estrela de fogo não explode. É o tipo certo para voar sem se queimar."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Trinta e dois. O cheiro de pólvora vai ficar na minha casca por um século. Valeu a pena.",
+				"Tome pedras azuis e membranas de phantom. Elas remendam asas na bigorna. Guarde os foguetes. Eu não tenho bolsos."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:firework_rocket"], "count": 32, "desc": "<g>Fabrique</g> <y>32 foguetes de artifício</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:phantom_membrane", "count": 4}]
+		},
+		{
+			"id": "shulker_1_flores",
+			"tier": 1,
+			"title": "Sementes do Coro",
+			"tone": "calm",
+			"offer": [
+				"Comer a fruta do coro é bom. Plantar o coro é melhor. Mas para plantar é preciso a <p>flor do coro</p>, aquela na ponta das plantas.",
+				"As ilhas perto da cidade estão carecas. Os Altos arrancaram tudo, e o vazio levou o resto.",
+				"Traga flores para mim. Conheço um canto de pedra onde elas podem crescer de novo."
+			],
+			"why": [
+				"Sem coro, não há fruta. Sem fruta, não há púrpura. Sem púrpura, não há cidade. Tudo no Fim começa numa flor.",
+				"E uma criatura que planta é uma criatura que pretende voltar. Eu gosto de quem volta."
+			],
+			"accept": [
+				"<p>*clac*</p> Não coma as flores. Elas não são comida. Nem para você.",
+				"<g>Colha</g> e traga <y>8 flores do coro</y>."
+			],
+			"progress": [
+				"A flor do coro fica na ponta da planta. Quebre-a e ela cai inteira, pronta para ser plantada.",
+				"Ela só cresce plantada em pedra do Fim. Plante uma e a planta cresce sozinha, dando mais flores e frutas."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Oito flores. Daqui a cem anos, a ilha vai estar roxa de novo. Eu vou ver. Você, talvez não.",
+				"Tome pedras azuis e pérolas dos Altos. E obrigado por plantar algo que vai durar mais que você."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:chorus_flower"], "count": 8, "desc": "<g>Colha</g> e entregue <y>8 flores do coro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:ender_pearl", "count": 12}]
+		},
+		{
 			"id": "shulker_2_purpura",
 			"tier": 2,
 			"title": "Reconstruir as Torres",
@@ -115,6 +231,122 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:endermite"], "count": 12, "desc": "<r>Elimine</r> <r>12 endermites</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:shulker_shell", "count": 2}]
+		},
+		{
+			"id": "shulker_2_pilares",
+			"tier": 2,
+			"title": "Colunas da Memória",
+			"tone": "calm",
+			"offer": [
+				"Nas torres, cada <y>pilar de púrpura</y> tem um nome gravado. O nome de um shulker que viveu ali.",
+				"Os pilares mais antigos se partiram. Os nomes caíram no vazio. Eu era amigo de alguns.",
+				"Preciso de pilares novos. Vou gravar os nomes de novo. De memória. Memória eu tenho de sobra."
+			],
+			"why": [
+				"Quando um nome some, o shulker some de verdade. Lembra dos Voadores? É a mesma coisa.",
+				"E você vai aprender a transformar pedra em coluna. Paciência de shulker. Vai te fazer bem."
+			],
+			"accept": [
+				"<p>*clac*</p> Pilares precisam ficar de pé. Lajes deitadas não servem para nomes.",
+				"<g>Entregue</g> <y>32 pilares de púrpura</y>."
+			],
+			"progress": [
+				"Duas lajes de púrpura, uma sobre a outra na bancada, fazem um pilar.",
+				"O cortador de pedras é mais econômico: transforma cada bloco de púrpura em um pilar."
+			],
+			"complete": [
+				"<p>*clac clac clac*</p> ...Trinta e dois pilares. Trinta e dois nomes de volta. Um deles é o do meu avô. Ele era insuportável. Que saudade.",
+				"Tome pedras azuis e maçãs douradas. Os nomes agradecem. Eu também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:purpur_pillar"], "count": 32, "desc": "<g>Entregue</g> <y>32 pilares de púrpura</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "shulker_2_voo",
+			"tier": 2,
+			"title": "O Primeiro Voo",
+			"tone": "calm",
+			"offer": [
+				"Você tem asas, criatura de fora? Asas dos <a>Voadores</a>? Então chegou a hora de aprender a usá-las.",
+				"Ter asas não é voar. Voar é cair com elegância por muito tempo. Os Voadores levavam anos para aprender.",
+				"Quero que você plane. Longe. Entre as ilhas, sobre o vazio. Até as asas lembrarem como é."
+			],
+			"why": [
+				"Élitros guardados num navio esquecem para que servem. Élitros que voam lembram dos donos.",
+				"E, para o que os anciões ainda vão te pedir, você vai precisar voar sem medo. Ou com medo, mas voando."
+			],
+			"accept": [
+				"<p>*clac*</p> Não olhe para baixo. Lá embaixo não tem nada. Literalmente nada.",
+				"<g>Plane</g> <y>5.000 blocos</y> com élitros."
+			],
+			"progress": [
+				"Élitros gastam durabilidade enquanto você plana. Conserte-os na bigorna com membranas de phantom.",
+				"Mergulhar ganha velocidade sem gastar foguete. Suba com um foguete, desça planando, repita."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...As asas cantaram. Ouvi daqui. Faz dez mil anos que eu não ouvia esse som.",
+				"Tome pedras azuis e membranas de phantom. Asas que voam precisam de remendo."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 500000, "desc": "<g>Plane</g> <y>5.000 blocos</y> com élitros"},
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:phantom_membrane", "count": 6}]
+		},
+		{
+			"id": "shulker_2_pontes",
+			"tier": 2,
+			"title": "Os Altos da Ponte",
+			"tone": "danger",
+			"offer": [
+				"As pontes entre as torres são estreitas, criatura de fora. E os <r>Altos</r> resolveram ficar parados em cima delas.",
+				"Ficam lá, de pé, olhando para o nada. Se um shulker abre a casca, eles se assustam e arrancam um bloco da ponte.",
+				"Já perdemos três pontes assim. Não peço que você odeie os Altos. Peço que diminua o número deles."
+			],
+			"why": [
+				"Sem pontes, as torres ficam sozinhas. E torre sozinha fica triste. Sim, torres ficam tristes. Você não mora numa.",
+				"As pérolas que eles deixam caem bem para quem anda pelo Fim. Pérolas sempre servem."
+			],
+			"accept": [
+				"<p>*clac*</p> Lute com lâmina. Os Altos riem das flechas.",
+				"<r>Elimine 30 endermen</r>."
+			],
+			"progress": [
+				"Endermen se teleportam para longe de flechas e outros projéteis. Espada e machado funcionam; arco, não.",
+				"No Nether, as florestas distorcidas vivem cheias de endermen. Bom lugar para caçar sem risco de cair no vazio."
+			],
+			"complete": [
+				"<p>*clac*</p> ...As pontes estão vazias. Silêncio nas pontes. Eu tinha esquecido como é bonito.",
+				"Tome pedras azuis e maçãs douradas. Você lutou bem para uma criatura sem casca."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 30, "desc": "<r>Elimine</r> <r>30 endermen</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "shulker_2_vitrais",
+			"tier": 2,
+			"title": "Os Vitrais Magenta",
+			"tone": "calm",
+			"offer": [
+				"Nossas janelas sempre foram de vidro <p>magenta</p>. A luz das varas passa por elas e pinta as torres por dentro.",
+				"Os Altos quebraram muitas, procurando sei lá o quê. Agora o vento do vazio entra. O vazio não tem vento. Mas parece que entra.",
+				"Preciso de vidro tingido. Na cor certa. Não roxo, não rosa. <p>Magenta</p>. Eu percebo a diferença."
+			],
+			"why": [
+				"Um shulker que acorda e vê luz magenta sabe que está em casa. Sem ela, os jovens acordam assustados.",
+				"E é trabalho de paciência e cor. Força você já provou. Agora prove capricho."
+			],
+			"accept": [
+				"<p>*clac clac*</p> Se trouxer rosa, eu vou saber. E vou fechar a casca na sua cara.",
+				"<g>Entregue</g> <y>32 vidros magenta</y>."
+			],
+			"progress": [
+				"Oito blocos de vidro em volta de um corante magenta fazem oito vidros tingidos.",
+				"Corante magenta sai do álio ou do lilás. Também dá para misturar corante azul, vermelho e rosa."
+			],
+			"complete": [
+				"<p>*clac*</p> ...Magenta. Exatamente magenta. Você tem olho bom, criatura de fora. Melhor que o meu. Eu não tenho olho.",
+				"Tome pedras azuis, uma maçã dourada e frascos de experiência. As torres já brilham por dentro."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:magenta_stained_glass"], "count": 32, "desc": "<g>Entregue</g> <y>32 vidros magenta</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 16}]
 		},
 		{
 			"id": "shulker_3_varas",
@@ -175,6 +407,122 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:shulker_shell", "count": 1}]
 		},
 		{
+			"id": "shulker_3_caixas",
+			"tier": 3,
+			"title": "Cascas de Todas as Cores",
+			"tone": "calm",
+			"offer": [
+				"Lembra quando eu disse que sempre quis ser amarelo? Não era piada. Shulkers não fazem piada. Quase nunca.",
+				"Vocês transformam nossas cascas em <y>caixas</y>. Caixas que guardam tudo e não esquecem nada. Como nós.",
+				"Quero ver essas caixas de perto. Quatro delas, de qualquer cor. Quero entender o que vocês fazem com o que deixamos."
+			],
+			"why": [
+				"Uma casca que vira caixa continua sendo casca. Ela ainda lembra. Quero perguntar a elas como é a vida lá fora.",
+				"E quem junta cascas para quatro caixas já andou muito pelas nossas cidades. Eu mereço saber quem é você."
+			],
+			"accept": [
+				"<p>*clac*</p> Traga-as vazias. O que você guarda é seu. A casca é que me interessa.",
+				"<g>Entregue</g> <y>4 caixas de shulker</y> de qualquer cor."
+			],
+			"progress": [
+				"Um baú no meio, uma casca de shulker em cima e outra embaixo: eis uma caixa. Com um corante na bancada, ela muda de cor.",
+				"Uma caixa tingida lavada num caldeirão com água volta ao roxo de sempre. Nós achamos o roxo de sempre ótimo, obrigado."
+			],
+			"complete": [
+				"<p>*clac clac clac*</p> ...Uma delas me contou que já viu uma montanha. Uma montanha! Que vida.",
+				"Tome pedras azuis, maçãs douradas e frascos de experiência. As caixas ficam comigo. Estão em casa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"], "count": 4, "desc": "<g>Entregue</g> <y>4 caixas de shulker</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}]
+		},
+		{
+			"id": "shulker_3_travessia",
+			"tier": 3,
+			"title": "A Travessia dos Voadores",
+			"tone": "calm",
+			"offer": [
+				"Os <a>Voadores</a> tinham uma tradição. Antes de construir uma ilha nova, voavam até ela sem tocar o chão.",
+				"Distâncias que vocês nem imaginam. De cidade em cidade, por cima do vazio, com o dragão rugindo atrás.",
+				"Você já sabe voar. Agora quero que viaje. Muito longe. Como eles."
+			],
+			"why": [
+				"Só quem cruzou o vazio inteiro entende o Fim. Daqui de dentro da casca, eu só imagino.",
+				"Conte-me depois como é lá fora. Eu nunca vou ver. Mas posso ouvir."
+			],
+			"accept": [
+				"<p>*clac*</p> Leve foguetes. Muitos. E não confie em ilha pequena para pousar.",
+				"<g>Plane</g> <y>20.000 blocos</y> com élitros."
+			],
+			"progress": [
+				"Os portais de passagem do Fim levam às ilhas externas. Jogue uma pérola do ender dentro deles para atravessar.",
+				"Élitros com Inquebrável duram mais. Com Remendo, a experiência que você coleta conserta as asas."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Vinte mil blocos. Os Voadores diriam que você está pronto para construir sua própria ilha.",
+				"Tome pedras azuis, maçãs douradas e o livro de <a>Inquebrável</a>. Asas que vão longe precisam durar."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 2000000, "desc": "<g>Plane</g> <y>20.000 blocos</y> com élitros"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "shulker_3_cristais",
+			"tier": 3,
+			"title": "Os Cristais do Portal",
+			"tone": "danger",
+			"offer": [
+				"Vou te pedir algo que me dá medo, criatura de fora. Quero quatro <y>cristais do Fim</y>.",
+				"Sim, são os cristais que acordam o <r>dragão</r>. Os anciões precisam estudá-los. Entender o que o traz de volta.",
+				"Se o dragão voltar a voar, quero estar preparado. Medo preparado ainda é medo. Mas é um medo melhor."
+			],
+			"why": [
+				"Quem conhece a fechadura escolhe quando abrir a porta. Os anciões querem decidir isso. Não o acaso.",
+				"E fazer cristais exige lágrimas do <n>Nether</n> e olhos dos Altos. Coisa para quem já atravessou dois mundos."
+			],
+			"accept": [
+				"<p>*clac*</p> Não acenda nada perto do portal. Só traga. Inteiros. Sem explodir.",
+				"<g>Entregue</g> <y>4 cristais do Fim</y>."
+			],
+			"progress": [
+				"Sete vidros, um olho do ender e uma lágrima de ghast fazem um cristal do Fim.",
+				"Cristais só podem ser colocados em obsidiana ou rocha-mãe, e <r>explodem</r> com qualquer golpe. Não teste isso de perto."
+			],
+			"complete": [
+				"<p>*clac...*</p> ...Quatro cristais. Os anciões vão guardá-los longe do portal. Bem longe. Do outro lado do vazio.",
+				"Tome pedras azuis, maçãs douradas e o livro de <a>Proteção</a>. Para o dia em que alguém acender os cristais."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:end_crystal"], "count": 4, "desc": "<g>Entregue</g> <y>4 cristais do Fim</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "shulker_3_sopro",
+			"tier": 3,
+			"title": "O Sopro do Dragão",
+			"tone": "danger",
+			"offer": [
+				"Quando o dragão pousa no portal, ele cospe uma névoa roxa. O <p>sopro do dragão</p>. Queima tudo que toca.",
+				"Mas, guardado num frasco, o sopro faz uma coisa linda: deixa o efeito das poções pairando no ar, como uma nuvem.",
+				"Os anciões usam isso para curar cascas doentes. Uma nuvem de cura sobre a cidade inteira. Precisamos de mais."
+			],
+			"why": [
+				"Muitas cascas adoeceram desde o último rugido. Uma poção comum cura um shulker. Uma nuvem cura uma torre.",
+				"E colher o fôlego de um dragão vivo, de perto, é coisa que só um guerreiro de verdade faz."
+			],
+			"accept": [
+				"<p>*clac*</p> O dragão precisa estar voando para soprar. Sim, isso quer dizer que alguém vai ter que acordá-lo.",
+				"<g>Colete e entregue</g> <y>6 frascos de sopro do dragão</y>."
+			],
+			"progress": [
+				"Use frascos de vidro dentro da nuvem roxa que o dragão deixa ao pousar no portal ou com as bolas de fogo dele.",
+				"Se o dragão já caiu, quatro cristais do Fim nas bordas do portal de saída o trazem de volta."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Seis frascos. A cidade vai respirar melhor. Literalmente.",
+				"Tome pedras azuis, maçãs douradas e o livro de <a>Peso-Pena</a>. Quem vive perto do vazio precisa saber cair."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_breath"], "count": 6, "desc": "<g>Colete e entregue</g> <y>6 frascos de sopro do dragão</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
 			"id": "shulker_4_dragao",
 			"tier": 4,
 			"title": "O Dragão Renascido",
@@ -233,6 +581,122 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		},
 		{
+			"id": "shulker_4_anciaos",
+			"tier": 4,
+			"title": "A Troca de Casca",
+			"tone": "calm",
+			"offer": [
+				"Shulkers velhos trocam de casca uma vez a cada mil anos. A casca antiga cai, e uma nova cresce. Devagar. Muito devagar.",
+				"Mas os anciões estão velhos demais para esperar. As cascas deles racharam, e as novas não crescem a tempo.",
+				"Dezesseis anciões. Dezesseis <y>cascas</y>. Nem uma a menos."
+			],
+			"why": [
+				"Os anciões lembram de tudo, desde os Voadores. Se eles se forem, a memória do Fim vai junto.",
+				"Eu sei de onde vêm as cascas que vocês carregam. Hoje, não vou perguntar. Hoje, só preciso delas."
+			],
+			"accept": [
+				"<p>*clac*</p> Se for caçar nas cidades, cace com respeito. Um golpe limpo. Sem raiva.",
+				"<g>Entregue</g> <y>16 cascas de shulker</y>."
+			],
+			"progress": [
+				"O escudo bloqueia as balas dos shulkers. Se a levitação te pegar, um balde de leite a remove na hora.",
+				"Pilhagem na espada aumenta a chance de um shulker deixar cair a casca."
+			],
+			"complete": [
+				"<p>*clac... clac...*</p> ...Os anciões estão fechando as cascas novas. Devagar. Faz um som de mil anos.",
+				"Tome pedras azuis, fragmentos de netherita e um totem. Os anciões mandaram dizer que você tem um nome entre eles agora. Não dizem qual."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 16, "desc": "<g>Entregue</g> <y>16 cascas de shulker</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 16}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "shulker_4_proa",
+			"tier": 4,
+			"title": "A Cabeça na Proa",
+			"tone": "danger",
+			"offer": [
+				"Todo navio do Fim carrega na proa uma <y>cabeça de dragão</y>. Não é enfeite. É uma lembrança do primeiro dragão, o que veio antes desta.",
+				"Pelo menos é o que dizem os anciões. Eu nunca vi o primeiro dragão. Sou velho, mas não tanto.",
+				"Os anciões querem uma cabeça no santuário, ao lado das asas. Para lembrar que o Fim já teve outro dono."
+			],
+			"why": [
+				"O dragão de agora é uma prisioneira. O primeiro era livre. Os anciões querem lembrar como era um dragão livre.",
+				"O navio é guardado por shulkers que não me conhecem. Eles vão atirar. Não leve para o lado pessoal."
+			],
+			"accept": [
+				"<p>*clac*</p> Diga aos guardas que fui eu que mandei. Eles vão atirar mesmo assim, mas diga.",
+				"<g>Encontre e entregue</g> <y>1 cabeça de dragão</y>."
+			],
+			"progress": [
+				"A cabeça fica do lado de fora, na ponta da proa do navio. Qualquer ferramenta a solta, e ela cai inteira.",
+				"Só algumas cidades têm um navio flutuando ao lado, e cada navio tem uma única cabeça. Leve pérolas e foguetes."
+			],
+			"complete": [
+				"<p>*clac clac*</p> ...Ela abre a boca quando recebe sinal de redstone, sabia? Os anciões estão encantados. Fizeram isso a tarde inteira.",
+				"Tome um lingote de netherita, pedras azuis e um totem. Achamos tudo isso num navio. Num navio que já não existe."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_head"], "count": 1, "desc": "<g>Encontre e entregue</g> <y>1 cabeça de dragão</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "shulker_4_cerco",
+			"tier": 4,
+			"title": "O Cerco dos Altos",
+			"tone": "danger",
+			"offer": [
+				"Algo mudou nos <r>Altos</r>, criatura de fora. Eles estão cercando a cidade. Centenas. De pé, em silêncio, olhando para as torres.",
+				"Ontem arrancaram a escada principal. Hoje, a porta do salão. Amanhã, talvez a torre onde eu moro.",
+				"Não sei o que eles querem. Talvez nem eles saibam. Mas o cerco precisa terminar."
+			],
+			"why": [
+				"Eu disse que tenho pena deles. Ainda tenho. Mas pena não segura torre de pé.",
+				"Sessenta Altos não são uma luta. São uma guerra. E você é o único exército que o Fim tem."
+			],
+			"accept": [
+				"<p>*clac*</p> Lute com calma. Quem encara todos ao mesmo tempo enfrenta todos ao mesmo tempo.",
+				"<r>Elimine 60 endermen</r>."
+			],
+			"progress": [
+				"Endermen se machucam com água e fogem dela. Um balde de água no chão te dá um respiro quando vários vierem juntos.",
+				"Quando morre, o enderman larga o bloco que estava carregando. Recolha: pode ser um pedaço da nossa cidade."
+			],
+			"complete": [
+				"<p>*clac*</p> ...O cerco acabou. Os Altos que sobraram foram embora. Levando só a si mesmos, desta vez.",
+				"Tome pedras azuis, fragmentos de netherita e maçãs douradas. Você salvou minha torre. E eu, dentro dela."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 60, "desc": "<r>Elimine</r> <r>60 endermen</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 15}, {"item": "minecraft:netherite_scrap", "count": 3}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "shulker_4_porao",
+			"tier": 4,
+			"title": "Os Porões dos Navios",
+			"tone": "calm",
+			"offer": [
+				"Alguns navios vão partir, criatura de fora. Vão procurar os <a>Voadores</a> do outro lado do vazio.",
+				"Uma viagem assim leva séculos. E navio que viaja quebra. Para remendar no caminho, só uma coisa serve: <y>fruta do coro estourada</y>.",
+				"Dela se faz púrpura para o casco e varas do Fim para a luz. Preciso encher os porões. Sessenta e quatro, para começar."
+			],
+			"why": [
+				"Se os navios acharem os Voadores, o Fim inteiro vai saber. Se não acharem... bom, pelo menos tentamos.",
+				"Eu queria ir junto. Mas sou um bloco. Blocos ficam. Você pode pelo menos encher o porão por mim."
+			],
+			"accept": [
+				"<p>*clac*</p> A fornalha é sua aliada. Muitas fornalhas, melhor ainda.",
+				"<g>Entregue</g> <y>64 frutas do coro estouradas</y>."
+			],
+			"progress": [
+				"Fruta do coro na fornalha vira fruta estourada, uma por uma, e ainda rende um pouco de experiência.",
+				"Plantas do coro deixam cair frutas quando quebradas. Quebre a base e a planta inteira desaba de uma vez."
+			],
+			"complete": [
+				"<p>*clac clac clac*</p> ...Os porões estão cheios. Os navios partem quando o vazio ficar calmo. Ou seja, nunca. Ou seja, agora.",
+				"Tome um lingote de netherita, pedras azuis e o livro de <a>Afiação</a>. Para o caminho. Nunca se sabe o que mora do outro lado do vazio."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:popped_chorus_fruit"], "count": 64, "desc": "<g>Entregue</g> <y>64 frutas do coro estouradas</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+		},
+		{
 			"id": "shulker_5_senhor",
 			"tier": 5,
 			"title": "O Senhor do Vazio",
@@ -289,6 +753,122 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:elytra"], "count": 3, "desc": "<g>Encontre e entregue</g> <y>3 élitros</y>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "shulker_5_voz",
+			"tier": 5,
+			"title": "A Voz dos Voadores",
+			"tone": "calm",
+			"offer": [
+				"Os anciões têm uma lenda. Quem voar cem mil blocos sobre o vazio sem desistir ouve a voz dos <a>Voadores</a>.",
+				"Ninguém sabe se é verdade. Nenhum shulker voa. E as criaturas de fora que tentaram desistiram antes. Ou caíram.",
+				"Você já cruzou o Fim. Agora quero que o cruze tantas vezes que o vazio aprenda o seu nome, {player}."
+			],
+			"why": [
+				"Se a lenda for verdade, você vai saber para onde os Voadores foram. E vai me contar. Eu espero há dez mil anos.",
+				"Se for mentira, pelo menos você vai ser a criatura que mais voou desde eles. Isso também é bonito."
+			],
+			"accept": [
+				"<p>*clac*</p> Cem mil blocos. Conte devagar. Eu conto junto, daqui.",
+				"<g>Plane</g> <y>100.000 blocos</y> com élitros."
+			],
+			"progress": [
+				"Cada dragão derrotado abre um novo portal de passagem em volta da ilha central, até vinte. Mais caminhos para voar.",
+				"Remendo nos élitros transforma a experiência que você coleta em conserto. Em voos longos, faz toda a diferença."
+			],
+			"complete": [
+				"<p>*clac...*</p> ...Você ouviu? Não precisa dizer. Está no seu rosto. {player}, você ouviu.",
+				"Tome netherita, pedras azuis, uma maçã encantada e o livro de <p>Remendo</p>. Os anciões dizem que é o que os Voadores dariam."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 10000000, "desc": "<g>Plane</g> <y>100.000 blocos</y> com élitros"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "shulker_5_ultimo_cerco",
+			"tier": 5,
+			"title": "O Último Cerco",
+			"tone": "danger",
+			"offer": [
+				"Os <r>Altos</r> voltaram. Todos eles. Não para carregar blocos. Para carregar a cidade inteira.",
+				"Os anciões dizem que o dragão sussurra para eles agora. Quer que voltem a ser o que eram: os guardas da prisão dela.",
+				"Cento e cinquenta, criatura de fora. Talvez mais. Se você não os parar, não vai sobrar torre para eu morar."
+			],
+			"why": [
+				"Já perdemos cidades antes. Mas nunca a cidade dos anciões. Se ela cair, o Fim perde a memória.",
+				"Eu tenho pena dos Altos. Sempre tive. Mas hoje, {player}, a pena vai ter que esperar."
+			],
+			"accept": [
+				"<p>*CLAC*</p> Isso foi um grito de guerra. O primeiro da minha vida. Não ficou bom. Vá.",
+				"<r>Elimine 150 endermen</r>."
+			],
+			"progress": [
+				"Endermen atacam endermites. Uma endermite presa num canto atrai os Altos para onde você quiser.",
+				"Pilhagem na lâmina faz os Altos deixarem mais pérolas. Com tantos, elas vão sobrar."
+			],
+			"complete": [
+				"<p>*clac...*</p> ...A cidade dos anciões está de pé. Eu estou de pé. Bom, estou de lado. Mas estou aqui.",
+				"Tome netherita, pedras azuis, uma maçã encantada e um totem. Os anciões guardaram para o dia em que alguém salvasse o Fim. Hoje foi o dia."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 150, "desc": "<r>Elimine</r> <r>150 endermen</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "shulker_5_colonia",
+			"tier": 5,
+			"title": "A Nova Colônia",
+			"tone": "calm",
+			"offer": [
+				"Os anciões decidiram algo que não acontecia desde os <a>Voadores</a>: vamos fundar uma cidade nova.",
+				"Numa ilha distante, longe dos Altos e do rugido do dragão. Mas uma cidade precisa de shulkers, e shulkers precisam de <y>cascas</y>.",
+				"Trinta e duas cascas, criatura de fora. Trinta e dois shulkers para começar um lugar novo no vazio."
+			],
+			"why": [
+				"Pela primeira vez em dez mil anos, o Fim vai crescer em vez de encolher. E vai ser por sua causa.",
+				"Ninguém lá fora faz ideia do quanto isso pesa. Você faz. Você conhece a gente."
+			],
+			"accept": [
+				"<p>*clac clac*</p> Os anciões já escolheram o nome da cidade. Não posso contar. Ainda.",
+				"<g>Entregue</g> <y>32 cascas de shulker</y>."
+			],
+			"progress": [
+				"Uma bala de shulker que acerta outro shulker pode fazê-lo se duplicar. Criaturas pacientes montam berçários assim.",
+				"As balas te fazem flutuar. Um balde de leite tira a levitação, e um escudo bloqueia a bala antes que ela chegue."
+			],
+			"complete": [
+				"<p>*clac clac clac*</p> ...Trinta e duas cascas. A cidade nova vai se chamar {player}. Pronto, contei.",
+				"Tome netherita, pedras azuis, um totem e o molde de melhoria de netherita. Um presente para quem fundou uma cidade."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 32, "desc": "<g>Entregue</g> <y>32 cascas de shulker</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 30}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}]
+		},
+		{
+			"id": "shulker_5_proas",
+			"tier": 5,
+			"title": "As Quatro Proas",
+			"tone": "danger",
+			"offer": [
+				"Os anciões só contam esta história para quem já viu tudo. Então escute: o primeiro dragão não deixou uma lembrança só.",
+				"Quando ele caiu, os <a>Voadores</a> dividiram o que restou em quatro e esconderam cada parte na proa de um navio.",
+				"Juntas, as quatro <y>cabeças de dragão</y> lembram o dragão livre. Os anciões querem as quatro, lado a lado. Pela primeira vez em dez mil anos."
+			],
+			"why": [
+				"Se o dragão livre for lembrado, talvez a prisioneira também possa ser libertada um dia. Os anciões acreditam nisso. Eu quero acreditar.",
+				"Quatro navios. Quatro tripulações de shulkers que não me conhecem. Ninguém consegue isso por acaso."
+			],
+			"accept": [
+				"<p>*clac*</p> Os guardas vão atirar. Os navios vão balançar sobre o vazio. Você vai conseguir mesmo assim.",
+				"<g>Encontre e entregue</g> <y>4 cabeças de dragão</y>."
+			],
+			"progress": [
+				"Cada navio do Fim tem uma cabeça de dragão na ponta da proa. Os navios flutuam ao lado de algumas cidades, não de todas.",
+				"Os portais de passagem levam às ilhas externas, onde ficam as cidades. Élitros e foguetes encurtam a busca entre elas."
+			],
+			"complete": [
+				"<p>*clac...*</p> ...Lado a lado. As quatro. Os anciões estão em silêncio há uma hora. Nunca vi isso. Nem eles.",
+				"Tome netherita, pedras azuis, maçãs encantadas e um totem. O que os navios guardaram por dez mil anos é seu agora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_head"], "count": 4, "desc": "<g>Encontre e entregue</g> <y>4 cabeças de dragão</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		}
 	]
 }

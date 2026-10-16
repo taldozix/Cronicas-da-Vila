@@ -4,6 +4,22 @@ A versão do mod fica em `gradle.properties`. Toda atualização com melhorias s
 (1.1.0 → 1.2.0 → 1.3.0...). Ao enviar para o branch `main`, o GitHub compila e publica a release
 com o `.jar` automaticamente, usando as notas desta página.
 
+## [1.2.0] - 2026-10-16
+
+### Novidades
+- **Bruxas dão missões (30):** a vida solitária no pântano, o gato Breu, as rãs, a irmã que mora em outro brejo e a mágoa de ter sido expulsa da vila. Para conversar, segure um **frasco de vidro**.
+  - As missões das bruxas contam para a **Vilania** e não mexem no karma.
+  - Com uma missão delas ativa, ou depois de completar uma, as bruxas param de te atacar.
+- **Mais missões para os inimigos das vilas:** piglins, saqueadores e shulkers agora têm **30 missões cada** (6 por nível).
+  - Piglins: passeios de lavagante, basalto, blazes, ghasts, sucata de netherita e o golpe contra os brutos.
+  - Saqueadores: bestas, portas, tochas, estantes, plantações, oficinas e **invasões** começadas por você.
+  - Shulkers: pedra do Fim, foguetes, voos de élitro, cristais do Fim, sopro do dragão e cabeças de dragão.
+- O Diário mostra distâncias em **blocos** nas missões de viagem.
+
+### Mudanças
+- O NPC agora **sorteia** a próxima missão entre as que você ainda não fez. Quando acabam as novas do seu nível, ele oferece alguma nova de um nível abaixo antes de repetir.
+- O **Vilão da História** agora exige dominar saqueadores, piglins **e bruxas**.
+
 ## [1.1.0] - 2026-10-16
 
 ### Novidades

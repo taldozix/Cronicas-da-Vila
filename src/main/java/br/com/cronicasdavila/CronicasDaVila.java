@@ -33,7 +33,7 @@ import br.com.cronicasdavila.quest.QuestService;
 import br.com.cronicasdavila.quest.QuestValidator;
 
 /**
- * Crônicas da Vila — um RPG de missões com aldeões e piglins.
+ * Crônicas da Vila — um RPG de missões com aldeões, piglins, saqueadores, bruxas e shulkers.
  */
 public class CronicasDaVila implements ModInitializer {
 	public static final String MOD_ID = "cronicasdavila";
@@ -57,7 +57,7 @@ public class CronicasDaVila implements ModInitializer {
 		ServerPlayNetworking.registerGlobalReceiver(ModPayloads.ActionPayload.TYPE,
 				(payload, context) -> DialogueManager.onAction(context.player(), payload.action()));
 
-		// Botão direito em aldeões e piglins abre o diálogo.
+		// Botão direito em aldeões e nos outros NPCs abre o diálogo.
 		UseEntityCallback.EVENT.register((player, level, hand, entity, hitResult) -> {
 			if (level.isClientSide()) {
 				return DialogueManager.wantsDialogue(player, entity) ? InteractionResult.CONSUME : InteractionResult.PASS;

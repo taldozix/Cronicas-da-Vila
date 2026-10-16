@@ -4,7 +4,7 @@ package br.com.cronicasdavila.rank;
  * Os cinco níveis de Vilania — o lado oposto de Amador → Mestre.
  *
  * <p>Ao contrário do lado bom, a Vilania <b>não</b> sobe com a experiência do jogo:
- * só com missões dos saqueadores e dos piglins. E, uma vez conquistada, não se perde.
+ * só com missões dos saqueadores, dos piglins e das bruxas. E, uma vez conquistada, não se perde.
  */
 public enum VillainRank {
 	ARRUACEIRO(1, "Arruaceiro", 0xB0A0A0),
@@ -43,7 +43,7 @@ public enum VillainRank {
 		return values()[Math.max(1, Math.min(5, tier)) - 1];
 	}
 
-	/** Missões de inimigos (saqueadores/piglins) do nível atual para subir de Vilania. */
+	/** Missões de inimigos (saqueadores/piglins/bruxas) do nível atual para subir de Vilania. */
 	public int questsToPromote() {
 		return switch (this) {
 			case ARRUACEIRO, BANDIDO -> 4;

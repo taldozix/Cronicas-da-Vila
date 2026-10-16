@@ -1,0 +1,153 @@
+{
+	"greet_friendly": [
+		"<p>*hihihi*</p> {player}! Você voltou! Eu sabia! Quer dizer, eu esperava. Quer dizer, eu fiquei olhando pela janela o dia inteiro. Normal.",
+		"Breu, olha quem chegou! É {player}! <d>(o gato preto abre um olho, boceja e volta a dormir)</d> Ele tá muito feliz, é o jeito dele.",
+		"Ai, que alegria! Senta, senta. Tirei o sapo da cadeira especialmente pra você. Ele ficou ofendido, mas ele supera.",
+		"{player}! Eu contei de você pra minha irmã na última carta. Ela não acreditou que eu tenho uma visita fixa. Eu tenho uma visita fixa!",
+		"Você chegou bem na hora! A sopa tá quase pronta. Fiz duas tigelas. Eu sempre faço duas, agora. Só por garantia."
+	],
+	"greet_neutral": [
+		"<p>*hihihi*</p> Uma visita! Uma de verdade! Não é slime, não é afogado, não é raio! Entra, entra, não repara na lama.",
+		"Oi! Desculpa, eu falo demais. Faz três semanas que eu só converso com sapo. Você fala? Fala! Que maravilha.",
+		"Hmm. Você não saiu correndo. Que estranho. Todo mundo sai correndo. Fala, antes que eu me acostume.",
+		"Ah, um frasco de vidro na mão! Você entende das coisas. Quer chá? Não é poção. Quase certeza que não é poção.",
+		"Bem-vindo à cabana mais solitária do pântano. Na verdade a única. Mas se tivesse outras, seria a mais solitária."
+	],
+	"greet_cold": [
+		"Hmm. Você tem cheiro de vila. De pão quente e de sino. Faz tempo que eu não sinto esse cheiro. Não sei se gosto.",
+		"Ah. Mais um amiguinho dos aldeões. Veio ver a bruxa de perto pra contar pros outros depois? Fala logo.",
+		"Os sapos ficaram quietos quando você chegou. Eles sentem as coisas. Eu também. Fala rápido."
+	],
+	"hostile": [
+		"<r>O herói da vila?</r> Na minha cabana? Os mesmos que me expulsaram com tocha e forcado agora mandam você? <r>Fora!</r>",
+		"<r>Eu sei quem você é.</r> Os aldeões te amam. A mim, eles jogaram pedra. Volta pra eles, que lá tem lugar pra você. Aqui não.",
+		"<p>*HIHIHI*</p> Que engraçado. O queridinho dos narigudos veio pedir trabalho pra bruxa. <r>Some antes que eu te transforme em sapo.</r>"
+	],
+	"followup": [
+		"Que mais? Pode perguntar. Eu tenho tempo. Eu só tenho tempo.",
+		"Fica mais um pouquinho? Fala mais alguma coisa.",
+		"Hmm? Ainda tá aí? Que bom. Diz.",
+		"Pergunta, pergunta. O Breu também tá curioso. Olha a orelha dele."
+	],
+	"decline": [
+		"Ah. Tudo bem. Eu entendo. Não precisa fazer nada, só... volta pra visitar, tá? Mesmo sem missão.",
+		"Tudo bem, tudo bem. Eu peço pros sapos. Eles não fazem nada, mas pelo menos não dizem não.",
+		"<p>*hihihi*</p> Sem problema. Eu tô acostumada a ouvir não. Ouvir alguma coisa já é bom."
+	],
+	"locked": [
+		"Esse pedido é perigoso demais pra você agora. E se você não voltar? Quem vai me visitar? Fica mais forte e volta.",
+		"Ainda não, querida visita. Primeiro me ajuda com as coisas pequenas. Eu não quero perder minha única companhia."
+	],
+	"repeat": [
+		"Sabe aquele favor de antes? O pântano desfez tudo. O pântano sempre desfaz. Faz de novo? A recompensa é menor, mas a sopa continua a mesma.",
+		"Lembra daquilo que você fez pra mim? Precisei de novo. Na verdade eu só queria uma desculpa pra você voltar."
+	],
+	"bye": [
+		"Já vai? Ah... tá. Tudo bem. Volta logo, tá? A porta fica aberta. Sempre fica.",
+		"Tchau, {player}! Cuidado com os slimes. E com os aldeões, eles fofocam. Principalmente de mim.",
+		"Vai com cuidado. Eu vou ficar aqui. Como sempre. <d>(ela acena da janela até você sumir de vista)</d>",
+		"Até mais! Vou contar pros sapos tudo que a gente conversou. Eles adoram fofoca."
+	],
+	"abandon": [
+		"Ah. Desistiu. Tudo bem. Todo mundo desiste de mim uma hora. Pelo menos você avisou.",
+		"Entendo. Eu volto pra minha sopa, então. Uma tigela só."
+	],
+	"lore": [
+		[
+			"Eu nem sempre fui bruxa, sabia? Eu era <a>clériga</a> numa vila. Tinha uma mesinha de poções perto do sino. As crianças vinham pedir remédio pra joelho ralado.",
+			"Uma noite de tempestade, eu fui buscar ervas no campo. E um <r>raio</r> caiu bem em mim. Quando eu acordei, tinha chapéu pontudo e nariz com verruga.",
+			"A vila me olhou como se eu fosse outra pessoa. E me expulsou. Mas eu era a mesma. Eu ainda sou. Só que agora eu moro na lama."
+		],
+		[
+			"O <p>Breu</p> apareceu na minha primeira noite aqui. Eu tava sentada no chão da cabana, toda chamuscada, chorando.",
+			"Ele entrou pela janela, molhado de chuva, me olhou com aqueles olhos amarelos e deitou no meu colo. Sem medo nenhum.",
+			"Gato preto dá azar, dizem. Pra mim, ele foi a única sorte que eu tive. Não conta pra ele, que ele fica metido."
+		],
+		[
+			"Os sapos do pântano têm nome. O <a>Seu Coaxo</a> é o mais velho e muito resmungão. A <a>Dona Verruga</a> é fofoqueira. O <a>Pipoca</a> pula sem motivo.",
+			"E o <a>Bolota</a>. O Bolota é gordinho e só come slime pequeno. Ele me olha quando eu falo. Acho que ele entende.",
+			"Toda noite eu conto meu dia pra eles. Eles coaxam de volta. Eu finjo que é resposta. Funciona melhor do que você imagina."
+		],
+		[
+			"Tenho uma irmã, a <p>Urtiga</p>. Ela também era aldeã. Também foi atingida por um raio, anos depois de mim. Raio gosta da nossa família.",
+			"Ela mora num pântano muito longe, depois do mar. A gente troca cartas. Ela escreve sobre os sapos dela, eu escrevo sobre os meus.",
+			"Na última carta ela disse que os sapos dela são mais bonitos. É mentira. Mas é o tipo de mentira que só irmã pode contar."
+		],
+		[
+			"Sabe por que tem bruxa nas invasões? Os <r>saqueadores</r> batem na porta das cabanas e obrigam a gente a ir junto.",
+			"Eu fico lá atrás, jogando poção, vendo a vila queimar. Às vezes é a minha vila antiga. Eu reconheço as casas.",
+			"Os aldeões me veem lá e pensam que eu escolhi aquilo. Ninguém pergunta. Ninguém nunca pergunta pra bruxa."
+		],
+		[
+			"Nas noites sem chuva, os <y>vaga-lumes</y> saem do mangue e enchem o pântano de luzinhas. Parece festa.",
+			"Eu sento na escada da cabana e fico vendo. Às vezes eu converso com eles também. Eles piscam. Eu pisco de volta.",
+			"É a coisa mais bonita do pântano. E ninguém nunca vê, porque ninguém vem aqui. Por isso eu vejo por todo mundo."
+		],
+		[
+			"Toda bruxa bebe poção quando está em perigo. Poção de cura, de velocidade, de resistência ao fogo. Vocês acham que é magia.",
+			"Não é magia. É costume de quem mora sozinha. Quando você se machuca e não tem ninguém por perto, aprende a se cuidar.",
+			"Eu sou minha própria clériga agora. Pelo menos isso o raio não tirou de mim. <p>*hihihi*</p>"
+		],
+		[
+			"Uma vez, um aldeão criança se perdeu no pântano. Eu achei ele chorando perto do rio, cheio de lama até a orelha.",
+			"Levei ele até a beira da vila sem dizer nada. Ele segurou minha mão o caminho todo. Não teve medo. Criança ainda não aprendeu a ter.",
+			"Quando a mãe dele me viu, gritou e puxou ele pra longe. Tudo bem. Eu guardei a parte da mão. A parte do grito eu joguei no caldeirão."
+		]
+	],
+	"player_work": [
+		"Precisa de ajuda com alguma coisa?",
+		"Tem alguma poção pra fazer?",
+		"O pântano precisa de alguma coisa?",
+		"Tem serviço pra mim, bruxa?"
+	],
+	"player_accept": [
+		"Pode deixar comigo.",
+		"Feito. E guarda uma tigela de sopa pra mim.",
+		"Aceito. Por você e pelo Breu.",
+		"Vou fazer isso agora mesmo."
+	],
+	"player_why": [
+		"Por que isso é importante pra você?",
+		"O que eu ganho com isso?",
+		"Por que você mesma não faz?",
+		"Me conta mais."
+	],
+	"player_decline": [
+		"Agora não, desculpa.",
+		"Passo dessa vez.",
+		"Ainda não estou pronto.",
+		"Hoje não, mas eu volto."
+	],
+	"player_lore": [
+		"Como você virou bruxa?",
+		"Me conta sobre o Breu.",
+		"Como é morar sozinha no pântano?",
+		"Você tem família?"
+	],
+	"player_more_lore": [
+		"Conta outra!",
+		"E o que mais?",
+		"Continua, eu tô ouvindo.",
+		"Tem mais alguma história?"
+	],
+	"player_bye": [
+		"Até mais. Eu volto, prometo.",
+		"Tchau. Dá um carinho no Breu por mim.",
+		"Preciso ir. Cuida dos sapos.",
+		"Fui. Deixa a luz acesa."
+	],
+	"names": [
+		"Dona Erva", "Comadre Lodo", "Tia Peçonha", "Dona Mandinga", "Comadre Neblina", "Vó Lamaçal", "Dona Arruda",
+		"Tia Sereno", "Comadre Garoa", "Dona Caldeira", "Vó Mangue", "Dona Saudade"
+	],
+	"extra": {
+		"no_bottle": [
+			"<p>*hihihi*</p> Uma visita! Ah... de mãos vazias. Bruxa não conversa com quem não traz um <p>frasco de vidro</p>. Regra antiga. Eu não inventei. Inventei sim.",
+			"Hmm. Sem <p>frasco de vidro</p>? Como é que eu vou saber que você entende de poção? Volta com um na mão. Volta, tá? Promete que volta.",
+			"Eu adoraria conversar. De verdade. Mas a tradição é clara: <p>frasco de vidro</p> na mão, ou nada de papo. Eu fico aqui esperando. Eu sou boa nisso."
+		],
+		"sleeping": [
+			"Zzz... Breu... não sobe na mesa... Zzz... <d>(a bruxa cochila abraçada ao chapéu, com um sapo dormindo na barriga)</d>"
+		]
+	}
+}

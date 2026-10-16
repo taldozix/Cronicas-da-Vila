@@ -39,7 +39,7 @@ public class Quest {
 
 	/**
 	 * Karma da missão. Padrão: aldeões +10 por nível; saqueadores -20 por nível (missões de vilania);
-	 * piglins e shulkers 0 (neutros para a vila).
+	 * piglins, bruxas e shulkers 0 (neutros para a vila).
 	 */
 	public int karmaReward() {
 		if (karma != null) {
@@ -48,7 +48,8 @@ public class Quest {
 
 		return switch (profession == null ? "" : profession) {
 			case br.com.cronicasdavila.rank.Professions.PILLAGER -> -tier * 20;
-			case br.com.cronicasdavila.rank.Professions.PIGLIN, br.com.cronicasdavila.rank.Professions.SHULKER -> 0;
+			case br.com.cronicasdavila.rank.Professions.PIGLIN, br.com.cronicasdavila.rank.Professions.SHULKER,
+					br.com.cronicasdavila.rank.Professions.WITCH -> 0;
 			default -> tier * 10;
 		};
 	}

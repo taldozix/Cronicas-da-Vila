@@ -306,7 +306,7 @@ public class QuestJournalScreen extends Screen {
 
 		if (quests.isEmpty()) {
 			graphics.text(this.font, "Nenhuma missão.", x1, listTop() + 4, Ui.argb(255, 0x999999), false);
-			graphics.text(this.font, "Converse com aldeões e piglins!", x1, listTop() + 16, Ui.argb(255, 0x999999), false);
+			graphics.text(this.font, "Converse com aldeões, piglins e bruxas!", x1, listTop() + 16, Ui.argb(255, 0x999999), false);
 			return;
 		}
 
@@ -623,7 +623,7 @@ public class QuestJournalScreen extends Screen {
 
 		y += 22;
 		int mastered = ClientState.getInt("villainMastered", 0);
-		int factions = ClientState.getInt("villainFactions", 2);
+		int factions = ClientState.getInt("villainFactions", 3);
 		String status = villain ? "☠ VILÃO DA HISTÓRIA ☠ — todo ser vivo foge de você"
 				: "Vilão da História: Arquivilão + dominar " + mastered + "/" + factions + " inimigos (missão máxima de cada) + karma negativo";
 
@@ -654,8 +654,8 @@ public class QuestJournalScreen extends Screen {
 		drawAffinityGrid(graphics, villains, x1, x2, y, true);
 		y += ((villains.size() + 1) / 2) * 22 + 8;
 
-		String info = "Converse com <r>saqueadores</r> segurando uma <p>garrafa ominosa</p> (ou com karma negativo) e com <n>piglins</n> usando ouro. "
-				+ "Missões de saqueadores dão <r>karma negativo</r>.";
+		String info = "Converse com <r>saqueadores</r> segurando uma <p>garrafa ominosa</p> (ou com karma negativo), com <n>piglins</n> usando ouro "
+				+ "e com <a>bruxas</a> segurando um <p>frasco de vidro</p>. Missões de saqueadores dão <r>karma negativo</r>.";
 
 		for (FormattedCharSequence line : this.font.split(Text.parse(info), width)) {
 			if (y + 10 > panelY2() - 4) {

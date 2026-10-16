@@ -41,4 +41,9 @@ public class QuestObjective {
 	public boolean isCraft() {
 		return "craft".equals(type);
 	}
+
+	/** Distâncias do jogo são contadas em centímetros; na tela mostramos em blocos. */
+	public int displayUnit() {
+		return isStat() && !targets.isEmpty() && targets.stream().allMatch(target -> target.endsWith("_one_cm")) ? 100 : 1;
+	}
 }

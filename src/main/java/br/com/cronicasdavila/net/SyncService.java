@@ -130,8 +130,9 @@ public final class SyncService {
 			object.addProperty("giverDim", active.giverDimension);
 			object.addProperty("objective", quest.objective.desc);
 			object.addProperty("type", quest.objective.type);
-			object.addProperty("progress", QuestService.progress(player, active, quest));
-			object.addProperty("target", quest.objective.count);
+			int unit = quest.objective.displayUnit();
+			object.addProperty("progress", QuestService.progress(player, active, quest) / unit);
+			object.addProperty("target", quest.objective.count / unit);
 			object.addProperty("repeat", active.repeat);
 
 			JsonArray summary = new JsonArray();

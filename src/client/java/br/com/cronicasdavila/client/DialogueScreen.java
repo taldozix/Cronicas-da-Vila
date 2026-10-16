@@ -366,6 +366,7 @@ public class DialogueScreen extends Screen {
 			case "piglin" -> 0xFF8A3D;
 			case "pillager" -> 0xE05A5A;
 			case "shulker" -> 0xD08CFF;
+			case "witch" -> 0xB57EDC;
 			default -> 0xFFD36B;
 		};
 		graphics.text(this.font, Component.literal(speaker).withStyle(style -> style.withBold(true)), boxX + 16, boxY + slide + 8,
@@ -420,6 +421,7 @@ public class DialogueScreen extends Screen {
 			case "nether" -> 0xFF7733;
 			case "villain" -> 0xB01E2E;
 			case "end" -> 0xC77DFF;
+			case "swamp" -> 0x7FBF5F;
 			default -> 0xFFFFFF;
 		};
 	}

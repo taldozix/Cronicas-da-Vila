@@ -1,12 +1,13 @@
 # Crônicas da Vila
 
-Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões e os piglins passam a contar histórias, dar missões e lembrar de como você os trata.
+Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões, piglins, saqueadores, bruxas e shulkers passam a contar histórias, dar missões e lembrar de como você os trata.
 
-- **170 missões** com história própria:
+- **250 missões** com história própria:
   - 13 profissões de aldeão × 10 missões;
-  - 15 dos **piglins** no Nether;
-  - 15 dos **saqueadores**, as missões de vilania;
-  - 10 dos **shulkers** no Fim, mais difíceis e mais bem pagas.
+  - 30 dos **piglins** no Nether;
+  - 30 dos **saqueadores**, as missões de vilania;
+  - 30 das **bruxas**, sobre a vida solitária no pântano;
+  - 30 dos **shulkers** no Fim, mais difíceis e mais bem pagas.
 - **Caixa de diálogo no estilo Zelda: Breath of the Wild.** O texto aparece letra por letra, as respostas ficam à direita e dá para escolher com o mouse ou com as setas do teclado.
 - **Conversa em modo cinema.** O NPC para e fica olhando para você, a câmera trava no rosto dele e o HUD some enquanto vocês conversam.
 - **Cinco níveis:** Amador → Aprendiz → Aventureiro → Guerreiro → Mestre.
@@ -35,7 +36,7 @@ Mod de RPG para **Minecraft Java Edition 26.3** (Fabric). Os aldeões e os pigli
    ```bash
    ./gradlew build        # no Windows: gradlew.bat build
    ```
-3. O mod fica em `build/libs/cronicas-da-vila-1.1.0.jar`. Se preferir não compilar, baixe o `.jar` pronto na página de [Releases](https://github.com/taldozix/Cronicas-da-Vila/releases).
+3. O mod fica em `build/libs/cronicas-da-vila-1.2.0.jar`. Se preferir não compilar, baixe o `.jar` pronto na página de [Releases](https://github.com/taldozix/Cronicas-da-Vila/releases).
 4. Instale o [Fabric Loader](https://fabricmc.net/use/) para a versão 26.3 e coloque na pasta `.minecraft/mods` o `.jar` do mod e o da [Fabric API](https://modrinth.com/mod/fabric-api).
 
 Para testar direto do código, use `./gradlew runClient`.
@@ -51,6 +52,7 @@ Para testar direto do código, use `./gradlew runClient`.
 | Conversar com um aldeão | Botão direito |
 | Conversar com um piglin | Botão direito **usando pelo menos uma peça de armadura de ouro** e **sem** um lingote de ouro na mão (com o lingote na mão, o piglin faz o escambo normal) |
 | Conversar com um saqueador | Botão direito segurando uma **garrafa ominosa**, ou já tendo karma negativo |
+| Conversar com uma bruxa | Botão direito segurando um **frasco de vidro** |
 | Conversar com um shulker | Botão direito segurando uma **fruta do coro** |
 | Trocar com o aldeão sem conversar | Shift + botão direito, ou a opção "Bora negociar" no diálogo |
 | Avançar o texto | Clique, Enter, Espaço ou E |
@@ -102,7 +104,8 @@ Cada profissão tem a sua própria afinidade com você, que também vai de Amado
 - O aldeão oferece missões do nível da afinidade, limitado ao seu nível geral.
 - Só dá para ter **uma missão ativa por profissão**. Para pegar outra, termine (ou abandone) a atual.
 - Ao falar de novo com um aldeão daquela profissão, ele relembra a missão, dá dicas, mostra o seu progresso e recebe a entrega.
-- Quando as missões inéditas de um nível acabam, o NPC repete uma missão antiga pagando **metade** da recompensa.
+- O NPC **sorteia** a próxima missão entre as que você ainda não fez no seu nível.
+- Quando as inéditas do seu nível acabam, ele oferece alguma inédita de um nível abaixo. Só depois disso repete uma missão antiga, pagando **metade** da recompensa.
 - Ao entregar uma missão, o aldeão ganha experiência de troca: na próxima troca ele sobe de nível e libera trocas melhores.
 
 ### Herói da Vila
@@ -119,10 +122,10 @@ Complete **uma missão de Mestre de cada uma das 13 profissões** de aldeão e g
 | 4. Carrasco | 5 missões de Renegado |
 | 5. Arquivilão | 5 missões de Carrasco |
 
-- A Vilania **só sobe com missões** dos saqueadores e dos piglins. A XP do jogo **não conta**.
+- A Vilania **só sobe com missões** dos saqueadores, dos piglins e das bruxas. A XP do jogo **não conta**.
 - Uma vez conquistada, a Vilania **não se perde**.
 - As missões dos **saqueadores** dão **karma negativo** (-20 por nível da missão). São o ódio dos Exilados pelos aldeões: arrancar sinos, roubar colheitas, quebrar camas e oficinas, destruir golens de ferro, eliminar mercadores e entregar o tributo de esmeraldas.
-- As missões dos **piglins** contam para a Vilania e não mexem no karma.
+- As missões dos **piglins** e das **bruxas** contam para a Vilania e não mexem no karma.
 - Como os saqueadores reagem a você:
   - Com uma missão deles ativa, ou já sendo cúmplice (karma negativo), eles **não te atacam**.
   - Com uma garrafa ominosa na mão, eles também te deixam em paz.
@@ -133,12 +136,12 @@ Complete **uma missão de Mestre de cada uma das 13 profissões** de aldeão e g
 
 Para ganhar o efeito, você precisa:
 - ser **Arquivilão**;
-- completar **uma missão máxima dos saqueadores e uma dos piglins**;
+- completar **uma missão máxima dos saqueadores, uma dos piglins e uma das bruxas**;
 - ter **karma negativo**.
 
 Com o efeito **Vilão da História**:
 - **Todas as criaturas fogem de você**, hostis e pacíficas. Os aldeões entram em pânico, igual fogem de um zumbi.
-- Ficam de fora os chefes (Wither, Dragão do Ender, Warden e guardiã anciã) e os saqueadores, que respeitam o seu líder.
+- Ficam de fora os chefes (Wither, Dragão do Ender, Warden e guardiã anciã) e os saqueadores e as bruxas, que respeitam o seu líder.
 - Quem você atacar revida durante alguns segundos.
 - No **mundo normal** você fica com **Fadiga I** o tempo todo.
 - Depois de **1 dia do jogo seguido** fora do Nether (20 minutos), **você começa a pegar fogo**. Voltar ao Nether zera o tempo; no Fim o tempo fica parado.
@@ -147,9 +150,16 @@ Com o efeito **Vilão da História**:
 
 O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não negativo, e o Vilão exige karma negativo.
 
+### Bruxas (o pântano)
+
+- São 30 missões, de Arruaceiro a Arquivilão, que contam para a Vilania e não mexem no karma.
+- A bruxa já foi clériga de uma vila, até um raio cair nela e a vila inteira a expulsar. Hoje ela vive sozinha no brejo com o gato Breu e as rãs, e fala demais quando aparece visita.
+- Para conversar, segure um **frasco de vidro**. Quem é muito amado pelas vilas (karma Honrado ou mais) é mandado embora.
+- Com uma missão delas ativa, ou depois de completar uma, as bruxas param de te atacar.
+
 ### Shulkers (o Fim)
 
-- São 10 missões, de Amador a Mestre, mais difíceis e com recompensas melhores que as dos aldeões do mesmo nível.
+- São 30 missões, de Amador a Mestre, mais difíceis e com recompensas melhores que as dos aldeões do mesmo nível.
 - Os shulkers são neutros: as missões deles não mexem no karma e não contam para nenhum dos dois lados.
 - O nível das missões oferecidas acompanha o maior dos seus níveis, entre o do herói e o da Vilania.
 - Com uma missão deles ativa, ou depois de completar uma, os shulkers param de te atacar.
@@ -202,7 +212,7 @@ O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não
 - **Rastrear no HUD (tecla T):** a missão escolhida aparece no canto da tela.
 - **Desistir:** clique duas vezes para confirmar.
 - **Aba Reputação:** karma, progresso até o Herói da Vila e afinidade com as 13 profissões de aldeão e com os shulkers.
-- **Aba Vilania:** nível de Vilania, progresso, afinidade com saqueadores e piglins, status de Vilão da História e o tempo que falta para você queimar no mundo normal.
+- **Aba Vilania:** nível de Vilania, progresso, afinidade com saqueadores, piglins e bruxas, status de Vilão da História e o tempo que falta para você queimar no mundo normal.
 
 ---
 
@@ -225,6 +235,7 @@ O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não
 | Clérigo | Místico solene | Lágrimas de ghast, crânios profanos, **dois Withers** |
 | **Piglin** (Nether) | Obcecado por ouro ("HRRNF!") | Cubos de magma, Ossudos, **vingar o Grande Porcão** |
 | **Saqueador** (vilania) | Exilado ressentido ("os mansos narigudos") | Arrancar sinos, roubar colheitas, **o Grande Silêncio** |
+| **Bruxa** (pântano) | Solitária e tagarela ("hihihi...") | Cogumelos, rãs, carta para a irmã, **o Wither e o Warden** |
 | **Shulker** (Fim) | Ancião misterioso ("*clac*") | Fruta do coro, endermites, **derrotar o dragão 3 vezes** |
 
 Também têm falas próprias o **bobão da vila**, os **desempregados** e as **crianças**.
