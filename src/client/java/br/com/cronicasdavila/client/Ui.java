@@ -32,9 +32,12 @@ public final class Ui {
 	private Ui() {
 	}
 
-	/** Clique com o botão esquerdo (aceita as duas formas que o jogo usa para dizer qual botão foi). */
+	/**
+	 * Clique com o botão esquerdo. O número do botão mudou nesta versão do jogo (o esquerdo não é mais 0),
+	 * então usamos a constante do próprio Minecraft.
+	 */
 	public static boolean isLeftClick(net.minecraft.client.input.MouseButtonEvent event) {
-		return event.button() == 0 || event.input() == 0;
+		return event.button() == com.mojang.blaze3d.platform.InputConstants.MOUSE_BUTTON_LEFT;
 	}
 
 	/** Painel chapado e escuro, sem bordas (como na tela de referência). */

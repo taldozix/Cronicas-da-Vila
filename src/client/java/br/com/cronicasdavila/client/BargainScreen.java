@@ -38,7 +38,6 @@ public class BargainScreen extends Screen {
 	private int selectedSlot = -1;
 	private int scroll;
 	private boolean waiting;
-	private final MousePoll mouse = new MousePoll();
 	private boolean canTry;
 
 	public BargainScreen(JsonObject node) {
@@ -220,10 +219,7 @@ public class BargainScreen extends Screen {
 	@Override
 	public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
 		if (Ui.isLeftClick(event)) {
-			if (mouse.claim()) {
-				click((int) event.x(), (int) event.y());
-			}
-
+			click((int) event.x(), (int) event.y());
 			return true;
 		}
 
@@ -289,11 +285,6 @@ public class BargainScreen extends Screen {
 		int chance = chance();
 		canTry = !waiting && !refused && chance >= 0 && selectedOffer >= 0 && !offers.get(selectedOffer).get("out").getAsBoolean();
 		super.extractRenderState(graphics, mouseX, mouseY, delta);
-
-		// Clique lido direto do mouse (funciona mesmo se o evento do jogo não chegar).
-		if (mouse.pressed() && mouse.claim()) {
-			click(mouseX, mouseY);
-		}
 
 		// Botões
 		int by = buttonsY();
