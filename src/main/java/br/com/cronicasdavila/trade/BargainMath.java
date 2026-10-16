@@ -79,7 +79,7 @@ public final class BargainMath {
 					: id.startsWith("minecraft:golden_") ? 0.8 : 0.6;
 		} else {
 			each = switch (stack.getRarity()) {
-				case COMMON -> 0.04;
+				case COMMON -> 0.02;
 				case UNCOMMON -> 0.5;
 				case RARE -> 2.5;
 				case EPIC -> 8.0;
