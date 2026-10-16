@@ -27,6 +27,22 @@
 		"Até mais! Se encontrar meu cérebro por aí, me devolve.",
 		"Tchau tchau! Cuidado com a vaca da esquina, ela me olha estranho."
 	],
+	"greet_night": [
+		"EEEI, {player}! Tá escuro! Você também tem medo do escuro? Eu tenho. E do claro também, às vezes.",
+		"Que hora é essa? Não sei ler relógio. Mas a lua tá lá em cima, então deve ser noite. Ou dia ao contrário.",
+		"Psiu! Tô brincando de esconde-esconde com um zumbi. Faz uma hora. Acho que ele tá ganhando.",
+		"Olha, {player}, tô contando as estrelas! Já cheguei no três. Depois do três eu sempre me perco."
+	],
+	"bye_night": [
+		"Boa noite! Cuidado com os zumbis! Eles são tipo eu, só que mais verdes e mais mordedores.",
+		"Vou dormir! Ou tentar. Da última vez dormi em pé e acordei no telhado.",
+		"Tchau! Se encontrar uma coruja, pergunta pra ela que hora é. Ela sempre diz \"hu-hu\". Nunca entendo."
+	],
+	"lore_done": [
+		"Já te contei uma história hoje! Eu acho. Não lembro. Mas a minha mãe disse que é uma por dia, senão meu cérebro esquenta.",
+		"Mais história? Hoje acabou! Meu estoque de ideias é pequenininho. Pergunta pros outros, eles sabem coisa de verdade.",
+		"Hihi, volta amanhã! Até lá eu invento... digo, lembro de outra."
+	],
 	"lore": [
 		[
 			"Uma vez eu tentei ser fazendeiro. Plantei uma batata e reguei com leite.",

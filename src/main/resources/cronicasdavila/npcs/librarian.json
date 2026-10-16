@@ -52,6 +52,35 @@
 		"Adeus, caro jovem. Que o conhecimento o acompanhe.",
 		"Tenha um bom dia. Ou uma boa noite. Perco a noção do tempo entre os livros."
 	],
+	"greet_night": [
+		"Psst! {player}? A esta hora avançada? Eu lia à luz da lanterna um clássico: \"Os Zumbis e a Nobre Arte de Trancar a Porta\".",
+		"Que hora é essa, caro jovem? A biblioteca está oficialmente fechada. Extraoficialmente, eu não durmo.",
+		"Ah, um notívago! Como as corujas, símbolo do saber. Ou da insônia. Os estudiosos divergem.",
+		"Boa noite. Fale ainda mais baixo do que de dia. Os livros estão dormindo. Os <r>zumbis</r>, lamentavelmente, não."
+	],
+	"bye_night": [
+		"Boa noite. Que os seus sonhos sejam bem escritos e sem erros de concordância.",
+		"Adeus, caro jovem. E evite as sombras: nelas, os <r>zumbis</r> não leem, mas mordem.",
+		"Até amanhã. Vou ler só mais um capítulo. Ou doze."
+	],
+	"reward_intro": [
+		"Concluída a tarefa, terei a honra de lhe conceder",
+		"A título de justa remuneração intelectual, ofereço",
+		"Pelo serviço prestado, consta em ata que receberá",
+		"Cumprida tal empreitada, o erário da biblioteca lhe destinará"
+	],
+	"reward_outro": [
+		"Está devidamente registrado em pergaminho, com firma reconhecida.",
+		"Uma remuneração à altura de um capítulo memorável.",
+		"Assim consta, assim será. Os registros não mentem.",
+		"E, como bônus, uma citação erudita gratuita. Não, não é negociável.",
+		"Promessa catalogada na estante dos compromissos, seção \"inadiáveis\"."
+	],
+	"lore_done": [
+		"Ah, caro jovem, já lhe concedi uma curiosidade hoje. O saber deve ser degustado, não devorado. Retorne amanhã.",
+		"Uma por dia, conforme o regulamento interno da biblioteca. Consulte outros aldeões, se a sede de saber for urgente.",
+		"Por hoje, o capítulo está encerrado. Amanhã abriremos o seguinte. Ou pergunte aos demais moradores; embora, convenhamos, saibam menos."
+	],
 	"abandon": [
 		"Abandonou a missão? Como um livro deixado pela metade. Imperdoável.",
 		"Lamentável. Anotarei no seu verbete: \"desistiu\"."

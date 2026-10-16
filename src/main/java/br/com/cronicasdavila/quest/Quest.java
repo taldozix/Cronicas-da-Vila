@@ -61,7 +61,12 @@ public class Quest {
 	}
 
 	public int xpReward() {
-		return xp != null ? xp : tier * 15;
+		if (xp != null) {
+			return xp;
+		}
+
+		// Os shulkers pagam bem melhor: as missões deles são as mais difíceis do mod.
+		return br.com.cronicasdavila.rank.Professions.SHULKER.equals(profession) ? tier * 40 : tier * 15;
 	}
 
 	public boolean isDanger() {

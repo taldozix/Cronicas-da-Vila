@@ -52,6 +52,35 @@
 		"Que sua armadura nunca falhe.",
 		"Até logo. E levante o escudo antes do golpe, não depois."
 	],
+	"greet_night": [
+		"{player}. A noite é longa e os <r>zumbis</r> estão perto. Fique junto da luz.",
+		"Ainda acordado, viajante? Eu também. Alguém precisa vigiar enquanto a vila dorme.",
+		"Hrmm. Que hora é essa para andar por aí? E sem capacete, ainda por cima.",
+		"As estrelas estão limpas esta noite. Bom para vigiar. Ruim para quem anda desprotegido."
+	],
+	"bye_night": [
+		"Volte em segurança. A noite não perdoa descuidos.",
+		"Vá. E mantenha a lanterna acesa.",
+		"Boa noite. Se ouvir passos arrastados, não pare para olhar."
+	],
+	"reward_intro": [
+		"Cumpra o dever e receberá",
+		"Pelo trabalho bem feito, ofereço",
+		"A guarda paga o que é justo. Você receberá",
+		"Volte inteiro e eu lhe entrego"
+	],
+	"reward_outro": [
+		"Um guardião não negocia a própria palavra.",
+		"Pago com o mesmo cuidado com que forjo uma armadura.",
+		"Já está separado. Não costumo prometer em vão.",
+		"É pouco perto do que a vila lhe deve. Mas é sincero.",
+		"É tudo o que tenho a dizer sobre o pagamento. O resto depende de você."
+	],
+	"lore_done": [
+		"Já contei uma história hoje. Uma basta. Memórias pesam, como armaduras.",
+		"Por hoje é só. Pergunte aos outros aldeões, ou volte amanhã.",
+		"Uma história por dia, viajante. O resto eu guardo para quando você precisar."
+	],
 	"abandon": [
 		"Desistir também é uma escolha. Mas é uma escolha que pesa.",
 		"Lamento. Achei que você iria até o fim."
@@ -91,5 +120,12 @@
 	"names": [
 		"Comandante Hilda", "Seu Leônidas", "Dona Amélia", "Capitão Otávio", "Dona Matilde", "Seu Horácio", "Dona Teodora",
 		"Seu Bartolomeu", "Dona Leocádia", "Seu Feliciano"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Hoje é minha <y>folga</y>. A forja pesa nos ombros. Trabalho um dia a cada três. Volte outro dia, ou procure outro armeiro.",
+			"Não hoje, viajante. Até a armadura mais forte precisa de descanso entre os golpes. Eu também. Outro armeiro da vila pode ajudá-lo.",
+			"<d>(ele está polindo um capacete devagar, sem pressa nenhuma)</d> Folga. Forjar todo dia entorta o martelo e a coluna. Volte em outro dia."
+		]
+	}
 }

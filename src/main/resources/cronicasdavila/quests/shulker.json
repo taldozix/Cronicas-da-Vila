@@ -27,7 +27,7 @@
 				"Tome. Pedras azuis do seu mundo e pérolas dos Altos. Nós guardamos coisas que caem no vazio. Muitas coisas."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:chorus_fruit"], "count": 32, "desc": "<g>Colha</g> e entregue <y>32 frutas do coro</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:ender_pearl", "count": 8}]
+			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:ender_pearl", "count": 8}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "shulker_1_altos",
@@ -56,7 +56,7 @@
 				"Tome pedras azuis e uma maçã dourada. Caiu de uma criatura de fora há duzentos anos. Ainda está crocante."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 20, "desc": "<r>Elimine</r> <r>20 endermen</r>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_1_pedra",
@@ -85,7 +85,7 @@
 				"Tome pedras azuis e pérolas dos Altos. Eles esquecem as pérolas por aí. Nós não esquecemos nada."
 			],
 			"objective": {"type": "mine", "targets": ["minecraft:end_stone"], "count": 128, "desc": "<g>Minere</g> <y>128 blocos de pedra do Fim</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:ender_pearl", "count": 8}]
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:ender_pearl", "count": 8}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "shulker_1_olhos",
@@ -114,7 +114,7 @@
 				"Tome pedras azuis, uma maçã dourada e frascos de experiência. Você gastou muito de si fazendo isso."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:ender_eye"], "count": 12, "desc": "<g>Entregue</g> <y>12 olhos do ender</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}]
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_1_foguetes",
@@ -143,7 +143,7 @@
 				"Tome pedras azuis e membranas de phantom. Elas remendam asas na bigorna. Guarde os foguetes. Eu não tenho bolsos."
 			],
 			"objective": {"type": "craft", "targets": ["minecraft:firework_rocket"], "count": 32, "desc": "<g>Fabrique</g> <y>32 foguetes de artifício</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:phantom_membrane", "count": 4}]
+			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:phantom_membrane", "count": 4}, {"item": "minecraft:experience_bottle", "count": 8}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_1_flores",
@@ -172,7 +172,7 @@
 				"Tome pedras azuis e pérolas dos Altos. E obrigado por plantar algo que vai durar mais que você."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:chorus_flower"], "count": 8, "desc": "<g>Colha</g> e entregue <y>8 flores do coro</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:ender_pearl", "count": 12}]
+			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:ender_pearl", "count": 12}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "shulker_2_purpura",
@@ -201,7 +201,7 @@
 				"Tome pedras azuis e maçãs douradas. As torres vão ficar de pé por mais mil anos."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:purpur_block"], "count": 64, "desc": "<g>Entregue</g> <y>64 blocos de púrpura</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:golden_apple", "count": 2}]
+			"rewards": [{"item": "minecraft:diamond", "count": 11}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_2_endermites",
@@ -230,7 +230,7 @@
 				"Tome pedras azuis e cascas que nossos irmãos deixaram. Elas viram caixas mágicas. Sim. Sabemos o que vocês fazem com elas. Perdoamos. Por hoje."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:endermite"], "count": 12, "desc": "<r>Elimine</r> <r>12 endermites</r>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:shulker_shell", "count": 2}]
+			"rewards": [{"item": "minecraft:diamond", "count": 11}, {"item": "minecraft:shulker_shell", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_2_pilares",
@@ -259,7 +259,7 @@
 				"Tome pedras azuis e maçãs douradas. Os nomes agradecem. Eu também."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:purpur_pillar"], "count": 32, "desc": "<g>Entregue</g> <y>32 pilares de púrpura</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 2}]
+			"rewards": [{"item": "minecraft:diamond", "count": 13}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_2_voo",
@@ -288,7 +288,7 @@
 				"Tome pedras azuis e membranas de phantom. Asas que voam precisam de remendo."
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 500000, "desc": "<g>Plane</g> <y>5.000 blocos</y> com élitros"},
-			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:phantom_membrane", "count": 6}]
+			"rewards": [{"item": "minecraft:diamond", "count": 13}, {"item": "minecraft:phantom_membrane", "count": 6}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_2_pontes",
@@ -317,7 +317,7 @@
 				"Tome pedras azuis e maçãs douradas. Você lutou bem para uma criatura sem casca."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 30, "desc": "<r>Elimine</r> <r>30 endermen</r>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 7}, {"item": "minecraft:golden_apple", "count": 2}]
+			"rewards": [{"item": "minecraft:diamond", "count": 13}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_2_vitrais",
@@ -346,7 +346,7 @@
 				"Tome pedras azuis, uma maçã dourada e frascos de experiência. As torres já brilham por dentro."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:magenta_stained_glass"], "count": 32, "desc": "<g>Entregue</g> <y>32 vidros magenta</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 16}]
+			"rewards": [{"item": "minecraft:diamond", "count": 11}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:ender_pearl", "count": 8}]
 		},
 		{
 			"id": "shulker_3_varas",
@@ -375,7 +375,7 @@
 				"Tome pedras azuis, uma maçã dourada e uma caixa feita da casca de um ancestral. Use com respeito."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:end_rod"], "count": 32, "desc": "<g>Entregue</g> <y>32 varas do Fim</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:shulker_box", "count": 1}]
+			"rewards": [{"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:shulker_box", "count": 1}, {"item": "minecraft:experience_bottle", "count": 24}]
 		},
 		{
 			"id": "shulker_3_ladroes",
@@ -404,7 +404,7 @@
 				"Tome pedras azuis, maçãs douradas e uma casca de presente. Uma doada é diferente de uma roubada."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 40, "desc": "<r>Elimine</r> <r>40 endermen</r>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:shulker_shell", "count": 1}]
+			"rewards": [{"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:shulker_shell", "count": 1}, {"item": "minecraft:experience_bottle", "count": 24}]
 		},
 		{
 			"id": "shulker_3_caixas",
@@ -433,7 +433,7 @@
 				"Tome pedras azuis, maçãs douradas e frascos de experiência. As caixas ficam comigo. Estão em casa."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"], "count": 4, "desc": "<g>Entregue</g> <y>4 caixas de shulker</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}]
+			"rewards": [{"item": "minecraft:diamond", "count": 18}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}]
 		},
 		{
 			"id": "shulker_3_travessia",
@@ -462,7 +462,7 @@
 				"Tome pedras azuis, maçãs douradas e o livro de <a>Inquebrável</a>. Asas que vão longe precisam durar."
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 2000000, "desc": "<g>Plane</g> <y>20.000 blocos</y> com élitros"},
-			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+			"rewards": [{"item": "minecraft:diamond", "count": 16}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}, {"item": "minecraft:experience_bottle", "count": 24}]
 		},
 		{
 			"id": "shulker_3_cristais",
@@ -491,7 +491,7 @@
 				"Tome pedras azuis, maçãs douradas e o livro de <a>Proteção</a>. Para o dia em que alguém acender os cristais."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:end_crystal"], "count": 4, "desc": "<g>Entregue</g> <y>4 cristais do Fim</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+			"rewards": [{"item": "minecraft:diamond", "count": 16}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}, {"item": "minecraft:experience_bottle", "count": 24}]
 		},
 		{
 			"id": "shulker_3_sopro",
@@ -520,7 +520,7 @@
 				"Tome pedras azuis, maçãs douradas e o livro de <a>Peso-Pena</a>. Quem vive perto do vazio precisa saber cair."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:dragon_breath"], "count": 6, "desc": "<g>Colete e entregue</g> <y>6 frascos de sopro do dragão</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+			"rewards": [{"item": "minecraft:diamond", "count": 18}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}, {"item": "minecraft:experience_bottle", "count": 24}]
 		},
 		{
 			"id": "shulker_4_dragao",
@@ -549,7 +549,7 @@
 				"Tome um lingote de netherita, pedras azuis e maçãs douradas. Coisas que caíram no vazio ao longo das eras."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 1, "desc": "<r>Derrote</r> <r>o Dragão do Ender</r>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 2}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 21}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 32}]
 		},
 		{
 			"id": "shulker_4_cascas",
@@ -578,7 +578,7 @@
 				"Tome pedras azuis, fragmentos de netherita e um totem que encontramos num navio. A vida merece ser protegida."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 8, "desc": "<g>Entregue</g> <y>8 cascas de shulker</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:diamond", "count": 25}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 32}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_4_anciaos",
@@ -607,7 +607,7 @@
 				"Tome pedras azuis, fragmentos de netherita e um totem. Os anciões mandaram dizer que você tem um nome entre eles agora. Não dizem qual."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 16, "desc": "<g>Entregue</g> <y>16 cascas de shulker</y>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 16}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 32}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_4_proa",
@@ -636,7 +636,7 @@
 				"Tome um lingote de netherita, pedras azuis e um totem. Achamos tudo isso num navio. Num navio que já não existe."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:dragon_head"], "count": 1, "desc": "<g>Encontre e entregue</g> <y>1 cabeça de dragão</y>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 14}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 25}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 32}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_4_cerco",
@@ -665,7 +665,7 @@
 				"Tome pedras azuis, fragmentos de netherita e maçãs douradas. Você salvou minha torre. E eu, dentro dela."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 60, "desc": "<r>Elimine</r> <r>60 endermen</r>"},
-			"rewards": [{"item": "minecraft:diamond", "count": 15}, {"item": "minecraft:netherite_scrap", "count": 3}, {"item": "minecraft:golden_apple", "count": 2}]
+			"rewards": [{"item": "minecraft:diamond", "count": 27}, {"item": "minecraft:netherite_scrap", "count": 3}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 32}]
 		},
 		{
 			"id": "shulker_4_porao",
@@ -694,7 +694,7 @@
 				"Tome um lingote de netherita, pedras azuis e o livro de <a>Afiação</a>. Para o caminho. Nunca se sabe o que mora do outro lado do vazio."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:popped_chorus_fruit"], "count": 64, "desc": "<g>Entregue</g> <y>64 frutas do coro estouradas</y>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 21}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}, {"item": "minecraft:experience_bottle", "count": 32}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_5_senhor",
@@ -723,7 +723,7 @@
 				"Tome o que os anciões guardaram para o Senhor do Vazio: netherita, pedras azuis, uma maçã encantada e um totem."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 3, "desc": "<r>Derrote</r> <r>o Dragão do Ender 3 vezes</r>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 56}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 40}]
 		},
 		{
 			"id": "shulker_5_asas",
@@ -752,7 +752,7 @@
 				"Tome netherita, pedras azuis, o livro de <p>Remendo</p> e um totem. Que suas próprias asas nunca quebrem."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:elytra"], "count": 3, "desc": "<g>Encontre e entregue</g> <y>3 élitros</y>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 49}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 40}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_5_voz",
@@ -781,7 +781,7 @@
 				"Tome netherita, pedras azuis, uma maçã encantada e o livro de <p>Remendo</p>. Os anciões dizem que é o que os Voadores dariam."
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 10000000, "desc": "<g>Plane</g> <y>100.000 blocos</y> com élitros"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 49}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:experience_bottle", "count": 40}]
 		},
 		{
 			"id": "shulker_5_ultimo_cerco",
@@ -810,7 +810,7 @@
 				"Tome netherita, pedras azuis, uma maçã encantada e um totem. Os anciões guardaram para o dia em que alguém salvasse o Fim. Hoje foi o dia."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 150, "desc": "<r>Elimine</r> <r>150 endermen</r>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 56}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 40}]
 		},
 		{
 			"id": "shulker_5_colonia",
@@ -839,7 +839,7 @@
 				"Tome netherita, pedras azuis, um totem e o molde de melhoria de netherita. Um presente para quem fundou uma cidade."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:shulker_shell"], "count": 32, "desc": "<g>Entregue</g> <y>32 cascas de shulker</y>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 30}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 53}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}, {"item": "minecraft:experience_bottle", "count": 40}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
 			"id": "shulker_5_proas",
@@ -868,7 +868,7 @@
 				"Tome netherita, pedras azuis, maçãs encantadas e um totem. O que os navios guardaram por dez mil anos é seu agora."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:dragon_head"], "count": 4, "desc": "<g>Encontre e entregue</g> <y>4 cabeças de dragão</y>"},
-			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 32}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 56}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:experience_bottle", "count": 40}]
 		}
 	]
 }

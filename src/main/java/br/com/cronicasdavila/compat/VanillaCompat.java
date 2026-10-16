@@ -97,6 +97,28 @@ public final class VanillaCompat {
 		villager.setVillagerXp(villager.getVillagerXp() + amount);
 	}
 
+	/** É noite no mundo normal? (No Nether e no Fim não existe dia e noite.) */
+	public static boolean isNight(Level level) {
+		return level.dimension() == Level.OVERWORLD && level.isDarkOutside();
+	}
+
+	/** Dia do jogo pelo relógio do mundo (dormir também avança o dia). */
+	public static long day(Level level) {
+		return level.getOverworldClockTime() / 24000L;
+	}
+
+	/** Baú de estrutura que ainda não foi aberto (o conteúdo é sorteado ao abrir): nunca é do jogador. */
+	public static boolean hasUnopenedLoot(net.minecraft.world.level.block.entity.BlockEntity blockEntity) {
+		return blockEntity instanceof net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity container
+				&& container.getLootTable() != null;
+	}
+
+	/** Coloca um golem de ferro atrás do jogador. */
+	public static void angerGolem(net.minecraft.world.entity.Mob golem, ServerPlayer player) {
+		golem.setTarget(player);
+		golem.setLastHurtByMob(player);
+	}
+
 	public static boolean isVillage(ServerLevel level, BlockPos pos) {
 		return level.isVillage(pos);
 	}

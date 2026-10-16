@@ -13,6 +13,7 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
+import net.minecraft.client.gui.screens.inventory.MerchantScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.FormattedCharSequence;
@@ -68,6 +69,19 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 				Screens.getWidgets(screen).add(Button.builder(Component.literal("§6✦ Missões"),
 						button -> client.gui.setScreen(new QuestJournalScreen(screen))).bounds(x, y, 62, 20).build());
 			}
+
+			// Botão "Barganhar" na tela de trocas, para quem tem afinidade alta com a profissão.
+			if (screen instanceof MerchantScreen && ClientState.canBargain()) {
+				int x = width / 2 + 138 - 92;
+				int y = height / 2 - 83 - 22;
+				Screens.getWidgets(screen).add(Button.builder(Component.literal("§e⚖ Barganhar"), button -> {
+					ClientPlayNetworking.send(new ModPayloads.ActionPayload("bargain_open"));
+
+					if (client.player != null) {
+						client.player.closeContainer();
+					}
+				}).bounds(x, y, 92, 20).build());
+			}
 		});
 
 		// Esconde o HUD durante as conversas.
@@ -92,6 +106,23 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		JsonObject node = JsonParser.parseString(json).getAsJsonObject();
 		String type = node.get("type").getAsString();
 		Screen current = client.gui.screen();
+
+		if (type.equals("trade_context")) {
+			ClientState.setTradeContext(node);
+			return;
+		}
+
+		if (type.equals("bargain")) {
+			ClientState.setTradeContext(node);
+
+			if (current instanceof BargainScreen bargain) {
+				bargain.update(node);
+			} else {
+				client.gui.setScreen(new BargainScreen(node));
+			}
+
+			return;
+		}
 
 		if (type.equals("close")) {
 			if (current instanceof DialogueScreen dialogue) {

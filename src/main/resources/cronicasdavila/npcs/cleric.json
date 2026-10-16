@@ -52,6 +52,35 @@
 		"Que a luz o acompanhe. Ou ao menos uma tocha.",
 		"Até breve. Os espíritos vão sentir sua falta. Eles são carentes."
 	],
+	"greet_night": [
+		"Ah... {player}. A lua me avisou que você viria. Ela é muito fofoqueira.",
+		"Filho das estrelas, agora você caminha sob elas. Mas cuidado: a noite pertence aos <r>mortos-vivos</r>.",
+		"Que hora é essa para procurar os espíritos? Eles estão bem acordados. Eu, nem tanto.",
+		"Ouviu a coruja? Ela traz recados do além. Hoje ela disse \"hu\". Ainda estou interpretando."
+	],
+	"bye_night": [
+		"Vá em paz e caminhe sob a luz das lanternas. Os mortos não gostam dela.",
+		"Boa noite, filho das estrelas. Que os sonhos sejam leves e os zumbis, lentos.",
+		"Até amanhã. Vou acender uma vela por você. Por precaução, duas."
+	],
+	"reward_intro": [
+		"Os espíritos prometem, e eu entrego",
+		"Ao fim desta jornada, os astros lhe reservam",
+		"Cumprido o destino, receberá das minhas mãos",
+		"Como oferenda pela sua ajuda, darei"
+	],
+	"reward_outro": [
+		"Assim foi visto nas chamas da vela.",
+		"Os ancestrais são testemunhas desta promessa.",
+		"E uma bênção de brinde. Essa eu não cobro.",
+		"Que a recompensa ilumine o seu caminho como uma lanterna na escuridão.",
+		"Juro pela luz azul do caldeirão. E ela nunca mente."
+	],
+	"lore_done": [
+		"Os espíritos só me permitem uma revelação por dia. Volte amanhã, quando a lua mudar.",
+		"Já lhe confiei um segredo hoje, filho das estrelas. Procure os outros aldeões: cada um guarda uma verdade.",
+		"Paciência. O conhecimento sagrado vem a conta-gotas. Amanhã, talvez, os ancestrais falem de novo."
+	],
 	"abandon": [
 		"Abandonar o caminho também é um caminho. Mas os espíritos ficaram decepcionados.",
 		"A vela que acendi por você apagou. Coincidência? Talvez."

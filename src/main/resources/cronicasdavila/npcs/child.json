@@ -27,6 +27,22 @@
 		"Tchauzinho! Quando eu crescer quero ser igual você!",
 		"Tchau! Não conta pra minha mãe que eu saí de casa de noite."
 	],
+	"greet_night": [
+		"Psiu! Eu não tô acordado! Você não me viu! Minha mãe acha que eu tô dormindo.",
+		"Tio {player}! Você viu aquela estrela cadente? Eu fiz um pedido! Pedi um golem de estimação!",
+		"Que hora é essa? Eu tô com medo do escuro... mas com você aqui eu sou corajoso!",
+		"Você tá caçando <r>zumbi</r>?! Posso ir? Por favor? Eu levo minha espada de graveto!"
+	],
+	"bye_night": [
+		"Tchau! Se você ver um zumbi, grita que eu corro!",
+		"Tchauzinho... <d>(bocejo)</d> ...eu não tô com sono... não tô...",
+		"Boa noite! Deixa a lanterna acesa, que o escuro tem monstro!"
+	],
+	"lore_done": [
+		"Já contei uma história hoje! Mamãe disse que é só uma por dia, senão eu fico falando a noite toda.",
+		"Acabou! Amanhã eu conto outra! Ou pergunta pros grandes, eles sabem um monte de coisa chata.",
+		"Não sei mais nenhuma hoje! Mas amanhã eu invento uma de dragão!"
+	],
 	"lore": [
 		[
 			"Sabia que o golem de ferro dá florzinha pra criança? Eu tenho DEZ flores! Tô guardando pra fazer um jardim.",

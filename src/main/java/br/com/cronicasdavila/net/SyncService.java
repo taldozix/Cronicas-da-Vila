@@ -86,6 +86,8 @@ public final class SyncService {
 		root.addProperty("villainMastered", QuestService.villainMasteredCount(data));
 		root.addProperty("villainFactions", Professions.VILLAIN_FACTIONS.size());
 		root.addProperty("overworldTicks", data.overworldTicks);
+		root.addProperty("villainPercent", QuestService.villainPercent(data));
+		root.addProperty("villainPermanent", data.villainPermanent);
 
 		JsonArray professions = new JsonArray();
 
@@ -125,19 +127,21 @@ public final class SyncService {
 			object.addProperty("tierName", Professions.levelName(entry.getKey(), quest.tier));
 			object.addProperty("tone", quest.tone);
 			object.addProperty("nether", Professions.isNether(entry.getKey()));
+			object.addProperty("faction", Professions.faction(entry.getKey()).name());
 			object.addProperty("giver", active.giverName);
 			object.addProperty("giverPos", active.giverX + ", " + active.giverY + ", " + active.giverZ);
 			object.addProperty("giverDim", active.giverDimension);
-			object.addProperty("objective", quest.objective.desc);
+			object.addProperty("objective", QuestService.objectiveDesc(active, quest));
 			object.addProperty("type", quest.objective.type);
 			int unit = quest.objective.displayUnit();
 			object.addProperty("progress", QuestService.progress(player, active, quest) / unit);
-			object.addProperty("target", quest.objective.count / unit);
+			object.addProperty("target", QuestService.target(active, quest) / unit);
 			object.addProperty("repeat", active.repeat);
 
 			JsonArray summary = new JsonArray();
 
 			for (String line : quest.offer) {
+				line = QuestService.withTarget(line, quest, QuestService.target(active, quest));
 				summary.add(line.replace("{player}", player.getScoreboardName()).replace("{npc}", active.giverName));
 			}
 
@@ -153,10 +157,11 @@ public final class SyncService {
 
 			JsonArray rewards = new JsonArray();
 
-			for (QuestReward reward : quest.rewards) {
+			for (QuestReward reward : QuestService.rewards(active, quest)) {
 				JsonObject r = new JsonObject();
 				r.addProperty("item", reward.item);
-				r.addProperty("count", active.repeat ? Math.max(1, reward.count / 2) : reward.count);
+				r.addProperty("count", reward.count);
+				r.addProperty("bonus", reward.bonus);
 
 				if (reward.enchant != null) {
 					r.addProperty("enchant", reward.enchant);

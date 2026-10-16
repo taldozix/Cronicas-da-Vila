@@ -55,7 +55,7 @@ public final class KarmaSystem {
 		return player.level().getGameTime() / 24000L;
 	}
 
-	private static void change(ServerPlayer player, int amount, String reason) {
+	public static void change(ServerPlayer player, int amount, String reason) {
 		if (amount == 0 || player.isCreative() || player.isSpectator()) {
 			return;
 		}
@@ -214,23 +214,40 @@ public final class KarmaSystem {
 		player.addEffect(new MobEffectInstance(effect, 140, amplifier, true, false, true));
 	}
 
+	/** Quem já fez serviço de vilão escolheu esse caminho: ganha os mesmos benefícios do herói, espelhados. */
+	public static boolean onVillainPath(PlayerData data) {
+		return data.villainQuests > 0 && data.karma < 0;
+	}
+
 	private static void applyEffects(ServerPlayer player, PlayerData data) {
 		KarmaTier tier = tier(data);
 
-		if (tier.atLeast(KarmaTier.RESPEITADO)) {
+		// Herói e vilão são equilibrados: os mesmos efeitos nas mesmas distâncias do zero.
+		// Herói: Respeitado (+250) Sorte I, Honrado (+500) Velocidade I, Lendário (+750) Força I.
+		// Vilão: -250 Sorte I, -500 Velocidade I, -750 Força I.
+		int power = onVillainPath(data) ? -data.karma : data.karma;
+
+		if (power >= 250) {
 			effect(player, MobEffects.LUCK, 0);
 		}
 
-		if (tier.atLeast(KarmaTier.HONRADO)) {
+		if (power >= 500) {
 			effect(player, MobEffects.SPEED, 0);
 		}
 
-		if (tier.atLeast(KarmaTier.LENDARIO)) {
+		if (power >= 750) {
 			effect(player, MobEffects.STRENGTH, 0);
 		}
 
-		if (tier.atMost(KarmaTier.SUSPEITO)) {
+		// Azar só para quem faz mal às vilas sem estar do lado dos vilões.
+		if (tier.atMost(KarmaTier.SUSPEITO) && !onVillainPath(data)) {
 			effect(player, MobEffects.UNLUCK, 0);
+		}
+
+		if (QuestService.checkPermanentVillain(data)) {
+			PlayerDataManager.save(player);
+			player.sendSystemMessage(Text.parse("<r><b>☠ 100% DE VILANIA ☠</b></r>\n<p>Todas as missões de vilão feitas, karma no fundo do poço "
+					+ "e o nível máximo de Vilania. O Vilão da História agora é seu <b>para sempre</b>.</p>"));
 		}
 
 		if (QuestService.isVillageHero(data)) {

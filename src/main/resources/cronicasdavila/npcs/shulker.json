@@ -43,6 +43,24 @@
 		"Até logo, criatura de fora. Que os Altos não te encarem.",
 		"<p>*clac clac*</p> Isso foi um tchau."
 	],
+	"reward_intro": [
+		"<p>*clac*</p> Guardei isto por muito tempo. Agora é seu",
+		"Uma casca nunca esquece uma dívida. Receba",
+		"Os anciões concordaram. Em silêncio, como sempre. Para você",
+		"Isto estava no fundo da minha casca há duzentos anos. Leve"
+	],
+	"reward_outro": [
+		"<p>*clac*</p> Use bem. Ou guarde. Guardar também é um bom uso.",
+		"Não agradeça. Nós não temos esse costume. Mas eu gostei que você pensou em agradecer.",
+		"Os Altos jamais pagariam assim. Eles iam só te encarar e sumir.",
+		"Minha casca está um pouco mais leve agora. É uma sensação estranha. Boa, eu acho.",
+		"Lembrarei disto. Como lembro de tudo. <p>*clac clac*</p>"
+	],
+	"lore_done": [
+		"<p>*clac*</p> ...Uma história por dia. Volte amanhã. Para nós, um dia é um piscar.",
+		"Já falei demais hoje. Mais do que em todo o último século. Pergunte a outro shulker da cidade, se tiver pressa.",
+		"As memórias precisam descansar, criatura de fora. Amanhã eu abro a casca de novo."
+	],
 	"abandon": [
 		"<p>*clac*</p> ...Tudo bem. O vazio também desiste de tudo um dia.",
 		"Entendo. Eu volto para dentro da casca agora."

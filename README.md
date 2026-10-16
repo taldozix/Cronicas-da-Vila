@@ -55,6 +55,7 @@ Para testar direto do código, use `./gradlew runClient`.
 | Conversar com uma bruxa | Botão direito segurando um **frasco de vidro** |
 | Conversar com um shulker | Botão direito segurando uma **fruta do coro** |
 | Trocar com o aldeão sem conversar | Shift + botão direito, ou a opção "Bora negociar" no diálogo |
+| Barganhar | Botão **⚖ Barganhar** na tela de trocas (afinidade Aventureiro ou mais com a profissão) |
 | Avançar o texto | Clique, Enter, Espaço ou E |
 | Escolher uma resposta | Mouse, ↑ ↓, W/S, a rodinha do mouse ou as teclas 1 a 9 |
 | Sair da conversa | Esc |
@@ -105,8 +106,28 @@ Cada profissão tem a sua própria afinidade com você, que também vai de Amado
 - Só dá para ter **uma missão ativa por profissão**. Para pegar outra, termine (ou abandone) a atual.
 - Ao falar de novo com um aldeão daquela profissão, ele relembra a missão, dá dicas, mostra o seu progresso e recebe a entrega.
 - O NPC **sorteia** a próxima missão entre as que você ainda não fez no seu nível.
+- Cada missão é sorteada para você: a quantidade pedida varia de 75% a 135% do normal, as recompensas acompanham, e 30% das vezes vem um **bônus da sorte**. Chefes e pedidos pequenos continuam exatos.
 - Quando as inéditas do seu nível acabam, ele oferece alguma inédita de um nível abaixo. Só depois disso repete uma missão antiga, pagando **metade** da recompensa.
 - Ao entregar uma missão, o aldeão ganha experiência de troca: na próxima troca ele sobe de nível e libera trocas melhores.
+
+### Rotina dos aldeões
+
+- **Folga dos trabalhos pesados:** fazendeiros, pescadores, açougueiros, pedreiros, ferramenteiros, ferreiros de armas e armeiros só trabalham **um dia a cada 3**. Nos outros dias eles dizem que estão de folga e não passam missões (mas recebem as entregas). Cada aldeão tem o seu dia, então dá para procurar outro da mesma profissão.
+- **Dia e noite:** à noite os aldeões, saqueadores e bruxas cumprimentam e se despedem de outro jeito.
+- **Uma curiosidade por dia:** cada NPC conta só uma história por dia. Para saber mais, converse com outros NPCs ou volte no dia seguinte.
+
+### Barganha
+
+Na tela de trocas, quem tem afinidade **Aventureiro** ou mais com a profissão do aldeão vê o botão **⚖ Barganhar**:
+
+1. Escolha uma das trocas do aldeão.
+2. Escolha um item do seu inventário para oferecer **no lugar do preço** (a pilha inteira vai na oferta).
+3. A tela mostra a **chance de dar certo**, que depende de quanto o seu item vale comparado ao preço, da sua afinidade e do seu karma (mínimo 5%, máximo 95%).
+4. Se der certo, você recebe o item da troca. Se o aldeão recusar, você fica com o seu item, mas ele não barganha mais com você até o dia seguinte.
+
+### Roubo de baús
+
+Pegar coisas de um baú (ou barril) da vila que não é seu, com um aldeão olhando, custa **-20 de karma**. A vila inteira fica sabendo, os aldeões fogem e **os golens de ferro vão atrás de você**. Baús que você colocou (estavam vazios quando você abriu) ou onde você guardou coisas contam como seus.
 
 ### Herói da Vila
 
@@ -138,6 +159,8 @@ Para ganhar o efeito, você precisa:
 - ser **Arquivilão**;
 - completar **uma missão máxima dos saqueadores, uma dos piglins e uma das bruxas**;
 - ter **karma negativo**.
+
+Com **100% de Vilania** (todas as missões de saqueadores, piglins e bruxas feitas), **karma -1000** e o nível **Arquivilão**, o Vilão da História fica **para sempre**, mesmo que o karma suba depois.
 
 Com o efeito **Vilão da História**:
 - **Todas as criaturas fogem de você**, hostis e pacíficas. Os aldeões entram em pânico, igual fogem de um zumbi.
@@ -173,10 +196,12 @@ O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não
 | Respeitado | ≥ 250 | Sorte I, trocas mais baratas |
 | Confiável | ≥ 100 | Trocas um pouco mais baratas |
 | Neutro | -99 a 99 | — |
-| Suspeito | ≤ -100 | Azar, trocas mais caras |
+| Suspeito | ≤ -100 | Azar, trocas mais caras (no caminho da vilania, sem azar; Sorte I a partir de -250) |
 | Mal-visto | ≤ -300 | Golens de ferro te atacam quando te veem |
 | Odiado | ≤ -500 | Endermen te atacam, animais pacíficos vêm dar cabeçadas e os aldeões param de dar missões |
 | Amaldiçoado | ≤ -750 | Raios caem em você durante tempestades e a fome te persegue |
+
+**Herói e vilão equilibrados:** quem já fez missões de vilão e tem karma negativo está no *caminho da vilania* e ganha os mesmos efeitos do herói, espelhados: **Sorte I** em -250, **Velocidade I** em -500 e **Força I** em -750 (e não recebe o Azar).
 
 - A **bênção** melhora a ferramenta, arma ou armadura que está na sua mão, sem quebrar o equilíbrio: Afiação até III, Eficiência até III, Força até III, Proteção até II ou Inquebrável até III. Uma vez por dia do jogo.
 - Os descontos usam o sistema de "fofoca" do próprio Minecraft, então se somam aos descontos normais.
@@ -204,15 +229,18 @@ O Herói da Vila e o Vilão da História são opostos: o Herói exige karma não
 | Matar um piglin | -10 |
 | Quebrar o sino da vila | -40 |
 | Quebrar cama ou bloco de trabalho dentro da vila | -8 |
-| Desistir de uma missão | -5 |
+| Desistir de uma missão de aldeão | -5 |
+| Ser visto roubando um baú da vila | -20 |
+
+Desistir de uma missão de vilão (saqueador, piglin ou bruxa) dá **+5** de karma.
 
 ### Diário de Missões (tecla J)
 
 - **Aba Missões:** o seu nível, uma barra de progresso pela XP e pelas missões, a barra de karma e a lista de missões ativas. Cada missão mostra quem pediu e onde essa pessoa está, o objetivo com barra de progresso, as recompensas, a história e dicas.
 - **Rastrear no HUD (tecla T):** a missão escolhida aparece no canto da tela.
 - **Desistir:** clique duas vezes para confirmar.
-- **Aba Reputação:** karma, progresso até o Herói da Vila e afinidade com as 13 profissões de aldeão e com os shulkers.
-- **Aba Vilania:** nível de Vilania, progresso, afinidade com saqueadores, piglins e bruxas, status de Vilão da História e o tempo que falta para você queimar no mundo normal.
+- **Aba Reputação:** karma, progresso até o Herói da Vila e afinidade com as 13 profissões de aldeão e com os shulkers (em roxo). Rolando para baixo, o lado vilão em vermelho: nível e porcentagem de Vilania, afinidade com saqueadores, piglins e bruxas, status de Vilão da História e o tempo que falta para você queimar no mundo normal.
+- Na lista de missões, as de vilão aparecem em **vermelho** e as dos shulkers em **roxo**.
 
 ---
 

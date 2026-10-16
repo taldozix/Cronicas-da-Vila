@@ -52,6 +52,35 @@
 		"Tchau, mano! Volta sempre.",
 		"Até mais! E não esquece: escudo contra esqueleto, sempre."
 	],
+	"greet_night": [
+		"Orra, meu, {player}! Que hora é essa, mano? Tipo, o último busão já passou faz tempo.",
+		"Mano, tu tá de rolê de noite? Esqueleto mira melhor no escuro, meu. Fica esperto.",
+		"E aí, meu? Noite firmeza, céu cheio de estrela. Coisa rara, na cidade grande é tudo garoa.",
+		"Hrmm... <d>(boceja)</d> Mano, eu tava quase dormindo. Fala rápido que amanhã o trampo começa cedo."
+	],
+	"bye_night": [
+		"Falou, meu! Boa noite e cuidado com os zumbis, tipo, sério mesmo.",
+		"Vou nessa, mano, vou dormir. Leva uma tocha e vai pelo caminho iluminado.",
+		"Boa noite, meu! Se um esqueleto mirar em ti, abaixa. Dica de profissional."
+	],
+	"reward_intro": [
+		"Orra, meu, se tu fizer isso, te pago",
+		"Fechou, mano? Fazendo o trampo, tu leva",
+		"Tipo assim, pela ajuda eu te passo",
+		"Mandou bem nessa e já era, tu ganha"
+	],
+	"reward_outro": [
+		"Tipo, é na palavra, meu. Paulistano é corrido, mas não é caloteiro.",
+		"Pagamento certinho, mano, sem atraso. Mais pontual que metrô na hora do rush. ...Tá, mais pontual que isso.",
+		"Suave, meu. Prometi, tá prometido.",
+		"E ainda rola umas flechas de brinde, mano. Tamo junto.",
+		"Orra, é negócio fechado. Pode cobrar depois se eu vacilar, meu."
+	],
+	"lore_done": [
+		"Orra, meu, já te contei uma hoje! Tipo, uma história por dia, senão perde a graça.",
+		"Mano, calma! Hoje já deu. Pergunta pros outros da vila ou cola amanhã que eu tenho mais.",
+		"Meu, tu é curioso, hein? Uma por dia, tá ligado? Volta amanhã que tem mais história, firmeza."
+	],
 	"abandon": [
 		"Orra, meu... desistiu? Que nem flecha que cai antes do alvo.",
 		"Que pena, mano. Achei que tu ia até o fim."

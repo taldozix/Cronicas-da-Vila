@@ -52,9 +52,17 @@ jobs:
           fi
 
       - name: Montar as notas da release
+        id: notas
         if: steps.release.outputs.nova == 'true'
         run: |
           VERSAO="${{ steps.versao.outputs.versao }}"
+          # O título da release vem do cabeçalho: "## [X.Y.Z] - data — Título".
+          TITULO=$(grep -m1 -F "## [$VERSAO]" CHANGELOG.md | sed -n 's/.* — //p')
+          if [ -n "$TITULO" ]; then
+            echo "titulo=Crônicas da Vila $VERSAO — $TITULO" >> "$GITHUB_OUTPUT"
+          else
+            echo "titulo=Crônicas da Vila $VERSAO" >> "$GITHUB_OUTPUT"
+          fi
           # Pega a seção "## [VERSAO]" do CHANGELOG.md, até a próxima versão.
           awk -v v="## [$VERSAO]" 'index($0, v) == 1 {found=1; next} found && /^## \[/ {exit} found {print}' CHANGELOG.md > notas.md
           cat >> notas.md <<'TXT'
@@ -74,7 +82,7 @@ jobs:
         with:
           tag_name: v${{ steps.versao.outputs.versao }}
           target_commitish: ${{ github.sha }}
-          name: Crônicas da Vila ${{ steps.versao.outputs.versao }}
+          name: ${{ steps.notas.outputs.titulo }}
           body_path: notas.md
           files: build/libs/cronicas-da-vila-${{ steps.versao.outputs.versao }}.jar
           make_latest: true

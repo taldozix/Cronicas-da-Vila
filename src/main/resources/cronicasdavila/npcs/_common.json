@@ -51,6 +51,35 @@
 		"Vai com Deus... ou com o Notch, sei lá em quem você acredita.",
 		"Tchau! E não esquece de dormir à noite, os phantoms não perdoam."
 	],
+	"greet_night": [
+		"Hrmm?! Que hora é essa, {player}? Quase morri de susto. Achei que era <r>zumbi</r>.",
+		"Boa noite... você não tem medo de andar por aí no escuro? Eu tenho. Muito.",
+		"Ô, {player}. Tô sem sono, olhando as estrelas. Mas não demora, que lá fora tem monstro.",
+		"Psiu, fala baixo! A vila tá dormindo. Só eu e as corujas ainda estamos de olho em tudo."
+	],
+	"bye_night": [
+		"Boa noite, {player}! Vai pela luz das lanternas, hein.",
+		"Tchau! E corre pra casa, que zumbi não tem hora marcada.",
+		"Até amanhã! Se ouvir um chiado atrás de você... nem olha. Corre."
+	],
+	"reward_intro": [
+		"Se der conta do recado, te pago",
+		"Fazendo isso pra mim, você leva",
+		"Pelo trabalho, eu te dou",
+		"Resolve isso e é seu"
+	],
+	"reward_outro": [
+		"Promessa de aldeão é coisa séria.",
+		"Pode confiar, eu pago direitinho.",
+		"É pouco, mas é de coração.",
+		"Tá guardadinho no baú, só esperando por você.",
+		"E ainda conto pra vila inteira que foi você que ajudou."
+	],
+	"lore_done": [
+		"Já te contei uma história hoje. É uma por dia, senão acaba o estoque. Volta amanhã!",
+		"Hrmm, por hoje chega de causo. Pergunta pros outros aldeões, cada um sabe uma coisa.",
+		"Uma história por dia, {player}. Amanhã eu lembro de outra, prometo."
+	],
 	"abandon": [
 		"Ah... tá bom. Achei que podia contar com você.",
 		"Que pena. Vou ter que me virar sozinho de novo."
@@ -140,6 +169,34 @@
 			"<r>Não me machuca!</r> Eu tenho família! Tenho três filhos e uma composteira!",
 			"Hrmm?! <r>HRMMMM!</r> <d>(o aldeão está tremendo tanto que não consegue formar uma frase)</d>",
 			"<r>Fica longe!</r> As histórias que contam de você chegam até as crianças. Elas não dormem mais."
+		],
+		"day_off": [
+			"Hoje é minha <y>folga</y>! Meu trabalho é pesado demais, então só trabalho um dia a cada três. Volta outro dia ou procura outro colega da mesma profissão.",
+			"Hrmm, nada de serviço hoje. Tô de folga, descansando as costas. Deve ter outro aldeão da mesma profissão por aí.",
+			"<d>(o aldeão está esparramado num fardo de feno)</d> Folga, {player}. Volta daqui a uns dias, que aí eu tô novinho em folha."
+		],
+		"bargain_ok": [
+			"Hmm... não é bem o que eu pedi, mas serve. <g>Fechado!</g>",
+			"Você é bom de lábia, {player}! <g>Aceito a troca.</g>",
+			"Tá certo, tá certo. Pelo menos é coisa útil. <g>Negócio feito.</g>",
+			"Hrmm... tá, aceito. Mas não conta pros outros aldeões que eu cedi, hein?"
+		],
+		"bargain_fail": [
+			"<r>Isso é uma ofensa!</r> Por hoje, nada de pechincha com você.",
+			"Tá me achando com cara de bobão? <r>Não aceito.</r> E hoje não negocio mais com você.",
+			"Hrmm! <r>Que absurdo!</r> Vou fingir que não ouvi. Mas hoje, nada de barganha.",
+			"Isso aí não vale nem a metade! <r>Nada feito.</r> Volta amanhã, quando eu já tiver esquecido essa."
+		],
+		"bargain_tired": [
+			"Já falei que hoje não! Ou paga o preço certo, ou nada feito.",
+			"De novo, {player}? Hoje eu não pechincho mais com você. Ponto final.",
+			"Hrmm. Insistência não é argumento. Amanhã a gente conversa."
+		],
+		"thief_seen": [
+			"<r>Ladrão!</r> Golem, pega!",
+			"<r>Ei! Larga esse baú!</r> Isso é da vila!",
+			"<r>Socorro, tão roubando a vila!</r>",
+			"<r>Pega ladrão!</r> GOLEEEEM!"
 		]
 	}
 }

@@ -13,6 +13,8 @@ import com.google.gson.JsonParser;
  */
 public final class ClientState {
 	private static JsonObject data = new JsonObject();
+	/** Último aldeão com quem o jogador falou (para mostrar o botão de barganha na tela de trocas). */
+	private static JsonObject tradeContext = new JsonObject();
 
 	private ClientState() {
 	}
@@ -27,6 +29,15 @@ public final class ClientState {
 
 	public static void clear() {
 		data = new JsonObject();
+		tradeContext = new JsonObject();
+	}
+
+	public static void setTradeContext(JsonObject context) {
+		tradeContext = context;
+	}
+
+	public static boolean canBargain() {
+		return tradeContext.has("canBargain") && tradeContext.get("canBargain").getAsBoolean();
 	}
 
 	public static boolean hasData() {

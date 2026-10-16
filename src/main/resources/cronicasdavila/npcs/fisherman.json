@@ -52,6 +52,35 @@
 		"Até mais, painho! Se ver um afogado, manda lembranças. Com a espada.",
 		"Tchau, visse? O mar vai sentir sua falta. Eu também, um pouquinho."
 	],
+	"greet_night": [
+		"Oxe, {player}, que hora é essa, meu rei? Até os peixes já foram dormir.",
+		"Eita, painho, cê anda de noite assim, é? Os afogados saem da água quando escurece, visse?",
+		"Ô meu rei, olha essa lua no mar... coisa mais linda. Agora chega perto da lanterna, que no escuro tem zumbi.",
+		"Hrmm... <d>(boceja)</d> Oxe, tava cochilando na rede. Pescador acorda de madrugada, painho, cê me pegou no meio do sono."
+	],
+	"bye_night": [
+		"Boa noite, meu rei! Vai devagar e longe da beira, que de noite o mar engana.",
+		"Vou dormir, visse? Amanhã cedinho tem rede pra puxar. Cuidado com os zumbis, painho!",
+		"Dorme com os anjos, meu rei. E se ver um afogado, nem cumprimenta."
+	],
+	"reward_intro": [
+		"Fazendo isso pra mim, meu rei, cê leva",
+		"Se der conta, painho, eu te dou",
+		"Pelo trabalho, sem pressa nenhuma, eu pago",
+		"Me ajuda nessa que eu separo pra você"
+	],
+	"reward_outro": [
+		"Palavra de pescador, meu rei: o que eu prometo, a maré não leva.",
+		"E ainda tem uma moqueca de bônus se cê voltar com fome, visse?",
+		"Pode confiar, painho. Pescador mente sobre o tamanho do peixe, nunca sobre pagamento.",
+		"Tá prometido. Que o mar seja testemunha.",
+		"Oxe, e sem atrasar! Pago no dia, nem que eu tenha que vender o barco. ...Brincadeira, o barco não."
+	],
+	"lore_done": [
+		"Oxe, meu rei, já te contei uma história hoje! História é igual peixe: uma por vez, senão estraga. Volta amanhã.",
+		"Calma, painho. Uma história por dia, que é pra não acabar o estoque. Pergunta pros outros da vila, visse?",
+		"Eita, cê é curioso que só! Hoje já deu, meu rei. Amanhã o mar me sopra outra."
+	],
 	"abandon": [
 		"Oxe... largou a rede no meio do mar? Isso dá azar, meu rei.",
 		"Que pena. O mar não perdoa quem desiste fácil."
@@ -91,5 +120,12 @@
 	"names": [
 		"Seu Zuza", "Dona Iara", "Painho Dorival", "Dona Marinalva", "Seu Caymmi", "Dona Janaína", "Seu Raimundinho",
 		"Dona Lindalva", "Seu Bira", "Dona Nalvinha"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Oxe, hoje é minha folga, meu rei! Puxar rede pesa demais, por isso eu só vou pro mar de três em três dias. Volta outro dia, visse?",
+			"Hoje não tem pescaria não, painho. Tô de folga, na rede, com água de coco. Se tiver pressa, procura outro pescador na vila.",
+			"Eita, trabalhar hoje? Hoje é dia de descanso, meu rei. O mar trabalha sozinho, os peixes também. Eu volto daqui a uns dias."
+		]
+	}
 }

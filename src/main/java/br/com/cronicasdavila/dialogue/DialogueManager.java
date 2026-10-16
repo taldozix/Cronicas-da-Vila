@@ -170,7 +170,7 @@ public final class DialogueManager {
 		return InteractionResult.SUCCESS;
 	}
 
-	private static String npcName(Mob npc, NpcDialogue lines) {
+	public static String npcName(Mob npc, NpcDialogue lines) {
 		if (npc.hasCustomName() && npc.getCustomName() != null) {
 			return npc.getCustomName().getString();
 		}
@@ -280,6 +280,10 @@ public final class DialogueManager {
 	// ---------------------------------------------------------------------------------------------
 
 	public static void onAction(ServerPlayer player, String action) {
+		if (br.com.cronicasdavila.trade.BargainSystem.onAction(player, action)) {
+			return;
+		}
+
 		if (action.equals("close")) {
 			close(player, false);
 			return;
@@ -310,7 +314,9 @@ public final class DialogueManager {
 			QuestService.abandon(player, data, profession);
 
 			if (quest != null) {
-				player.sendSystemMessage(br.com.cronicasdavila.util.Text.parse("<r>Você desistiu da missão</r> <y>" + quest.title + "</y>. <d>(-5 karma)</d>"));
+				int karma = QuestService.abandonKarma(profession);
+				player.sendSystemMessage(br.com.cronicasdavila.util.Text.parse("<r>Você desistiu da missão</r> <y>" + quest.title + "</y>. <d>("
+						+ (karma > 0 ? "+" : "") + karma + " karma)</d>"));
 			}
 		} else if (action.startsWith("track:")) {
 			String profession = action.substring("track:".length());
@@ -478,10 +484,12 @@ public final class DialogueManager {
 
 		List<String> greetings;
 
-		if (karma.atLeast(KarmaTier.CONFIAVEL)) {
-			greetings = lines.greet_friendly;
-		} else if (karma.atMost(KarmaTier.SUSPEITO)) {
+		if (karma.atMost(KarmaTier.SUSPEITO)) {
 			greetings = lines.greet_cold;
+		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
+			greetings = lines.greet_night;
+		} else if (karma.atLeast(KarmaTier.CONFIAVEL)) {
+			greetings = lines.greet_friendly;
 		} else {
 			greetings = lines.greet_neutral;
 		}
@@ -510,10 +518,12 @@ public final class DialogueManager {
 
 		List<String> greetings;
 
-		if (data.karma <= -100 || QuestService.isVillain(data)) {
-			greetings = lines.greet_friendly;
-		} else if (data.karma >= 100) {
+		if (data.karma >= 100) {
 			greetings = lines.greet_cold;
+		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
+			greetings = lines.greet_night;
+		} else if (data.karma <= -100 || QuestService.isVillain(data)) {
+			greetings = lines.greet_friendly;
 		} else {
 			greetings = lines.greet_neutral;
 		}
@@ -560,7 +570,9 @@ public final class DialogueManager {
 		boolean known = progress != null && progress.totalDone > 0;
 		List<String> greetings;
 
-		if (known || data.karma <= -100 || QuestService.isVillain(data)) {
+		if (isNight(session) && !lines.greet_night.isEmpty()) {
+			greetings = lines.greet_night;
+		} else if (known || data.karma <= -100 || QuestService.isVillain(data)) {
 			greetings = lines.greet_friendly;
 		} else if (data.karma >= 100) {
 			greetings = lines.greet_cold;
@@ -655,7 +667,8 @@ public final class DialogueManager {
 
 	private static void bye(DialogueSession session) {
 		speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
-		show(session, List.of(pick(session, session.lines.bye, "Até mais, {player}!")), List.of(), toneFor(session));
+		List<String> byes = isNight(session) && !session.lines.bye_night.isEmpty() ? session.lines.bye_night : session.lines.bye;
+		show(session, List.of(pick(session, byes, "Até mais, {player}!")), List.of(), toneFor(session));
 		SESSIONS.remove(session.player.getUUID());
 		unfreeze(session);
 	}
@@ -675,6 +688,14 @@ public final class DialogueManager {
 
 		if (data.active.containsKey(session.profession)) {
 			questInfo(session);
+			return;
+		}
+
+		if (onDayOff(session)) {
+			speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_AMBIENT);
+			show(session, List.of(pick(session, session.lines.extra("day_off"),
+					"Hoje é minha folga, {player}. Meu serviço é pesado: só pego no batente uma vez a cada 3 dias. Volte outro dia, ou procure outro colega da profissão.")),
+					backOrBye(session), toneFor(session));
 			return;
 		}
 
@@ -705,8 +726,11 @@ public final class DialogueManager {
 			pages.add(pick(session, session.lines.repeat, "Lembra daquele serviço? Pois é, precisei de novo. Paga menos, mas ajuda."));
 		}
 
-		pages.addAll(quest.offer);
-		pages.add(objectiveLine(quest));
+		for (String line : quest.offer) {
+			pages.add(QuestService.withTarget(line, quest, offer.target()));
+		}
+
+		pages.add(objectiveLine(quest, QuestService.withTarget(quest.objective.desc, quest, offer.target())));
 		speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
 		show(session, pages, offerChoices(session, quest, true), quest.isDanger() ? "danger" : "calm");
 	}
@@ -719,8 +743,8 @@ public final class DialogueManager {
 		return "<o>[" + Rank.ofTier(quest.tier).displayName() + "]</o>";
 	}
 
-	private static String objectiveLine(Quest quest) {
-		return tierLabel(quest) + " <b>" + quest.title + "</b> — " + quest.objective.desc + ".";
+	private static String objectiveLine(Quest quest, String desc) {
+		return tierLabel(quest) + " <b>" + quest.title + "</b> — " + desc + ".";
 	}
 
 	private static List<Choice> offerChoices(DialogueSession session, Quest quest, boolean allowWhy) {
@@ -737,33 +761,21 @@ public final class DialogueManager {
 
 	private static void whyQuest(DialogueSession session) {
 		Quest quest = session.pendingOffer.quest();
-		List<String> pages = new ArrayList<>(quest.why);
-		pages.add(rewardLine(quest, session.pendingOffer.repeat()));
+		List<String> pages = new ArrayList<>();
+
+		for (String line : quest.why) {
+			pages.add(QuestService.withTarget(line, quest, session.pendingOffer.target()));
+		}
+
+		pages.add(rewardLine(session, session.pendingOffer.rewards()));
 		show(session, pages, offerChoices(session, quest, false), quest.isDanger() ? "danger" : "calm");
 	}
 
-	private static String rewardLine(Quest quest, boolean repeat) {
-		StringBuilder builder = new StringBuilder("Se der conta do recado, te pago ");
-
-		for (int i = 0; i < quest.rewards.size(); i++) {
-			QuestReward reward = quest.rewards.get(i);
-			int count = repeat ? Math.max(1, reward.count / 2) : reward.count;
-
-			if (i > 0) {
-				builder.append(i == quest.rewards.size() - 1 ? " e " : ", ");
-			}
-
-			builder.append("<o>").append(count).append("x {item:").append(reward.item).append("}");
-
-			if (reward.enchant != null) {
-				builder.append(" de {ench:").append(reward.enchant).append("} ").append(reward.level);
-			}
-
-			builder.append("</o>");
-		}
-
-		builder.append(". Palavra de quem honra o que diz.");
-		return builder.toString();
+	/** "Se der conta do recado, te pago 3x Diamante e 1x Maçã. <frase do NPC>" — com o jeito de cada um. */
+	private static String rewardLine(DialogueSession session, List<QuestReward> rewards) {
+		String intro = pick(session, session.lines.reward_intro, "Se der conta do recado, te pago");
+		String outro = pick(session, session.lines.reward_outro, "Combinado é combinado.");
+		return intro + " " + QuestService.rewardList(rewards) + ". " + outro;
 	}
 
 	private static void acceptQuest(DialogueSession session) {
@@ -772,12 +784,18 @@ public final class DialogueManager {
 			return;
 		}
 
-		Quest quest = session.pendingOffer.quest();
-		QuestService.accept(session.player, PlayerDataManager.get(session.player), quest, session.pendingOffer.repeat(), session.npc, session.npcName);
+		QuestService.Offer offer = session.pendingOffer;
+		Quest quest = offer.quest();
+		QuestService.accept(session.player, PlayerDataManager.get(session.player), offer, session.npc, session.npcName);
 		session.pendingOffer = null;
 		speak(session, SoundEvents.VILLAGER_YES, SoundEvents.PIGLIN_ADMIRING_ITEM);
 
-		List<String> pages = new ArrayList<>(quest.accept);
+		List<String> pages = new ArrayList<>();
+
+		for (String line : quest.accept) {
+			pages.add(QuestService.withTarget(line, quest, offer.target()));
+		}
+
 		pages.add("<a>Missão adicionada ao seu Diário</a> <d>(tecla J ou o botão \"Missões\" no inventário)</d>.");
 		show(session, pages, backOrBye(session), quest.isDanger() ? "danger" : "calm");
 	}
@@ -800,7 +818,9 @@ public final class DialogueManager {
 		}
 
 		int progress = QuestService.progress(player, active, quest);
-		boolean complete = progress >= quest.objective.count;
+		int target = QuestService.target(active, quest);
+		int unit = quest.objective.displayUnit();
+		boolean complete = progress >= target;
 		List<String> pages = new ArrayList<>();
 
 		if (!active.giverUuid.equals(session.npc.getUUID().toString())) {
@@ -809,7 +829,7 @@ public final class DialogueManager {
 
 		pages.addAll(quest.progress);
 		String verb = quest.objective.isDeliver() ? "Você tem" : "Progresso:";
-		pages.add(objectiveLine(quest) + " " + verb + " <y>" + progress / quest.objective.displayUnit() + "/" + quest.objective.count / quest.objective.displayUnit() + "</y>."
+		pages.add(objectiveLine(quest, QuestService.objectiveDesc(active, quest)) + " " + verb + " <y>" + progress / unit + "/" + target / unit + "</y>."
 				+ (complete ? " <g>Já dá pra entregar!</g>" : ""));
 
 		List<Choice> choices = new ArrayList<>();
@@ -819,7 +839,7 @@ public final class DialogueManager {
 		}
 
 		choices.add(new Choice("reward", "E a recompensa mesmo, qual era?", "info", () -> {
-			show(session, List.of(rewardLine(quest, active.repeat)), backOrBye(session), toneFor(session));
+			show(session, List.of(rewardLine(session, QuestService.rewards(active, quest))), backOrBye(session), toneFor(session));
 		}));
 		choices.add(new Choice("abandon", "<r>Quero desistir dessa missão.</r>", "danger", () -> confirmAbandon(session, quest)));
 		choices.add(new Choice("back", "Beleza, vou continuar.", "neutral", () -> backToMenu(session)));
@@ -827,8 +847,10 @@ public final class DialogueManager {
 	}
 
 	private static void confirmAbandon(DialogueSession session, Quest quest) {
+		int karma = QuestService.abandonKarma(session.profession);
+		String karmaText = karma > 0 ? "<g>(+" + karma + " karma)</g>" : "(" + karma + " karma)";
 		List<Choice> choices = List.of(
-				new Choice("yes", "<r>Sim, desisto.</r> (-5 karma)", "danger", () -> {
+				new Choice("yes", "<r>Sim, desisto.</r> " + karmaText, "danger", () -> {
 					QuestService.abandon(session.player, PlayerDataManager.get(session.player), session.profession);
 					speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
 					show(session, List.of(pick(session, session.lines.abandon, "Que pena... achei que podia confiar em você.")), backOrBye(session), toneFor(session));
@@ -875,19 +897,42 @@ public final class DialogueManager {
 	// Conversa, reputação, trocas, desculpas, bênçãos
 	// ---------------------------------------------------------------------------------------------
 
+	/** Cada NPC conta só uma curiosidade por dia. Para saber mais, converse com outros ou volte amanhã. */
 	private static void lore(DialogueSession session) {
-		List<List<String>> stories = session.lines.lore;
-		List<String> story = stories.get(Math.floorMod(session.loreIndex, stories.size()));
-		session.loreIndex++;
+		ServerPlayer player = session.player;
+		PlayerData data = PlayerDataManager.get(player);
+		long day = VanillaCompat.day(player.level());
+		String npc = session.npc.getUUID().toString();
+		Long told = data.loreDay.get(npc);
 
-		List<Choice> choices = new ArrayList<>();
-
-		if (stories.size() > 1) {
-			choices.add(new Choice("more", pick(session, session.lines.player_more_lore, "Conta outra!"), "info", () -> lore(session)));
+		if (told != null && told == day) {
+			show(session, List.of(pick(session, session.lines.lore_done,
+					"Já te contei a minha de hoje, {player}. Pergunta pros outros, ou volta amanhã que eu lembro de mais alguma.")),
+					backOrBye(session), toneFor(session));
+			return;
 		}
 
-		choices.addAll(backOrBye(session));
-		show(session, story, choices, toneFor(session));
+		List<List<String>> stories = session.lines.lore;
+		List<String> story = stories.get(Math.floorMod(session.loreIndex, stories.size()));
+		data.loreDay.put(npc, day);
+		data.loreDay.values().removeIf(value -> value < day);
+		PlayerDataManager.save(player);
+		show(session, story, backOrBye(session), toneFor(session));
+	}
+
+	private static boolean isNight(DialogueSession session) {
+		return VanillaCompat.isNight(session.npc.level());
+	}
+
+	/** Aldeões de trabalho pesado só trabalham um dia a cada 3 (cada um no seu dia, para a vila não parar). */
+	public static boolean onDayOff(DialogueSession session) {
+		if (!(session.npc instanceof Villager) || !Professions.HEAVY_PROFESSIONS.contains(session.profession)) {
+			return false;
+		}
+
+		long day = VanillaCompat.day(session.npc.level());
+		int offset = Math.floorMod(session.npc.getUUID().hashCode(), Professions.HEAVY_WORK_EVERY_DAYS);
+		return (day + offset) % Professions.HEAVY_WORK_EVERY_DAYS != 0;
 	}
 
 	private static void reputation(DialogueSession session) {

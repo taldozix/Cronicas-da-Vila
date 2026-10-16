@@ -52,6 +52,35 @@
 		"Até mais, guri! Volta domingo pro churrasco.",
 		"Tchau, vivente! Cuidado com os creepers."
 	],
+	"greet_night": [
+		"Bah, {player}! Que hora é essa, tchê? Já apaguei o fogo de chão e tudo.",
+		"Tu tá louco de andar de noite, guri? Zumbi não respeita nem açougueiro!",
+		"Buenas noites, vivente. Noite fria, hein? Chega perto da lanterna que eu tava fechando o açougue.",
+		"Barbaridade, ouvi uns gemidos ali atrás. Ou é zumbi ou é o bobão roncando. Fala rápido, tchê."
+	],
+	"bye_night": [
+		"Boa noite, tchê! Vai direto pra casa e não para pra conversar com esqueleto.",
+		"Vou dormir, guri. Amanhã a costela entra no fogo às cinco. Cuidado com os zumbis!",
+		"Buenas noites, vivente! Se um zumbi te seguir, oferece um bife. ...Não, é mentira, corre mesmo."
+	],
+	"reward_intro": [
+		"Bah, se tu fizer isso direito, te pago",
+		"Fechou, tchê? Fazendo o serviço, tu leva",
+		"Pelo trabalho, guri, eu separo",
+		"Dá conta disso aí que eu te dou de mão beijada"
+	],
+	"reward_outro": [
+		"Palavra de gaúcho... digo, de açougueiro: é mais firme que espeto de ferro.",
+		"E ainda tem uma costela de lambuja, tchê. Barbaridade, que negócio tri!",
+		"Aqui é tudo no fio do bigode, guri. Prometi, tá prometido.",
+		"Pago certinho, que nem corte de picanha: sem desperdício e sem enrolação.",
+		"Bah, e se reclamar do pagamento, eu ofereço mais um churrasco. Ninguém reclama de churrasco."
+	],
+	"lore_done": [
+		"Bah, tchê, já te contei uma história hoje! Igual churrasco: um por dia, senão dá indigestão.",
+		"Calma, guri! Hoje já deu. Vai perguntar pros outros da vila ou volta amanhã que eu te conto outra.",
+		"Barbaridade, tu é curioso, hein? Uma história por dia, vivente. Amanhã tem mais, passada no ponto."
+	],
 	"abandon": [
 		"Bah... largou na metade? Isso é que nem tirar a carne do fogo crua, tchê.",
 		"Que pena. Achei que tu era de palavra."
@@ -91,5 +120,12 @@
 	"names": [
 		"Seu Bento", "Dona Prenda", "Seu Ademar", "Dona Ilse", "Seu Gumercindo", "Dona Valquíria", "Seu Tadeu",
 		"Dona Olga", "Seu Arlindo", "Dona Brígida"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Bah, hoje é minha folga, tchê! Carregar meio boi nas costas cansa, então eu só trabalho de três em três dias.",
+			"Hoje não, guri. Tô de folga, só no chimarrão... digo, na água. Volta outro dia ou procura outro açougueiro na vila.",
+			"Barbaridade, trabalhar hoje? A faca tá descansando, o avental tá descansando e eu também. Volta daqui uns dias, tchê."
+		]
+	}
 }

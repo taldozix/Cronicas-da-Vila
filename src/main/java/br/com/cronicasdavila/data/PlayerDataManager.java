@@ -74,6 +74,18 @@ public final class PlayerDataManager {
 				data.villainRank = 1;
 			}
 
+			if (data.loreDay == null) {
+				data.loreDay = new java.util.HashMap<>();
+			}
+
+			if (data.bargainRefused == null) {
+				data.bargainRefused = new java.util.HashMap<>();
+			}
+
+			if (data.ownChests == null) {
+				data.ownChests = new java.util.HashSet<>();
+			}
+
 			return data;
 		});
 	}

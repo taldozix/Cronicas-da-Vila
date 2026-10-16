@@ -52,6 +52,35 @@
 		"Até mais, rapaz! Volta quando precisar de uma roupa nova.",
 		"Tchau, viu? Não some, não!"
 	],
+	"greet_night": [
+		"Vixe, {player}! Que hora é essa, cabra? Eu já tava de chinelo e tudo.",
+		"Oxente, andando no escuro, rapaz? Zumbi não tem educação, chega sem bater na porta!",
+		"Égua, olha a lua, cabra! Tá mais redonda que fivela de cinturão. Mas vem pra perto da lamparina, viu?",
+		"Hrmm... <d>(esfrega os olhos)</d> Vixe, cochilei em cima do couro. O que é que tu quer a essa hora, rapaz?"
+	],
+	"bye_night": [
+		"Boa noite, cabra! E vai pela rua iluminada, viu?",
+		"Vou dormir, rapaz, que amanhã tem gibão pra costurar. Cuidado com os zumbis!",
+		"Té amanhã, cabra! Se ouvir barulho de osso no escuro, é esqueleto. Corre!"
+	],
+	"reward_intro": [
+		"Vixe, se tu fizer isso, cabra, eu te dou",
+		"Fazendo o serviço direitinho, tu leva",
+		"Pela ajuda, rapaz, eu separei",
+		"Dá conta disso que tu ganha"
+	],
+	"reward_outro": [
+		"Palavra de coureiro é costura dupla: não desmancha, viu?",
+		"E ainda faço um chapéu de couro de brinde pra tu. Arretado demais!",
+		"Pode confiar, cabra. Eu sou pobre, mas sou honesto que só.",
+		"Tá prometido, rapaz. Se eu não pagar, pode me chamar de bobão da vila.",
+		"Égua, pagamento garantido! Mais garantido que bota de couro em dia de chuva."
+	],
+	"lore_done": [
+		"Vixe, cabra, já te contei uma história hoje! Agulha que costura demais quebra, viu? Volta amanhã.",
+		"Oxente, quer outra? Hoje não, rapaz. Pergunta pros outros da vila ou volta amanhã que eu te conto.",
+		"Égua, tu é curioso, hein, cabra? Uma história por dia, que é pra render. Amanhã tem mais."
+	],
 	"abandon": [
 		"Vixe, largou na metade? Que nem costura sem nó, desmancha tudo.",
 		"Que pena, cabra. Achei que tu era mais firme."

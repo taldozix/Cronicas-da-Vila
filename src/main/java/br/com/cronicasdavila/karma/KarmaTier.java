@@ -6,13 +6,13 @@ package br.com.cronicasdavila.karma;
  */
 public enum KarmaTier {
 	AMALDICOADO(-1000, "Amaldiçoado", 0x8B0000,
-			"Raios te procuram nas tempestades, golens, endermen e até as vacas querem sua cabeça. A fome te persegue."),
+			"Raios te procuram nas tempestades, golens, endermen e até as vacas querem sua cabeça. A fome te persegue. No caminho da vilania: Sorte I, Velocidade I e Força I."),
 	ODIADO(-749, "Odiado", 0xFF3333,
-			"Golens e endermen te atacam, animais te dão cabeçadas e os aldeões não te dão mais missões."),
+			"Golens e endermen te atacam, animais te dão cabeçadas e os aldeões não te dão mais missões. No caminho da vilania: Sorte I e Velocidade I."),
 	MAL_VISTO(-499, "Mal-visto", 0xFF7733,
-			"Os golens de ferro te atacam assim que te veem. As trocas estão bem mais caras."),
+			"Os golens de ferro te atacam assim que te veem. As trocas estão bem mais caras. No caminho da vilania: Sorte I."),
 	SUSPEITO(-299, "Suspeito", 0xFFFF55,
-			"Os aldeões cochicham sobre você. Trocas mais caras e um pouco de azar."),
+			"Os aldeões cochicham sobre você. Trocas mais caras e um pouco de azar. No caminho da vilania: sem azar e, a partir de -250, Sorte I."),
 	NEUTRO(-99, "Neutro", 0xFFFFFF,
 			"Ninguém te ama, ninguém te odeia. Por enquanto."),
 	CONFIAVEL(100, "Confiável", 0x55FF55,

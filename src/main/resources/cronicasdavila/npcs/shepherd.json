@@ -52,6 +52,35 @@
 		"Até logo. Se encontrar uma ovelha perdida, traz pra mim?",
 		"Tchau. Que o vento sopre a seu favor."
 	],
+	"greet_night": [
+		"Boa noite, minha gente. A lua tá contando as ovelhas por mim hoje. Mas você não devia andar no escuro.",
+		"{player}... a essa hora? As corujas estão de vigia, mas os zumbis também. Chegue perto da lanterna.",
+		"Olhe o céu, minha gente. Cada estrela é uma ovelha que foi pastar lá em cima. Bonito, né? Agora vá pra casa.",
+		"Hrmm... já é hora de recolher o rebanho e o coração. O que te traz aqui tão tarde, viajante?"
+	],
+	"bye_night": [
+		"Boa noite, minha gente. Que as estrelas te guiem e os zumbis te esqueçam.",
+		"Vou dormir. Contei as ovelhas... e contei uma a mais. Acho que era você. Vá com cuidado.",
+		"Durma bem. A noite é mansa pra quem tem um teto, e perigosa pra quem não tem."
+	],
+	"reward_intro": [
+		"Se você fizer isso com carinho, eu te dou",
+		"Pela ajuda, minha gente, separei com gratidão",
+		"Quando terminar, vai receber",
+		"Do pouco que o pasto me dá, eu te ofereço"
+	],
+	"reward_outro": [
+		"Uma promessa é como um fio de lã: frágil sozinha, mas eu nunca deixo arrebentar.",
+		"Não é muito, minha gente. Mas foi guardado com o coração.",
+		"As ovelhas são testemunhas. E ovelha não esquece.",
+		"Recompensa dada de boa vontade pesa menos na mochila e mais na alma.",
+		"E se sobrar tempo, venha ver o pôr do sol comigo. Esse eu dou de graça."
+	],
+	"lore_done": [
+		"Uma história por dia, minha gente. Se a gente conta todas de uma vez, o vento não tem mais o que trazer.",
+		"Hoje eu já te dei uma. Deixe ela descansar no coração. Amanhã tem outra, ou pergunte aos outros da vila.",
+		"Calma, viajante. Histórias são como lã: precisam de tempo pra crescer de novo. Volte amanhã."
+	],
 	"abandon": [
 		"Tudo bem... às vezes a gente desiste do caminho pra encontrar outro.",
 		"Que pena. Mas eu entendo. Nem todo mundo aguenta o peso das promessas."

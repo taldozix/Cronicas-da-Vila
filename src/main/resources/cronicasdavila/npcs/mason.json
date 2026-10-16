@@ -52,6 +52,35 @@
 		"Até mais, parceiro! Volta pra ver a obra pronta.",
 		"Tchau! Usa capacete, que pedra cai."
 	],
+	"greet_night": [
+		"Caraca, {player}! Que hora é essa, mermão? Obra é só de dia, tá ligado?",
+		"Mermão, tu tá andando de noite? Zumbi não respeita nem capacete!",
+		"Olha esse céu estrelado, parceiro! Sinistro, né? Agora chega pra perto da lanterna que o escuro tá bolado.",
+		"Hrmm... <d>(boceja)</d> Ô mermão, eu tava cochilando no andaime. Fala aí, mas fala rapidinho."
+	],
+	"bye_night": [
+		"Falou, mermão! Boa noite e cuidado com os zumbis, que eles não tão de bobeira.",
+		"Vou dormir, parceiro. Amanhã cedo tem massa pra bater. Vai pela rua iluminada!",
+		"Boa noite, mermão! Se ouvir \"ssssss\" atrás de tu, nem olha. Só rala."
+	],
+	"reward_intro": [
+		"Caraca, se tu fizer isso, mermão, te pago",
+		"Fechou, parceiro? Fazendo a parada direito, tu leva",
+		"Pela obra, eu separo pra tu",
+		"Dá conta disso aí que eu te dou"
+	],
+	"reward_outro": [
+		"Palavra de pedreiro, mermão: mais firme que alicerce de obsidiana.",
+		"Pagamento na mão, sem enrolação. Não é orçamento de obra, não, tá ligado?",
+		"Pode confiar, parceiro. Eu atraso a obra, mas nunca atraso pagamento.",
+		"Maneiro, né? E ainda tem um cafezinho da marmita de bônus.",
+		"Tá prometido, mermão. Tá escrito no cimento fresco. ...Pera, secou torto. Mas tá prometido."
+	],
+	"lore_done": [
+		"Caraca, mermão, já te contei uma hoje! Uma por dia, tá ligado? Senão a obra não anda.",
+		"Calma, parceiro! Hoje já deu. Vai perguntar pros outros da vila ou cola amanhã.",
+		"Mermão, tu é curioso, hein? História é igual tijolo: um de cada vez. Volta amanhã."
+	],
 	"abandon": [
 		"Caraca, largou a obra no meio? Prédio sem teto não protege ninguém, mermão.",
 		"Que pena, parceiro. Achei que tu era firme igual concreto."
@@ -91,5 +120,12 @@
 	"names": [
 		"Seu Jurandir", "Dona Tânia", "Seu Juninho", "Dona Glória", "Seu Wagner", "Dona Cátia", "Seu Marcão",
 		"Dona Bete", "Seu Tião Pedreira", "Dona Solange"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Caraca, hoje é minha folga, mermão! Carregar pedra o dia todo detona as costas, então eu só pego no batente de três em três dias.",
+			"Hoje não, parceiro. Tô de folga, de chinelo e bermuda. Volta outro dia ou procura outro pedreiro na vila.",
+			"Mermão, trabalhar hoje? A obra tá parada, a betoneira tá parada e eu tô mais parado ainda. Volta daqui uns dias, tá ligado?"
+		]
+	}
 }

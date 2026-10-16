@@ -3,9 +3,11 @@ package br.com.cronicasdavila.data;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import br.com.cronicasdavila.quest.QuestReward;
 import br.com.cronicasdavila.rank.Rank;
 
 /**
@@ -50,8 +52,17 @@ public class PlayerData {
 	public int[] villainTierCompletions = new int[6];
 	public int villainQuests = 0;
 	public boolean villainAnnounced = false;
+	/** Chegou a 100% de Vilania: o Vilão da História fica para sempre. */
+	public boolean villainPermanent = false;
 	/** Tempo seguido no mundo normal sendo Vilão da História (zera ao voltar ao Nether). */
 	public long overworldTicks = 0;
+
+	/** Dia em que cada NPC (UUID) já contou a curiosidade dele para o jogador. */
+	public Map<String, Long> loreDay = new HashMap<>();
+	/** Dia em que cada aldeão (UUID) recusou uma barganha (fica ofendido até o dia seguinte). */
+	public Map<String, Long> bargainRefused = new HashMap<>();
+	/** Baús que são do próprio jogador ("dimensão|x|y|z"): pegar coisas deles não é roubo. */
+	public Set<String> ownChests = new HashSet<>();
 
 	public boolean heroAnnounced = false;
 	public int lastAnnouncedRank = 1;
@@ -102,5 +113,9 @@ public class PlayerData {
 		public boolean repeat = false;
 		/** Já avisou o jogador que terminou. */
 		public boolean notified = false;
+		/** Quantidade sorteada para este jogador (0 = a quantidade padrão da missão). */
+		public int target = 0;
+		/** Recompensas sorteadas para este jogador (null = as recompensas padrão da missão). */
+		public List<QuestReward> rewards;
 	}
 }

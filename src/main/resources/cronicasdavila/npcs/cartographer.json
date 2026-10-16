@@ -52,6 +52,35 @@
 		"Até à próxima, pá! E traga-me notícias de terras distantes.",
 		"Adeus! Não se esqueça da bússola."
 	],
+	"greet_night": [
+		"Ó pá, {player}! A esta hora? Estou a desenhar as estrelas. Dão um mapa fixe, sabia?",
+		"Que horas são estas, rapaz? Já passa da meia-noite! Os <r>zumbis</r> andam aí fora, pá!",
+		"Ora viva! Ouviu a coruja? Dizem que pia sempre que alguém se perde. Espero que não seja você.",
+		"Rapaz, à noite navega-se pelas estrelas. Mas a pé e com zumbis à volta, eu prefiro a cama."
+	],
+	"bye_night": [
+		"Boa noite, pá! Siga a estrela mais brilhante e não se perca.",
+		"Adeus, rapaz! E leve uma lanterna, que de noite o caminho é outro.",
+		"Vá com cuidado, pá! Se der de caras com um zumbi, mude de rumo. Fixe?"
+	],
+	"reward_intro": [
+		"Ó pá, se fizer isso por mim, ganha",
+		"Pelo serviço, rapaz, pago-lhe",
+		"Fixe! Se der conta do recado, leva para casa",
+		"Palavra de navegador: no fim da viagem, recebe"
+	],
+	"reward_outro": [
+		"E isso é mais do que me pagaram pelo meu primeiro mapa, pá!",
+		"Palavra de navegador. E navegador que mente afunda o barco.",
+		"Fixe, não é? Até me dava vontade de ir eu. Mas enjoo em terra firme.",
+		"Fica tudo assinalado no meu mapa. Não há como me esquecer, pá.",
+		"Ó pá, é um bom negócio. Pergunte a qualquer pirata."
+	],
+	"lore_done": [
+		"Ó pá, já lhe contei uma hoje! Uma história por dia, senão fico sem nada para o resto da semana.",
+		"Hoje já chega, rapaz. Vá perguntar aos outros aldeões, ou volte amanhã que eu conto outra.",
+		"Calma, pá! Uma por dia. As histórias são como os mapas: desenham-se com tempo."
+	],
 	"abandon": [
 		"Ó pá, desistiu a meio do caminho? Um mapa inacabado é uma tristeza.",
 		"Que pena. Pensei que fosse um verdadeiro explorador."

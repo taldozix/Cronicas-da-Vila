@@ -57,6 +57,15 @@ public final class Professions {
 			"toolsmith", "weaponsmith", "armorer", "cartographer", "librarian", "cleric"
 	);
 
+	/**
+	 * Profissões de trabalho pesado: esses aldeões só pegam no batente uma vez a cada 3 dias.
+	 * Nos outros dias estão de folga e não passam missões (mas recebem as entregas).
+	 */
+	public static final java.util.Set<String> HEAVY_PROFESSIONS = java.util.Set.of(
+			"farmer", "fisherman", "butcher", "mason", "toolsmith", "weaponsmith", "armorer"
+	);
+	public static final int HEAVY_WORK_EVERY_DAYS = 3;
+
 	/** Inimigos que dão missões e contam para o efeito "Vilão da História". */
 	public static final List<String> VILLAIN_FACTIONS = List.of(PILLAGER, PIGLIN, WITCH);
 

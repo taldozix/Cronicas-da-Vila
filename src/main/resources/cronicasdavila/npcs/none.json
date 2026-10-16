@@ -14,6 +14,22 @@
 		"Tchau! Se ver um tear, uma composteira ou um púlpito sobrando, lembra de mim!",
 		"Até mais. Vou ali procurar emprego. De novo."
 	],
+	"greet_night": [
+		"Oi, {player}. Também não consegue dormir? Eu fico pensando no meu currículo. Ele tá vazio.",
+		"Que hora é essa? Ah, tanto faz. Não tenho que acordar cedo pra trabalhar mesmo.",
+		"Tô aqui contando estrelas. Já são quatro mil e trinta e duas. Se pagassem por isso, eu tava rico.",
+		"Psiu! Fala baixo. Se um <r>zumbi</r> me pegar, eu viro zumbi desempregado. É pior ainda."
+	],
+	"bye_night": [
+		"Boa noite! Amanhã eu procuro emprego. Com certeza. Talvez.",
+		"Tchau. Vou dormir do lado do meu baú. Ele é tudo que eu tenho.",
+		"Até. Se um zumbi me oferecer emprego, eu recuso. Acho."
+	],
+	"lore_done": [
+		"Já te contei a minha história do dia. Desempregado não tem muita coisa pra contar, sabe?",
+		"Acabou meu estoque de fofoca por hoje. Pergunta pros aldeões que trabalham, eles veem mais coisa.",
+		"Volta amanhã que eu invento... digo, lembro de outra."
+	],
 	"lore": [
 		[
 			"Sabia que a profissão de um aldeão depende do bloco de trabalho que ele encontra?",

@@ -25,13 +25,16 @@ import br.com.cronicasdavila.util.Text;
  */
 public class QuestJournalScreen extends Screen {
 	private static final int GOLD = 0xFFD36B;
-	private static final String[] TABS = {"Missões", "Reputação", "Vilania"};
+	private static final String[] TABS = {"Missões", "Reputação"};
 	private static final int VILLAIN_RED = 0xE05A5A;
 
 	private final Screen parent;
 	private int tab;
 	private int selected;
 	private int detailScroll;
+	/** Rolagem da aba Reputação (herói e vilão na mesma página). */
+	private int repScroll;
+	private int repContentHeight;
 	private boolean confirmAbandon;
 	private final long openedAt = System.currentTimeMillis();
 
@@ -79,7 +82,7 @@ public class QuestJournalScreen extends Screen {
 	}
 
 	private int tabX(int index) {
-		return this.width / 2 - 164 + index * 112;
+		return this.width / 2 - TABS.length * 56 + 4 + index * 112;
 	}
 
 	// ---------------------------------------------------------------------------------------------
@@ -132,6 +135,12 @@ public class QuestJournalScreen extends Screen {
 
 	@Override
 	public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
+		if (tab == 1) {
+			int max = Math.max(0, repContentHeight - (panelY2() - panelY1() - 16));
+			repScroll = Math.max(0, Math.min(max, repScroll - (int) Math.signum(scrollY) * 20));
+			return true;
+		}
+
 		if (mouseX > panelX1() + leftWidth()) {
 			detailScroll = Math.max(0, detailScroll - (int) Math.signum(scrollY));
 		} else {
@@ -247,13 +256,12 @@ public class QuestJournalScreen extends Screen {
 			drawProfile(graphics, panelX1() + 10, panelY1() + 8, leftWidth() - 20);
 			drawQuestList(graphics, mouseX, mouseY);
 			drawQuestDetails(graphics);
-		} else if (tab == 1) {
-			drawReputation(graphics);
 		} else {
-			drawVillainy(graphics);
+			drawReputation(graphics);
 		}
 
-		String hint = tab == 0 ? "↑↓ escolher missão   T/Enter rastrear no HUD   ←→ trocar aba   Esc fechar" : "←→ trocar aba   Esc fechar";
+		String hint = tab == 0 ? "↑↓ escolher missão   T/Enter rastrear no HUD   ←→ trocar aba   Esc fechar"
+				: "Role com o mouse para ver o lado vilão   ←→ trocar aba   Esc fechar";
 		centered(graphics, hint, this.height - 15, 0x888888);
 	}
 
@@ -333,10 +341,19 @@ public class QuestJournalScreen extends Screen {
 			boolean done = ClientState.num(quest, "progress", 0) >= ClientState.num(quest, "target", 1);
 			String title = ClientState.str(quest, "title", "?");
 			String prefix = quest.get("prof").getAsString().equals(tracked) ? "◆ " : "";
-			int titleColor = done ? 0x8CFF8C : ("danger".equals(ClientState.str(quest, "tone", "")) ? 0xFF8080 : 0xFFFFFF);
+			String faction = ClientState.str(quest, "faction", "GOOD");
+			boolean villainQuest = "VILLAIN".equals(faction);
+			boolean endQuest = "NEUTRAL".equals(faction);
+			int titleColor = done ? 0x8CFF8C : villainQuest ? VILLAIN_RED : endQuest ? 0xD08CFF
+					: ("danger".equals(ClientState.str(quest, "tone", "")) ? 0xFF8080 : 0xFFFFFF);
 			graphics.text(this.font, trim(prefix + title, x2 - x1 - 10), x1 + 6, y + 3, Ui.argb(255, titleColor), true);
 			String sub = ClientState.str(quest, "tierName", "") + " · " + ClientState.str(quest, "profName", "") + (done ? " · PRONTA!" : "");
-			graphics.text(this.font, trim(sub, x2 - x1 - 10), x1 + 6, y + 12, Ui.argb(255, done ? 0x8CFF8C : 0x999999), false);
+			graphics.text(this.font, trim(sub, x2 - x1 - 10), x1 + 6, y + 12,
+					Ui.argb(255, done ? 0x8CFF8C : villainQuest ? 0xB06060 : endQuest ? 0x9A70B8 : 0x999999), false);
+
+			if (villainQuest || endQuest) {
+				graphics.fill(x1 + 1, y + 3, x1 + 3, y + 19, Ui.argb(255, villainQuest ? VILLAIN_RED : 0xD08CFF));
+			}
 		}
 	}
 
@@ -400,6 +417,10 @@ public class QuestJournalScreen extends Screen {
 
 			if (reward.has("enchant")) {
 				text += " <p>({ench:" + reward.get("enchant").getAsString() + "} " + reward.get("level").getAsInt() + ")</p>";
+			}
+
+			if (reward.has("bonus") && reward.get("bonus").getAsBoolean()) {
+				text += " <a>(bônus da sorte)</a>";
 			}
 
 			addWrapped(lines, text, width, 0xFFFFFF);
@@ -469,7 +490,8 @@ public class QuestJournalScreen extends Screen {
 		int ax = x + 128;
 		Ui.roundedRect(graphics, ax, by, ax + 140, by + 18, Ui.argb(220, confirmAbandon ? 0x4A1010 : 0x1F1F2A));
 		Ui.roundedOutline(graphics, ax, by, ax + 140, by + 18, Ui.argb(200, 0xFF5555));
-		String abandonText = confirmAbandon ? "Clique de novo p/ confirmar" : "Desistir (-5 karma)";
+		boolean villainQuest = "VILLAIN".equals(ClientState.str(quest, "faction", "GOOD"));
+		String abandonText = confirmAbandon ? "Clique de novo p/ confirmar" : (villainQuest ? "Desistir (+5 karma)" : "Desistir (-5 karma)");
 		graphics.text(this.font, abandonText, ax + (140 - this.font.width(abandonText)) / 2, by + 5, Ui.argb(255, 0xFF8080), true);
 	}
 
@@ -511,7 +533,9 @@ public class QuestJournalScreen extends Screen {
 	private void drawReputation(GuiGraphicsExtractor graphics) {
 		int x1 = panelX1() + 12;
 		int x2 = panelX2() - 12;
-		int y = panelY1() + 10;
+		int top = panelY1() + 10;
+		int y = top - repScroll;
+		graphics.enableScissor(panelX1() + 1, panelY1() + 1, panelX2() - 1, panelY2() - 1);
 
 		int karma = ClientState.getInt("karma", 0);
 		int karmaColor = ClientState.getInt("karmaColor", 0xFFFFFF);
@@ -544,11 +568,19 @@ public class QuestJournalScreen extends Screen {
 			}
 		}
 
-		drawAffinityGrid(graphics, professions, x1, x2, y, false);
+		y += drawAffinityGrid(graphics, professions, x1, x2, y) + 10;
+
+		// O lado vilão, na mesma página (em vermelho).
+		graphics.fill(x1, y, x2, y + 1, Ui.argb(120, VILLAIN_RED));
+		y += 8;
+		y = drawVillainy(graphics, x1, x2, y);
+
+		graphics.disableScissor();
+		repContentHeight = y + repScroll - top;
 	}
 
 	/** Grade com a afinidade de cada profissão/facção. */
-	private void drawAffinityGrid(GuiGraphicsExtractor graphics, List<JsonObject> professions, int x1, int x2, int y, boolean villainSide) {
+	private int drawAffinityGrid(GuiGraphicsExtractor graphics, List<JsonObject> professions, int x1, int x2, int y) {
 		int columns = 2;
 		int columnWidth = (x2 - x1 - 10) / columns;
 
@@ -556,11 +588,7 @@ public class QuestJournalScreen extends Screen {
 			JsonObject profession = professions.get(i);
 			int cx = x1 + (i % columns) * (columnWidth + 10);
 			int cy = y + (i / columns) * 22;
-
-			if (cy + 20 > panelY2() - 6) {
-				break;
-			}
-
+			boolean villainSide = "VILLAIN".equals(ClientState.str(profession, "faction", "GOOD"));
 			boolean isMastered = profession.get("mastered").getAsBoolean();
 			int level = profession.get("level").getAsInt();
 			boolean nether = profession.get("key").getAsString().equals("shulker");
@@ -589,12 +617,11 @@ public class QuestJournalScreen extends Screen {
 				graphics.text(this.font, progress, cx + columnWidth - 5 - this.font.width(progress), cy + 11, Ui.argb(200, 0x888888), false);
 			}
 		}
+
+		return ((professions.size() + columns - 1) / columns) * 22;
 	}
 
-	private void drawVillainy(GuiGraphicsExtractor graphics) {
-		int x1 = panelX1() + 12;
-		int x2 = panelX2() - 12;
-		int y = panelY1() + 10;
+	private int drawVillainy(GuiGraphicsExtractor graphics, int x1, int x2, int y) {
 		int width = x2 - x1;
 		boolean villain = ClientState.getBool("villain");
 		int villainRank = ClientState.getInt("villainRank", 1);
@@ -622,10 +649,16 @@ public class QuestJournalScreen extends Screen {
 		}
 
 		y += 22;
+		int percent = ClientState.getInt("villainPercent", 0);
+		graphics.text(this.font, "Vilania: " + percent + "% das missões de vilão feitas" + (ClientState.getBool("villainPermanent") ? "  ☠ PARA SEMPRE" : ""),
+				x1, y, Ui.argb(255, 0xDDDDDD), false);
+		Ui.bar(graphics, x1, y + 11, width, 4, percent / 100F, Ui.argb(255, 0x8B0000));
+		y += 22;
 		int mastered = ClientState.getInt("villainMastered", 0);
 		int factions = ClientState.getInt("villainFactions", 3);
 		String status = villain ? "☠ VILÃO DA HISTÓRIA ☠ — todo ser vivo foge de você"
-				: "Vilão da História: Arquivilão + dominar " + mastered + "/" + factions + " inimigos (missão máxima de cada) + karma negativo";
+				: "Vilão da História: Arquivilão + dominar " + mastered + "/" + factions + " inimigos (missão máxima de cada) + karma negativo. "
+				+ "Com 100% de Vilania e karma -1000, ele fica para sempre.";
 
 		for (FormattedCharSequence line : this.font.split(Component.literal(status), width)) {
 			graphics.text(this.font, line, x1, y, Ui.argb(255, villain ? 0xD08CFF : 0xDDDDDD), true);
@@ -651,19 +684,16 @@ public class QuestJournalScreen extends Screen {
 			}
 		}
 
-		drawAffinityGrid(graphics, villains, x1, x2, y, true);
-		y += ((villains.size() + 1) / 2) * 22 + 8;
+		y += drawAffinityGrid(graphics, villains, x1, x2, y) + 8;
 
 		String info = "Converse com <r>saqueadores</r> segurando uma <p>garrafa ominosa</p> (ou com karma negativo), com <n>piglins</n> usando ouro "
 				+ "e com <a>bruxas</a> segurando um <p>frasco de vidro</p>. Missões de saqueadores dão <r>karma negativo</r>.";
 
 		for (FormattedCharSequence line : this.font.split(Text.parse(info), width)) {
-			if (y + 10 > panelY2() - 4) {
-				break;
-			}
-
 			graphics.text(this.font, line, x1, y, Ui.argb(255, 0xBBBBBB), false);
 			y += 10;
 		}
+
+		return y;
 	}
 }

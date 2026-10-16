@@ -16,6 +16,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
@@ -26,6 +27,8 @@ import br.com.cronicasdavila.dialogue.DialogueManager;
 import br.com.cronicasdavila.effect.ModEffects;
 import br.com.cronicasdavila.karma.FactionSystem;
 import br.com.cronicasdavila.karma.KarmaSystem;
+import br.com.cronicasdavila.karma.TheftSystem;
+import br.com.cronicasdavila.trade.BargainSystem;
 import br.com.cronicasdavila.net.ModPayloads;
 import br.com.cronicasdavila.net.SyncService;
 import br.com.cronicasdavila.quest.QuestRegistry;
@@ -64,7 +67,21 @@ public class CronicasDaVila implements ModInitializer {
 			}
 
 			if (player instanceof ServerPlayer serverPlayer) {
+				// Guarda com quem o jogador vai negociar (para a barganha na tela de trocas).
+				if (entity instanceof net.minecraft.world.entity.npc.villager.Villager villager) {
+					BargainSystem.rememberTrader(serverPlayer, villager);
+				}
+
 				return DialogueManager.onInteract(serverPlayer, entity);
+			}
+
+			return InteractionResult.PASS;
+		});
+
+		// Abrir baús da vila: vigia se o jogador está roubando.
+		UseBlockCallback.EVENT.register((player, level, hand, hitResult) -> {
+			if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
+				TheftSystem.onUseBlock(serverPlayer, (net.minecraft.server.level.ServerLevel) level, hitResult.getBlockPos());
 			}
 
 			return InteractionResult.PASS;
@@ -119,6 +136,7 @@ public class CronicasDaVila implements ModInitializer {
 			if (tickCounter % 10 == 0) {
 				for (ServerPlayer player : server.getPlayerList().getPlayers()) {
 					FactionSystem.tickFast(player);
+					TheftSystem.tick(player);
 				}
 			}
 
@@ -144,6 +162,8 @@ public class CronicasDaVila implements ModInitializer {
 
 		ServerPlayerEvents.LEAVE.register(player -> {
 			DialogueManager.close(player, false);
+			TheftSystem.forget(player);
+			BargainSystem.forget(player);
 			SyncService.forget(player);
 			PlayerDataManager.unload(player);
 		});

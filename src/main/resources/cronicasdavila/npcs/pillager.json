@@ -44,6 +44,35 @@
 		"Até a próxima invasão, cúmplice.",
 		"Vai. E se um manso perguntar, você nunca me viu."
 	],
+	"reward_intro": [
+		"Serviço bem feito merece pagamento. Roubado, claro, mas pagamento. Leva",
+		"Hmpf. Tirei do baú de um narigudo especialmente pra você",
+		"O Grande Evocador mandou entregar, e eu obedeço. Toma",
+		"Isso aqui era de uma vila. Agora é seu. Pega"
+	],
+	"reward_outro": [
+		"Se um manso perguntar de onde veio, diz que achou. É o que a gente sempre diz.",
+		"Exilado paga o que deve. É a única regra que a gente não quebra. Por enquanto.",
+		"Pronto. Agora some, antes que um golem veja a gente trocando mercadoria.",
+		"Os narigudos vão chorar quando descobrirem o que sumiu. A melhor parte do pagamento é essa.",
+		"Gasta com coisa útil. Tipo uma besta nova. Ou uma tocha pra visitar uma vila de madrugada."
+	],
+	"lore_done": [
+		"Hmpf. Já contei segredo demais por hoje. Mais um e vou ter que te prender na mansão.",
+		"Uma história por dia, cúmplice. Quer mais? Vai incomodar outro Exilado da patrulha. Ou volta amanhã.",
+		"Chega de conversa fiada. Amanhã eu conto mais. Hoje eu tenho uma vila pra espiar."
+	],
+	"greet_night": [
+		"Psst, {player}! Noite perfeita. Sem lua, os golens cochilando, os narigudos roncando. Cheiro de invasão no ar.",
+		"Ahh, a noite... Os mansos trancam as portas e acham que tão seguros. <r>Que fofos.</r>",
+		"Shhh. Fala baixo. A patrulha sai daqui a pouco e eu não quero acordar o Fofinho antes da hora.",
+		"Boa noite pra você, cúmplice. Pros narigudos, péssima. <b>HAHAHA!</b>"
+	],
+	"bye_night": [
+		"Vai, aproveita o escuro. É a melhor hora pra sumir.",
+		"Some na noite, cúmplice. Se amanhã cedo faltar uma galinha na vila, já sabe quem foi.",
+		"Até a próxima. A noite é nossa, mas o sol sempre volta. Some antes dele."
+	],
 	"abandon": [
 		"Desistiu? Os Exilados não esquecem quem amarela.",
 		"Hmpf. Achei que você tinha estômago pra isso."

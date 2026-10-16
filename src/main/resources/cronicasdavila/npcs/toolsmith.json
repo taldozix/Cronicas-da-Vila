@@ -52,6 +52,35 @@
 		"Tchau. Volte quando precisar de algo... calibrado.",
 		"Até. E por favor, pare de usar a picareta para cavar terra. Use uma pá."
 	],
+	"greet_night": [
+		"{player}? A esta hora? Estatisticamente, 87% de quem anda acordado agora é <r>zumbi</r>. Espero que você esteja nos 13%.",
+		"Hrmm... que hora é essa? Meu relógio de redstone diz meia-noite. Ou ele quebrou de novo. Ambas as hipóteses são prováveis.",
+		"Psst, fala baixo. Estou observando as estrelas para calibrar minha bússola. E vigiando os <r>zumbis</r>, por precaução.",
+		"Boa noite. Tecnicamente eu deveria estar dormindo. Mas tive uma ideia às duas da manhã, e ideias não respeitam horário."
+	],
+	"bye_night": [
+		"Vá com cuidado. Leve uma tocha. Duas, por redundância.",
+		"Boa noite. E se ouvir um chiado atrás de você, não calcule nada: corra.",
+		"Tchau. Vou dormir. Meus neurônios estão operando com 30% da capacidade."
+	],
+	"reward_intro": [
+		"Concluído o projeto, conforme orçamento aprovado, você recebe",
+		"Pagamento calculado com precisão milimétrica: você leva",
+		"Pela minha planilha, esse serviço vale exatamente",
+		"Se der tudo certo, e meus cálculos dizem que vai, te pago"
+	],
+	"reward_outro": [
+		"Valor calculado e revisado três vezes. Não aceito contraproposta.",
+		"Contrato técnico simples: você entrega, eu pago. Lógica pura.",
+		"Margem de erro do pagamento: zero. Sou ferramenteiro, não vendedor de poção milagrosa.",
+		"Já separei tudo numa caixa etiquetada. Em ordem alfabética, naturalmente.",
+		"É um investimento de altíssimo retorno. Para mim, principalmente. Mas você também ganha."
+	],
+	"lore_done": [
+		"Limite diário de curiosidades atingido. Uma por dia, para não sobrecarregar o seu processador. Volte amanhã.",
+		"Já compartilhei meu dado do dia. Excesso de informação causa superaquecimento. Pergunte a outro aldeão ou volte amanhã.",
+		"Uma história por dia: regra de eficiência. Os outros aldeões também sabem coisas. Menos que eu, mas sabem."
+	],
 	"abandon": [
 		"Abandono de projeto registrado. Isso afeta as métricas, sabia?",
 		"Lamentável. Eficiência zero."
@@ -91,5 +120,12 @@
 	"names": [
 		"Seu Euclides", "Dona Ada", "Seu Newton", "Dona Hipátia", "Seu Arquimedes", "Dona Marie", "Seu Tesla",
 		"Dona Grace", "Seu Pitágoras", "Dona Emmy"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Hoje é minha <y>folga</y>. A forja chega a mil e quinhentos graus e eu só aguento trinta e sete. Trabalho um dia a cada três. Volte outro dia ou procure outro ferramenteiro.",
+			"Estudos comprovam: ferramenteiro que bate martelo todo dia erra 40% mais. Por isso só trabalho a cada três dias. Hoje é folga. Tente outro colega de profissão.",
+			"<d>(ele está deitado numa rede, com um livro de redstone aberto em cima da cara)</d> Hoje não, {player}. Folga obrigatória: a bigorna pesa mais que meus argumentos. Volte daqui a uns dias."
+		]
+	}
 }

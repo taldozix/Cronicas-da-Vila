@@ -87,7 +87,7 @@ public final class QuestService {
 
 		if (!fresh.isEmpty()) {
 			// Sorteia entre as que o jogador ainda não fez, para cada conversa ser uma surpresa.
-			return new Offer(fresh.get(player.getRandom().nextInt(fresh.size())), false);
+			return roll(player, fresh.get(player.getRandom().nextInt(fresh.size())), false);
 		}
 
 		// Acabaram as novas deste nível? Antes de repetir, oferece alguma nova de um nível abaixo.
@@ -101,15 +101,153 @@ public final class QuestService {
 			}
 
 			if (!older.isEmpty()) {
-				return new Offer(older.get(player.getRandom().nextInt(older.size())), false);
+				return roll(player, older.get(player.getRandom().nextInt(older.size())), false);
 			}
 		}
 
 		Quest repeat = candidates.get(player.getRandom().nextInt(candidates.size()));
-		return new Offer(repeat, true);
+		return roll(player, repeat, true);
 	}
 
-	public record Offer(Quest quest, boolean repeat) {
+	/**
+	 * Uma missão oferecida, já "sorteada" para este jogador: a quantidade pedida e as recompensas
+	 * variam um pouco a cada vez, e às vezes vem um bônus da sorte. Assim cada jogada é diferente.
+	 */
+	public record Offer(Quest quest, boolean repeat, int target, List<QuestReward> rewards) {
+	}
+
+	private static final double BONUS_CHANCE = 0.3;
+
+	/** Bônus da sorte por nível da missão: {item, quantidade}. */
+	private static final String[][][] BONUS_POOL = {
+			{},
+			{{"minecraft:experience_bottle", "4"}, {"minecraft:golden_carrot", "6"}, {"minecraft:emerald", "4"}, {"minecraft:ender_pearl", "2"}},
+			{{"minecraft:experience_bottle", "8"}, {"minecraft:diamond", "1"}, {"minecraft:golden_apple", "1"}, {"minecraft:emerald", "8"}},
+			{{"minecraft:experience_bottle", "12"}, {"minecraft:diamond", "2"}, {"minecraft:golden_apple", "1"}, {"minecraft:name_tag", "1"}},
+			{{"minecraft:experience_bottle", "16"}, {"minecraft:diamond", "4"}, {"minecraft:golden_apple", "2"}, {"minecraft:netherite_scrap", "1"}},
+			{{"minecraft:experience_bottle", "24"}, {"minecraft:diamond", "6"}, {"minecraft:netherite_scrap", "2"}, {"minecraft:enchanted_golden_apple", "1"}}
+	};
+
+	/** Sorteia a quantidade (75% a 135% da padrão), ajusta as recompensas na mesma proporção e talvez dá um bônus. */
+	public static Offer roll(ServerPlayer player, Quest quest, boolean repeat) {
+		QuestObjective objective = quest.objective;
+		int unit = objective.displayUnit();
+		int base = objective.count / unit;
+		int target = objective.count;
+		double ratio = 1.0;
+
+		// Chefes e pedidos pequenos (1 a 3) continuam exatos.
+		if (base >= 4) {
+			double factor = 0.75 + player.getRandom().nextDouble() * 0.6;
+			int rolled = Math.max(4, (int) Math.round(base * factor));
+
+			if (rolled >= 1000) {
+				rolled = Math.round(rolled / 100F) * 100;
+			} else if (rolled >= 100) {
+				rolled = Math.round(rolled / 10F) * 10;
+			}
+
+			target = rolled * unit;
+			ratio = rolled / (double) base;
+		}
+
+		List<QuestReward> rewards = new ArrayList<>();
+
+		for (QuestReward reward : quest.rewards) {
+			int count = reward.count;
+
+			// Só as recompensas "a granel" acompanham a quantidade; itens únicos (livros, totens...) ficam iguais.
+			if (count >= 3) {
+				count = Math.max(1, (int) Math.round(count * (0.4 + 0.6 * ratio)));
+			}
+
+			if (repeat) {
+				count = Math.max(1, count / 2);
+			}
+
+			rewards.add(reward.copyWithCount(count));
+		}
+
+		int tier = Math.max(1, Math.min(5, quest.tier));
+
+		if (!repeat && player.getRandom().nextDouble() < BONUS_CHANCE) {
+			String[] bonus = BONUS_POOL[tier][player.getRandom().nextInt(BONUS_POOL[tier].length)];
+			QuestReward extra = new QuestReward(bonus[0], Integer.parseInt(bonus[1]));
+			extra.bonus = true;
+			rewards.add(extra);
+		}
+
+		return new Offer(quest, repeat, target, rewards);
+	}
+
+	/** Quantidade que este jogador precisa cumprir. */
+	public static int target(PlayerData.ActiveQuest active, Quest quest) {
+		return active != null && active.target > 0 ? active.target : quest.objective.count;
+	}
+
+	/** Recompensas que este jogador vai receber (as sorteadas, ou as padrão em missões antigas). */
+	public static List<QuestReward> rewards(PlayerData.ActiveQuest active, Quest quest) {
+		if (active != null && active.rewards != null && !active.rewards.isEmpty()) {
+			return active.rewards;
+		}
+
+		List<QuestReward> rewards = new ArrayList<>();
+
+		for (QuestReward reward : quest.rewards) {
+			rewards.add(reward.copyWithCount(active != null && active.repeat ? Math.max(1, reward.count / 2) : reward.count));
+		}
+
+		return rewards;
+	}
+
+	/** Troca o número da missão no texto ("traga 32 frutas") pela quantidade sorteada. */
+	public static String withTarget(String text, Quest quest, int target) {
+		int unit = quest.objective.displayUnit();
+		int original = quest.objective.count / unit;
+		int rolled = target / unit;
+
+		if (text == null || original == rolled) {
+			return text;
+		}
+
+		String dotted = String.format(java.util.Locale.GERMANY, "%,d", original);
+		String newDotted = String.format(java.util.Locale.GERMANY, "%,d", rolled);
+		java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("(?<![\\d.])" + java.util.regex.Pattern.quote(dotted) + "(?![\\d.,]\\d|\\d)").matcher(text);
+
+		if (matcher.find()) {
+			return text.substring(0, matcher.start()) + newDotted + text.substring(matcher.end());
+		}
+
+		matcher = java.util.regex.Pattern.compile("(?<![\\d.])" + original + "(?!\\d)").matcher(text);
+		return matcher.find() ? text.substring(0, matcher.start()) + rolled + text.substring(matcher.end()) : text;
+	}
+
+	/** Descrição do objetivo com a quantidade deste jogador. */
+	public static String objectiveDesc(PlayerData.ActiveQuest active, Quest quest) {
+		return withTarget(quest.objective.desc, quest, target(active, quest));
+	}
+
+	/** Texto da lista de recompensas: "<o>3x Diamante</o>, <o>1x Maçã</o> e <a>bônus</a>...". */
+	public static String rewardList(List<QuestReward> rewards) {
+		StringBuilder builder = new StringBuilder();
+
+		for (int i = 0; i < rewards.size(); i++) {
+			QuestReward reward = rewards.get(i);
+
+			if (i > 0) {
+				builder.append(i == rewards.size() - 1 ? " e " : ", ");
+			}
+
+			builder.append(reward.bonus ? "<a>" : "<o>").append(reward.count).append("x {item:").append(reward.item).append("}");
+
+			if (reward.enchant != null) {
+				builder.append(" de {ench:").append(reward.enchant).append("} ").append(reward.level);
+			}
+
+			builder.append(reward.bonus ? " (bônus da sorte)</a>" : "</o>");
+		}
+
+		return builder.toString();
 	}
 
 	/** O jogador está "travado" pelo nível geral (a profissão já liberou mais, mas ele ainda não tem nível)? */
@@ -121,8 +259,12 @@ public final class QuestService {
 	// Aceitar e progresso
 	// ---------------------------------------------------------------------------------------------
 
-	public static PlayerData.ActiveQuest accept(ServerPlayer player, PlayerData data, Quest quest, boolean repeat, Entity giver, String giverName) {
+	public static PlayerData.ActiveQuest accept(ServerPlayer player, PlayerData data, Offer offer, Entity giver, String giverName) {
+		Quest quest = offer.quest();
+		boolean repeat = offer.repeat();
 		PlayerData.ActiveQuest active = new PlayerData.ActiveQuest();
+		active.target = offer.target();
+		active.rewards = new ArrayList<>(offer.rewards());
 		active.questId = quest.id;
 		active.giverName = giverName;
 		active.giverUuid = giver.getUUID().toString();
@@ -183,11 +325,11 @@ public final class QuestService {
 			value = active.progress;
 		}
 
-		return Math.max(0, Math.min(objective.count, value));
+		return Math.max(0, Math.min(target(active, quest), value));
 	}
 
 	public static boolean isComplete(ServerPlayer player, PlayerData.ActiveQuest active, Quest quest) {
-		return progress(player, active, quest) >= quest.objective.count;
+		return progress(player, active, quest) >= target(active, quest);
 	}
 
 	public static int countInInventory(ServerPlayer player, List<String> targets) {
@@ -289,12 +431,12 @@ public final class QuestService {
 			Quest quest = QuestRegistry.get(active.questId);
 
 			if (quest != null && quest.objective.isKill() && quest.objective.targets.contains(typeId)
-					&& active.progress < quest.objective.count) {
+					&& active.progress < target(active, quest)) {
 				active.progress++;
 				changed = true;
 
-				if (active.progress < quest.objective.count) {
-					player.sendOverlayMessage(Text.parse("<y>" + quest.title + "</y>: " + active.progress + "/" + quest.objective.count));
+				if (active.progress < target(active, quest)) {
+					player.sendOverlayMessage(Text.parse("<y>" + quest.title + "</y>: " + active.progress + "/" + target(active, quest)));
 				}
 			}
 		}
@@ -316,13 +458,13 @@ public final class QuestService {
 		for (PlayerData.ActiveQuest active : data.active.values()) {
 			Quest quest = QuestRegistry.get(active.questId);
 
-			if (quest != null && quest.objective.isMine() && active.progress < quest.objective.count
+			if (quest != null && quest.objective.isMine() && active.progress < target(active, quest)
 					&& matchesBlock(state, quest.objective.targets)) {
 				active.progress++;
 				changed = true;
 
-				if (active.progress % 8 == 0 || active.progress >= quest.objective.count) {
-					player.sendOverlayMessage(Text.parse("<y>" + quest.title + "</y>: " + active.progress + "/" + quest.objective.count));
+				if (active.progress % 8 == 0 || active.progress >= target(active, quest)) {
+					player.sendOverlayMessage(Text.parse("<y>" + quest.title + "</y>: " + active.progress + "/" + target(active, quest)));
 				}
 			}
 		}
@@ -395,7 +537,7 @@ public final class QuestService {
 		}
 
 		if (quest.objective.isDeliver()) {
-			removeFromInventory(player, quest.objective.targets, quest.objective.count);
+			removeFromInventory(player, quest.objective.targets, target(active, quest));
 		}
 
 		List<String> lines = new ArrayList<>();
@@ -406,25 +548,14 @@ public final class QuestService {
 			data.tracked = data.active.isEmpty() ? null : data.active.keySet().iterator().next();
 		}
 
-		// Recompensas (metade nas repetições, mínimo 1)
-		StringBuilder rewardText = new StringBuilder();
+		// Recompensas sorteadas para este jogador (já com a metade nas repetições)
+		List<QuestReward> rewards = rewards(active, quest);
 
-		for (QuestReward reward : quest.rewards) {
-			int count = repeat ? Math.max(1, reward.count / 2) : reward.count;
-			giveReward(player, reward, count);
-
-			if (!rewardText.isEmpty()) {
-				rewardText.append(", ");
-			}
-
-			rewardText.append("<o>").append(count).append("x {item:").append(reward.item).append("}");
-
-			if (reward.enchant != null) {
-				rewardText.append(" ({ench:").append(reward.enchant).append("} ").append(reward.level).append(")");
-			}
-
-			rewardText.append("</o>");
+		for (QuestReward reward : rewards) {
+			giveReward(player, reward, reward.count);
 		}
+
+		String rewardText = rewardList(rewards);
 
 		int karma = quest.karmaReward(repeat);
 		int xp = repeat ? quest.xpReward() / 2 : quest.xpReward();
@@ -530,9 +661,14 @@ public final class QuestService {
 		}
 	}
 
+	/** Karma ao desistir: largar um serviço de vilão é um ato de bondade (+5); largar um aldeão na mão, não (-5). */
+	public static int abandonKarma(String profession) {
+		return Professions.faction(profession) == Professions.Faction.VILLAIN ? 5 : -5;
+	}
+
 	public static void abandon(ServerPlayer player, PlayerData data, String profession) {
 		if (data.active.remove(profession) != null) {
-			data.addKarma(-5);
+			data.addKarma(abandonKarma(profession));
 
 			if (profession.equals(data.tracked)) {
 				data.tracked = data.active.isEmpty() ? null : data.active.keySet().iterator().next();
@@ -587,6 +723,10 @@ public final class QuestService {
 	 * e tem karma negativo.
 	 */
 	public static boolean isVillain(PlayerData data) {
+		if (data.villainPermanent) {
+			return true;
+		}
+
 		if (data.villainRank < VillainRank.ARQUIVILAO.tier() || data.karma >= 0) {
 			return false;
 		}
@@ -599,6 +739,38 @@ public final class QuestService {
 			}
 		}
 
+		return true;
+	}
+
+	/** Porcentagem de Vilania: quantas missões de vilão (de todas as facções inimigas) já foram feitas. */
+	public static int villainPercent(PlayerData data) {
+		int total = 0;
+		int done = 0;
+
+		for (String faction : Professions.VILLAIN_FACTIONS) {
+			for (Quest quest : QuestRegistry.forProfession(faction)) {
+				total++;
+
+				if (data.completed.contains(quest.id)) {
+					done++;
+				}
+			}
+		}
+
+		return total == 0 ? 0 : done * 100 / total;
+	}
+
+	/**
+	 * 100% de Vilania: nível máximo, todas as missões de vilão feitas e karma no fundo do poço.
+	 * Quem chega lá vira o Vilão da História para sempre. Retorna true na primeira vez.
+	 */
+	public static boolean checkPermanentVillain(PlayerData data) {
+		if (data.villainPermanent || data.villainRank < VillainRank.ARQUIVILAO.tier() || data.karma > PlayerData.KARMA_MIN
+				|| villainPercent(data) < 100) {
+			return false;
+		}
+
+		data.villainPermanent = true;
 		return true;
 	}
 

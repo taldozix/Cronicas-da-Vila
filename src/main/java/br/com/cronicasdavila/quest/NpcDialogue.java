@@ -31,6 +31,16 @@ public class NpcDialogue {
 	public List<String> bless = new ArrayList<>();
 	/** Despedidas. */
 	public List<String> bye = new ArrayList<>();
+	/** Saudação à noite (karma neutro ou melhor). */
+	public List<String> greet_night = new ArrayList<>();
+	/** Despedidas à noite. */
+	public List<String> bye_night = new ArrayList<>();
+	/** Começo da frase da recompensa, logo antes da lista de itens ("Se der conta do recado, te pago"). */
+	public List<String> reward_intro = new ArrayList<>();
+	/** Frase depois da lista de recompensas. */
+	public List<String> reward_outro = new ArrayList<>();
+	/** Já contou a curiosidade do dia para esse jogador. */
+	public List<String> lore_done = new ArrayList<>();
 	/** Quando o jogador desiste de uma missão. */
 	public List<String> abandon = new ArrayList<>();
 	/** Histórias sobre o mundo. Cada história é uma lista de páginas. */
@@ -67,6 +77,7 @@ public class NpcDialogue {
 		merged.greet_cold = concat(greet_cold, biome.greet_cold);
 		merged.followup = concat(followup, biome.followup);
 		merged.bye = concat(bye, biome.bye);
+		merged.greet_night = concat(greet_night, biome.greet_night);
 		merged.lore = new ArrayList<>(biome.lore);
 		merged.lore.addAll(lore);
 		return merged;
@@ -90,6 +101,11 @@ public class NpcDialogue {
 		if (apology_thanks.isEmpty()) apology_thanks = common.apology_thanks;
 		if (bless.isEmpty()) bless = common.bless;
 		if (bye.isEmpty()) bye = common.bye;
+		if (greet_night.isEmpty()) greet_night = common.greet_night;
+		if (bye_night.isEmpty()) bye_night = common.bye_night;
+		if (reward_intro.isEmpty()) reward_intro = common.reward_intro;
+		if (reward_outro.isEmpty()) reward_outro = common.reward_outro;
+		if (lore_done.isEmpty()) lore_done = common.lore_done;
 		if (abandon.isEmpty()) abandon = common.abandon;
 		if (lore.isEmpty()) lore = common.lore;
 		if (player_work.isEmpty()) player_work = common.player_work;

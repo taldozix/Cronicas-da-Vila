@@ -48,6 +48,35 @@
 		"Vai com cuidado. Eu vou ficar aqui. Como sempre. <d>(ela acena da janela até você sumir de vista)</d>",
 		"Até mais! Vou contar pros sapos tudo que a gente conversou. Eles adoram fofoca."
 	],
+	"reward_intro": [
+		"<p>*hihihi*</p> Eu separei uma coisinha pra você. Na verdade, umas coisinhas",
+		"Ai, nem sei como agradecer. Sei sim, com isso aqui. Toma",
+		"O Breu me ajudou a embrulhar. Ele sentou em cima, mas tá tudo inteiro. Pra você",
+		"Guardei isso no fundo do caldeirão pra uma ocasião especial. Você é a ocasião. Leva"
+	],
+	"reward_outro": [
+		"Não precisa agradecer. Mas se quiser agradecer, volta pra tomar sopa. Esse é o preço.",
+		"Os sapos aprovaram. <d>(um sapo coaxa lá do canto, sem muito entusiasmo)</d> Viu? Aprovaram.",
+		"Vou escrever pra Urtiga contando que eu dei um presente. Ela vai morrer de inveja. <p>*hihihi*</p>",
+		"Agora você tem uma desculpa pra voltar. Precisa me contar o que fez com tudo isso, tá?",
+		"Bruxa também sabe pagar direitinho, viu? Conta isso lá na vila. Ninguém vai acreditar, mas conta."
+	],
+	"lore_done": [
+		"Ai, eu adoraria contar mais! Mas se eu contar tudo hoje, amanhã você não tem motivo pra voltar. Volta amanhã, tá?",
+		"Uma história por dia, essa é a regra. Eu inventei agora, mas é a regra. Pergunta pra outra bruxa, se achar uma. É difícil, mas vai que.",
+		"<p>*hihihi*</p> Já chega por hoje. Senão eu choro de novo e o Breu fica bravo. Amanhã eu conto outra, prometo."
+	],
+	"greet_night": [
+		"<p>*hihihi*</p> Uma visita de noite! Ninguém vem de noite. Ninguém vem de dia também, mas de noite é pior.",
+		"Shh, olha lá fora. Os <y>vaga-lumes</y> saíram. Senta aqui na escada comigo, {player}. Só um pouquinho.",
+		"Você chegou bem na hora da poção de luar! Mexe o caldeirão pra mim? Sentido horário. Não, o outro horário.",
+		"Escuta os sapos coaxando... É o Seu Coaxo reclamando de novo. De noite ele fica pior. Eu também fico, sozinha. Mas agora você tá aqui."
+	],
+	"bye_night": [
+		"Já vai? Tá escuro... Leva uma tocha. E um <y>vaga-lume</y>, se conseguir pegar um.",
+		"Boa noite, {player}. Eu vou ficar acordada mais um pouco, mexendo o caldeirão. Vou pensar em você. De um jeito normal.",
+		"Cuidado com os slimes na lua cheia, eles ficam animados. <d>(ela fica na porta com uma vela até você sumir no escuro)</d>"
+	],
 	"abandon": [
 		"Ah. Desistiu. Tudo bem. Todo mundo desiste de mim uma hora. Pelo menos você avisou.",
 		"Entendo. Eu volto pra minha sopa, então. Uma tigela só."

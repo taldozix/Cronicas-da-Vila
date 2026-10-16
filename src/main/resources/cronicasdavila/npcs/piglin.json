@@ -52,6 +52,24 @@
 		"Tchau! Volta com mais ouro. Sempre com mais ouro.",
 		"Até mais, humano! Cuidado com os Ossudos. E com os Chorões. E com a lava. E com tudo, na verdade."
 	],
+	"reward_intro": [
+		"<n>HRRNF!</n> Piglin cumpre o trato. Dói no coração, mas humano leva",
+		"Piglin contou três vezes e chorou duas. Pra tu vai",
+		"<n>Hrrnf...</n> Trato é trato, até pra piglin pão-duro. Pega aí",
+		"Pelo Grande Porcão e pelo Reino Dourado, piglin entrega pro humano"
+	],
+	"reward_outro": [
+		"<n>Hrrnf!</n> Não gasta tudo de uma vez. Ou gasta, e depois traz <o>ouro</o> pro piglin.",
+		"Piglin nunca deu tanta coisa pra ninguém. Não conta pro bastião, senão todo mundo vai querer.",
+		"Pronto. Agora piglin vai ficar olhando pro baú vazio um pouquinho. Deixa piglin sofrer em paz.",
+		"Palavra de piglin vale ouro. Literalmente. Piglin não aceita palavra que não vale ouro.",
+		"Se o Torresmo perguntar, humano achou isso no chão. Piglin não é generoso. Piglin tem reputação."
+	],
+	"lore_done": [
+		"<n>HRRNF!</n> Uma história por dia, humano! Piglin não é biblioteca de graça. Quer mais? Traz <o>ouro</o>. Muito ouro.",
+		"Piglin já contou história hoje. A garganta tá seca. Vai perguntar pra outro piglin do bastião, eles sabem umas mentiras boas também.",
+		"<n>Hrrnf.</n> Chega por hoje. Volta amanhã. Piglin não sabe quando é amanhã aqui no Nether, mas tu sabe."
+	],
 	"abandon": [
 		"<n>HRRNF!</n> Humano desistiu? Piglin sabia. Humano é igual pepita: brilha pouco.",
 		"Tá bom. Piglin vai contar pra todo o bastião. Vergonha!"

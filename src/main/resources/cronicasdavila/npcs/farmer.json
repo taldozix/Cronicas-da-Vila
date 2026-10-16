@@ -52,6 +52,35 @@
 		"Até mais! Se ver um coelho perto da cenoura, espanta pra mim.",
 		"Tchau! Volta pra comer uma broa quando quiser."
 	],
+	"greet_night": [
+		"Uai, {player}?! Que hora é essa, sô? O galo nem pensou em cantar ainda e cê batendo aqui.",
+		"Nó, sô, cê tá doido de andar no escuro? Zumbi adora pisotear plantação de noite. E gente também.",
+		"Psiu, fala baixo! As galinhas tão dormindo. Eu também tava, viu? <d>(boceja)</d>",
+		"Ê, {player}, olha esse tanto de estrela! Bonito, né? Agora chega pra debaixo da lamparina antes que um zumbi venha admirar junto."
+	],
+	"bye_night": [
+		"Boa noite, sô! Vai direto pra casa, sem parar pra prosear com zumbi.",
+		"Vou deitar, que fazendeiro acorda antes do sol. Dorme com Deus, {player}!",
+		"Té amanhã! Se ouvir um \"ssssss\" no escuro, corre e não olha pra trás, sô."
+	],
+	"reward_intro": [
+		"Se cê der conta do recado, eu te pago",
+		"Fazendo isso direitinho, cê leva",
+		"Pelo serviço, uai, eu separo pra você",
+		"Me ajuda nessa que eu te dou de coração"
+	],
+	"reward_outro": [
+		"Palavra de mineiro vale mais que cerca de arame, sô.",
+		"E ainda te dou um pedaço de broa de lambuja, uai.",
+		"Pode confiar: eu pago certinho, igual chuva de março.",
+		"Fazendeiro que não paga o que deve, a terra não dá fruto. Pode ficar sossegado.",
+		"Tá prometido e tá anotado. Na cabeça, que o caderno o bode comeu."
+	],
+	"lore_done": [
+		"Uai, sô, já te contei um causo hoje! Mais um e eu esqueço de dar milho pras galinhas. Volta amanhã.",
+		"Causo é igual broa: um por dia, senão enjoa. Pergunta pros outros da vila ou volta amanhã, sô.",
+		"Nó, cê é curioso, hein? Hoje já deu. Amanhã tem história quentinha, saída do forno."
+	],
 	"abandon": [
 		"Uai... cê vai largar o serviço no meio? Igual cerca pela metade, não segura nada.",
 		"Que pena, sô. Achei que cê era de confiança."
@@ -90,5 +119,12 @@
 	"names": [
 		"Seu Tião", "Dona Zefa", "Seu Geraldo", "Dona Conceição", "Seu Nonato", "Dona Tereza", "Seu Raimundo",
 		"Dona Ditinha", "Seu Joaquim", "Dona Biluca"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"Hoje é minha folga, sô! Enxada pesa, sabia? Eu só pego no batente de três em três dias, senão a coluna vira pamonha.",
+			"Uai, hoje não tem serviço não. Roça cansa demais, então eu trabalho um dia e descanso dois. Volta outro dia ou procura outro fazendeiro aí na vila.",
+			"Tô de folga, deitado na rede vendo o trigo crescer sozinho, que é o melhor serviço que tem. Se a pressa for grande, procura outro fazendeiro, sô."
+		]
+	}
 }

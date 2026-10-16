@@ -52,6 +52,35 @@
 		"Até mais! Escudo levantado, espada afiada!",
 		"Tchau! E não morre, que dá trabalho fazer outro herói!"
 	],
+	"greet_night": [
+		"QUEM VEM LÁ?! Ah, é você, {player}! Quase te acertei com o martelo! Achei que era <r>zumbi</r>!",
+		"POR MIL BIGORNAS, que hora é essa, recruta?! Guerreiro de verdade dorme cedo pra acordar com raiva!",
+		"Hrmm! Tô de vigia! Na minha idade a gente não dorme, só cochila de olho aberto! QUEM É?! Ah. Você.",
+		"Noite boa pra caçar <r>esqueleto</r>, recruta! Mas eu tô de pijama. Volta amanhã que eu te acompanho! HA!"
+	],
+	"bye_night": [
+		"Vai, recruta! E se um zumbi aparecer, dá uma nele por mim!",
+		"Até! Espada na mão e olho no escuro! Creeper não avisa!",
+		"Boa noite! Vou dormir abraçado na minha frigideira. Por segurança!"
+	],
+	"reward_intro": [
+		"Faz o serviço direito e, palavra de veterano, te pago",
+		"Se voltar vivo, POR MIL BIGORNAS, te dou",
+		"Isso vale soldo de guerreiro, recruta! Você leva",
+		"Cumpriu a missão, leva pra casa"
+	],
+	"reward_outro": [
+		"E nem pense em pedir mais, que eu sou ferreiro, não banco!",
+		"Pago na hora, recruta! Na minha forja, dívida não esfria!",
+		"Juro pela bigorna do meu avô! E aquela bigorna é SAGRADA!",
+		"Isso é pagamento de herói! Gasta com espada, não com bobagem!",
+		"Se eu não pagar, pode me chamar de covarde! E NINGUÉM me chama de covarde! HA!"
+	],
+	"lore_done": [
+		"Já te contei uma história hoje, recruta! Uma por dia! Senão você amolece de tanto ouvir e não treina!",
+		"HA! Quer mais? Volta amanhã! Ou vai encher a paciência de outro aldeão, que eu tenho ferro pra bater!",
+		"Chega de história por hoje! Veterano tem estoque limitado de lembranças boas! Pergunta pros outros ou volta amanhã!"
+	],
 	"abandon": [
 		"DESISTIU?! Na minha época, quem desistia ficava limpando a forja por um mês!",
 		"Hmpf. Que decepção, recruta."
@@ -91,5 +120,12 @@
 	"names": [
 		"Sargento Brutus", "Dona Valquíria", "Capitão Bigorna", "Dona Brunilda", "Seu Aquiles", "Dona Joana", "Seu Ferrabrás",
 		"Dona Hércula", "Sargento Tonhão", "Dona Xena"
-	]
+	],
+	"extra": {
+		"day_off": [
+			"FOLGA, recruta! Guerreiro que não descansa vira estátua! Eu trabalho um dia a cada três, e hoje NÃO é o dia! Volta depois ou procura outro ferreiro de armas!",
+			"POR MIL BIGORNAS, hoje não! Meu ombro tá rangendo igual porta de masmorra de tanta martelada! Só forjo a cada três dias! Acha outro ferreiro de armas!",
+			"<d>(ele está com o braço numa tipoia improvisada com um pano de prato)</d> Hoje é folga, recruta! A bigorna ganhou essa rodada! Volta daqui a uns dias que eu dou o troco nela!"
+		]
+	}
 }

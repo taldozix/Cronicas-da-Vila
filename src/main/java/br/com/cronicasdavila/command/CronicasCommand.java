@@ -93,9 +93,9 @@ public final class CronicasCommand {
 								Quest quest = QuestRegistry.get(active.questId);
 
 								if (quest != null && (quest.objective.isKill() || quest.objective.isMine())) {
-									active.progress = quest.objective.count;
+									active.progress = br.com.cronicasdavila.quest.QuestService.target(active, quest);
 								} else if (quest != null && (quest.objective.isStat() || quest.objective.isCraft())) {
-									active.baseline -= quest.objective.count;
+									active.baseline -= br.com.cronicasdavila.quest.QuestService.target(active, quest);
 								}
 							}
 
