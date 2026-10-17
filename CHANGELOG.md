@@ -4,7 +4,7 @@ A versão do mod fica em `gradle.properties`. Toda atualização com melhorias s
 (1.1.0 → 1.2.0 → 1.3.0...). Ao enviar para o branch `main`, o GitHub compila e publica a release
 com o `.jar` automaticamente, usando as notas desta página.
 
-## [1.3.0] - 2026-10-16 — Menu novo, HUD compacto e opções do mod
+## [1.3.0] - 2026-10-17 — Menu novo, HUD compacto e opções do mod
 
 ### Novidades
 - **Menu novo (tecla J)** no estilo das telas de servidores modded: título grande, botões à esquerda com destaque ciano e painel escuro à direita.
