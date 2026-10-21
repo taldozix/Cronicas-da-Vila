@@ -63,6 +63,29 @@
 		"Vou deitar, que fazendeiro acorda antes do sol. Dorme com Deus, {player}!",
 		"Té amanhã! Se ouvir um \"ssssss\" no escuro, corre e não olha pra trás, sô."
 	],
+	"greet_rain": [
+		"Uai, {player}, entra debaixo do telhado, sô! Chuva dessas a plantação agradece, mas cê vai pegar um resfriado.",
+		"Ô trem bão, chuvinha na roça! Hoje o trigo cresce sozinho e eu fico só olhando da janela.",
+		"Nó, que aguaceiro! Ainda bem que eu cobri o feno ontem. Cê tá encharcado, sô, quer um café?"
+	],
+	"greet_storm": [
+		"Uai, sô, cê tá doido de andar nesse temporal? Raio adora cair em quem fica parado no meio do campo!",
+		"Credo, {player}, que trovoada! Com o céu escuro assim, zumbi sai até de tarde. Fica perto da lamparina, sô."
+	],
+	"greet_friday": [
+		"Sextou, sô! Semana braba de enxada. Amanhã eu vou é dormir até o galo cantar duas vezes.",
+		"Uai, {player}, hoje é sexta! A patroa prometeu frango com quiabo pra janta. Cê não quer aparecer?",
+		"Ô sexta-feira abençoada! Minhas costas tão pedindo arrego. Fim de semana é rede e prosa, uai."
+	],
+	"greet_saturday": [
+		"Sábado, sô! Hoje tem feira na praça. Vou levar queijo, broa e aquela abóbora gigante pra mostrar pros vizinhos.",
+		"Uai, {player}, sábado é dia de pescar no ribeirão com os netos. Enxada só na segunda!",
+		"Bom sábado, sô! Tem leitão no forno e a família toda vem almoçar. Chega mais, que sempre cabe um."
+	],
+	"greet_sunday": [
+		"Bom domingo, sô! Ouviu o sino da capela? Depois da missa é almoço na casa da sogra. Reza por mim.",
+		"Uai, domingo é dia de não fazer nada, {player}. Hoje eu só vejo o trigo crescer e cochilo na varanda."
+	],
 	"reward_intro": [
 		"Se cê der conta do recado, eu te pago",
 		"Fazendo isso direitinho, cê leva",
@@ -117,12 +140,12 @@
 		"Bora trabalhar, sô! O que tem pra hoje?"
 	],
 	"names": [
-		"Seu Tião", "Dona Zefa", "Seu Geraldo", "Dona Conceição", "Seu Nonato", "Dona Tereza", "Seu Raimundo",
-		"Dona Ditinha", "Seu Joaquim", "Dona Biluca"
+		"Antônio", "Maria", "José", "Aparecida", "Geraldo", "Tereza", "Sebastião",
+		"Rosa", "Joaquim", "Lúcia", "Benedito", "Helena", "Francisco", "Luzia"
 	],
 	"extra": {
 		"day_off": [
-			"Hoje é minha folga, sô! Enxada pesa, sabia? Eu só pego no batente de três em três dias, senão a coluna vira pamonha.",
+			"Hoje é minha folga, sô! Enxada pesa, sabia? Hoje eu descanso, senão a coluna vira pamonha.",
 			"Uai, hoje não tem serviço não. Roça cansa demais, então eu trabalho um dia e descanso dois. Volta outro dia ou procura outro fazendeiro aí na vila.",
 			"Tô de folga, deitado na rede vendo o trigo crescer sozinho, que é o melhor serviço que tem. Se a pressa for grande, procura outro fazendeiro, sô."
 		]

@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:bone_meal", "count": 12}]
 		},
 		{
+			"id": "farmer_1_batatas",
+			"tier": 1,
+			"title": "Batata pra Sopa da Vila",
+			"tone": "calm",
+			"offer": [
+				"Uai, sô, chegou bem na hora da prosa! Cê gosta de sopa? Pois eu prometi uma panelona pra vila inteira.",
+				"Só que a geada pegou meu canteiro de <y>batata</y> e não sobrou foi nada. Uns três toquinhos murchos, coitados.",
+				"Se cê me arrumar umas batatas, a sopa sai e eu não passo vergonha com a patroa."
+			],
+			"why": [
+				"Sopa quente no fim da tarde junta a vila inteira na praça, sô. Até o bibliotecário larga os livros pra vir comer.",
+				"E batata guarda bem, viu? O que sobrar vai pro celeiro, que inverno sem batata é inverno triste."
+			],
+			"accept": [
+				"Deus te pague, meu filho! As vilas costumam ter canteiro de batata, mas pede licença antes de colher, hein.",
+				"<g>Traga</g> <y>32 batatas</y>. Batata comum, nada de batata verde venenosa, que essa nem porco quer."
+			],
+			"progress": [
+				"Batata se planta com ela mesma, sô: enterra uma na terra arada e cada pé dá mais de uma.",
+				"Terra arada perto da água fica úmida e a planta cresce mais rápido. A água molha até quatro blocos pros lados."
+			],
+			"complete": [
+				"Nó, que batatada bonita! Já tô sentindo o cheirinho da sopa daqui.",
+				"Toma umas esmeraldas e um pouco de ferro, sô. Faz uma enxada boa, que o resto a terra ensina."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:potato"], "count": 32, "desc": "<g>Entregue</g> <y>32 batatas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
 			"id": "farmer_2_aboboras",
 			"tier": 2,
 			"title": "Abóboras para o Festival",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 25, "desc": "<r>Elimine</r> <r>25 esqueletos</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:bread", "count": 16}]
+		},
+		{
+			"id": "farmer_2_mel",
+			"tier": 2,
+			"title": "O Mel da Vovó",
+			"tone": "calm",
+			"offer": [
+				"Cê lembra da vovó Neném? Pois ela tá com uma tosse danada, sô. Tosse de cachorro velho.",
+				"Remédio de vó pra tosse é chá com <y>mel</y>. Mas as colmeias ficam no alto das árvores e eu morro de medo de abelha.",
+				"Da última vez que tentei, voltei com a cara igual uma abóbora. Só que menos bonita."
+			],
+			"why": [
+				"A vovó Neném criou metade da vila, meu filho. Benzeu criança, fez bolo pra festa, contou causo na beira do fogão.",
+				"E mel bom ainda serve pros doces da festa do sino. Mel nunca estraga, sabia? Nem esquecido no fundo do armário."
+			],
+			"accept": [
+				"Ah, cê é um anjo! Leva frasco de vidro e, pelo amor de Deus, acende uma fogueira debaixo da colmeia antes.",
+				"<g>Traga</g> <y>6 frascos de mel</y>."
+			],
+			"progress": [
+				"Colmeia cheia fica pingando mel por fora. Aí é só usar o frasco de vidro nela.",
+				"Com uma fogueira acesa embaixo, a fumaça acalma as abelhas e elas não te atacam. Sem fumaça, é picada na certa."
+			],
+			"complete": [
+				"Que mel dourado, sô! A vovó já tomou o primeiro chá e disse que a garganta tá macia igual seda.",
+				"Toma esmeraldas, um diamante e uns biscoitos que ela mesma assou pra você. Tão quentinhos ainda."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:honey_bottle"], "count": 6, "desc": "<g>Entregue</g> <y>6 frascos de mel</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:cookie", "count": 12}]
 		},
 		{
 			"id": "farmer_3_bruxas",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 12}]
 		},
 		{
+			"id": "farmer_3_cavalos",
+			"tier": 3,
+			"title": "Ração de Ouro",
+			"tone": "calm",
+			"offer": [
+				"Cê viu os cavalos da patrulha? Magrinhos, sô. Dá dó. Os guardas andam é a pé de tanto que os bichos cansam.",
+				"O tratador mais velho da vila jura que cavalo tratado com <y>cenoura dourada</y> fica forte e corre que nem vento.",
+				"Cenoura eu tenho. O que eu não tenho é ouro. Nem cabeça pra fazer esses trem chique."
+			],
+			"why": [
+				"Sem cavalo, a patrulha demora pra chegar nas fazendas de longe. E quando chega, os saqueadores já levaram tudo.",
+				"Cê já é <o>Aventureiro</o>, já viu ouro de perto. Pra mim, ouro é coisa de conto de fada."
+			],
+			"accept": [
+				"Que beleza! Junta pepita de ouro, que cada cenoura dourada leva oito pepitas em volta de uma cenoura comum.",
+				"<g>Fabrique</g> <y>16 cenouras douradas</y>."
+			],
+			"progress": [
+				"Um lingote de ouro vira nove pepitas na mesa de trabalho. Faz as contas e não desperdiça nada.",
+				"Os piglins zumbis do <n>Nether</n> deixam cair pepita de ouro. Mas cuidado: bateu em um, o bando inteiro vem atrás de você."
+			],
+			"complete": [
+				"Nó, olha esse brilho! Os cavalos já tão relinchando de alegria lá no estábulo.",
+				"Toma diamantes, esmeraldas e uma sela. Um aventureiro do seu tamanho merece andar a cavalo, sô."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:golden_carrot"], "count": 16, "desc": "<g>Fabrique</g> <y>16 cenouras douradas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:saddle", "count": 1}]
+		},
+		{
 			"id": "farmer_4_seca",
 			"tier": 4,
 			"title": "Estoque para o Inverno Longo",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager"], "count": 50, "desc": "<r>Elimine</r> <r>50 mortos-vivos</r> (zumbis, afogados e zumbis do deserto)"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:emerald", "count": 20}]
+		},
+		{
+			"id": "farmer_4_feira",
+			"tier": 4,
+			"title": "A Feira das Sete Vilas",
+			"tone": "calm",
+			"offer": [
+				"Senta aqui, sô, que a notícia é boa. Esse ano a <a>Feira das Sete Vilas</a> vai ser aqui!",
+				"Vem gente de todo canto: da neve, do deserto, da savana... e cada vila leva o prato mais famoso dela.",
+				"O nosso é a <y>torta de abóbora</y> da minha bisavó. Só que pra alimentar sete vilas, cê imagina o tanto de torta, né?"
+			],
+			"why": [
+				"Se a feira for boa, as outras vilas mandam mercador pra cá o ano todo. Mais troca, mais esmeralda, mais vida.",
+				"Cê já é <o>Guerreiro</o>, já salvou a vila de muito bicho. Agora salva a honra da nossa cozinha, uai."
+			],
+			"accept": [
+				"Torta é abóbora, açúcar e ovo, sô. Só isso. O segredo é o carinho... e muita galinha.",
+				"<g>Traga</g> <y>64 tortas de abóbora</y>."
+			],
+			"progress": [
+				"Cana-de-açúcar nasce na beira da água e cresce sozinha até três blocos. Quebra a de cima e deixa a base.",
+				"Dá semente pra duas galinhas que elas fazem pintinho. Mais galinha, mais ovo, mais torta."
+			],
+			"complete": [
+				"Sessenta e quatro tortas! O povo das sete vilas vai voltar pra casa falando da gente o ano inteiro.",
+				"Toma, sô: diamantes, maçãs douradas e um livro de <p>Fortuna</p>. Cê merece colher em dobro na vida."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:pumpkin_pie"], "count": 64, "desc": "<g>Entregue</g> <y>64 tortas de abóbora</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 3}]
 		},
 		{
 			"id": "farmer_5_wither",

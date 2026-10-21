@@ -820,7 +820,7 @@ public final class QuestService {
 			case "pillager" -> "saqueadores";
 			case "shulker" -> "shulkers";
 			case "witch" -> "bruxas";
-			default -> "aldeões";
+			default -> Professions.moddedPlural(profession) != null ? Professions.moddedPlural(profession) : "aldeões";
 		};
 	}
 

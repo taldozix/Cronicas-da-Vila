@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:arrow", "count": 32}]
 		},
 		{
+			"id": "fletcher_1_arcos",
+			"tier": 1,
+			"title": "Arco pra Molecada",
+			"tone": "calm",
+			"offer": [
+				"Orra, meu! Tipo assim, a molecada da vila resolveu que quer aprender a atirar. Todo mundo, mano. Até a filha do clérigo.",
+				"Só que eu tô atolado de trampo com as flechas da guarda e não tenho tempo de fazer <y>arco</y> pra ninguém.",
+				"Se tu fizer uns arcos pra eles, eu dou a aula. Fechou?"
+			],
+			"why": [
+				"Criança que aprende a atirar cedo cresce sabendo se defender, meu. E a guarda da vila agradece no futuro.",
+				"Fora que é muito da hora ver a molecada acertando o alvo pela primeira vez. Me lembra quando eu comecei."
+			],
+			"accept": [
+				"Firmeza! Arco é três gravetos e três linhas na mesa de trabalho.",
+				"<g>Fabrique</g> <y>3 arcos</y>."
+			],
+			"progress": [
+				"Linha vem das aranhas e das teias. Espada corta teia rapidinho e ainda solta a linha.",
+				"Os esqueletos também deixam cair arco de vez em quando, mas esses vêm tudo detonado, mano. Faz novo."
+			],
+			"complete": [
+				"Orra, que arcos massa! A molecada já tá na fila, cada um querendo o seu.",
+				"Toma umas esmeraldas e flechas pra tu treinar também. Valeu demais, meu."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:bow"], "count": 3, "desc": "<g>Fabrique</g> <y>3 arcos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:arrow", "count": 16}]
+		},
+		{
 			"id": "fletcher_2_pederneira",
 			"tier": 2,
 			"title": "Ponta Afiada",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:target_hit"], "count": 20, "desc": "<g>Acerte</g> <y>20 flechas em blocos-alvo</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:crossbow", "count": 1}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "fletcher_2_aranhas",
+			"tier": 2,
+			"title": "Corda de Arco",
+			"tone": "danger",
+			"offer": [
+				"Mano, sabe o que faz um arco prestar? A <y>corda</y>. E a melhor corda é de linha de aranha, tipo, fio grosso, resistente.",
+				"Só que as <r>aranhas</r> invadiram o depósito da guilda. Tem aranha no teto, no barril, na minha bota. NA MINHA BOTA, meu.",
+				"Eu sei que é irônico precisar da linha delas e ter medo delas. Mas é a real."
+			],
+			"why": [
+				"Sem o depósito, a guilda para. E sem a guilda, a guarda da vila fica sem flecha numa invasão. Aí lascou.",
+				"E aranha sobe parede, mano. Se elas saírem do depósito, ninguém na vila dorme tranquilo."
+			],
+			"accept": [
+				"Valeu, meu! Elas aparecem de noite e em lugar escuro.",
+				"<r>Elimine 15 aranhas</r>. As de caverna também contam."
+			],
+			"progress": [
+				"Aranha no claro não ataca se tu não atacar primeiro. Mas no escuro ela vem com tudo.",
+				"Aranha de caverna envenena, mano. Leva um balde de leite no bolso que corta o veneno."
+			],
+			"complete": [
+				"O depósito tá limpo! Achei até minha bota, só um pouco babada. Suave.",
+				"Toma ferro, um diamante e flechas. E a linha que tu juntou, faz bom uso, meu."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 15, "desc": "<r>Elimine</r> <r>15 aranhas</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:arrow", "count": 24}]
 		},
 		{
 			"id": "fletcher_3_saqueadores",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:punch", "level": 2}, {"item": "minecraft:experience_bottle", "count": 10}]
 		},
 		{
+			"id": "fletcher_3_elite",
+			"tier": 3,
+			"title": "Atirador de Elite",
+			"tone": "calm",
+			"offer": [
+				"Meu, a guarda da capital mandou um olheiro pra vila. Tipo, tá procurando um <a>atirador de elite</a> pra treinar os recrutas.",
+				"E eu falei de ti, mano. Falei que tu é o melhor. Agora tu precisa provar, senão quem passa vergonha sou eu.",
+				"O teste é simples: acertar o alvo um monte de vezes, sem frescura, do jeito que o olheiro gosta."
+			],
+			"why": [
+				"Se a vila tiver um atirador de elite, a capital manda proteção, mercadoria e moral pra gente. Moral, meu, que é o que mais falta.",
+				"Tu já é <o>Aventureiro</o>. Acertar bicho no meio da correria tu já sabe. Agora mostra precisão."
+			],
+			"accept": [
+				"Orra, é isso! Monta uns blocos-alvo bem longe e manda ver.",
+				"<g>Acerte</g> <y>60 flechas em blocos-alvo</y>."
+			],
+			"progress": [
+				"Bloco-alvo se faz com quatro pós de redstone em volta de um fardo de feno.",
+				"Quanto mais perto do centro, mais forte o sinal de redstone que o alvo solta. Dá pra montar um placar, mano."
+			],
+			"complete": [
+				"Sessenta na mosca! O olheiro ficou de queixo caído, meu. Já tá falando de ti na capital.",
+				"Toma diamantes, esmeraldas e um livro de <p>Força</p> do bom. Teu arco vai virar lenda."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:target_hit"], "count": 60, "desc": "<g>Acerte</g> <y>60 flechas em blocos-alvo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 3}]
+		},
+		{
 			"id": "fletcher_4_ghasts",
 			"tier": 4,
 			"title": "O Tiro Impossível",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:breeze_rod"], "count": 16, "desc": "<g>Entregue</g> <y>16 hastes de brisa</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:flame", "level": 1}]
+		},
+		{
+			"id": "fletcher_4_tridentes",
+			"tier": 4,
+			"title": "A Lança do Mar",
+			"tone": "danger",
+			"offer": [
+				"Mano, tive uma ideia muito louca. Tipo, revolucionária. E se eu fizesse uma flecha que <a>volta sozinha</a> pra mão, igual o tridente?",
+				"Pra isso eu preciso estudar um <y>tridente</y> de verdade. Desmontar, medir, entender o segredo.",
+				"Só que tridente só tem com os <r>afogados</r>, e só alguns deles carregam. É raro pra caramba, meu."
+			],
+			"why": [
+				"Se der certo, a guarda nunca mais fica sem munição. Tu tem noção? É tipo a maior invenção da guilda em cem anos.",
+				"Tu já é <o>Guerreiro</o>. Afogado com tridente acerta de longe e bate forte. Precisa de gente experiente."
+			],
+			"accept": [
+				"Orra, tu topa? Leva poção de respiração e vai pra beira do mar de noite.",
+				"<g>Traga</g> <y>2 tridentes</y>."
+			],
+			"progress": [
+				"Só afogado que já nasce com tridente na mão pode deixar cair um. Repara bem antes de gastar tempo com ele.",
+				"Espada com <p>Saque</p> aumenta a chance do tridente cair, mano. Vale a pena."
+			],
+			"complete": [
+				"Dois tridentes, meu! Já desmontei um... tá, quase desmontei. Mas tô quase descobrindo o segredo!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Rajada</p>. Três flechas de uma vez na besta, mano."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:trident"], "count": 2, "desc": "<g>Entregue</g> <y>2 tridentes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:multishot", "level": 1}]
 		},
 		{
 			"id": "fletcher_5_dragao",

@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:map", "count": 2}]
 		},
 		{
+			"id": "cartographer_1_passeio",
+			"tier": 1,
+			"title": "Medir a Estrada a Pé",
+			"tone": "calm",
+			"offer": [
+				"Ó pá, quer saber um segredo de cartógrafo? Os melhores mapas não se fazem sentado. Fazem-se com as <a>botas</a>!",
+				"Preciso de medir as distâncias à volta da vila. Quantos passos até ao rio, quantos até à colina, quantos até à floresta.",
+				"Só que eu tenho os joelhos de um velho marinheiro, rapaz. Rangem mais do que o mastro de um navio."
+			],
+			"why": [
+				"Com as distâncias certas, os mensageiros sabem quanto tempo demora cada viagem. E ninguém fica preso lá fora quando cai a noite.",
+				"E andar por aí é a melhor maneira de conhecer o mundo. Fixe, não é?"
+			],
+			"accept": [
+				"Fixe! Ande, corra, explore. Cada passo conta, desde que seja com os seus próprios pés.",
+				"<g>Caminhe ou corra</g> <y>1000 blocos</y>."
+			],
+			"progress": [
+				"Correr gasta a fome mais depressa, pá. Leve pão no bolso.",
+				"Os caminhos de terra batida das vilas ajudam a não se perder. Siga-os até à vila vizinha."
+			],
+			"complete": [
+				"Mil blocos! Já marquei tudo: rio, colina, floresta... e um buraco onde quase caí ontem. Fixe!",
+				"Tome lá esmeraldas e um relógio. Para saber quando voltar antes do anoitecer, pá."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:walk_one_cm", "minecraft:sprint_one_cm"], "count": 100000, "desc": "<g>Caminhe ou corra</g> <y>1000 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:clock", "count": 1}]
+		},
+		{
 			"id": "cartographer_2_mapas",
 			"tier": 2,
 			"title": "O Atlas da Região",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 20, "desc": "<r>Elimine</r> <r>20 slimes</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:slime_ball", "count": 8}]
+		},
+		{
+			"id": "cartographer_2_bussolas",
+			"tier": 2,
+			"title": "Rumo Certo",
+			"tone": "calm",
+			"offer": [
+				"Rapaz, os mensageiros da vila andam perdidos. Um foi parar ao deserto quando queria ir à praia!",
+				"O problema é que só há uma <y>bússola</y> na vila inteira. E é minha. E eu não a empresto, pá. Valor sentimental.",
+				"Preciso de bússolas novas, uma para cada mensageiro."
+			],
+			"why": [
+				"Mensageiro perdido é carta que não chega. E carta que não chega é negócio perdido, festa sem convidados e casamentos adiados!",
+				"E você já é <o>Aprendiz</o>. Sabe minerar ferro e redstone. Está mais do que pronto."
+			],
+			"accept": [
+				"Quatro lingotes de ferro à volta de um pó de redstone, na bancada. Simples como apontar para norte!",
+				"<g>Traga</g> <y>6 bússolas</y>."
+			],
+			"progress": [
+				"A bússola aponta sempre para o sítio onde o mundo começou. Os mensageiros usam esse ponto como referência.",
+				"Se usar uma bússola numa magnetite, ela passa a apontar para lá. Fixe, não é?"
+			],
+			"complete": [
+				"Seis bússolas novinhas! Os mensageiros já estão a discutir quem fica com a mais brilhante.",
+				"Tome lá esmeraldas, um diamante e um livro de <p>Inquebrável</p>. Para que as suas ferramentas aguentem a viagem, pá."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:compass"], "count": 6, "desc": "<g>Entregue</g> <y>6 bússolas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
 		},
 		{
 			"id": "cartographer_3_olhos",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:brush", "count": 1}]
 		},
 		{
+			"id": "cartographer_3_tesouro",
+			"tier": 3,
+			"title": "O X do Mapa",
+			"tone": "calm",
+			"offer": [
+				"Ó pá, todo o cartógrafo sonha com isto: um <a>mapa do tesouro</a>, com um grande X vermelho no meio!",
+				"Os marinheiros antigos enterravam os seus tesouros nas praias. E o mais precioso de todos é o <y>coração do mar</y>, uma pérola azul que pulsa.",
+				"Os mapas ficam nos navios naufragados e nas ruínas do oceano. Preciso de alguém com fôlego e coragem."
+			],
+			"why": [
+				"Com um coração do mar, posso estudar as correntes e desenhar as rotas marítimas mais seguras do mundo.",
+				"É aventura para <o>Aventureiro</o>, rapaz! Mar fundo, afogados e navios a apodrecer. Fixe!"
+			],
+			"accept": [
+				"Siga o mapa até ao X e cave. O baú costuma estar enterrado na areia, perto da praia.",
+				"<g>Traga</g> <y>1 coração do mar</y>."
+			],
+			"progress": [
+				"Os navios naufragados têm vários baús. Um deles costuma guardar um mapa do tesouro enterrado.",
+				"Cave à volta do X, não só no centro. Às vezes o baú fica um bloco ou dois ao lado."
+			],
+			"complete": [
+				"Que coisa linda, pá! Ouça... dá para ouvir o mar lá dentro. Fixe, fixe, fixe!",
+				"Tome lá diamantes, uma maçã dourada e um livro de <p>Passos Profundos III</p>. Para nadar como um peixe, rapaz."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:heart_of_the_sea"], "count": 1, "desc": "<g>Entregue</g> <y>1 coração do mar</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:depth_strider", "level": 3}]
+		},
+		{
 			"id": "cartographer_4_mansao",
 			"tier": 4,
 			"title": "O Mapa da Floresta Escura",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 15, "desc": "<r>Elimine</r> <r>15 blazes</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "cartographer_4_ghasts",
+			"tier": 4,
+			"title": "Os Céus do Nether",
+			"tone": "danger",
+			"offer": [
+				"Rapaz, já tentei desenhar o mapa do <n>Nether</n>. Mas cada vez que abro o papel, vem uma bola de fogo e queima tudo!",
+				"São os <r>ghasts</r>. Medusas gigantes que choram, flutuam e cospem fogo. Ó pá, que criaturas tão mal-educadas!",
+				"Preciso que os céus do Nether fiquem limpos para terminar o mapa."
+			],
+			"why": [
+				"Com o mapa do Nether, as vilas podem usar os portais como atalho. Um bloco lá vale oito cá em cima. Viagens oito vezes mais curtas!",
+				"É trabalho para <o>Guerreiro</o>. Lava por baixo, fogo por cima e nenhum sítio para se esconder."
+			],
+			"accept": [
+				"Bata nas bolas de fogo com a espada, ou acerte-lhes uma flecha, e devolva-as ao ghast. Fixe e eficaz!",
+				"<r>Elimine 10 ghasts</r>."
+			],
+			"progress": [
+				"Os vales de areia das almas e as terras abertas do Nether estão cheios deles.",
+				"Um arco com Poder ajuda imenso. E cuidado com as lágrimas, que caem muitas vezes na lava."
+			],
+			"complete": [
+				"Céu limpo! Já desenhei três fortalezas, dois bastiões e um lago de lava em forma de bacalhau. Fixe!",
+				"Tome lá diamantes, maçãs douradas e um livro de <p>Poder IV</p>. Para acertar no que voa, pá."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 10, "desc": "<r>Elimine</r> <r>10 ghasts</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 4}]
 		},
 		{
 			"id": "cartographer_5_fim",

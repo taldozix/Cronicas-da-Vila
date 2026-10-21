@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_mutton", "count": 8}]
 		},
 		{
+			"id": "shepherd_1_flores",
+			"tier": 1,
+			"title": "Cores do Campo",
+			"tone": "calm",
+			"offer": [
+				"Ah, minha gente... já reparou que cada flor guarda uma cor? O dente-de-leão guarda o amarelo, a papoula guarda o vermelho.",
+				"Eu tinjo a lã das ovelhas com elas. Mas o canteiro secou com o sol forte, e as flores do campo ficam longe pros meus joelhos.",
+				"Se você colher umas flores pra mim, eu pinto o rebanho com as cores da primavera."
+			],
+			"why": [
+				"Ovelha colorida alegra o pasto, e pasto alegre faz o coração da vila bater mais manso.",
+				"E as crianças adoram correr atrás da ovelha cor-de-rosa. Ela não gosta muito, mas tem paciência."
+			],
+			"accept": [
+				"Que bom. Colha com gentileza, que flor também sente, do jeito dela.",
+				"<g>Traga</g> <y>24 flores</y> pequenas, de qualquer tipo."
+			],
+			"progress": [
+				"Na mesa de trabalho, cada flor vira corante. A papoula dá vermelho, o dente-de-leão dá amarelo, a centáurea dá azul.",
+				"Farinha de osso na grama faz nascer flor em volta. É como chuva de primavera num punhado."
+			],
+			"complete": [
+				"Que buquê bonito, minha gente. Parece que você trouxe a primavera inteira no bolso.",
+				"Aceite essas esmeraldas e um pouco de carneiro assado. É simples, mas foi feito com calma."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:small_flowers"], "count": 24, "desc": "<g>Entregue</g> <y>24 flores</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:cooked_mutton", "count": 6}]
+		},
+		{
 			"id": "shepherd_2_arcoiris",
 			"tier": 2,
 			"title": "A Tapeçaria do Arco-Íris",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 20, "desc": "<g>Faça os animais terem</g> <y>20 filhotes</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:saddle", "count": 1}, {"item": "minecraft:lead", "count": 2}]
+		},
+		{
+			"id": "shepherd_2_creepers",
+			"tier": 2,
+			"title": "As Sombras Verdes",
+			"tone": "danger",
+			"offer": [
+				"Minha gente, tem umas <r>sombras verdes</r> andando pelo pasto de noite. De longe, parecem ovelhas tingidas.",
+				"Mas não balem. Chiam. E quando chegam perto do cercado... <r>bum</r>. Levam a cerca, a grama e a paz junto.",
+				"Ontem foi o terceiro buraco no pasto. As ovelhas agora dormem de olho aberto, coitadinhas."
+			],
+			"why": [
+				"Cada explosão é um pedaço de pasto que vira terra pelada. Sem grama, ovelha não come, e lã não cresce.",
+				"E um susto desses pode matar um cordeiro de medo. Quem cuida de rebanho cuida até do susto, sabe?"
+			],
+			"accept": [
+				"Que a coragem te acompanhe. Ataque e recue, ataque e recue, como a onda que vai e volta.",
+				"<r>Elimine 15 creepers</r>."
+			],
+			"progress": [
+				"Quando ele começar a chiar e inchar, afaste-se uns passos. Longe o bastante, ele desiste de explodir.",
+				"Os gatos espantam os creepers, minha gente. Um gatinho no pasto vale mais que muita cerca."
+			],
+			"complete": [
+				"Faz três noites que o pasto dorme em silêncio. Só se ouve o grilo e o vento. Que coisa bonita de escutar.",
+				"Leve esse ferro, um diamante que achei no meio de uma cratera e um pouco de carneiro assado pra estrada."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 15, "desc": "<r>Elimine</r> <r>15 creepers</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:cooked_mutton", "count": 10}]
 		},
 		{
 			"id": "shepherd_3_phantoms",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
+			"id": "shepherd_3_velas",
+			"tier": 3,
+			"title": "As Luzes da Vigília",
+			"tone": "calm",
+			"offer": [
+				"Toda primeira noite do inverno, os pastores do vale fazem a <a>Vigília das Velas</a>. Cada vela é por um animal que partiu.",
+				"É uma tradição antiga, minha gente. Mais velha que a cerca do meu pasto, mais velha que eu.",
+				"Mas esse ano as abelhas foram pra longe e eu não tenho cera nem linha pra fazer as velas."
+			],
+			"why": [
+				"Quem esquece de agradecer o que perdeu, esquece também de cuidar do que ainda tem.",
+				"E a luz das velas guia os animais perdidos de volta pra casa. Pelo menos é o que minha avó dizia, e eu prefiro acreditar."
+			],
+			"accept": [
+				"Obrigado, de alma. Uma vela se faz com um favo de mel e uma linha, nada mais.",
+				"<g>Traga</g> <y>24 velas</y> de qualquer cor."
+			],
+			"progress": [
+				"Tesoura numa colmeia cheia solta favos de mel. Acenda uma fogueira embaixo antes, pra fumaça acalmar as abelhas.",
+				"Linha vem das aranhas e das teias. A noite te dá uma, e a caverna te dá a outra."
+			],
+			"complete": [
+				"Vinte e quatro chamas pequenininhas... Olhe como elas dançam, minha gente. Parecem estrelas que desceram pra ouvir.",
+				"Leve esses diamantes, esmeraldas e frascos de experiência. Que a sua luz nunca se apague."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:candles"], "count": 24, "desc": "<g>Entregue</g> <y>24 velas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
 			"id": "shepherd_4_saqueadores",
 			"tier": 4,
 			"title": "Os Ladrões de Rebanho",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:goat_horn"], "count": 4, "desc": "<g>Entregue</g> <y>4 chifres de cabra</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "shepherd_4_travessia",
+			"tier": 4,
+			"title": "A Grande Travessia",
+			"tone": "calm",
+			"offer": [
+				"Minha gente, quando a seca aperta no sertão, o pastor faz a <a>travessia</a>: leva o rebanho pra longe, onde ainda tem capim verde.",
+				"Mas antes preciso de alguém que conheça o caminho. Que vá na frente, a cavalo, e volte contando onde tem água e onde tem perigo.",
+				"Eu já fui moço pra isso. Hoje meus joelhos rangem mais que porteira velha."
+			],
+			"why": [
+				"Um rebanho perdido na estrada é um rebanho perdido pra sempre. Quem vai na frente carrega o destino de todos.",
+				"Você já é <o>Guerreiro</o>. E guerreiro de verdade também sabe a hora de cavalgar em silêncio, só olhando o horizonte."
+			],
+			"accept": [
+				"Que o vento te guie. Escolha um cavalo bom, de pernas fortes, e uma sela bem presa.",
+				"<g>Cavalgue</g> <y>3.000 blocos</y> a cavalo."
+			],
+			"progress": [
+				"Cavalo se doma montando nele várias vezes, até aparecerem os coraçõezinhos. Depois é só pôr a sela.",
+				"Maçã, açúcar e trigo acalmam o cavalo e curam os machucados da estrada."
+			],
+			"complete": [
+				"Você voltou com o pó da estrada no rosto e o horizonte nos olhos. Agora eu sei o caminho, minha gente.",
+				"Leve diamantes, maçãs douradas e um livro de <p>Proteção</p>. Que nenhuma estrada te machuque."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:horse_one_cm"], "count": 300000, "desc": "<g>Cavalgue</g> <y>3.000 blocos</y> a cavalo"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 3}]
 		},
 		{
 			"id": "shepherd_5_warden",

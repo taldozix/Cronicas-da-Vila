@@ -63,6 +63,29 @@
 		"Boa noite. E se ouvir um chiado atrás de você, não calcule nada: corra.",
 		"Tchau. Vou dormir. Meus neurônios estão operando com 30% da capacidade."
 	],
+	"greet_rain": [
+		"Chuva. Ótimo para testar a vedação do telhado. Péssimo para a ferrugem. Entre logo, {player}.",
+		"Hrmm, {player}, sabia que gota de chuva não cai em formato de gota? Fica achatada, tipo um pãozinho. Ciência.",
+		"Dia de chuva é dia de projeto no papel. Não dá para trabalhar com água pingando na bigorna."
+	],
+	"greet_storm": [
+		"{player}, entra! Tempestade! Estatisticamente, o para-raios da forja vai funcionar. Estatisticamente.",
+		"Ouviu esse trovão? Chegou três segundos depois do raio. Logo, o raio caiu a cerca de um quilômetro. <d>(ele anota, tremendo)</d>"
+	],
+	"greet_friday": [
+		"Sextou, {player}! Planilha da semana fechada, ferramentas guardadas em ordem alfabética. Eficiência máxima.",
+		"Sexta-feira! A produtividade cai 30% nas sextas. Eu compenso trabalhando 30% mais rápido. Lógica.",
+		"Sextou! Hoje à noite vou relaxar: desmontar um relógio e montar de novo. Diversão garantida."
+	],
+	"greet_saturday": [
+		"Sábado, {player}! Dia de feira. Vou vender ferramentas com garantia estendida. Ninguém entende o que é, mas compram.",
+		"Sábado de festa na praça. Vou, sim. Fico perto da mesa de comida, calculando a ordem ideal para comer.",
+		"Sábado é dia de projeto pessoal. Hoje: um alarme de redstone que só acorda a vila se for zumbi de verdade."
+	],
+	"greet_sunday": [
+		"Domingo, {player}. Almoço com a família. Minha tia sempre pergunta quando vou largar a forja. Resposta: nunca.",
+		"Hrmm... domingo. Dia de descanso. Estou descansando. Isto aqui é um relógio quebrado, mas é descanso, juro."
+	],
 	"reward_intro": [
 		"Concluído o projeto, conforme orçamento aprovado, você recebe",
 		"Pagamento calculado com precisão milimétrica: você leva",
@@ -118,13 +141,13 @@
 		"Qual é o próximo experimento?"
 	],
 	"names": [
-		"Seu Euclides", "Dona Ada", "Seu Newton", "Dona Hipátia", "Seu Arquimedes", "Dona Marie", "Seu Tesla",
-		"Dona Grace", "Seu Pitágoras", "Dona Emmy"
+		"Pedro", "Jorge", "Douglas", "Ana", "Márcia", "Rafael", "Juliana",
+		"Fábio", "Renata", "Marcelo", "Patrícia", "Thiago", "Aline", "Gustavo"
 	],
 	"extra": {
 		"day_off": [
 			"Hoje é minha <y>folga</y>. A forja chega a mil e quinhentos graus e eu só aguento trinta e sete. Trabalho um dia a cada três. Volte outro dia ou procure outro ferramenteiro.",
-			"Estudos comprovam: ferramenteiro que bate martelo todo dia erra 40% mais. Por isso só trabalho a cada três dias. Hoje é folga. Tente outro colega de profissão.",
+			"Estudos comprovam: ferramenteiro que bate martelo todo dia erra 40% mais. Por isso tenho meu dia de folga. Hoje é folga. Tente outro colega de profissão.",
 			"<d>(ele está deitado numa rede, com um livro de redstone aberto em cima da cara)</d> Hoje não, {player}. Folga obrigatória: a bigorna pesa mais que meus argumentos. Volte daqui a uns dias."
 		]
 	}

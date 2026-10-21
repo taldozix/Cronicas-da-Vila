@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 1}]
 		},
 		{
+			"id": "librarian_1_cana",
+			"tier": 1,
+			"title": "A Matéria-Prima do Saber",
+			"tone": "calm",
+			"offer": [
+				"Caro jovem, sabe de onde vem o papel? Não, não brota nas estantes. Vem da humilde <y>cana-de-açúcar</y>.",
+				"Três canas fazem três folhas. Três folhas e um couro fazem um livro. E um livro... ah, um livro faz uma civilização.",
+				"Lamentavelmente, nossas reservas de papel esgotaram-se. Tive de escrever meu último poema na parede. Com carvão."
+			],
+			"why": [
+				"Sem papel, não há livros novos. Sem livros novos, as crianças aprendem com o bobão. Uma tragédia pedagógica.",
+				"E cultivar cana é uma atividade serena, quase meditativa. Ideal para um principiante."
+			],
+			"accept": [
+				"A cana cresce à beira d'água, em areia ou terra. Corte por cima e deixe a base para crescer de novo.",
+				"<g>Traga</g> <y>48 canas-de-açúcar</y>."
+			],
+			"progress": [
+				"A cana precisa de água encostada no bloco onde foi plantada. Sem isso, nada feito.",
+				"Ela cresce até três blocos de altura. Colha os dois de cima e a planta renasce sozinha."
+			],
+			"complete": [
+				"Quarenta e oito canas! Isso dá papel para... deixe-me calcular... uma quantidade indecente de sonetos.",
+				"Aceite estas esmeraldas e um livro de <p>Eficiência</p>. Para que trabalhe depressa e leia devagar."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:sugar_cane"], "count": 48, "desc": "<g>Entregue</g> <y>48 canas-de-açúcar</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 1}]
+		},
+		{
 			"id": "librarian_2_estantes",
 			"tier": 2,
 			"title": "A Grande Biblioteca",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:witch"], "count": 4, "desc": "<r>Elimine</r> <r>4 bruxas</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 2}]
+		},
+		{
+			"id": "librarian_2_phantoms",
+			"tier": 2,
+			"title": "Os Pesadelos da Insônia",
+			"tone": "danger",
+			"offer": [
+				"Confesso uma fraqueza: há noites e noites que não durmo. Leio até o amanhecer. E agora fui punido por isso.",
+				"Criaturas aladas descem do céu escuro e mergulham sobre mim. Os eruditos as chamam de <r>phantoms</r>. Eu as chamo de críticos literários.",
+				"Preciso que alguém igualmente insone dê um fim a essas visitas noturnas."
+			],
+			"why": [
+				"Não consigo ler com uma criatura translúcida guinchando em meu ouvido. E os demais aldeões também não apreciam.",
+				"Um <o>Aprendiz</o> como você já aguenta uma noite inteira de vigília. Bom para a coragem. Péssimo para as olheiras."
+			],
+			"accept": [
+				"Elas só aparecem para quem passa três noites ou mais sem dormir. Sacrifique o seu sono em nome da ciência.",
+				"<r>Elimine 10 phantoms</r>."
+			],
+			"progress": [
+				"O sol as queima ao amanhecer, como a verdade queima a ignorância.",
+				"Elas evitam gatos. Um gato por perto é proteção e companhia. Recomendo vivamente."
+			],
+			"complete": [
+				"Silêncio! Que som divino. Esta noite lerei em paz. E depois, quem sabe, dormirei. Talvez.",
+				"Aceite este ferro, um diamante e um livro de <p>Inquebrável</p>. Durável como uma boa encadernação."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:phantom"], "count": 10, "desc": "<r>Elimine</r> <r>10 phantoms</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
 		},
 		{
 			"id": "librarian_3_encantar",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
 		},
 		{
+			"id": "librarian_3_tinta",
+			"tier": 3,
+			"title": "A Tinta que Brilha",
+			"tone": "calm",
+			"offer": [
+				"Pretendo produzir a mais bela edição já vista: <a>As Crônicas da Vila</a>, com letras que brilham no escuro.",
+				"Para tanto, necessito de <y>bolsas de tinta brilhante</y>. Vêm das <a>lulas-brilhantes</a>, criaturas luminosas das águas profundas das cavernas.",
+				"Leitura noturna sem lanterna. Imagine a elegância."
+			],
+			"why": [
+				"Livros que brilham podem ser lidos à noite, sem velas e sem risco de incêndio na biblioteca. Uma revolução.",
+				"E é tarefa para <o>Aventureiro</o>. Cavernas inundadas são escuras, frias e frequentadas por afogados."
+			],
+			"accept": [
+				"As lulas-brilhantes nadam em águas escuras, bem abaixo do nível do mar.",
+				"<g>Traga</g> <y>20 bolsas de tinta brilhante</y>."
+			],
+			"progress": [
+				"Elas só aparecem em água completamente escura, abaixo da altura 30. Procure lagos subterrâneos.",
+				"Poção de visão noturna ajuda muito. E uma placa pintada com tinta brilhante fica legível no escuro."
+			],
+			"complete": [
+				"Que brilho, que delicadeza! Esta edição será digna de um museu. Ou, no mínimo, desta biblioteca.",
+				"Aceite diamantes, frascos de experiência e um livro de <p>Fortuna</p>. Pois o saber, como o minério, rende mais a quem sabe colhê-lo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:glow_ink_sac"], "count": 20, "desc": "<g>Entregue</g> <y>20 bolsas de tinta brilhante</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:experience_bottle", "count": 12}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 2}]
+		},
+		{
 			"id": "librarian_4_eco",
 			"tier": 4,
 			"title": "O Idioma Perdido",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:vex", "minecraft:evoker"], "count": 20, "desc": "<r>Elimine</r> <r>20 vexes ou evocadores</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:smite", "level": 4}]
+		},
+		{
+			"id": "librarian_4_tratado",
+			"tier": 4,
+			"title": "O Segundo Volume",
+			"tone": "calm",
+			"offer": [
+				"Grandes notícias! O primeiro volume de <a>Da Natureza dos Encantamentos</a> esgotou. Bem, havia só um exemplar. Mas esgotou.",
+				"Agora planejo o segundo volume. Mais ambicioso, mais denso, com notas de rodapé sobre as notas de rodapé.",
+				"Para isso, preciso de observações práticas. Muitas. Encantamentos feitos por mãos experientes."
+			],
+			"why": [
+				"Com o tratado completo, todo aldeão saberá o que cada encantamento faz. Fim das espadas de Afiação vendidas como se fossem de Julgamento!",
+				"É pesquisa para um <o>Guerreiro</o>. Exige experiência acumulada, e experiência se ganha lutando."
+			],
+			"accept": [
+				"Use a mesa de encantamento quantas vezes forem necessárias. Cada encantamento conta como uma observação.",
+				"<g>Encante itens</g> <y>40 vezes</y>."
+			],
+			"progress": [
+				"Quinze estantes ao redor da mesa, com um bloco de ar entre elas, liberam os encantamentos de nível 30.",
+				"Uma fazenda de experiência poupa muito tempo. E o rebolo devolve um pouco de experiência ao desencantar um item."
+			],
+			"complete": [
+				"Quarenta observações! O segundo volume terá novecentas páginas. Talvez mil. Os leitores agradecerão. Creio eu.",
+				"Aceite diamantes, maçãs douradas e um livro de <p>Infinidade</p>. Flechas que nunca acabam, como a minha prosa."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:enchant_item"], "count": 40, "desc": "<g>Encante itens</g> <y>40 vezes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:infinity", "level": 1}]
 		},
 		{
 			"id": "librarian_5_maldicao",

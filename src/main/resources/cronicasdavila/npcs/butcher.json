@@ -63,6 +63,29 @@
 		"Vou dormir, guri. Amanhã a costela entra no fogo às cinco. Cuidado com os zumbis!",
 		"Buenas noites, vivente! Se um zumbi te seguir, oferece um bife. ...Não, é mentira, corre mesmo."
 	],
+	"greet_rain": [
+		"Bah, que chuvarada, tchê! Entra aqui no açougue antes que tu vire sopa.",
+		"Chuva, guri? Dia perfeito pra um chimarrão e uma costela no fogo de chão, aqui no galpão coberto.",
+		"Barbaridade, {player}, tu tá encharcado! Chega perto da brasa e te seca."
+	],
+	"greet_storm": [
+		"Bah, tchê, que temporal! Caiu um raio na coxilha agora há pouco. Fica aqui dentro, guri!",
+		"Barbaridade, {player}! Com esse céu preto os zumbis andam até de dia. Pega a faca e fica de olho na porta."
+	],
+	"greet_friday": [
+		"Sextou, tchê! Hoje é dia de assado com os parceiros e chimarrão até tarde.",
+		"Bah, sexta-feira! Cortei carne a semana toda, guri. Meu braço tá mais duro que costela crua.",
+		"E aí, {player}, sexta! Amanhã tem rodeio na vila vizinha. Tu vem junto?"
+	],
+	"greet_saturday": [
+		"Sábado, tchê! Dia sagrado de churrasco. A costela tá no fogo desde as cinco.",
+		"Bah, {player}, hoje é dia de baile no galpão. Vai ter gaita, vanerão e muita prenda dançando.",
+		"Bom sábado, guri! Hoje o açougue fecha cedo, que a família inteira vem pro almoço."
+	],
+	"greet_sunday": [
+		"Domingo, tchê... dia de missa, de cuia na mão e de não fazer nada na sombra do galpão.",
+		"Bah, {player}, ouviu o sino? Depois da missa é almoço na casa da mãe. Carne, claro."
+	],
 	"reward_intro": [
 		"Bah, se tu fizer isso direito, te pago",
 		"Fechou, tchê? Fazendo o serviço, tu leva",
@@ -118,12 +141,12 @@
 		"Bah, bora trabalhar! O que tu precisa?"
 	],
 	"names": [
-		"Seu Bento", "Dona Prenda", "Seu Ademar", "Dona Ilse", "Seu Gumercindo", "Dona Valquíria", "Seu Tadeu",
-		"Dona Olga", "Seu Arlindo", "Dona Brígida"
+		"Bento", "Ilse", "Ademar", "Olga", "Tadeu", "Vera", "Arlindo",
+		"Gisele", "Rodrigo", "Letícia", "Márcio", "Cristiane", "Eduardo", "Patrícia"
 	],
 	"extra": {
 		"day_off": [
-			"Bah, hoje é minha folga, tchê! Carregar meio boi nas costas cansa, então eu só trabalho de três em três dias.",
+			"Bah, hoje é minha folga, tchê! Carregar meio boi nas costas cansa, então hoje é dia de descanso.",
 			"Hoje não, guri. Tô de folga, só no chimarrão... digo, na água. Volta outro dia ou procura outro açougueiro na vila.",
 			"Barbaridade, trabalhar hoje? A faca tá descansando, o avental tá descansando e eu também. Volta daqui uns dias, tchê."
 		]

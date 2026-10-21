@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
 		},
 		{
+			"id": "mason_1_zumbis",
+			"tier": 1,
+			"title": "Zumbi na Obra",
+			"tone": "danger",
+			"offer": [
+				"Caraca, mermão, tu não sabe o que aconteceu. Deixei a obra da padaria aberta de noite e os <r>zumbis</r> fizeram festa lá dentro.",
+				"Derrubaram o andaime, pisaram no cimento fresco e um deles ficou lá, parado, olhando pra parede. Sinistro.",
+				"Os aprendizes não querem mais trabalhar até tarde. Dizem que é perigoso. E é mesmo, tá ligado?"
+			],
+			"why": [
+				"Sem a padaria, o pão da vila vem só do fazendeiro, e ele cobra o olho da cara. Não dá, mermão.",
+				"E obra parada é dinheiro jogado fora. Cada dia sem trabalhar é um tijolo a menos no lugar."
+			],
+			"accept": [
+				"Maneiro, parceiro! Eles aparecem de noite e em tudo que é canto escuro.",
+				"<r>Elimine 15 zumbis</r>."
+			],
+			"progress": [
+				"Zumbi quebra porta de madeira no modo difícil. Porta de ferro ele não passa, tá ligado?",
+				"Ilumina bem a obra com tocha. Monstro não nasce em lugar bem iluminado."
+			],
+			"complete": [
+				"A obra tá liberada, mermão! Os aprendizes voltaram e até o cimento secou bonito.",
+				"Toma ferro e umas esmeraldas. Tu é parceiraço."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "count": 15, "desc": "<r>Elimine</r> <r>15 zumbis</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 3}]
+		},
+		{
 			"id": "mason_2_calcita",
 			"tier": 2,
 			"title": "A Pedra Branca",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:silverfish"], "count": 15, "desc": "<r>Elimine</r> <r>15 traças</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "mason_2_vidro",
+			"tier": 2,
+			"title": "Janelas pra Escola",
+			"tone": "calm",
+			"offer": [
+				"Mermão, lembra da escola? O telhado tá novinho, mas agora o professor reclama que tá escuro. Diz que as crianças dormem na aula.",
+				"Eu disse que é porque a aula é chata. Ele não gostou. Então agora eu tenho que fazer <y>janelas</y>.",
+				"Muitas janelas, tá ligado? E janela é vidro, e vidro dá trabalho."
+			],
+			"why": [
+				"Sala clarinha é sala acordada, parceiro. E criança acordada aprende a fazer conta de esmeralda direito.",
+				"E vidro bem feito valoriza a obra. A escola vai ficar sinistra de bonita."
+			],
+			"accept": [
+				"Caraca, valeu! Areia na fornalha vira vidro. Simples assim.",
+				"<g>Traga</g> <y>48 blocos de vidro</y>."
+			],
+			"progress": [
+				"Areia tem na praia, no deserto e no fundo do rio. Pá na mão que vai rapidinho.",
+				"Vidro colocado que quebra sem <p>Toque Suave</p> some, mermão. Então nada de colocar pra testar, tá ligado?"
+			],
+			"complete": [
+				"Olha essa claridade, mermão! As crianças tão até acordadas. O professor quase sorriu.",
+				"Toma esmeraldas, um diamante e um pouco de ferro. A escola agradece, e eu também."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:glass"], "count": 48, "desc": "<g>Entregue</g> <y>48 blocos de vidro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 6}]
 		},
 		{
 			"id": "mason_3_obsidiana",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}]
 		},
 		{
+			"id": "mason_3_magma",
+			"tier": 3,
+			"title": "O Chão que Ferve",
+			"tone": "danger",
+			"offer": [
+				"Mermão, lembra do portal pros piglins? Pois é. Do outro lado ele foi parar bem num <a>delta de basalto</a>.",
+				"Lugar sinistro: chão de pedra preta, fumaça, e uns <r>cubos de magma</r> pulando pra todo lado igual pipoca na panela.",
+				"Os aprendizes que foram buscar basalto voltaram com a bunda queimada. Literalmente, parceiro."
+			],
+			"why": [
+				"O basalto de lá é a pedra mais bonita pra coluna que eu já vi. A praça nova merece.",
+				"Tu já é <o>Aventureiro</o>. Cubo de magma pula alto e se divide quando apanha. Precisa de reflexo, tá ligado?"
+			],
+			"accept": [
+				"Caraca, tu é brabo! Leva poção de resistência ao fogo e cuidado com a lava.",
+				"<r>Elimine 20 cubos de magma</r>. Os pequenos que se soltam também contam."
+			],
+			"progress": [
+				"Cubo de magma não toma dano de fogo nem de lava. Espada é o caminho.",
+				"Eles aparecem muito nos deltas de basalto e nas fortalezas do <n>Nether</n>. E pulam alto, então olha pra cima."
+			],
+			"complete": [
+				"O delta tá liberado! Os aprendizes já tão trazendo basalto sem queimadura nenhuma.",
+				"Toma diamantes, uma maçã dourada e frascos de experiência. Tu é sinistro, mermão."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:magma_cube"], "count": 20, "desc": "<r>Elimine</r> <r>20 cubos de magma</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 6}]
+		},
+		{
 			"id": "mason_4_brisas",
 			"tier": 4,
 			"title": "Os Arquitetos do Vento",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:deepslate_tiles"], "count": 64, "desc": "<g>Entregue</g> <y>64 ladrilhos de ardósia</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 2}]
+		},
+		{
+			"id": "mason_4_quartzo",
+			"tier": 4,
+			"title": "O Salão de Quartzo",
+			"tone": "calm",
+			"offer": [
+				"Mermão, o Conselho das Vilas decidiu: vai ter um <a>Salão do Conselho</a> aqui. E o projeto é meu!",
+				"Quero tudo de <y>quartzo</y>, branquinho, brilhando no sol. Coisa de palácio, tá ligado?",
+				"Só que quartzo só tem no <n>Nether</n>. E pro salão que eu desenhei, é muito quartzo. Muito mesmo."
+			],
+			"why": [
+				"Esse salão vai receber gente de todas as vilas. Se ficar bonito, a fama da nossa vila vai longe.",
+				"Tu já é <o>Guerreiro</o>, parceiro. O Nether não assusta mais tu. Mas a quantidade de minério, essa sim vai te fazer suar."
+			],
+			"accept": [
+				"Sinistro! Quatro quartzos do Nether na mesa de trabalho viram um bloco de quartzo.",
+				"<g>Traga</g> <y>64 blocos de quartzo</y>."
+			],
+			"progress": [
+				"Minério de quartzo tem em quase todo canto do Nether. Picareta com <p>Fortuna</p> rende muito mais.",
+				"Os piglins às vezes trocam quartzo por ouro. Joga um lingote de ouro pra eles e vê o que vem."
+			],
+			"complete": [
+				"Caraca, mermão... o salão tá brilhando que nem espelho. Os conselheiros vão ter que usar óculos escuros.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Toque Suave</p>. Agora tu pode carregar até vidro sem quebrar."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:quartz_block"], "count": 64, "desc": "<g>Entregue</g> <y>64 blocos de quartzo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
 		},
 		{
 			"id": "mason_5_farol",

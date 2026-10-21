@@ -59,6 +59,8 @@ public class PlayerData {
 
 	/** Dia em que cada NPC (UUID) já contou a curiosidade dele para o jogador. */
 	public Map<String, Long> loreDay = new HashMap<>();
+	/** Já conheceu Elebin, o clérigo raro? */
+	public boolean metElebin = false;
 	/** Dia em que cada aldeão (UUID) recusou uma barganha (fica ofendido até o dia seguinte). */
 	public Map<String, Long> bargainRefused = new HashMap<>();
 	/** Baús que são do próprio jogador ("dimensão|x|y|z"): pegar coisas deles não é roubo. */

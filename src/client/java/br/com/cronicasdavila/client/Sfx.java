@@ -62,6 +62,7 @@ final class Sfx {
 			case "pillager" -> 0.82F;
 			case "shulker" -> 0.6F;
 			case "witch" -> 1.18F;
+			case "trader" -> 0.85F;
 			default -> 1.0F;
 		};
 

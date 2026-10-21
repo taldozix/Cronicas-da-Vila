@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:gunpowder", "count": 8}]
 		},
 		{
+			"id": "weaponsmith_1_pederneira",
+			"tier": 1,
+			"title": "Faísca de Pederneira",
+			"tone": "calm",
+			"offer": [
+				"Recruta! Sabe o que é isso? <d>(ele balança uma pedra preta lascada)</d> <y>PEDERNEIRA</y>! A pedra mais afiada que a natureza já fez!",
+				"Ponta de flecha, isqueiro, faísca pra forja... tudo sai dela! E meu estoque acabou porque o bobão usou tudo pra quicar pedrinha no lago!",
+				"COM A MINHA PEDERNEIRA! POR MIL BIGORNAS!"
+			],
+			"why": [
+				"Sem pederneira, o flecheiro não faz flecha e eu não acendo a forja. A vila fica sem fogo e sem mira!",
+				"E cavar cascalho é treino de braço. Recruta de braço fino não segura espada!"
+			],
+			"accept": [
+				"HA! É assim que se fala! Pederneira sai quando você quebra cascalho. Nem sempre, mas sai!",
+				"<g>Traga</g> <y>16 pederneiras</y>."
+			],
+			"progress": [
+				"Coloca o cascalho no chão e quebra de novo. Cada quebrada é uma nova chance de sair pederneira!",
+				"Pá com Fortuna aumenta a chance. Com Fortuna III, todo cascalho vira pederneira!"
+			],
+			"complete": [
+				"Olha esse monte! Dá pra acender uma forja inteira! E o bobão tá proibido de chegar perto!",
+				"Toma ferro e um machado de ferro. Machado também é arma, recruta! E das boas!"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:flint"], "count": 16, "desc": "<g>Entregue</g> <y>16 pederneiras</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:iron_axe", "count": 1}]
+		},
+		{
 			"id": "weaponsmith_2_ronda",
 			"tier": 2,
 			"title": "A Ronda Noturna",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:iron_ingot"], "count": 48, "desc": "<g>Entregue</g> <y>48 lingotes de ferro</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 14}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:shield", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_2_posto",
+			"tier": 2,
+			"title": "O Posto Avançado",
+			"tone": "danger",
+			"offer": [
+				"Recruta, os batedores viram uma <a>torre de vigia</a> dos <r>saqueadores</r> perto da estrada. Madeira escura, bandeira feia, besta pra todo lado!",
+				"Eles ficam lá em cima vigiando as caravanas. Já roubaram três carroças de trigo e uma de ferro. A DE FERRO, RECRUTA!",
+				"Vai lá e mostra pra esses narigudos que essa estrada tem dono!"
+			],
+			"why": [
+				"Saqueador perto da vila é invasão esperando pra acontecer. Melhor cortar o mal pela raiz!",
+				"Você já é <o>Aprendiz</o>. Tá na hora de enfrentar inimigo que mira, não só zumbi que geme!"
+			],
+			"accept": [
+				"Chega pela lateral, escondido atrás das árvores. Lá na torre eles têm vantagem de altura!",
+				"<r>Elimine 12 saqueadores</r>."
+			],
+			"progress": [
+				"As bestas deles acertam de longe. Escudo levantado e fecha a distância rápido!",
+				"O capitão, aquele com a bandeira na cabeça, larga uma garrafa ominosa. Só bebe se quiser invasão de verdade!"
+			],
+			"complete": [
+				"A torre ficou vazia! As caravanas voltaram a passar cantando! HA HA! Até o trigo parece mais feliz!",
+				"Toma ferro, um diamante e um livro de <p>Repulsão</p>. Pra mandar o inimigo de volta pra casa voando!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager"], "count": 12, "desc": "<r>Elimine</r> <r>12 saqueadores</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:knockback", "level": 2}]
 		},
 		{
 			"id": "weaponsmith_3_endermen",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:loyalty", "level": 3}]
 		},
 		{
+			"id": "weaponsmith_3_murchos",
+			"tier": 3,
+			"title": "Ossos Negros",
+			"tone": "danger",
+			"offer": [
+				"Recruta, já ouviu falar dos <r>esqueletos murchos</r>? Altos, pretos, de espada de pedra na mão. Guardam as fortalezas do Nether!",
+				"O golpe deles deixa a pessoa murcha, perdendo vida sem parar. Já vi guerreiro bom cair assim!",
+				"Preciso testar minhas lâminas novas contra o osso mais duro que existe. E esse osso é o deles!"
+			],
+			"why": [
+				"Se minha lâmina corta esqueleto murcho, corta qualquer coisa. A guarda vai ter as melhores espadas da região!",
+				"É missão de <o>Aventureiro</o>. Fortaleza do Nether não é passeio no parque, é forno com monstro dentro!"
+			],
+			"accept": [
+				"Leva leite! O leite tira o efeito de murchar. E maçã dourada, que eu não quero chorar no seu enterro!",
+				"<r>Elimine 15 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Eles são altos demais pra passar por buraco de dois blocos. Cava um túnel baixinho e ataca lá de dentro!",
+				"De vez em quando eles largam o crânio. GUARDA! O clérigo fica doido quando vê um!"
+			],
+			"complete": [
+				"QUINZE! Minha lâmina passou no teste! E você também, recruta! HA HA!",
+				"Toma diamantes, uma maçã dourada e um livro de <p>Julgamento</p>. Morto-vivo nenhum aguenta!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:smite", "level": 3}]
+		},
+		{
 			"id": "weaponsmith_4_evocadores",
 			"tier": 4,
 			"title": "A Mansão dos Feiticeiros",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:raid_win"], "count": 1, "desc": "<r>Vença</r> <r>1 invasão</r> de saqueadores"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "weaponsmith_4_guardioes",
+			"tier": 4,
+			"title": "O Templo Submerso",
+			"tone": "danger",
+			"offer": [
+				"Recruta, senta que lá vem história. No fundo do oceano tem um <a>monumento</a> antigo cheio de <r>guardiões</r>. Peixe de um olho só que atira raio!",
+				"E lá no meio moram os <r>guardiões anciões</r>. Três gigantes que deixam qualquer um tão cansado que nem levanta a picareta!",
+				"Eu tentei uma vez, na juventude. Voltei sem fôlego, sem espada e sem sobrancelha. NUNCA MAIS! ...Mas você vai."
+			],
+			"why": [
+				"Enquanto os anciões viverem, nenhum pescador chega perto daquele mar. E lá dentro tem esponja, prismarinho e até ouro guardado!",
+				"É prova de <o>Guerreiro</o>. Lutar debaixo d'água, sem ar, contra três gigantes. Coisa de lenda!"
+			],
+			"accept": [
+				"Poção de respiração aquática, recruta! E leite, muito leite. A fadiga de mineração não te larga lá dentro!",
+				"<r>Elimine 3 guardiões anciões</r>."
+			],
+			"progress": [
+				"Os guardiões carregam o raio antes de atirar. Quando o laser começar a mirar, se esconde atrás de um pilar!",
+				"Capacete com Respiração e Afinidade Aquática faz toda a diferença lá embaixo."
+			],
+			"complete": [
+				"TRÊS ANCIÕES! O mar é nosso de novo! Os pescadores tão dançando no cais! HA HA HA!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Empalamento IV</p>. Pra quando você tiver um tridente na mão!"
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:elder_guardian"], "count": 3, "desc": "<r>Elimine</r> <r>3 guardiões anciões</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:impaling", "level": 4}]
 		},
 		{
 			"id": "weaponsmith_5_lamina",

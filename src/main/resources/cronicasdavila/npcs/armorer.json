@@ -63,6 +63,29 @@
 		"Vá. E mantenha a lanterna acesa.",
 		"Boa noite. Se ouvir passos arrastados, não pare para olhar."
 	],
+	"greet_rain": [
+		"Chuva. Entre, {player}. Metal molhado enferruja, e gente molhada adoece.",
+		"A chuva lava os muros e tira o pó das armaduras. Não é de todo ruim.",
+		"Hrmm. Dia cinzento. Bom para polir peças em silêncio. Sente-se, se quiser."
+	],
+	"greet_storm": [
+		"Tempestade. Afaste-se de qualquer coisa de metal, {player}. Inclusive de mim.",
+		"Os trovões não me assustam. Mas os raios transformam aldeões em bruxas. Fique sob um teto."
+	],
+	"greet_friday": [
+		"Sextou, dizem os jovens. Eu digo: fim de semana de vigília. Os monstros não folgam.",
+		"Sexta-feira, {player}. A guarda está animada. Eu também. Por dentro.",
+		"Sextou. Vou trocar o martelo por uma caneca de leite quente. É o máximo de festa que me permito."
+	],
+	"greet_saturday": [
+		"Sábado. Dia de feira na praça. Vendo armaduras usadas, bem cuidadas. Às vezes melhores que novas.",
+		"Sábado de festa. Eu vigio da porta enquanto os outros dançam. Alguém precisa.",
+		"Sábado, {player}. Descanso para o corpo. A forja pode esperar até segunda."
+	],
+	"greet_sunday": [
+		"Domingo. Almoço com a família. Minha mãe ainda me pede para tirar o capacete à mesa.",
+		"Hrmm. Domingo é dia de não fazer nada. Estou fazendo muito bem."
+	],
 	"reward_intro": [
 		"Cumpra o dever e receberá",
 		"Pelo trabalho bem feito, ofereço",
@@ -118,8 +141,8 @@
 		"Em que posso ajudar a guarda?"
 	],
 	"names": [
-		"Comandante Hilda", "Seu Leônidas", "Dona Amélia", "Capitão Otávio", "Dona Matilde", "Seu Horácio", "Dona Teodora",
-		"Seu Bartolomeu", "Dona Leocádia", "Seu Feliciano"
+		"Antônio", "Helena", "Carlos", "Regina", "Sérgio", "Lúcia", "Paulo",
+		"Vera", "Mário", "Sônia", "Ricardo", "Rosana", "Fernando", "Elaine"
 	],
 	"extra": {
 		"day_off": [

@@ -148,6 +148,10 @@ public class CronicasDaVila implements ModInitializer {
 				}
 			}
 
+			if (tickCounter % 40 == 0) {
+				br.com.cronicasdavila.village.OffDutySystem.tick(server);
+			}
+
 			if (tickCounter % 20 != 0) {
 				return;
 			}
@@ -173,6 +177,7 @@ public class CronicasDaVila implements ModInitializer {
 			TheftSystem.forget(player);
 			BargainSystem.forget(player);
 			SyncService.forget(player);
+			br.com.cronicasdavila.village.OffDutySystem.forget(player);
 			PlayerDataManager.unload(player);
 		});
 
@@ -181,10 +186,14 @@ public class CronicasDaVila implements ModInitializer {
 			SyncService.forget(newPlayer);
 		});
 
-		ServerLifecycleEvents.SERVER_STARTED.register(server -> QuestValidator.validate());
+		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+			br.com.cronicasdavila.village.ModdedProfessions.register();
+			QuestValidator.validate();
+		});
 
 		ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
 			DialogueManager.closeAll();
+			br.com.cronicasdavila.village.OffDutySystem.clearAll(server);
 
 			for (ServerPlayer player : server.getPlayerList().getPlayers()) {
 				PlayerDataManager.unload(player);

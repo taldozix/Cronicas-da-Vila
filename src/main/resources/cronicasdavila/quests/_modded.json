@@ -1,0 +1,105 @@
+{
+	"_comment": "Modelos de missão para profissões de outros mods (ex.: More Villagers). {key} vira o id da profissão; {profissao}, o nome dela.",
+	"quests": [
+		{
+			"id": "auto_{key}_1_lenha", "tier": 1, "title": "Lenha para a Oficina", "tone": "calm",
+			"offer": ["Ah, que bom que apareceu! Sou {profissao} aqui na vila, e minha oficina está sem lenha nenhuma.", "Sem lenha não tem fogo, sem fogo não tem trabalho. E sem trabalho eu fico parado olhando pro teto."],
+			"why": ["Com a oficina funcionando, a vila inteira ganha: o que eu faço vai parar na casa de todo mundo."],
+			"accept": ["Combinado! Traga <y>24 toras</y> de qualquer madeira."],
+			"progress": ["Qualquer árvore serve. Um machado acelera bastante o serviço."],
+			"complete": ["Que montanha de lenha! A oficina vai ficar quentinha por semanas. Toma, é seu."],
+			"objective": {"type": "deliver", "targets": ["#minecraft:logs"], "count": 24, "desc": "<y>Entregue</y> <y>24 toras</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:bread", "count": 6}]
+		},
+		{
+			"id": "auto_{key}_1_carvao", "tier": 1, "title": "Carvão Para o Forno", "tone": "calm",
+			"offer": ["O trabalho de {profissao} gasta carvão que é uma beleza. E o meu acabou ontem."],
+			"why": ["Sem carvão, nada de forno aceso. E forno apagado é vila parada."],
+			"accept": ["Me traga <y>16 carvões</y>. Carvão vegetal também vale!"],
+			"progress": ["Carvão aparece nas pedras das cavernas. Ou queime madeira na fornalha para fazer carvão vegetal."],
+			"complete": ["Isso sim é ajuda de verdade! O forno já está roncando de novo."],
+			"objective": {"type": "deliver", "targets": ["minecraft:coal", "minecraft:charcoal"], "count": 16, "desc": "<y>Entregue</y> <y>16 carvões</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 3}, {"item": "minecraft:cooked_beef", "count": 4}]
+		},
+		{
+			"id": "auto_{key}_2_ferro", "tier": 2, "title": "Ferro de Primeira", "tone": "calm",
+			"offer": ["Recebi uma encomenda grande, mas me falta <y>ferro</y>. Muito ferro."],
+			"why": ["Se eu não entregar a encomenda, perco o freguês. E freguês bom é difícil de achar."],
+			"accept": ["Me traga <y>10 barras de ferro</y> e eu te pago bem."],
+			"progress": ["Minério de ferro aparece fácil nas cavernas. Derreta na fornalha antes de trazer."],
+			"complete": ["Ferro de primeira! A encomenda vai sair no prazo. Aqui está o combinado."],
+			"objective": {"type": "deliver", "targets": ["minecraft:iron_ingot"], "count": 10, "desc": "<y>Entregue</y> <y>10 barras de ferro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}]
+		},
+		{
+			"id": "auto_{key}_2_zumbis", "tier": 2, "title": "Noites Sem Sossego", "tone": "danger",
+			"offer": ["Os <r>zumbis</r> não me deixam trabalhar de noite. Ficam batendo na porta da oficina, gemendo."],
+			"why": ["Com menos zumbis por perto, eu durmo, trabalho e a vila respira aliviada."],
+			"accept": ["<r>Elimine 12 zumbis</r>. Cuidado com os que usam armadura!"],
+			"progress": ["Eles aparecem à noite e em lugares escuros."],
+			"complete": ["Dormi como um bebê ontem! Toma, você mereceu."],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "count": 12, "desc": "<r>Elimine</r> <r>12 zumbis</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "auto_{key}_3_ouro", "tier": 3, "title": "Brilho Dourado", "tone": "calm",
+			"offer": ["Quero fazer uma peça especial, coisa de {profissao} caprichoso. Mas preciso de <o>ouro</o>."],
+			"why": ["Uma peça bonita dessas atrai gente de outras vilas. E gente nova é bom para todo mundo."],
+			"accept": ["Traga <y>12 barras de ouro</y>."],
+			"progress": ["O ouro fica mais fundo que o ferro. No deserto e nas mesas do badlands aparece bastante."],
+			"complete": ["Olha só como brilha! Vai ficar uma obra de arte. Aqui está sua parte."],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_ingot"], "count": 12, "desc": "<y>Entregue</y> <y>12 barras de ouro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 14}, {"item": "minecraft:golden_carrot", "count": 8}]
+		},
+		{
+			"id": "auto_{key}_3_esqueletos", "tier": 3, "title": "Flechas na Estrada", "tone": "danger",
+			"offer": ["Os <r>esqueletos</r> estão atirando em quem vem comprar comigo. Assim ninguém chega na oficina!"],
+			"why": ["Estrada segura é freguês chegando. E freguês chegando é vila crescendo."],
+			"accept": ["<r>Elimine 15 esqueletos</r> e volte aqui."],
+			"progress": ["Escudo na mão ajuda muito contra as flechas."],
+			"complete": ["A estrada está limpa! Já apareceram três fregueses hoje. Toma, é seu."],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:arrow", "count": 16}]
+		},
+		{
+			"id": "auto_{key}_4_diamantes", "tier": 4, "title": "Encomenda de Luxo", "tone": "calm",
+			"offer": ["Um nobre de longe encomendou o melhor trabalho de {profissao} que já se viu. Para isso, só com <a>diamantes</a>."],
+			"why": ["Se der certo, o nome da nossa vila vai correr o mundo!"],
+			"accept": ["Traga <y>4 diamantes</y>. Sei que não é fácil."],
+			"progress": ["Diamantes ficam bem no fundo, perto da camada de rocha. Picareta de ferro ou melhor!"],
+			"complete": ["Diamantes perfeitos! Vou fazer a obra da minha vida. Isso aqui é pra você."],
+			"objective": {"type": "deliver", "targets": ["minecraft:diamond"], "count": 4, "desc": "<y>Entregue</y> <y>4 diamantes</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 24}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
+			"id": "auto_{key}_4_creepers", "tier": 4, "title": "Sem Explosões, Por Favor", "tone": "danger",
+			"offer": ["Um <r>creeper</r> explodiu metade da minha oficina semana passada. Metade!"],
+			"why": ["Mais uma explosão dessas e eu fecho as portas. Aí a vila fica sem {profissao}."],
+			"accept": ["<r>Elimine 12 creepers</r>. E de longe, hein!"],
+			"progress": ["Eles não fazem barulho até chiar. Arco ajuda bastante."],
+			"complete": ["Nenhuma explosão desde que você começou! A oficina agradece. Toma."],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 12, "desc": "<r>Elimine</r> <r>12 creepers</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 20}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "auto_{key}_5_obra", "tier": 5, "title": "A Obra-Prima", "tone": "calm",
+			"offer": ["Todo {profissao} sonha com uma obra-prima. A minha precisa de <a>blocos de diamante</a>."],
+			"why": ["É a coisa mais importante que eu vou fazer na vida. E quero que você faça parte dela."],
+			"accept": ["Traga <y>2 blocos de diamante</y>. Sim, blocos!"],
+			"progress": ["Nove diamantes fazem um bloco. Boa sorte nas minas!"],
+			"complete": ["Ficou perfeita... a vila nunca viu nada igual. Você é parte disso. Pegue, é o melhor que tenho."],
+			"objective": {"type": "deliver", "targets": ["minecraft:diamond_block"], "count": 2, "desc": "<y>Entregue</y> <y>2 blocos de diamante</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 48}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "auto_{key}_5_saqueadores", "tier": 5, "title": "Guardião da Oficina", "tone": "danger",
+			"offer": ["Os <r>saqueadores</r> estão rondando a vila. Querem levar tudo o que eu fiz na vida."],
+			"why": ["Se eles levarem as ferramentas de {profissao}, ninguém aqui consegue mais trabalhar."],
+			"accept": ["<r>Elimine 20 saqueadores</r>. Que a sorte te acompanhe."],
+			"progress": ["Eles ficam nos postos avançados, aquelas torres de madeira escura, e aparecem nos ataques à vila."],
+			"complete": ["A vila está segura graças a você. Nunca vou esquecer. Tome, você merece cada esmeralda."],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager", "minecraft:vindicator"], "count": 20, "desc": "<r>Elimine</r> <r>20 saqueadores</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 40}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

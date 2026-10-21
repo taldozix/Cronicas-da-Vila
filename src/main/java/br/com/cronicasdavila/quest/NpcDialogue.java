@@ -35,6 +35,14 @@ public class NpcDialogue {
 	public List<String> greet_night = new ArrayList<>();
 	/** Despedidas à noite. */
 	public List<String> bye_night = new ArrayList<>();
+	/** Saudação com chuva. */
+	public List<String> greet_rain = new ArrayList<>();
+	/** Saudação com tempestade (raios). */
+	public List<String> greet_storm = new ArrayList<>();
+	/** Saudações de sexta-feira, sábado e domingo (pelo calendário do jogo). */
+	public List<String> greet_friday = new ArrayList<>();
+	public List<String> greet_saturday = new ArrayList<>();
+	public List<String> greet_sunday = new ArrayList<>();
 	/** Começo da frase da recompensa, logo antes da lista de itens ("Se der conta do recado, te pago"). */
 	public List<String> reward_intro = new ArrayList<>();
 	/** Frase depois da lista de recompensas. */
@@ -103,6 +111,11 @@ public class NpcDialogue {
 		if (bye.isEmpty()) bye = common.bye;
 		if (greet_night.isEmpty()) greet_night = common.greet_night;
 		if (bye_night.isEmpty()) bye_night = common.bye_night;
+		if (greet_rain.isEmpty()) greet_rain = common.greet_rain;
+		if (greet_storm.isEmpty()) greet_storm = common.greet_storm;
+		if (greet_friday.isEmpty()) greet_friday = common.greet_friday;
+		if (greet_saturday.isEmpty()) greet_saturday = common.greet_saturday;
+		if (greet_sunday.isEmpty()) greet_sunday = common.greet_sunday;
 		if (reward_intro.isEmpty()) reward_intro = common.reward_intro;
 		if (reward_outro.isEmpty()) reward_outro = common.reward_outro;
 		if (lore_done.isEmpty()) lore_done = common.lore_done;

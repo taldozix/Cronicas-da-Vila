@@ -62,6 +62,29 @@
 		"Tchau! E corre pra casa, que zumbi não tem hora marcada.",
 		"Até amanhã! Se ouvir um chiado atrás de você... nem olha. Corre."
 	],
+	"greet_rain": [
+		"Ô, {player}, que chuvarada! Chega aqui debaixo do telhado.",
+		"Chuva boa pra plantação. Ruim pra quem esqueceu a roupa no varal.",
+		"Hrmm. Dia de chuva é dia de ficar em casa. Mas você é aventureiro, né? Não para nunca."
+	],
+	"greet_storm": [
+		"Que trovoada, {player}! Fica longe das árvores altas, viu?",
+		"Tempestade feia! Dizem que raio transforma aldeão em bruxa. Eu é que não saio de casa!"
+	],
+	"greet_friday": [
+		"Sextou, {player}! A semana foi longa, mas acabou!",
+		"Sexta-feira! A vila inteira já tá no clima do fim de semana.",
+		"Sextou! Hoje à noite tem conversa na praça e pão quentinho."
+	],
+	"greet_saturday": [
+		"Sábado é dia de feira! Passa lá, que sempre tem coisa boa.",
+		"Sábado de festa na praça! Vai ter música, comida e o bobão dançando.",
+		"Ô, sábado! Dia de descanso. Ou de arrumar a casa, que é quase a mesma coisa."
+	],
+	"greet_sunday": [
+		"Domingo, {player}. Almoço em família e cochilo depois. Tradição da vila.",
+		"Hrmm... domingo. Hoje ninguém tem pressa de nada."
+	],
 	"reward_intro": [
 		"Se der conta do recado, te pago",
 		"Fazendo isso pra mim, você leva",
@@ -137,22 +160,22 @@
 		"Fui!"
 	],
 	"names": [
-		"Seu Zé",
-		"Dona Cida",
-		"Tonhão",
-		"Dona Benta",
-		"Seu Lindolfo",
-		"Mariazinha",
-		"Dona Neném",
-		"Seu Juca",
-		"Toninho",
-		"Dona Fia",
-		"Seu Valdomiro",
-		"Rosinha",
-		"Seu Bené",
-		"Dona Lurdinha",
-		"Chico",
-		"Dona Zuleide"
+		"José",
+		"Maria",
+		"João",
+		"Antônia",
+		"Sebastião",
+		"Francisca",
+		"Luiz",
+		"Raimunda",
+		"Severino",
+		"Joana",
+		"Geraldo",
+		"Terezinha",
+		"Raimundo",
+		"Cícera",
+		"Osvaldo",
+		"Neusa"
 	],
 	"extra": {
 		"sleeping": [
@@ -171,7 +194,7 @@
 			"<r>Fica longe!</r> As histórias que contam de você chegam até as crianças. Elas não dormem mais."
 		],
 		"day_off": [
-			"Hoje é minha <y>folga</y>! Meu trabalho é pesado demais, então só trabalho um dia a cada três. Volta outro dia ou procura outro colega da mesma profissão.",
+			"Hoje é minha <y>folga</y>! Todo mundo aqui na vila tem o seu dia de descanso, e hoje é o meu. Volta outro dia ou procura outro colega da mesma profissão.",
 			"Hrmm, nada de serviço hoje. Tô de folga, descansando as costas. Deve ter outro aldeão da mesma profissão por aí.",
 			"<d>(o aldeão está esparramado num fardo de feno)</d> Folga, {player}. Volta daqui a uns dias, que aí eu tô novinho em folha."
 		],

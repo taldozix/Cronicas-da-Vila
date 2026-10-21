@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:experience_bottle", "count": 6}]
 		},
 		{
+			"id": "cleric_1_olhos",
+			"tier": 1,
+			"title": "Olhos que Tudo Veem",
+			"tone": "calm",
+			"offer": [
+				"Filho das estrelas, as <r>aranhas</r> enxergam no escuro com oito olhos. Os antigos diziam que elas veem até as almas.",
+				"Os <y>olhos de aranha</y> são ingredientes sagrados. Com eles, transformo a cura em veneno e o veneno em lição.",
+				"Meu frasco está vazio. E os espíritos andam inquietos."
+			],
+			"why": [
+				"Do olho fermentado nasce a poção de fraqueza. E é com fraqueza e uma maçã dourada que se cura um aldeão zumbi.",
+				"Cada olho que você traz é uma alma que pode voltar para casa."
+			],
+			"accept": [
+				"Que a luz te guie por entre as teias.",
+				"<g>Traga</g> <y>8 olhos de aranha</y>."
+			],
+			"progress": [
+				"Aranhas e aranhas de caverna deixam olhos. As bruxas, às vezes, também.",
+				"Sob a luz do sol, as aranhas ficam calmas. Mas não as provoque sem necessidade."
+			],
+			"complete": [
+				"Oito olhos. Sinto que ainda me observam. É um bom presságio. Eu acho.",
+				"Receba estas esmeraldas e pó de pedra luminosa, que torna as poções mais fortes."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:spider_eye"], "count": 8, "desc": "<g>Entregue</g> <y>8 olhos de aranha</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:glowstone_dust", "count": 8}]
+		},
+		{
 			"id": "cleric_2_verruga",
 			"tier": 2,
 			"title": "A Raiz de Toda Poção",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager"], "count": 25, "desc": "<r>Elimine</r> <r>25 zumbis</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "cleric_2_ametista",
+			"tier": 2,
+			"title": "Cristais que Cantam",
+			"tone": "calm",
+			"offer": [
+				"Ouça, filho das estrelas. Há lugares debaixo da terra onde a pedra canta. São os <a>geodos de ametista</a>.",
+				"Os cristais tilintam com uma música suave quando tocados. Os clérigos antigos usavam os <y>fragmentos de ametista</y> para acalmar os doentes.",
+				"Quero montar uma sala de cura com eles. Um lugar de silêncio e luz roxa."
+			],
+			"why": [
+				"Um doente calmo se cura mais depressa. A paz é metade do remédio. A outra metade é poção.",
+				"E você, <o>Aprendiz</o>, já sabe andar pelas cavernas. Os geodos estão esperando."
+			],
+			"accept": [
+				"Quebre os aglomerados de ametista com uma picareta. Os brotos menores ainda não estão maduros.",
+				"<g>Traga</g> <y>32 fragmentos de ametista</y>."
+			],
+			"progress": [
+				"Os geodos têm uma casca de basalto liso e calcita. Por dentro, tudo brilha em roxo.",
+				"Não quebre a ametista em broto. Ela não volta, e sem ela os cristais nunca mais crescem."
+			],
+			"complete": [
+				"Ouça como cantam... A sala de cura ficará pronta antes da lua cheia.",
+				"Receba esmeraldas, um diamante e garrafas de experiência. A sabedoria dos cristais agora é sua."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:amethyst_shard"], "count": 32, "desc": "<g>Entregue</g> <y>32 fragmentos de ametista</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "cleric_3_lagrimas",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 3}]
 		},
 		{
+			"id": "cleric_3_magma",
+			"tier": 3,
+			"title": "O Creme das Chamas",
+			"tone": "danger",
+			"offer": [
+				"Há uma poção que protege o corpo do fogo. Com ela, até a lava se torna gentil. Seu segredo é o <y>creme de magma</y>.",
+				"Ele vem dos <r>cubos de magma</r>, criaturas que saltam nos deltas de basalto do mundo inferior. Fogo vivo, em forma de geleia.",
+				"Os peregrinos que vão ao Nether precisam dessa proteção. E eu preciso do creme."
+			],
+			"why": [
+				"Cada poção de resistência ao fogo é um peregrino que volta vivo do mundo inferior.",
+				"É trabalho para <o>Aventureiro</o>. Os deltas são traiçoeiros: basalto, lava escondida e criaturas que pulam alto."
+			],
+			"accept": [
+				"Que as chamas não te reconheçam. Cuidado onde pisa.",
+				"<g>Traga</g> <y>12 cremes de magma</y>."
+			],
+			"progress": [
+				"Os cubos de magma se dividem em cubos menores ao serem derrotados. Persista até o último.",
+				"Também se faz creme de magma com pó de blaze e uma bola de slime. Os caminhos da cura são muitos."
+			],
+			"complete": [
+				"O creme brilha como brasa. Sinto o calor dos espíritos do fogo nele. Eles aprovam.",
+				"Receba diamantes, uma maçã dourada e um livro de <p>Proteção III</p>. Que nada te fira."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:magma_cream"], "count": 12, "desc": "<g>Entregue</g> <y>12 cremes de magma</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 3}]
+		},
+		{
 			"id": "cleric_4_totem",
 			"tier": 4,
 			"title": "O Totem Roubado",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:wither_skeleton_skull"], "count": 3, "desc": "<g>Entregue</g> <y>3 crânios de esqueleto murcho</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
+		},
+		{
+			"id": "cleric_4_shulkers",
+			"tier": 4,
+			"title": "As Almas das Caixas",
+			"tone": "danger",
+			"offer": [
+				"Tive outra visão, filho das estrelas. Ilhas flutuando no vazio, torres roxas e criaturas escondidas em caixas.",
+				"São os <r>shulkers</r>, guardiões das cidades do Fim. Seus projéteis fazem os corpos flutuarem até o céu... e depois caírem.",
+				"Os espíritos pedem que essas torres sejam libertadas. Eu não questiono os espíritos. Só às vezes."
+			],
+			"why": [
+				"Nas cidades do Fim existem tesouros antigos e as asas dos que voaram antes de nós. Mas ninguém chega lá com os shulkers acordados.",
+				"Só um <o>Guerreiro</o> atravessa o vazio. Ali, um passo em falso é uma queda sem fim."
+			],
+			"accept": [
+				"Leve pérolas do ender e baldes de água. E leite, para quebrar a levitação.",
+				"<r>Elimine 15 shulkers</r>."
+			],
+			"progress": [
+				"Os shulkers só ficam vulneráveis com a casca aberta. Ataque quando eles espiarem.",
+				"As cidades do Fim ficam nas ilhas distantes. Use o portal que surge depois que o dragão é derrotado."
+			],
+			"complete": [
+				"As torres estão em silêncio. Sinto as almas do Fim descansando. Obrigado, filho das estrelas.",
+				"Receba diamantes, maçãs douradas e um livro de <p>Peso Pena IV</p>. Para que toda queda seja suave."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:shulker"], "count": 15, "desc": "<r>Elimine</r> <r>15 shulkers</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
 		},
 		{
 			"id": "cleric_5_profecia",

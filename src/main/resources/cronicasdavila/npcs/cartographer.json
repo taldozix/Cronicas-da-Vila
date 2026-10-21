@@ -63,6 +63,29 @@
 		"Adeus, rapaz! E leve uma lanterna, que de noite o caminho é outro.",
 		"Vá com cuidado, pá! Se der de caras com um zumbi, mude de rumo. Fixe?"
 	],
+	"greet_rain": [
+		"Ó pá, que chuvada! Guarde os mapas, rapaz, que a tinta escorre toda!",
+		"Chuva, {player}! No mar a gente dizia: chuva miudinha não molha marinheiro. Mas esta é das grossas, pá!",
+		"Rapaz, com este tempo nem as gaivotas saem. Fique aqui, que eu mostro-lhe os mapas novos."
+	],
+	"greet_storm": [
+		"Ó pá, que trovoada! Já vi tempestades destas no alto mar. Perdi o chapéu e quase o barco!",
+		"Entre, entre, {player}! Com raios assim, nem a bússola se entende!"
+	],
+	"greet_friday": [
+		"Sextou, pá! Hoje fecho a mesa de cartografia mais cedo. Fixe!",
+		"Ó pá, sexta-feira! Dia de bacalhau, de conversa e de planear a viagem do fim de semana.",
+		"Sextou, rapaz! Os marinheiros já estão a cantar no cais. Que alegria, fixe, fixe!"
+	],
+	"greet_saturday": [
+		"Sábado, {player}! Dia de feira! Vou vender mapas da região a preço de amigo. Bem, quase.",
+		"Ó pá, sábado de festa na praça! Há sardinhas, música e o bobão a dançar. Imperdível!",
+		"Sábado é dia de passeio, rapaz. Vou ali à colina desenhar o pôr do sol. Fixe, não é?"
+	],
+	"greet_sunday": [
+		"Domingo, pá... almoço com a família. A minha avó faz um caldo verde que nem o mar tem igual.",
+		"Ó pá, domingo é para descansar. Hoje não desenho nem uma linha. Bem... talvez uma."
+	],
 	"reward_intro": [
 		"Ó pá, se fizer isso por mim, ganha",
 		"Pelo serviço, rapaz, pago-lhe",
@@ -118,7 +141,7 @@
 		"Ó pá, há trabalho? Estou pronto para explorar!"
 	],
 	"names": [
-		"Senhor Vasco", "Dona Inês", "Senhor Fernão", "Dona Leonor", "Senhor Bartolomeu", "Dona Beatriz", "Senhor Pedro Álvares",
-		"Dona Catarina", "Senhor Gil", "Dona Filipa"
+		"João", "Beatriz", "Manuel", "Inês", "Diogo", "Carla", "Tiago",
+		"Sofia", "Rui", "Mariana", "Nuno", "Teresa", "Vítor", "Raquel"
 	]
 }

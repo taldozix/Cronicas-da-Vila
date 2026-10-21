@@ -8,7 +8,7 @@ final class Guide {
 	static final String[][] TOPICS = {
 			{
 					"Como funciona",
-					"Aldeões, piglins, saqueadores, bruxas e shulkers contam histórias e passam <y>missões</y>. Cada um tem o seu jeito de falar, e as falas mudam com o bioma da vila e com a hora do dia.",
+					"Aldeões, piglins, saqueadores, bruxas, shulkers e o <a>Vendedor Ambulante</a> contam histórias e passam <y>missões</y>. Cada um tem o seu jeito de falar, e as falas mudam com o bioma da vila e com a hora do dia.",
 					"Cada missão é sorteada para você: a quantidade pedida e as recompensas variam um pouco, e às vezes vem um <a>bônus da sorte</a>.",
 					"Só dá para ter <y>uma missão ativa por profissão</y>. Volte a quem pediu (ou a qualquer NPC da mesma profissão) para entregar.",
 					"Cada NPC conta <y>uma curiosidade por dia</y>. Quer saber mais? Converse com outros, ou volte amanhã."
@@ -37,11 +37,13 @@ final class Guide {
 					"Barganha e trocas",
 					"Com afinidade <y>Aventureiro</y> ou mais com a profissão, aparece o botão <a>⚖ Barganhar</a> na tela de trocas.",
 					"Escolha a troca, ofereça outro item do inventário no lugar do preço e veja a chance antes de tentar. Se o aldeão recusar, você fica com o item, mas ele não barganha mais com você até amanhã.",
-					"Para conversar: aldeões com o botão direito; piglins usando ouro; saqueadores com uma <p>garrafa ominosa</p> na mão; bruxas com um <p>frasco de vidro</p>; shulkers com uma <p>fruta do coro</p>."
+					"Para conversar: aldeões com o botão direito; piglins usando ouro; saqueadores com uma <p>garrafa ominosa</p> na mão; bruxas com um <p>frasco de vidro</p>; shulkers com uma <p>fruta do coro</p>. O Vendedor Ambulante conversa com qualquer um (agachado, você abre direto as trocas)."
 			},
 			{
 					"Vida nas vilas",
-					"Fazendeiros, pescadores, açougueiros, pedreiros, ferramenteiros, ferreiros de armas e armeiros fazem trabalho pesado: só passam missões em alguns dias. Nos outros, estão de folga.",
+					"Cada aldeão tem o seu <y>dia de folga</y>, e cada vila tem o seu costume: a folga se repete a cada 3 a 7 dias, conforme a vila. Na folga o aldeão tira o uniforme, não trabalha, não passa missões e não abre a banca, mas fica com algo da profissão na mão. Os trabalhos pesados folgam dois dias por ciclo.",
+					"Os NPCs falam diferente com <a>chuva</a>, com <r>tempestade</r>, à noite e na <y>sexta, no sábado e no domingo</y>. O dia da semana aparece na aba Início.",
+					"Dizem que alguns clérigos se chamam <p>Elebin</p>... mas é raro encontrar um.",
 					"Se um aldeão te vir pegando coisas de um baú da vila que não é seu, você perde karma e os <r>golens</r> vão atrás de você. Baús que você colocou ou onde guardou coisas são seus.",
 					"À noite os NPCs falam diferente. E se estiverem dormindo... deixe-os dormir."
 			},

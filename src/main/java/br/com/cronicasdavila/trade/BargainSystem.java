@@ -66,7 +66,7 @@ public final class BargainSystem {
 	}
 
 	private static boolean eligible(PlayerData data, String profession) {
-		if (!Professions.VILLAGER_PROFESSIONS.contains(profession)) {
+		if (!Professions.VILLAGER_PROFESSIONS.contains(profession) && !Professions.MODDED.contains(profession)) {
 			return false;
 		}
 

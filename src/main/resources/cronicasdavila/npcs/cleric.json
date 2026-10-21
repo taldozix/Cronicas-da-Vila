@@ -63,6 +63,29 @@
 		"Boa noite, filho das estrelas. Que os sonhos sejam leves e os zumbis, lentos.",
 		"Até amanhã. Vou acender uma vela por você. Por precaução, duas."
 	],
+	"greet_rain": [
+		"A chuva é o céu chorando de alegria, {player}. Ou de tristeza. Os espíritos não especificaram.",
+		"Chove... As plantas bebem, os fornos esfriam e as almas descansam. Entre, filho das estrelas.",
+		"Sente o cheiro da terra molhada? É o perfume mais antigo do mundo. Mais antigo que as poções."
+	],
+	"greet_storm": [
+		"Tempestade, filho das estrelas. O céu está reescrevendo destinos. Fique sob um teto até ele terminar.",
+		"Ouça os trovões... São os ancestrais discutindo. Melhor não se meter na conversa deles."
+	],
+	"greet_friday": [
+		"Sextou, filho das estrelas. Até os espíritos ficam mais leves na sexta-feira.",
+		"Sexta-feira... Acendi uma vela de agradecimento pela semana. Ela queimou alegre. Sextou.",
+		"Sextou, {player}. Hoje o caldeirão descansa, e eu também. Só um pouquinho."
+	],
+	"greet_saturday": [
+		"Sábado, dia de feira. Levarei poções de cura para vender. A preço justo, como manda a luz.",
+		"Sábado de festa na praça. Abençoarei os quitutes antes que o bobão coma todos.",
+		"Sábado é dia de descanso para o corpo. A alma, essa, descansa quando quer."
+	],
+	"greet_sunday": [
+		"Domingo, filho das estrelas. Dia de almoço em família e de silêncio no templo.",
+		"Hrmm... domingo. Até os espíritos dormem até mais tarde. Eu os respeito profundamente."
+	],
 	"reward_intro": [
 		"Os espíritos prometem, e eu entrego",
 		"Ao fim desta jornada, os astros lhe reservam",
@@ -118,7 +141,21 @@
 		"Há alguma missão sagrada?"
 	],
 	"names": [
-		"Irmão Benedito", "Irmã Clara", "Padre Aurélio", "Madre Celina", "Irmão Francisco", "Irmã Lúcia", "Frei Tobias",
-		"Irmã Glória", "Irmão Anselmo", "Irmã Rita"
-	]
+		"Francisco", "Rita", "Benedito", "Luzia", "José", "Graça", "Miguel",
+		"Aparecida", "Gabriel", "Fátima", "Samuel", "Lourdes", "Rafaela", "Conceição"
+	],
+	"extra": {
+		"elebin_greet": [
+			"Olá, {player}. Eu sou <a>Elebin</a>. Cheguei com o vento da manhã e devo partir com o da tarde. Mas, por agora, estou aqui.",
+			"Ah... {player}. Já ouvi seu nome em três vilas diferentes. Todas falaram bem. As estrelas também.",
+			"Sente-se um pouco, viajante. Dizem que minha bênção traz sorte. Eu digo que a sorte já estava em você. Eu só a acordo.",
+			"Raramente fico muito tempo num lugar, {player}. Mas sempre fico o bastante para quem precisa de mim.",
+			"Bem-vindo. Sou um andarilho que cura. Não me pergunte de onde venho: nem eu me lembro mais de todas as estradas."
+		],
+		"elebin_lore": [
+			"Quando eu era menino, um velho clérigo me ensinou a ler as <a>estrelas</a>. Ele dizia que cada uma é uma vela acesa por alguém que cuidou de outra pessoa. Desde então, toda noite eu procuro uma estrela nova no céu. E sempre encontro.",
+			"Certa vez, numa vila do deserto, uma menina adoeceu e eu não tinha poção nenhuma. Sentei ao lado dela, contei histórias até o amanhecer e dividi o meu pão. Ela melhorou. Aprendi ali que a <g>cura</g> nem sempre vem do caldeirão. Às vezes vem da companhia.",
+			"Já visitei vilas na neve, no pântano, na savana e na beira do mar. Em todas encontrei a mesma coisa: alguém que planta, alguém que protege e alguém que sorri sem motivo. Por isso nunca fico muito tempo. Cada vila me lembra que o mundo é bom, e eu preciso levar essa lembrança para a próxima."
+		]
+	}
 }

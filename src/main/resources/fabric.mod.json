@@ -3,7 +3,7 @@
 	"id": "cronicasdavila",
 	"version": "${version}",
 	"name": "Crônicas da Vila",
-	"description": "RPG de missões com aldeões e piglins: diálogos no estilo Zelda BotW, níveis de Amador a Mestre, karma e diário de missões. Tudo em português do Brasil.",
+	"description": "RPG de missões com aldeões, piglins, bruxas e o Vendedor Ambulante: diálogos no estilo Zelda BotW, níveis de Amador a Mestre, karma e diário de missões. Tudo em português do Brasil.",
 	"authors": ["luizinfb87"],
 	"license": "MIT",
 	"icon": "assets/cronicasdavila/icon.png",
@@ -12,6 +12,7 @@
 		"main": ["br.com.cronicasdavila.CronicasDaVila"],
 		"client": ["br.com.cronicasdavila.client.CronicasDaVilaClient"]
 	},
+	"mixins": ["cronicasdavila.mixins.json"],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",

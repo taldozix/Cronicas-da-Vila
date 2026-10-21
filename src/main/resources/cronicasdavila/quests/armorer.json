@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:iron_chestplate", "count": 1}]
 		},
 		{
+			"id": "armorer_1_couro",
+			"tier": 1,
+			"title": "Forro de Couro",
+			"tone": "calm",
+			"offer": [
+				"Viajante. Uma pergunta: o que fica entre o metal e o corpo de quem veste a armadura?",
+				"<y>Couro</y>. Correias, forros, fivelas. Sem couro, nenhuma placa de ferro fica no lugar. E meu estoque acabou.",
+				"Não peço muito. Apenas o suficiente para os guardas novos."
+			],
+			"why": [
+				"Uma armadura que escorrega no meio da luta é pior que nenhuma armadura. O detalhe salva vidas.",
+				"E aprender a caçar com calma é o primeiro passo para lutar com calma."
+			],
+			"accept": [
+				"Vacas soltam couro. Não leve todas. Deixe algumas para o fazendeiro.",
+				"<g>Traga</g> <y>16 couros</y>."
+			],
+			"progress": [
+				"Cada vaca solta até dois couros. Com Saque na espada, solta mais.",
+				"Quatro peles de coelho, na bancada, viram um couro. Nada se desperdiça."
+			],
+			"complete": [
+				"Couro bom. Grosso, flexível. Os guardas vão vestir as armaduras sem reclamar. Ou reclamar menos.",
+				"Aceite este ferro e botas de ferro. Quem pisa firme, luta firme."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:leather"], "count": 16, "desc": "<g>Entregue</g> <y>16 couros</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:iron_boots", "count": 1}]
+		},
+		{
 			"id": "armorer_2_ouro",
 			"tier": 2,
 			"title": "O Brilho que Engana",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 25, "desc": "<r>Elimine</r> <r>25 aranhas</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:shield", "count": 1}]
+		},
+		{
+			"id": "armorer_2_cobre",
+			"tier": 2,
+			"title": "O Brilho do Cobre",
+			"tone": "calm",
+			"offer": [
+				"Os jovens da vila querem aprender a lutar. Mas ferro é caro demais para quem ainda está começando.",
+				"Existe uma alternativa: o <y>cobre</y>. Mais fraco que o ferro, porém fácil de trabalhar. Serve para o treino.",
+				"Preciso de lingotes. Com eles, forjo armaduras de treino para os mais velhos entre as crianças."
+			],
+			"why": [
+				"Quem treina com armadura aprende a se mover com ela. Quando chegar a hora do ferro, já conhece o peso.",
+				"E você, <o>Aprendiz</o>, sabe minerar. Cobre não falta debaixo da terra."
+			],
+			"accept": [
+				"Derreta o cobre bruto na fornalha. Um lingote para cada pedaço.",
+				"<g>Traga</g> <y>32 lingotes de cobre</y>."
+			],
+			"progress": [
+				"Cavernas com estalactites e estalagmites costumam ter muito cobre.",
+				"Blocos de cobre ficam verdes com o tempo. Lingotes não. Não se preocupe com isso."
+			],
+			"complete": [
+				"Brilho alaranjado. Bonito, para quem gosta. Os jovens já disputam quem veste primeiro.",
+				"Aceite esmeraldas, um diamante e um livro de <p>Proteção contra Projéteis</p>. Flechas são o primeiro perigo de todo guarda."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:copper_ingot"], "count": 32, "desc": "<g>Entregue</g> <y>32 lingotes de cobre</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:projectile_protection", "level": 2}]
 		},
 		{
 			"id": "armorer_3_moldes",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:aqua_affinity", "level": 1}]
 		},
 		{
+			"id": "armorer_3_tartarugas",
+			"tier": 3,
+			"title": "O Casco da Tartaruga",
+			"tone": "calm",
+			"offer": [
+				"Há um capacete que poucos conhecem. Feito de <y>escamas de tartaruga</y>. Permite respirar um pouco mais debaixo d'água.",
+				"As tartarugas só deixam escamas quando crescem. Cada filhote que vira adulto larga uma. É trabalho de paciência, não de espada.",
+				"Os guardas da costa precisam desses capacetes. Eu preciso das escamas."
+			],
+			"why": [
+				"Um guarda que se afoga no resgate vira mais uma vítima. Alguns segundos de ar podem salvar duas vidas.",
+				"É trabalho para <o>Aventureiro</o>. Exige viagem, cuidado e proteger os ninhos dos monstros."
+			],
+			"accept": [
+				"Alimente duas tartarugas com ervas marinhas. A mãe volta à praia onde nasceu para botar os ovos.",
+				"<g>Traga</g> <y>5 escamas de tartaruga</y>."
+			],
+			"progress": [
+				"Zumbis pisam nos ovos de propósito. Proteja o ninho com cerca e luz.",
+				"Os ovos chocam mais depressa à noite. Os filhotes largam a escama ao virarem adultos."
+			],
+			"complete": [
+				"Cinco escamas. Um capacete inteiro. Paciência é uma virtude rara. Você a tem.",
+				"Aceite diamantes, uma maçã dourada e um livro de <p>Respiração III</p>. O mar não perdoa quem perde o fôlego."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:turtle_scute"], "count": 5, "desc": "<g>Entregue</g> <y>5 escamas de tartaruga</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
+		},
+		{
 			"id": "armorer_4_shulkers",
 			"tier": 4,
 			"title": "Cascas do Fim",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:diamond"], "count": 24, "desc": "<g>Entregue</g> <y>24 diamantes</y>"},
 			"rewards": [{"item": "minecraft:emerald_block", "count": 3}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:thorns", "level": 3}, {"item": "minecraft:netherite_scrap", "count": 2}]
+		},
+		{
+			"id": "armorer_4_brutos",
+			"tier": 4,
+			"title": "Os Guardas do Bastião",
+			"tone": "danger",
+			"offer": [
+				"Nos <a>bastiões</a> do Nether vivem guerreiros que não se deixam comprar: os <r>piglins brutos</r>.",
+				"Ouro não os acalma. Armadura de ouro não os engana. Carregam machados dourados e atacam qualquer um.",
+				"Quero ver como lutam. E quero os bastiões sem guarda. Há tesouros lá dentro de que a vila precisa."
+			],
+			"why": [
+				"Os baús dos bastiões guardam detritos, moldes e lingotes. Material para a próxima geração de armaduras.",
+				"Só um <o>Guerreiro</o> entra num bastião. Lava em volta, piglins em cima e brutos em cada corredor."
+			],
+			"accept": [
+				"Leve escudo. Os machados deles quebram a defesa de quem não está preparado.",
+				"<r>Elimine 6 piglins brutos</r>."
+			],
+			"progress": [
+				"Os brutos não renascem. Cada um que cai é um a menos no bastião, para sempre.",
+				"Não abra baús perto dos outros piglins. Eles ficam furiosos e atacam juntos."
+			],
+			"complete": [
+				"Seis brutos. Os bastiões estão abertos. Você lutou como eu luto: sem pressa e sem medo.",
+				"Aceite diamantes, maçãs douradas e um livro de <p>Proteção contra Explosões IV</p>. No Nether, tudo explode cedo ou tarde."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:piglin_brute"], "count": 6, "desc": "<r>Elimine</r> <r>6 piglins brutos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:blast_protection", "level": 4}]
 		},
 		{
 			"id": "armorer_5_wither",

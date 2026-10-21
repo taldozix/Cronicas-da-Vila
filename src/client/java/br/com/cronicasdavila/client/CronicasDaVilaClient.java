@@ -54,6 +54,8 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		ClientConfig.load();
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
+			OffDutyClient.tick(client);
+
 			while (journalKey.consumeClick()) {
 				if (client.player != null && client.gui.screen() == null) {
 					client.gui.setScreen(new MenuScreen(null, "inicio"));
@@ -70,7 +72,10 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 
 		ClientPlayNetworking.registerGlobalReceiver(ModPayloads.DialoguePayload.TYPE, (payload, context) -> handleDialogue(payload.json()));
 		ClientPlayNetworking.registerGlobalReceiver(ModPayloads.SyncPayload.TYPE, (payload, context) -> ClientState.update(payload.json()));
-		ClientPlayConnectionEvents.DISCONNECT.register((listener, client) -> ClientState.clear());
+		ClientPlayConnectionEvents.DISCONNECT.register((listener, client) -> {
+			ClientState.clear();
+			OffDutyClient.clear();
+		});
 
 		// Botão "Missões" no inventário (a nova "aba" de missões).
 		ScreenEvents.AFTER_INIT.register((client, screen, width, height) -> {
@@ -130,6 +135,11 @@ public class CronicasDaVilaClient implements ClientModInitializer {
 		JsonObject node = JsonParser.parseString(json).getAsJsonObject();
 		String type = node.get("type").getAsString();
 		Screen current = client.gui.screen();
+
+		if (type.equals("off_duty")) {
+			OffDutyClient.update(node.getAsJsonArray("ids"));
+			return;
+		}
 
 		if (type.equals("trade_context")) {
 			ClientState.setTradeContext(node);

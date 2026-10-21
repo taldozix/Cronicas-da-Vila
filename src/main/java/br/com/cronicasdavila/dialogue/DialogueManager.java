@@ -85,7 +85,7 @@ public final class DialogueManager {
 			return false;
 		}
 
-		if (type.equals("minecraft:villager")) {
+		if (type.equals("minecraft:villager") || type.equals("minecraft:wandering_trader")) {
 			return true;
 		}
 
@@ -145,6 +145,13 @@ public final class DialogueManager {
 			profession = Professions.SHULKER;
 		} else if (kind.equals("witch")) {
 			profession = Professions.WITCH;
+		} else if (kind.equals("wandering_trader")) {
+			if (npc instanceof net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader trader && trader.isTrading()) {
+				return InteractionResult.PASS;
+			}
+
+			profession = Professions.WANDERING_TRADER;
+			kind = "trader";
 		} else if (npc.isBaby()) {
 			kind = "villager";
 			biome = npc instanceof Villager villager ? VanillaCompat.villagerType(villager) : null;
@@ -163,6 +170,7 @@ public final class DialogueManager {
 
 		NpcDialogue lines = QuestRegistry.dialogue(profession, biome);
 		DialogueSession session = new DialogueSession(player, npc, profession, npcName(npc, lines), kind, lines);
+		session.elebin = isElebin(npc);
 		SESSIONS.put(player.getUUID(), session);
 		freeze(session);
 		onConversationStart(session);
@@ -170,9 +178,27 @@ public final class DialogueManager {
 		return InteractionResult.SUCCESS;
 	}
 
+	/** Chance de um clérigo ser Elebin, o evento raro. */
+	private static final int ELEBIN_CHANCE = 15;
+
+	/** Esse clérigo é Elebin? (15% dos clérigos, sempre os mesmos.) */
+	public static boolean isElebin(Mob npc) {
+		if (!(npc instanceof Villager villager) || villager.isBaby() || (npc.hasCustomName() && npc.getCustomName() != null)
+				|| !VanillaCompat.professionKey(villager).equals("cleric")) {
+			return false;
+		}
+
+		long bits = npc.getUUID().getLeastSignificantBits() ^ 0x5DEECE66DL;
+		return Math.floorMod(Long.hashCode(bits * 31 + 17), 100) < ELEBIN_CHANCE;
+	}
+
 	public static String npcName(Mob npc, NpcDialogue lines) {
 		if (npc.hasCustomName() && npc.getCustomName() != null) {
 			return npc.getCustomName().getString();
+		}
+
+		if (isElebin(npc)) {
+			return "Elebin";
 		}
 
 		if (lines.names.isEmpty()) {
@@ -409,6 +435,8 @@ public final class DialogueManager {
 			case "pillager" -> happy ? SoundEvents.PILLAGER_CELEBRATE : SoundEvents.PILLAGER_AMBIENT;
 			case "shulker" -> happy ? SoundEvents.SHULKER_AMBIENT : SoundEvents.SHULKER_OPEN;
 			case "witch" -> happy ? SoundEvents.WITCH_CELEBRATE : SoundEvents.WITCH_AMBIENT;
+			case "trader" -> villagerSound == SoundEvents.VILLAGER_NO ? SoundEvents.WANDERING_TRADER_NO
+					: happy ? SoundEvents.WANDERING_TRADER_YES : SoundEvents.WANDERING_TRADER_AMBIENT;
 			default -> villagerSound;
 		};
 		level.playSound(null, session.npc.getX(), session.npc.getY(), session.npc.getZ(), sound, SoundSource.NEUTRAL, 1.0F,
@@ -435,6 +463,7 @@ public final class DialogueManager {
 			case "pillager" -> "villain";
 			case "shulker" -> "end";
 			case "witch" -> "swamp";
+			case "trader" -> "trader";
 			default -> "neutral";
 		};
 	}
@@ -471,6 +500,11 @@ public final class DialogueManager {
 			return;
 		}
 
+		if (session.kind.equals("trader")) {
+			traderOpening(session, karma);
+			return;
+		}
+
 		if (session.kind.equals("villager") && QuestService.isVillain(data)) {
 			speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
 			show(session, List.of(pick(session, lines.extra("villain_seen"), "<r>É O VILÃO DA HISTÓRIA!</r> Socorro! Alguém chama o golem!")),
@@ -483,12 +517,17 @@ public final class DialogueManager {
 			return;
 		}
 
+		if (session.elebin) {
+			elebinOpening(session, data);
+			return;
+		}
+
 		List<String> greetings;
 
 		if (karma.atMost(KarmaTier.SUSPEITO)) {
 			greetings = lines.greet_cold;
-		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
-			greetings = lines.greet_night;
+		} else if (situational(session) != null) {
+			greetings = situational(session);
 		} else if (karma.atLeast(KarmaTier.CONFIAVEL)) {
 			greetings = lines.greet_friendly;
 		} else {
@@ -521,8 +560,8 @@ public final class DialogueManager {
 
 		if (data.karma >= 100) {
 			greetings = lines.greet_cold;
-		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
-			greetings = lines.greet_night;
+		} else if (situational(session) != null) {
+			greetings = situational(session);
 		} else if (data.karma <= -100 || QuestService.isVillain(data)) {
 			greetings = lines.greet_friendly;
 		} else {
@@ -571,8 +610,8 @@ public final class DialogueManager {
 		boolean known = progress != null && progress.totalDone > 0;
 		List<String> greetings;
 
-		if (isNight(session) && !lines.greet_night.isEmpty()) {
-			greetings = lines.greet_night;
+		if (situational(session) != null) {
+			greetings = situational(session);
 		} else if (known || data.karma <= -100 || QuestService.isVillain(data)) {
 			greetings = lines.greet_friendly;
 		} else if (data.karma >= 100) {
@@ -582,6 +621,83 @@ public final class DialogueManager {
 		}
 
 		mainMenu(session, pick(session, greetings, "Hihihi... Visita! Faz tanto tempo que ninguém aparece."));
+	}
+
+	/** Vendedor Ambulante: misterioso, brincalhão e às vezes de mau humor. */
+	private static void traderOpening(DialogueSession session, KarmaTier karma) {
+		NpcDialogue lines = session.lines;
+
+		if (karma.atMost(KarmaTier.ODIADO)) {
+			hostileNode(session);
+			return;
+		}
+
+		if (karma.atMost(KarmaTier.SUSPEITO) || session.player.getRandom().nextInt(100) < 20) {
+			speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_ANGRY);
+			mainMenu(session, pick(session, lines.extra("random_hostile"), "Hmpf. Olha, mas não encosta em nada."));
+			return;
+		}
+
+		List<String> greetings = situational(session);
+
+		if (greetings == null) {
+			greetings = karma.atLeast(KarmaTier.CONFIAVEL) ? lines.greet_friendly : lines.greet_neutral;
+		}
+
+		mainMenu(session, pick(session, greetings, "O que vai levar, forasteiro?"));
+	}
+
+	/** Elebin, o clérigo raro: um encontro especial. */
+	private static void elebinOpening(DialogueSession session, PlayerData data) {
+		List<String> pages = new ArrayList<>();
+		pages.add(pick(session, session.lines.extra("elebin_greet"), "Ah... você me encontrou, {player}. Pouca gente me encontra. Eu sou <p>Elebin</p>."));
+
+		if (!data.metElebin) {
+			data.metElebin = true;
+			PlayerDataManager.save(session.player);
+			br.com.cronicasdavila.net.Notify.celebrate(session.player, "Encontro raro!", "Você conheceu Elebin, o clérigo lendário", 0xC77DFF);
+			ServerLevel level = (ServerLevel) session.npc.level();
+			level.sendParticles(ParticleTypes.ENCHANT, session.npc.getX(), session.npc.getEyeY(), session.npc.getZ(), 40, 0.5, 0.6, 0.5, 0.6);
+		}
+
+		speak(session, SoundEvents.VILLAGER_CELEBRATE, SoundEvents.PIGLIN_CELEBRATE);
+		mainMenu(session, pages.get(0));
+	}
+
+	/**
+	 * Saudação do momento: tempestade, chuva, noite ou o dia da semana (sexta, sábado, domingo).
+	 * Null quando não há nada especial (ou o NPC não tem falas próprias para isso).
+	 */
+	private static List<String> situational(DialogueSession session) {
+		if (session.situational != null) {
+			return session.situational.isEmpty() ? null : session.situational;
+		}
+
+		NpcDialogue lines = session.lines;
+		List<String> result = null;
+
+		if (VanillaCompat.isThundering(session.npc) && own(session, lines.greet_storm, QuestRegistry.common().greet_storm)) {
+			result = lines.greet_storm;
+		} else if (VanillaCompat.isRainingAt(session.npc) && own(session, lines.greet_rain, QuestRegistry.common().greet_rain)) {
+			result = lines.greet_rain;
+		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
+			result = lines.greet_night;
+		} else if (session.player.getRandom().nextInt(100) < 60) {
+			result = switch (VanillaCompat.weekday(session.npc.level())) {
+				case 5 -> own(session, lines.greet_friday, QuestRegistry.common().greet_friday) ? lines.greet_friday : null;
+				case 6 -> own(session, lines.greet_saturday, QuestRegistry.common().greet_saturday) ? lines.greet_saturday : null;
+				case 0 -> own(session, lines.greet_sunday, QuestRegistry.common().greet_sunday) ? lines.greet_sunday : null;
+				default -> null;
+			};
+		}
+
+		session.situational = result == null ? List.of() : result;
+		return result;
+	}
+
+	/** Falas que servem para esse NPC: as dos aldeões valem para todos os aldeões; os outros só usam as próprias. */
+	private static boolean own(DialogueSession session, List<String> lines, List<String> common) {
+		return !lines.isEmpty() && (session.kind.equals("villager") || lines != common);
 	}
 
 	private static boolean wearsGold(ServerPlayer player) {
@@ -623,7 +739,7 @@ public final class DialogueManager {
 				choices.add(new Choice("work", pick(session, session.lines.player_work, "Tem algum trabalho pra mim?"), "quest", () -> offerQuest(session)));
 			}
 		} else if (Professions.UNEMPLOYED.equals(session.profession) || Professions.NITWIT.equals(session.profession)
-				|| Professions.CHILD.equals(session.profession)) {
+				|| Professions.CHILD.equals(session.profession) || session.kind.equals("trader")) {
 			choices.add(new Choice("work", pick(session, session.lines.player_work, "Tem algum trabalho pra mim?"), "quest", () -> noWork(session)));
 		}
 
@@ -635,7 +751,7 @@ public final class DialogueManager {
 			choices.add(new Choice("rep", "Como eu tô com vocês?", "info", () -> reputation(session)));
 		}
 
-		if (session.npc instanceof Villager && questGiver && !session.npc.isBaby()) {
+		if ((session.npc instanceof Villager && questGiver || session.kind.equals("trader")) && !session.npc.isBaby()) {
 			choices.add(new Choice("trade", "Bora negociar.", "trade", () -> trade(session)));
 		}
 
@@ -675,6 +791,12 @@ public final class DialogueManager {
 	}
 
 	private static void noWork(DialogueSession session) {
+		if (session.kind.equals("trader")) {
+			show(session, List.of(pick(session, session.lines.extra("no_work"),
+					"Trabalho? Hehehe... Eu vendo, forasteiro. Não contrato.")), backOrBye(session), toneFor(session));
+			return;
+		}
+
 		show(session, List.of(pick(session, session.lines.extra("no_profession"),
 				"Trabalho? Eu? Nem eu tenho trabalho, como é que vou te dar um?")), backOrBye(session), toneFor(session));
 	}
@@ -695,7 +817,7 @@ public final class DialogueManager {
 		if (onDayOff(session)) {
 			speak(session, SoundEvents.VILLAGER_NO, SoundEvents.PIGLIN_AMBIENT);
 			show(session, List.of(pick(session, session.lines.extra("day_off"),
-					"Hoje é minha folga, {player}. Meu serviço é pesado: só pego no batente uma vez a cada 3 dias. Volte outro dia, ou procure outro colega da profissão.")),
+					"Hoje é minha folga, {player}! Nada de serviço. Volte outro dia, ou procure outro colega da profissão.")),
 					backOrBye(session), toneFor(session));
 			return;
 		}
@@ -916,6 +1038,11 @@ public final class DialogueManager {
 
 		List<List<String>> stories = session.lines.lore;
 		List<String> story = stories.get(Math.floorMod(session.loreIndex, stories.size()));
+		List<String> elebinLore = session.lines.extra("elebin_lore");
+
+		if (session.elebin && !elebinLore.isEmpty() && player.getRandom().nextBoolean()) {
+			story = List.of(pick(session, elebinLore, ""));
+		}
 		data.loreDay.put(npc, day);
 		data.loreDay.values().removeIf(value -> value < day);
 		PlayerDataManager.save(player);
@@ -926,18 +1053,9 @@ public final class DialogueManager {
 		return VanillaCompat.isNight(session.npc.level());
 	}
 
-	/** Aldeões de trabalho pesado só trabalham um dia a cada 3 (cada um no seu dia, para a vila não parar). */
+	/** O aldeão está de folga hoje? (Cada vila tem o seu ciclo; veja {@link br.com.cronicasdavila.village.OffDutySystem}.) */
 	public static boolean onDayOff(DialogueSession session) {
-		br.com.cronicasdavila.config.ModSettings.Values settings = br.com.cronicasdavila.config.ModSettings.get();
-
-		if (!settings.heavyDayOff || !(session.npc instanceof Villager) || !Professions.HEAVY_PROFESSIONS.contains(session.profession)) {
-			return false;
-		}
-
-		int every = Math.max(1, settings.heavyEveryDays);
-		long day = VanillaCompat.day(session.npc.level());
-		int offset = Math.floorMod(session.npc.getUUID().hashCode(), every);
-		return (day + offset) % every != 0;
+		return session.npc instanceof Villager villager && br.com.cronicasdavila.village.OffDutySystem.isOff(villager);
 	}
 
 	private static void reputation(DialogueSession session) {
@@ -1005,8 +1123,26 @@ public final class DialogueManager {
 	private static void trade(DialogueSession session) {
 		ServerPlayer player = session.player;
 
+		if (session.npc instanceof net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader trader) {
+			String line = pick(session, session.lines.extra("trade_open"), "");
+			close(player, true);
+
+			if (!line.isEmpty()) {
+				player.sendOverlayMessage(br.com.cronicasdavila.util.Text.parse("<a>" + session.npcName + ":</a> " + fill(session, line)));
+			}
+
+			VanillaCompat.openTrade(trader, player);
+			return;
+		}
+
 		if (!(session.npc instanceof Villager villager)) {
 			backToMenu(session);
+			return;
+		}
+
+		if (onDayOff(session)) {
+			show(session, List.of(pick(session, session.lines.extra("closed"),
+					"Hoje a banca tá fechada, {player}. É minha folga! Volta amanhã que eu faço preço bom.")), backOrBye(session), toneFor(session));
 			return;
 		}
 

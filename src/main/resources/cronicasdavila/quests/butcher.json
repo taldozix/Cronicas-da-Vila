@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_beef", "count": 12}]
 		},
 		{
+			"id": "butcher_1_carvao",
+			"tier": 1,
+			"title": "Carvão pro Fogo de Chão",
+			"tone": "calm",
+			"offer": [
+				"Bah, tchê, tu sabe qual é o segredo de um churrasco tri? Não é a carne. É o <y>fogo</y>.",
+				"E fogo bom é de carvão vegetal, feito de lenha boa, que queima devagar e não deixa gosto ruim na costela.",
+				"Só que meu estoque acabou e eu não posso largar o balcão. Me dá uma mão, guri?"
+			],
+			"why": [
+				"Carne assada em fogo ruim fica crua por dentro e queimada por fora. Isso é crime aqui no açougue, tchê.",
+				"E carvão serve pra tudo na vila: tocha, forno, ferraria. Nunca sobra, só falta."
+			],
+			"accept": [
+				"Barbaridade, valeu! Queima tora de madeira na fornalha que sai carvão vegetal.",
+				"<g>Traga</g> <y>32 carvões vegetais</y>."
+			],
+			"progress": [
+				"Coloca as toras em cima da fornalha e um combustível embaixo. Dá até pra usar o próprio carvão pra queimar mais.",
+				"Qualquer madeira serve: carvalho, pinheiro, bétula... Cada tora vira um carvão."
+			],
+			"complete": [
+				"Isso sim é carvão, tchê! Já tô até ouvindo o chiado da gordura pingando na brasa.",
+				"Toma umas esmeraldas e umas bistecas de porco assadas nesse carvão mesmo. Tri, né?"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:charcoal"], "count": 32, "desc": "<g>Entregue</g> <y>32 carvões vegetais</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:cooked_porkchop", "count": 8}]
+		},
+		{
 			"id": "butcher_2_defumados",
 			"tier": 2,
 			"title": "Estoque do Defumador",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:cave_spider"], "count": 12, "desc": "<r>Elimine</r> <r>12 aranhas de caverna</r>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:cooked_porkchop", "count": 12}]
+		},
+		{
+			"id": "butcher_2_slimes",
+			"tier": 2,
+			"title": "Gosma no Galpão",
+			"tone": "danger",
+			"offer": [
+				"Tchê, tu não vai acreditar. Fui buscar sal no galpão do brejo e tinha uma <r>gosma verde</r> pulando lá dentro.",
+				"Dei uma facada nela e ela virou DUAS. Dei mais uma e virou QUATRO. Barbaridade, saí correndo!",
+				"São os <r>slimes</r>, guri. Vêm do pântano nas noites de lua e não param de se multiplicar."
+			],
+			"why": [
+				"Sem sal, não tem charque. E sem charque a vila passa o inverno comendo só pão. Isso não é vida, tchê.",
+				"E se essas gosmas chegarem no açougue, adeus higiene. Meu balcão é limpo que nem espelho."
+			],
+			"accept": [
+				"Bah, tu é dos meus! Vai preparado, que slime grande bate forte e pula alto.",
+				"<r>Elimine 20 slimes</r>. Os pequenos que saem dos grandes também contam."
+			],
+			"progress": [
+				"Slime aparece nos pântanos de noite, mais ainda na lua cheia. Em noite de lua nova, nenhum.",
+				"Também tem slime bem lá embaixo, em certos pedaços do subterrâneo. Se achar um, volta lá que tem mais."
+			],
+			"complete": [
+				"O galpão tá limpinho, tchê! Peguei o sal e já tem charque secando no varal.",
+				"Toma ferro, um diamante e uns bifes assados. E as bolas de slime que tu juntou, guarda: dá pra fazer coisa boa."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 20, "desc": "<r>Elimine</r> <r>20 slimes</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:cooked_beef", "count": 12}]
 		},
 		{
 			"id": "butcher_3_hoglins",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 2}]
 		},
 		{
+			"id": "butcher_3_porcos_zumbis",
+			"tier": 3,
+			"title": "Os Porcos Sem Paz",
+			"tone": "danger",
+			"offer": [
+				"Guri, lembra que eu te falei dos hoglins? Pois tem outra praga lá no <n>Nether</n>: os <r>piglins zumbis</r>.",
+				"Uns porcões podres, de espada de ouro, que andam em bando. Eles tão cercando a saída do portal por onde chega o ouro dos piglins.",
+				"Mexeu com um, mexeu com todos, tchê. Já vi tropeiro voltar sem as botas."
+			],
+			"why": [
+				"Os piglins pagam minha carne com ouro. Sem a passagem livre, não tem negócio, e sem negócio o açougue fecha.",
+				"Tu já é <o>Aventureiro</o>, tchê. Bando de porco podre não assusta quem já viu o que tu viu."
+			],
+			"accept": [
+				"Bah, valeu! Vai de armadura completa e luta com as costas numa parede.",
+				"<r>Elimine 20 piglins zumbis</r> no Nether."
+			],
+			"progress": [
+				"Eles ficam calmos até alguém bater em um. Aí o bando inteiro vem junto, e a raiva dura um bom tempo.",
+				"Eles deixam cair pepita de ouro e às vezes até lingote. Junta tudo, que dá pra fazer coisa boa."
+			],
+			"complete": [
+				"A passagem tá livre e o ouro dos piglins voltou a chegar! Barbaridade, tchê, tu é bagual!",
+				"Toma diamantes, uma maçã dourada e uns frascos de experiência. Tu mereceu cada pedaço."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombified_piglin"], "count": 20, "desc": "<r>Elimine</r> <r>20 piglins zumbis</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
 			"id": "butcher_4_banquete",
 			"tier": 4,
 			"title": "O Banquete do Conselho",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:piglin_brute"], "count": 5, "desc": "<r>Elimine</r> <r>5 piglins brutos</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:netherite_scrap", "count": 1}]
+		},
+		{
+			"id": "butcher_4_vingadores",
+			"tier": 4,
+			"title": "Machado Contra Faca",
+			"tone": "danger",
+			"offer": [
+				"Tchê, senta que essa é braba. Os <r>vingadores</r>, aqueles Exilados de machado, atacaram a estância do meu compadre.",
+				"Levaram o gado, quebraram as porteiras e ainda riram, guri. RIRAM. Aquele riso de quem não tem alma.",
+				"Eles saem da mansão da floresta escura e vêm junto nas invasões. E agora tão rondando a nossa vila."
+			],
+			"why": [
+				"Se levarem o gado daqui também, acabou o açougue, acabou o churrasco, acabou o couro do coureiro. Acabou tudo.",
+				"Tu já é <o>Guerreiro</o>, tchê. Machado de vingador bate que nem coice de mula. Só gente feita aguenta."
+			],
+			"accept": [
+				"Bah! Leva escudo, mas não confia só nele. Bate primeiro e bate forte.",
+				"<r>Elimine 15 vingadores</r>."
+			],
+			"progress": [
+				"Eles correm rápido e batem pesado. Luta num corredor estreito pra encarar um de cada vez.",
+				"Eles aparecem nas mansões da floresta escura e nas invasões de saqueadores. Na mansão, entra devagar, sala por sala."
+			],
+			"complete": [
+				"O gado do compadre voltou pra estância! Ele chorou feito guri e me pediu pra te dar um abraço. Toma, tchê, tá dado.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Afiação</p>. Faca boa é faca afiada, e espada também."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vindicator"], "count": 15, "desc": "<r>Elimine</r> <r>15 vingadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 4}]
 		},
 		{
 			"id": "butcher_5_rei_gado",

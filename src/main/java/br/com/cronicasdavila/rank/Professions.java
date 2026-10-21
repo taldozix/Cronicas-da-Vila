@@ -16,6 +16,7 @@ public final class Professions {
 	public static final String NITWIT = "nitwit";
 	public static final String UNEMPLOYED = "none";
 	public static final String CHILD = "child";
+	public static final String WANDERING_TRADER = "wandering_trader";
 
 	/**
 	 * O "lado" de quem dá a missão.
@@ -80,7 +81,28 @@ public final class Professions {
 		QUEST_GIVERS.add(SHULKER);
 	}
 
+	/** Profissões de outros mods (ex.: More Villagers), registradas ao abrir o mundo. */
+	public static final java.util.Set<String> MODDED = new java.util.LinkedHashSet<>();
+	private static final Map<String, String> MODDED_PLURALS = new java.util.HashMap<>();
+
 	private Professions() {
+	}
+
+	/** Passa a tratar uma profissão de outro mod como as do jogo: falas, missões e afinidade. */
+	public static void registerModded(String key, String name, String plural) {
+		if (NAMES.containsKey(key)) {
+			return;
+		}
+
+		NAMES.put(key, name);
+		MODDED.add(key);
+		MODDED_PLURALS.put(key, plural);
+		QUEST_GIVERS.add(key);
+	}
+
+	/** Plural das profissões de outros mods ("marceneiros"); null se não for uma delas. */
+	public static String moddedPlural(String key) {
+		return MODDED_PLURALS.get(key);
 	}
 
 	public static boolean givesQuests(String key) {
@@ -100,6 +122,7 @@ public final class Professions {
 			case NITWIT -> "Bobão da Vila";
 			case UNEMPLOYED -> "Desempregado";
 			case CHILD -> "Criança";
+			case WANDERING_TRADER -> "Vendedor Ambulante";
 			default -> NAMES.getOrDefault(key, "Aldeão");
 		};
 	}

@@ -79,9 +79,13 @@ public final class VanillaCompat {
 		}
 	}
 
-	/** Abre a tela de trocas vanilla (com os descontos de reputação aplicados pelo jogo). */
+	/** Abre a tela de trocas vanilla (com os descontos de reputação aplicados pelo jogo). Serve também para o Vendedor Ambulante. */
 	public static void openTrade(Villager villager, ServerPlayer player) {
 		villager.mobInteract(player, InteractionHand.MAIN_HAND);
+	}
+
+	public static void openTrade(net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader trader, ServerPlayer player) {
+		trader.mobInteract(player, InteractionHand.MAIN_HAND);
 	}
 
 	/**
@@ -100,6 +104,23 @@ public final class VanillaCompat {
 	/** É noite no mundo normal? (No Nether e no Fim não existe dia e noite.) */
 	public static boolean isNight(Level level) {
 		return level.dimension() == Level.OVERWORLD && level.isDarkOutside();
+	}
+
+	/** Está chovendo (ou nevando) onde a criatura está? */
+	public static boolean isRainingAt(LivingEntity entity) {
+		Level level = entity.level();
+		return level.dimension() == Level.OVERWORLD && level.isRaining()
+				&& level.getBiome(entity.blockPosition()).value().hasPrecipitation();
+	}
+
+	/** Tempestade com raios no mundo normal? */
+	public static boolean isThundering(LivingEntity entity) {
+		return isRainingAt(entity) && entity.level().isThundering();
+	}
+
+	/** Dia da semana pelo calendário do jogo: 0 domingo, 1 segunda ... 5 sexta, 6 sábado (o primeiro dia do mundo é um domingo). */
+	public static int weekday(Level level) {
+		return (int) Math.floorMod(day(level), 7L);
 	}
 
 	/** Dia do jogo pelo relógio do mundo (dormir também avança o dia). */

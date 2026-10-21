@@ -63,6 +63,29 @@
 		"Vou dormir, parceiro. Amanhã cedo tem massa pra bater. Vai pela rua iluminada!",
 		"Boa noite, mermão! Se ouvir \"ssssss\" atrás de tu, nem olha. Só rala."
 	],
+	"greet_rain": [
+		"Caraca, mermão, chuva! Obra parada, cimento coberto e eu de bobeira na varanda.",
+		"Ih, {player}, tá chovendo pra caramba! Vem pra debaixo da marquise, parceiro.",
+		"Choveu, mermão. Massa com água demais vira sopa, então hoje é folga forçada, tá ligado?"
+	],
+	"greet_storm": [
+		"Caraca, que trovão, mermão! Desce do andaime agora, que raio adora cair em quem tá no alto!",
+		"Ih, {player}, com esse temporal os creepers andam até de dia. Se ouvir chiado, nem pensa: rala!"
+	],
+	"greet_friday": [
+		"Sextou, mermão! Hoje é dia de samba e churrasquinho na laje.",
+		"Caraca, sexta-feira! Bati massa a semana toda, tô moído, parceiro.",
+		"E aí, {player}! Sexta, mermão! Amanhã vou dar um mergulho na praia. Tu vem?"
+	],
+	"greet_saturday": [
+		"Sábado, mermão! Praia, futevôlei e biscoito de polvilho. Obra só na segunda, tá ligado?",
+		"Fala, {player}! Hoje tem feijoada na casa da minha tia. Família toda reunida, sinistro.",
+		"Bom sábado, parceiro! Vou na roda de samba da praça mais tarde. Chega aí!"
+	],
+	"greet_sunday": [
+		"Domingo, mermão... dia de dormir até tarde e almoçar com a família. Nem me fala em tijolo.",
+		"Ih, {player}, ouviu o sino da capela? Depois da missa é macarronada com frango na casa da coroa."
+	],
 	"reward_intro": [
 		"Caraca, se tu fizer isso, mermão, te pago",
 		"Fechou, parceiro? Fazendo a parada direito, tu leva",
@@ -118,12 +141,12 @@
 		"Bora trabalhar, parceiro! Qual é a parada?"
 	],
 	"names": [
-		"Seu Jurandir", "Dona Tânia", "Seu Juninho", "Dona Glória", "Seu Wagner", "Dona Cátia", "Seu Marcão",
-		"Dona Bete", "Seu Tião Pedreira", "Dona Solange"
+		"Jurandir", "Tânia", "Douglas", "Glória", "Wagner", "Cátia", "Marcos",
+		"Elisabete", "Leandro", "Solange", "Carlos", "Fernanda", "Alexandre", "Juliana"
 	],
 	"extra": {
 		"day_off": [
-			"Caraca, hoje é minha folga, mermão! Carregar pedra o dia todo detona as costas, então eu só pego no batente de três em três dias.",
+			"Caraca, hoje é minha folga, mermão! Carregar pedra o dia todo detona as costas, então de vez em quando eu tiro meu dia de folga.",
 			"Hoje não, parceiro. Tô de folga, de chinelo e bermuda. Volta outro dia ou procura outro pedreiro na vila.",
 			"Mermão, trabalhar hoje? A obra tá parada, a betoneira tá parada e eu tô mais parado ainda. Volta daqui uns dias, tá ligado?"
 		]

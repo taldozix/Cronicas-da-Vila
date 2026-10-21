@@ -25,6 +25,29 @@
 		"Tchau. Vou dormir do lado do meu baú. Ele é tudo que eu tenho.",
 		"Até. Se um zumbi me oferecer emprego, eu recuso. Acho."
 	],
+	"greet_rain": [
+		"Chuva, {player}. Combina com meu humor. Nem a composteira me quer.",
+		"Tá chovendo. Pelo menos hoje não preciso fingir que tô procurando emprego.",
+		"Oi. Chuva é bom pra pensar na vida. Pensei. Continuo desempregado."
+	],
+	"greet_storm": [
+		"Tempestade! Se um raio me acertar, eu viro bruxa. Pelo menos bruxa tem profissão.",
+		"Que trovoada! Vou ficar aqui debaixo do telhado. Desempregado e molhado já é demais."
+	],
+	"greet_friday": [
+		"Sextou! Pra quem trabalha, né. Pra mim é só mais um dia. Mas sextou mesmo assim!",
+		"Sexta-feira! O pessoal todo feliz porque vai folgar. Eu tô de folga faz três anos.",
+		"Sextou, {player}! Vou comemorar procurando emprego. Brincadeira. Vou só comemorar."
+	],
+	"greet_saturday": [
+		"Sábado tem feira. Vou lá ver se alguém tá contratando. Ou distribuindo pão de graça.",
+		"Sábado de festa! Pelo menos na festa ninguém pergunta qual é a minha profissão.",
+		"Sábado é dia de descanso. Eu descanso todo dia, então sou praticamente mestre nisso."
+	],
+	"greet_sunday": [
+		"Domingo, almoço com a família. Minha tia vai perguntar do emprego de novo. Socorro.",
+		"Hrmm... domingo. Dia de preguiça. Finalmente todo mundo fazendo o que eu faço."
+	],
 	"lore_done": [
 		"Já te contei a minha história do dia. Desempregado não tem muita coisa pra contar, sabe?",
 		"Acabou meu estoque de fofoca por hoje. Pergunta pros aldeões que trabalham, eles veem mais coisa.",
@@ -44,5 +67,5 @@
 			"Isso é tipo ser demitido e recontratado mil vezes no mesmo dia. Sinto que tem algo errado nisso."
 		]
 	],
-	"names": ["Juvenal", "Cleiton", "Dona Gertrudes", "Rodinei", "Silvana", "Seu Agenor", "Kelly", "Wanderlei"]
+	"names": ["Juvenal", "Cleiton", "Silvana", "Rodinei", "Kelly", "Wanderlei", "Agenor", "Neide", "Jailson", "Sueli", "Everton", "Cristiane"]
 }

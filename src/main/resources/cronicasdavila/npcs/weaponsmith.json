@@ -63,6 +63,29 @@
 		"Até! Espada na mão e olho no escuro! Creeper não avisa!",
 		"Boa noite! Vou dormir abraçado na minha frigideira. Por segurança!"
 	],
+	"greet_rain": [
+		"CHUVA, recruta! Guerreiro de verdade luta na chuva! ...Mas a forja não. Entra logo que tá respingando na brasa!",
+		"Hrmm! Essa chuva enferruja tudo! Passa óleo na espada hoje, recruta, senão amanhã ela tá laranja!",
+		"POR MIL BIGORNAS, que aguaceiro! Ótimo dia pra treinar no barro. Escorregou, levantou! HA!"
+	],
+	"greet_storm": [
+		"TEMPESTADE, recruta! Fica longe do metal! Já vi raio torrar uma armadura com o dono dentro! ...Tá, era um porco. Mas fica longe!",
+		"Ouviu esse trovão? É o céu batendo na bigorna dele! HA HA! Mas entra, que raio não respeita veterano!"
+	],
+	"greet_friday": [
+		"SEXTOU, recruta! Hoje a forja apaga cedo e o martelo descansa! Bora comemorar com um pão quentinho!",
+		"Sexta-feira! Os guardas tão animados e os monstros também. CUIDADO DOBRADO! Sextou com responsabilidade!",
+		"HA! Sextou! Na minha época, toda sexta tinha queda de braço na praça. Eu nunca perdi! ...Perdi uma vez. Ou três."
+	],
+	"greet_saturday": [
+		"Sábado, recruta! Dia de feira! Vou vender espada usada. Usada por mim, então vale o dobro!",
+		"Sábado de festa na praça! Tem costela de porco assada e eu vou ser o primeiro da fila. POR MIL BIGORNAS, que fome!",
+		"Sábado é dia de descanso! E eu descanso afiando espada. É terapia, recruta!"
+	],
+	"greet_sunday": [
+		"Domingo, recruta... almoço com a família. Minha neta vai cortar o frango. Com a faca que eu forjei. Orgulho!",
+		"Hrmm... domingo. Tô de chinelo, recruta. Nem pra monstro eu levanto hoje. ...Tá, pra monstro eu levanto."
+	],
 	"reward_intro": [
 		"Faz o serviço direito e, palavra de veterano, te pago",
 		"Se voltar vivo, POR MIL BIGORNAS, te dou",
@@ -118,13 +141,13 @@
 		"Precisa de um guerreiro?"
 	],
 	"names": [
-		"Sargento Brutus", "Dona Valquíria", "Capitão Bigorna", "Dona Brunilda", "Seu Aquiles", "Dona Joana", "Seu Ferrabrás",
-		"Dona Hércula", "Sargento Tonhão", "Dona Xena"
+		"Roberto", "Sandra", "Wagner", "Cláudia", "Edson", "Vanessa", "Rogério",
+		"Simone", "Anderson", "Luciana", "Reinaldo", "Fernanda", "Gilberto", "Débora"
 	],
 	"extra": {
 		"day_off": [
 			"FOLGA, recruta! Guerreiro que não descansa vira estátua! Eu trabalho um dia a cada três, e hoje NÃO é o dia! Volta depois ou procura outro ferreiro de armas!",
-			"POR MIL BIGORNAS, hoje não! Meu ombro tá rangendo igual porta de masmorra de tanta martelada! Só forjo a cada três dias! Acha outro ferreiro de armas!",
+			"POR MIL BIGORNAS, hoje não! Meu ombro tá rangendo igual porta de masmorra de tanta martelada! Hoje a forja descansa! Acha outro ferreiro de armas!",
 			"<d>(ele está com o braço numa tipoia improvisada com um pano de prato)</d> Hoje é folga, recruta! A bigorna ganhou essa rodada! Volta daqui a uns dias que eu dou o troco nela!"
 		]
 	}

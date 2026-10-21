@@ -54,8 +54,8 @@ public final class ModSettings {
 			new Option("karmaRate", "Intensidade do karma", "Quanto o karma sobe ou desce com cada ação.", false, 25, 300, 25, "%"),
 			new Option("bargainBonus", "Chance extra na barganha", "Soma (ou tira) pontos da chance de cada barganha.", false, -30, 50, 5, "%"),
 			new Option("bargainMinAffinity", "Afinidade para barganhar", "Nível de afinidade com a profissão que libera a barganha (1 Amador ... 5 Mestre).", false, 1, 5, 1, ""),
-			new Option("heavyDayOff", "Folga dos trabalhos pesados", "Fazendeiros, pescadores, ferreiros e afins só trabalham alguns dias.", true, 0, 1, 1, ""),
-			new Option("heavyEveryDays", "Dias de folga", "Os trabalhos pesados atendem um dia a cada X dias.", false, 2, 7, 1, " dias"),
+			new Option("heavyDayOff", "Folga dos aldeões", "Cada aldeão tem o seu dia de folga: sem uniforme, sem serviço e sem missões.", true, 0, 1, 1, ""),
+			new Option("heavyEveryDays", "Ciclo de folga", "Cada aldeão folga um dia a cada X dias (trabalhos pesados, dois). Cada vila muda um pouco.", false, 3, 7, 1, " dias"),
 			new Option("theft", "Vigiar roubo de baús", "Aldeões que te veem roubando chamam os golens.", true, 0, 1, 1, ""),
 			new Option("loreOncePerDay", "Uma curiosidade por dia", "Cada NPC conta só uma história por dia.", true, 0, 1, 1, ""),
 			new Option("villainCurse", "Maldição do Vilão", "O Vilão da História sente fadiga e queima longe do Nether.", true, 0, 1, 1, "")

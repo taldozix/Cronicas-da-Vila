@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_salmon", "count": 12}]
 		},
 		{
+			"id": "fisherman_1_barco",
+			"tier": 1,
+			"title": "Remando pela Costa",
+			"tone": "calm",
+			"offer": [
+				"Oxe, meu rei, cê sabe remar? Pergunto porque eu tô com o braço doendo de tanto puxar rede.",
+				"Minhas <y>redes</y> ficam espalhadas pela costa toda, e alguém precisa dar uma volta de barco vendo se tá tudo no lugar.",
+				"Não é serviço difícil não, visse? É só remar, olhar a paisagem e não cair na água."
+			],
+			"why": [
+				"Se uma rede soltar, o mar leva embora e eu perco o peixe da semana. Pescador sem rede é igual baiano sem dendê.",
+				"E é bom pra você também, painho. Quem conhece a costa não se perde no mar."
+			],
+			"accept": [
+				"Barril dobrado! Barco se faz com cinco tábuas em forma de U na mesa de trabalho.",
+				"<g>Navegue</g> <y>500 blocos de barco</y>. Rio ou mar, tanto faz."
+			],
+			"progress": [
+				"Barco desliza bem mais rápido em cima de gelo, visse? Mas no mar o jeito é remar com calma mesmo.",
+				"Barco leva dois. Se um bicho chegar pertinho, ele senta no banco de trás e vai passear junto."
+			],
+			"complete": [
+				"Eita, voltou sequinho! E as redes? Tudo no lugar? Ah, meu rei, cê é um anjo da maré.",
+				"Toma umas esmeraldas e bacalhau assado na brasa, do jeitinho que mainha fazia."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:boat_one_cm"], "count": 50000, "desc": "<g>Navegue</g> <y>500 blocos de barco</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:cooked_cod", "count": 10}]
+		},
+		{
 			"id": "fisherman_2_paciencia",
 			"tier": 2,
 			"title": "A Arte da Paciência",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:nautilus_shell"], "count": 4, "desc": "<g>Entregue</g> <y>4 conchas de náutilo</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:gold_ingot", "count": 10}]
+		},
+		{
+			"id": "fisherman_2_baiacu",
+			"tier": 2,
+			"title": "O Baiacu Encrenqueiro",
+			"tone": "calm",
+			"offer": [
+				"Meu rei, cê conhece o <y>baiacu</y>? Peixinho que incha igual balão quando se assusta. Engraçado, mas venenoso que só.",
+				"O alquimista da vila de baixo pediu uma porção deles. Diz que serve pra poção de respirar embaixo d'água.",
+				"Eu pesco, mas toda vez que puxo um, ele incha no meu dedo. Já perdi a sensibilidade do mindinho, visse?"
+			],
+			"why": [
+				"Com poção de respiração, os pescadores mergulham pra soltar rede presa nas pedras sem se afogar.",
+				"E o alquimista paga bem. Metade é sua, painho, que eu sou pescador mas não sou mesquinho."
+			],
+			"accept": [
+				"Oxe, que coragem! Baiacu vive no mar quente, perto dos corais. Mas também vem no anzol.",
+				"<g>Traga</g> <y>8 baiacus</y>. E não come nenhum, pelo amor de Deus!"
+			],
+			"progress": [
+				"Se chegar perto de um baiacu, ele incha e te envenena. Bate rápido e se afasta.",
+				"Comer baiacu dá veneno, enjoo e fome. Já vi gente valente chorar por causa de um."
+			],
+			"complete": [
+				"Oito baiacus e nenhum dedo inchado! Cê é profissional, meu rei.",
+				"Toma esmeraldas, um diamante e um livro de <p>Isca</p>. Teu anzol vai virar ímã de peixe."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:pufferfish"], "count": 8, "desc": "<g>Entregue</g> <y>8 baiacus</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:lure", "level": 2}]
 		},
 		{
 			"id": "fisherman_3_guardioes",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:experience_bottle", "count": 12}]
 		},
 		{
+			"id": "fisherman_3_mangue",
+			"tier": 3,
+			"title": "Os Esqueletos do Mangue",
+			"tone": "danger",
+			"offer": [
+				"Meu rei, lá pros lados do <a>mangue</a> o peixe sumiu. E sabe por quê? Os <r>encharcados</r> tomaram conta.",
+				"É esqueleto coberto de lodo e cogumelo, que atira flecha envenenada. Os catadores voltam tudo roxo de veneno.",
+				"Eu mesmo levei uma flechada no chapéu novo. De novo o chapéu, visse? Parece perseguição."
+			],
+			"why": [
+				"O mangue é o berçário do mar, painho. Se o mangue morre, o peixe some da costa inteira.",
+				"Cê já é <o>Aventureiro</o>. Veneno não mata, mas deixa a gente fraquinho na pior hora. Precisa de alguém de sangue frio."
+			],
+			"accept": [
+				"Leva leite pra cortar o veneno e um escudo, que flecha de encharcado não perdoa.",
+				"<r>Elimine 15 encharcados</r> nos pântanos e mangues."
+			],
+			"progress": [
+				"Encharcado aparece nos pântanos, nos mangues e nas Câmaras de Provação. De noite é mais fácil de achar.",
+				"Se passar tesoura num encharcado, ele solta cogumelos. Bicho esquisito, mas pelo menos dá sopa."
+			],
+			"complete": [
+				"Os catadores voltaram pro mangue cantando! E trouxeram cada peixe gordo, meu rei, que dá gosto de ver.",
+				"Toma diamantes, uma maçã dourada e frascos de experiência. Cê limpou o berçário do mar."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:bogged"], "count": 15, "desc": "<r>Elimine</r> <r>15 encharcados</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 6}]
+		},
+		{
 			"id": "fisherman_4_ancia",
 			"tier": 4,
 			"title": "A Anciã das Profundezas",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:heart_of_the_sea"], "count": 1, "desc": "<g>Entregue</g> <y>1 Coração do Mar</y>"},
 			"rewards": [{"item": "minecraft:trident", "count": 1}, {"item": "minecraft:diamond", "count": 6}]
+		},
+		{
+			"id": "fisherman_4_mare",
+			"tier": 4,
+			"title": "A Pesca da Grande Maré",
+			"tone": "calm",
+			"offer": [
+				"Meu rei, uma vez a cada geração acontece a <a>Grande Maré</a>. O mar sobe, os cardumes chegam perto da praia e a pesca é farta demais.",
+				"Pois ela chegou! Mas os pescadores mais velhos já não aguentam passar dias com a vara na mão.",
+				"Se a gente não aproveitar, a vila passa o ano inteiro só no pão do fazendeiro. E ele vai ficar insuportável, visse?"
+			],
+			"why": [
+				"Peixe salgado dura o inverno todo. Uma Grande Maré bem pescada sustenta a costa por um ano.",
+				"Cê já é <o>Guerreiro</o>, já pegou demais em espada. Agora pega na vara e mostra que tem paciência também."
+			],
+			"accept": [
+				"Eita, que beleza! Pega um banquinho, um chapéu e bastante paciência.",
+				"<g>Pesque</g> <y>150 vezes</y>."
+			],
+			"progress": [
+				"Vara com <p>Isca</p> faz o peixe morder mais rápido. E chuva também ajuda, visse?",
+				"Pescar em água aberta, sem bloco em volta da boia, traz mais tesouro e menos lixo."
+			],
+			"complete": [
+				"Cento e cinquenta! A vila tá cheirando a peixe frito de ponta a ponta. Que alegria, meu rei!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Sorte do Mar</p> do bom. Que o mar continue generoso contigo."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:fish_caught"], "count": 150, "desc": "<g>Pesque</g> <y>150 vezes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:luck_of_the_sea", "level": 3}]
 		},
 		{
 			"id": "fisherman_5_ancias",

@@ -38,6 +38,29 @@
 		"Tchauzinho... <d>(bocejo)</d> ...eu não tô com sono... não tô...",
 		"Boa noite! Deixa a lanterna acesa, que o escuro tem monstro!"
 	],
+	"greet_rain": [
+		"Tá chovendo! Vamos pular na poça? Minha mãe disse que não. Mas ela não tá olhando!",
+		"Oiii! A chuva fez um lago na praça! Vou pescar nele! Com um graveto!",
+		"Chuva! Eu fiz um barquinho de papel! Ele afundou. Mas foi muito corajoso."
+	],
+	"greet_storm": [
+		"TROVÃO! <d>(a criança se esconde atrás de você)</d> Você me protege? Você é forte, né?",
+		"Minha mãe falou que trovão é o golem do céu batendo o pé! Acho que ele tá bravo!"
+	],
+	"greet_friday": [
+		"Sextou! Amanhã não tem aula com o bibliotecário! Ele fala muito difícil!",
+		"É sexta! Vou dormir tarde hoje! Tipo, até as oito! Ou nove!",
+		"Sextou, {player}! Vamos brincar de pega-pega a noite inteira? Até o sol nascer?"
+	],
+	"greet_saturday": [
+		"Sábado tem feira! Vou pedir doce pra todo mundo! O padeiro sempre me dá um pão!",
+		"Sábado tem festa na praça! Vou dançar com o golem! Ele não dança, mas eu danço por ele!",
+		"Sábado! Dia de brincar o dia todo! Você quer ser o creeper? Faz \"sssss\"!"
+	],
+	"greet_sunday": [
+		"Domingo tem almoço na casa da vó! Ela faz bolo de cenoura! O melhor bolo do mundo!",
+		"Ai, domingo... amanhã tem aula... <d>(a criança suspira, bem dramática)</d>"
+	],
 	"lore_done": [
 		"Já contei uma história hoje! Mamãe disse que é só uma por dia, senão eu fico falando a noite toda.",
 		"Acabou! Amanhã eu conto outra! Ou pergunta pros grandes, eles sabem um monte de coisa chata.",
@@ -61,7 +84,7 @@
 			"Eu tentei ficar de cabeça pra baixo também e caí da cama. Morcego é muito melhor que eu."
 		]
 	],
-	"names": ["Pedrinho", "Juju", "Tetê", "Lulu", "Biel", "Nina", "Dudu", "Cacau", "Zezinho", "Mel"],
+	"names": ["Lucas", "Ana", "Davi", "Sofia", "Miguel", "Alice", "Arthur", "Laura", "Heitor", "Valentina", "Bernardo", "Manuela", "Théo", "Lorena"],
 	"extra": {
 		"no_profession": [
 			"Eu sou criança, bobo! Criança não trabalha, criança brinca!"

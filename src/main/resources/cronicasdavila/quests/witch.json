@@ -3,164 +3,164 @@
 		{
 			"id": "witch_1_cogumelos",
 			"tier": 1,
-			"title": "Sopa Para Uma Pessoa Só",
+			"title": "Ingrediente Número Um",
 			"tone": "calm",
 			"offer": [
-				"<p>*hihihi*</p> Uma visita! Uma visita de verdade! Espera, deixa eu tirar o sapo da cadeira... pronto. Senta. Ou fica em pé, a cadeira é meio molhada.",
-				"Eu ia fazer minha sopa de cogumelo. Faço toda noite. Uma tigela só, porque... bom, porque só tem eu. E o Breu, mas gato não toma sopa.",
-				"Acontece que os <y>cogumelos</y> do pântano acabaram. Eu mesma colhi todos. Faz tempo que eu não tenho nada pra fazer além de colher cogumelo."
+				"<n>*Hohohoho!*</n> Uma visita! E com braços! Que sorte a nossa. Digo, a sua. Senta, mas não na cadeira do sapo, ele é o chefe da guarda.",
+				"Eu e a outra estamos preparando a primeira poção do Grande Plano. Ingrediente número um: <y>cogumelos</y>. Muitos. Os sapos não sabem colher, eles comem.",
+				"Pequeno serviço, grande futuro. Todo império começa com um cogumelo. Isso é verdade. A outra que disse. <d>(voz gelada: \"Eu nunca disse isso.\")</d>"
 			],
 			"why": [
-				"Sopa quente é o que me lembra de casa. Da vila, digo. Antes de... antes. Na vila, todo mundo comia junto. Aqui, eu como olhando pra parede.",
-				"E cogumelo também vai em poção, viu? Não é só saudade. É saudade com utilidade."
+				"Cogumelo vai na sopa, no veneno e no olho fermentado. Com ele a gente faz a poção que deixa os narigudos com dor de barriga na festa da colheita. <n>*Hohoho!*</n>",
+				"E você ganha a confiança das bruxas mais poderosas do pântano. Isso vale mais que esmeralda. Mas a gente paga esmeralda também, relaxa."
 			],
 			"accept": [
-				"Ai, que bom! Se quiser, eu faço uma tigela pra você também. Duas tigelas! Faz anos que eu não lavo duas tigelas.",
-				"<g>Colha</g> e traga <y>16 cogumelos</y> (marrons ou vermelhos, tanto faz)."
+				"Ótimo, ótimo! Sabia que você tinha cara de peão. De <i>parceiro</i>. Cara de parceiro.",
+				"<g>Colha</g> e traga <y>12 cogumelos</y> (marrons ou vermelhos, tanto faz)."
 			],
 			"progress": [
 				"Cogumelo gosta de sombra: aparece no chão de pântanos, florestas escuras, taigas e em cavernas com pouca luz.",
-				"Se achar um só, plante perto de um bloco escuro e espere. Eles se espalham sozinhos. Ao contrário de mim, eles têm facilidade pra fazer amigos."
+				"Achou um só? Plante perto de um bloco escuro e espere, eles se espalham sozinhos. Igual boato de bruxa na vila."
 			],
 			"complete": [
-				"Olha que cheiro! A cabana nunca cheirou tão bem. Bom, nunca cheirou bem, mas hoje cheira menos mal.",
-				"Toma, querida visita: esmeraldas e garrafas de experiência. Eu engarrafo o que aprendo. Sobra muito, porque ninguém vem aprender."
+				"<n>*Hohoho!*</n> Que cheiro! A outra já tá mexendo o caldeirão. Primeiro passo do plano: cumprido. Faltam só uns trezentos.",
+				"Toma esmeraldas e garrafas de experiência. Viu como bruxa paga certinho? Conta isso pros outros peões. Digo, pros seus amigos."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:brown_mushroom", "minecraft:red_mushroom"], "count": 16, "desc": "<g>Entregue</g> <y>16 cogumelos</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:brown_mushroom", "minecraft:red_mushroom"], "count": 12, "desc": "<g>Entregue</g> <y>12 cogumelos</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:experience_bottle", "count": 6}]
 		},
 		{
 			"id": "witch_1_olhos",
 			"tier": 1,
-			"title": "Olhos Que Não Me Julgam",
+			"title": "Olhos Pra Todo Lado",
 			"tone": "calm",
 			"offer": [
-				"Sabe o que é bom nos <y>olhos de aranha</y>? Eles olham pra mim e não fazem cara de susto. Os aldeões fazem. Todos eles. Sempre.",
-				"Eu uso esses olhinhos em tudo: poção de veneno, poção de fraqueza, e pra conversar quando a noite fica comprida demais.",
-				"Brincadeira. Quase brincadeira. Preciso de uma dúzia pra encher o pote da prateleira."
+				"Sabe o que falta numa bruxa que quer ver tudo? Olhos. Muitos olhos. <n>*Hohoho!*</n>",
+				"A outra quer <y>olhos de aranha</y> pras poções de veneno. Eu quero pra decorar a estante. A gente brigou, e você vai resolver.",
+				"Traz uns olhos pra gente. Aranha tem oito, ela nem vai sentir falta de um ou dois."
 			],
 			"why": [
-				"Sem olho de aranha, não sai poção de veneno. E sem poção de veneno, os saqueadores acham que eu amoleci. Não quero que eles venham conferir.",
-				"Além disso, prateleira vazia deixa a cabana com cara de abandonada. E abandonada eu já me sinto o bastante."
+				"Olho de aranha é a base de poção de veneno e de fraqueza. E poção de fraqueza no poço da vila... deixa os narigudos bem mais fáceis de convencer. <a>*Kekeke!*</a>",
+				"E é uma prova de confiança. Peão que traz olho de aranha é peão que não tem nojo de nada. A gente gosta disso."
 			],
 			"accept": [
-				"<p>*hihihi*</p> Você não tem nojo? Que pessoa rara. Gostei de você.",
-				"<g>Entregue</g> <y>12 olhos de aranha</y>."
+				"Perfeito! A outra apostou que você ia fugir. Eu apostei que não. Não me faz perder a aposta.",
+				"<g>Entregue</g> <y>8 olhos de aranha</y>."
 			],
 			"progress": [
 				"Aranhas aparecem à noite em qualquer canto, e aranhas de caverna moram em minas abandonadas. As duas derrubam olhos.",
-				"Bruxas também derrubam olho de aranha quando caem. Mas não faça isso com nenhuma colega minha, por favor. Nós já somos poucas."
+				"Bruxas também derrubam olho de aranha quando caem. Mas não mexe com as nossas colegas. Elas sabem onde você mora. O Breu contou."
 			],
 			"complete": [
-				"Doze olhinhos! Vou colocar todos virados pra porta. Assim parece que tem alguém esperando por mim quando eu chego.",
-				"Toma redstone, pó de pedra luminosa e esmeraldas. Ingredientes de bruxa. Se não souber usar, volta que eu ensino. Volta, tá?"
+				"<n>*Hohohoho!*</n> Olha quantos olhinhos me olhando! A outra ficou com a metade. Briga resolvida. Por hoje.",
+				"Toma redstone, pó de pedra luminosa e esmeraldas. Ingrediente de bruxa pra peão de bruxa. Digo, pra amigo de bruxa."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:spider_eye"], "count": 12, "desc": "<g>Entregue</g> <y>12 olhos de aranha</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:spider_eye"], "count": 8, "desc": "<g>Entregue</g> <y>8 olhos de aranha</y>"},
 			"rewards": [{"item": "minecraft:redstone", "count": 16}, {"item": "minecraft:glowstone_dust", "count": 8}, {"item": "minecraft:emerald", "count": 4}]
 		},
 		{
 			"id": "witch_1_lama",
 			"tier": 1,
-			"title": "Reforma na Cabana",
+			"title": "Muralha de Lama",
 			"tone": "calm",
 			"offer": [
-				"Tá vendo aquele buraco na parede? Foi um raio. Raio adora esta cabana. Raio é o único que me visita sem ser convidado.",
-				"Eu queria tapar com <y>lama</y>. Lama boa, grossa, do jeitinho que o pântano faz. Mas minhas costas não aguentam mais carregar balde.",
-				"Se você trouxer, eu tapo. E aí, quem sabe, a cabana fica bonita o suficiente pra alguém querer voltar."
+				"A cabana tá com rachadura. De um lado, a outra congelou a parede. Do outro, eu queimei sem querer. Tá. Querendo.",
+				"Precisamos de <y>lama</y> pra tapar os buracos. E pra começar a muralha. Toda fortaleza de bruxa tem uma muralha.",
+				"Uma muralha de lama! Os narigudos vão rir. Até a hora que ela engolir as botas deles. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Quando chove, entra água pelo buraco e molha o Breu. E gato molhado fica ofendido por três dias. É a única pessoa que fala comigo, não posso perder.",
-				"E também porque... sei lá. Arrumar a casa é um jeito de fingir que vai chegar visita."
+				"Lama não queima e não congela. Perfeito pra quem mora com uma irmã de fogo e outra de gelo. Quer dizer, comigo e com ela.",
+				"E toda dominação começa pelo quintal. Hoje, a cabana. Amanhã, o mangue inteiro. Depois de amanhã... <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Que coisa boa. Vou deixar a chaleira no fogo. Ela não tem nada dentro, mas fica bonito.",
-				"<g>Entregue</g> <y>32 blocos de lama</y>."
+				"Isso! Trabalho braçal, coisa que bruxa não faz. Bruxa manda. Peão faz. Digo, amigo.",
+				"<g>Entregue</g> <y>24 blocos de lama</y>."
 			],
 			"progress": [
 				"Truque de bruxa: use uma garrafa de água num bloco de terra e ele vira lama na hora. A garrafa volta vazia, pronta pra encher de novo.",
-				"Ou cave lama pronta no pântano de mangue, com uma pá. Cuidado que você afunda um pouquinho nela."
+				"Ou cave lama pronta no pântano de mangue, com uma pá. Cuidado que você afunda um pouquinho nela. Os narigudos vão afundar mais."
 			],
 			"complete": [
-				"Pronto! Nem parece mais a casa de uma bruxa solitária. Parece a casa de uma bruxa solitária com parede.",
-				"Toma ferro e esmeraldas. Achei no fundo do caldeirão. Não pergunta como foram parar lá."
+				"<n>*Hohoho!*</n> A parede tá inteira! A outra já congelou um pedaço de novo, mas a gente finge que não viu.",
+				"Toma ferro e esmeraldas. Achei no fundo do caldeirão. Não pergunta de quem era."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:mud"], "count": 32, "desc": "<g>Entregue</g> <y>32 blocos de lama</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:mud"], "count": 24, "desc": "<g>Entregue</g> <y>24 blocos de lama</y>"},
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 6}]
 		},
 		{
 			"id": "witch_1_slimes",
 			"tier": 1,
-			"title": "Visitas Que Ninguém Convidou",
+			"title": "Gosma Desobediente",
 			"tone": "danger",
 			"offer": [
-				"As únicas visitas que eu recebo à noite são os <r>slimes</r>. Plim, plim, plim. A noite inteira. Pulando na minha horta.",
-				"No começo eu achei fofo. Até dei nome pra um. O Gelatina. Aí o Gelatina se dividiu em quatro e comeu minhas abóboras.",
-				"Hoje eu prefiro a solidão. Pode me ajudar a mandar essa gosma embora?"
+				"Os <r>slimes</r> do pântano se recusam a obedecer. A gente manda, eles pulam pra longe. Pulam! Na nossa cara!",
+				"Quem não obedece as bruxas... some. Regra número um do pântano. A outra escreveu na parede. Em gelo. Já derreteu.",
+				"Vai lá e dá uma lição neles. Os que sobrarem vão entender quem manda aqui. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Eles amassam tudo: cogumelo, erva, o canteiro de nenúfar. E deixam a escada da cabana grudenta. Eu já escorreguei duas vezes. Sozinha. Ninguém pra me levantar.",
-				"E as bolinhas de slime que eles largam servem pros sapos se reproduzirem. Nada se perde no pântano."
+				"Eles comem nossos cogumelos, pulam no nosso caldeirão e assustam os sapos. E sapo assustado não espiona direito.",
+				"Além disso, a gosma serve de isca pros sapos botarem ovas. Mais sapos, maior o exército. Tudo se encaixa. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Vai lá, vai. Eu fico daqui da janela torcendo. Faz tempo que eu não torço por ninguém.",
-				"<r>Elimine 15 slimes</r> (os pequenos também contam)."
+				"Vai, peãozinho! Mostra pra eles o poder das bruxas. Com a sua espada. A gente fica torcendo daqui.",
+				"<r>Elimine 10 slimes</r> (os pequenos também contam)."
 			],
 			"progress": [
 				"No pântano, os slimes saem de noite, perto do nível do mar, e aparecem mais nas noites de lua cheia. Na lua nova, quase nenhum.",
 				"Fora do pântano, eles nascem no subsolo abaixo da camada 40, mas só em certos pedaços do mundo. Se achar um lá embaixo, achou o lugar."
 			],
 			"complete": [
-				"Silêncio! Um silêncio bom, pra variar. Não é aquele silêncio de sempre, é silêncio de quem foi ajudada.",
-				"Toma cenouras douradas e esmeraldas. A cenoura é boa pra enxergar no escuro. Eu passo muito tempo no escuro."
+				"<n>*Hohoho!*</n> Agora sim o pântano tá quietinho. Os slimes que sobraram estão pulando bem longe. Respeito é bom.",
+				"Toma cenouras douradas e esmeraldas. A cenoura é pra enxergar no escuro. É no escuro que a gente faz os melhores planos."
 			],
-			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 15, "desc": "<r>Elimine</r> <r>15 slimes</r>"},
+			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 10, "desc": "<r>Elimine</r> <r>10 slimes</r>"},
 			"rewards": [{"item": "minecraft:golden_carrot", "count": 8}, {"item": "minecraft:emerald", "count": 8}]
 		},
 		{
 			"id": "witch_1_frascos",
 			"tier": 1,
-			"title": "Frascos Pra Tudo Que Não Se Diz",
+			"title": "Frascos Pro Grande Plano",
 			"tone": "calm",
 			"offer": [
-				"Eu guardo tudo em <y>frasco de vidro</y>. Poção, chá, vaga-lume, choro. Choro é ótimo pra poção, ninguém sabe disso.",
-				"Mas eu jogo poção nos outros, e frasco jogado não volta. A estante tá ficando vazia. Igual a cabana. Igual a agenda.",
-				"Você faz uns frascos pra mim? Eu faria, mas a última vez que eu acendi a fornalha pra fazer vidro, o Breu ficou sem bigode."
+				"Poção sem frasco é só sopa esquisita. E a gente tá sem <y>frascos</y>. A outra congelou os últimos e eles racharam.",
+				"<d>(voz gelada: \"Foi ela que esquentou demais!\")</d> Não interessa quem foi. Interessa que você vai fazer novos.",
+				"Um frasco pra cada poção do plano. E o plano tem muitas poções. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Bruxa sem frasco é só uma senhora de chapéu engraçado falando com sapo. Eu ainda tenho minha dignidade. Um pouco.",
-				"E eu queria mandar umas cartas dentro de garrafa pelo rio. Vai que alguém acha e responde."
+				"Sem frasco, sem poção. Sem poção, sem plano. Sem plano, os narigudos continuam felizes. E isso a gente não pode permitir.",
+				"E sabe a regra de só conversar com quem traz frasco? Então. Você vai ficar com uns sobrando. Mãos cheias de frasco, conversa garantida."
 			],
 			"accept": [
-				"Ai, obrigada. Faz com cuidado, que vidro é igual coração: se quebrar, corta.",
-				"<g>Fabrique</g> <y>24 frascos de vidro</y>."
+				"Que peão eficiente! Digo, parceiro. Eu sempre erro essa palavra. Coisa da idade. Só tenho quatrocentos anos.",
+				"<g>Fabrique</g> <y>16 frascos de vidro</y>."
 			],
 			"progress": [
 				"Areia na fornalha vira vidro. Três vidros em formato de V na bancada viram três frascos de uma vez.",
-				"Ou seja: oito receitas e pronto. Pegue areia na beira do rio ou no deserto, que é onde ela mora."
+				"Ou seja: seis receitas e ainda sobra frasco. Pegue areia na beira do rio ou no deserto, que é onde ela mora."
 			],
 			"complete": [
-				"Vinte e quatro frascos brilhando! Vou encher um com vaga-lume e deixar na janela. Pra parecer que tem gente em casa.",
-				"Toma pérolas do ender e garrafas de experiência. As garrafas eu enchi faz tempo, esperando alguém pra quem dar."
+				"<n>*Hohoho!*</n> Que brilho! Dezesseis frasquinhos esperando veneno. Digo, remédio. Remédio pra nós, veneno pros outros.",
+				"Toma pérolas do ender e garrafas de experiência. As garrafas a gente encheu com a experiência de quatro séculos. Sobrou bastante."
 			],
-			"objective": {"type": "craft", "targets": ["minecraft:glass_bottle"], "count": 24, "desc": "<g>Fabrique</g> <y>24 frascos de vidro</y>"},
+			"objective": {"type": "craft", "targets": ["minecraft:glass_bottle"], "count": 16, "desc": "<g>Fabrique</g> <y>16 frascos de vidro</y>"},
 			"rewards": [{"item": "minecraft:ender_pearl", "count": 2}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "witch_1_girinos",
 			"tier": 1,
-			"title": "Filhotes de Companhia",
+			"title": "Recrutas do Exército Sapo",
 			"tone": "calm",
 			"offer": [
-				"Posso te contar um segredo? Eu converso com os sapos. Todo dia. Eles têm nome: Seu Coaxo, Dona Verruga, Pipoca e o Bolota.",
-				"O Bolota é meu preferido. Não conta pros outros. Mas eles cresceram e agora passam o dia todo comendo slime e me ignorando.",
-				"Eu queria uns <y>girinos</y> novos pro meu aquário. Girino não ignora ninguém. Girino só nada e é feliz."
+				"O exército de sapos tá pequeno. Doze sapos. Doze! Nenhum império começa com doze sapos. Bom, o nosso começou.",
+				"Precisamos de recrutas. <y>Girinos</y>. Novinhos, que ainda não aprenderam a desobedecer. <n>*Hohoho!*</n>",
+				"Traz dois baldes com girino. A gente cria, treina e manda espionar a vila. Desde pequeninho."
 			],
 			"why": [
-				"Quando a casa fica quieta demais, eu ouço até meu próprio pensamento. E meu pensamento é muito chato, acredite.",
-				"Com girino no aquário, sempre tem alguma coisa se mexendo na cabana. Parece que tem vida aqui."
+				"Girino criado por bruxa vira sapo leal. Sapo leal vira espião. Espião conta tudo que os narigudos fazem. Simples.",
+				"E a outra quer um sapo verde, desses que nascem no frio. Eu quero um branco, dos lugares quentes. A gente nunca concorda. Você traz os girinos, a gente decide depois."
 			],
 			"accept": [
-				"Vou arrumar o aquário! Uma tina d'água no canto, umas plantinhas... vai ficar lindo.",
+				"Ótimo! O Seu Coaxo vai ficar feliz. Ele não demonstra, mas vai. Ele é o chefe da guarda.",
 				"<g>Entregue</g> <y>2 baldes com girino</y>."
 			],
 			"progress": [
@@ -168,8 +168,8 @@
 				"Use um balde de água num girino pra pegar ele. Dentro do balde ele não cresce, então pode trazer sem pressa."
 			],
 			"complete": [
-				"Oi, pequenininhos! Eu vou chamar vocês de Ramo e Gota. Eu sou a tia de vocês agora. A tia esquisita.",
-				"Toma esmeraldas, pérolas do ender e cenouras douradas. E se um dia você quiser um girino, eu empresto. Mas devolve."
+				"<n>*Hohohoho!*</n> Recrutas! Olha como nadam obedientes. A outra já tá ensinando eles a coaxar \"viva as bruxas\".",
+				"Toma esmeraldas, pérolas do ender e cenouras douradas. Pagamento de recrutador. Você leva jeito pra isso. Pra trabalhar pra gente."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:tadpole_bucket"], "count": 2, "desc": "<g>Entregue</g> <y>2 baldes com girino</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:ender_pearl", "count": 2}, {"item": "minecraft:golden_carrot", "count": 4}]
@@ -177,19 +177,19 @@
 		{
 			"id": "witch_2_luzes",
 			"tier": 2,
-			"title": "Luzinhas Pra Noite Comprida",
+			"title": "Faróis do Pântano",
 			"tone": "calm",
 			"offer": [
-				"A noite no pântano é escura demais. Os vaga-lumes ajudam, mas eles vão embora quando chove. E aqui chove sempre.",
-				"Eu queria umas <y>luzes de sapo</y> pra pendurar na cabana. Elas brilham bonito, quentinho, e nunca apagam. Fiéis, sabe? Ao contrário de certas pessoas.",
-				"Três. Uma de cada cor, se der. Mas se vierem todas iguais, eu também fico feliz."
+				"Quando o pântano for nosso, ele vai precisar de faróis. Pra que os narigudos vejam de longe quem manda aqui.",
+				"E nada é mais bonito que <y>luz de sapo</y>. Ela brilha, não queima, não derrete. A outra e eu concordamos. Pela primeira vez em cem anos.",
+				"Traz três. Uma pra cabana, uma pro mangue, e uma pra eu esfregar na cara da outra. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Luz na janela é sinal de que alguém mora ali. Talvez um viajante veja de longe e pense em bater na porta.",
-				"Ninguém bateu ainda. Mas com luz, a chance aumenta. Eu fiz as contas. Tenho muito tempo pra fazer conta."
+				"Luz de sapo marca o território. Onde tem luz de sapo, tem bruxa. E onde tem bruxa, narigudo não pisa.",
+				"E sapo que come cubo de magma fica com medo de fogo pra sempre. Sapo com medo obedece mais. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Os sapos vão gostar. Pra eles é só um lanchinho. Pra mim é decoração.",
+				"Esse é o espírito! Vai pro Nether, peão corajoso. Se não voltar, a gente faz uma estátua. De lama.",
 				"<g>Entregue</g> <y>3 luzes de sapo</y> (de qualquer cor)."
 			],
 			"progress": [
@@ -197,8 +197,8 @@
 				"A cor vem do sapo: o laranja dá luz ocre, o branco dá perolada e o verde dá verdejante."
 			],
 			"complete": [
-				"Olha que lindo! A cabana parece uma lanterna no meio do pântano. Se alguém se perder por aqui, vai achar o caminho.",
-				"Toma um diamante, esmeraldas e garrafas de experiência. E deixa a luz acesa aí no seu coração também. Ai, que brega. Esquece."
+				"<n>*Hohohoho!*</n> Que lindo! O pântano já parece um reino. Um reino pequeno, molhado e cheio de mosquito. Mas nosso.",
+				"Toma um diamante, esmeraldas e garrafas de experiência. Peão que traz luz merece um pouco de brilho também."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:ochre_froglight", "minecraft:verdant_froglight", "minecraft:pearlescent_froglight"], "count": 3, "desc": "<g>Entregue</g> <y>3 luzes de sapo</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:experience_bottle", "count": 8}]
@@ -209,56 +209,56 @@
 			"title": "O Olho Que Azedou",
 			"tone": "calm",
 			"offer": [
-				"Lição de bruxaria, de graça, porque ninguém nunca me pede: <y>olho de aranha fermentado</y> vira tudo do avesso.",
-				"Poção de cura vira poção de dano. Visão noturna vira invisibilidade. É o ingrediente mais azedo do mundo. Meio parecido comigo depois de um dia sem falar com ninguém.",
-				"Preciso de oito. Você aprende a receita e eu ganho companhia enquanto você faz. Todo mundo sai ganhando."
+				"Agora o plano fica sério. Precisamos de <y>olhos de aranha fermentados</y>. Azedos. Podres. Perfeitos.",
+				"Com eles, a gente inverte poção: cura vira dano, velocidade vira lentidão. A outra chama isso de \"arte\". Eu chamo de \"terça-feira\".",
+				"Faz uns pra gente? Você tem mãos boas. Mãos de quem obedece. Digo, de quem ajuda. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Poção de invisibilidade, principalmente. Às vezes eu quero ir até a vila só pra ver o movimento, sem ninguém sair correndo.",
-				"Eu fico parada no canto da praça, invisível, ouvindo as conversas. É o mais perto de uma festa que eu chego."
+				"Imagina: um narigudo bebe o que acha que é cura... e <r>surpresa!</r> <a>*Kekeke!*</a> Nada grave, só uma lição. Uma lição bem dolorida.",
+				"E com poção de lentidão, nem o golem de ferro alcança a gente. Ele já é lento. Lento ao quadrado."
 			],
 			"accept": [
-				"Ah, que bom, uma aprendiz! Ou aprendiz de aprendiz. Não importa, já tô emocionada.",
-				"<g>Fabrique</g> <y>8 olhos de aranha fermentados</y>."
+				"Excelente! A outra disse que você era só músculo. Prova que ela tá errada. Eu adoro quando ela erra.",
+				"<g>Fabrique</g> <y>6 olhos de aranha fermentados</y>."
 			],
 			"progress": [
 				"A receita é sem forma: um olho de aranha, um cogumelo marrom e açúcar, em qualquer posição da bancada.",
 				"Açúcar sai da cana-de-açúcar, que cresce na beira da água. Aqui no pântano tem de monte."
 			],
 			"complete": [
-				"Oito olhinhos azedos! Que cheiro horrível. Que cheiro maravilhoso. Você tem talento, sabia?",
-				"Toma um diamante, varas de blaze e verruga do Nether. Kit de bruxa iniciante. Se abrir uma cabana, me chama pra inauguração."
+				"<n>*Hohohoho!*</n> Que cheiro horrível! Maravilhoso! A cabana inteira fede a vingança.",
+				"Toma um diamante, varas de blaze e verruga do Nether. Kit de bruxa iniciante. Quem sabe um dia você vira uma de nós. Pensa nisso."
 			],
-			"objective": {"type": "craft", "targets": ["minecraft:fermented_spider_eye"], "count": 8, "desc": "<g>Fabrique</g> <y>8 olhos de aranha fermentados</y>"},
+			"objective": {"type": "craft", "targets": ["minecraft:fermented_spider_eye"], "count": 6, "desc": "<g>Fabrique</g> <y>6 olhos de aranha fermentados</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:blaze_rod", "count": 4}, {"item": "minecraft:nether_wart", "count": 8}]
 		},
 		{
 			"id": "witch_2_breu",
 			"tier": 2,
-			"title": "O Jantar do Breu",
+			"title": "O Salário do Espião",
 			"tone": "calm",
 			"offer": [
-				"Conheça o <p>Breu</p>. Ele é um gato preto. Clichê, eu sei. Mas ele me escolheu, não o contrário.",
-				"Ele apareceu na cabana numa noite de tempestade, quando eu tinha acabado de chegar aqui, toda chamuscada. Ficou. Nunca mais foi embora.",
-				"Só que eu não sei pescar. Toda vez que eu tento, eu fico conversando com o peixe e ele foge. O Breu tá comendo cogumelo. Gato não gosta de cogumelo."
+				"O <p>Breu</p> entrou em greve. Diz que espião bom merece salário. Ele não disse, mas ficou me olhando. Gato fala com o olho.",
+				"O salário dele é <y>peixe cru</y>. E a gente tá sem, porque a outra congelou o rio e eu queimei a vara de pescar.",
+				"Traz peixe pro Breu. Sem espião, a gente fica cega. E bruxa cega não domina nada. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"O Breu é a única criatura que não foge de mim. A única. Ele merece o melhor jantar do pântano.",
-				"E gato bem alimentado traz presente de manhã. Às vezes uma pena, às vezes uma membrana de phantom. É o jeito dele de dizer que me ama."
+				"Ele vai na vila toda noite, entra pela janela, escuta as conversas. Sem ele, a gente nunca saberia que o ferreiro tem medo de sapo.",
+				"E gato bem alimentado espiona com mais carinho. Ninguém desconfia de um gato gordo dormindo na janela. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>Mrrrau.</p> Isso foi o Breu dizendo obrigado. Ele não costuma falar com estranhos, viu?",
-				"<g>Entregue</g> <y>16 peixes crus</y> (bacalhau ou salmão)."
+				"Isso! O Breu agradece. Do jeito dele, que é fingir que não viu você.",
+				"<g>Entregue</g> <y>12 peixes crus</y> (bacalhau ou salmão)."
 			],
 			"progress": [
 				"Uma vara de pesca em qualquer água serve. Bacalhau e salmão também nadam nos rios e oceanos, se preferir caçar.",
-				"Traga cru. Gato gosta de peixe cru, e é com ele que se ganha a confiança de um gato. Eu aprendi com o Breu."
+				"Traga cru. Gato gosta de peixe cru, e é com ele que se ganha a confiança de um gato. E de uma bruxa também, mas a gente prefere diamante."
 			],
 			"complete": [
-				"Olha a cara dele! Ele tá ronronando tão alto que os sapos pararam de coaxar pra ouvir.",
-				"Toma um diamante, esmeraldas e um livro de <p>Sorte do Mar II</p>. Pra você pescar melhor que eu. Não é difícil."
+				"<n>*Hohoho!*</n> O Breu voltou ao trabalho! Já saiu pela janela. Hoje à noite a gente vai saber tudo da vila.",
+				"Toma um diamante, esmeraldas e um livro de <p>Sorte do Mar II</p>. Pra você pescar o salário dele da próxima vez. Vai ter próxima vez."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:cod", "minecraft:salmon"], "count": 16, "desc": "<g>Entregue</g> <y>16 peixes crus</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:cod", "minecraft:salmon"], "count": 12, "desc": "<g>Entregue</g> <y>12 peixes crus</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:luck_of_the_sea", "level": 2}]
 		},
 		{
@@ -267,83 +267,83 @@
 			"title": "Vizinhos Molhados",
 			"tone": "danger",
 			"offer": [
-				"Eu tenho vizinhos. Que bom, né? Não. São os <r>afogados</r> do rio. Gemem a noite inteira, cheios de alga, e jogam tridente na minha janela.",
-				"Eu tentei puxar conversa. Levei um tridente no chapéu. Fiz um furo novo. Agora o chapéu assobia quando venta.",
-				"Se nem morto-vivo quer ser meu amigo, é porque o problema é sério. Dá um jeito neles?"
+				"Os <r>afogados</r> do rio estão invadindo o NOSSO pântano. Sem pedir licença! Sem trazer frasco!",
+				"A outra tentou congelar o rio pra eles não passarem. Funcionou por uma hora. Aí eu derreti sem querer. Querendo. A gente brigou.",
+				"Agora é com você. Mostra pra esses molhados que o pântano tem dona. Duas donas. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Eles assustam os peixes do Breu e afundam os nenúfares. E a água do rio é a que eu uso pra poção. Ninguém quer poção com gosto de afogado.",
-				"E, cá entre nós, eu prefiro ficar sozinha a ficar mal acompanhada."
+				"Território é território. Hoje são afogados, amanhã são os narigudos achando que podem vir colher cogumelo aqui. Não podem.",
+				"E afogado carrega tridente às vezes. A gente quer um pra cada uma. Pra apontar pra vila e fazer pose. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Leva uma poção de respiração... ah, não tenho. Vai assim mesmo, vai dar certo.",
-				"<r>Elimine 15 afogados</r>."
+				"Que coragem! A gente vai ficar aqui da janela, bem seca, torcendo muito.",
+				"<r>Elimine 12 afogados</r>."
 			],
 			"progress": [
 				"Afogados aparecem em rios e oceanos, principalmente à noite. Os que carregam tridente atacam de longe, então se esconda atrás de um bloco.",
 				"Um zumbi que fica muito tempo debaixo d'água vira afogado. É por isso que tem tanto deles por aí."
 			],
 			"complete": [
-				"Que silêncio no rio! Dá pra ouvir até a chuva caindo na água. Eu gosto desse som. Parece aplauso.",
-				"Toma diamantes, ferro e garrafas de experiência. E se achar um tridente por aí, é seu. Eu já tenho um. Na janela."
+				"<n>*Hohoho!*</n> O rio tá limpo! Agora só tem peixe, lama e a nossa reputação. Tudo como deve ser.",
+				"Toma diamantes, ferro e garrafas de experiência. E se achar um tridente, traz. Brincadeira. Fica com ele. A gente pega depois."
 			],
-			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 15, "desc": "<r>Elimine</r> <r>15 afogados</r>"},
+			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 12, "desc": "<r>Elimine</r> <r>12 afogados</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:experience_bottle", "count": 8}]
 		},
 		{
 			"id": "witch_2_melancia",
 			"tier": 2,
-			"title": "Remédio Pra Quem Ninguém Cura",
+			"title": "Remédio Com Preço",
 			"tone": "calm",
 			"offer": [
-				"Antes de ser bruxa, eu fui <a>clériga</a> numa vila. Eu curava as pessoas. Fazia poção de cura e ninguém tinha medo de mim.",
-				"Ainda sei a receita. A base é a <y>fatia de melancia reluzente</y>. Eu queria fazer umas poções de cura de novo. Pelo menos pra lembrar como era.",
-				"Quem sabe eu deixo umas na porta da vila. Escondida. Ninguém precisa saber que foi a bruxa."
+				"Ideia brilhante da outra. Bom, minha, mas ela vai dizer que foi dela. Vamos vender <y>poção de cura</y> pros narigudos.",
+				"Eles nos expulsaram, mas quando ficarem doentes vão vir bater na porta. E a gente vai cobrar. Caro. Muito caro. <n>*Hohohoho!*</n>",
+				"Pra isso precisamos de <y>fatias de melancia reluzentes</y>. Traz pra gente, peão empreendedor."
 			],
 			"why": [
-				"Porque eu sinto falta de ser útil. De alguém dizer obrigado, mesmo sem saber pra quem tá dizendo.",
-				"E porque, às vezes, quem precisa de cura sou eu. Uma poção de cura não cura saudade, mas ajuda no joelho."
+				"Vingança que dá lucro é a melhor vingança. Quatrocentos anos de experiência me ensinaram isso.",
+				"E quando a vila inteira depender das nossas poções... <a>*Kekeke!*</a> Aí quem manda na vila? Isso mesmo."
 			],
 			"accept": [
-				"Você é um amor. Já faz tanto tempo que ninguém me ajuda a ajudar.",
-				"<g>Entregue</g> <y>8 fatias de melancia reluzentes</y>."
+				"Ótimo! Você tem tino pros negócios. Vai longe. Do nosso lado, claro.",
+				"<g>Entregue</g> <y>6 fatias de melancia reluzentes</y>."
 			],
 			"progress": [
 				"Na bancada, cerque uma fatia de melancia com oito pepitas de ouro. Pronto, reluzente.",
 				"Pepitas saem de barras de ouro na bancada, ou de ferramentas de ouro derretidas na fornalha. Piglins zumbis também deixam cair."
 			],
 			"complete": [
-				"Oito fatias brilhantes. Parecem pedacinhos do sol. Eu não vejo o sol direito faz anos, aqui é tudo nublado.",
-				"Toma um diamante, esmeraldas e cenouras douradas. E se um dia achar uma poção de cura na sua porta... não fui eu. Fui eu."
+				"<n>*Hohoho!*</n> Que brilho! Já dá pra fazer poção pra vila inteira. E pra cobrar da vila inteira.",
+				"Toma um diamante, esmeraldas e cenouras douradas. Sua parte nos lucros. Uma parte pequena. É assim que funciona."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:glistering_melon_slice"], "count": 8, "desc": "<g>Entregue</g> <y>8 fatias de melancia reluzentes</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:glistering_melon_slice"], "count": 6, "desc": "<g>Entregue</g> <y>6 fatias de melancia reluzentes</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:golden_carrot", "count": 8}]
 		},
 		{
 			"id": "witch_2_arremesso",
 			"tier": 2,
-			"title": "Abraços de Longe",
+			"title": "Poção Que Voa Longe",
 			"tone": "calm",
 			"offer": [
-				"Todo mundo acha que bruxa joga <y>poção arremessável</y> por maldade. Às vezes é. Mas às vezes é o único jeito de chegar perto de alguém.",
-				"Ninguém deixa uma bruxa encostar. Mas uma poção arremessável voa, quebra e pronto: a pessoa ganhou força, ou velocidade, ou cura. De longe.",
-				"É tipo um abraço que você joga. Eu quero umas seis pra minha coleção de abraços."
+				"Bruxa que se preza não bebe a poção dos outros. Ela <r>joga</r> nos outros. É muito mais elegante.",
+				"Precisamos de <y>poções arremessáveis</y>. Pras invasões, pras visitas indesejadas e pra quando a outra pega minha colher.",
+				"<d>(voz gelada: \"A colher é minha!\")</d> Viu? Precisamos com urgência. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Na última tempestade, um aldeão caiu no rio. Eu joguei uma poção de cura nele e ele saiu correndo gritando que eu tava atacando.",
-				"Ele sobreviveu, né. Graças a mim. Mas tudo bem. Eu já me acostumei a ajudar sem receber obrigado."
+				"Na próxima invasão dos saqueadores, a gente vai estar lá atrás jogando poção. Em quem? Ah, em quem merecer. Às vezes até neles.",
+				"E poção arremessável cai em vários de uma vez. Eficiência de bruxa. A outra chama de \"economia de escala\"."
 			],
 			"accept": [
-				"Pode ser de qualquer tipo. Eu sei transformar uma na outra. Quase todas.",
+				"Perfeito! Faz bem caprichado. E não joga nenhuma em mim pra testar.",
 				"<g>Entregue</g> <y>6 poções arremessáveis</y>."
 			],
 			"progress": [
 				"No suporte de poções, coloque pólvora em cima de qualquer poção e ela vira arremessável.",
-				"Pólvora sai dos creepers. Explosão dos outros, felicidade sua. E se você usar pólvora numa garrafa de água, também vale."
+				"Pólvora sai dos creepers. E se você usar pólvora numa garrafa de água, também vale. Água arremessável apaga fogo. A outra adora."
 			],
 			"complete": [
-				"Seis abraços prontos pra voar! Vou guardar um pra você. Se te vir machucado por aí, você vai ganhar uma cura na cabeça.",
-				"Toma diamantes, pó de pedra luminosa e redstone. Com isso, você deixa suas poções mais fortes ou mais duradouras."
+				"<n>*Hohohoho!*</n> Que arsenal! Agora sim a gente pode visitar a vila. Em grande estilo. De longe.",
+				"Toma diamantes, pó de pedra luminosa e redstone. Com isso suas poções ficam mais fortes ou mais duradouras. Usa contra quem a gente mandar. Brincadeira."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:splash_potion"], "count": 6, "desc": "<g>Entregue</g> <y>6 poções arremessáveis</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:glowstone_dust", "count": 16}, {"item": "minecraft:redstone", "count": 16}]
@@ -351,56 +351,56 @@
 		{
 			"id": "witch_3_lagrimas",
 			"tier": 3,
-			"title": "Lágrimas Emprestadas",
+			"title": "Lágrimas de Monstro",
 			"tone": "danger",
 			"offer": [
-				"Você já viu um <r>ghast</r> chorando? Eles choram o tempo todo lá no Nether. Coitados. Flutuando sozinhos, sem ninguém pra conversar.",
-				"Eu entendo eles. De verdade. Mas as <y>lágrimas de ghast</y> fazem a melhor poção de regeneração que existe.",
-				"Eu choraria as minhas, mas lágrima de bruxa só serve pra deixar a sopa salgada. Já testei."
+				"Ingrediente raro pro plano: <y>lágrimas de ghast</y>. Aquelas águas-vivas gigantes do Nether choram que é uma beleza.",
+				"A outra diz que lágrima de ghast é o choro mais triste do mundo. Eu digo que é o ingrediente mais caro. Nós duas estamos certas.",
+				"Faz eles chorarem um pouquinho. Por nós. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Poção de regeneração é o que me mantém de pé nas noites de saqueador. E elas estão ficando mais frequentes.",
-				"E também porque eu acho bonito: a tristeza de um virando o remédio de outro. Alguém tem que aproveitar tanta tristeza."
+				"Com lágrima de ghast se faz poção de regeneração. Bruxa que se regenera não morre. Bruxa que não morre se vinga. Viu como funciona?",
+				"E a gente quer guardar umas pra quando os narigudos chorarem pedindo ajuda. Aí a gente mostra que chorar não é tão difícil. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Leve um escudo. Ghast cospe fogo quando se sente sozinho. Eu só faço sopa.",
-				"<g>Entregue</g> <y>4 lágrimas de ghast</y>."
+				"Corajoso! Ou bobo. Os dois servem. Vai pro Nether e volta inteiro, que peão quebrado não trabalha.",
+				"<g>Entregue</g> <y>3 lágrimas de ghast</y>."
 			],
 			"progress": [
 				"Ghasts flutuam pelo Nether, e o Vale de Areia das Almas está cheio deles. Rebata a bola de fogo com um golpe que ela volta pra eles.",
 				"Lute sobre chão firme: se a lágrima cair na lava, ela some. Arco ajuda muito, porque eles ficam longe."
 			],
 			"complete": [
-				"Quatro lágrimas. Parecem cristal. É engraçado pensar que alguém chorou isso tudo e agora vai me fazer sentir melhor.",
-				"Toma diamantes, uma maçã dourada e garrafas de experiência. E se você chorar um dia, me procura. Eu entendo do assunto."
+				"<n>*Hohoho!*</n> Que lágrimas lindas! A outra ficou emocionada. Ela diz que é o frio. Mentira.",
+				"Toma diamantes, uma maçã dourada e garrafas de experiência. Peão que faz monstro chorar merece ser bem pago."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:ghast_tear"], "count": 4, "desc": "<g>Entregue</g> <y>4 lágrimas de ghast</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:ghast_tear"], "count": 3, "desc": "<g>Entregue</g> <y>3 lágrimas de ghast</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 12}]
 		},
 		{
 			"id": "witch_3_carta",
 			"tier": 3,
-			"title": "Uma Carta Pela Água",
+			"title": "Carta Para as Primas",
 			"tone": "calm",
 			"offer": [
-				"Eu tenho uma irmã. A <p>Urtiga</p>. Ela também virou bruxa, mora num pântano muito, muito longe daqui. A gente se escreve.",
-				"Quer dizer, eu escrevo. Faz quatro luas que a última carta dela chegou. O pato que levava as cartas se aposentou. Ou foi comido. Prefiro não saber.",
-				"Você leva essa carta pra ela? É longe. Muito longe. Mas é tudo pelo rio e pelo mar, dá pra ir de barco."
+				"Toda dominação precisa de aliadas. E a gente tem primas. Bruxas, claro. Num pântano depois do mar.",
+				"Escrevi uma carta pra elas. Proposta de aliança. A outra escreveu um P.S. com ameaças. Eu apaguei. Ela escreveu de novo.",
+				"Leva de barco? É longe. Bem longe. Longe o bastante pros narigudos nunca descobrirem. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"A Urtiga é a única pessoa no mundo que sabe como é ser o que a gente é. Ninguém mais entende. Nem o Breu, e ele é muito inteligente.",
-				"Na carta eu conto dos sapos novos, da cabana reformada e de você. Ela vai ficar com ciúme. Eu fiz de propósito."
+				"Duas bruxas assustam uma vila. Quatro bruxas assustam o mundo. Matemática de bruxa.",
+				"E se as primas recusarem... bom, a carta tem o P.S. da outra. Ninguém recusa depois de ler o P.S. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Toma, tá aqui a carta. Não lê, tá? Tem uma parte que eu choro. E outra que eu falo mal da vila.",
+				"Ótimo! Rema bem e não lê a carta. Tá lacrada com cera de bruxa. Se abrir, a gente sabe.",
 				"<g>Navegue</g> <y>2000 blocos de barco</y> pra levar a carta."
 			],
 			"progress": [
 				"Só conta a distância andando de barco. Rios e oceanos são as estradas mais rápidas, e o barco nem cansa.",
-				"Truque de bruxa velha: barco em cima de gelo corre muito mais que na água, e a distância conta do mesmo jeito."
+				"Truque de bruxa velha: barco em cima de gelo corre muito mais que na água, e a distância conta do mesmo jeito. A outra é muito útil pra isso."
 			],
 			"complete": [
-				"Ela respondeu? Respondeu! Ela disse que tá com saudade e que o pântano dela é mais bonito. Mentira. O meu tem você.",
+				"<n>*Hohohoho!*</n> Chegou! As primas aceitaram. Disseram que nunca leram um P.S. tão convincente.",
 				"Toma diamantes, uma maçã dourada e um livro de <p>Passos Profundos III</p>. Pra próxima carta você ir andando debaixo d'água mesmo."
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:boat_one_cm"], "count": 200000, "desc": "<g>Navegue</g> <y>2000 blocos de barco</y>"},
@@ -412,56 +412,56 @@
 			"title": "Fogo Pro Caldeirão",
 			"tone": "danger",
 			"offer": [
-				"Meu suporte de poções tá frio. Sem <y>vara de blaze</y>, ele não funciona. E sem poção, eu sou só uma moça que mora na lama.",
-				"Os <r>blazes</r> moram nas fortalezas do Nether. Eles giram, queimam e jogam fogo em quem chega perto. Parecem a minha vizinhança antiga quando eu chegava perto.",
-				"Traz oito pra mim. Uma bruxa com o suporte aceso nunca está totalmente sozinha. O borbulhar faz companhia."
+				"Meu fogo tá fraco. A outra vive soprando gelo no caldeirão. Diz que é sem querer. Faz quatrocentos anos que é sem querer.",
+				"Preciso de <y>varas de blaze</y>. Fogo que não apaga, nem com a outra soprando. <n>*Hohoho!*</n>",
+				"Vai lá na fortaleza do Nether e pega pra mim. A outra não pode saber. Esse pedido é só entre nós dois."
 			],
 			"why": [
-				"Pó de blaze é o combustível do suporte. E é o ingrediente da poção de força. Eu preciso dela pra carregar caldeirão. E pra me sentir forte. Às vezes.",
-				"E à noite, o borbulhar do suporte é o único barulho da cabana que não é a chuva ou eu falando sozinha."
+				"Com pó de blaze o suporte de poções funciona dia e noite. E com fogo forte, eu ganho a próxima briga com a outra. Finalmente.",
+				"<d>(voz gelada do caldeirão: \"Eu ouvi tudo.\")</d> ...Ela ouviu. Ela sempre ouve. Traz mesmo assim."
 			],
 			"accept": [
-				"<p>*hihihi*</p> Leva bola de neve. Blaze odeia neve. Eu também, mas por outros motivos.",
-				"<g>Entregue</g> <y>8 varas de blaze</y>."
+				"Isso! E se a outra perguntar, você foi buscar cogumelo. Cogumelo do Nether. Tá valendo.",
+				"<g>Entregue</g> <y>6 varas de blaze</y>."
 			],
 			"progress": [
 				"Blazes aparecem nas fortalezas do Nether, muitas vezes ao redor de um gerador. Bolas de neve machucam eles.",
 				"Uma poção de resistência ao fogo deixa você imune às chamas deles. Creme de magma numa poção estranha e pronto."
 			],
 			"complete": [
-				"Oito varas, ainda quentinhas! O suporte acendeu na hora. Escuta: blup, blup. É a coisa mais aconchegante do mundo.",
-				"Toma diamantes e uma maçã dourada. E se o frio apertar, a porta da cabana tá aberta. Sempre. Ninguém nunca entra, mas tá aberta."
+				"<n>*HOHOHOHO!*</n> Olha essa chama! A outra recuou três passos! Três! Vitória do fogo!",
+				"Toma diamantes e uma maçã dourada. E não conta pra ela que fui eu que pedi. Ela sabe. Mas não conta."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:blaze_rod"], "count": 8, "desc": "<g>Entregue</g> <y>8 varas de blaze</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:blaze_rod"], "count": 6, "desc": "<g>Entregue</g> <y>6 varas de blaze</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}]
 		},
 		{
 			"id": "witch_3_membranas",
 			"tier": 3,
-			"title": "Asas da Insônia",
+			"title": "Asas Pra Vassoura",
 			"tone": "calm",
 			"offer": [
-				"Eu não durmo direito desde que cheguei no pântano. Fico deitada ouvindo a chuva e pensando na vila. Na minha antiga mesinha de clériga. No sino.",
-				"E sabe quem gosta de quem não dorme? Os <r>phantoms</r>. Eles me rondam toda madrugada.",
-				"Pelo menos as <y>membranas de phantom</y> deles servem pra poção de queda lenta. Me traz oito? Aí a insônia pelo menos rende alguma coisa."
+				"Toda bruxa de respeito tem vassoura voadora. A gente não tem. Não é justo. Quatrocentos anos a pé.",
+				"A outra descobriu que <y>membrana de phantom</y> conserta qualquer coisa que voa. E a gente vai fazer a vassoura voar. Nem que seja um pouquinho.",
+				"Traz pra gente. E depois a gente sobrevoa a vila. Só pra dar susto. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Poção de queda lenta é pra descer do telhado da cabana sem quebrar a perna. Eu subo lá pra ver se alguém tá vindo pela trilha.",
-				"Nunca vem ninguém. Mas a vista é bonita. E a queda é longa."
+				"Imagina os narigudos olhando pro céu e vendo duas bruxas rindo lá em cima. <a>*Kekeke!*</a> Nunca mais iam dormir. Ironia, já que é dos phantoms.",
+				"E membrana também faz poção de queda lenta. Pra quando a vassoura não funcionar. Ela não vai funcionar."
 			],
 			"accept": [
-				"Pra eles aparecerem, você precisa ficar umas noites sem dormir. Bem-vinda ao meu mundo.",
-				"<g>Entregue</g> <y>8 membranas de phantom</y>."
+				"Isso! Mas fica acordado umas noites, viu? Phantom só aparece pra quem não dorme. Igual bruxa.",
+				"<g>Entregue</g> <y>6 membranas de phantom</y>."
 			],
 			"progress": [
 				"Phantoms só aparecem pra quem passou três noites ou mais sem dormir. Eles atacam do céu, de madrugada.",
 				"Eles pegam fogo quando o sol nasce, então lute antes do amanhecer. Ou lute num lugar coberto, onde eles têm que descer."
 			],
 			"complete": [
-				"Oito membranas! Agora eu posso descer do telhado flutuando, que nem folha. Que nem uma bruxa elegante.",
-				"Toma diamantes e um livro de <p>Peso-Pena IV</p>. E vai dormir, viu? Não fica igual a mim."
+				"<n>*Hohohoho!*</n> A vassoura subiu dois blocos! Dois! E caiu. Mas subiu! A outra quebrou o chapéu.",
+				"Toma diamantes e um livro de <p>Peso-Pena IV</p>. Pra quando você cair de algum lugar. Fazendo serviço pra gente."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:phantom_membrane"], "count": 8, "desc": "<g>Entregue</g> <y>8 membranas de phantom</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:phantom_membrane"], "count": 6, "desc": "<g>Entregue</g> <y>6 membranas de phantom</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
 		},
 		{
@@ -470,74 +470,74 @@
 			"title": "Sorte de Bruxa",
 			"tone": "calm",
 			"offer": [
-				"Dizem que <y>pé de coelho</y> dá sorte. Eu tenho dois. Não deu. Um raio me transformou em bruxa e a vila me expulsou. Talvez eu precise de mais.",
-				"Brincadeira. Eu uso pra poção de salto. Pular alto ajuda a atravessar o pântano sem afundar na lama até o joelho.",
-				"E também porque... olha, se a sorte existir, eu quero ter bastante. Vai que ela me traz uma visita. Ah, espera, ela trouxe."
+				"Plano grande precisa de sorte grande. E sorte se compra com <y>pé de coelho</y>. Todo mundo sabe.",
+				"A outra diz que bruxa não precisa de sorte, precisa de inteligência. Eu digo que bruxa precisa das duas e de um peão. Você.",
+				"Traz uns pés de coelho pra gente. O coelho não vai sentir falta. Ele tem quatro. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Poção de salto me ajuda a pegar cogumelo no alto das raízes do mangue. Lá em cima tem uns que ninguém pega.",
-				"E sinceramente, minha sorte ultimamente é você. Mas pé de coelho é mais fácil de guardar no bolso."
+				"Pé de coelho vai na poção de salto. Com ela, a gente pula a muralha da vila sem o golem ver. <a>*Kekeke!*</a>",
+				"E um pé de coelho pendurado na porta afasta os aldeões curiosos. Isso não é verdade. Mas eles acreditam, e é o que importa."
 			],
 			"accept": [
-				"Os coelhos são rápidos e assustadiços. Igual os aldeões quando me veem. Boa sorte. Literalmente.",
-				"<g>Entregue</g> <y>4 pés de coelho</y>."
+				"Ótimo! Vai caçar, peão sortudo. Se você não tiver sorte, a culpa é da outra.",
+				"<g>Entregue</g> <y>3 pés de coelho</y>."
 			],
 			"progress": [
 				"Coelhos vivem em desertos, florestas de flores, taigas e campos nevados. Eles fogem rápido, então chegue devagar.",
 				"Nem todo coelho larga o pé, é raro. Uma espada com <p>Pilhagem</p> aumenta a chance."
 			],
 			"complete": [
-				"Quatro pezinhos! Agora eu tenho seis. Se a sorte não vier agora, ela não existe mesmo.",
-				"Toma diamantes, uma maçã dourada e esmeraldas. E guarda um pé de coelho pra você também. Pela sorte. E pelo coelho."
+				"<n>*Hohohoho!*</n> Sorte em dobro! Em triplo! A outra já pendurou um no chapéu. Ficou horrível. Não conta pra ela.",
+				"Toma diamantes, uma maçã dourada e esmeraldas. Fica um pouco da nossa sorte com você. Um pouco só."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:rabbit_foot"], "count": 4, "desc": "<g>Entregue</g> <y>4 pés de coelho</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:rabbit_foot"], "count": 3, "desc": "<g>Entregue</g> <y>3 pés de coelho</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:emerald", "count": 16}]
 		},
 		{
 			"id": "witch_3_baiacu",
 			"tier": 3,
-			"title": "Respirar Debaixo da Saudade",
+			"title": "O Peixe Que Incha",
 			"tone": "calm",
 			"offer": [
-				"Lá no fundo do rio, tem uma coisa que eu quero muito pegar. Um medalhão. Meu medalhão de clériga. Eu joguei ele lá no dia em que cheguei.",
-				"Fiquei com raiva. Fiquei com raiva de tudo. Hoje eu me arrependo. Mas o rio é fundo e eu não sei nadar direito.",
-				"Preciso fazer poção de respiração. E pra isso, preciso de <y>baiacus</y>. Oito. Aqueles peixinhos que incham quando ficam nervosos. Igual eu."
+				"Ingrediente perfeito pra bruxa: <y>baiacu</y>. Bonito, venenoso e inchado. Igual a outra quando fica brava.",
+				"<d>(voz gelada: \"Eu ouvi isso!\")</d> Ela ouviu. Enfim. Precisamos de baiacus pra poção de respirar debaixo d'água.",
+				"Com ela a gente atravessa o rio e chega na vila por baixo. Ninguém vigia o fundo do rio. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"O medalhão é a única coisa que sobrou da minha vida de antes. Da época em que as crianças corriam até mim, e não de mim.",
-				"Eu não quero voltar a ser clériga. Só quero lembrar que um dia eu fui."
+				"Ataque surpresa pelo poço da vila! Os narigudos vão buscar água e encontrar duas bruxas. <a>*Kekeke!*</a>",
+				"E o que sobrar vira veneno. Poção de veneno nunca é demais. A estante é grande."
 			],
 			"accept": [
-				"Não come o baiacu, hein. Ele envenena e dá enjoo. Eu sei porque eu comi. Eu estava muito triste aquele dia.",
-				"<g>Entregue</g> <y>8 baiacus</y>."
+				"Isso! Cuidado pra não encostar neles, viu? Peão envenenado trabalha devagar.",
+				"<g>Entregue</g> <y>6 baiacus</y>."
 			],
 			"progress": [
 				"Pescando com vara, de vez em quando vem um baiacu no anzol, em qualquer água.",
 				"Eles também nadam nos oceanos mornos. Se for pegar com a mão, cuidado: encostar neles infla o bicho e envenena você."
 			],
 			"complete": [
-				"Oito baiacus emburrados. Que lindos. Amanhã eu mergulho atrás do medalhão. Se eu não voltar, cuida do Breu. Brincadeira. Eu volto.",
-				"Toma diamantes e um livro de <p>Respiração III</p>. Assim você também pode procurar as coisas que deixou no fundo."
+				"<n>*Hohoho!*</n> Que peixinhos inchados! A poção ficou ótima. A outra já testou. Ficou com bolhas. Não sei se é da poção.",
+				"Toma diamantes e um livro de <p>Respiração III</p>. Assim você também pode passear debaixo d'água. Vigiando o poço pra gente."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:pufferfish"], "count": 8, "desc": "<g>Entregue</g> <y>8 baiacus</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:pufferfish"], "count": 6, "desc": "<g>Entregue</g> <y>6 baiacus</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
 		},
 		{
 			"id": "witch_4_saqueadores",
 			"tier": 4,
-			"title": "Nunca Mais Invasão",
+			"title": "Quem Manda Nos Saqueadores",
 			"tone": "danger",
 			"offer": [
-				"Você sabe por que tem bruxa nas invasões? Porque os <r>saqueadores</r> obrigam. Eles batem na porta da cabana, e não é pra tomar chá.",
-				"Eu odeio aquilo. Odeio. Eu fico lá atrás jogando poção nos aldeões, e eles me olham como se eu fosse o monstro. E eu era uma deles.",
-				"Eles me tratam como uma ferramenta. Eu não sou do lado dos mansos, mas também não sou capacho de ninguém."
+				"Os <r>saqueadores</r> acham que mandam nas bruxas. Batem na nossa porta, dão ordem, levam a gente nas invasões. Ordem! Pra nós!",
+				"A outra e eu decidimos: tá na hora de mostrar quem é que manda nessa aliança. E você vai mostrar por nós. <n>*Hohohoho!*</n>",
+				"Diminui um pouco esse exército. Não tudo. Só o suficiente pra eles virem pedir desculpa. E poção."
 			],
 			"why": [
-				"Se eles perderem gente suficiente, vão me deixar em paz por um tempo. E paz, pra mim, é mais rara que diamante.",
-				"Além disso, eu guardo rancor. É um dos meus melhores ingredientes."
+				"Saqueador assustado obedece. Saqueador que obedece ataca a vila que a gente escolher. Na hora que a gente escolher. Entendeu o plano?",
+				"E os narigudos vão achar que você é herói por enfrentar eles. <a>*Kekeke!*</a> Herói dos dois lados. Que peão valioso."
 			],
 			"accept": [
-				"<p>*hihihi*</p> Vingança servida fria, com um toque de olho de aranha fermentado.",
+				"Isso! Vai lá e manda lembranças das bruxas. Bem fortes.",
 				"<r>Elimine 15 saqueadores</r>."
 			],
 			"progress": [
@@ -545,8 +545,8 @@
 				"Fique de olho no capitão com o estandarte: ao cair, ele derruba uma garrafa ominosa. Beber aquilo traz encrenca."
 			],
 			"complete": [
-				"Quinze a menos! Eles vão pensar duas vezes antes de bater na minha porta. Talvez três.",
-				"Toma diamantes, maçãs douradas e um <o>Totem da Imortalidade</o>. Eu roubei de um evocador numa invasão. Ele mereceu."
+				"<n>*HOHOHOHO!*</n> Um capitão veio aqui agorinha. De chapéu na mão! Pedindo pra gente ir na próxima invasão. <i>Pedindo!</i>",
+				"Toma diamantes, maçãs douradas e um <o>Totem da Imortalidade</o>. A gente pegou de um evocador. Ele não vai precisar. Agora ele trabalha pra gente."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:pillager"], "count": 15, "desc": "<r>Elimine</r> <r>15 saqueadores</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
@@ -554,19 +554,19 @@
 		{
 			"id": "witch_4_coracao",
 			"tier": 4,
-			"title": "Um Coração Que Não Sente Falta",
+			"title": "O Coração Que a Gente Não Tem",
 			"tone": "calm",
 			"offer": [
-				"Existe uma coisa no fundo do mar chamada <y>coração do mar</y>. Dizem que é um coração que nunca se sente sozinho, porque o mar inteiro faz companhia.",
-				"Eu queria um. Pra ver como é. Pra segurar na mão e imaginar como seria ter um coração assim.",
-				"Os piratas enterravam esses corações nas praias. Os mapas ainda estão por aí, nos navios afundados."
+				"Dizem que bruxa não tem coração. Mentira! A gente tem um. Pequeno, gelado de um lado e queimado do outro.",
+				"Mas a gente quer um maior. O <y>coração do mar</y>. Com ele dá pra fazer um conduíte, e com um conduíte... o mar também é nosso.",
+				"O pântano, as vilas, e agora o mar. A outra acha ambicioso demais. Eu acho pouco. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Com o coração do mar, eu posso fazer um conduíte. Aí eu fico debaixo da água o tempo que quiser, conversando com os peixes.",
-				"Eles não fogem de mim. Peixe não tem preconceito com bruxa. Peixe é bom."
+				"Quem controla o mar controla os barcos. Quem controla os barcos controla o comércio dos narigudos. Sem comércio, sem esmeralda. Sem esmeralda... <a>*Kekeke!*</a>",
+				"E fica bonito na estante. Do lado dos olhos de aranha. Decoração é importante pra uma vilã."
 			],
 			"accept": [
-				"Se achar o tesouro, não abre tudo de uma vez. Aproveita. Eu sempre fico triste quando as coisas boas acabam rápido.",
+				"Corajoso! Vai cavar tesouro. E se achar ouro no baú, pode trazer também. A gente não reclama.",
 				"<g>Entregue</g> <y>1 coração do mar</y>."
 			],
 			"progress": [
@@ -574,8 +574,8 @@
 				"Siga o mapa até o X e cave. O baú costuma estar na areia, a poucos blocos de profundidade."
 			],
 			"complete": [
-				"Ele pulsa! Bem baixinho. Tum... tum... Parece que tem alguém do meu lado. Que coisa boba. Que coisa boa.",
-				"Toma diamantes, uma <n>sucata de netherita</n> e maçãs douradas. Eu achei no Nether, num dia em que fugi de casa. Da minha própria casa."
+				"<n>*Hohohoho!*</n> Que coração lindo! Bate mais forte que o nosso. Bom, o nosso nem bate. Mas esse bate.",
+				"Toma diamantes, uma <n>sucata de netherita</n> e maçãs douradas. Raridade por raridade. Bruxa sabe negociar."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:heart_of_the_sea"], "count": 1, "desc": "<g>Entregue</g> <y>1 coração do mar</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:netherite_scrap", "count": 1}, {"item": "minecraft:golden_apple", "count": 2}]
@@ -586,27 +586,27 @@
 			"title": "Os Urubus da Madrugada",
 			"tone": "danger",
 			"offer": [
-				"Lembra dos <r>phantoms</r>? Eles voltaram. E trouxeram os primos. E os primos dos primos. O céu da cabana tá cheio deles toda madrugada.",
-				"Eles gritam, mergulham e arrancam as telhas. Eu não durmo, então eles vêm. Eles vêm, então eu não durmo. É um ciclo. Um ciclo horrível.",
-				"Já que eu tô acordada mesmo, quero ver alguém dando uma lição neles. Se for você, melhor ainda."
+				"Os <r>phantoms</r> estão atrapalhando nossas reuniões noturnas. Ficam rodando em cima da cabana, guinchando, roubando a cena.",
+				"A gente conspira de madrugada! É tradição! E ninguém consegue planejar a dominação do mundo com um bicho voando em cima.",
+				"A outra tentou congelar eles no ar. Errou e congelou o Seu Coaxo. Ele tá bravo até hoje. Resolve isso, peão. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"O Breu fica eriçado a noite inteira. Gato até assusta phantom, mas não dá conta de tantos sozinho. E nem eu.",
-				"Se o céu ficar limpo, quem sabe eu durma uma noite inteira. Já esqueci como é."
+				"Sem sossego de noite, sem plano. Sem plano, sem vingança. Sem vingança, pra que viver quatrocentos anos?",
+				"E o céu precisa ficar livre pra nossa vassoura. Que ainda não voa. Mas um dia vai. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Fique três noites sem dormir. Eu te faço companhia. Até que enfim alguém pra passar a madrugada comigo.",
-				"<r>Elimine 20 phantoms</r>."
+				"Ótimo! Fica umas noites sem dormir. A gente faz isso sempre. Olha a nossa cara. Ótima, né?",
+				"<r>Elimine 15 phantoms</r>."
 			],
 			"progress": [
 				"Phantoms aparecem pra quem não dorme há três noites ou mais. Quanto mais tempo acordado, mais eles chegam.",
 				"Eles são mortos-vivos: uma espada com <p>Julgamento</p> machuca muito mais. E pegam fogo quando o sol nasce."
 			],
 			"complete": [
-				"O céu tá limpo! Dá pra ver as estrelas. Faz tanto tempo que eu não olho pra cima com calma.",
-				"Toma diamantes e maçãs douradas. E agora eu vou dormir. Quer dizer, vou tentar. Boa noite pra nós duas. Ou nós dois."
+				"<n>*Hohohoho!*</n> Que silêncio! Agora a reunião rende. Já planejamos três invasões e um bolo de aniversário. O bolo é envenenado.",
+				"Toma diamantes e maçãs douradas. E vai dormir, viu? Peão cansado erra. Peão que erra a gente substitui."
 			],
-			"objective": {"type": "kill", "targets": ["minecraft:phantom"], "count": 20, "desc": "<r>Elimine</r> <r>20 phantoms</r>"},
+			"objective": {"type": "kill", "targets": ["minecraft:phantom"], "count": 15, "desc": "<r>Elimine</r> <r>15 phantoms</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}]
 		},
 		{
@@ -615,16 +615,16 @@
 			"title": "Bafo de Dragão",
 			"tone": "danger",
 			"offer": [
-				"Toda bruxa tem um sonho. O meu é fazer uma <p>poção prolongada</p>. Aquela que vira uma nuvem e fica no chão um tempão.",
-				"Imagina: uma nuvem de cura na porta da vila, curando todo mundo que passar. E ninguém precisa chegar perto de mim pra isso.",
-				"O problema é o ingrediente: <y>bafo do dragão</y>. Do <r>Dragão do Fim</r>. Sim, aquele. Sim, de verdade."
+				"Agora o plano é sério de verdade. A gente precisa de <y>bafo do dragão</y>. Do dragão do Fim. Aquele grandão.",
+				"Com ele, poção arremessável vira poção persistente: uma nuvem que fica no chão. Uma nuvem de veneno na praça da vila... <n>*Hohohoho!*</n>",
+				"<d>(voz gelada: \"Ou uma nuvem de cura, pra gente cobrar depois!\")</d> Viu? Ela também pensa nos negócios."
 			],
 			"why": [
-				"Porque se eu não posso estar com as pessoas, quero pelo menos deixar alguma coisa boa onde elas estão.",
-				"E porque eu sou bruxa, ué. Bruxa que se preze tem bafo de dragão na prateleira."
+				"Nuvem que fica é nuvem que ninguém escapa. Perfeita pra defender o pântano. Ou pra atacar. Depende do dia.",
+				"E se você conseguir encarar o dragão, você é o peão mais valioso que a gente já teve. Valioso de verdade. A gente não fala isso pra qualquer um."
 			],
 			"accept": [
-				"Leve frascos vazios. Muitos. E não respire pelo nariz, dizem que o cheiro é pior que lama.",
+				"Que coragem! Vai lá, peão. Se o dragão te derrotar, a gente conta pra todo mundo que você era muito legal.",
 				"<g>Entregue</g> <y>6 frascos de bafo do dragão</y>."
 			],
 			"progress": [
@@ -632,8 +632,8 @@
 				"Se o dragão já foi derrotado, dá pra chamar ele de novo colocando quatro cristais do Fim em volta do portal de saída."
 			],
 			"complete": [
-				"Seis frascos roxos, rodopiando! Que coisa mais linda e mais fedida. Você enfrentou um dragão por mim. Ninguém nunca fez isso.",
-				"Toma diamantes e um <o>Totem da Imortalidade</o>. Você se arriscou demais. Fica com ele, pra próxima vez que fizer loucura por alguém."
+				"<n>*HOHOHOHO!*</n> Bafo de dragão! De verdade! A outra desmaiou de emoção. Ou do cheiro.",
+				"Toma diamantes e um <o>Totem da Imortalidade</o>. Peão que enfrenta dragão não pode morrer. Ainda temos muitos planos pra você."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:dragon_breath"], "count": 6, "desc": "<g>Entregue</g> <y>6 frascos de bafo do dragão</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:totem_of_undying", "count": 1}]
@@ -644,16 +644,16 @@
 			"title": "Esponjas Pra Secar o Pântano",
 			"tone": "calm",
 			"offer": [
-				"Choveu tanto este mês que a água entrou na cabana. Os sapos acharam ótimo. Eu, nem tanto. Meu livro de receitas tá flutuando.",
-				"Eu preciso de <y>esponjas molhadas</y>. Eu seco elas na fornalha e espalho pela casa. Elas bebem a água todinha.",
-				"Elas ficam nos templos do oceano, guardados por uns peixões de um olho só. Eles olham pra gente com desprezo. Eu conheço esse olhar."
+				"A outra inundou o porão. Diz que foi o gelo dela derretendo. Diz que fui eu que esquentei. Tá. Fui eu.",
+				"Lá embaixo tem nossos livros de feitiço. Quatrocentos anos de planos maléficos, encharcados. Preciso de <y>esponjas</y>.",
+				"Esponjas dos monumentos do mar. Molhadas, porque a gente seca no fogo depois. Eu cuido do fogo. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Nesse livro tem todas as receitas da minha vida. As de clériga, as de bruxa, e umas cartas da minha irmã que eu colei no meio.",
-				"Se ele estragar, eu perco tudo o que eu fui. Não posso deixar."
+				"Sem os livros, a gente esquece metade dos planos. E a outra lembra só a metade dela. Juntas, a gente ainda perderia metade.",
+				"E esponja serve pra secar o pântano em volta da vila. Os narigudos sem água pra plantar... <a>*Kekeke!*</a> Plano antigo. Tá no livro molhado."
 			],
 			"accept": [
-				"Leve leite. Os guardiões anciões dão uma fadiga que deixa o braço mole. O leite tira.",
+				"Ótimo! Cuidado com os guardiões. Eles olham feio. Mais feio que a outra.",
 				"<g>Entregue</g> <y>8 esponjas molhadas</y>."
 			],
 			"progress": [
@@ -661,8 +661,8 @@
 				"Uma esponja seca colocada na água também fica molhada na hora. Vale do mesmo jeito."
 			],
 			"complete": [
-				"A cabana tá sequinha! O livro tá salvo! Os sapos estão de mal comigo, mas eles me perdoam até amanhã.",
-				"Toma diamantes, uma <n>sucata de netherita</n> e uma maçã dourada. Você salvou minhas memórias. Isso não tem preço, mas eu tentei."
+				"<n>*Hohohoho!*</n> O porão tá seco! E os livros também. Quase todos. O capítulo \"Vingança, Parte 3\" virou papa.",
+				"Toma diamantes, uma <n>sucata de netherita</n> e uma maçã dourada. Você salvou nossos planos. Agora você faz parte deles."
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:wet_sponge"], "count": 8, "desc": "<g>Entregue</g> <y>8 esponjas molhadas</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:netherite_scrap", "count": 1}, {"item": "minecraft:golden_apple", "count": 1}]
@@ -670,30 +670,30 @@
 		{
 			"id": "witch_4_cogumeluz",
 			"tier": 4,
-			"title": "Luz Pra Cabana Inteira",
+			"title": "Luz Pro Covil",
 			"tone": "calm",
 			"offer": [
-				"As luzes de sapo ficaram lindas. Mas são poucas. A cabana ainda tem cantos escuros, e nos cantos escuros eu fico pensando demais.",
-				"Lá no Nether, nas florestas de fungos, crescem os <y>cogumeluzes</y>. Blocos que brilham como um pôr do sol. Quentinhos. Aconchegantes.",
-				"Eu queria uma cabana tão iluminada que dê pra ver do outro lado do pântano. Que nem farol."
+				"Toda vilã precisa de um covil. E covil escuro demais é só um porão. A gente quer <y>cogumeluz</y>. Do Nether.",
+				"Luz quente e misteriosa, perfeita pra reunião de bruxa. A outra queria gelo azul brilhante. Perdeu a votação. Eu votei duas vezes.",
+				"Traz bastante. O covil vai ser enorme. Do tamanho do nosso ego. <n>*Hohoho!*</n>"
 			],
 			"why": [
-				"Farol é feito pra guiar quem tá perdido. E eu fico pensando que, se alguém se perder por aqui, vai ver a luz e vir até mim.",
-				"Sim, eu sei. É um plano meio triste. Mas é um plano bonito."
+				"Os saqueadores vão chegar e ver tudo iluminado. Vão pensar \"essas bruxas são poderosas\". E vão estar certos.",
+				"E cogumeluz não derrete, não congela e não apaga. A única coisa nessa cabana que a outra não consegue estragar. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Use uma enxada, que eles saem rapidinho. Bruxa também entende de jardinagem, sabia?",
-				"<g>Entregue</g> <y>32 cogumeluzes</y>."
+				"Isso! Vai pras florestas do Nether. E cuidado com os hoglins, eles não respeitam bruxa.",
+				"<g>Entregue</g> <y>24 cogumeluzes</y>."
 			],
 			"progress": [
 				"Cogumeluzes nascem presos nos fungos gigantes das florestas carmesim e distorcida do Nether.",
 				"A enxada é a ferramenta certa pra quebrar eles. Cuidado com os hoglins na floresta carmesim, eles não gostam de visita."
 			],
 			"complete": [
-				"Olha! Do pântano inteiro dá pra ver a cabana brilhando. Os vaga-lumes vieram todos ver o que tava acontecendo.",
-				"Toma diamantes, maçãs douradas e garrafas de experiência. E se você se perder um dia... já sabe onde tem uma luz acesa."
+				"<n>*Hohohoho!*</n> Que covil! Os sapos estão até mais organizados. Luz faz bem pro império.",
+				"Toma diamantes, maçãs douradas e garrafas de experiência. E se você se perder um dia, siga a luz. Ela leva até a gente. Sempre."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:shroomlight"], "count": 32, "desc": "<g>Entregue</g> <y>32 cogumeluzes</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:shroomlight"], "count": 24, "desc": "<g>Entregue</g> <y>24 cogumeluzes</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}]
 		},
 		{
@@ -702,16 +702,16 @@
 			"title": "O Pesadelo de Três Cabeças",
 			"tone": "danger",
 			"offer": [
-				"Eu tenho um pesadelo que se repete. Três cabeças pretas flutuando sobre o pântano, e tudo que elas tocam murcha. As flores, os sapos, o Breu.",
-				"Bruxa sonha com o que vai acontecer, sabia? Pelo menos as bruxas que dormem pouco. E eu durmo quase nada.",
-				"O nome dele é <r>Wither</r>. E eu quero que você acabe com ele antes que ele exista de verdade."
+				"Nossa bola de cristal mostrou uma coisa ruim. Um bicho de <r>três cabeças</r> vai destruir o pântano, as vilas, tudo.",
+				"Destruir o mundo é trabalho NOSSO! Esse <r>Wither</r> tá roubando nosso emprego. Inaceitável. A outra tá furiosa. Eu também.",
+				"Derrota ele, peão. Ninguém domina o mundo antes das bruxas. <n>*HOHOHOHO!*</n>"
 			],
 			"why": [
-				"Eu já perdi uma vila, um nome e uma vida inteira. Esse pântano é tudo que me sobrou. Não vou perder ele também.",
-				"E a estrela do Nether que ele deixa é sua. Eu não preciso de estrela. Eu só preciso que as minhas coisas continuem vivas."
+				"Se o Wither acabar com as vilas, de quem a gente vai se vingar? Pensa. Quatrocentos anos de rancor jogados fora.",
+				"E quem derrota o Wither vira lenda. Lenda que trabalha pras bruxas. Imagina o medo que os narigudos vão sentir da gente. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Leve leite, comida, a melhor armadura que tiver. E volta inteira, viu? Inteiro. Volta.",
+				"Esse é o nosso peão! Digo, nosso campeão. A outra vai benzer sua espada. Com gelo. Vai doer um pouco.",
 				"<r>Derrote o Wither</r>."
 			],
 			"progress": [
@@ -719,8 +719,8 @@
 				"Os crânios caem raramente dos esqueletos wither das fortalezas do Nether. Lute longe de casa e, se puder, debaixo da terra."
 			],
 			"complete": [
-				"Eu dormi. Pela primeira vez em anos, eu dormi a noite inteira. Sem pesadelo. Acordei com o Breu no meu peito, ronronando.",
-				"Toma uma <n>barra de netherita</n>, diamantes e uma <p>maçã dourada encantada</p>. Você mudou o futuro. Eu vi."
+				"<n>*HOHOHOHO!*</n> <a>*KEKEKEKE!*</a> A bola de cristal clareou! O futuro é nosso de novo! Só nosso!",
+				"Toma uma <n>barra de netherita</n>, diamantes e uma <p>maçã dourada encantada</p>. Você salvou o mundo. Pra gente dominar depois."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>o Wither</r>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
@@ -728,59 +728,59 @@
 		{
 			"id": "witch_5_macas",
 			"tier": 5,
-			"title": "A Maçã Que Desfaz Feitiço",
+			"title": "O Elixir da Juventude",
 			"tone": "calm",
 			"offer": [
-				"Vou te contar uma coisa que eu nunca contei pra ninguém. Nem pra Urtiga. Existe um jeito de desfazer o que o raio fez comigo.",
-				"Uma poção antiga, que leva a <p>maçã dourada encantada</p>. Aquela que ninguém mais sabe fazer, que só se acha em baús esquecidos.",
-				"Duas. Uma pra mim. E uma pra minha irmã. Se der certo, a gente volta a ser quem era. Se não der... pelo menos eu tentei."
+				"Segredo de bruxa: a gente tá ficando velha. Quatrocentos anos pesam. A outra já esquece onde deixou o gelo.",
+				"<d>(voz gelada: \"E você esquece onde deixou o juízo!\")</d> Viu? Precisamos de uma <y>maçã dourada encantada</y>. Pro elixir da juventude.",
+				"Com ela, mais quatrocentos anos de planos. E de briga. Principalmente de briga. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Eu não sei se quero voltar pra vila. Sei lá se alguém lembra de mim. Mas eu queria poder escolher. Nunca me deram escolha.",
-				"E se não funcionar, eu como as maçãs. Tem gente que afoga a tristeza em sopa. Eu vou afogar em maçã dourada."
+				"Vilã velha demais esquece o plano no meio. A gente quer estar bem disposta no dia em que o pântano, as vilas e os saqueadores forem nossos.",
+				"E se sobrar um pedacinho, quem sabe a gente divide com o peão mais leal. Quem sabe. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Obrigada. De verdade. Você é a primeira pessoa em anos que me ajuda a ter esperança.",
-				"<g>Entregue</g> <y>2 maçãs douradas encantadas</y>."
+				"Isso! Essa é rara, viu? Procura bem. A gente espera. Esperar é nossa especialidade.",
+				"<g>Entregue</g> <y>1 maçã dourada encantada</y>."
 			],
 			"progress": [
-				"Não dá pra fabricar. Elas só aparecem em baús: cidades antigas, bastiões, templos do deserto, masmorras, minas abandonadas e mansões.",
+				"Não dá pra fabricar. Ela só aparece em baús: cidades antigas, bastiões, templos do deserto, masmorras, minas abandonadas e mansões.",
 				"Os cofres ominosos das câmaras de desafio também podem dar uma. Coragem, e chave ominosa no bolso."
 			],
 			"complete": [
-				"Duas maçãs brilhando como se tivessem estrelas dentro. Eu vou guardar uma pra Urtiga. A outra eu ainda vou decidir. Com calma.",
-				"Toma duas <n>barras de netherita</n>, diamantes e um <o>Totem da Imortalidade</o>. Você me deu uma escolha. Eu te dou uma segunda chance."
+				"<n>*Hohohoho!*</n> Olha minha pele! Tá verde ainda, mas um verde de trezentos anos! A outra tá com inveja.",
+				"Toma duas <n>barras de netherita</n>, diamantes e um <o>Totem da Imortalidade</o>. Pra você também durar bastante. A gente precisa de você por muito tempo."
 			],
-			"objective": {"type": "deliver", "targets": ["minecraft:enchanted_golden_apple"], "count": 2, "desc": "<g>Entregue</g> <y>2 maçãs douradas encantadas</y>"},
+			"objective": {"type": "deliver", "targets": ["minecraft:enchanted_golden_apple"], "count": 1, "desc": "<g>Entregue</g> <y>1 maçã dourada encantada</y>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		},
 		{
 			"id": "witch_5_alquimia",
 			"tier": 5,
-			"title": "Mil Fervuras",
+			"title": "Aprendiz de Bruxa",
 			"tone": "calm",
 			"offer": [
-				"Você aprendeu tanta coisa comigo. Agora eu quero ver se aprendeu de verdade. Prova final da escola de bruxaria do pântano.",
-				"A escola sou eu. Os alunos são você. E o Breu, mas ele dorme na aula.",
-				"Use um <y>suporte de poções</y> duzentas vezes. Duzentas! Uma bruxa de verdade vive com a cara no vapor."
+				"Decidimos uma coisa, eu e a outra. Depois de muita briga. Você vai ser nosso <i>aprendiz</i>.",
+				"Aprendiz de bruxa aprende tudo: cura, veneno, força, invisibilidade. E principalmente a obedecer. Isso é a primeira lição. <n>*Hohoho!*</n>",
+				"Usa um <y>suporte de poções</y> até suas mãos cheirarem a verruga do Nether. Aí a gente conversa."
 			],
 			"why": [
-				"Porque um dia eu não vou estar mais aqui. E eu quero que alguém lembre das receitas. Alguém que não fuja.",
-				"Toda bruxa sonha em deixar uma herdeira. Ou um herdeiro. Eu não sou exigente. Só quero que alguém fique."
+				"Um dia a gente vai ter um exército de poções. Alguém precisa fazer as poções. Esse alguém é você. Que honra, né?",
+				"E aprendiz bom herda os segredos da família. A gente não tem filhos. Tem sapos. E agora tem você. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"<p>*hihihi*</p> Começa já! Verruga do Nether na garrafa de água, sempre o primeiro passo.",
-				"<g>Use</g> <y>um suporte de poções 200 vezes</y>."
+				"Bem-vindo à família, aprendiz! A outra vai te ensinar a parte gelada. Eu ensino a parte divertida.",
+				"<g>Use</g> <y>um suporte de poções 100 vezes</y>."
 			],
 			"progress": [
 				"Cada vez que você abre um suporte de poções, conta. Fazer poção de verdade é mais divertido, mas abrir e conferir também vale.",
 				"O suporte é feito com uma vara de blaze em cima de três pedregulhos. E o pó de blaze é o combustível dele."
 			],
 			"complete": [
-				"Duzentas vezes! Você agora é oficialmente bruxa honorária do pântano. Pode usar chapéu pontudo. Mas o da ponta torta é meu.",
-				"Toma uma <n>barra de netherita</n>, diamantes, um livro de <p>Remendo</p> e um <o>Totem da Imortalidade</o>. Herança de bruxa. Cuida bem."
+				"<n>*Hohohoho!*</n> Que cheiro de alquimia! Você já é quase uma bruxa. Falta o chapéu e o rancor. O rancor a gente ensina.",
+				"Toma uma <n>barra de netherita</n>, diamantes, um livro de <p>Remendo</p> e um <o>Totem da Imortalidade</o>. Herança de bruxa. Não gasta tudo de uma vez."
 			],
-			"objective": {"type": "stat", "targets": ["minecraft:interact_with_brewingstand"], "count": 200, "desc": "<g>Use</g> <y>um suporte de poções 200 vezes</y>"},
+			"objective": {"type": "stat", "targets": ["minecraft:interact_with_brewingstand"], "count": 100, "desc": "<g>Use</g> <y>um suporte de poções 100 vezes</y>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 22}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		},
 		{
@@ -789,16 +789,16 @@
 			"title": "O Silêncio Lá Embaixo",
 			"tone": "danger",
 			"offer": [
-				"Você acha que o pântano é silencioso? Lá embaixo, no <r>escuro profundo</r>, mora um silêncio muito pior. Um silêncio que escuta.",
-				"O <r>Warden</r>. Ele não tem olhos. Encontra as pessoas pelo barulho. Pelo coração batendo. Eu tenho pena dele, sabia? Ninguém deve chegar perto dele também.",
-				"Mas ele subiu demais. A terra treme embaixo da cabana. Os sapos não coaxam mais. Os vaga-lumes sumiram."
+				"Tem um lugar onde nem as bruxas mandam. Lá embaixo, nas cidades antigas, mora o <r>Warden</r>.",
+				"Ele não enxerga, mas ouve tudo. Igual a outra. A diferença é que a outra não arranca a cabeça de ninguém. Quase nunca.",
+				"Se você derrotar ele, as cidades antigas e tudo que tem nos baús de lá viram nossos. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Se nem os sapos têm coragem de cantar, o pântano morre. E eu sem os sapos... eu nem quero pensar.",
-				"Eu sei que estou te pedindo uma loucura. Mas você é a única pessoa que já voltou de todas as loucuras que eu pedi."
+				"Um império precisa de porão. E o porão mais fundo do mundo tá ocupado. Não pode.",
+				"E com o eco que tem lá embaixo, a nossa risada vai ecoar até a vila. Imagina os narigudos ouvindo isso de madrugada. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Anda agachada. Não faz barulho. E se o coração disparar... tenta pensar em mim fazendo sopa. Acalma.",
+				"Que corajoso! Vai devagarinho, abaixado. E se ouvir uma risada no escuro, não é ele. Somos nós.",
 				"<r>Derrote 1 Warden</r>."
 			],
 			"progress": [
@@ -806,8 +806,8 @@
 				"Andar agachado não ativa os sensores. Pisar em lã também não faz barulho pra eles. Ele bate muito forte, então lute de longe se puder."
 			],
 			"complete": [
-				"Ouviu isso? Os sapos voltaram a cantar. Todos ao mesmo tempo. Parece uma festa. Parece uma festa pra você.",
-				"Toma duas <n>barras de netherita</n>, diamantes, uma <p>maçã dourada encantada</p> e um <o>Totem da Imortalidade</o>. Tudo que eu guardava pra um dia especial. Hoje é o dia."
+				"<n>*HOHOHOHO!*</n> <a>*KEKEKEKE!*</a> O mundo de baixo é nosso! Ouviu o eco? É a gente rindo lá do fundo!",
+				"Toma duas <n>barras de netherita</n>, diamantes, uma <p>maçã dourada encantada</p> e um <o>Totem da Imortalidade</o>. O melhor peão merece o melhor pagamento."
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:warden"], "count": 1, "desc": "<r>Derrote</r> <r>1 Warden</r>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
@@ -815,30 +815,30 @@
 		{
 			"id": "witch_5_familia",
 			"tier": 5,
-			"title": "Ninguém Fica Sozinho",
+			"title": "Um Exército de Bichinhos",
 			"tone": "calm",
 			"offer": [
-				"Eu passei a vida inteira achando que solidão era meu destino. Aí você apareceu. E eu fiquei pensando: e se ninguém precisasse ficar sozinho?",
-				"Sapos com sapos. Gatos com gatos. Vaquinhas com vaquinhas. O mundo inteiro cheio de família. Que bonito, né?",
-				"Quero que você ajude <y>cem casais de bichos</y> a terem filhotes. Cem! Eu sei que é muito. Solidão também é muita."
+				"O exército de sapos cresceu, mas ainda é pouco. A gente pensou maior. Muito maior.",
+				"Vacas, ovelhas, porcos, galinhas, gatos. Todo bicho que nasce perto de bruxa cresce leal às bruxas. A outra jura. Eu acredito. Mais ou menos.",
+				"Cria um monte de <y>filhotes</y> pra gente. Fofinhos por fora, soldados por dentro. <n>*Hohohoho!*</n>"
 			],
 			"why": [
-				"Porque cada filhote que nasce é alguém que nunca vai saber como é viver sozinho no meio da lama.",
-				"E porque eu quero ver o pântano cheio de vida. Barulho de bicho é o melhor barulho do mundo. Melhor que o meu próprio eco."
+				"Quando o grande dia chegar, os narigudos vão olhar pras próprias vacas e pensar: \"de que lado elas estão?\" <a>*Kekeke!*</a>",
+				"E bichinho bem tratado não foge. Aprende isso, peão. Funciona com bicho. Funciona com peão também."
 			],
 			"accept": [
-				"<p>*hihihi*</p> Começa pelos sapos! Bolinha de slime. Eles são tímidos, mas são românticos.",
-				"<g>Crie</g> <y>100 filhotes de animais</y>."
+				"Isso! Vai lá e espalha amor. Amor estratégico. O melhor tipo.",
+				"<g>Crie</g> <y>60 filhotes de animais</y>."
 			],
 			"progress": [
 				"Cada animal tem sua comida favorita: trigo pra vaca e ovelha, cenoura pra porco, sementes pra galinha, peixe cru pra gato, bolinha de slime pra sapo.",
 				"Dois animais da mesma espécie comem e nasce um filhote. Depois eles precisam de uns minutos antes de criar de novo."
 			],
 			"complete": [
-				"Cem famílias novas! O mundo ficou um pouquinho menos sozinho. E eu também. Muito menos.",
-				"Toma uma <n>barra de netherita</n>, diamantes e um <o>Totem da Imortalidade</o>. E quando quiser companhia, a cabana é sua família também."
+				"<n>*Hohohoho!*</n> Que exército fofo! Ninguém vai suspeitar. Ninguém nunca suspeita de um carneirinho.",
+				"Toma uma <n>barra de netherita</n>, diamantes e um <o>Totem da Imortalidade</o>. Você é oficialmente general do exército fofo das bruxas."
 			],
-			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 100, "desc": "<g>Crie</g> <y>100 filhotes de animais</y>"},
+			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 60, "desc": "<g>Crie</g> <y>60 filhotes de animais</y>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 20}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		},
 		{
@@ -847,27 +847,27 @@
 			"title": "A Grande Maré de Gosma",
 			"tone": "danger",
 			"offer": [
-				"Lembra do Gelatina? O slime que se dividiu em quatro? Pois é. Os quatro se dividiram. E os outros também. E agora o pântano é uma <r>maré de gosma</r>.",
-				"Eles quicam em cima da cabana, nas raízes, nos nenúfares. Os sapos comem o que conseguem, mas estão de barriga cheia faz uma semana.",
-				"Preciso de um exército. Mas eu não tenho amigos pra formar um exército. Então eu tenho você. Você vale um exército."
+				"Os <r>slimes</r> se rebelaram de vez. Juntaram um exército. Estão pulando contra a cabana em ondas. ONDAS!",
+				"A outra congelou a primeira onda. Eu queimei a segunda. A terceira entrou pela chaminé. Isso é guerra.",
+				"Precisamos de um general. Um com espada boa. Você. <n>*HOHOHOHO!*</n> Esmaga a rebelião."
 			],
 			"why": [
-				"Se ninguém fizer nada, a gosma vai cobrir o pântano inteiro. E o pântano é tudo que eu tenho. Ele e vocês.",
-				"Disse vocês? Disse. Você, o Breu e os sapos. Minha família esquisita."
+				"Ninguém se rebela contra as bruxas e continua pulando. É questão de princípio. E de reputação.",
+				"Se os saqueadores souberem que a gente perdeu pra gosma, nunca mais vão respeitar a gente. Isso não pode acontecer. <a>*Kekeke!*</a>"
 			],
 			"accept": [
-				"Vai precisar de paciência. Muita. Mas paciência, isso eu te ensinei, né?",
-				"<r>Elimine 200 slimes</r> (os pequenos também contam)."
+				"Esse é o espírito! Vai, general. E não volta com gosma no sapato, que a outra acabou de limpar. Congelando.",
+				"<r>Elimine 120 slimes</r> (os pequenos também contam)."
 			],
 			"progress": [
 				"Cada slime grande se divide em médios, e os médios em pequenos. Todos contam, então um slime grande rende vários.",
 				"No subsolo, abaixo da camada 40, existem pedaços do mundo onde slimes nascem sem parar. Achando um, ilumine as cavernas em volta: lá os slimes nascem até no claro."
 			],
 			"complete": [
-				"Acabou! O pântano tá limpo, os sapos estão de dieta e o Breu saiu pra passear pela primeira vez em semanas.",
-				"Toma uma <n>barra de netherita</n>, diamantes e uma <p>maçã dourada encantada</p>. E as bolinhas de slime que você juntou pelo caminho, pode ficar. Por favor, fique com elas."
+				"<n>*HOHOHOHO!*</n> A rebelião acabou! Os slimes que sobraram assinaram um tratado de rendição. Com gosma, mas assinaram.",
+				"Toma uma <n>barra de netherita</n>, diamantes e uma <p>maçã dourada encantada</p>. E as bolinhas de slime que você juntou, pode ficar. Por favor, fica com elas."
 			],
-			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 200, "desc": "<r>Elimine</r> <r>200 slimes</r>"},
+			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 120, "desc": "<r>Elimine</r> <r>120 slimes</r>"},
 			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}]
 		}
 	]

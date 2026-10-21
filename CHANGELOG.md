@@ -4,6 +4,23 @@ A versão do mod fica em `gradle.properties`. Toda atualização com melhorias s
 (1.1.0 → 1.2.0 → 1.3.0...). Ao enviar para o branch `main`, o GitHub compila e publica a release
 com o `.jar` automaticamente, usando as notas desta página.
 
+## [1.4.0] - 2026-10-21 — Folgas, Vendedor Ambulante e o raro Elebin
+
+### Novidades
+- **Folga dos aldeões:** cada aldeão tem o seu dia de descanso, em dias diferentes dos colegas, então a vila nunca para inteira. Cada vila tem o seu costume: o ciclo de folga muda de vila para vila (3 a 7 dias, ajustável em Opções). Trabalhos pesados folgam dois dias por ciclo.
+  - Na folga o aldeão **tira o uniforme**, **não trabalha** (o fazendeiro não colhe, o bibliotecário não vai ao atril), não passa missões e não abre a banca.
+  - Ele fica segurando algo que lembra a profissão: trigo, peixe, tesoura, livro, frasco...
+- **Vendedor Ambulante:** agora conversa! Misterioso, cheio de piadinhas e às vezes de mau humor, conta lendas e curiosidades do mundo do Minecraft (o Homem de Olhos Brancos, as Terras Distantes, a semente do mundo...). Também abre as trocas pela conversa.
+- **Elebin:** um clérigo raro. Cerca de 15% dos clérigos se chamam Elebin, com falas e histórias só dele. O primeiro encontro é comemorado na tela.
+- **Profissões de outros mods** (More Villagers: Re-employed e afins): são reconhecidas ao abrir o mundo e ganham nome em português, falas, afinidade, barganha e 10 missões.
+- **Mais missões:** cada profissão de aldeão agora tem 14 missões.
+- **Falas conforme o tempo e o dia:** aldeões, bruxas e o Vendedor Ambulante falam diferente com chuva, com tempestade, à noite e na sexta, no sábado e no domingo. A aba Início mostra o dia, o dia da semana e o tempo.
+
+### Mudanças
+- **Bruxas repaginadas:** gêmeas maquiavélicas, uma de fogo e outra de gelo, que tramam dominar o pântano (e depois as vilas). As quantidades pedidas foram rebalanceadas: por exemplo, 16 frascos de vidro em vez de 24.
+- **Nomes novos:** aldeões com nomes comuns (Pedro, Jorge, Douglas...), sem "Dona" ou "Seu".
+- A folga antes valia só para os trabalhos pesados; agora vale para todas as profissões.
+
 ## [1.3.0] - 2026-10-17 — Menu novo, HUD compacto e opções do mod
 
 ### Novidades

@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:cooked_rabbit", "count": 8}]
 		},
 		{
+			"id": "leatherworker_1_coelhos",
+			"tier": 1,
+			"title": "Pele de Coelho",
+			"tone": "calm",
+			"offer": [
+				"Oxente, cabra, tu já viu luva de pele de coelho? Macia que só, quentinha igual abraço de mãe.",
+				"As crianças da vila vivem com a mão gelada no inverno. Eu queria fazer uma luvinha pra cada uma.",
+				"Só que coelho é bicho ligeiro, rapaz. Eu corro atrás e ele some no mato antes de eu piscar."
+			],
+			"why": [
+				"Criança com mão gelada não brinca, não ajuda em casa e ainda pega gripe. Aí a mãe vem reclamar comigo, vixe.",
+				"E o que sobrar de pele eu junto pra fazer couro. Coureiro bom não joga nada fora."
+			],
+			"accept": [
+				"Égua, que bom! Coelho tem no deserto, na neve, nos campos de flores... em tudo que é canto.",
+				"<g>Traga</g> <y>12 peles de coelho</y>."
+			],
+			"progress": [
+				"Coelho gosta de cenoura. Segura uma na mão que ele vem chegando, curioso.",
+				"Quatro peles de coelho viram um couro na mesa de trabalho. Mas essas aqui eu quero inteirinhas, visse?"
+			],
+			"complete": [
+				"Vixe, que pele macia! Vai dar luva pra criançada toda e ainda sobra pra um gorrinho.",
+				"Toma umas esmeraldas e um pouco de ferro, cabra. Tu é arretado."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:rabbit_hide"], "count": 12, "desc": "<g>Entregue</g> <y>12 peles de coelho</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
 			"id": "leatherworker_2_tartarugas",
 			"tier": 2,
 			"title": "O Casco Protetor",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:phantom_membrane"], "count": 12, "desc": "<g>Entregue</g> <y>12 membranas de phantom</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "leatherworker_2_livros",
+			"tier": 2,
+			"title": "Capa de Couro",
+			"tone": "calm",
+			"offer": [
+				"Rapaz, o bibliotecário veio aqui chorando. Diz que a umidade comeu as capas dos livros da biblioteca.",
+				"Ele quer <y>livros novos</y>, com capa de couro bem costurada, do jeito que só um coureiro sabe fazer.",
+				"Eu costuro a capa. Mas papel e couro na quantidade que ele quer, só se tu me ajudar."
+			],
+			"why": [
+				"Livro é a memória da vila, cabra. Ali tá escrito quem fundou, quem casou, quem brigou com quem.",
+				"E sem livro não tem estante, sem estante o bibliotecário não encanta nada. Vixe, aí desanda tudo."
+			],
+			"accept": [
+				"Égua, tu é dos bons! Livro é três papéis e um couro. Papel vem da cana-de-açúcar.",
+				"<g>Traga</g> <y>16 livros</y>."
+			],
+			"progress": [
+				"Três canas-de-açúcar na mesa de trabalho viram três papéis. Planta cana na beira da água que ela cresce sozinha.",
+				"Estante quebrada solta livro. Mas não vai quebrar a da biblioteca, pelo amor de Deus!"
+			],
+			"complete": [
+				"Que livros bonitos, cabra! O bibliotecário vai até parar de chorar. Ou chorar de alegria, sei lá.",
+				"Toma esmeraldas, um diamante e um pouco de ferro. Pela memória da vila, obrigado."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:book"], "count": 16, "desc": "<g>Entregue</g> <y>16 livros</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 6}]
 		},
 		{
 			"id": "leatherworker_3_errantes",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
 		},
 		{
+			"id": "leatherworker_3_selas",
+			"tier": 3,
+			"title": "A Selaria do Sertão",
+			"tone": "calm",
+			"offer": [
+				"Vixe, cabra, chegou uma encomenda das grandes: os tropeiros da estrada do deserto querem <y>selas novas</y> pros animais.",
+				"As velhas tão tudo rachada de sol. Teve tropeiro que caiu do cavalo no meio da duna e voltou a pé, xingando até a quinta geração.",
+				"Mas sela boa dá trabalho, rapaz. Tem que ter couro forte e uma fivela de ferro bem firme."
+			],
+			"why": [
+				"Tropeiro sem sela não viaja. Sem viagem, não chega mercadoria na vila. Nem couro, nem sal, nem notícia.",
+				"Tu já é <o>Aventureiro</o>, já sabe o valor de uma boa montaria. Faz com capricho, que é tua assinatura também."
+			],
+			"accept": [
+				"Arretado! Sela se faz com três couros e um lingote de ferro na mesa de trabalho.",
+				"<g>Fabrique</g> <y>6 selas</y>."
+			],
+			"progress": [
+				"Couro vem das vacas, dos cavalos e das lhamas. Faz uma criação de vaca que o couro nunca falta.",
+				"Sela também aparece em baú de masmorra, de templo e de fortaleza. Mas fabricada por tu tem outro valor, visse?"
+			],
+			"complete": [
+				"Seis selas firmes e bem costuradas! Os tropeiros vão atravessar o deserto rindo à toa.",
+				"Toma diamantes, esmeraldas e frascos de experiência. Tu tem mão de coureiro, cabra."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:saddle"], "count": 6, "desc": "<g>Fabrique</g> <y>6 selas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
 			"id": "leatherworker_4_montaria",
 			"tier": 4,
 			"title": "Montaria de Guerra",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 20, "desc": "<r>Elimine</r> <r>20 esqueletos murchos</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "leatherworker_4_blazes",
+			"tier": 4,
+			"title": "Couro Que Não Queima",
+			"tone": "danger",
+			"offer": [
+				"Cabra, os guardas que vão pro <n>Nether</n> voltam com a roupa toda chamuscada. Um deles voltou com a sobrancelha só de um lado.",
+				"Eu descobri um jeito de curtir couro com <y>pó de blaze</y> pra ele aguentar fogo. Segredo antigo de coureiro, visse?",
+				"Só que pra isso preciso de muito pó. E os <r>blazes</r> moram nas fortalezas do Nether, cuspindo fogo em quem chega."
+			],
+			"why": [
+				"Couro que não queima salva a vida de quem vai pro Nether buscar o que a vila precisa.",
+				"Tu já é <o>Guerreiro</o>, rapaz. Bola de fogo de blaze derruba muito cabra valente. Precisa de gente calejada."
+			],
+			"accept": [
+				"Vixe, que coragem! Leva poção de resistência ao fogo e umas bolas de neve, que blaze odeia neve.",
+				"<r>Elimine 20 blazes</r> nas fortalezas do Nether."
+			],
+			"progress": [
+				"Bola de neve machuca blaze de verdade. Leva umas pilhas na mochila.",
+				"Blaze cospe três bolas de fogo seguidas e depois descansa um pouco. É nessa hora que tu ataca."
+			],
+			"complete": [
+				"Olha esse pó, cabra! Já curti o primeiro couro e joguei na fogueira: nem esquentou. Arretado demais!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Proteção contra Fogo</p>. Agora tu é quase um blaze, só que do bem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 20, "desc": "<r>Elimine</r> <r>20 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
 		},
 		{
 			"id": "leatherworker_5_asas",

@@ -59,6 +59,35 @@
 			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_axe", "count": 1}]
 		},
 		{
+			"id": "toolsmith_1_cobre",
+			"tier": 1,
+			"title": "Condutividade Experimental",
+			"tone": "calm",
+			"offer": [
+				"Pergunta rápida: você sabe qual metal fica verde com o tempo? Exato, o <y>cobre</y>. Fascinante, não?",
+				"Estou projetando <a>para-raios</a> para a vila. Um raio no telhado da forja tem probabilidade baixa, mas consequência catastrófica.",
+				"Preciso de amostras frescas, direto da rocha. E muitas. Ciência exige repetição."
+			],
+			"why": [
+				"Para-raio de cobre puxa o raio para longe das casas. Menos incêndio, menos aldeão virando bruxa. Dado comprovado.",
+				"E cobre é ótimo para treinar mineração: aparece em todo canto e não exige picareta cara."
+			],
+			"accept": [
+				"Ótimo. Minério de cobre tem manchas alaranjadas e esverdeadas. Picareta de pedra já resolve.",
+				"<g>Minere</g> <y>32 minérios de cobre</y> (normal ou de ardósia)."
+			],
+			"progress": [
+				"As cavernas de espeleotemas, aquelas cheias de pontas de pedra, costumam ser riquíssimas em cobre.",
+				"Cada minério solta vários cobres brutos. Com Fortuna, mais ainda. Eficiência pura."
+			],
+			"complete": [
+				"Amostras excelentes. Os para-raios vão ficar lindos. E funcionais, que é o que importa.",
+				"Tome esmeraldas e uma pá de ferro. Pá é para terra, picareta é para pedra. Anote isso."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:copper_ores"], "count": 32, "desc": "<g>Minere</g> <y>32 minérios de cobre</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_shovel", "count": 1}]
+		},
+		{
 			"id": "toolsmith_2_veio",
 			"tier": 2,
 			"title": "O Grande Veio",
@@ -115,6 +144,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:redstone"], "count": 64, "desc": "<g>Entregue</g> <y>64 pós de redstone</y>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:clock", "count": 1}]
+		},
+		{
+			"id": "toolsmith_2_trilhos",
+			"tier": 2,
+			"title": "A Ferrovia da Vila",
+			"tone": "calm",
+			"offer": [
+				"Olhe este mapa. <d>(ele desenrola um papel cheio de linhas retas e cálculos)</d> É a <a>Ferrovia da Vila</a>. Liga a mina até a forja.",
+				"Carregar minério no braço é ineficiente. Um carrinho de mina leva um baú inteiro sem reclamar. Diferente de certos aldeões.",
+				"Preciso de <y>trilhos</y>. Muitos. E quero que você mesmo fabrique, para entender como funcionam."
+			],
+			"why": [
+				"Com a ferrovia, o minério chega três vezes mais rápido. Eu calculei. Depois calculei de novo, por desconfiança.",
+				"E você já é <o>Aprendiz</o>. Passou da hora de aprender que ferro serve para mais coisa do que espada."
+			],
+			"accept": [
+				"Seis lingotes de ferro e um graveto na bancada rendem dezesseis trilhos. Rendimento excelente.",
+				"<g>Fabrique</g> <y>64 trilhos</y>."
+			],
+			"progress": [
+				"Trilho energizado leva ouro e redstone. Com uma tocha de redstone ou alavanca ligada, ele empurra o carrinho.",
+				"Carrinho com baú, puxado por um funil no fim da linha, descarrega sozinho. Automação, meu caro."
+			],
+			"complete": [
+				"Sessenta e quatro trilhos. A ferrovia começa a ser instalada amanhã, às sete em ponto. Nem um minuto depois.",
+				"Tome esmeraldas, um diamante e um livro de <p>Inquebrável</p>. Ferramenta que não quebra é ferramenta que não atrasa."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:rail"], "count": 64, "desc": "<g>Fabrique</g> <y>64 trilhos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 1}]
 		},
 		{
 			"id": "toolsmith_3_ouro",
@@ -175,6 +233,35 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
 		},
 		{
+			"id": "toolsmith_3_diamante",
+			"tier": 3,
+			"title": "A Dureza Absoluta",
+			"tone": "calm",
+			"offer": [
+				"Pergunta técnica: qual é o material mais duro que dá para minerar sem ir ao Nether? <y>Diamante</y>. Resposta correta.",
+				"Quero montar uma <a>tabela de dureza</a> dos materiais. Para isso preciso de dados de campo: quantos veios, a que profundidade, em que condições.",
+				"Traduzindo: preciso que você desça até o fundo do mundo e minere diamante. Bastante diamante."
+			],
+			"why": [
+				"Com a tabela pronta, os mineiros da vila param de cavar no lugar errado. Economia de picareta, de tempo e de vidas.",
+				"É trabalho de <o>Aventureiro</o>. Lá embaixo tem lava, ardósia e criaturas que não leram meus relatórios de segurança."
+			],
+			"accept": [
+				"Diamante só sai com picareta de ferro ou melhor. Com picareta de pedra o minério quebra e não solta nada.",
+				"<g>Minere</g> <y>12 minérios de diamante</y>."
+			],
+			"progress": [
+				"O diamante fica mais comum nas camadas mais fundas, perto da altura -58. Cave túneis compridos e paralelos.",
+				"Ouviu lava borbulhando? Pare e olhe antes de cavar. Diamante adora ficar do lado de um lago de lava."
+			],
+			"complete": [
+				"Doze veios registrados. A tabela de dureza está completa. Vou emoldurar.",
+				"Tome frascos de experiência, uma maçã dourada e um livro de <p>Toque Suave</p>. Os diamantes, claro, já ficaram com você."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:diamond_ores"], "count": 12, "desc": "<g>Minere</g> <y>12 minérios de diamante</y>"},
+			"rewards": [{"item": "minecraft:experience_bottle", "count": 16}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
+		},
+		{
 			"id": "toolsmith_4_detritos",
 			"tier": 4,
 			"title": "A Liga Perdida",
@@ -231,6 +318,35 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:trial_key"], "count": 6, "desc": "<g>Entregue</g> <y>6 chaves de provação</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 4}]
+		},
+		{
+			"id": "toolsmith_4_brisas",
+			"tier": 4,
+			"title": "Engenharia do Vento",
+			"tone": "danger",
+			"offer": [
+				"Descobri uma criatura que desafia a aerodinâmica: a <r>brisa</r>. Um redemoinho vivo que mora nas <a>Câmaras de Provação</a>.",
+				"Ela atira cargas de vento que empurram tudo pelo ar. E as flechas desviam dela. DESVIAM. Eu quase chorei de emoção.",
+				"Quero as <y>varas de brisa</y> que elas deixam. Com elas, posso estudar o vento em laboratório."
+			],
+			"why": [
+				"Se eu entender as cargas de vento, faço elevadores, portas pneumáticas e um ventilador para a forja. Fica quente aqui, sabia?",
+				"As câmaras estão cheias de geradores e armadilhas. Trabalho para <o>Guerreiro</o>, sem dúvida."
+			],
+			"accept": [
+				"Esqueça arco e besta. Elas rebatem projéteis. Espada, machado e paciência.",
+				"<g>Traga</g> <y>16 varas de brisa</y>."
+			],
+			"progress": [
+				"As brisas saem dos geradores de provação. Cada gerador derrotado descansa um tempo antes de funcionar de novo.",
+				"Uma vara de brisa vira quatro cargas de vento na bancada. Jogue uma no chão e pule: você vai voar. Para fins científicos."
+			],
+			"complete": [
+				"Dezesseis varas. Elas vibram. VIBRAM! O vento preso numa vara. Isso é engenharia de outro nível.",
+				"Tome diamantes, maçãs douradas e um livro de <p>Inquebrável III</p>. Durabilidade máxima, como todo projeto meu."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:breeze_rod"], "count": 16, "desc": "<g>Entregue</g> <y>16 varas de brisa</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
 		},
 		{
 			"id": "toolsmith_5_netherita",

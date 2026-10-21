@@ -575,6 +575,7 @@ public class MenuScreen extends Screen {
 		int villainQuests = ClientState.getInt("villainQuests", 0);
 		boolean villain = ClientState.getBool("villain");
 		String[][] rows = {
+				{"Hoje", today()},
 				{"Nível", "<o>" + ClientState.getString("rankName", "Amador") + "</o>"},
 				{"Pelas missões", ClientState.getString("rankQuestName", "Amador") + " <d>(fica para sempre)</d>"},
 				{"Pela XP", ClientState.getString("rankXpName", "Amador")},
@@ -1125,5 +1126,25 @@ public class MenuScreen extends Screen {
 	private static void change(JsonObject setting, String key, int value) {
 		setting.addProperty("value", value);
 		send("setting:" + key + ":" + value);
+	}
+
+	private static final String[] WEEKDAYS = {"Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"};
+
+	/** "Dia 12 · Sexta-feira · Chuva": o calendário do mundo (os NPCs falam diferente na sexta, no sábado e no domingo). */
+	private String today() {
+		if (this.minecraft == null || this.minecraft.level == null) {
+			return "<d>?</d>";
+		}
+
+		long day = this.minecraft.level.getOverworldClockTime() / 24000L;
+		String text = "Dia " + (day + 1) + " <d>·</d> <y>" + WEEKDAYS[(int) Math.floorMod(day, 7L)] + "</y>";
+
+		if (this.minecraft.level.isThundering()) {
+			text += " <d>· Tempestade</d>";
+		} else if (this.minecraft.level.isRaining()) {
+			text += " <d>· Chuva</d>";
+		}
+
+		return text;
 	}
 }

@@ -1,0 +1,219 @@
+{
+	"greet_friendly": [
+		"Ahhh, {player}! <i>Hehehehe...</i> Sabia que você ia aparecer. Eu sempre sei.",
+		"O que vai levar, forasteiro? Pra você, preço de amigo. Quer dizer... quase.",
+		"Olha só, meu cliente favorito! Bem-vindo, bem-vindo! As lhamas até sorriram. Elas nunca sorriem.",
+		"<i>Hehehe...</i> {player}! Guardei umas coisinhas especiais. Só mostro pra quem tem bom gosto.",
+		"Ah, aí está você! Eu estava logo ali... ou não estava. Importa? <y>Vamos aos negócios!</y>"
+	],
+	"greet_neutral": [
+		"O que vai levar, forasteiro? <i>Hehehe...</i>",
+		"Psiu! Aqui, aqui... não, atrás de você. Pronto. Tenho mercadoria, você tem esmeralda. Vamos conversar.",
+		"Hmm? Um rosto novo. Ou velho. Pra mim, todo rosto parece igual debaixo deste capuz.",
+		"Bem-vindo, forasteiro. Não pergunte de onde eu vim. Pergunte o que eu tenho.",
+		"Chegou na hora certa. Ou na errada. <i>Hehehe...</i> Depende do que você pretende comprar."
+	],
+	"greet_cold": [
+		"Hmpf. Você de novo. Mão no bolso, olho na mercadoria e boca fechada.",
+		"Fala logo, forasteiro. As lhamas não gostam de você. E elas cospem longe.",
+		"Hrrm... Contaram umas coisas sobre você. Coisas feias. Compra rápido e some."
+	],
+	"hostile": [
+		"<r>Não encosta em nada!</r> Pra você não tem venda, não tem conversa, não tem nada!",
+		"Mais um passo e as lhamas resolvem isso. <r>Elas cospem e não erram.</r>",
+		"<r>Fora!</r> Eu já vendi pra pirata, pra bruxa e pra illager... mas pra você? <r>Nunca.</r>"
+	],
+	"followup": [
+		"Mais alguma coisa, forasteiro?",
+		"E então? <i>Hehehe...</i>",
+		"Ainda tá aí? Bom. Cliente parado é cliente pensando.",
+		"Diga, diga. O capuz escuta tudo."
+	],
+	"decline": [
+		"Tudo bem... A mercadoria espera. Eu também. Mas não por muito tempo, <i>hehehe...</i>",
+		"Uma pena, forasteiro. Uma verdadeira pena.",
+		"Hmpf. Volte quando tiver juízo. E esmeraldas. De preferência as duas coisas."
+	],
+	"locked": [
+		"Isso? Não, não... isso é pra forasteiro mais vivido. Volte quando tiver mais cicatriz.",
+		"<i>Hehehe...</i> Ainda não está pronto pra esse tipo de coisa. Ainda."
+	],
+	"repeat": [
+		"Lembra daquilo de antes? Pois é... voltou a acontecer. Nada some de verdade neste mundo.",
+		"De novo a mesma coisa? <i>Hehehe...</i> A vida é um eterno vai e volta, forasteiro."
+	],
+	"bye": [
+		"Volte sempre, forasteiro! <i>Hehehehe...</i>",
+		"Até a próxima. Se eu ainda estiver por aqui. E se você ainda estiver vivo.",
+		"Vai, vai! E cuidado com o que tem atrás de você. Não, não olha. <i>Hehehe...</i>",
+		"Foi um prazer fazer negócio. Principalmente pra mim."
+	],
+	"abandon": [
+		"Desistiu? <i>Hehehe...</i> Tudo bem. Coragem não se vende. Eu tentei.",
+		"Hmpf. Sabia. Ninguém termina nada hoje em dia."
+	],
+	"lore": [
+		[
+			"Já ouviu falar do <r>Homem de Olhos Brancos</r>, forasteiro? Ele anda por aí parecendo um de vocês. Só que os olhos... brancos. Sem nada dentro.",
+			"Dizem que ele cava túneis certinhos, de dois por dois. Que deixa pirâmides de areia na praia e árvores sem uma folha sequer.",
+			"E sempre que alguém jura que ele foi <d>removido</d>... aparece um aviso novo: \"removido de novo\". Em <b>toda</b> atualização. Engraçado, né? Quem remove o que não existe? <i>Hehehe...</i>"
+		],
+		[
+			"Lá longe, mas <b>muito</b> longe, onde nenhum mapa chega, ficam as <o>Terras Distantes</o>.",
+			"O chão vira paredes de pedra e buraco, tudo esticado, tudo torto. Como se o mundo tivesse esquecido como se faz mundo.",
+			"Um freguês meu andou até lá. Levou anos. Quando voltou, não falava mais nada. Só comprou pão. <i>Hehehe...</i>"
+		],
+		[
+			"Antes das vilas, antes das masmorras, existia um mundo pequeno. Pequeno mesmo. De pedra, grama e mais nada.",
+			"Contam que o <y>Criador</y> fez tudo aquilo sozinho, bloco por bloco, numa época em que nem creeper existia.",
+			"Os blocos mais antigos ainda estão por aí, enterrados. Se achar um, não me venda. Eu não compro coisa amaldiçoada. Muito."
+		],
+		[
+			"Sabe aqueles sons na caverna? O gemido, o arrasto, a porta que range onde não tem porta nenhuma?",
+			"Os mineiros juram que é o vento. O vento não respira, forasteiro.",
+			"Eu acho que é a própria caverna, com saudade de quem entrou e não saiu. <i>Hehehe...</i> Leve tocha. Muita tocha."
+		],
+		[
+			"Os <p>Endermen</p> não nasceram assim, sabia? Eram gente. Gente do Fim, de cidade alta e roxa.",
+			"Alguma coisa aconteceu lá. Ninguém sabe o quê. Eles esticaram, perderam a voz e esqueceram o próprio nome.",
+			"Por isso não gostam que olhem pra eles. Vergonha, forasteiro. Pura vergonha. E muita raiva também."
+		],
+		[
+			"Lá embaixo, no escuro mais fundo, tem cidades. <a>Cidades Antigas</a>. Feitas por construtores que ninguém lembra.",
+			"Eles adoravam o silêncio e as almas. E construíram uma coisa pra guardar esse silêncio pra sempre: o <r>Warden</r>.",
+			"Se for lá, vá sem bota barulhenta e sem pressa. E se ouvir um coração batendo que não é o seu... <r>corre</r>."
+		],
+		[
+			"Todo mundo nasce de uma <y>semente</y>. Um numerozinho só. Dele vem cada montanha, cada rio, cada vila.",
+			"Dizem que existe uma semente proibida, que faz um mundo onde ninguém deveria pisar. Outros dizem que ela faz um mundo perfeito.",
+			"Eu sei qual é. Claro que sei. Mas essa informação não está à venda. Nem por um baú cheio de esmeraldas. Bom... talvez por <b>dois</b>. <i>Hehehe...</i>"
+		],
+		[
+			"Antigamente, antes de esmeralda, os mercadores negociavam com <r>rubis</r>. Vermelhos, lindos, brilhando como brasa.",
+			"Um belo dia, sumiram. Todos. Do mundo inteiro, de uma vez. Ninguém explicou. Ninguém perguntou.",
+			"Eu ainda tenho um, guardado. Ou tinha. Às vezes eu acho que ele também foi... <d>removido</d>. <i>Hehehe...</i>"
+		]
+	],
+	"player_work": [
+		"Tem algum serviço pra mim?",
+		"Precisa de ajuda com alguma coisa?",
+		"Tem trabalho pra um forasteiro?",
+		"Posso fazer algo por você, mercador?"
+	],
+	"player_accept": [
+		"Fechado. Pode contar comigo.",
+		"Negócio fechado.",
+		"Aceito. Mas quero pagamento justo."
+	],
+	"player_why": [
+		"Por que você mesmo não faz?",
+		"E o que eu ganho com isso?",
+		"Me conta mais. Qual é a pegadinha?"
+	],
+	"player_decline": [
+		"Agora não, mercador.",
+		"Passo dessa vez.",
+		"Não tô interessado."
+	],
+	"player_lore": [
+		"Me conta um segredo.",
+		"Você sabe alguma lenda deste mundo?",
+		"O que você já viu por aí?",
+		"Tem alguma história estranha pra contar?",
+		"De onde você vem, afinal?"
+	],
+	"player_more_lore": [
+		"Conta outra!",
+		"E o que mais você sabe?",
+		"Continua... tô ouvindo."
+	],
+	"player_bye": [
+		"Até mais, mercador.",
+		"Fui. Cuida das lhamas.",
+		"Tchau. E não some de vez, hein.",
+		"Até a próxima, encapuzado."
+	],
+	"reward_intro": [
+		"<i>Hehehe...</i> Pelo esforço, você leva",
+		"Coisa fina, direto do fundo do meu baú",
+		"Negócio justo é negócio justo. Pra você"
+	],
+	"reward_outro": [
+		"Ah, escolha de quem entende! <i>Hehehe...</i>",
+		"Use bem. Não aceito devolução.",
+		"Não conta pra ninguém de onde veio. Nem eu sei direito."
+	],
+	"lore_done": [
+		"Já te contei o segredo de hoje. Volte amanhã... se eu ainda estiver por aqui, <i>hehehe...</i>",
+		"Segredo demais faz mal pra cabeça, forasteiro. Um por dia. Amanhã tem mais. Talvez.",
+		"Por hoje chega. As lhamas já estão me olhando torto. Volte amanhã, se eu ainda estiver por aqui, <i>hehehe...</i>"
+	],
+	"greet_night": [
+		"<i>Hehehe...</i> Andando no escuro, forasteiro? Coragem. Ou burrice. Os dois vendem bem.",
+		"Boa noite... A noite é quando eu faço os melhores negócios. Os monstros não pechincham.",
+		"Psiu! Fala baixo. Tem coisa lá fora escutando. E não sou eu. Dessa vez.",
+		"Sem sono, forasteiro? Cuidado. Quem não dorme vira comida de <a>phantom</a>. Eles nascem das noites em claro, sabia?"
+	],
+	"bye_night": [
+		"Vai pela luz, forasteiro. E se os olhos no escuro forem brancos... nem fala com eles.",
+		"Até amanhã. Se o amanhã vier. <i>Hehehe...</i>",
+		"Corre pra cama. Os phantoms adoram quem fica acordado."
+	],
+	"greet_rain": [
+		"Chuva boa pra negócio. Ninguém olha debaixo do capuz de quem está na chuva.",
+		"Molhado, forasteiro? Tenho coisa que seca. Não, não tenho. Mas tenho outras coisas. <i>Hehehe...</i>",
+		"As lhamas odeiam chuva. Ficam cheirando a tapete velho. Compra algo rápido."
+	],
+	"greet_storm": [
+		"<y>Trovão!</y> <i>Hehehe...</i> Dizem que um raio desses transforma aldeão em bruxa. Fica longe das árvores.",
+		"Tempestade feia, forasteiro. Num dia assim o céu abriu e eu apareci. Ou foi o contrário?"
+	],
+	"greet_friday": [
+		"Sexta-feira! Dia de liquidação. Brincadeira. Aqui nunca tem liquidação. <i>Hehehe...</i>",
+		"Sexta, forasteiro! Final de semana chegando, e o freguês com o bolso cheio. Adoro.",
+		"Sexta-feira... dia bom pra comprar e melhor ainda pra eu vender."
+	],
+	"greet_saturday": [
+		"Sábado! Ninguém trabalha. Menos eu. E as lhamas. Elas reclamam muito.",
+		"Sábado é dia de aventura, forasteiro. E aventura sem equipamento é suicídio. Coincidência eu estar aqui, né?",
+		"Fim de semana! Vamos às compras? <i>Hehehe...</i>"
+	],
+	"greet_sunday": [
+		"Domingo, forasteiro. Dia de descanso. Mas a mercadoria não descansa.",
+		"Domingo... os aldeões dormem até tarde. Hora perfeita pra negócios discretos. <i>Hehehe...</i>"
+	],
+	"names": [
+		"Mercador",
+		"O Encapuzado",
+		"Velho Ambrósio",
+		"Sombra",
+		"Andarilho",
+		"Zé Capuz",
+		"Gaspar",
+		"O Sem-Rosto",
+		"Mascate",
+		"Bartolo"
+	],
+	"extra": {
+		"no_work": [
+			"Serviço? <i>Hehehe...</i> Eu não dou serviço, forasteiro. Eu vendo. E conto segredos. Só isso.",
+			"Quer trabalhar? Procura um aldeão. Eu sou mercador, não patrão.",
+			"Não tenho tarefa nenhuma. Tenho mercadoria, tenho segredos e tenho duas lhamas mal-humoradas. Escolha."
+		],
+		"trade_open": [
+			"<y>O que vai levar, forasteiro?</y>",
+			"Pode olhar. Olhar é de graça. Encostar já não é. <i>Hehehe...</i>",
+			"Coisa rara, coisa boa, coisa que você nem sabia que precisava!",
+			"Ahh, um cliente de verdade. Escolhe com calma... mas não muita."
+		],
+		"random_hostile": [
+			"<r>Ei!</r> Não encosta no que não vai comprar!",
+			"Tá olhando muito e comprando pouco, forasteiro. As lhamas estão anotando.",
+			"Mais uma pergunta sobre de onde eu venho e eu solto as lhamas. <r>Sério.</r>",
+			"Hmpf. Pechinchar? Comigo? <r>Hehehe... não.</r>"
+		],
+		"sleeping": [
+			"Zzz... <i>hehehe</i>... não tá à venda... Zzz... <d>(o mercador cochila encostado na lhama, com o capuz escondendo tudo, menos o sorriso)</d>"
+		]
+	}
+}
