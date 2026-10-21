@@ -1,0 +1,37 @@
+name: Sondar API
+on:
+  push:
+    branches: [ "probe/**" ]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Sondar
+        run: |
+          chmod +x gradlew
+          ./gradlew compileJava -q > /dev/null 2>&1 || true
+          CP=$(find ~/.gradle .gradle -name "*.jar" 2>/dev/null | grep -iE "minecraft|fabric" | grep -v sources | paste -sd:)
+          for J in $(echo $CP | tr ':' ' '); do unzip -l "$J" 2>/dev/null | grep -E "/EnderMan.class|/Endermite.class|/PiglinBrute.class|/Shulker.class|FontDescription|ItemGroupEvents.class|LootTableEvents.class|/RandomizableContainer.class|BuiltInLootTables.class|/Rarity.class|TooltipDisplay.class|/TooltipFlag.class" ; done | awk '{print $4}' | sort -u | head -40
+          p() { echo "=================== $1 ($2)"; javap -p -cp "$CP" "$1" 2>&1 | grep -iE "$2" | head -40; }
+          p net.minecraft.network.chat.Style "font|Font"
+          p net.minecraft.network.chat.FontDescription "class|public|static"
+          p 'net.minecraft.network.chat.FontDescription$Resource' "class|public"
+          p 'net.minecraft.world.item.Item$Properties' "public"
+          p net.minecraft.world.item.Item "appendHoverText|public net.minecraft.world.item.Item\("
+          p net.minecraft.world.item.Items "registerItem"
+          p net.minecraft.world.RandomizableContainer "public|static"
+          p net.minecraft.world.level.storage.loot.BuiltInLootTables "END_CITY"
+          p net.minecraft.world.item.CreativeModeTabs "TOOLS|INGREDIENTS"
+          p net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents "public"
+          p net.minecraft.world.entity.monster.EnderMan "class|public"
+          p net.minecraft.world.entity.monster.enderman.EnderMan "class|public"
+          p net.minecraft.world.entity.monster.piglin.PiglinBrute "class"
+          p net.minecraft.world.entity.monster.Shulker "class"
+          p net.minecraft.world.entity.monster.shulker.Shulker "class"
+          p net.minecraft.world.item.Rarity "static"
