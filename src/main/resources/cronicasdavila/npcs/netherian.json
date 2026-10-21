@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ixi, mas é o {player}! Tchá por Deus, rapaiz, chega mais perto da bancada, que hoje tá fresquinho: só uns quarenta graus.",
+		"Eh bem, olha quem djá chegou! {player}, cê é o único que aguenta o calor das minhas histórias do Nether.",
+		"Pai do céu, {player}! Guardei um pedaço de quartzo do Nether pra você. Brilha igual o seu sorriso, cumpádi.",
+		"Vôte, que alegria! Senta aí, {player}. Se a bancada tiver soltando fumaça, é normal. Quase sempre."
+	],
+	"greet_neutral": [
+		"Hrmm. Djente nova? Cuidado com a bancada, que ela é decadente mas ainda queima.",
+		"Opa, rapaiz. Cê veio estudar o Nether ou só se perdeu? Se perdeu, aqui é o lugar mais quente da vila, tchá.",
+		"Bom dia, cumpádi. Desculpa o cheiro de enxofre. Faz parte do ofício, igual peixe pro pescador.",
+		"Eh bem, viajante. Já foi no Nether? Não? Então cê não sabe o que é calor de verdade. Nem eu sabia, e olha que eu sou de lá de casa quente."
+	],
+	"greet_cold": [
+		"Hmm. Cê de novo, rapaiz. Pai'ole, que vontade de te mandar morar com os ghasts.",
+		"Ouvi umas coisas suas por aí. Djente que machuca aldeão não merece nem um caco de basalto.",
+		"Fala logo o que cê quer. O magma tá esfriando e minha paciência também."
+	],
+	"hostile": [
+		"<r>Sai daqui, rapaiz!</r> Cê feriu gente da vila. Nem piglin bravo é tão ruim quanto você!",
+		"Tchá por Deus, <r>vai embora</r> antes que eu te jogue num lago de <n>lava</n>. E eu sei onde tem um."
+	],
+	"followup": [
+		"Que mais, cumpádi?",
+		"Fala, rapaiz. Pode perguntar, que eu não esquento. Mentira, eu esquento sim, mas é o calor.",
+		"Mais alguma coisa? O fogo da bancada não espera.",
+		"Ixi, ainda tem pergunta? Manda, que eu gosto."
+	],
+	"decline": [
+		"Tá bom, cumpádi. Nether não é pra qualquer um, eu entendo.",
+		"Sem problema, rapaiz. Mas se mudar de ideia, cê sabe onde fica a bancada mais quente da vila.",
+		"Vôte... vou ter que pedir pro bobão da vila. Ele vai cair na lava no primeiro passo, mas paciência."
+	],
+	"locked": [
+		"Eh bem, rapaiz, esse serviço é quente demais pra quem ainda tá começando. Volta com mais experiência e armadura.",
+		"Ixi, agora não. Cê ainda não aguenta o bafo desse aí. Fica mais forte que eu te arrumo serviço."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, voltou. O Nether é igual mato: cê corta e ele cresce de novo.",
+		"Cê já fez isso pra mim antes, rapaiz. Faz de novo? Pago certinho, tchá."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, rapaiz. Até basalto esfria um dia. Vamos ver se cê esfria a cabeça também.",
+		"Aceito as desculpas. Mas o fogo da minha bancada ainda tá bravo com você, viu?"
+	],
+	"bless": [
+		"Que essa ferramenta seja firme igual pedra-negra e resistente como netherita, cumpádi.",
+		"Abençoada com o fogo do Nether, rapaiz. Que ela nunca derreta e que cê nunca se queime."
+	],
+	"bye": [
+		"Vai com Deus, cumpádi! E leva água, que o mundo tá quente.",
+		"Até mais, rapaiz! Se ver um ghast, fala que eu mandei lembrança. Ele vai chorar, coitado.",
+		"Tchau, tchá! Volta logo pra gente prosear perto do fogo."
+	],
+	"greet_night": [
+		"Ixi, {player}, a essa hora? De noite aqui fica fresquinho, igual o Nether nunca fica. Aproveita!",
+		"Pai do céu, rapaiz, andando no escuro? Zumbi de noite é igual zumbi-piglin bravo: não perdoa.",
+		"Boa noite, cumpádi! Tô aqui olhando as estrelas. No Nether não tem estrela, sabia? Só teto de pedra e fogo."
+	],
+	"bye_night": [
+		"Boa noite, rapaiz! Vai direto pra casa e acende uma tocha no caminho.",
+		"Vou deitar. Mas sem cama no Nether, hein? Lá ela explode! Dorme bem, {player}.",
+		"Té amanhã, cumpádi! Se ouvir um chiado no escuro, corre, que é creeper e não é ciência."
+	],
+	"greet_rain": [
+		"Eh bem, tchuva! Que delícia, rapaiz. No Nether nunca chove, a água evapora na hora. Aqui é um luxo.",
+		"Ixi, {player}, cê tá encharcado! Chega perto da bancada que ela seca qualquer um em dois minutos.",
+		"Tchuvinha boa! Refresca a bancada, refresca a cabeça. Só não refresca os blazes, que eles odeiam água."
+	],
+	"greet_storm": [
+		"Pai do céu, que trovoada! Raio no meio do campo é mais perigoso que lava, rapaiz. Fica aqui dentro.",
+		"Vôte, {player}, que temporal! Com o céu escuro assim, até de dia sai monstro. Fica perto do fogo, cumpádi."
+	],
+	"reward_intro": [
+		"Se cê der conta desse calor, eu te pago",
+		"Fazendo isso direitinho, rapaiz, cê leva",
+		"Pelo serviço, tchá, separo pra você",
+		"Me ajuda nessa que eu te dou"
+	],
+	"reward_outro": [
+		"Palavra de cuiabano é quente, mas é certa, cumpádi.",
+		"E ainda te conto uma história do Nether de lambuja, rapaiz.",
+		"Pode confiar: eu pago certinho, igual sol do meio-dia.",
+		"Tá prometido e tá gravado no basalto. Esse não apaga nunca.",
+		"Se eu não pagar, que um ghast chore no meu ouvido a noite toda."
+	],
+	"lore_done": [
+		"Ixi, rapaiz, já te contei uma história hoje! Mais uma e minha cabeça superaquece. Volta amanhã.",
+		"História do Nether é igual pimenta: uma por dia, senão queima. Volta amanhã, cumpádi.",
+		"Vôte, cê é curioso! Hoje deu. Amanhã tem história nova, quentinha saída do fogo."
+	],
+	"abandon": [
+		"Ixi... cê vai largar no meio? Igual portal pela metade, não leva a lugar nenhum.",
+		"Que pena, rapaiz. Achei que cê aguentava o calor."
+	],
+	"lore": [
+		[
+			"Cê sabia que os <a>piglins</a> amam ouro mais que tudo? Se cê entrar no Nether sem nenhuma peça dourada, eles te atacam.",
+			"Mas se cê jogar uma barra de ouro no chão, eles param tudo pra olhar. E depois te dão uma coisa em troca.",
+			"Uma vez eu troquei ouro por uma pérola do Fim. Outra vez, por um pedaço de cascalho. É sorte, cumpádi."
+		],
+		[
+			"As <a>Fortalezas do Nether</a> são feitas de tijolo escuro e ninguém sabe quem construiu. Eu acho que foi um povo antigo.",
+			"Lá dentro tem os <n>blazes</n>, que soltam fogo, e os <r>esqueletos wither</r>, que são pretos e malvados.",
+			"E tem a <y>verruga do Nether</y>, que cresce na areia das almas. Sem ela não existe poção nenhuma no mundo. Pensa nisso."
+		],
+		[
+			"Os <a>ghasts</a> parecem bravos, mas eles choram, sabia? A lágrima deles é a coisa mais triste do Nether.",
+			"Dizem que eles eram nuvens do mundo normal que se perderam num portal. Por isso choram: saudade do céu azul.",
+			"Eu não sei se é verdade, mas toda vez que eu vejo um ghast, eu fico com dó. Mesmo quando ele tenta me explodir."
+		],
+		[
+			"No Nether tem uma floresta vermelha e uma azul. A vermelha é cheia de <r>hoglins</r>, uns porcos enormes e bravos.",
+			"A azul é mais calma. Lá moram os endermen, e tem um tal de <y>fungo distorcido</y> que os hoglins odeiam.",
+			"Se um hoglin te perseguir, corre pra floresta azul. Eles têm pavor daquele fungo. Truque de netherólogo, tchá."
+		],
+		[
+			"Lá no fundo do Nether, perto da lava, tem os <y>destroços ancestrais</y>. São a coisa mais resistente que existe.",
+			"Eles não queimam, não explodem, nem afundam na lava. Junta com ouro e vira <o>netherita</o>.",
+			"Meu avô dizia que eram restos de um mundo antigo que derreteu. Eu acho que é só pedra muito teimosa, igual a ele."
+		]
+	],
+	"player_work": [
+		"Tem algum serviço quente pra mim?",
+		"Precisa de ajuda com o Nether?",
+		"Bora pro fogo! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Pode deixar, eu aguento o calor!",
+		"Fechado, cumpádi. Tô indo pro fogo.",
+		"Aceito! Vou separar a armadura de ouro."
+	],
+	"player_why": [
+		"E por que isso é tão importante?",
+		"Me explica direito essa história do Nether.",
+		"Por que você mesmo não vai lá?"
+	],
+	"player_decline": [
+		"Agora não, tá quente demais pra mim.",
+		"Passo dessa vez, cumpádi.",
+		"Hoje não, ainda tô com medo de ghast."
+	],
+	"player_lore": [
+		"Me conta um segredo do Nether.",
+		"O que tem do outro lado do portal?",
+		"Conta uma história quente."
+	],
+	"player_more_lore": [
+		"Conta outra do Nether!",
+		"E o que mais tem por lá?",
+		"Continua, tô gostando do calor."
+	],
+	"player_bye": [
+		"Até mais, netherólogo!",
+		"Vou nessa, cumpádi!",
+		"Tchau! Não deixa a bancada pegar fogo."
+	],
+	"names": [
+		"Adalberto", "Domingas", "Clóvis", "Eulália", "Nestor", "Zilda", "Teodoro",
+		"Floripes", "Gonçalo", "Albertina", "Laurindo", "Jandira", "Amâncio", "Dirce"
+	],
+	"extra": {
+		"day_off": [
+			"Ixi, hoje é minha folga, rapaiz! Vou ficar deitado na rede, que até netherólogo precisa esfriar a cabeça.",
+			"Hoje não tem serviço, cumpádi. A bancada tá apagada e eu tô tomando um guaraná ralado. Volta outro dia ou procura outro netherólogo na vila.",
+			"Tô de folga, tchá! Hoje é dia de fazer nada, que é a coisa mais difícil do mundo pra quem trabalha com fogo. Se for urgente, procura outro colega."
+		],
+		"closed": [
+			"Ixi, hoje a banca tá fechada, é minha folga! A bancada decadente também precisa esfriar, rapaiz.",
+			"Hoje a banca tá fechada, cumpádi, é minha folga. Volta amanhã que eu te conto do Nether."
+		],
+		"greet_plains": [
+			"Aqui na planície é tudo verdinho e fresco. Eu fico até sem graça de falar do Nether, que é vermelho e quente.",
+			"Eh bem, rapaiz, aqui na planície os porcos são rosinhas e calmos. No Nether eles têm presas e mau humor. Ciência!"
+		],
+		"greet_desert": [
+			"Ixi, deserto! Aqui é quase o Nether, só falta a lava. Por isso eu me sinto em casa, cumpádi.",
+			"No deserto o povo reclama do calor. Eu dou risada. Esse sol é um ventinho perto de um lago de <n>lava</n>."
+		],
+		"greet_savanna": [
+			"A savana é quente e seca, igualzinha a minha terra. Só falta o pequi. E os ghasts.",
+			"Aqui na savana, a madeira de acácia é laranja que nem o fogo do Nether. Eu juro que me sinto em casa."
+		],
+		"greet_snow": [
+			"Pai do céu, que frio! Netherólogo na neve é igual ghast na água: não combina. Mas eu me esquento falando de lava.",
+			"Eu guardo um balde de <n>lava</n> do lado da cama, rapaiz. Na tundra é o único jeito de dormir quentinho."
+		],
+		"greet_taiga": [
+			"Aqui na taiga tem pinheiro, frio e raposa. Lá no Nether tem fungo, fogo e piglin. Nem sei qual é mais estranho.",
+			"Eh bem, cumpádi, eu acendo a bancada aqui e as raposas vêm se esquentar perto. Viraram minhas assistentes."
+		],
+		"greet_jungle": [
+			"Na selva é quente e úmido, igual banheiro depois de banho. O Nether pelo menos é quente e seco, tchá.",
+			"Aqui na selva tem tanto cipó que até lembra a floresta carmesim do Nether. Só que verde. E sem hoglin."
+		],
+		"greet_swamp": [
+			"O pântano tem cheiro de coisa velha, igual fortaleza do Nether. Eu gosto, rapaiz. Cheiro de história.",
+			"Aqui no pântano tem slime, e no Nether tem cubo de magma. São primos, sabia? Um molhado e outro pegando fogo."
+		]
+	}
+}

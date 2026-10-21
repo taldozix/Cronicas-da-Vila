@@ -1,0 +1,402 @@
+{
+	"quests": [
+		{
+			"id": "oceanographer_1_algas",
+			"tier": 1,
+			"title": "Amostras de Alga",
+			"tone": "calm",
+			"offer": [
+				"Ó, chegaste na hora certa! Tô fazendo um estudo sobre as <y>algas</y> do mar perto da vila.",
+				"Preciso de bastante amostra pra comparar o tamanho delas. Alga cresce que nem fofoca: rapidinho e pra cima."
+			],
+			"why": [
+				"Se as algas estão saudáveis, o mar tá saudável. Se o mar tá saudável, o peixe aparece. E peixe na mesa é vila feliz.",
+				"E eu, ó, tô com a coluna torta de tanto mergulhar. Tu és mais novo e nadas melhor."
+			],
+			"accept": [
+				"Beleza! Procura no fundo de qualquer oceano, a alga sobe em fileira até a superfície.",
+				"<g>Traga</g> <y>32 algas</y> pra mim, ó."
+			],
+			"progress": [
+				"Quebrando a alga lá embaixo, ela sobe soltando todos os pedacinhos de cima. Economiza fôlego!",
+				"Alga seca no forno vira comida rápida. Bom pra levar num mergulho longo."
+			],
+			"complete": [
+				"Ó-lhó-lhó, que alga mais bonita! Verdinha, comprida, cheia de vida. O estudo vai ficar lindo.",
+				"Toma aqui as tuas esmeraldas e um ferro pra tu fazeres um balde. Todo marujo precisa de um."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:kelp"], "count": 32, "desc": "<g>Entregue</g> <y>32 algas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "oceanographer_1_afogados",
+			"tier": 1,
+			"title": "Afogados na Praia",
+			"tone": "danger",
+			"offer": [
+				"Tás ouvindo esse gorgolejo à noite? São os <r>afogados</r>. Saem da água e ficam rondando a minha praia de pesquisa.",
+				"Ontem um deles pisou nos ovos de tartaruga que eu tava vigiando. Foi uma tragédia, ó.",
+				"Preciso de alguém corajoso pra limpar essa praia."
+			],
+			"why": [
+				"As tartarugas botam ovo sempre na mesma praia. Se os afogados continuarem lá, elas nunca mais voltam.",
+				"E alguns deles carregam tridente. Eu sou cientista, não sou soldado, ó!"
+			],
+			"accept": [
+				"Que alívio! Cuidado com os que jogam tridente, eles acertam de longe.",
+				"<r>Elimine 12 afogados</r> e volta aqui pra me contar."
+			],
+			"progress": [
+				"Os afogados aparecem nos rios e oceanos, e de noite saem pra terra firme. Escudo ajuda contra tridente.",
+				"Afogado às vezes larga uma <y>casca de náutilo</y>. Guarda, que é preciosa!"
+			],
+			"complete": [
+				"Ó-lhó-lhó, a praia tá limpinha! Já vi uma tartaruga voltando hoje cedo. Quase chorei.",
+				"Toma, marujo: esmeraldas e salmão assado, que eu sei que lutar dá fome."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 12, "desc": "<r>Elimine</r> <r>12 afogados</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:cooked_salmon", "count": 8}]
+		},
+		{
+			"id": "oceanographer_1_nadar",
+			"tier": 1,
+			"title": "Medindo a Correnteza",
+			"tone": "calm",
+			"offer": [
+				"Preciso saber se a correnteza da baía mudou de direção. E o único jeito de saber é nadando, ó.",
+				"Eu até ia, mas da última vez uma lula me deu um banho de tinta e eu fiquei roxo uma semana."
+			],
+			"why": [
+				"Corrente muda o caminho dos peixes, das tartarugas e até dos barcos dos mercadores. Tudo no mar depende dela.",
+				"Tu nadas, eu anoto. É uma parceria científica perfeita."
+			],
+			"accept": [
+				"Combinado! Pode nadar em qualquer água, rio ou mar, eu calculo depois.",
+				"<g>Nade</g> <y>200 blocos</y> e volta pra me contar como foi."
+			],
+			"progress": [
+				"Correr dentro d'água faz tu nadar bem mais rápido. Fica de olho na barra de fôlego!",
+				"Se o fôlego acabar, sobe pra respirar. Uma coluna de bolhas também devolve o ar: a de areia das almas empurra pra cima, a de bloco de magma puxa pra baixo!"
+			],
+			"complete": [
+				"Excelente, ó! Pelas tuas braçadas, a corrente continua indo pro leste. Ciência confirmada!",
+				"Toma umas esmeraldas e ferro. Tu és o melhor instrumento de medição que eu já tive."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:swim_one_cm"], "count": 20000, "desc": "<g>Nade</g> <y>200 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "oceanographer_2_prismarinho",
+			"tier": 2,
+			"title": "Pedra do Fundo do Mar",
+			"tone": "danger",
+			"offer": [
+				"Tu já viste o <y>prismarinho</y>? É uma pedra que muda de cor, do verde ao azul, como se estivesse respirando.",
+				"Ela só existe nos <a>Monumentos Oceânicos</a>, e eu quero estudar por que ela brilha assim.",
+				"Mas tem guardião lá. Muito guardião. Tu topas?"
+			],
+			"why": [
+				"Se eu descobrir como o prismarinho muda de cor, posso entender quem construiu os monumentos.",
+				"E, cá entre nós, quero fazer um aquário de prismarinho pra minha casa. Ciência e decoração, ó."
+			],
+			"accept": [
+				"Ó-lhó-lhó, que coragem! Leva poção de respiração ou capacete de tartaruga.",
+				"<g>Minere</g> <y>48 blocos de prismarinho</y> de qualquer tipo."
+			],
+			"progress": [
+				"Os monumentos ficam em oceanos profundos. Um mapa do explorador do cartógrafo mostra o caminho.",
+				"Picareta funciona, mas embaixo d'água é lenta. Um capacete com <y>Afinidade Aquática</y> resolve."
+			],
+			"complete": [
+				"Olha essa cor, marujo! Verde, azul, verde de novo... Tô até tonto de felicidade.",
+				"Toma: esmeraldas e um diamante, que foi um mergulho perigoso e tu mereces."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:prismarine", "minecraft:prismarine_bricks", "minecraft:dark_prismarine"], "count": 48, "desc": "<g>Minere</g> <y>48 blocos de prismarinho</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "oceanographer_2_nautilo",
+			"tier": 2,
+			"title": "Cascas de Náutilo",
+			"tone": "calm",
+			"offer": [
+				"Tô montando a maior coleção de conchas do mundo. Só falta uma coisa: <y>cascas de náutilo</y>.",
+				"São espiraladas, perfeitinhas, parece que alguém desenhou com régua e compasso."
+			],
+			"why": [
+				"A espiral do náutilo segue um padrão que se repete na natureza inteira. Nas conchas, nos furacões, até nas flores!",
+				"Quero desenhar tudo isso num livro. E sem casca nenhuma, ó, o livro fica vazio."
+			],
+			"accept": [
+				"Tu és um amor! Não é fácil achar, mas vale a pena.",
+				"<g>Traga</g> <y>3 cascas de náutilo</y>, ó."
+			],
+			"progress": [
+				"Afogados às vezes seguram uma casca de náutilo na mão e deixam cair quando são derrotados.",
+				"Pescar também pode trazer uma de tesouro. E o mercador ambulante às vezes vende."
+			],
+			"complete": [
+				"Três espirais perfeitinhas! Olha como a luz bate nelas... É a matemática do mar, ó.",
+				"Toma, marujo: esmeraldas, ferro e um diamante pela paciência."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:nautilus_shell"], "count": 3, "desc": "<g>Entregue</g> <y>3 cascas de náutilo</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "oceanographer_2_lanternas",
+			"tier": 2,
+			"title": "Faróis do Fundo",
+			"tone": "calm",
+			"offer": [
+				"Quero instalar umas luzes no fundo da baía, pra estudar os peixes à noite sem assustar ninguém.",
+				"Tocha não acende embaixo d'água, então preciso de <y>lanternas do mar</y>."
+			],
+			"why": [
+				"De noite o mar muda. Aparecem bichos que de dia ficam escondidos. Eu quero ver tudo, ó!",
+				"E uma baía iluminada também afasta os afogados. Ganha a ciência e ganha a vila."
+			],
+			"accept": [
+				"Beleza! Precisa de fragmento e cristal de prismarinho, que os guardiões largam.",
+				"<g>Fabrique</g> <y>8 lanternas do mar</y> pra mim."
+			],
+			"progress": [
+				"Cada lanterna do mar leva <y>4 fragmentos</y> e <y>5 cristais de prismarinho</y>.",
+				"Os guardiões soltam fragmentos e cristais quando derrotados. Os monumentos também têm lanternas prontas, mas quebrar sem Toque Suave só dá cristal."
+			],
+			"complete": [
+				"Que lindeza, ó! Vou espalhar essas luzinhas pela baía hoje mesmo. Vai parecer um céu estrelado debaixo d'água.",
+				"Toma umas esmeraldas e um diamante. Tu iluminaste a minha pesquisa, literalmente."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:sea_lantern"], "count": 8, "desc": "<g>Fabrique</g> <y>8 lanternas do mar</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "oceanographer_3_guardioes",
+			"tier": 3,
+			"title": "Os Olhos do Monumento",
+			"tone": "danger",
+			"offer": [
+				"Os <r>guardiões</r> do monumento perto daqui estão espantando todos os peixes da região.",
+				"Eles disparam um raio que dói só de olhar. E têm espinhos! Quem bate neles se machuca também.",
+				"Preciso que alguém diminua essa população, pro equilíbrio do mar voltar."
+			],
+			"why": [
+				"Sem peixe, o pescador fica sem trabalho, o gato fica sem comida e eu fico sem pesquisa. Ó, é uma corrente de desgraça.",
+				"E eu quero entrar naquele monumento um dia sem levar raio na testa."
+			],
+			"accept": [
+				"Tu és corajoso mesmo! Vai com armadura boa e leite pra tirar a fadiga do ancião.",
+				"<r>Elimine 15 guardiões</r>, ó."
+			],
+			"progress": [
+				"Os guardiões ficam carregando o raio antes de atirar. Quebra a linha de visão atrás de um pilar!",
+				"Quando os espinhos deles estão pra fora, quem bate se machuca. Bate rápido e recua, que é a melhor tática."
+			],
+			"complete": [
+				"Os peixes voltaram! Hoje cedo vi um cardume de bacalhau passando pela baía. Que alegria, marujo!",
+				"Toma esses diamantes e uma maçã dourada. Tu salvaste o equilíbrio do oceano inteiro, ó."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:guardian"], "count": 15, "desc": "<r>Elimine</r> <r>15 guardiões</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "oceanographer_3_corais",
+			"tier": 3,
+			"title": "Recife de Laboratório",
+			"tone": "calm",
+			"offer": [
+				"Tô tentando criar um recife artificial no tanque atrás da minha casa. Mas pra isso preciso de <y>blocos de coral</y> vivos.",
+				"Os corais só existem nos oceanos mornos. Lá é tudo colorido: rosa, amarelo, azul, vermelho... um carnaval submarino!"
+			],
+			"why": [
+				"Se o recife pegar aqui, posso aprender a salvar os corais que estão morrendo em outros mares.",
+				"E coral morto fica cinza e triste. Eu não suporto ver coral cinza, ó."
+			],
+			"accept": [
+				"Que maravilha! Mas atenção: coral sem <y>Toque Suave</y> vira coral morto.",
+				"<g>Traga</g> <y>16 blocos de coral</y> vivos."
+			],
+			"progress": [
+				"Use uma picareta com <y>Toque Suave</y>. E guarda os blocos com cuidado: coral fora d'água morre em segundos se for colocado no chão.",
+				"Oceanos mornos têm areia clara e água bem azul-turquesa. Procura perto do equador do mundo, ó... digo, longe da neve."
+			],
+			"complete": [
+				"Ó-lhó-lhó, tudo vivinho! Já tá tudo dentro do tanque, coloridinho igual feira de domingo.",
+				"Toma, marujo: diamantes e um livro de <o>Passos Profundos</o>, pra tu nadares feito peixe."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:coral_blocks"], "count": 16, "desc": "<g>Entregue</g> <y>16 blocos de coral</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:depth_strider", "level": 3}]
+		},
+		{
+			"id": "oceanographer_3_expedicao",
+			"tier": 3,
+			"title": "Expedição de Barco",
+			"tone": "calm",
+			"offer": [
+				"Quero mapear as correntes do oceano inteiro, não só da baía. Mas eu enjoo em barco. Muito, ó.",
+				"Preciso de alguém que navegue bem longe e me traga os dados."
+			],
+			"why": [
+				"Com o mapa das correntes, os pescadores e mercadores vão saber o caminho mais rápido por mar.",
+				"E eu fico em terra firme, desenhando tudo sem vomitar. Todo mundo sai ganhando."
+			],
+			"accept": [
+				"Beleza! Leva comida, uma bússola e não esquece o caminho de volta.",
+				"<g>Navegue</g> <y>2000 blocos de barco</y>, ó."
+			],
+			"progress": [
+				"Navegar no gelo é bem mais rápido que na água. Mas eu quero dados do mar, então capricha no oceano!",
+				"Se o barco quebrar, sempre tenha madeira pra fazer outro. Ilha deserta é bonita só em história."
+			],
+			"complete": [
+				"Que viagem, marujo! Teus dados mostram uma corrente fria vindo do norte. Eu sabia!",
+				"Toma esses diamantes e um livro de <o>Respiração</o>. Pro próximo mergulho ser mais longo."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:boat_one_cm"], "count": 200000, "desc": "<g>Navegue</g> <y>2000 blocos de barco</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
+		},
+		{
+			"id": "oceanographer_4_anciao",
+			"tier": 4,
+			"title": "O Guardião Ancião",
+			"tone": "danger",
+			"offer": [
+				"Ó, toda vez que eu chego perto do monumento, aparece uma <p>visão</p> de um olho enorme e eu fico fraco na hora.",
+				"É o <r>Guardião Ancião</r>. Ele lança fadiga em quem se aproxima. Ninguém consegue nem minerar lá perto.",
+				"Enquanto ele estiver lá, o monumento é inexplorável."
+			],
+			"why": [
+				"Dentro do monumento tem segredos de milhares de anos. E <y>blocos de ouro</y>, dizem. Mas a ciência é o mais importante, ó. Quase.",
+				"E a fadiga dele já chega até a praia. Os pescadores reclamam que nem conseguem puxar a vara direito."
+			],
+			"accept": [
+				"Tu és o herói do oceano! Leva leite pra tirar a fadiga e muita poção de respiração.",
+				"<r>Derrote 1 Guardião Ancião</r> do monumento."
+			],
+			"progress": [
+				"Cada monumento tem <y>três</y> Guardiões Anciões. Eles ficam parados nas salas da cobertura e das alas.",
+				"Ele dá o mesmo raio dos guardiões comuns, só que mais forte. Ataca e se esconde atrás de pilar."
+			],
+			"complete": [
+				"Não acredito, ó! A visão sumiu! Pela primeira vez em anos, consigo olhar pro mar sem tremer.",
+				"Toma: diamantes, duas maçãs douradas e um livro de <o>Proteção IV</o>. Tu és lenda das marés agora."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:elder_guardian"], "count": 1, "desc": "<r>Derrote</r> <r>1 Guardião Ancião</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "oceanographer_4_esponjas",
+			"tier": 4,
+			"title": "As Esponjas do Monumento",
+			"tone": "calm",
+			"offer": [
+				"Tu sabias que a <y>esponja</y> suga a água ao redor dela? Uma só seca um pedação de mar!",
+				"Preciso de várias pra drenar o meu tanque de pesquisa e montar um laboratório seco debaixo d'água."
+			],
+			"why": [
+				"Um laboratório no fundo do mar! Eu ia poder observar os peixes de pertinho, sem molhar o meu caderno.",
+				"E a vila podia ter um salão submarino pra festa. Imagina dançar com as lulas passando na janela, ó."
+			],
+			"accept": [
+				"Ó-lhó-lhó, que maravilha! Tanto faz se vier seca ou molhada, eu seco no forno depois.",
+				"<g>Traga</g> <y>10 esponjas</y>, secas ou molhadas."
+			],
+			"progress": [
+				"As esponjas ficam em salas escondidas dos <a>Monumentos Oceânicos</a>. O Guardião Ancião também deixa cair uma molhada.",
+				"Esponja molhada seca no forno, e sobra até água no balde que estiver no espaço de combustível."
+			],
+			"complete": [
+				"Que montanha de esponja, marujo! O laboratório vai ficar sequinho. Tu és um gênio da logística.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Inquebrável III</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:sponge", "minecraft:wet_sponge"], "count": 10, "desc": "<g>Entregue</g> <y>10 esponjas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "oceanographer_4_conduite",
+			"tier": 4,
+			"title": "O Coração Pulsante",
+			"tone": "calm",
+			"offer": [
+				"Escuta, marujo: há anos eu sonho em ver um <p>conduíte</p> funcionando. Dizem que ele faz o mar respirar junto com a gente.",
+				"Pra fazer um, precisa do <y>Coração do Mar</y>, a coisa mais rara do oceano, e de oito cascas de náutilo."
+			],
+			"why": [
+				"Com um conduíte ativado, qualquer um consegue respirar e enxergar debaixo d'água perto dele. E os monstros levam choque!",
+				"Seria o maior passo da oceanografia da história. Da vila, pelo menos, ó."
+			],
+			"accept": [
+				"Tu vais mesmo? Ó, que emoção! Procura os mapas do tesouro nos naufrágios e ruínas.",
+				"<g>Fabrique</g> <y>1 conduíte</y> e me mostra ele pulsando."
+			],
+			"progress": [
+				"O <y>Coração do Mar</y> fica nos tesouros enterrados. Os mapas estão nos naufrágios e nas ruínas oceânicas.",
+				"O conduíte só ativa debaixo d'água cercado por blocos de prismarinho. Não esquece!"
+			],
+			"complete": [
+				"Olha ele pulsando, marujo! É como se o mar tivesse um coração de novo. Eu tô sem palavras... e eu nunca fico sem palavras, ó.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Lealdade III</o>, pro dia em que tu tiveres um tridente."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:conduit"], "count": 1, "desc": "<g>Fabrique</g> <y>1 conduíte</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:loyalty", "level": 3}]
+		},
+		{
+			"id": "oceanographer_5_tridente",
+			"tier": 5,
+			"title": "O Tridente das Profundezas",
+			"tone": "danger",
+			"offer": [
+				"Existe uma lenda, marujo: o primeiro afogado era um rei do mar, e ele carregava um <y>tridente</y> mágico.",
+				"Hoje alguns afogados ainda carregam tridentes. Pedaços do poder dele, espalhados pelo oceano.",
+				"Eu preciso estudar um de perto. Mas eles não entregam de boa vontade, ó."
+			],
+			"why": [
+				"O tridente atrai raio, puxa quem voa com ele, volta sozinho pra mão... Nenhuma arma faz tudo isso!",
+				"Quero descobrir como ele funciona. E depois escrever o livro mais importante do mar."
+			],
+			"accept": [
+				"Tu és louco. E eu adoro gente louca. Cuidado, que tridente arremessado dói muito.",
+				"<g>Traga</g> <y>1 tridente</y>, ó."
+			],
+			"progress": [
+				"Só os afogados que já nascem com tridente podem deixá-lo cair. É raro, então paciência!",
+				"Encantamento de <y>Saque</y> na espada aumenta a chance. Rios e oceanos à noite são o melhor lugar."
+			],
+			"complete": [
+				"Um tridente de verdade! Olha o brilho das pontas... Ó-lhó-lhó, eu tô tremendo, marujo!",
+				"Toma o meu maior tesouro: um <o>Totem da Imortalidade</o>, um livro de <o>Remendo</o> e diamantes. Tu és o rei do mar agora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:trident"], "count": 1, "desc": "<g>Entregue</g> <y>1 tridente</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 5}]
+		},
+		{
+			"id": "oceanographer_5_monumento",
+			"tier": 5,
+			"title": "O Fim dos Monumentos",
+			"tone": "danger",
+			"offer": [
+				"Descobri uma coisa assustadora, marujo. Os <r>guardiões</r> estão se espalhando. Tem monumento novo em cada oceano profundo.",
+				"Se continuar assim, nenhum aldeão vai poder navegar em paz. É uma praga submarina, ó.",
+				"Preciso de um caçador de verdade. O melhor de todos."
+			],
+			"why": [
+				"Barco de mercador já não passa mais perto dos monumentos. A vila tá perdendo comércio, peixe e coragem.",
+				"E eu? Eu só quero mergulhar sem ser fritado por um olho com cauda."
+			],
+			"accept": [
+				"Tu és a última esperança do oceano. Leva comida, poções e muita armadura.",
+				"<r>Elimine 80 guardiões</r> de qualquer tipo."
+			],
+			"progress": [
+				"Os Guardiões Anciões também contam! Drenar uma sala com esponja e areia ajuda a lutar melhor.",
+				"Os guardiões nascem só perto dos monumentos, e dentro da água. Uma armadilha bem feita junta muitos de uma vez."
+			],
+			"complete": [
+				"Os mares estão calmos de novo! Ontem vi três barcos de mercador passando pela baía. Três, ó!",
+				"Toma: um <o>lingote de netherita</o>, diamantes e maçãs douradas. Tu és o maior herói que o oceano já conheceu."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:guardian", "minecraft:elder_guardian"], "count": 80, "desc": "<r>Elimine</r> <r>80 guardiões</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:golden_apple", "count": 3}]
+		}
+	]
+}

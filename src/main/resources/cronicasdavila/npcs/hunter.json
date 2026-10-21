@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Tchá por Deus, {player}! Chega devagarinho, pai, que tem um coelho ali atrás da moita e eu tô de olho nele faz uma hora.",
+		"Ixi, olha quem apareceu! Meu parceiro de tocaia! Senta aqui no tronco, que eu tô assando um lambari... digo, um coelho.",
+		"{player}! Te reconheci pelo barulho do passo, pai. Tu pisa igual a um lobo manso: firme, mas sem quebrar galho.",
+		"Tchá, que alegria! Os lobos até abanaram o rabo quando tu chegou. Bicho não mente, rapaiz."
+	],
+	"greet_neutral": [
+		"Psiu. Fala baixo, pai. Tu tá contra o vento e espantou a presa que eu tava rastreando desde cedo.",
+		"Hm. Gente nova. Tu caça ou só come? Porque tem muito que só come e acha que carne nasce no baú.",
+		"Opa. Cuidado com a armadilha aí no chão, rapaiz. Brincadeira. Ou não. Olha onde pisa.",
+		"Bom dia. Se veio atrás de couro, é com a troca. Se veio atrás de conselho, senta e escuta o mato primeiro."
+	],
+	"greet_cold": [
+		"Hm. Tu. Eu sinto cheiro de encrenca de longe, pai, e tu tá fedendo a ela.",
+		"Tchá... ouvi umas histórias tuas aí. Até lobo tem mais modos que tu.",
+		"Fala o que quer e vai. Tô no meio de um rastro e não vou perder por tua causa."
+	],
+	"hostile": [
+		"<r>Tu machucou gente daqui.</r> No mato, bicho que ataca o bando é caçado. Some da minha frente, rapaiz.",
+		"Meu arco tá esticado, pai. <r>Vai embora</r> agora, enquanto eu ainda tô mirando no chão."
+	],
+	"followup": [
+		"Que mais, pai?",
+		"Fala, mas fala baixinho.",
+		"Mais alguma coisa? A presa não espera.",
+		"Ixi, ainda tem pergunta? Pode mandar, que caçador tem paciência."
+	],
+	"decline": [
+		"Tá. Presa que foge hoje, a gente pega amanhã.",
+		"Sem problema, pai. O mato não vai a lugar nenhum.",
+		"Hm. Vou chamar o bobão da vila. Ele espanta tudo, mas pelo menos carrega peso."
+	],
+	"locked": [
+		"Ixi, pai, essa caçada é grossa demais pra quem ainda tá aprendendo a seguir pegada. Ganha calo e volta.",
+		"Agora não tenho nada do teu tamanho, rapaiz. Treina a mira por aí que depois eu te levo pra tocaia grande."
+	],
+	"repeat": [
+		"Lembra daquela caçada? Pois o bicho voltou. No mato é assim, pai: sempre nasce mais.",
+		"Tu já me ajudou nessa. Bora de novo? Dessa vez tu já sabe onde o bicho se esconde."
+	],
+	"apology_thanks": [
+		"Hm... tá bom, pai. Até lobo bravo vira cão de guarda se tratar direito. Vamo ver.",
+		"Aceito. Mas os lobos ainda rosnam pra ti. Eles demoram mais que eu pra esquecer."
+	],
+	"bless": [
+		"Que essa ferramenta seja firme como corda de arco e silenciosa como pata de onça, pai.",
+		"Abençoada com faro de lobo e olho de gavião. Usa com respeito, que tudo no mato tem dono."
+	],
+	"bye": [
+		"Vai na paz, pai. E anda contra o vento, que a presa não te sente.",
+		"Até mais, rapaiz! Se vir pegada grande no barro, me avisa.",
+		"Tchau! E não esquece: quem caça com pressa volta com fome."
+	],
+	"greet_night": [
+		"Psiu, {player}! De noite o mato muda de dono, pai. Agora quem caça são eles. Chega pra perto do fogo.",
+		"Tchá por Deus, tu tá andando no escuro? Eu ouvi teus passos e já tava com a flecha na corda. Quase, rapaiz.",
+		"Ixi, pai, ouve isso. Esse \"craque-craque\" é osso de esqueleto. Tem uns três ali atrás das árvores.",
+		"Noite boa pra ouvir o mato, {player}. Senta quieto aqui que tu aprende mais em uma hora do que em um ano de conversa."
+	],
+	"bye_night": [
+		"Vai com cuidado, pai. De noite, olha pra cima também: tem bicho que voa.",
+		"Boa noite, rapaiz. Vou ficar de vigia mais um pouco. Caçador dorme com um olho aberto.",
+		"Té amanhã! Se ouvir um chiado do teu lado, não pensa: corre."
+	],
+	"greet_rain": [
+		"Tchá, que chuva boa, pai! Chuva apaga o cheiro da gente. Hoje a presa não me sente nem se eu espirrar.",
+		"Entra aqui debaixo do couro esticado, {player}. Chuva assim é hora de consertar arco, não de sair atrás de bicho.",
+		"Ixi, o barro tá mole. Bom pra ler pegada, ruim pra correr. Tudo tem dois lados, rapaiz."
+	],
+	"greet_storm": [
+		"Tchá por Deus, que temporal! Raio cai em árvore alta, pai, e tu tá justo debaixo de uma. Sai daí!",
+		"Com o céu escuro assim, zumbi e esqueleto saem até de dia. Os lobos tão tudo de orelha baixa, {player}. Fica perto."
+	],
+	"reward_intro": [
+		"Se tu der conta da caçada, pai, eu te pago",
+		"Fazendo isso direito, tu leva",
+		"Pelo serviço, rapaiz, eu separo pra ti",
+		"Me ajuda nessa tocaia que eu te dou"
+	],
+	"reward_outro": [
+		"Palavra de caçador vale mais que rastro fresco, pai.",
+		"E ainda te ensino a fazer um assado de coelho que tu nunca mais esquece.",
+		"Pode confiar: eu pago certinho, igual flecha que acerta o alvo.",
+		"Caçador que não divide a caça fica sozinho no mato. Eu não sou desses."
+	],
+	"lore_done": [
+		"Ixi, pai, já te contei uma história hoje. Caçador que fala demais espanta a presa. Volta amanhã.",
+		"História é igual armadilha: uma por dia, senão o mato desconfia. Pergunta pros outros da vila.",
+		"Tchá, tu é curioso, hein? Hoje chega. Amanhã eu te conto do bicho que eu nunca peguei."
+	],
+	"abandon": [
+		"Hm... tu vai largar a caçada no meio? Presa ferida que escapa fica mais esperta, pai.",
+		"Que pena, rapaiz. Achei que tu tinha fôlego."
+	],
+	"lore": [
+		[
+			"Tu sabia que o lobo do mato não é bravo à toa? Ele só ataca se tu bater nele. Aí o bando inteiro vem.",
+			"Mas se tu der um <y>osso</y> pra ele, com paciência, ele aceita tua amizade. Aparece uma coleira vermelha no pescoço e pronto: é teu pra vida toda.",
+			"Meu primeiro lobo se chamava Rastro. Ele achava esqueleto no escuro antes de mim. Até hoje eu deixo um osso na janela pra ele."
+		],
+		[
+			"Lá no oceano, perto dos <a>monumentos submersos</a>, mora o maior bicho que eu já vi: o <r>Guardião Ancião</r>.",
+			"Quando tu chega perto, ele aparece na tua frente, fantasma, e te deixa cansado. Tu não consegue nem quebrar uma pedra direito.",
+			"Eu fiquei três dias sem conseguir segurar um arco depois que vi ele. Bicho que caça sem nem encostar é bicho pra respeitar, pai."
+		],
+		[
+			"O <y>pé de coelho</y> dá sorte, rapaiz. Não é crendice, não: os alquimistas fazem poção de pulo com ele.",
+			"Mas coelho é ligeiro, cava toca, foge em zigue-zague. Tem um branco com olho vermelho que é bravo e morde. Esse eu não caço, deixo quieto.",
+			"Cada bicho tem seu jeito. Caçador bom não é o que mata mais, é o que conhece mais."
+		],
+		[
+			"De vez em quando passa uma <r>patrulha de saqueadores</r> pelo mato. Cinco, seis, com estandarte e besta.",
+			"O líder carrega a bandeira na cabeça. Se tu derrubar ele, cai uma <y>garrafa sinistra</y>. Quem bebe aquilo ganha uma maldição chamada <r>Presságio Ruim</r>.",
+			"Aí, quando o amaldiçoado entra numa vila, eles vêm atrás com tudo. Por isso eu caço patrulha longe de casa, pai. Bem longe."
+		],
+		[
+			"Tem uma presa que nenhum caçador da minha família pegou: o <r>Dragão do Fim</r>.",
+			"Meu avô dizia que ele mora numa ilha no meio do nada, cercado de torres de cristal que curam ele.",
+			"Primeiro tu quebra os cristais, depois tu caça o dragão. Igual no mato: primeiro tira o esconderijo da presa. Um dia eu vou lá. Um dia."
+		]
+	],
+	"player_work": [
+		"Tem caçada pra mim?",
+		"Precisa de ajuda no mato?",
+		"Bora pra tocaia, pai! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Deixa comigo, que eu tenho boa mira!",
+		"Fechado. Já tô sentindo o rastro.",
+		"Bora caçar!"
+	],
+	"player_why": [
+		"E por que essa caçada é importante?",
+		"Mas esse bicho fez o quê?",
+		"Pra que tu precisa disso?"
+	],
+	"player_decline": [
+		"Agora não, tô sem flecha.",
+		"Hoje eu passo, foi mal.",
+		"Fica pra próxima tocaia."
+	],
+	"player_lore": [
+		"Me conta uma história do mato.",
+		"Qual foi o bicho mais perigoso que tu já viu?",
+		"Tem algum causo de caçada?"
+	],
+	"player_more_lore": [
+		"Tchá, conta mais!",
+		"E aí, pegou o bicho?",
+		"Continua!"
+	],
+	"player_bye": [
+		"Tchau! Boa caçada.",
+		"Até mais, pai!",
+		"Falou, vou andar contra o vento."
+	],
+	"names": [
+		"Ramiro", "Natanael", "Teodoro", "Valter", "Jairo", "Ubirajara", "Onofre",
+		"Zacarias", "Edna", "Irene", "Matilde", "Rosalina", "Bráulio", "Leôncio"
+	],
+	"extra": {
+		"day_off": [
+			"Hoje é folga, pai. Até caçador precisa deitar na rede e só ouvir o mato, sem querer pegar nada.",
+			"Hoje não tem caçada, não, rapaiz. Tô de folga, consertando corda de arco e coçando a barriga do lobo. Volta outro dia ou procura outro caçador na vila.",
+			"Folga hoje! Os bichos também merecem um dia de paz. Se a pressa for grande, procura outro caçador aí, que eu tô de pé pra cima."
+		],
+		"closed": [
+			"Tchá, hoje a banca tá fechada, pai! É minha folga. Couro e carne só amanhã.",
+			"Banca fechada hoje, rapaiz. Folga de caçador é sagrada: hoje nem o coelho eu incomodo."
+		],
+		"greet_plains": [
+			"Tchá, {player}! Aqui na planície é fácil ver a presa de longe: vaca, porco, cavalo... mas ela também te vê, pai. Agacha!",
+			"Planície é bom de caçar, rapaiz, mas ruim de se esconder. Por isso eu ando sempre beirando a mata."
+		],
+		"greet_desert": [
+			"Ixi, pai, caçar no deserto é pra quem tem paciência. Só coelho cor de areia e zumbi ressecado. O zumbi não presta nem pra assado.",
+			"{player}! Aqui eu caço de madrugada, que de dia até o arco esquenta. Cuidado com o cacto, que espeta mais que flecha."
+		],
+		"greet_savanna": [
+			"Tchá, {player}! Aqui na savana tem cavalo, burro e lhama. Não é pra caçar, pai, é pra domar. Caçador também sabe a hora de não puxar o arco.",
+			"Capim alto, rapaiz. Bom pra tocaia, mas lembra que esqueleto também se esconde nele."
+		],
+		"greet_snow": [
+			"Ixi, que frio, pai! Na neve a pegada fica marcada que é uma beleza. Mas olha o <r>urso-polar</r>: se tiver filhote perto, ele te caça.",
+			"{player}! Aqui eu deixo o lobo branco do meu lado. Ele enxerga o vulto antes de mim no meio da nevasca."
+		],
+		"greet_taiga": [
+			"Tchá, {player}! Taiga é o paraíso do caçador: lobo, raposa, coelho e pinheiro pra tocaia. Só não mexe com o bando de lobo sem osso no bolso.",
+			"Ó, pai, tá vendo aquela raposa? Ela rouba tudo que tu largar no chão. Bicho esperto, igual eu."
+		],
+		"greet_jungle": [
+			"Tchá por Deus, {player}, aqui na selva até o caçador vira presa! Jaguatirica, papagaio, panda... e aranha no cipó.",
+			"Psiu, pai. Na selva tu ouve antes de ver. A jaguatirica só chega perto se tu ficar quieto e tiver peixe na mão."
+		],
+		"greet_swamp": [
+			"Ixi, pai, o pântano é traiçoeiro. Barro mole, slime pulando, bruxa jogando garrafa. Aqui a pegada some na lama.",
+			"{player}! Caçar sapo eu não caço, não. Coitado. Mas os slimes da lua cheia... esses eu derrubo com gosto."
+		]
+	}
+}

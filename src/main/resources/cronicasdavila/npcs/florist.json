@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Égua, {player}! Tu por aqui, maninho? Chega, chega, que eu acabei de regar as tulipas e tá tudo cheirosinho!",
+		"Ai, que pai d'égua! Meu jardineiro favorito chegou! Toma, bota essa <y>papoula</y> no peito, que combina contigo.",
+		"Mano do céu, {player}! As abelhas até zumbiram mais alto quando tu apareceste. Elas sabem quem é gente boa.",
+		"Égua, maninho, tu chegaste justo na hora em que o <y>lírio-do-vale</y> abriu! Isso é sinal de sorte, pode acreditar."
+	],
+	"greet_neutral": [
+		"Égua, cuidado aí com o pé, mano! Isso aí é muda de carvalho, não é capim, não.",
+		"Oi, oi. Gente nova na vila? Tu não és daqueles que arrancam flor só pra fazer corante e largam o buraco, né?",
+		"Bom dia, maninho. Se vieres comprar flor, escolhe com calma. Flor boa escolhe o dono também.",
+		"Opa. Tu tens cara de quem nunca plantou nem um dente-de-leão. Mas tudo bem, todo mundo começa do chão."
+	],
+	"greet_cold": [
+		"Hum. Tu de novo. Fica longe dos meus vasos, que da última vez sumiu um.",
+		"Égua, mano... falaram umas coisas feias de ti por aí. Flor murcha perto de gente assim.",
+		"Diz logo o que tu queres. Tenho muda pra transplantar e pouca paciência pra espinho."
+	],
+	"hostile": [
+		"<r>Sai do meu jardim, leso!</r> Tu machucaste gente daqui. Nem uma <y>rosa</y> eu te vendo, nem murcha!",
+		"Égua, não chega perto! Eu solto as abelhas, hein? <r>Vai embora</r> antes que elas fiquem bravas comigo junto."
+	],
+	"followup": [
+		"Que mais, maninho?",
+		"Diz, diz. As margaridas esperam.",
+		"Mais alguma coisa? Tô com as mãos cheias de terra, mas o ouvido tá livre.",
+		"Égua, ainda tem pergunta? Pode mandar, que flor não tem pressa."
+	],
+	"decline": [
+		"Tá bom, mano. Cada broto tem seu tempo.",
+		"Sem problema. Mas se mudares de ideia, segue o cheiro de flor que tu me achas.",
+		"Égua... tá. Vou pedir pro bobão da vila. Ele vai pisar na roseira, mas paciência."
+	],
+	"locked": [
+		"Ai, maninho, esse serviço é coisa de jardineiro antigo. Tu ainda tás em botão. Floresce mais um pouco e volta.",
+		"Agora não tenho nada do teu tamanho, mano. Planta umas raízes por aí e depois a gente conversa."
+	],
+	"repeat": [
+		"Lembras daquele serviço? Pois é, voltou. Jardim é assim: tu podas hoje, amanhã cresce tudo de novo.",
+		"Tu já me ajudaste com isso. Bora de novo? Flor que dá uma vez, dá sempre."
+	],
+	"apology_thanks": [
+		"Hum... tá bom, mano. Até roseira que espeta dá flor bonita. Vamos ver se tu dás.",
+		"Aceito. Mas as abelhas ainda tão de cara feia contigo. Elas guardam rancor mais que eu."
+	],
+	"bless": [
+		"Que essa ferramenta floresça na tua mão, maninho: firme como raiz e bonita como ipê.",
+		"Abençoada com pólen e orvalho. Cuida dela como quem cuida de muda nova."
+	],
+	"bye": [
+		"Vai com Deus, maninho! E se vires uma flor diferente no caminho, me traz uma muda!",
+		"Tchau, mano! Não esquece de cheirar as flores, que a vida passa ligeiro.",
+		"Até mais! Se uma abelha te seguir, não espanta, não. É elogio."
+	],
+	"greet_night": [
+		"Égua, {player}, que hora é essa, mano? As flores já fecharam e eu também ia fechar o olho.",
+		"Psiu! Fala baixinho, que as abelhas tão dormindo na colmeia. Abelha acordada de noite é abelha brava.",
+		"Maninho, tu tás doido de andar no escuro? Zumbi não respeita canteiro, pisa em tudo!",
+		"Olha só a lua, {player}... é nessa luz que o <y>lírio</y> fica mais bonito. Mas chega pra perto da lanterna, que creeper não admira flor."
+	],
+	"bye_night": [
+		"Boa noite, maninho! Vai direto pra casa e não pisa no meu canteiro no escuro.",
+		"Vou deitar, que jardineiro acorda junto com o orvalho. Dorme com Deus, {player}!",
+		"Té amanhã, mano! Se ouvires um chiado no meio das flores, não é abelha, não. Corre!"
+	],
+	"greet_rain": [
+		"Égua, que chuva pai d'égua! Hoje nem preciso regar nada, mano. As flores tão até sorrindo.",
+		"Entra debaixo da pérgola, {player}! Chuva assim lá na minha terra caía todo dia às três da tarde, certinho.",
+		"Ai, que cheiro de terra molhada! Melhor perfume do mundo, maninho. Mas as abelhas odeiam, ficam tudo escondida."
+	],
+	"greet_storm": [
+		"Égua, mano, que trovoada! Tu tás doido de ficar no descampado? Raio adora cair em árvore alta e em gente leso!",
+		"Ai, meu jardim! Esse vento vai arrancar todas as pétalas. E com o céu escuro assim, zumbi sai até de tarde. Fica aqui dentro, {player}!"
+	],
+	"reward_intro": [
+		"Se tu deres conta, maninho, eu te dou",
+		"Fazendo isso direitinho, tu levas",
+		"Pelo serviço, égua, eu separo pra ti",
+		"Me ajuda nessa que eu te pago com carinho e com"
+	],
+	"reward_outro": [
+		"Palavra de florista não murcha, mano.",
+		"E ainda te dou um raminho de flor de lambuja pra enfeitar tua casa.",
+		"Pode confiar: eu pago certinho, igual chuva da tarde lá no Norte.",
+		"Jardineiro que não paga o que deve, a semente não brota. Fica tranquilo."
+	],
+	"lore_done": [
+		"Égua, maninho, já te contei uma história hoje! Mais uma e eu esqueço de regar as orquídeas. Volta amanhã.",
+		"História é igual flor: uma de cada vez, senão murcha. Pergunta pros outros da vila ou volta amanhã, mano.",
+		"Tu és curioso, hein? Hoje já deu. Amanhã tem história fresquinha, colhida no orvalho."
+	],
+	"abandon": [
+		"Égua... tu vais largar no meio? Muda plantada pela metade não pega, mano.",
+		"Que pena, maninho. Achei que tu tinhas raiz firme."
+	],
+	"lore": [
+		[
+			"Tu sabias que cada flor dá um corante diferente? <y>Centáurea</y> dá azul, <y>papoula</y> dá vermelho, <y>dente-de-leão</y> dá amarelo.",
+			"Antigamente as vilas não tinham cor nenhuma. Tudo cinza, tudo marrom. Os pastores choravam olhando pras ovelhas brancas.",
+			"Aí veio a primeira florista e ensinou o povo a esmagar flor. Desde então tem lã de toda cor. De nada, mundo."
+		],
+		[
+			"As abelhas não são só bonitinhas, não, mano. Sem elas, metade das plantações da vila não cresceria tão rápido.",
+			"Elas pegam o pólen das flores e, quando passam voando por cima da plantação, a colheita dá um pulo.",
+			"Mas se tu tirares o mel da colmeia sem uma <n>fogueira</n> embaixo, elas te picam todas juntas. Abelha é doce, mas não é besta."
+		],
+		[
+			"Lá no <a>Bosque das Flores</a> tem tanta cor que até os coelhos ficam tontos. Dizem que ali nasceu a primeira semente do mundo.",
+			"E tem um bioma onde as árvores são todas cor-de-rosa, as <a>cerejeiras</a>. Quando venta, chove pétala.",
+			"Eu sonho em morar lá. Mas aí quem cuidaria das flores daqui? Florista não abandona canteiro, mano."
+		],
+		[
+			"Tu já viste a <y>rosa-de-wither</y>? Ela é preta, triste, e nasce onde o <r>Wither</r> mata alguma coisa.",
+			"Quem encosta nela fica doente, igual o próprio monstro. Até a terra em volta parece chorar.",
+			"Eu tenho uma num vaso, bem longe de tudo. Às vezes eu converso com ela. Acho que ela só precisa de carinho, coitada."
+		],
+		[
+			"Contam que embaixo da terra, perto das cidades antigas, cresce um musgo que brilha e umas frutinhas que acendem no escuro.",
+			"São as <y>bagas brilhantes</y>, maninho. Penduradas nas cavernas exuberantes, iluminando o caminho de quem se perde.",
+			"A natureza sempre dá um jeito de florescer, até onde o sol não chega. Por isso eu nunca perco a esperança em ninguém. Nem em ti."
+		]
+	],
+	"player_work": [
+		"Tem serviço no jardim pra mim?",
+		"Precisa de ajuda com as flores?",
+		"Bora trabalhar, mana! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Deixa comigo, que eu tenho mão boa pra planta!",
+		"Fechado. Vou voltar cheirando a flor.",
+		"Pode contar comigo!"
+	],
+	"player_why": [
+		"E por que isso é tão importante?",
+		"Mas pra que tanta flor?",
+		"O que acontece se ninguém fizer isso?"
+	],
+	"player_decline": [
+		"Agora não dá, foi mal.",
+		"Hoje eu passo. Tô com alergia a pólen.",
+		"Fica pra próxima."
+	],
+	"player_lore": [
+		"Me conta uma história de jardim.",
+		"O que as flores sabem sobre este mundo?",
+		"Tem algum causo pra contar?"
+	],
+	"player_more_lore": [
+		"Égua, conta outra!",
+		"E aí, o que aconteceu?",
+		"Continua!"
+	],
+	"player_bye": [
+		"Tchau! Cuida das abelhas.",
+		"Até mais, mana!",
+		"Falou, depois eu volto."
+	],
+	"names": [
+		"Margarida", "Violeta", "Hortência", "Dália", "Jacinto", "Narciso", "Florêncio",
+		"Rosimeire", "Íris", "Camélia", "Florinda", "Jasmine", "Valdomiro", "Edite"
+	],
+	"extra": {
+		"day_off": [
+			"Égua, hoje é minha folga, maninho! Até jardineiro precisa deitar na rede e só olhar as flores crescerem.",
+			"Hoje não tem serviço, não, mano. Tô de folga, tomando um açaí e conversando com as orquídeas. Procura outro florista aí na vila ou volta outro dia.",
+			"Folga hoje! As abelhas trabalham por mim. Se a pressa for grande, procura outro florista, que eu tô de pernas pro ar."
+		],
+		"closed": [
+			"Égua, hoje a banca tá fechada, maninho! É minha folga. As flores descansam e eu também.",
+			"Banca fechada hoje, mano. Folga de florista é sagrada! Volta amanhã que tem muda fresquinha."
+		],
+		"greet_plains": [
+			"Égua, {player}! Aqui na planície é só sair de casa que tem <y>dente-de-leão</y> e <y>papoula</y> pra todo lado. Paraíso de florista!",
+			"Ai, maninho, olha esse campo aberto! Vento bom, sol bom, girassol virado pro leste. Planície é jardim que Deus plantou sozinho."
+		],
+		"greet_desert": [
+			"Égua, mano, florista no deserto sofre! Aqui só nasce <y>cacto</y> e arbusto seco. Mas cacto também dá flor, sabia? Corante verde, pelo menos.",
+			"Chega pra sombra, {player}! Eu rego meus vasos três vezes por dia nesse calor. A areia bebe tudo, a danada."
+		],
+		"greet_savanna": [
+			"Égua, {player}! Aqui na savana a árvore de <y>acácia</y> é a rainha. Laranjinha, torta e linda. Eu tenho muda de todas!",
+			"Ai, maninho, savana é seca, mas o capim alto esconde cada florzinha... é só ter olho de florista pra achar."
+		],
+		"greet_snow": [
+			"Égua, que frio, mano! Na neve flor nenhuma quer nascer. Eu guardo meus vasos dentro de casa, perto da lareira, igual filho.",
+			"{player}! Tu sabias que a flor aqui da neve é a mais teimosa do mundo? Igual eu. Brotou, ninguém arranca."
+		],
+		"greet_taiga": [
+			"Égua, {player}! Aqui na taiga tem <y>samambaia</y>, <y>baga doce</y> e pinheiro que não acaba mais. Cheiro de mato que dá gosto!",
+			"Maninho, cuidado com os arbustos de baga doce, que espetam. Mas a geleia que sai deles... pai d'égua!"
+		],
+		"greet_jungle": [
+			"Égua, mano, aqui na selva eu me sinto em casa! Calor, chuva, cipó, <y>cacau</y> e bambu. É quase a minha terra!",
+			"{player}! Tu já viste flor maior que essa selva? Aqui tudo cresce ligeiro, até a saudade de casa."
+		],
+		"greet_swamp": [
+			"Égua, {player}, aqui no pântano a <y>orquídea azul</y> nasce no meio do lodo. A flor mais bonita no lugar mais feio. Igual a vida, mano.",
+			"Ai, maninho, cuidado com a lama e com a bruxa da cabana. Ela vive querendo minhas flores pras poções dela, aquela leso."
+		]
+	}
+}

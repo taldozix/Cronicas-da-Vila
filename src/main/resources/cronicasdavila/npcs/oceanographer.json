@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ó-lhó-lhó, quem é vivo sempre aparece! {player}, chega aqui que eu tenho dado novo de maré pra te mostrar!",
+		"Ah, mas tu és o meu marinheiro preferido, {player}! Desde que tu chegaste, a salinidade da minha alegria subiu três pontos.",
+		"{player}! Tás vendo esse coral aqui no frasco? Batizei ele com o teu nome. É laranjinha e meio desajeitado, igualzinho.",
+		"Olha só quem a corrente trouxe! Senta aí, {player}, que hoje tem tainha seca e conversa de oceano até a maré virar."
+	],
+	"greet_neutral": [
+		"Opa, tás perdido, ou vieste estudar o mar? Cuidado com a mesa, que essas amostras de água têm mais idade que tu.",
+		"Hrmm, ó, um visitante. Já viste uma lula de perto? Não? Então ainda não sabes nada da vida, mas tudo bem.",
+		"Bom dia! Ou boa tarde. Pela altura da maré, já passou do meio-dia. Eu sei as horas pela água, não pelo sol.",
+		"Chegou mais um curioso. Não mexe no frasco azul, que é tinta de lula de três semanas. Cheira que é uma tristeza."
+	],
+	"greet_cold": [
+		"Hmm. Tu de novo. Andaste chutando tartaruga na praia, foi? A notícia corre mais rápido que golfinho.",
+		"Tás tolo de aparecer aqui depois do que fizeste? O mar não esquece, e eu muito menos.",
+		"Fala logo o que queres. Tenho uma maré pra medir e paciência de água rasa."
+	],
+	"hostile": [
+		"<r>Fora da minha mesa!</r> Tu feriste gente da vila. Nem os afogados são tão podres quanto tu!",
+		"Ó, sai daqui antes que eu chame um <r>guardião</r> pra te dar uma raio-laser na testa. <r>Some!</r>"
+	],
+	"followup": [
+		"Que mais, ó? Pergunta antes que a maré vire.",
+		"Mais alguma dúvida oceânica? Eu adoro dúvida oceânica.",
+		"Diz, diz. Tenho tempo, que a próxima onda só chega daqui a pouco.",
+		"Ainda tem pergunta? Manda, que a cabeça de oceanógrafo é funda."
+	],
+	"decline": [
+		"Tá certo, ó. Nem toda corrente leva pro mesmo lugar.",
+		"Sem problema. O mar espera. Ele tem toda a paciência do mundo, eu é que não tenho.",
+		"Hmm, que pena. Vou mandar uma mensagem numa garrafa pra ver se alguém mais corajoso aparece."
+	],
+	"locked": [
+		"Calma, marujo! Esse serviço é água funda, e tu ainda tás no raso. Ganha experiência e volta.",
+		"Agora não tenho nada na tua profundidade. Aprende a nadar mais longe e eu te arrumo coisa melhor."
+	],
+	"repeat": [
+		"Lembras daquele serviço? Pois é, a maré trouxe o problema de volta. Mar é assim: vai e vem.",
+		"Tu já fizeste isso pra mim uma vez. Repete? A ciência gosta de experimento repetido, ó."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, ó. Até onda brava acalma um dia. Vamos ver se tu acalmas também.",
+		"Aceito as desculpas. Mas as tartarugas ainda estão desconfiadas de ti, e tartaruga tem memória de cem anos."
+	],
+	"bless": [
+		"Que essa ferramenta seja firme feito recife: aguenta onda, aguenta tempo, aguenta tudo.",
+		"Abençoada com o sal do mar, ó. Que ela nunca enferruje e que tu nunca te afogues."
+	],
+	"bye": [
+		"Vai com a corrente, marujo! E não dá as costas pro mar.",
+		"Tchau, ó! Se vires um golfinho, dá um oi por mim. Eles são muito educados.",
+		"Até mais! E lembra: na dúvida, segura o fôlego."
+	],
+	"greet_night": [
+		"Ó-lhó-lhó, {player}, a essa hora? Agora é que os afogados saem da água pra passear. Fica perto da lamparina!",
+		"Psiu, olha a maré cheia sob a lua! É agora que a água sobe mais. E os zumbis também, infelizmente.",
+		"Boa noite, marujo! Tô medindo a luz da lua na água. Não ri, isso é ciência séria. Quase sempre."
+	],
+	"bye_night": [
+		"Boa noite, ó! Vai pela praia, mas longe da água. Afogado de noite é bicho chato.",
+		"Vou deitar, que amanhã cedinho tem maré baixa e eu quero catar concha. Dorme bem, {player}!",
+		"Té amanhã! Se ouvir um tridente zunindo no escuro, deita no chão e reza pra Iemanjá."
+	],
+	"greet_rain": [
+		"Ó, que chuvarada, {player}! É bom pro mar, sabia? Água doce na superfície, peixe feliz embaixo.",
+		"Entra, entra! Com chuva assim, os peixes mordem a isca que é uma beleza. E eu fico seco anotando tudo.",
+		"Chuva no mar é uma coisa linda. Mas tu, encharcado assim, tás parecendo uma esponja molhada, ó."
+	],
+	"greet_storm": [
+		"Tás tolo de sair nessa trovoada? Se cair raio num aldeão, ele vira bruxa! E um raio no mar, então, nem te conto!",
+		"Credo, {player}, que tempestade! Dizem que é em dia assim que tridente atrai raio. Não quero nem testar."
+	],
+	"reward_intro": [
+		"Se tu me ajudares nessa pesquisa, eu te pago",
+		"Fazendo direitinho, ó, tu levas",
+		"Pela colaboração científica, separo pra ti",
+		"Me ajuda nessa que a recompensa é"
+	],
+	"reward_outro": [
+		"Palavra de manezinho é firme feito âncora, ó.",
+		"E ainda te dou uma concha de lembrança. Concha é a moeda mais bonita do mundo.",
+		"Pode confiar: pago certinho, igual maré que sobe duas vezes por dia.",
+		"Tá anotado no meu diário de bordo. E diário de bordo não mente.",
+		"Prometido! Se eu não pagar, que um baiacu me morda."
+	],
+	"lore_done": [
+		"Ó, já te contei uma história de mar hoje! Mais uma e eu perco a hora da maré baixa. Volta amanhã.",
+		"História de oceano é igual mergulho: uma por vez, senão falta fôlego. Volta amanhã, marujo.",
+		"Tás curioso hoje, hein? Mas por hoje deu. Amanhã tem história nova, fresquinha igual peixe do dia."
+	],
+	"abandon": [
+		"Ó... vais largar no meio? Igual barco sem âncora, à deriva.",
+		"Que pena, marujo. A pesquisa vai ficar com um buraco do tamanho de uma baleia."
+	],
+	"lore": [
+		[
+			"Sabias que o mar já foi todo igual? Só água e areia. Até que um dia nasceram os <a>corais</a>.",
+			"Eles são bichos, não plantas, viu? Se tirares um coral da água, ele morre e fica cinza. Que nem eu fora da praia.",
+			"Por isso eu não arranco coral sem necessidade. Só com <y>Toque Suave</y>, e mesmo assim com dó no coração."
+		],
+		[
+			"Lá no fundo existem os <a>Monumentos Oceânicos</a>, feitos de <y>prismarinho</y>. Ninguém sabe quem construiu.",
+			"Eu tenho uma teoria: foram os próprios <r>guardiões</r>. Eles são peixes com olho grande e mau humor maior ainda.",
+			"E lá dentro mora o <r>Guardião Ancião</r>. Quando ele te olha, tu sentes o corpo pesado e não consegues minerar. Que nem segunda-feira."
+		],
+		[
+			"As <a>tartarugas</a> sempre voltam pra praia onde nasceram pra botar os ovos. Sempre! Mesmo que nadem o mundo inteiro.",
+			"Eu acho isso a coisa mais bonita do oceano. Elas lembram de casa melhor que muita gente.",
+			"Então, se vires uns ovinhos na areia, não pisa! E cuidado com os zumbis, que eles adoram esmagar os coitadinhos."
+		],
+		[
+			"O <a>Coração do Mar</a> é a coisa mais misteriosa que existe. Fica escondido nos baús dos tesouros enterrados.",
+			"Junta ele com <y>cascas de náutilo</y> e tu fazes um <p>conduíte</p>. Ele dá respiração debaixo d'água e espanta monstro.",
+			"Os antigos diziam que o mar inteiro tem um coração só, e que ele foi partido em pedacinhos pelos navios naufragados. Eu acredito."
+		],
+		[
+			"Os <a>golfinhos</a> são mais espertos que muito aldeão. Se tu dás peixe pra eles, eles te levam até um tesouro.",
+			"Uma vez eu segui um golfinho por três dias. Ele me levou a um naufrágio cheio de mapas e... um pé de bota velha.",
+			"Mesmo assim, valeu a viagem. Golfinho não mente: o tesouro era a amizade. E o mapa, que eu vendi pro cartógrafo."
+		]
+	],
+	"player_work": [
+		"Tem alguma pesquisa do mar pra mim?",
+		"Precisa de ajuda com o oceano?",
+		"Bora mergulhar! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Pode deixar, eu mergulho nessa!",
+		"Fechado, oceanógrafo. Tô a bordo!",
+		"Aceito! Segura a âncora que eu já volto."
+	],
+	"player_why": [
+		"E por que isso importa tanto pro mar?",
+		"Me explica essa pesquisa direito.",
+		"Por que tu mesmo não mergulhas?"
+	],
+	"player_decline": [
+		"Agora não, a maré não tá pra mim.",
+		"Passo dessa vez, tenho medo de afogado.",
+		"Hoje não, fica pra próxima onda."
+	],
+	"player_lore": [
+		"Me conta um segredo do oceano.",
+		"O que tem lá no fundo do mar?",
+		"Conta uma história de marinheiro."
+	],
+	"player_more_lore": [
+		"Conta outra do mar!",
+		"E o que mais tem lá embaixo?",
+		"Mergulha mais fundo nessa história!"
+	],
+	"player_bye": [
+		"Até mais, oceanógrafo!",
+		"Vou nessa, boa maré pra ti!",
+		"Tchau! Cuida das tartarugas."
+	],
+	"names": [
+		"Valmor", "Ivete", "Osni", "Rosemeri", "Dorval", "Zenaide", "Alcides",
+		"Marlene", "Hamilton", "Lenita", "Ivo", "Odete", "Nivaldo", "Zuleica"
+	],
+	"extra": {
+		"day_off": [
+			"Ó, hoje é minha folga! Vou só boiar no mar olhando pro céu. Isso também é pesquisa, de certa forma.",
+			"Hoje não tem serviço, marujo. Até oceanógrafo precisa secar ao sol de vez em quando. Volta outro dia ou procura outro oceanógrafo na vila.",
+			"Tô de folga, catando concha na praia sem anotar nada. É o meu jeito de descansar. Se for urgente, procura outro colega de mesa, ó."
+		],
+		"closed": [
+			"Ó, hoje a banca tá fechada, é minha folga! Os frascos de água do mar também merecem descanso.",
+			"Hoje a banca tá fechada, marujo, é minha folga. Volta amanhã que eu te mostro o coral novo."
+		],
+		"greet_plains": [
+			"Olha, eu nasci aqui nas planícies, longe do mar. Estudei oceano pelos livros e por um balde d'água. Mas olha só onde cheguei!",
+			"Aqui na planície o mar mais perto é o rio. Mas eu digo que o rio é só um mar com pressa, ó."
+		],
+		"greet_desert": [
+			"Pois é, sou oceanógrafo do deserto e nunca vi o mar de verdade. Mas já estudei muito a areia, que é praia sem água!",
+			"Aqui no deserto, cada gota é um oceano pra mim. Tenho um copinho d'água que é a minha coleção mais preciosa."
+		],
+		"greet_savanna": [
+			"Na savana, o rio é o nosso mar. Os aldeões riem quando eu meço a maré do lago, mas eu sei o que tô fazendo.",
+			"Ó, eu sonho em levar uma lhama pra ver o oceano. Acho que ela ia cuspir na onda, de tão espantada."
+		],
+		"greet_snow": [
+			"Aqui na tundra o mar é congelado! Eu estudo os icebergs e os ursos-polares. Os ursos não gostam muito de mim.",
+			"Ó, que frio! Nas águas geladas daqui moram os salmões mais gordinhos do mundo. Ciência pura."
+		],
+		"greet_taiga": [
+			"Na taiga o mar é escuro e gelado, cheio de salmão. Eu acompanho as raposas pescando na beira. Elas são péssimas.",
+			"Aqui entre os pinheiros a gente sente o cheiro do mar e da resina ao mesmo tempo. Que combinação bonita, ó."
+		],
+		"greet_jungle": [
+			"Na selva tem rio, cachoeira e até mar morninho por perto. Os peixes daqui são tão coloridos que parecem pintados.",
+			"Ó, aqui na selva tem papagaio que imita o barulho das ondas. Eu passei uma semana achando que a maré tava falando comigo."
+		],
+		"greet_swamp": [
+			"Pântano é meio mar, meio sopa, ó. Mas eu estudo assim mesmo. Já achei até sapo que nada melhor que peixe.",
+			"Aqui no pântano a água é tão verde que nem sei se tem peixe ou só lodo. Mas a ciência não escolhe água bonita."
+		]
+	}
+}

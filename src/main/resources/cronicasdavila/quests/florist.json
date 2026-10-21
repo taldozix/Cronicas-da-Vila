@@ -1,0 +1,402 @@
+{
+	"quests": [
+		{
+			"id": "florist_1_buque",
+			"tier": 1,
+			"title": "Buquê pro Casamento",
+			"tone": "calm",
+			"offer": [
+				"Égua, maninho, tô num aperreio! Vai ter casamento na vila e me encomendaram o buquê mais bonito que esta terra já viu.",
+				"Só que meu canteiro ainda tá em botão. Não tem uma flor aberta pra remédio!",
+				"Se tu me trouxeres umas flores do campo, eu monto o buquê e salvo a festa."
+			],
+			"why": [
+				"Casamento sem flor é igual açaí sem farinha, mano: até dá, mas fica triste.",
+				"E a noiva é minha prima. Se o buquê sair feio, eu não apareço mais em almoço de família."
+			],
+			"accept": [
+				"Pai d'égua! Pode ser de qualquer tipo: papoula, tulipa, margarida, centáurea... quanto mais cor, melhor.",
+				"<g>Traga</g> <y>24 flores pequenas</y>, de qualquer espécie, e volta aqui."
+			],
+			"progress": [
+				"Planícies e bosques de flores são cheios delas. Se jogar farinha de osso na grama, às vezes nasce flor também.",
+				"Girassol e roseira são flores altas, não servem aqui. Quero as baixinhas."
+			],
+			"complete": [
+				"Égua, que maravilha! Esse buquê vai fazer a vila inteira chorar no casamento. De emoção, tá?",
+				"Toma, maninho: <o>esmeraldas</o> e uns <o>biscoitos</o> que sobraram da festa."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:small_flowers"], "count": 24, "desc": "<g>Entregue</g> <y>24 flores pequenas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:cookie", "count": 10}]
+		},
+		{
+			"id": "florist_1_poda",
+			"tier": 1,
+			"title": "Poda da Cerca Viva",
+			"tone": "calm",
+			"offer": [
+				"Mano, olha o estado da cerca viva da praça! Parece cabelo de quem acordou agora.",
+				"As folhas tão tão grandes que o ferreiro bateu a cabeça três vezes ontem. E o golem ficou enroscado."
+			],
+			"why": [
+				"Jardim bonito é jardim podado. Folha demais rouba a luz das flores lá de baixo.",
+				"E se ficar assim, de noite é esconderijo de aranha. Ninguém quer isso."
+			],
+			"accept": [
+				"Égua, obrigada! Pode quebrar com a mão, com tesoura ou com o que tu quiseres.",
+				"<g>Quebre</g> <y>64 blocos de folhas</y> e me avisa quando ficar bonito."
+			],
+			"progress": [
+				"Folha de qualquer árvore conta. Com tesoura vai mais ligeiro e tu ainda guardas as folhas.",
+				"Às vezes cai uma muda ou até uma maçã das folhas de carvalho. Aproveita, maninho."
+			],
+			"complete": [
+				"Agora sim! A praça tá parecendo jardim de palácio. Até o bobão da vila penteou o cabelo.",
+				"Toma, mano: <o>esmeraldas</o> e <o>ferro</o> pra tu fazeres uma tesoura bem afiada."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:leaves"], "count": 64, "desc": "<g>Quebre</g> <y>64 blocos de folhas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "florist_1_aranhas",
+			"tier": 1,
+			"title": "Teia nas Roseiras",
+			"tone": "danger",
+			"offer": [
+				"Égua, mano, tu não vais acreditar. Toda noite umas <r>aranhas</r> gigantes sobem nas minhas roseiras.",
+				"Elas não comem flor, não. Só ficam ali, com aqueles oito olhos vermelhos, me encarando pela janela.",
+				"Eu não durmo mais, maninho. E as abelhas também não saem da colmeia de medo."
+			],
+			"why": [
+				"Sem abelha voando, não tem pólen. Sem pólen, a plantação da vila cresce devagar.",
+				"E eu sou florista, mano, não sou guerreira. Minha arma mais perigosa é um regador."
+			],
+			"accept": [
+				"Pai d'égua! Elas aparecem quando escurece. De dia ficam mansinhas, só atacam se tu bateres primeiro.",
+				"<r>Elimine 12 aranhas</r> e volta aqui pra me contar."
+			],
+			"progress": [
+				"Aranha escala parede, então não adianta se esconder atrás de muro baixo. Aranha das cavernas também conta, mas cuidado com o veneno.",
+				"Elas deixam cair linha e olho de aranha. A linha dá pra fazer arco, se tu quiseres."
+			],
+			"complete": [
+				"Égua, que paz! Ontem as abelhas saíram cedinho e o jardim zumbiu o dia todo.",
+				"Toma, maninho: <o>esmeraldas</o> e <o>pão</o> quentinho pra tu recuperares as forças."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 12, "desc": "<r>Elimine</r> <r>12 aranhas</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:bread", "count": 10}]
+		},
+		{
+			"id": "florist_2_vasos",
+			"tier": 2,
+			"title": "Uma Flor em Cada Janela",
+			"tone": "calm",
+			"offer": [
+				"Maninho, eu tive uma ideia pai d'égua: e se cada casa da vila tivesse uma flor na janela?",
+				"Só que eu sozinha não dou conta. Já plantei em vinte vasos e minhas costas viraram um cipó torto."
+			],
+			"why": [
+				"Flor na janela alegra quem passa, mano. Vila alegre é vila que briga menos.",
+				"E vaso de flor é o presente mais barato e mais bonito que existe. Só precisa de tijolo e carinho."
+			],
+			"accept": [
+				"Égua, obrigada! Faz o vaso com três tijolos e bota qualquer flor, muda ou cogumelo dentro.",
+				"<g>Plante</g> <y>12 flores em vasos</y>, pode ser na tua casa ou espalhado pela vila."
+			],
+			"progress": [
+				"Tijolo sai da argila queimada na fornalha. Argila tem muito no fundo de rio e de lago raso.",
+				"Cacto, samambaia e muda também contam. Só não vale tirar e botar de novo a mesma flor, viu? Isso é trapaça de leso."
+			],
+			"complete": [
+				"Égua, a vila tá parecendo cartão-postal! Até o armeiro sorriu, e ele nunca sorri.",
+				"Toma, mano: <o>esmeraldas</o> e um <o>diamante</o> brilhante. Tu mereces."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:pot_flower"], "count": 12, "desc": "<g>Plante</g> <y>12 flores em vasos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "florist_2_mel",
+			"tier": 2,
+			"title": "Mel Pro Xarope",
+			"tone": "calm",
+			"offer": [
+				"Ai, maninho, metade da vila tá gripada. Tosse daqui, espirro dali... parece um coral desafinado.",
+				"Lá na minha terra a gente cura tudo com xarope de mel e flor. Mas minha colmeia tá vazia."
+			],
+			"why": [
+				"Remédio do clérigo é bom, mas é caro, mano. Xarope de florista é de graça e ainda é docinho.",
+				"E garrafa de mel ainda tira veneno do corpo. Bom ter guardado pra quando aranha pegar alguém."
+			],
+			"accept": [
+				"Pai d'égua! Mas tem que ser com cuidado, senão as abelhas te pegam.",
+				"<g>Traga</g> <y>8 garrafas de mel</y> e eu faço xarope pra vila toda."
+			],
+			"progress": [
+				"Bota uma fogueira embaixo da colmeia antes de mexer. A fumaça acalma as abelhas.",
+				"Espera a colmeia ficar pingando mel e usa um frasco de vidro vazio nela. Colmeias aparecem em carvalhos e bétulas perto de flores."
+			],
+			"complete": [
+				"Égua, que mel cheiroso! Amanhã ninguém mais espirra nesta vila, te garanto.",
+				"Toma, maninho: <o>esmeraldas</o> e um <o>diamante</o> de agradecimento."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:honey_bottle"], "count": 8, "desc": "<g>Entregue</g> <y>8 garrafas de mel</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "florist_2_creepers",
+			"tier": 2,
+			"title": "Crateras no Canteiro",
+			"tone": "danger",
+			"offer": [
+				"Égua, mano, olha isso! Um buraco no meio do meu canteiro de tulipas do tamanho de uma casa!",
+				"Foi um <r>creeper</r>, maninho. Chegou de mansinho, fez \"ssssss\" e BUM. Lá se foram três anos de jardim.",
+				"E não foi o primeiro, não. Eles adoram o verdinho do meu jardim. Acho que se confundem com as plantas."
+			],
+			"why": [
+				"Se continuar assim, a vila vai virar queijo suíço. Cheio de buraco e sem flor nenhuma.",
+				"E eu não chego perto daquilo nem morta. Já basta o susto que eu levei."
+			],
+			"accept": [
+				"Pai d'égua! Ataca e se afasta ligeiro, que eles explodem quando chegam perto.",
+				"<r>Elimine 10 creepers</r> e volta pra me contar."
+			],
+			"progress": [
+				"Creeper tem pavor de gato e de jaguatirica. Um gatinho no jardim espanta todos eles.",
+				"Eles aparecem de noite e no escuro, e não pegam fogo de dia. Fica de olho atrás das árvores."
+			],
+			"complete": [
+				"Égua, nenhum BUM essa semana! Já até replantei as tulipas na cratera. Ficou um jardim rebaixado, chique.",
+				"Toma, maninho: <o>ferro</o>, <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 10, "desc": "<r>Elimine</r> <r>10 creepers</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "florist_3_corantes",
+			"tier": 3,
+			"title": "O Arco-Íris da Festa",
+			"tone": "calm",
+			"offer": [
+				"Maninho, a Festa das Cores tá chegando! É quando a vila inteira pinta lã, bandeira e até a cara.",
+				"Os pastores me pediram corante de tudo que é cor. E eu, égua, tô sem uma gotinha."
+			],
+			"why": [
+				"Sem corante, a festa vira Festa do Branco. E o branco só combina com ovelha e com fantasma.",
+				"Cada cor sai de uma flor diferente, mano. É o jeito da natureza pintar o mundo."
+			],
+			"accept": [
+				"Égua, que bom! Pode fazer de qualquer cor: vermelho, amarelo, azul, roxo, rosa... quanto mais misturado, melhor.",
+				"<g>Fabrique</g> <y>48 corantes</y>, de qualquer cor, e me avisa."
+			],
+			"progress": [
+				"Bota a flor na bancada de trabalho e ela vira corante. Rosa e girassol dão o dobro.",
+				"Corante também mistura: vermelho com amarelo dá laranja, azul com vermelho dá roxo. Farinha de osso dá branco."
+			],
+			"complete": [
+				"Égua, que festa vai ser! A vila vai ficar mais colorida que arara em dia de sol.",
+				"Toma, mano: <o>diamantes</o> e uma <o>maçã dourada</o>. Tu és o artista desta vila agora."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:red_dye", "minecraft:yellow_dye", "minecraft:blue_dye", "minecraft:white_dye", "minecraft:orange_dye", "minecraft:pink_dye", "minecraft:magenta_dye", "minecraft:purple_dye", "minecraft:light_blue_dye", "minecraft:light_gray_dye", "minecraft:lime_dye", "minecraft:cyan_dye", "minecraft:gray_dye", "minecraft:black_dye"], "count": 48, "desc": "<g>Fabrique</g> <y>48 corantes</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "florist_3_arbustos",
+			"tier": 3,
+			"title": "Flores do Tamanho da Gente",
+			"tone": "calm",
+			"offer": [
+				"Mano, eu quero fazer um labirinto de flores na entrada da vila. Mas não com florzinha baixinha, não!",
+				"Quero <y>girassol</y>, <y>roseira</y>, <y>lilás</y> e <y>peônia</y>. Flor alta, que bate no ombro da gente."
+			],
+			"why": [
+				"Viajante que chega e vê um labirinto de flores já entra sorrindo. E viajante sorrindo compra mais, maninho.",
+				"E as abelhas vão amar. Flor alta tem pólen que não acaba mais."
+			],
+			"accept": [
+				"Égua, obrigada! Girassol mira sempre pro leste, então tu achas fácil nas planícies.",
+				"<g>Traga</g> <y>16 flores altas</y>, de qualquer tipo, e eu começo o labirinto."
+			],
+			"progress": [
+				"Lilás, roseira e peônia aparecem muito em florestas e bosques de flores. Girassol, só em planície de girassóis.",
+				"Truque de florista: joga farinha de osso numa flor alta e ela solta outra igualzinha."
+			],
+			"complete": [
+				"Égua, que labirinto lindo! Até eu me perdi nele, de propósito.",
+				"Toma, maninho: <o>diamantes</o> e um <o>livro de Eficiência III</o> pra tu cortares e colheres mais ligeiro."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:sunflower", "minecraft:rose_bush", "minecraft:lilac", "minecraft:peony"], "count": 16, "desc": "<g>Entregue</g> <y>16 flores altas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 3}]
+		},
+		{
+			"id": "florist_3_bruxas",
+			"tier": 3,
+			"title": "Ladras de Pétala",
+			"tone": "danger",
+			"offer": [
+				"Égua, maninho, sumiram todas as minhas <y>orquídeas azuis</y> de novo! E o <y>lírio-do-vale</y> também!",
+				"Eu sei quem foi. Foram as <r>bruxas</r>. Elas arrancam flor pra fazer poção e deixam o canteiro todo esburacado.",
+				"Ontem uma me jogou uma poção de lentidão quando eu reclamei. Fiquei a tarde toda andando igual preguiça."
+			],
+			"why": [
+				"Se elas continuarem, não sobra uma flor rara nesta região. E flor rara, quando some, não volta, mano.",
+				"E bruxa que rouba flor hoje, amanhã rouba criança pra provar poção. Não dá pra deixar."
+			],
+			"accept": [
+				"Égua, cuidado que elas bebem poção de cura no meio da briga. Bate ligeiro e não para.",
+				"<r>Elimine 5 bruxas</r> e me traz paz pro jardim."
+			],
+			"progress": [
+				"Bruxas moram em cabanas no pântano e também aparecem em lugares escuros, de noite. Às vezes vêm junto com os ataques de saqueadores.",
+				"Elas jogam veneno e fraqueza. Leva leite: um balde de leite tira todos os efeitos."
+			],
+			"complete": [
+				"Égua, as orquídeas voltaram a brotar! Eu chorei regando elas, mano.",
+				"Toma, maninho: <o>diamantes</o> e uma <o>maçã dourada</o>. Bem mais doce que poção de bruxa."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:witch"], "count": 5, "desc": "<r>Elimine</r> <r>5 bruxas</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "florist_4_favos",
+			"tier": 4,
+			"title": "Velas de Cera de Abelha",
+			"tone": "calm",
+			"offer": [
+				"Maninho, a capela da vila vai fazer uma vigília de uma semana inteira. Vai precisar de vela que não acaba mais.",
+				"O clérigo me pediu favo de mel pra fazer cera. Mas minhas abelhas, coitadas, não dão conta de tanto."
+			],
+			"why": [
+				"Vela de cera de abelha não solta fumaça preta, mano. Não suja os vitrais da capela.",
+				"E favo também serve pra encerar cobre, pra ele não ficar verde. O ferreiro vive me pedindo."
+			],
+			"accept": [
+				"Égua, obrigada! Mas favo é diferente de mel: tem que usar tesoura na colmeia cheia.",
+				"<g>Traga</g> <y>24 favos de mel</y> e a vigília vai ser a mais iluminada da história."
+			],
+			"progress": [
+				"Fogueira embaixo da colmeia, sempre! Senão as abelhas te picam e morrem depois, coitadas.",
+				"Cada colmeia cheia dá três favos com a tesoura. Planta flor perto pra elas encherem mais ligeiro."
+			],
+			"complete": [
+				"Égua, que cheiro de mel na capela! O clérigo disse que nunca rezou tão bem.",
+				"Toma, mano: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Toque Suave</o>. Com ele tu levas uma colmeia inteira sem expulsar as abelhas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:honeycomb"], "count": 24, "desc": "<g>Entregue</g> <y>24 favos de mel</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
+		},
+		{
+			"id": "florist_4_colmeias",
+			"tier": 4,
+			"title": "Casa Pras Abelhas",
+			"tone": "calm",
+			"offer": [
+				"Mano, eu tenho um sonho: uma vila onde cada plantação tem sua colmeia do lado.",
+				"Abelha perto de plantação faz trigo, cenoura e batata crescerem ligeiro. É mágica de natureza, maninho."
+			],
+			"why": [
+				"Com abelha em todo canto, a vila nunca mais passa fome. Os fazendeiros vão me amar.",
+				"E abelha sem casa vira abelha triste, que se perde na chuva e não volta mais."
+			],
+			"accept": [
+				"Égua, que bom! Colmeia se faz com tábuas e favos de mel na bancada.",
+				"<g>Fabrique</g> <y>6 colmeias</y> e eu cuido de povoar cada uma."
+			],
+			"progress": [
+				"Cada colmeia leva seis tábuas e três favos. Os favos tu tiras de colmeia natural com tesoura.",
+				"Pra levar abelha pra casa nova, segura uma flor na mão. Elas seguem quem tem flor, as danadas."
+			],
+			"complete": [
+				"Égua, que zumbido bonito! A vila inteira tá cantando, mano.",
+				"Toma, maninho: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Inquebrável III</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:beehive"], "count": 6, "desc": "<g>Fabrique</g> <y>6 colmeias</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "florist_4_orquideas",
+			"tier": 4,
+			"title": "A Flor do Lodo",
+			"tone": "calm",
+			"offer": [
+				"Maninho, eu preciso te pedir uma coisa difícil. Tem um comprador lá da cidade grande louco por <y>orquídea azul</y>.",
+				"Só que ela só nasce no pântano. No meio da lama, dos lodos, das bruxas e dos slimes."
+			],
+			"why": [
+				"Com o que ele vai pagar, eu compro sementes pra vila inteira por um ano, mano.",
+				"E orquídea azul dá o corante azul-claro mais bonito do mundo. Os pastores choram quando veem."
+			],
+			"accept": [
+				"Égua, tu és corajoso! Colhe com cuidado, quebrando a flor do chão.",
+				"<g>Colha</g> <y>24 orquídeas azuis</y> lá no pântano e volta inteiro."
+			],
+			"progress": [
+				"Orquídea azul nasce no pântano. Se faltar, joga farinha de osso na grama de lá que nasce mais.",
+				"De noite aparece slime no pântano, ainda mais em lua cheia, e as bruxas não dormem. Vai de dia."
+			],
+			"complete": [
+				"Égua, que azul! Parece pedaço do céu caído na lama, mano.",
+				"Toma, maninho: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Proteção IV</o>."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:blue_orchid"], "count": 24, "desc": "<g>Colha</g> <y>24 orquídeas azuis</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "florist_5_devastadores",
+			"tier": 5,
+			"title": "O Bosque Pisoteado",
+			"tone": "danger",
+			"offer": [
+				"Égua, maninho... eu nem sei como te contar. O bosque de flores aqui do lado... acabou.",
+				"Passaram uns <r>devastadores</r> por lá, com os saqueadores montados. Pisotearam tudo, quebraram até as mudas.",
+				"Eles vão voltar, mano. Os saqueadores sempre voltam. E da próxima vez é a vila."
+			],
+			"why": [
+				"Aquele bosque tinha flor que eu nunca vi em outro lugar. Levou cem anos pra crescer e um dia pra morrer.",
+				"Se tu não parares essas feras, não sobra jardim, colmeia nem vila. Só lama e chifre."
+			],
+			"accept": [
+				"Égua, tu és a última esperança do jardim. Eles vêm nos ataques de saqueadores, junto com bruxas e evocadores.",
+				"<r>Elimine 4 devastadores</r> e eu replanto o bosque inteiro em tua homenagem."
+			],
+			"progress": [
+				"Ataque de saqueador começa quando alguém com Presságio Ruim entra na vila. Os devastadores chegam nas ondas mais fortes.",
+				"Eles têm muita vida e derrubam folha e plantação no caminho. Bate de longe com arco, de cima de um muro."
+			],
+			"complete": [
+				"Égua... acabou, maninho. Já plantei a primeira muda do novo bosque, bem no lugar onde o último caiu.",
+				"Toma, mano: um <o>totem da imortalidade</o>, um <o>livro de Remendo</o> e <o>diamantes</o>. Pra tu voltares sempre vivo pro meu jardim."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ravager"], "count": 4, "desc": "<r>Elimine</r> <r>4 devastadores</r>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 12}]
+		},
+		{
+			"id": "florist_5_wither",
+			"tier": 5,
+			"title": "A Rosa Preta",
+			"tone": "danger",
+			"offer": [
+				"Maninho, lembra da <y>rosa-de-wither</y> que eu guardo no vaso? Ela tá... crescendo. Sozinha.",
+				"Dizem que enquanto existir a lembrança do <r>Wither</r>, a terra lembra da morte. E as flores murcham em volta.",
+				"Tem gente na vila que anda querendo invocar o monstro pra provar coragem. Se ele acordar, só tu podes acabar com ele."
+			],
+			"why": [
+				"Onde o Wither passa, nasce rosa preta em cada canto que alguém morre. Imagina um jardim inteiro disso, mano.",
+				"Eu prefiro que tu enfrentes ele uma vez, preparado, do que a vila toda enfrente por acaso."
+			],
+			"accept": [
+				"Égua, vai com tudo, maninho. Leva leite, comida dourada e armadura boa.",
+				"<r>Derrote 1 Wither</r> e traz a paz de volta pra terra."
+			],
+			"progress": [
+				"O Wither se invoca com quatro blocos de areia das almas em T e três crânios de esqueleto wither em cima. Esses crânios caem dos esqueletos wither das fortalezas do Nether.",
+				"Invoca longe da vila, de preferência bem fundo no chão. O efeito de Wither se cura com balde de leite."
+			],
+			"complete": [
+				"Égua... a rosa do meu vaso ficou cinza e caiu, mano. Acho que ela finalmente descansou.",
+				"Toma, maninho: um <o>totem da imortalidade</o>, uma <o>maçã dourada encantada</o>, um <o>livro de Remendo</o> e <o>diamantes</o>. Tu salvaste todas as flores do mundo."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>1 Wither</r>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 16}]
+		}
+	]
+}
