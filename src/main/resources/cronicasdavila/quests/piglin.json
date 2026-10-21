@@ -175,6 +175,122 @@
 			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:glowstone_dust", "count": 12}]
 		},
 		{
+			"id": "piglin_1_verrugas",
+			"tier": 1,
+			"title": "A Verruga Saborosa",
+			"tone": "calm",
+			"offer": [
+				"<n>HRRNF!</n> Humano já provou <y>fungo do Nether</y>? Aquela coisinha vermelha e enrugada que cresce na areia das almas?",
+				"Piglin acha que é tempero. O Pernil acha que é tempero. O chefe acha que é verruga de Ossudo e não deixa ninguém comer.",
+				"Mas piglin quer fazer o ensopado de hoglin da vovó, e a receita pede muito fungo do Nether. Tu arruma?"
+			],
+			"why": [
+				"Ensopado da vovó é a única coisa que deixa o chefe de bom humor. E chefe de bom humor divide o ouro do mês.",
+				"E se o chefe descobrir que é verruga de Ossudo mesmo, piglin culpa o Pernil. Plano perfeito."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Fortaleza dos Ossudos. Escadinha com areia. Fungo vermelho em cima. Vai!",
+				"<g>Traga</g> <y>32 fungos do Nether</y>."
+			],
+			"progress": [
+				"O fungo do Nether cresce na <y>areia das almas</y> perto das escadas das fortalezas do Nether.",
+				"Dá pra replantar na areia das almas. Até no mundo de cima ele cresce. Devagar, mas cresce."
+			],
+			"complete": [
+				"Cheiro de ensopado! O chefe comeu três tigelas e nem perguntou o que era. Piglin salvo!",
+				"Toma ferro e cargas de fogo. Sobrou do escambo. Humano usa pra esquentar a casa, piglin usa pra esquentar o Torresmo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:nether_wart"], "count": 32, "desc": "<g>Entregue</g> <y>32 fungos do Nether</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:fire_charge", "count": 4}]
+		},
+		{
+			"id": "piglin_1_vinhas",
+			"tier": 1,
+			"title": "As Barbas da Floresta",
+			"tone": "calm",
+			"offer": [
+				"Humano já olhou pra cima na floresta carmesim? Tem umas <y>vinhas chorosas</y> penduradas no teto, vermelhas, parecendo barba de gigante.",
+				"Piglin quer fazer uma rede. Rede pra deitar, balançar e olhar pro ouro do teto. Vida boa de piglin aposentado.",
+				"Mas piglin é baixinho e não alcança. E humano é comprido. Tu puxa as vinhas pra piglin?"
+			],
+			"why": [
+				"Piglin trabalha muito. Admira ouro de manhã, admira ouro de tarde, admira ouro de noite. Piglin merece descanso.",
+				"E rede de vinha é moda no bastião. O Bacongo já tem uma. Piglin não pode ficar pra trás."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Olha pra cima e puxa. Mas cuidado pra não cair na lava olhando pra cima.",
+				"<g>Colha</g> <y>24 vinhas chorosas</y>."
+			],
+			"progress": [
+				"As vinhas chorosas penduram do teto e dos fungos gigantes da floresta carmesim. Elas crescem pra baixo.",
+				"Sem tesoura, nem toda vinha quebrada deixa vinha pra pegar. Mas piglin conta todas que tu quebrar."
+			],
+			"complete": [
+				"Rede pronta! Piglin já deitou, balançou e dormiu. Acordou com o Torresmo balançando junto. Rede de dois agora.",
+				"Toma linha e pérolas do ender. Linha pra humano fazer rede também. Pérola porque piglin não sabe o que fazer com ela."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:weeping_vines", "minecraft:weeping_vines_plant"], "count": 24, "desc": "<g>Colha</g> <y>24 vinhas chorosas</y>"},
+			"rewards": [{"item": "minecraft:string", "count": 12}, {"item": "minecraft:ender_pearl", "count": 2}]
+		},
+		{
+			"id": "piglin_1_moda",
+			"tier": 1,
+			"title": "A Moda do Bastião",
+			"tone": "calm",
+			"offer": [
+				"<n>HRRNF!</n> Humano, emergência de moda! Vai ter desfile no bastião e os primos mais novos tão sem <o>capacete de ouro</o>.",
+				"Piglin sem capacete dourado no desfile é piglin pelado. Pelado, humano! Que vergonha pro bastião inteiro.",
+				"Tu sabe fazer capacete na mesa de trabalho, né? Piglin só sabe bater. Faz uns capacetes pros primos."
+			],
+			"why": [
+				"Desfile é onde os piglins mostram quem brilha mais. Quem brilha mais ganha o melhor lugar perto do baú de ouro.",
+				"E se os primos forem bonitos, o bastião vizinho morre de inveja. Inveja de piglin é a melhor coisa do mundo."
+			],
+			"accept": [
+				"Lingote de ouro na mesa, formato de capacete. Fácil! Até o Torresmo faria. Talvez não.",
+				"<y>Fabrique</y> <y>3 capacetes de ouro</y>."
+			],
+			"progress": [
+				"Um capacete de ouro leva <y>5 lingotes de ouro</y> na mesa de trabalho.",
+				"Humano com qualquer peça de armadura de ouro não é atacado pelos piglins à toa. Por isso piglin gosta tanto de tu."
+			],
+			"complete": [
+				"Os primos desfilaram! Um deles tropeçou, mas o capacete brilhou tanto que ninguém reparou. Sucesso total.",
+				"Toma ferro e quartzo. Ouro piglin não dá, ouro é pra desfile. Mas o resto é teu."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:golden_helmet"], "count": 3, "desc": "<y>Fabrique</y> <y>3 capacetes de ouro</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:quartz", "count": 16}]
+		},
+		{
+			"id": "piglin_1_sauna",
+			"tier": 1,
+			"title": "A Sauna do Chefe",
+			"tone": "calm",
+			"offer": [
+				"Segredo do bastião, humano: o chefe tem dor nas costas. De tanto carregar ouro. Ele não admite, mas anda torto que nem andarilho.",
+				"O curandeiro disse que o remédio é sauna. Chão quente, quentinho, que esquenta o pé até a orelha.",
+				"Piglin quer fazer o chão da sauna com <n>blocos de magma</n>. Aqueles que brilham e queimam o pé. Perfeito!"
+			],
+			"why": [
+				"Chefe sem dor nas costas é chefe que carrega mais ouro. E chefe que carrega mais ouro é chefe que dá mais ouro. Talvez.",
+				"E piglin vai cobrar entrada dos outros piglins na sauna. Em pepitas, claro."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Picareta e sapato grosso. Bloco de magma queima pé de humano.",
+				"<g>Minere</g> <y>24 blocos de magma</y>."
+			],
+			"progress": [
+				"Os blocos de magma aparecem muito no <a>Vale de Basalto</a> e perto do mar de lava. Precisa de picareta pra pegar.",
+				"Andando agachado em cima do bloco de magma, tu não se queima. Piglin aprendeu do jeito difícil."
+			],
+			"complete": [
+				"Sauna pronta! O chefe sentou, suspirou e disse \"<n>hrrnf</n>\" bem baixinho. Piglin nunca viu o chefe tão feliz.",
+				"Toma ferro e obsidiana. Pedra roxa que humano adora. Piglin continua sem entender, mas entrega."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:magma_block"], "count": 24, "desc": "<g>Minere</g> <y>24 blocos de magma</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:obsidian", "count": 6}]
+		},
+		{
 			"id": "piglin_2_hoglins",
 			"tier": 2,
 			"title": "A Grande Caçada",
@@ -347,6 +463,122 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 8, "desc": "<r>Elimine</r> <r>8 blazes</r>"},
 			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 2}]
+		},
+		{
+			"id": "piglin_2_girassois",
+			"tier": 2,
+			"title": "As Flores Douradas do Mundo de Cima",
+			"tone": "calm",
+			"offer": [
+				"<n>HRRNF!</n> Humano, piglin ouviu uma lenda. No mundo de cima tem uma <o>flor de ouro</o>. Flor amarela, gigante, que olha pro céu.",
+				"O Lombardo jura que viu uma quando caiu num portal sem querer. Disse que brilhava mais que lingote. Piglin PRECISA ter uma.",
+				"Mas piglin não pode subir. Lá em cima piglin vira Esverdeado. Tu traz as flores douradas pra piglin?"
+			],
+			"why": [
+				"Se for ouro de verdade, piglin fica rico. Se não for, piglin enfeita o bastião. Piglin ganha de qualquer jeito.",
+				"E o chefe vai ficar com inveja da flor. Chefe com inveja é piglin feliz."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Flor alta, amarela, cara pro céu. Não pode errar.",
+				"<g>Traga</g> <y>16 girassóis</y>."
+			],
+			"progress": [
+				"Os girassóis crescem nas <a>planícies de girassóis</a> do mundo de cima. São flores de dois blocos de altura.",
+				"Girassol sempre vira a cara pro leste, onde o sol nasce. Usa isso pra achar o caminho."
+			],
+			"complete": [
+				"<n>Hrrnf...</n> Não é ouro. Piglin mordeu pra testar. Mas é tão amarelinho! Piglin vai plantar no bastião e fingir que é ouro.",
+				"Toma ouro de verdade, um diamante e obsidiana. Piglin paga bem por lenda, mesmo lenda falsa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:sunflower"], "count": 16, "desc": "<g>Entregue</g> <y>16 girassóis</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:obsidian", "count": 8}]
+		},
+		{
+			"id": "piglin_2_altoes",
+			"tier": 2,
+			"title": "Os Altões de Olho Roxo",
+			"tone": "danger",
+			"offer": [
+				"Humano, piglin tem medo de pouca coisa. Lava? Não. Ghast? Um pouco. Mas os <r>altões de olho roxo</r>... <n>hrrnf...</n> esses dão arrepio no focinho.",
+				"Eles somem e aparecem do nada. Roubam bloco do chão. Ontem um levou a cadeira do chefe. COM O CHEFE SENTADO.",
+				"Tu derruba uns altões pra piglin? Piglin fica aqui, escondido atrás do ouro, torcendo."
+			],
+			"why": [
+				"Os altões andam pela floresta azul e pelo Vale das Almas. Caminho de piglin, cheio de altão, é caminho que ninguém usa.",
+				"E o chefe quer a cadeira de volta. Piglin acha que o altão nunca vai devolver. Então pelo menos vingança."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Não olha no olho deles! Bate e não olha. Olhar é pior.",
+				"<r>Elimine</r> <r>10 endermen</r>."
+			],
+			"progress": [
+				"Endermen aparecem muito na <a>floresta distorcida</a> do Nether. Eles só atacam se tu olhar nos olhos ou bater neles.",
+				"Uma <y>abóbora esculpida</y> na cabeça deixa tu olhar pra eles sem irritar. E eles odeiam água."
+			],
+			"complete": [
+				"Dez altões a menos! O chefe ganhou uma cadeira nova. De ouro. Ele diz que a velha nunca foi tão bonita mesmo.",
+				"Toma ouro, um diamante e um livro de <p>Afiação II</p>. Pérola piglin não dá, pérola é coisa de altão."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 10, "desc": "<r>Elimine</r> <r>10 endermen</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 2}]
+		},
+		{
+			"id": "piglin_2_fosseis",
+			"tier": 2,
+			"title": "Os Ossos Gigantes",
+			"tone": "calm",
+			"offer": [
+				"Humano sabe que tem <y>ossos gigantes</y> enterrados no Nether? Costelas enormes, brancas, saindo da areia azul.",
+				"O chefe quer uma cerca de osso em volta do chiqueiro dos hoglins. Diz que hoglin vê osso e lembra do que acontece com hoglin malcriado.",
+				"Tu quebra os ossos gigantes e traz os blocos? Piglin fica com medo de mexer. E se o dono do osso voltar?"
+			],
+			"why": [
+				"Cerca de osso é assustadora. Hoglin assustado é hoglin comportado. Hoglin comportado não come porta de piglin.",
+				"E nenhum outro bastião tem cerca de osso. Inveja garantida. Piglin adora inveja dos outros."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Picareta no osso. Se o dono aparecer, corre.",
+				"<g>Minere</g> <y>20 blocos de osso</y>."
+			],
+			"progress": [
+				"Os fósseis aparecem no <a>Vale das Almas</a> do Nether, feitos de <y>blocos de osso</y>. Também tem fóssil enterrado no mundo de cima.",
+				"Bloco de osso precisa de <y>picareta</y> pra cair. Sem picareta, ele quebra e não deixa nada."
+			],
+			"complete": [
+				"Cerca pronta! Os hoglins olharam, tremeram e foram dormir cedo. Primeira noite de paz no bastião em anos.",
+				"Toma ouro, um diamante e pérolas do ender. Ossudo nenhum vai ver esse osso de novo."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:bone_block"], "count": 20, "desc": "<g>Minere</g> <y>20 blocos de osso</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 10}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:ender_pearl", "count": 3}]
+		},
+		{
+			"id": "piglin_2_porao",
+			"tier": 2,
+			"title": "O Cofre Secreto",
+			"tone": "calm",
+			"offer": [
+				"Psst. Humano. Chega perto. Piglin vai contar um segredo. Mas não conta pro bastião.",
+				"Piglin quer cavar um <o>cofre secreto</o> embaixo da cama. Bem fundo. Pra guardar o ouro longe dos olhos do Torresmo.",
+				"Mas cavar <y>netherrack</y> cansa. E piglin tem braço curto. Tu cava o cofre pra piglin?"
+			],
+			"why": [
+				"O Torresmo sempre acha o ouro do piglin. SEMPRE. Ele tem faro de ouro melhor que piglin. É injusto.",
+				"Com cofre fundo, o Torresmo cansa antes de chegar no ouro. Piglin sabe, porque piglin cansou só de pensar."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Cava bastante. Quanto mais fundo, mais seguro.",
+				"<g>Minere</g> <y>256 blocos de netherrack</y>."
+			],
+			"progress": [
+				"Netherrack é a pedra vermelha que cobre quase todo o Nether. Quebra rapidinho com qualquer picareta.",
+				"Cuidado com bolsão de lava escondido. Cava sempre olhando, nunca embaixo dos pés."
+			],
+			"complete": [
+				"Cofre pronto! Piglin escondeu o ouro, tampou o buraco e já esqueceu onde é. <n>Hrrnf.</n> Problema pro piglin do futuro.",
+				"Toma ouro e um livro de <p>Eficiência III</p>. Esse ouro aqui não tava no cofre. Tava no bolso. Pega antes que piglin mude de ideia."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:netherrack"], "count": 256, "desc": "<g>Minere</g> <y>256 blocos de netherrack</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 3}]
 		},
 		{
 			"id": "piglin_3_choroes",
@@ -523,6 +755,122 @@
 			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
 		},
 		{
+			"id": "piglin_3_zoglins",
+			"tier": 3,
+			"title": "O Hoglin Que Subiu",
+			"tone": "danger",
+			"offer": [
+				"<n>Hrrnf...</n> Humano, piglin precisa contar uma coisa triste. Uns hoglins fugiram pelo portal pro mundo de cima.",
+				"Lá em cima, hoglin apodrece. Vira <r>zoglin</r>. Zoglin não tem medo de nada, ataca tudo, até árvore. Piglin viu um brigando com uma árvore.",
+				"Os zoglins tão voltando pelo portal e atacando o bastião. Tu acaba com eles? Piglin não aguenta mais."
+			],
+			"why": [
+				"Zoglin não respeita piglin, não respeita ouro, não respeita fungo distorcido. Zoglin é o caos com chifre.",
+				"E é culpa do Torresmo, que deixou o portal aberto. Piglin quer resolver antes que o chefe descubra."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Zoglin bate forte e joga longe. Fica longe da beirada da lava.",
+				"<r>Elimine</r> <r>3 zoglins</r>."
+			],
+			"progress": [
+				"Hoglin que passa mais de <y>15 segundos</y> no mundo de cima vira zoglin. Dá pra levar um hoglin na <y>guia</y> pelo portal.",
+				"Zoglin não foge de fungo distorcido nem de portal, igual hoglin foge. E ataca qualquer coisa que se mexe."
+			],
+			"complete": [
+				"Três zoglins a menos! O chefe não descobriu nada. O Torresmo prometeu fechar o portal. Piglin não acredita.",
+				"Toma ouro, diamantes e uma maçã dourada. Pra tu curar as pancadas de chifre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zoglin"], "count": 3, "desc": "<r>Elimine</r> <r>3 zoglins</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_3_tijolos",
+			"tier": 3,
+			"title": "O Tijolo dos Ossudos",
+			"tone": "danger",
+			"offer": [
+				"Humano, o chefe quer aumentar o bastião. Uma torre nova, alta, de onde dá pra ver o ouro dos vizinhos.",
+				"Mas pedra-negra acabou. E o chefe teve uma ideia malvada: usar o <y>tijolo do Nether</y> das fortalezas dos Ossudos!",
+				"Tu desmonta a fortaleza deles, tijolo por tijolo, e traz pra cá. Ossudo sem casa, piglin com torre. Justo."
+			],
+			"why": [
+				"Os Ossudos roubaram o Vale dos piglins há muito tempo. Agora piglin rouba a casa deles. Vingança com tijolo.",
+				"E torre feita com casa de inimigo é a torre mais bonita de todas. Piglin já sente o gosto da vitória."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Picareta boa e escudo. A fortaleza não vai gostar de ser desmontada.",
+				"<g>Minere</g> <y>96 tijolos do Nether</y>."
+			],
+			"progress": [
+				"As fortalezas do Nether são feitas de <y>tijolos do Nether</y>, escuros e avermelhados. Precisa de picareta pra eles caírem.",
+				"Nas fortalezas tem <r>esqueletos murchos</r> e <r>blazes</r>. Desmonta as paredes de fora primeiro, longe dos geradores."
+			],
+			"complete": [
+				"A torre tá subindo! O chefe já subiu lá em cima e ficou admirando o ouro dos vizinhos a tarde toda.",
+				"Toma ouro, diamantes e uma maçã dourada. E se tu ver um Ossudo procurando a parede, finge que não sabe de nada."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:nether_bricks"], "count": 96, "desc": "<g>Minere</g> <y>96 tijolos do Nether</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_3_cenouras",
+			"tier": 3,
+			"title": "A Comida Que Brilha",
+			"tone": "calm",
+			"offer": [
+				"<n>HRRNF!</n> Humano, piglin descobriu um segredo dos humanos. Tem COMIDA DE OURO. Cenoura dourada! Piglin quase desmaiou.",
+				"Piglin sempre quis comer ouro. Já tentou morder lingote. Quebrou dente. Mas cenoura de ouro dá pra morder!",
+				"Faz <o>cenouras douradas</o> pra piglin? Piglin quer fazer o banquete mais brilhante da história do bastião."
+			],
+			"why": [
+				"Banquete dourado deixa todo piglin com inveja do piglin que fez o banquete. Ou seja, deste piglin aqui.",
+				"E se o chefe provar, piglin vira conselheiro oficial de comida. Conselheiro ganha ouro só pra falar."
+			],
+			"accept": [
+				"Cenoura no meio, pepita em volta. Muita pepita. Piglin sofre só de imaginar o ouro indo pra cenoura.",
+				"<y>Fabrique</y> <y>16 cenouras douradas</y>."
+			],
+			"progress": [
+				"Cada cenoura dourada leva <y>1 cenoura</y> e <y>8 pepitas de ouro</y> em volta, na mesa de trabalho.",
+				"Cenoura se planta no mundo de cima, em terra arada perto da água. As vilas também têm plantação."
+			],
+			"complete": [
+				"<n>HRRNF HRRNF!</n> Crocante! Brilhante! Docinha! O bastião inteiro chorou de emoção. O Torresmo comeu cinco escondido.",
+				"Toma ouro, diamantes e duas maçãs douradas. Comida de ouro paga com comida de ouro. Justo."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:golden_carrot"], "count": 16, "desc": "<y>Fabrique</y> <y>16 cenouras douradas</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "piglin_3_lampioes",
+			"tier": 3,
+			"title": "Os Lampiões Vivos",
+			"tone": "calm",
+			"offer": [
+				"Humano, o bastião é escuro. Escuro demais. Piglin tropeça no próprio baú. E ouro no escuro não brilha. Que desperdício!",
+				"A Panceta disse que nos fungos gigantes tem uma <y>luz de cogumelo</y>. Uma bola laranja que brilha sozinha, sem fogo.",
+				"Tu colhe as luzes pra piglin? Bastião iluminado, ouro brilhando, piglin admirando. Sonho."
+			],
+			"why": [
+				"Ouro que ninguém vê é ouro triste. Piglin quer que cada pepita do bastião brilhe que nem estrela.",
+				"E sem tropeçar no escuro, piglin para de cair na lava de madrugada. O Torresmo agradece. Ele cai sempre."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Fungo gigante, lá no alto. Sobe com cuidado.",
+				"<g>Colha</g> <y>24 luzes de cogumelo</y>."
+			],
+			"progress": [
+				"As luzes de cogumelo nascem grudadas nos fungos gigantes das florestas carmesim e distorcida, no meio das folhas.",
+				"Uma <y>enxada</y> quebra a luz de cogumelo bem mais rápido. Piglin achava que enxada era só pra mexer na terra."
+			],
+			"complete": [
+				"Bastião brilhando! O ouro tá cintilando por todo lado. Piglin ficou admirando a noite toda e esqueceu de dormir.",
+				"Toma ouro, diamantes e uma maçã dourada. Brilho por brilho. Piglin é justo quando quer."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:shroomlight"], "count": 24, "desc": "<g>Colha</g> <y>24 luzes de cogumelo</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
 			"id": "piglin_4_fortaleza",
 			"tier": 4,
 			"title": "A Queda da Fortaleza",
@@ -695,6 +1043,122 @@
 			],
 			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 15, "desc": "<r>Elimine</r> <r>15 ghasts</r>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 4}]
+		},
+		{
+			"id": "piglin_4_vizinhos",
+			"tier": 4,
+			"title": "O Bastião Vizinho",
+			"tone": "danger",
+			"offer": [
+				"<r>HRRNF!</r> Humano, guerra! O bastião vizinho roubou o baú de ouro da Copa-Lombo. Ouro do NOSSO bastião!",
+				"O chefe mandou recado e eles riram. RIRAM, humano. Piglin vizinho é piglin sem vergonha e sem respeito.",
+				"Tu vai lá e dá uma lição nos <r>piglins do outro bastião</r>. Só neles, viu? Os daqui são gente boa."
+			],
+			"why": [
+				"Se ninguém responder, amanhã eles roubam outro baú. Depois mais um. Depois o trono do chefe.",
+				"E bastião que se defende ganha respeito no Nether todo. Respeito vale mais que ouro. Mentira. Mas vale bastante."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Quando tu bate num, os outros vêm todos juntos. Vai preparado.",
+				"<r>Elimine</r> <r>20 piglins</r> do bastião rival."
+			],
+			"progress": [
+				"Se tu atacar um piglin, os piglins por perto ficam bravos contigo, mesmo tu usando ouro. Briga longe daqui!",
+				"Eles carregam besta e espada de ouro. Escudo ajuda muito contra as flechas."
+			],
+			"complete": [
+				"O bastião vizinho devolveu o baú! Com juros! O chefe deu uma festa e piglin dançou até cair. Na lava não, dessa vez.",
+				"Toma diamantes, maçãs douradas e fragmentos de netherita. Coisa de guerra pra guerreiro de verdade."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:piglin"], "count": 20, "desc": "<r>Elimine</r> <r>20 piglins</r> rivais"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:netherite_scrap", "count": 2}]
+		},
+		{
+			"id": "piglin_4_ancoras",
+			"tier": 4,
+			"title": "A Âncora do Grande Porcão",
+			"tone": "calm",
+			"offer": [
+				"Humano conhece a lenda da <p>âncora de renascimento</p>? O Grande Porcão tinha uma. Morria, voltava. Morria, voltava. Imortal que nem ouro.",
+				"O chefe quer âncoras pro bastião. Pra quando os guerreiros caírem na lava, voltarem pra casa em vez de virar cinza.",
+				"Tu faz as âncoras? Precisa da pedra roxa que chora e do pó que brilha. Coisa de humano esperto."
+			],
+			"why": [
+				"Piglin cai muito na lava. MUITO. O Torresmo sozinho já caiu umas cinquenta vezes. Âncora economiza Torresmo.",
+				"E bastião com âncora é bastião que nunca acaba. Igual ao Reino Dourado dos ancestrais."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Pedra que chora e pó brilhante. Mistura tudo na mesa.",
+				"<y>Fabrique</y> <y>3 âncoras de renascimento</y>."
+			],
+			"progress": [
+				"Uma âncora leva <y>6 obsidianas choronas</y> e <y>3 pedras luminosas</y>. Carrega com pedra luminosa pra funcionar.",
+				"No mundo de cima a âncora <r>explode</r> quando tu tenta usar. Ela só funciona aqui no Nether. Coisa nossa."
+			],
+			"complete": [
+				"Três âncoras! O Torresmo já testou. Caiu na lava e apareceu do lado da âncora, pelado e feliz. Funciona!",
+				"Toma diamantes, maçãs douradas e um livro de <p>Proteção contra o Fogo IV</p>. Pra tu precisar menos de âncora."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:respawn_anchor"], "count": 3, "desc": "<y>Fabrique</y> <y>3 âncoras de renascimento</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "piglin_4_portais",
+			"tier": 4,
+			"title": "Fechem os Portais",
+			"tone": "danger",
+			"offer": [
+				"<n>Hrrnf...</n> Humano, tem coisa estranha acontecendo. Portais roxos aparecendo por todo canto do Nether. E de lá saem... humanos.",
+				"Tu é legal. Mas os outros humanos chegam sem ouro, quebram tudo e levam os baús do bastião. Piglin já perdeu três!",
+				"O chefe mandou desmontar os portais abandonados. Tu quebra a <y>obsidiana</y> deles? Humano sabe quebrar pedra roxa."
+			],
+			"why": [
+				"Portal fechado, humano mau não entra. Humano bom como tu sempre acha um jeito. Piglin confia.",
+				"E portal quebrado também para os Esverdeados de aparecer do outro lado. Dois problemas, uma picareta."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Pedra roxa é dura. Muito dura. Picareta boa ou tu fica lá até o ano que vem.",
+				"<g>Minere</g> <y>48 blocos de obsidiana</y>."
+			],
+			"progress": [
+				"Obsidiana só sai com <y>picareta de diamante</y> ou de netherita. Demora pra quebrar, então <p>Eficiência</p> ajuda muito.",
+				"Tem portal em ruínas espalhado pelo Nether e pelo mundo de cima. Água em cima da lava parada também vira obsidiana."
+			],
+			"complete": [
+				"Os portais abandonados sumiram! O bastião não perdeu nenhum baú essa semana. O chefe tá desconfiado de tanta paz.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Eficiência V</p>. Merecido, depois de quebrar tanta pedra roxa."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:obsidian"], "count": 48, "desc": "<g>Minere</g> <y>48 blocos de obsidiana</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "piglin_4_criadouro",
+			"tier": 4,
+			"title": "O Criadouro de Hoglins",
+			"tone": "calm",
+			"offer": [
+				"Humano, piglin caçou hoglin demais. Agora quase não tem hoglin na floresta. Sem hoglin, sem banquete. Sem banquete, piglin come... cogumelo. ECA.",
+				"O chefe teve uma ideia: um criadouro! Hoglin papai, hoglin mamãe, hoglinzinhos. Banquete pra sempre.",
+				"Mas piglin não sabe fazer bicho namorar. Humano sabe. Tu ajuda a encher o chiqueiro?"
+			],
+			"why": [
+				"Criadouro é banquete garantido. E banquete garantido é piglin sempre feliz e gordo. Mais gordo.",
+				"E se tu quiser treinar com bicho do mundo de cima, piglin aceita. Vaca, porco, galinha... piglin não sabe a diferença."
+			],
+			"accept": [
+				"<n>HRRNF!</n> Fungo carmesim na mão e paciência. Hoglin namora devagar.",
+				"<g>Crie</g> <y>20 filhotes</y> de animais."
+			],
+			"progress": [
+				"Hoglins se reproduzem com <y>fungo carmesim</y>. Cuidado: hoglin adulto ataca quem chega perto.",
+				"Qualquer animal criado conta: vacas com trigo, porcos com cenoura, galinhas com sementes. Hoglin com fungo vale mais pro coração do piglin."
+			],
+			"complete": [
+				"O chiqueiro tá lotado! Os hoglinzinhos correm pra todo lado. Um mordeu o chefe. O chefe riu. Nunca aconteceu antes.",
+				"Toma diamantes, três maçãs douradas e um livro de <p>Saque III</p>. Pra quando o banquete precisar de carne extra."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:animals_bred"], "count": 20, "desc": "<g>Crie</g> <y>20 filhotes</y> de animais"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
 		},
 		{
 			"id": "piglin_5_porcao",

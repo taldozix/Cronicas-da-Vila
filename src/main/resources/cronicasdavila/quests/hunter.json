@@ -1,0 +1,403 @@
+{
+	"quests": [
+		{
+			"id": "hunter_1_couro",
+			"tier": 1,
+			"title": "Couro Pro Inverno",
+			"tone": "calm",
+			"offer": [
+				"Psiu, chega aqui, pai. O inverno tá vindo e a vila inteira me pediu gibão de couro.",
+				"Só que eu gastei todo o meu couro consertando aljava. Tô com mais buraco na roupa que peneira."
+			],
+			"why": [
+				"Couro esquenta, protege de espinho e ainda vira livro pro bibliotecário. Sem couro, a vila para.",
+				"E caçador que não tem couro pra trocar é caçador que passa fome, rapaiz."
+			],
+			"accept": [
+				"Tchá, valeu! Vaca, cavalo, lhama... todo bicho grande dá couro. Só não vale bicho de estimação dos outros, hein.",
+				"<g>Traga</g> <y>16 couros</y> e eu costuro gibão pra meio mundo."
+			],
+			"progress": [
+				"Vaca é o jeito mais fácil. Cria um curral com trigo que tu nunca mais fica sem couro.",
+				"Pele de coelho também vira couro: quatro peles na bancada dão um couro."
+			],
+			"complete": [
+				"Ixi, que couro bonito! Curtido, sem furo. Tu tem mão de caçador, pai.",
+				"Toma, rapaiz: <o>esmeraldas</o> e <o>ferro</o> pra tu fazer tua primeira faca boa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:leather"], "count": 16, "desc": "<g>Entregue</g> <y>16 couros</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "hunter_1_espreita",
+			"tier": 1,
+			"title": "Aprendendo a Espreitar",
+			"tone": "calm",
+			"offer": [
+				"Tu quer aprender a caçar, pai? Então a primeira lição não é atirar. É andar.",
+				"Caçador de verdade anda agachado, devagarinho, sem fazer barulho. Tu anda igual boiada estourada."
+			],
+			"why": [
+				"Quem anda agachado não cai de barranco, não espanta a presa e não acorda o mato.",
+				"Até o creeper demora mais pra te notar se tu chegar de mansinho. Isso salva vida, rapaiz."
+			],
+			"accept": [
+				"Tchá, então bora! Segura o botão de agachar e anda. Devagar, pai. Mais devagar.",
+				"<g>Ande agachado</g> por <y>100 blocos</y> e volta aqui que eu vejo se tu aprendeu."
+			],
+			"progress": [
+				"Agachado tu não cai da beirada do bloco. Bom pra andar em cima de muro e beira de penhasco.",
+				"Também ajuda a esconder teu nome da vista dos outros. Caçador bom é caçador que ninguém vê."
+			],
+			"complete": [
+				"Ixi, tu chegou perto de mim e eu nem ouvi! Agora sim tu é aprendiz de caçador, pai.",
+				"Toma: <o>esmeraldas</o> e <o>costeletas assadas</o>, que espreita dá fome."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:crouch_one_cm"], "count": 10000, "desc": "<g>Ande agachado</g> por <y>100 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:cooked_porkchop", "count": 8}]
+		},
+		{
+			"id": "hunter_1_esqueletos",
+			"tier": 1,
+			"title": "Arqueiros de Osso",
+			"tone": "danger",
+			"offer": [
+				"Tchá por Deus, pai, tem uns <r>esqueletos</r> no meu território de caça. Eles atiram melhor que eu, tu acredita?",
+				"Ontem um deles acertou meu chapéu de longe. Furou bem no meio. Meu chapéu favorito, rapaiz.",
+				"E eles espantam toda a presa do mato. Coelho nenhum sai da toca com aquele \"craque-craque\" por perto."
+			],
+			"why": [
+				"Sem presa, não tem carne nem couro pra vila. E eu não vou caçar na frente de arqueiro que não erra.",
+				"Além disso, os ossos deles servem pra domar lobo. Tu ganha dos dois lados."
+			],
+			"accept": [
+				"Valeu, pai! Eles aparecem de noite e no escuro. Se esconde atrás de árvore e avança entre um tiro e outro.",
+				"<r>Elimine 15 esqueletos</r> e volta aqui."
+			],
+			"progress": [
+				"Esqueleto pega fogo no sol, igual zumbi. Mas se tiver capacete ou ficar na sombra, aguenta.",
+				"Lobo domado adora caçar esqueleto. Leva um contigo que ele te ajuda."
+			],
+			"complete": [
+				"Ixi, o mato tá quietinho de novo! Já vi três coelhos hoje cedo, pai.",
+				"Toma: <o>esmeraldas</o> e umas <o>flechas</o> pra tu treinar a mira."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:arrow", "count": 24}]
+		},
+		{
+			"id": "hunter_2_ossos",
+			"tier": 2,
+			"title": "Um Lobo Pra Cada Casa",
+			"tone": "calm",
+			"offer": [
+				"Pai, tô pensando em montar uma matilha de guarda pra vila. Lobo domado vale mais que cerca.",
+				"Mas lobo se doma com <y>osso</y>, e muito osso. Às vezes ele recusa cinco, seis antes de aceitar."
+			],
+			"why": [
+				"Lobo domado ataca qualquer bicho que te ataca. É o melhor guarda-costas do mundo, rapaiz.",
+				"E ainda é companhia. Caçador sem lobo é caçador que conversa sozinho. Igual eu, às vezes."
+			],
+			"accept": [
+				"Tchá, valeu! Osso cai de esqueleto, e às vezes tem em baú de templo e masmorra.",
+				"<g>Traga</g> <y>32 ossos</y> e a vila vai ter a matilha mais fiel da região."
+			],
+			"progress": [
+				"Esqueleto derruba osso quase sempre. Uma noite boa de caça já resolve metade.",
+				"Pescar às vezes também traz osso. Coisa de pescador, mas funciona."
+			],
+			"complete": [
+				"Ixi, quanto osso! Os lobos da taiga vão fazer fila na porta da vila, pai.",
+				"Toma, rapaiz: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:bone"], "count": 32, "desc": "<g>Entregue</g> <y>32 ossos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "hunter_2_guias",
+			"tier": 2,
+			"title": "Corda Pra Matilha",
+			"tone": "calm",
+			"offer": [
+				"Pai, todo caçador que se preze anda com <y>guia</y> no cinto. Pra levar cavalo, lhama, até sapo.",
+				"As minhas arrebentaram tudo. Um cavalo bravo puxou e lá se foram três de uma vez."
+			],
+			"why": [
+				"Sem guia, eu não trago bicho do mato pra vila. E bicho que fica no mato é bicho que zumbi pega.",
+				"E guia amarrada em cerca segura o bicho no lugar. Bom pra quem tem curral."
+			],
+			"accept": [
+				"Tchá, obrigado! Guia se faz com linha e uma bola de slime na bancada.",
+				"<g>Fabrique</g> <y>6 guias</y> e me traz o resultado."
+			],
+			"progress": [
+				"Linha cai de aranha. Slime aparece em pântano de noite e bem lá embaixo em algumas regiões das cavernas.",
+				"Cada receita dá duas guias, pai. Então nem precisa de tanto slime assim."
+			],
+			"complete": [
+				"Ixi, que guias firmes! Agora nem cavalo bravo arrebenta.",
+				"Toma: <o>esmeraldas</o> e um <o>diamante</o>, rapaiz."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:lead"], "count": 6, "desc": "<g>Fabrique</g> <y>6 guias</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "hunter_2_phantoms",
+			"tier": 2,
+			"title": "O Caçador do Céu",
+			"tone": "danger",
+			"offer": [
+				"Psiu, pai. Tu já ouviu um guincho vindo de cima, de madrugada? Aquilo é <r>phantom</r>.",
+				"É o único bicho que caça caçador. Ele aparece pra quem fica noites sem dormir. E eu, de tocaia, quase nunca durmo.",
+				"Toda noite eles mergulham em cima de mim. Já perdi o chapéu, a paciência e um pedaço da orelha."
+			],
+			"why": [
+				"Se eu não puder ficar de vigia de noite, a vila fica sem ninguém olhando o mato.",
+				"E as membranas deles servem pra consertar asa de élitro. Ouvi dizer, rapaiz. Nunca vi um élitro de perto."
+			],
+			"accept": [
+				"Tchá, tu é corajoso! Pra eles aparecerem, tu precisa passar umas três noites sem dormir.",
+				"<r>Elimine 8 phantoms</r> e eu vou dormir em paz. Finalmente."
+			],
+			"progress": [
+				"Phantom pega fogo quando o sol nasce. Luta de madrugada, perto de árvore, que ele mergulha e tu acerta.",
+				"Gato espanta phantom. Se tu tiver um gato perto, eles nem descem."
+			],
+			"complete": [
+				"Ixi, que céu quieto! Ontem eu deitei na rede e contei estrela até pegar no sono, pai.",
+				"Toma: <o>ferro</o>, <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:phantom"], "count": 8, "desc": "<r>Elimine</r> <r>8 phantoms</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "hunter_3_pe_coelho",
+			"tier": 3,
+			"title": "A Sorte do Coelho",
+			"tone": "calm",
+			"offer": [
+				"Pai, o clérigo me encomendou uma coisa difícil: <y>pé de coelho</y>. Pra poção de pulo.",
+				"Coelho é fácil de achar. O difícil é ele soltar o pé. É sorte pura, rapaiz."
+			],
+			"why": [
+				"Com poção de pulo, o golem de ferro... não, o golem não bebe. Mas os guardas da vila pulam muro e fogem de encrenca.",
+				"E pé de coelho, dizem, dá sorte pra quem carrega. Eu carrego um faz vinte anos e tô vivo, então funciona."
+			],
+			"accept": [
+				"Tchá, valeu! Coelho tem em deserto, neve, taiga, planície de flores... é só procurar.",
+				"<g>Traga</g> <y>4 pés de coelho</y> e o clérigo te fica devendo."
+			],
+			"progress": [
+				"O pé de coelho cai às vezes, não sempre. Espada com Pilhagem aumenta a chance.",
+				"Coelho foge em zigue-zague. Chega agachado, pai, igual eu te ensinei."
+			],
+			"complete": [
+				"Ixi, quatro pés! Tu deve ser o bicho mais sortudo da vila, rapaiz.",
+				"Toma: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:rabbit_foot"], "count": 4, "desc": "<g>Entregue</g> <y>4 pés de coelho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "hunter_3_banquete",
+			"tier": 3,
+			"title": "O Banquete da Caçada",
+			"tone": "calm",
+			"offer": [
+				"Pai, todo ano a vila faz o Banquete da Caçada: uma mesa comprida na praça, cheia de carne assada.",
+				"Esse ano eu prometi a maior mesa de todas. E prometi antes de olhar o baú. Tá vazio, rapaiz."
+			],
+			"why": [
+				"O banquete junta a vila toda. Até o bibliotecário larga o livro e come com a mão.",
+				"E carne assada guarda bem. O que sobrar vai pro inverno."
+			],
+			"accept": [
+				"Tchá, obrigado! Pode ser bife, costeleta, carneiro, frango ou coelho. Tudo assado, que crua ninguém come.",
+				"<g>Traga</g> <y>48 carnes assadas</y> e o banquete tá salvo."
+			],
+			"progress": [
+				"Bicho que morre pegando fogo já solta a carne assada. Mas fornalha ou defumador também resolve ligeiro.",
+				"Defumador assa comida duas vezes mais rápido que a fornalha, pai. Truque de caçador."
+			],
+			"complete": [
+				"Ixi, que cheiro! A vila vai lembrar desse banquete por anos.",
+				"Toma, rapaiz: <o>diamantes</o> e um <o>livro de Força III</o> pro teu arco."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:cooked_beef", "minecraft:cooked_porkchop", "minecraft:cooked_mutton", "minecraft:cooked_chicken", "minecraft:cooked_rabbit"], "count": 48, "desc": "<g>Entregue</g> <y>48 carnes assadas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 3}]
+		},
+		{
+			"id": "hunter_3_patrulha",
+			"tier": 3,
+			"title": "Patrulha no Mato",
+			"tone": "danger",
+			"offer": [
+				"Psiu, pai. Tem uma <r>patrulha de saqueadores</r> andando no meu território. Eu vi o estandarte de longe.",
+				"Eles não caçam pra comer. Caçam por maldade. Deixaram três cavalos feridos e uma fogueira acesa no meio do mato.",
+				"Se eles acharem a vila, é ataque na certa."
+			],
+			"why": [
+				"Patrulha que anda solta vira ataque. Ataque vira vila queimada.",
+				"E eu sou caçador, não soldado. Mas tu, rapaiz, tu tem jeito de quem segura uma besta apontada."
+			],
+			"accept": [
+				"Tchá, valeu! Cuidado com o líder, aquele do estandarte. Ele deixa cair uma garrafa que traz maldição.",
+				"<r>Elimine 12 saqueadores</r> e volta aqui."
+			],
+			"progress": [
+				"Patrulha aparece andando pelo mapa, longe das vilas, principalmente de dia. Também tem saqueador de guarda nos postos avançados.",
+				"Eles atiram de besta. Escudo na mão segura bem as flechas."
+			],
+			"complete": [
+				"Ixi, o mato voltou a ser meu! Os cavalos já tão pastando de novo, pai.",
+				"Toma: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager"], "count": 12, "desc": "<r>Elimine</r> <r>12 saqueadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "hunter_4_hoglins",
+			"tier": 4,
+			"title": "Caça Grossa no Nether",
+			"tone": "danger",
+			"offer": [
+				"Pai, eu tenho um sonho de caçador: trazer couro de <r>hoglin</r> pra pendurar na parede.",
+				"É o javali do Nether, rapaiz. Tem presa do tamanho do meu braço e joga gente pro alto feito saco de batata.",
+				"Eu fui uma vez. Voltei sem sobrancelha. Agora quero que tu vá."
+			],
+			"why": [
+				"Couro e carne de hoglin aguentam qualquer inverno. E troféu desses, nenhuma vila tem.",
+				"Além disso, caçador que nunca caçou no Nether não pode se chamar de caçador completo."
+			],
+			"accept": [
+				"Tchá, que coragem! Eles moram na floresta carmesim, lá no Nether.",
+				"<r>Elimine 8 hoglins</r> e volta com a sobrancelha inteira."
+			],
+			"progress": [
+				"Hoglin tem medo de fungo distorcido. Segura um perto que ele foge de ti.",
+				"Se tu trouxer um hoglin pro nosso mundo, ele vira zoglin, um bicho podre e ainda mais bravo. Não faz isso, pai."
+			],
+			"complete": [
+				"Ixi, tu voltou! E cheirando a enxofre. Isso é cheiro de caçador de verdade, rapaiz.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Força V</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 8, "desc": "<r>Elimine</r> <r>8 hoglins</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 5}]
+		},
+		{
+			"id": "hunter_4_espectrais",
+			"tier": 4,
+			"title": "Flechas Que Enxergam",
+			"tone": "calm",
+			"offer": [
+				"Pai, tem bicho que se esconde atrás de árvore, de pedra, de parede. E eu perco ele de vista.",
+				"Mas existe uma flecha que deixa a presa brilhando, mesmo atrás das coisas: a <y>flecha espectral</y>."
+			],
+			"why": [
+				"Com ela eu vejo o bicho ferido fugindo no meio do mato fechado. Não perco mais presa nenhuma.",
+				"E os guardas da vila veem onde o zumbi tá escondido de noite. Salva vida, rapaiz."
+			],
+			"accept": [
+				"Tchá, obrigado! Ela se faz com uma flecha e pó de pedra luminosa na bancada.",
+				"<g>Fabrique</g> <y>32 flechas espectrais</y> e enche minha aljava."
+			],
+			"progress": [
+				"Pedra luminosa fica pendurada no teto do Nether. Quebra que vira pó.",
+				"Cada receita usa uma flecha e quatro pós de pedra luminosa e dá duas flechas espectrais."
+			],
+			"complete": [
+				"Ixi, que brilho! Agora eu vejo a presa até no breu, pai.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Infinidade</o>, pra tu nunca ficar sem flecha comum."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:spectral_arrow"], "count": 32, "desc": "<g>Fabrique</g> <y>32 flechas espectrais</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:infinity", "level": 1}]
+		},
+		{
+			"id": "hunter_4_temporada",
+			"tier": 4,
+			"title": "A Grande Temporada",
+			"tone": "danger",
+			"offer": [
+				"Pai, uma vez por geração vem a Grande Temporada: o mato fica cheio de bicho como nunca.",
+				"Os velhos caçadores contam quantos bichos cada um derruba. Quem passa de cento e cinquenta vira lenda.",
+				"Eu nunca passei de cem. Mas tu, rapaiz... tu pode ser a lenda dessa geração."
+			],
+			"why": [
+				"Caçador que vira lenda protege a vila só com o nome. Monstro sente o cheiro de quem caça muito.",
+				"E eu quero contar pros meus netos que conheci a lenda. Pessoalmente."
+			],
+			"accept": [
+				"Tchá, bora! Vale qualquer bicho: monstro da noite, criatura do Nether, tudo conta.",
+				"<r>Abata 150 criaturas</r> e volta aqui pra eu gravar teu nome no tronco da vila."
+			],
+			"progress": [
+				"Noite sem lua, caverna escura e Nether são os lugares onde mais aparece bicho.",
+				"Pilhagem não ajuda na conta, mas faz cair mais coisa. Afiação faz o bicho cair mais ligeiro."
+			],
+			"complete": [
+				"Ixi, cento e cinquenta! Tu é lenda, pai. Já gravei teu nome no tronco grande da praça.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Afiação V</o>."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:mob_kills"], "count": 150, "desc": "<r>Abata</r> <y>150 criaturas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+		},
+		{
+			"id": "hunter_5_anciao",
+			"tier": 5,
+			"title": "O Fantasma do Mar",
+			"tone": "danger",
+			"offer": [
+				"Pai, lembra do <r>Guardião Ancião</r> que eu te contei? Aquele que aparece fantasma na tua frente?",
+				"Pescador da vila voltou do mar sem força nem pra puxar a rede. Disse que viu o rosto do bicho na água.",
+				"Os monumentos submersos tão acordando. E eu não sei nadar, rapaiz. Mas tu sabe."
+			],
+			"why": [
+				"Enquanto os anciões viverem, ninguém chega perto do monumento. E o mar em volta fica amaldiçoado.",
+				"É a caçada mais difícil do mundo: debaixo d'água, sem ar, contra bicho que atira laser. Só lenda faz isso."
+			],
+			"accept": [
+				"Tchá, vai com Deus. Leva poção de respiração aquática, leite e muita comida.",
+				"<r>Elimine 3 Guardiões Anciões</r>. Cada monumento tem três."
+			],
+			"progress": [
+				"O Ancião deixa tu com Fadiga de Mineração. Balde de leite tira, mas ele joga de novo depois de um tempo.",
+				"Os monumentos ficam no fundo do oceano profundo. Um no topo e dois nas alas laterais."
+			],
+			"complete": [
+				"Ixi... tu voltou do fundo do mar, pai. O pescador já puxou rede cheia hoje cedo.",
+				"Toma, rapaiz: um <o>totem da imortalidade</o>, um <o>livro de Remendo</o> e <o>diamantes</o>. Caçada de lenda, recompensa de lenda."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:elder_guardian"], "count": 3, "desc": "<r>Elimine</r> <r>3 Guardiões Anciões</r>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 14}]
+		},
+		{
+			"id": "hunter_5_dragao",
+			"tier": 5,
+			"title": "A Presa Que Ninguém Pegou",
+			"tone": "danger",
+			"offer": [
+				"Pai, eu vou te contar uma coisa que nunca contei pra ninguém. Meu avô, meu pai e eu juramos caçar o <r>Dragão do Fim</r>.",
+				"Nenhum de nós conseguiu. Meu avô nem achou o portal. Meu pai achou, mas voltou sem coragem.",
+				"Eu tô velho, rapaiz. Mas tu não tá. Termina a caçada da minha família."
+			],
+			"why": [
+				"Tem presa que a gente caça pra comer. Tem presa que a gente caça pra fechar uma história.",
+				"E dizem que o dragão guarda a passagem pras ilhas do Fim. Quem derruba ele abre o caminho pro mundo inteiro."
+			],
+			"accept": [
+				"Tchá... obrigado, pai. Leva arco, muita flecha, balde d'água e bloco pra subir nas torres.",
+				"<r>Derrote 1 Dragão do Fim</r> e volta pra me contar como ele caiu."
+			],
+			"progress": [
+				"O portal do Fim fica numa fortaleza debaixo da terra. Olho do Ender jogado pro alto mostra o caminho.",
+				"Quebra os cristais do topo das torres primeiro, que eles curam o dragão. E não olha nos olhos dos Endermen."
+			],
+			"complete": [
+				"Ixi... tu fez. Três gerações e tu fez, pai. Hoje eu vou acender uma fogueira pro meu avô.",
+				"Toma, rapaiz: um <o>totem da imortalidade</o>, uma <o>maçã dourada encantada</o>, um <o>molde de melhoria de netherite</o> e <o>diamantes</o>. Tu é o maior caçador que essa família já conheceu."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 1, "desc": "<r>Derrote</r> <r>1 Dragão do Fim</r>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}, {"item": "minecraft:diamond", "count": 20}]
+		}
+	]
+}

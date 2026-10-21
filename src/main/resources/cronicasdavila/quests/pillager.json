@@ -175,6 +175,122 @@
 			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:arrow", "count": 16}, {"item": "minecraft:iron_ingot", "count": 4}]
 		},
 		{
+			"id": "pillager_1_janelas",
+			"tier": 1,
+			"title": "Vidraça Não É Escudo",
+			"tone": "danger",
+			"offer": [
+				"Sabe o que os mansos fazem de manhã? Abrem a cortina e ficam olhando a gente pela <y>janela</y>. Espiando! Que falta de educação.",
+				"Toda casinha deles tem aqueles <y>painéis de vidro</y> brilhando. Parece até que tão se exibindo pra patrulha.",
+				"Quebra as janelas deles, novato. Quero ver espiar com o vento entrando pela casa."
+			],
+			"why": [
+				"Sem vidro, o manso não vê a patrulha chegando. E ainda pega um resfriado. Dois coelhos com uma flechada só.",
+				"E barulho de vidro quebrando é o hino não oficial dos <r>Exilados</r>. A gente canta no aniversário do Grande Evocador."
+			],
+			"accept": [
+				"Hehehe. Cuidado com os caquinhos. Ou não. Problema seu.",
+				"<r>Quebre</r> <y>12 painéis de vidro</y> nas vilas."
+			],
+			"progress": [
+				"Os painéis de vidro ficam nas janelas das casas dos aldeões. Quebram rapidinho, até na mão.",
+				"Sem <p>Toque Suave</p>, o vidro quebrado não deixa nada. Melhor assim: nenhum manso conserta janela com caquinho."
+			],
+			"complete": [
+				"Ouvi daqui! Plim, plim, CRASH! Os narigudos tão tapando as janelas com terra. Que decoração horrorosa. Adorei.",
+				"Toma esmeraldas, flechas e um pouco de ferro. Pagamento de vidraceiro ao contrário."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:glass_pane"], "count": 12, "desc": "<r>Quebre</r> <y>12 painéis de vidro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:arrow", "count": 16}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "pillager_1_cercas",
+			"tier": 1,
+			"title": "Porteira Escancarada",
+			"tone": "danger",
+			"offer": [
+				"Os mansos adoram uma <y>cerca</y>. Cerca no curral, cerca na horta, cerca em volta da cerca. Eles cercam até o medo deles.",
+				"Pois eu quero tudo aberto! Vaca fugindo pro mato, ovelha passeando na estrada, galinha atravessando o rio.",
+				"Derruba as cercas de madeira deles, novato. Liberdade pros bichos e dor de cabeça pros narigudos."
+			],
+			"why": [
+				"Manso correndo atrás de vaca não fica vigiando a estrada. A patrulha passa de fininho, assobiando.",
+				"E tem coisa mais engraçada que um narigudo tentando pegar uma galinha? Não tem. Eu já procurei."
+			],
+			"accept": [
+				"Isso! Machado na mão e alegria no coração.",
+				"<r>Derrube</r> <y>16 cercas de madeira</y>."
+			],
+			"progress": [
+				"Toda vila tem cercas em volta dos currais e das plantações. Machado quebra rapidinho.",
+				"Os bichos não fogem na hora, eles só passeiam quando dá vontade. Mas o estrago tá feito."
+			],
+			"complete": [
+				"As vacas sumiram no horizonte! Ouvi um manso chorando: \"Hrmm... Mimosa...\" Que nome ridículo pra uma vaca.",
+				"Toma esmeraldas, flechas e ferro. E pode ficar com a madeira das cercas, a gente não precisa."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:wooden_fences"], "count": 16, "desc": "<r>Derrube</r> <y>16 cercas de madeira</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:arrow", "count": 16}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "pillager_1_flechas",
+			"tier": 1,
+			"title": "Munição da Patrulha",
+			"tone": "calm",
+			"offer": [
+				"Problema sério na mansão, novato. Acabaram as <y>flechas</y>. A patrulha saiu ontem com besta e sem munição. Ficou só fazendo careta pros mansos.",
+				"O ferreiro dos Exilados torceu o tornozelo pisando num cogumelo. Agora ninguém faz flecha.",
+				"Você sabe juntar pena, graveto e sílex, né? Então vira o ferreiro temporário."
+			],
+			"why": [
+				"Besta sem flecha é só um pedaço de pau esquisito. E Exilado com pedaço de pau esquisito é piada na floresta.",
+				"Além disso, o Grande Evocador cobra a cota de flechas toda semana. Se faltar, ele solta os <p>vexes</p> no refeitório."
+			],
+			"accept": [
+				"Bom. Pena de galinha, graveto de árvore e sílex do cascalho. Simples até pra você.",
+				"<y>Fabrique</y> <y>64 flechas</y>."
+			],
+			"progress": [
+				"Uma receita de flecha usa <y>1 sílex</y>, <y>1 graveto</y> e <y>1 pena</y>, e rende <y>4 flechas</y>.",
+				"O sílex cai quando você quebra cascalho. As penas caem das galinhas."
+			],
+			"complete": [
+				"Sessenta e quatro! A patrulha já saiu cantando. Desafinada, mas armada.",
+				"Toma esmeraldas e ferro. Flecha você já tem de sobra, né? Hehehe."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:arrow"], "count": 64, "desc": "<y>Fabrique</y> <y>64 flechas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "pillager_1_ovos",
+			"tier": 1,
+			"title": "A Omelete dos Exilados",
+			"tone": "danger",
+			"offer": [
+				"Sabe o que é aniversário do Grande Evocador sem bolo? É desastre. E sabe o que bolo precisa? <y>Ovo</y>.",
+				"Os mansos têm galinheiro cheio. A gente tem uma galinha só, a Teimosa, que não bota nada desde o inverno passado.",
+				"Rouba uns ovos pra mim, novato. Do galinheiro dos narigudos, de preferência. Ovo roubado tem mais sabor."
+			],
+			"why": [
+				"Se o Grande Evocador ficar sem bolo, ele fica de mau humor. E Evocador de mau humor invoca presas de dente no chão da cozinha.",
+				"E o que sobrar vira omelete pra patrulha. Exilado também toma café da manhã, tá?"
+			],
+			"accept": [
+				"Hehehe. Mão leve, pé ligeiro. Não deixa cair nenhum.",
+				"<r>Roube</r> e entregue <y>16 ovos</y>."
+			],
+			"progress": [
+				"As galinhas botam um ovo de vez em quando, a cada poucos minutos. Ovo aparece no chão perto delas.",
+				"Vilas costumam ter galinhas soltas por perto. Fica de olho no chão em volta delas."
+			],
+			"complete": [
+				"Dezesseis ovos inteirinhos! O bolo vai ficar lindo. Torto, mas lindo. Que nem a gente.",
+				"Toma esmeraldas, flechas e ferro. E se sobrar bolo, eu guardo um pedaço. Talvez."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:egg"], "count": 16, "desc": "<r>Roube</r> e entregue <y>16 ovos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:arrow", "count": 24}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
 			"id": "pillager_2_golem",
 			"tier": 2,
 			"title": "Abaixo os Protetores",
@@ -347,6 +463,122 @@
 			],
 			"objective": {"type": "stat", "targets": ["minecraft:raid_trigger"], "count": 1, "desc": "<r>Comece</r> <r>1 invasão</r> numa vila"},
 			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:ominous_bottle", "count": 1}]
+		},
+		{
+			"id": "pillager_2_cavalaria",
+			"tier": 2,
+			"title": "A Cavalaria Exilada",
+			"tone": "calm",
+			"offer": [
+				"Bandido, tenho um sonho. Uma <a>cavalaria</a> de Exilados galopando pelas vilas. Os mansos correndo, a poeira subindo, eu de capa ao vento.",
+				"Problema: ninguém na mansão sabe montar. O Capitão Fuligem tentou ontem e o cavalo jogou ele no lago.",
+				"Você vai aprender primeiro e depois ensina a gente. Pega um cavalo e galopa até criar calo."
+			],
+			"why": [
+				"Invasão a cavalo é rápida. A gente chega, saqueia e some antes do golem terminar de bocejar.",
+				"E um Exilado montado fica mais alto que o golem. Pela primeira vez na vida a gente olha pra ele de cima."
+			],
+			"accept": [
+				"Laça, doma, sela. E não cai no lago, que o Fuligem já ocupou aquele lugar.",
+				"<g>Cavalgue</g> <y>500 blocos</y> montado num cavalo."
+			],
+			"progress": [
+				"Cavalo selvagem precisa ser domado: monte nele várias vezes até aparecerem coraçõezinhos. Depois coloque uma <y>sela</y>.",
+				"Cavalos aparecem nas planícies e savanas. Burro e mula também contam, mas eles são lentos. Cavalo é coisa de Exilado com estilo."
+			],
+			"complete": [
+				"Quinhentos blocos! Você cavalga como quem nasceu numa sela. O Fuligem ficou com inveja e foi pro lago de novo.",
+				"Toma esmeraldas, um diamante e um laço. Quero esse cavalo trabalhando pra gente."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:horse_one_cm"], "count": 50000, "desc": "<g>Cavalgue</g> <y>500 blocos</y> a cavalo"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:lead", "count": 2}]
+		},
+		{
+			"id": "pillager_2_baus",
+			"tier": 2,
+			"title": "O Baú do Vizinho",
+			"tone": "danger",
+			"offer": [
+				"Os mansos são acumuladores, Bandido. Cada casa tem um <y>baú</y> no cantinho, cheio de pão, carvão e sei lá mais o quê.",
+				"Eles acham que a gente não sabe. A gente sabe. A gente sabe de TUDO. Ou quase tudo.",
+				"Vai lá e arrebenta os baús deles. Leva o que tiver dentro e deixa só o cheiro de saudade."
+			],
+			"why": [
+				"Manso sem baú guarda as coisas no bolso. E bolso de manso é pequeno. Logo eles desistem de juntar riqueza.",
+				"E saque de baú é tradição. Todo Exilado começa a carreira assim. Eu comecei com um baú de beterraba."
+			],
+			"accept": [
+				"Hehehe. Abre, esvazia, quebra. Nessa ordem, pra não perder nada.",
+				"<r>Arrebente</r> <y>8 baús</y> nas vilas."
+			],
+			"progress": [
+				"Vários tipos de casa de vila têm baú: a do ferreiro, a do cartógrafo, as casinhas comuns.",
+				"Quando o baú quebra, tudo que tava dentro cai no chão. Recolhe rápido antes que algum manso veja."
+			],
+			"complete": [
+				"Oito baús! Os mansos tão contando as batatas um por um, desesperados. Que espetáculo bonito.",
+				"Toma esmeraldas, um diamante e ferro. Considere isso a sua parte do saque. A menor parte, claro."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:chest"], "count": 8, "desc": "<r>Arrebente</r> <y>8 baús</y> de vila"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 8}]
+		},
+		{
+			"id": "pillager_2_estandartes",
+			"tier": 2,
+			"title": "Os Estandartes da Patrulha",
+			"tone": "calm",
+			"offer": [
+				"Toda patrulha precisa de um capitão. E todo capitão precisa de um <y>estandarte</y>. Aquele pano com a cara cinza que os mansos tremem só de ver.",
+				"A gente perdeu os nossos. O Mão-Leve usou de toalha. O Trapaça usou de cobertor. O Cizânia... é melhor nem contar.",
+				"Faz uns estandartes brancos pra mim, Bandido. Depois a gente pinta a cara ominosa por cima."
+			],
+			"why": [
+				"Patrulha sem estandarte parece excursão de turista. Ninguém respeita.",
+				"E quando os mansos virem o estandarte chegando no horizonte, já vão saber que é hora de chorar."
+			],
+			"accept": [
+				"Lã branca e graveto. Até um manso faria. Mas não conta pra eles.",
+				"<y>Fabrique</y> <y>4 estandartes brancos</y>."
+			],
+			"progress": [
+				"Um estandarte usa <y>6 lãs brancas</y> e <y>1 graveto</y>. A lã você consegue tosquiando ovelhas brancas.",
+				"Os capitães das patrulhas carregam o estandarte ominoso na cabeça. Dá pra ver de longe."
+			],
+			"complete": [
+				"Quatro estandartes lindos! Já mandei a Discórdia pintar. Ela pinta tudo torto, mas ominoso é ominoso.",
+				"Toma esmeraldas, diamantes e flechas. E vê se não usa o estandarte como toalha."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:white_banner"], "count": 4, "desc": "<y>Fabrique</y> <y>4 estandartes brancos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:arrow", "count": 24}]
+		},
+		{
+			"id": "pillager_2_jardim",
+			"tier": 2,
+			"title": "Jardim Arrasado",
+			"tone": "danger",
+			"offer": [
+				"Sabe o que me irrita mais que sino? <y>Flor</y>. Os mansos plantam florzinha na porta, no vaso, na beira do caminho. Fica tudo colorido. ECA.",
+				"Vila bonita deixa os mansos felizes. E manso feliz trabalha mais, faz mais esmeralda e compra mais golem.",
+				"Arranca as flores deles, Bandido. Quero a vila cinza, sem graça, que nem a sala de reuniões da mansão."
+			],
+			"why": [
+				"Sem flor, as abelhas vão embora. Sem abelha, nada de mel. Sem mel, manso triste. Viu? Estratégia.",
+				"E o Grande Evocador tem alergia. Toda vez que passa numa vila florida, espirra e invoca um vex sem querer."
+			],
+			"accept": [
+				"Hehehe. Arranca pela raiz. E não cheira nenhuma, que dá vontade de ser bonzinho.",
+				"<r>Arranque</r> <y>32 flores</y>."
+			],
+			"progress": [
+				"As vilas de planície costumam ter flores em volta das casas e nos caminhos. Campos floridos também servem.",
+				"Flor quebra num toque só, sem ferramenta. Dentes-de-leão, papoulas, tulipas, centáureas... todas contam."
+			],
+			"complete": [
+				"A vila tá cinza que dá gosto! Um manso ficou parado olhando pro chão por uma hora. Missão cumprida.",
+				"Toma esmeraldas, um diamante e ferro. E pode ficar com as flores, eu não quero nem ver."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:dandelion", "minecraft:poppy", "minecraft:blue_orchid", "minecraft:allium", "minecraft:azure_bluet", "minecraft:red_tulip", "minecraft:orange_tulip", "minecraft:white_tulip", "minecraft:pink_tulip", "minecraft:oxeye_daisy", "minecraft:cornflower", "minecraft:lily_of_the_valley"], "count": 32, "desc": "<r>Arranque</r> <y>32 flores</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 6}]
 		},
 		{
 			"id": "pillager_3_guardas",
@@ -523,6 +755,122 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:crossbow", "count": 1, "enchant": "minecraft:quick_charge", "level": 3}]
 		},
 		{
+			"id": "pillager_3_estrada",
+			"tier": 3,
+			"title": "Sem Caminho de Volta",
+			"tone": "danger",
+			"offer": [
+				"Os mansos são preguiçosos, cúmplice. Andam sempre pelos mesmos <y>caminhos de terra</y>, de casa pro poço, do poço pra feira.",
+				"Sem caminho, eles se perdem. Eu juro. Vi um manso dar três voltas na própria casa porque choveu e apagou o trilho.",
+				"Destrói as estradinhas da vila. Quero ver os narigudos andando em círculo feito barata tonta."
+			],
+			"why": [
+				"Manso perdido não chega no sino, não chama o golem e não avisa ninguém. Invasão perfeita.",
+				"E os mercadores ambulantes também se perdem. Menos gente intrometida na região. Todo mundo sai ganhando. Menos eles."
+			],
+			"accept": [
+				"Pá na mão e sem dó. Cada trilho quebrado é um manso perdido.",
+				"<r>Destrua</r> <y>64 blocos de caminho</y> de terra."
+			],
+			"progress": [
+				"Os caminhos de terra ligam as casas das vilas. Uma <y>pá</y> quebra rapidinho e eles viram terra comum.",
+				"Pá também faz caminho de terra com o botão direito. Não faça isso, você tá do lado errado da história."
+			],
+			"complete": [
+				"Os mansos tão perdidinhos! Um foi parar no deserto procurando a padaria. Que maravilha.",
+				"Toma diamantes, uma maçã dourada e um livro de <p>Eficiência III</p>. Pra quebrar mais rápido na próxima."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:dirt_path"], "count": 64, "desc": "<r>Destrua</r> <y>64 blocos de caminho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 3}]
+		},
+		{
+			"id": "pillager_3_devastador",
+			"tier": 3,
+			"title": "O Café do Devastador",
+			"tone": "calm",
+			"offer": [
+				"Cúmplice, deixa eu te apresentar a Bonitinha. É a nossa <r>devastadora</r>. Três toneladas de chifre e mau humor.",
+				"Ela anda irritada. Derrubou a cozinha da mansão ontem porque o almoço atrasou. De novo.",
+				"Ela só se acalma com <y>carne assada</y>. Muita carne assada. Arruma isso pra mim antes que ela coma a mobília."
+			],
+			"why": [
+				"Devastador com fome não obedece ninguém. E a próxima invasão precisa dela inteira e de bom humor pra derrubar portas.",
+				"Além disso, se ela comer a mobília de novo, eu durmo no chão. Faz três semanas que eu durmo no chão."
+			],
+			"accept": [
+				"Bife, costeleta, carneiro. Tudo assadinho. Ela odeia carne crua, não é bicho selvagem.",
+				"<g>Entregue</g> <y>32 carnes assadas</y>."
+			],
+			"progress": [
+				"Asse carne crua numa <y>fornalha</y>, num <y>defumador</y> ou numa <y>fogueira</y>. O defumador assa mais rápido.",
+				"Vacas, porcos e ovelhas deixam carne crua. Matar com fogo já entrega a carne assada."
+			],
+			"complete": [
+				"A Bonitinha comeu tudo e dormiu de barriga pra cima. Roncando. A mansão inteira tremeu, mas ninguém se machucou.",
+				"Toma diamantes, uma maçã dourada e esmeraldas. Ela mandou agradecer. Quer dizer, ela arrotou. É a mesma coisa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:cooked_beef", "minecraft:cooked_porkchop", "minecraft:cooked_mutton"], "count": 32, "desc": "<g>Entregue</g> <y>32 carnes assadas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:emerald", "count": 16}]
+		},
+		{
+			"id": "pillager_3_mapas",
+			"tier": 3,
+			"title": "Os Mapas do Grande Evocador",
+			"tone": "calm",
+			"offer": [
+				"O Grande Evocador quer planejar a próxima temporada de invasões. Mas ele tem um probleminha: não sabe onde ficam as vilas.",
+				"A gente sempre foi atacando o que aparecia. Funcionava, mas é meio... amador. Ele quer coisa profissional.",
+				"Faz <y>mapas</y> da região, cúmplice. Muitos mapas. Ele vai pendurar tudo na parede e espetar alfinete."
+			],
+			"why": [
+				"Com mapa, a patrulha não passa três dias perdida no pântano. Aconteceu. O Tormento até hoje tem medo de sapo.",
+				"E saber onde tá cada vila é saber onde tá cada esmeralda. Conhecimento é poder. E poder é saque."
+			],
+			"accept": [
+				"Papel, bússola e perna. Anda bastante e desenha tudo.",
+				"<g>Entregue</g> <y>6 mapas</y> preenchidos."
+			],
+			"progress": [
+				"Um mapa vazio leva <y>8 papéis</y> em volta de uma <y>bússola</y>. Use ele com o botão direito e o mapa começa a desenhar o lugar.",
+				"O cartógrafo das vilas também vende mapas. Comprar dos mansos pra atacar os mansos? Genial."
+			],
+			"complete": [
+				"Seis mapas! O Evocador ficou tão feliz que quase sorriu. Quase. Ele não sabe sorrir.",
+				"Toma diamantes, uma maçã dourada e uma besta com <p>Perfuração IV</p>. Pra atravessar mais de um manso por vez."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:filled_map"], "count": 6, "desc": "<g>Entregue</g> <y>6 mapas</y> preenchidos"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:crossbow", "count": 1, "enchant": "minecraft:piercing", "level": 4}]
+		},
+		{
+			"id": "pillager_3_escudos",
+			"tier": 3,
+			"title": "A Linha de Frente",
+			"tone": "calm",
+			"offer": [
+				"Os <r>vingadores</r> da mansão são corajosos, cúmplice. Corajosos demais. Correm pra cima do golem de peito aberto.",
+				"Resultado: voam pro céu. Toda invasão a gente perde metade da linha de frente pra um soco de lata.",
+				"Fabrica uns <y>escudos</y> pra eles. Quem sabe assim eles voltam inteiros pra jantar."
+			],
+			"why": [
+				"Vingador com escudo aguenta mais tempo. E cada segundo que o golem perde batendo em escudo é um baú a mais saqueado.",
+				"E o curandeiro da mansão pediu demissão. Disse que cansou de colar vingador. Literalmente."
+			],
+			"accept": [
+				"Tábua e ferro. Escudo é coisa simples, até os mansos sabem fazer.",
+				"<y>Fabrique</y> <y>6 escudos</y>."
+			],
+			"progress": [
+				"Um escudo usa <y>6 tábuas</y> de qualquer madeira e <y>1 barra de ferro</y>.",
+				"Escudo levantado bloqueia flecha e golpe de frente. Só não segura muito bem o soco do golem."
+			],
+			"complete": [
+				"Seis escudos! Os vingadores tão desfilando com eles pelo corredor. Um deles já levou uma porta na cara e nem sentiu.",
+				"Toma diamantes, uma maçã dourada e um livro de <p>Proteção III</p>. Proteção pra você também, que você vale mais que um vingador."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:shield"], "count": 6, "desc": "<y>Fabrique</y> <y>6 escudos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 3}]
+		},
+		{
 			"id": "pillager_4_queda",
 			"tier": 4,
 			"title": "A Queda da Vila",
@@ -695,6 +1043,122 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:iron_ingot"], "count": 128, "desc": "<g>Entregue</g> <y>128 barras de ferro</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "pillager_4_mansao",
+			"tier": 4,
+			"title": "Uma Ala Nova na Mansão",
+			"tone": "calm",
+			"offer": [
+				"Cúmplice, a <a>mansão</a> tá lotada. Tem Exilado dormindo no armário, na escada, no lustre. O Pé-de-Cabra dorme pendurado igual morcego.",
+				"O Grande Evocador decidiu: vamos construir uma ala nova. Mas tem que ser de <y>carvalho escuro</y>, igual ao resto. Ele é exigente com decoração.",
+				"Busca muita madeira na floresta escura. Muita mesmo. Ala de mansão não se faz com graveto."
+			],
+			"why": [
+				"Mais quarto, mais Exilado. Mais Exilado, mais patrulha. Mais patrulha, mais vila chorando. É matemática.",
+				"E o Evocador quer uma sala só pra ele, com trono e tudo. Se não tiver madeira, ele vai pegar o meu quarto."
+			],
+			"accept": [
+				"Machado afiado e costas fortes. A floresta escura é fechada, cuidado onde pisa.",
+				"<g>Entregue</g> <y>128 toras de carvalho escuro</y>."
+			],
+			"progress": [
+				"O carvalho escuro só cresce nas <a>florestas escuras</a>, as mesmas onde ficam as mansões. É onde a gente mora, afinal.",
+				"Muda de carvalho escuro só vira árvore se você plantar <y>4 mudas</y> juntas num quadrado."
+			],
+			"complete": [
+				"Cento e vinte e oito toras! A ala nova já tá de pé. O Pé-de-Cabra finalmente desceu do lustre. Chorou de emoção.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Eficiência V</p>. Pra quando a gente precisar de outra ala."
+			],
+			"objective": {"type": "deliver", "targets": ["#minecraft:dark_oak_logs"], "count": 128, "desc": "<g>Entregue</g> <y>128 toras de carvalho escuro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "pillager_4_lapis",
+			"tier": 4,
+			"title": "A Tinta Azul dos Rituais",
+			"tone": "calm",
+			"offer": [
+				"Segredo da mansão, cúmplice: a magia do Grande Evocador não vem do nada. Ele desenha os círculos de invocação com <p>lápis-lazúli</p> moído.",
+				"E o estoque acabou. Ontem ele tentou invocar um vex com tinta de lula. Saiu um vex molhado e muito ofendido.",
+				"Desce na mina e traz muito lápis. Sem tinta azul, nada de presas, nada de vexes, nada de diversão."
+			],
+			"why": [
+				"Evocador sem magia é só um velho de roupão gritando na janela. A invasão precisa dele afiado.",
+				"E se ele ficar sem ritual, vai querer conversar. Ninguém quer conversar com o Evocador. Ninguém."
+			],
+			"accept": [
+				"Picareta de pedra serve. E cuidado com o escuro lá embaixo, tem coisa pior que golem.",
+				"<g>Entregue</g> <y>96 lápis-lazúli</y>."
+			],
+			"progress": [
+				"O minério de lápis-lazúli fica bem fundo, mais comum perto da camada de ardósia profunda. Cada minério solta vários lápis.",
+				"<p>Fortuna</p> na picareta aumenta muito a quantidade que cai. O clérigo das vilas também troca lápis."
+			],
+			"complete": [
+				"Noventa e seis! O Evocador já desenhou três círculos e invocou um vex seco e feliz. Que alívio.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Fortuna III</p>. Pra próxima ida à mina render mais."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:lapis_lazuli"], "count": 96, "desc": "<g>Entregue</g> <y>96 lápis-lazúli</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 3}]
+		},
+		{
+			"id": "pillager_4_tnt",
+			"tier": 4,
+			"title": "A Muralha Vai Abaixo",
+			"tone": "danger",
+			"offer": [
+				"Os mansos aprenderam, cúmplice. As vilas grandes agora têm <y>muros</y>. Muros de pedra, muros de tábua, muro em volta do muro.",
+				"A Bonitinha, nossa devastadora, já tentou derrubar um. Ficou três dias com dor de chifre.",
+				"Então chega de chifre. Faz <r>TNT</r> pra mim. Quero ver muro aguentar uma explosão bem caprichada."
+			],
+			"why": [
+				"Muro no chão, vila aberta. Vila aberta, invasão garantida. É a lógica mais bonita que existe.",
+				"E barulho de explosão faz os mansos se esconderem por uma semana. Uma semana inteira de saque tranquilo."
+			],
+			"accept": [
+				"Pólvora e areia. E mantém longe do fogo, pelo amor do Grande Evocador.",
+				"<y>Fabrique</y> <y>16 TNTs</y>."
+			],
+			"progress": [
+				"Uma TNT leva <y>5 pólvoras</y> e <y>4 areias</y> (areia comum ou vermelha), em xadrez.",
+				"A pólvora cai dos <r>creepers</r>. Eles estão por toda parte à noite, é só não deixar eles chegarem perto."
+			],
+			"complete": [
+				"Dezesseis TNTs! Já guardei tudo no porão. Longe da cozinha. Bem longe da cozinha.",
+				"Toma diamantes, maçãs douradas e um livro de <p>Proteção contra Explosões IV</p>. Só por precaução, sabe como é."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:tnt"], "count": 16, "desc": "<y>Fabrique</y> <y>16 TNTs</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:blast_protection", "level": 4}]
+		},
+		{
+			"id": "pillager_4_marcha",
+			"tier": 4,
+			"title": "A Grande Marcha",
+			"tone": "calm",
+			"offer": [
+				"Toda patrulha de verdade marcha, cúmplice. Marcha de vila em vila, sem pressa, sem parar, assobiando o hino dos Exilados.",
+				"O Grande Evocador quer um batedor de confiança pra marchar pela região e espalhar o medo. E escolheu você.",
+				"É chão, viu? Muito chão. Bota a bota velha e vai."
+			],
+			"why": [
+				"Mansos que veem um Exilado marchando na estrada ficam dias sem dormir direito. É guerra psicológica.",
+				"E quem marcha muito conhece os atalhos. Na próxima invasão, você guia a patrulha."
+			],
+			"accept": [
+				"Passo firme, cabeça erguida. Exilado marcha, não corre.",
+				"<g>Marche</g> <y>3000 blocos</y> a pé."
+			],
+			"progress": [
+				"Só conta andando no ritmo normal. Correndo, nadando, a cavalo ou de barco não entra na conta.",
+				"Leva comida pra viagem. Andar gasta fome, devagar, mas gasta."
+			],
+			"complete": [
+				"Três mil blocos! Os mansos de cinco vilas diferentes já falam do batedor misterioso. Você virou lenda. Uma lenda malvada.",
+				"Toma diamantes, maçãs douradas e um <o>totem da imortalidade</o>. Batedor de confiança não pode morrer na estrada."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:walk_one_cm"], "count": 300000, "desc": "<g>Marche</g> <y>3000 blocos</y> a pé"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
 		},
 		{
 			"id": "pillager_5_saque",
