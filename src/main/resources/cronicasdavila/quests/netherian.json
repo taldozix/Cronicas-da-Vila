@@ -1,0 +1,397 @@
+{
+	"quests": [
+		{
+			"id": "netherian_1_quartzo",
+			"tier": 1,
+			"title": "Cristais do Mundo Quente",
+			"tone": "calm",
+			"offer": [
+				"Ixi, rapaiz, cê chegou bem na hora! Tô estudando o <y>quartzo do Nether</y>, aquele branquinho que brota no meio da pedra vermelha.",
+				"Preciso de bastante minério pra ver se o brilho muda de acordo com a profundidade."
+			],
+			"why": [
+				"O quartzo é a pedra mais pura do Nether. Se eu entender como ele nasce, entendo o próprio mundo quente.",
+				"E eu já tô velho pra minerar com piglin me olhando torto, cumpádi."
+			],
+			"accept": [
+				"Eh bem! O minério de quartzo tá em todo canto do Nether, é só procurar os pontinhos brancos.",
+				"<g>Minere</g> <y>32 minérios de quartzo do Nether</y>, tchá."
+			],
+			"progress": [
+				"Minerar quartzo dá bastante experiência. Encantamento de <y>Fortuna</y> aumenta os cristais que caem.",
+				"Cuidado ao cavar pra baixo no Nether: pode ter lava logo embaixo."
+			],
+			"complete": [
+				"Pai do céu, que quartzo bonito! Brilha igual açúcar no sol. O estudo vai ficar uma beleza.",
+				"Toma aqui, rapaiz: esmeraldas e ferro pra cê fazer uma armadura e voltar inteiro da próxima vez."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:nether_quartz_ore"], "count": 32, "desc": "<g>Minere</g> <y>32 minérios de quartzo</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "netherian_1_fungos",
+			"tier": 1,
+			"title": "Herbário do Inferno",
+			"tone": "calm",
+			"offer": [
+				"Cumpádi, cê já viu um cogumelo que brilha e cresce na pedra quente? No Nether tem dois tipos: o <r>carmesim</r> e o <a>distorcido</a>.",
+				"Tô montando um herbário dos fungos do Nether. Mas tá faltando amostra dos dois."
+			],
+			"why": [
+				"Esses fungos viram árvore gigante com farinha de osso. Árvore que cresce sem sol e sem terra! Isso é ciência pura, rapaiz.",
+				"E os hoglins têm medo do distorcido. Se eu descobrir o porquê, a vila ganha uma arma secreta."
+			],
+			"accept": [
+				"Eh bem! Pode trazer misturado, os dois tipos valem.",
+				"<g>Traga</g> <y>16 fungos do Nether</y>, carmesins ou distorcidos."
+			],
+			"progress": [
+				"Os fungos crescem no chão das florestas <r>carmesim</r> e <a>distorcida</a> do Nether, em cima do nílio.",
+				"Na floresta carmesim tem hoglin e piglin. Na distorcida é mais calmo, mas tem enderman. Não olha nos olhos dele!"
+			],
+			"complete": [
+				"Que fungos bonitos, rapaiz! Um cheira a ferrugem, o outro a menta. Ixi, isso vai render um livro inteiro.",
+				"Toma umas esmeraldas e costeleta assada. Lá no Nether a fome bate forte, tchá."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:crimson_fungus", "minecraft:warped_fungus"], "count": 16, "desc": "<g>Entregue</g> <y>16 fungos do Nether</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:cooked_porkchop", "count": 8}]
+		},
+		{
+			"id": "netherian_1_magma",
+			"tier": 1,
+			"title": "Gelatina de Fogo",
+			"tone": "danger",
+			"offer": [
+				"Rapaiz, cê conhece os <r>cubos de magma</r>? São uns blocões quentes que pulam e se dividem quando cê bate.",
+				"Eles ficam pulando em volta do portal da vila do outro lado. Já queimaram dois aprendizes meus, coitados."
+			],
+			"why": [
+				"Sem portal seguro, ninguém estuda o Nether. E sem estudo, a vila fica sem quartzo, sem fungo e sem netherólogo feliz.",
+				"E o creme de magma deles serve pra poção de resistência ao fogo. Duas vantagens, cumpádi."
+			],
+			"accept": [
+				"Eh bem! Cuidado que os grandes se dividem em pequenos quando derrotados.",
+				"<r>Elimine 15 cubos de magma</r>, tchá."
+			],
+			"progress": [
+				"Os cubos de magma aparecem nos <a>deltas de basalto</a> e perto das fortalezas. Eles pulam alto, olha pra cima!",
+				"Água não serve no Nether, mas uma poção de <y>Resistência ao Fogo</y> deixa cê imune a eles."
+			],
+			"complete": [
+				"Ixi, o portal tá limpinho! Meus aprendizes voltaram a estudar. Com sobrancelha e tudo.",
+				"Toma, rapaiz: esmeraldas e ferro, que cê mereceu cada um."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:magma_cube"], "count": 15, "desc": "<r>Elimine</r> <r>15 cubos de magma</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "netherian_2_almas",
+			"tier": 2,
+			"title": "O Vale das Almas",
+			"tone": "calm",
+			"offer": [
+				"Cumpádi, tem um lugar no Nether onde o chão grita. É o <a>Vale das Almas</a>. O fogo lá é azul e o ar é cheio de cinza.",
+				"O chão é feito de <y>areia das almas</y> e <y>solo das almas</y>, e eu quero entender por que tem um rosto em cada grão."
+			],
+			"why": [
+				"Dizem que cada grão de areia das almas guarda um suspiro de alguém que se perdeu no Nether. Eu quero provar ou desmentir.",
+				"E, cá entre nós, é o único material que deixa a verruga do Nether crescer. Sem ele, adeus poções."
+			],
+			"accept": [
+				"Pai do céu, cê é corajoso! Lá tem muito esqueleto e ghast, viu?",
+				"<g>Minere</g> <y>64 blocos de areia ou solo das almas</y>."
+			],
+			"progress": [
+				"A areia das almas deixa cê lento. Encantamento de <y>Velocidade das Almas</y> nas botas resolve isso.",
+				"Uma pá é a ferramenta certa pros dois tipos de bloco."
+			],
+			"complete": [
+				"Ixi, rapaiz... encostei a orelha no saco e juro que ouvi um suspiro. A ciência vai ter trabalho.",
+				"Toma esmeraldas e um diamante pela coragem de entrar no vale."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:soul_sand", "minecraft:soul_soil"], "count": 64, "desc": "<g>Minere</g> <y>64 blocos das almas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "netherian_2_ghasts",
+			"tier": 2,
+			"title": "Choro no Céu Vermelho",
+			"tone": "danger",
+			"offer": [
+				"Rapaiz, os <r>ghasts</r> perto do nosso portal tão ficando atrevidos. Toda hora uma bola de fogo explode a passarela.",
+				"Eu tenho dó deles, sabia? Mas a passarela já foi refeita três vezes esse mês."
+			],
+			"why": [
+				"Sem passarela, ninguém atravessa o lago de lava. E sem atravessar, a pesquisa do Nether para.",
+				"E as lágrimas deles servem pra poção de regeneração. A ciência agradece, mesmo com dó."
+			],
+			"accept": [
+				"Eh bem! Arco funciona bem, e cê pode rebater a bola de fogo com a espada.",
+				"<r>Elimine 5 ghasts</r>, cumpádi."
+			],
+			"progress": [
+				"Bater na bola de fogo do ghast manda ela de volta. Se acertar ele, morre na hora!",
+				"Os ghasts preferem lugares abertos do Nether, como os mares de lava e o Vale das Almas."
+			],
+			"complete": [
+				"Ixi, a passarela tá inteira há três dias! Um recorde, rapaiz.",
+				"Toma esmeraldas, ferro e um diamante. E se sobrou alguma lágrima, guarda pra uma poção."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 5, "desc": "<r>Elimine</r> <r>5 ghasts</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "netherian_2_cogumeluz",
+			"tier": 2,
+			"title": "Lanternas que Crescem",
+			"tone": "calm",
+			"offer": [
+				"Já viu uma luz que nasce em árvore? No Nether tem! É a <y>cogumeluz</y>, que cresce no meio das copas dos fungos gigantes.",
+				"Quero estudar se ela é planta, pedra ou um tipo de vagalume preguiçoso."
+			],
+			"why": [
+				"Se ela der certo aqui na vila, a gente tem iluminação que não precisa de carvão. Economia, cumpádi!",
+				"E é bonita demais. Laranjinha, quentinha... parece sol de fim de tarde."
+			],
+			"accept": [
+				"Eh bem! Procura no meio das copas vermelhas e azuis das árvores do Nether.",
+				"<g>Traga</g> <y>8 cogumeluzes</y>, rapaiz."
+			],
+			"progress": [
+				"A cogumeluz fica grudada nas copas dos fungos enormes. Uma enxada quebra ela bem rápido.",
+				"Se faltar, plante um fungo em cima do nílio e use farinha de osso. Pode nascer árvore com cogumeluz nova."
+			],
+			"complete": [
+				"Pai do céu, a bancada ficou toda iluminada! Parece festa junina no Nether, tchá.",
+				"Toma esmeraldas e um diamante. Cê iluminou a minha pesquisa, rapaiz."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:shroomlight"], "count": 8, "desc": "<g>Entregue</g> <y>8 cogumeluzes</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "netherian_3_blazes",
+			"tier": 3,
+			"title": "Varas de Fogo",
+			"tone": "danger",
+			"offer": [
+				"Cumpádi, preciso de uma coisa perigosa: <y>varas de blaze</y>. São o coração dos <n>blazes</n> das fortalezas.",
+				"Elas queimam pra sempre, sabia? Eu quero descobrir de onde vem tanto fogo."
+			],
+			"why": [
+				"Com a vara de blaze se faz o suporte de poções e o pó que acende os olhos do Fim. Sem ela, a vila para.",
+				"E se eu entender esse fogo eterno, talvez a vila nunca mais precise de carvão no inverno."
+			],
+			"accept": [
+				"Ixi, cê vai mesmo! Leva poção de resistência ao fogo e bola de neve, que eles odeiam.",
+				"<g>Traga</g> <y>16 varas de blaze</y>, rapaiz."
+			],
+			"progress": [
+				"Os blazes nascem nos geradores das <a>Fortalezas do Nether</a>. Bola de neve dá dano neles!",
+				"Eles atiram três bolas de fogo seguidas. Se esconde atrás de um pilar e ataca nos intervalos."
+			],
+			"complete": [
+				"Que calor gostoso dessas varas, cumpádi! A bancada nunca brilhou tanto.",
+				"Toma esses diamantes e uma maçã dourada. Cê enfrentou o fogo e voltou sorrindo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:blaze_rod"], "count": 16, "desc": "<g>Entregue</g> <y>16 varas de blaze</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "netherian_3_wither",
+			"tier": 3,
+			"title": "Esqueletos de Carvão",
+			"tone": "danger",
+			"offer": [
+				"Rapaiz, os <r>esqueletos wither</r> tão tomando conta da fortaleza onde eu fazia minhas pesquisas.",
+				"Eles são altos, pretos, carregam espada de pedra e o golpe deles faz a vida da gente secar."
+			],
+			"why": [
+				"Sem a fortaleza, não tenho verruga do Nether nem acesso aos blazes. A ciência do Nether inteira depende dela.",
+				"E os crânios deles... dizem que servem pra coisa muito pior. Melhor diminuir a quantidade, cumpádi."
+			],
+			"accept": [
+				"Eh bem! Leva leite, que o efeito do wither some com ele.",
+				"<r>Elimine 20 esqueletos wither</r>, tchá."
+			],
+			"progress": [
+				"Eles só aparecem dentro das <a>Fortalezas do Nether</a>. Um túnel de dois blocos de altura impede eles de entrarem.",
+				"O efeito de wither deixa os corações pretos. Tome leite ou espere passar longe deles."
+			],
+			"complete": [
+				"Ixi, a fortaleza tá quieta de novo! Ouvi até um blaze cantando. Mentira, blaze não canta. Mas tava tranquilo.",
+				"Toma, rapaiz: diamantes e um livro de <o>Proteção contra Fogo IV</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 20, "desc": "<r>Elimine</r> <r>20 esqueletos wither</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "netherian_3_ancora",
+			"tier": 3,
+			"title": "A Âncora de Ressurgimento",
+			"tone": "calm",
+			"offer": [
+				"Cumpádi, sabe o que acontece se cê deitar numa cama no Nether? Ela explode! <d>(perdi três camas assim)</d>",
+				"Pra voltar à vida no Nether, só com a <y>âncora de ressurgimento</y>. Quero espalhar algumas pelos nossos postos de pesquisa."
+			],
+			"why": [
+				"Se um pesquisador cair na lava, ele volta pertinho do posto, sem atravessar o mundo inteiro de novo.",
+				"E ela é feita de obsidiana chorona, que é a pedra mais triste e mais bonita que existe, rapaiz."
+			],
+			"accept": [
+				"Eh bem! Precisa de obsidiana chorona e pedra luminosa. Os piglins às vezes trocam a obsidiana por ouro.",
+				"<g>Fabrique</g> <y>2 âncoras de ressurgimento</y>, tchá."
+			],
+			"progress": [
+				"A âncora leva <y>6 obsidianas choronas</y> e <y>3 pedras luminosas</y>. A obsidiana chorona aparece nos portais em ruínas.",
+				"Pra carregar a âncora, clique nela com pedra luminosa. No mundo normal ela explode igual cama no Nether!"
+			],
+			"complete": [
+				"Que âncoras bonitas, rapaiz! Já levei uma pro posto da floresta carmesim. Agora morrer lá ficou bem mais prático.",
+				"Toma diamantes e um livro de <o>Aspecto Flamejante II</o>. Combina com o Nether."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:respawn_anchor"], "count": 2, "desc": "<g>Fabrique</g> <y>2 âncoras de ressurgimento</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_aspect", "level": 2}]
+		},
+		{
+			"id": "netherian_4_destrocos",
+			"tier": 4,
+			"title": "O Metal que Não Queima",
+			"tone": "calm",
+			"offer": [
+				"Rapaiz, chegou a hora da pesquisa mais importante da minha vida: os <y>destroços ancestrais</y>.",
+				"Eles ficam lá embaixo, perto do mar de lava, escondidos na pedra. Não queimam, não explodem, nada."
+			],
+			"why": [
+				"Com eles se faz a netherita, o metal mais forte do mundo. Se eu estudar a fundo, posso proteger a vila inteira.",
+				"E eu quero saber se é verdade que eles são restos de um mundo que derreteu. Curiosidade de netherólogo, cumpádi."
+			],
+			"accept": [
+				"Ixi, cê vai mesmo! Procura bem embaixo, perto do nível do mar de lava.",
+				"<g>Minere</g> <y>6 destroços ancestrais</y>, tchá."
+			],
+			"progress": [
+				"Os destroços aparecem bem fundo no Nether, entre as camadas 8 e 22. Picareta de diamante pra cima!",
+				"Cama explode no Nether, e a explosão não quebra os destroços. Muito minerador usa isso pra abrir túneis. Cuidado!"
+			],
+			"complete": [
+				"Pai do céu, olha esse metal escuro! Pesa que nem consciência pesada, rapaiz.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Eficiência V</o>. Cê é o melhor minerador do Nether."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:ancient_debris"], "count": 6, "desc": "<g>Minere</g> <y>6 destroços ancestrais</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "netherian_4_hoglins",
+			"tier": 4,
+			"title": "A Manada Carmesim",
+			"tone": "danger",
+			"offer": [
+				"Cumpádi, uma manada de <r>hoglins</r> invadiu o posto de pesquisa da floresta carmesim. Derrubaram tudo!",
+				"São uns porcos enormes, com presa e cabeça dura. Quando eles correm, o chão treme."
+			],
+			"why": [
+				"O posto tem anos de anotações sobre o Nether. Se os hoglins pisotearem tudo, é uma vida de trabalho perdida.",
+				"E a carne deles alimenta a vila no inverno. Ninguém passa fome, rapaiz."
+			],
+			"accept": [
+				"Eh bem! Lembra do meu truque: eles fogem do fungo distorcido.",
+				"<r>Elimine 20 hoglins</r>, tchá."
+			],
+			"progress": [
+				"Os hoglins vivem na <a>floresta carmesim</a>. Eles jogam a gente pro alto com as presas, então cuidado perto da lava!",
+				"Se um hoglin entrar no mundo normal, ele vira um zoglin. Esse aí ataca tudo que vê."
+			],
+			"complete": [
+				"Ixi, o posto tá a salvo! As anotações estão meio pisoteadas, mas dá pra ler. Obrigado, cumpádi.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Afiação V</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 20, "desc": "<r>Elimine</r> <r>20 hoglins</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+		},
+		{
+			"id": "netherian_4_cranios",
+			"tier": 4,
+			"title": "Os Crânios Proibidos",
+			"tone": "danger",
+			"offer": [
+				"Rapaiz, eu achei um texto antigo numa fortaleza. Fala de <y>três crânios pretos</y> e de uma criatura de três cabeças.",
+				"Eu preciso dos crânios pra estudar. Só pra estudar, cumpádi, juro!"
+			],
+			"why": [
+				"Se alguém mal-intencionado juntar os três crânios, pode chamar o <r>Wither</r>. Melhor que fiquem comigo, trancados.",
+				"E eu quero entender como um crânio tão pequeno guarda tanto poder."
+			],
+			"accept": [
+				"Eh bem! Só os esqueletos wither deixam cair, e é bem raro.",
+				"<g>Traga</g> <y>3 crânios de esqueleto wither</y>, tchá."
+			],
+			"progress": [
+				"A chance de cair o crânio é pequena. Uma espada com <y>Saque</y> ajuda bastante.",
+				"Os esqueletos wither só nascem nas <a>Fortalezas do Nether</a>. Leva leite pra tirar o efeito wither."
+			],
+			"complete": [
+				"Três crânios... ixi, até arrepiou. Vou guardar no baú mais fundo da casa, rapaiz.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Saque III</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wither_skeleton_skull"], "count": 3, "desc": "<g>Entregue</g> <y>3 crânios de esqueleto wither</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
+		},
+		{
+			"id": "netherian_5_wither",
+			"tier": 5,
+			"title": "A Criatura de Três Cabeças",
+			"tone": "danger",
+			"offer": [
+				"Cumpádi, aconteceu o que eu temia. Alguém juntou os crânios e chamou o <r>Wither</r>.",
+				"Ele voa, explode tudo e solta crânios que deixam a vida preta. Se chegar na vila, não sobra nada.",
+				"Eu preciso do maior herói que eu conheço. E é você, rapaiz."
+			],
+			"why": [
+				"O Wither destrói até obsidiana quando tá bravo. Nenhuma muralha segura ele.",
+				"E dizem que ele deixa uma <y>estrela do Nether</y> quando morre. A coisa mais bonita que existe."
+			],
+			"accept": [
+				"Pai do céu... vai com Deus. Leva leite, poções de cura e a melhor armadura que tiver.",
+				"<r>Derrote 1 Wither</r>, tchá."
+			],
+			"progress": [
+				"Quando a vida dele cai pela metade, ele ganha uma armadura que bloqueia flechas. Aí só no corpo a corpo!",
+				"Lute num lugar fechado e longe da vila. Ele explode tudo em volta quando nasce."
+			],
+			"complete": [
+				"Ixi... cê conseguiu! O céu tá vermelho de novo, mas é só o pôr do sol. Que alívio, rapaiz!",
+				"Toma o melhor que eu tenho: um <o>Totem da Imortalidade</o> e <o>lingotes de netherita</o>. Cê é lenda do Nether."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 1, "desc": "<r>Derrote</r> <r>1 Wither</r>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 2}]
+		},
+		{
+			"id": "netherian_5_sinalizador",
+			"tier": 5,
+			"title": "A Luz da Estrela",
+			"tone": "calm",
+			"offer": [
+				"Rapaiz, cê sabia que a <y>estrela do Nether</y> pode virar uma luz que sobe até o céu? É o <y>sinalizador</y>.",
+				"Eu sonho em ver um aceso no meio da vila. Uma coluna de luz pra todo viajante perdido saber que aqui tem abrigo."
+			],
+			"why": [
+				"O sinalizador dá força, velocidade e regeneração pra quem fica perto. A vila ia ficar protegida pra sempre.",
+				"E seria a prova de que até do Nether, o lugar mais quente e mais triste, pode sair uma coisa linda, cumpádi."
+			],
+			"accept": [
+				"Eh bem! Precisa de uma estrela do Nether, obsidiana e vidro.",
+				"<g>Fabrique</g> <y>1 sinalizador</y>, tchá."
+			],
+			"progress": [
+				"O sinalizador leva <y>1 estrela do Nether</y>, <y>3 obsidianas</y> e <y>5 vidros</y>. A estrela só cai do Wither.",
+				"Pra acender, coloque em cima de uma pirâmide de blocos de ferro, ouro, esmeralda, diamante ou netherita."
+			],
+			"complete": [
+				"Pai do céu, olha essa luz subindo! Tô chorando igual ghast, rapaiz. De felicidade.",
+				"Toma: um livro de <o>Remendo</o>, diamantes e um <o>lingote de netherita</o>. Cê trouxe a luz pra vila."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:beacon"], "count": 1, "desc": "<g>Fabrique</g> <y>1 sinalizador</y>"},
+			"rewards": [{"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:netherite_ingot", "count": 1}]
+		}
+	]
+}
