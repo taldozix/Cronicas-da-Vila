@@ -71,20 +71,6 @@
 		"Que trovoada, {player}! Fica longe das árvores altas, viu?",
 		"Tempestade feia! Dizem que raio transforma aldeão em bruxa. Eu é que não saio de casa!"
 	],
-	"greet_friday": [
-		"Sextou, {player}! A semana foi longa, mas acabou!",
-		"Sexta-feira! A vila inteira já tá no clima do fim de semana.",
-		"Sextou! Hoje à noite tem conversa na praça e pão quentinho."
-	],
-	"greet_saturday": [
-		"Sábado é dia de feira! Passa lá, que sempre tem coisa boa.",
-		"Sábado de festa na praça! Vai ter música, comida e o bobão dançando.",
-		"Ô, sábado! Dia de descanso. Ou de arrumar a casa, que é quase a mesma coisa."
-	],
-	"greet_sunday": [
-		"Domingo, {player}. Almoço em família e cochilo depois. Tradição da vila.",
-		"Hrmm... domingo. Hoje ninguém tem pressa de nada."
-	],
 	"reward_intro": [
 		"Se der conta do recado, te pago",
 		"Fazendo isso pra mim, você leva",

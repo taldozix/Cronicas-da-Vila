@@ -34,20 +34,6 @@
 		"Tempestade! Se um raio me acertar, eu viro bruxa. Pelo menos bruxa tem profissão.",
 		"Que trovoada! Vou ficar aqui debaixo do telhado. Desempregado e molhado já é demais."
 	],
-	"greet_friday": [
-		"Sextou! Pra quem trabalha, né. Pra mim é só mais um dia. Mas sextou mesmo assim!",
-		"Sexta-feira! O pessoal todo feliz porque vai folgar. Eu tô de folga faz três anos.",
-		"Sextou, {player}! Vou comemorar procurando emprego. Brincadeira. Vou só comemorar."
-	],
-	"greet_saturday": [
-		"Sábado tem feira. Vou lá ver se alguém tá contratando. Ou distribuindo pão de graça.",
-		"Sábado de festa! Pelo menos na festa ninguém pergunta qual é a minha profissão.",
-		"Sábado é dia de descanso. Eu descanso todo dia, então sou praticamente mestre nisso."
-	],
-	"greet_sunday": [
-		"Domingo, almoço com a família. Minha tia vai perguntar do emprego de novo. Socorro.",
-		"Hrmm... domingo. Dia de preguiça. Finalmente todo mundo fazendo o que eu faço."
-	],
 	"lore_done": [
 		"Já te contei a minha história do dia. Desempregado não tem muita coisa pra contar, sabe?",
 		"Acabou meu estoque de fofoca por hoje. Pergunta pros aldeões que trabalham, eles veem mais coisa.",

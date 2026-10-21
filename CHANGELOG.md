@@ -4,7 +4,7 @@ A versão do mod fica em `gradle.properties`. Toda atualização com melhorias s
 (1.1.0 → 1.2.0 → 1.3.0...). Ao enviar para o branch `main`, o GitHub compila e publica a release
 com o `.jar` automaticamente, usando as notas desta página.
 
-## [1.4.0] - 2026-10-21 — Folgas, Vendedor Ambulante e o raro Elebin
+## [1.4.0] - 2026-10-21 — Folgas, Piglin Bruto, a língua dos Endermen e o raro Elebin
 
 ### Novidades
 - **Folga dos aldeões:** cada aldeão tem o seu dia de descanso, em dias diferentes dos colegas, então a vila nunca para inteira. Cada vila tem o seu costume: o ciclo de folga muda de vila para vila (3 a 7 dias, ajustável em Opções). Trabalhos pesados folgam dois dias por ciclo.
@@ -12,9 +12,13 @@ com o `.jar` automaticamente, usando as notas desta página.
   - Ele fica segurando algo que lembra a profissão: trigo, peixe, tesoura, livro, frasco...
 - **Vendedor Ambulante:** agora conversa! Misterioso, cheio de piadinhas e às vezes de mau humor, conta lendas e curiosidades do mundo do Minecraft (o Homem de Olhos Brancos, as Terras Distantes, a semente do mundo...). Também abre as trocas pela conversa.
 - **Elebin:** um clérigo raro. Cerca de 15% dos clérigos se chamam Elebin, com falas e histórias só dele. O primeiro encontro é comemorado na tela.
-- **Profissões de outros mods** (More Villagers: Re-employed e afins): são reconhecidas ao abrir o mundo e ganham nome em português, falas, afinidade, barganha e 10 missões.
+- **Piglin Bruto:** agora conversa e passa missões, mas só para quem já é pelo menos **Renegado** (Vilania 3). São 45 missões mais desafiadoras que as dos piglins, com recompensas melhores. Para quem é Renegado ou mais, os brutos deixam de atacar.
+- **Endermen falam:** numa língua antiga, com os símbolos da mesa de encantamento. Para entender, é preciso o **Tradutor Ender**, um item raro que não tem receita: aparece em 5% a 12% dos baús das Cidades do Fim (a chance fica em Opções). Com ele no inventário, os Endermen contam a história do Fim e deixam de te atacar.
+  - **O ódio entre Endermen e shulkers** agora vale para os dois lados. Os Endermen fugiram do seu mundo apagado e confiaram aos shulkers a Primeira Pérola, o coração do povo. Na noite em que a dragoa chegou, os shulkers trancaram as Cidades do Fim e os deixaram do lado de fora. E os endermites, nascidos das pérolas roubadas, eles esmagam com nojo.
+- **Profissões do More Villagers: Re-employed com vida própria:** Oceanógrafo, Netherólogo, Silvicultor, Enderólogo, Engenheiro, Florista, Caçador, Minerador, Geleiro e Explorador têm falas, histórias e 14 missões só deles, e saudações diferentes para cada região da vila (planície, deserto, savana, neve, taiga, selva e pântano). Profissões de outros mods continuam sendo reconhecidas, com missões genéricas.
 - **Mais missões:** cada profissão de aldeão agora tem 14 missões.
-- **Falas conforme o tempo e o dia:** aldeões, bruxas e o Vendedor Ambulante falam diferente com chuva, com tempestade, à noite e na sexta, no sábado e no domingo. A aba Início mostra o dia, o dia da semana e o tempo.
+- **Equilíbrio entre herói e vilão:** o Vilão da História agora pede as mesmas **117 missões** que o Herói da Vila (13 profissões dominadas). O lado do mal ganhou missões novas: saqueadores e piglins têm 46, bruxas e piglins brutos 45 — 182 no total, o mesmo número das missões de aldeão.
+- **Falas conforme o tempo:** aldeões, bruxas e o Vendedor Ambulante falam diferente com chuva, com tempestade e à noite. A aba Início mostra o dia e o tempo.
 
 ### Mudanças
 - **Bruxas repaginadas:** gêmeas maquiavélicas, uma de fogo e outra de gelo, que tramam dominar o pântano (e depois as vilas). As quantidades pedidas foram rebalanceadas: por exemplo, 16 frascos de vidro em vez de 24.

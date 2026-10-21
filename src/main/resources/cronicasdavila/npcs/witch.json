@@ -86,20 +86,6 @@
 		"<n>*HOHOHOHO!*</n> Ouviu esse trovão? Foi um <r>raio</r> assim que fez a gente virar bruxa! Que saudade! Fica longe da janela, ou vira bruxa também.",
 		"Tempestade! A outra tá rindo na chaminé feito louca. <d>(lá de cima: \"KEKEKEKE!\")</d> Tempestade deixa a gente animada. Animada pra planejar."
 	],
-	"greet_friday": [
-		"Sexta-feira! Dia de reunião secreta das bruxas do pântano. Ninguém mais vem, então a reunião somos eu, a outra e o Breu. Quórum garantido.",
-		"<n>*Hohoho!*</n> Sexta! Os narigudos fazem festa na praça e a gente faz poção no mangue. Cada um com seu lazer.",
-		"Sexta-feira é dia de revisar o grande plano. Item um: dominar o pântano. Item dois: dominar as vilas. Item três: lembrar o que era o item um."
-	],
-	"greet_saturday": [
-		"Sábado! A outra tá limpando o caldeirão. Quer dizer, congelando a sujeira pra eu quebrar depois. Trabalho em equipe.",
-		"Sábado é dia de folga. Pra bruxa, folga é fazer maldade devagar. <n>*Hohoho!*</n> Senta aí.",
-		"Ah, {player}, num sábado! Que dedicação. Peão que trabalha no fim de semana merece... mais trabalho. <a>*Kekeke!*</a>"
-	],
-	"greet_sunday": [
-		"Domingo. O sino da vila tá tocando de novo. Dim, dom. Um dia esse sino vai tocar pra gente. Ou derreter. Ou congelar. A gente ainda não decidiu.",
-		"Domingo é dia de descanso. Eu descanso, a outra descansa, e você trabalha. <n>*Hohoho!*</n> Bom domingo!"
-	],
 	"abandon": [
 		"Desistiu? <n>*Hohoho!*</n> Tudo bem. A gente anota. A outra tem uma lista. Seu nome acabou de subir na lista.",
 		"Entendo. Peão que foge do tabuleiro... volta pra caixa. A gente acha outro. Tem sempre outro."

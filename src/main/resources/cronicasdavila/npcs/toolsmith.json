@@ -72,20 +72,6 @@
 		"{player}, entra! Tempestade! Estatisticamente, o para-raios da forja vai funcionar. Estatisticamente.",
 		"Ouviu esse trovão? Chegou três segundos depois do raio. Logo, o raio caiu a cerca de um quilômetro. <d>(ele anota, tremendo)</d>"
 	],
-	"greet_friday": [
-		"Sextou, {player}! Planilha da semana fechada, ferramentas guardadas em ordem alfabética. Eficiência máxima.",
-		"Sexta-feira! A produtividade cai 30% nas sextas. Eu compenso trabalhando 30% mais rápido. Lógica.",
-		"Sextou! Hoje à noite vou relaxar: desmontar um relógio e montar de novo. Diversão garantida."
-	],
-	"greet_saturday": [
-		"Sábado, {player}! Dia de feira. Vou vender ferramentas com garantia estendida. Ninguém entende o que é, mas compram.",
-		"Sábado de festa na praça. Vou, sim. Fico perto da mesa de comida, calculando a ordem ideal para comer.",
-		"Sábado é dia de projeto pessoal. Hoje: um alarme de redstone que só acorda a vila se for zumbi de verdade."
-	],
-	"greet_sunday": [
-		"Domingo, {player}. Almoço com a família. Minha tia sempre pergunta quando vou largar a forja. Resposta: nunca.",
-		"Hrmm... domingo. Dia de descanso. Estou descansando. Isto aqui é um relógio quebrado, mas é descanso, juro."
-	],
 	"reward_intro": [
 		"Concluído o projeto, conforme orçamento aprovado, você recebe",
 		"Pagamento calculado com precisão milimétrica: você leva",

@@ -95,6 +95,16 @@
 			"Já reparou que nossas cascas mudam de cor quando vocês as tingem? Gostamos muito disso.",
 			"Ficar roxo por mil anos é monótono. Um shulker rosa de vez em quando alegra a cidade.",
 			"Se um dia você tingir uma caixa de amarelo, pense em mim. Sempre quis ser amarelo. <p>*clac*</p>"
+		],
+		[
+			"Os <r>Altos</r> chegaram de um mundo morto. Compridos, tristes, com pérolas no peito. Pedimos que ficassem. Demos sombra. Demos ilhas.",
+			"Mas a pérola grande deles, a Primeira, cantava para o céu. Cantava alto. E o céu respondeu. Asas pretas. A dragoa seguiu o canto até aqui.",
+			"Naquela noite, fechamos as portas para salvar as cidades e o legado dos Voadores. Eles chamam de traição. Nós chamamos de sobreviver. <p>*clac*</p>"
+		],
+		[
+			"Depois daquela noite, os Altos começaram a arrancar pedaços. Das ilhas, das torres, do seu mundo. Ladrões de chão. Ladrões de tudo.",
+			"A Primeira Pérola dorme trancada no fundo de uma cidade. Se voltar para eles, ela canta de novo. E vem outra dragoa. Ou coisa pior.",
+			"Por isso eles nos odeiam. E nós a eles. Eu disse que tenho pena. Tenho. Mas não abro a porta. Nunca. <p>*CLAC*</p>"
 		]
 	],
 	"player_work": [
@@ -145,6 +155,16 @@
 		],
 		"sleeping": [
 			"<p>*...*</p> <d>(a casca está fechada. O shulker parece estar descansando.)</d>"
+		],
+		"enderman": [
+			"<p>*clac*</p> ...Um Alto passou perto da cidade. Arrancou um bloco e sumiu. Como sempre. Ladrão comprido.",
+			"Os Altos dizem que nós fechamos as portas. Fechamos. E fecharia de novo. Quem chama dragoa não entra.",
+			"Não encare um Alto, criatura de fora. Não por medo. Por nojo. Eles não merecem nem o seu olhar.",
+			"Eles carregam terra de um lado para o outro há dez mil anos. Nós guardamos. Eles bagunçam. Essa é a diferença. <p>*clac*</p>"
+		],
+		"translator_hint": [
+			"Os Altos falam em sons tortos. Quer entender? Procure o <p>Tradutor Ender</p> nos baús das Cidades do Fim. Nós guardamos. Nós guardamos tudo.",
+			"<p>*clac*</p> ...Há um <p>Tradutor Ender</p> em algum baú das nossas cidades. Era deles. Agora é de quem achar. Mas não conte que fui eu que disse."
 		]
 	}
 }

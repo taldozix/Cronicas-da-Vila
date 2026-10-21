@@ -47,20 +47,6 @@
 		"TROVÃO! <d>(ele se esconde atrás de você)</d> Eu não tô com medo! Tô te protegendo daqui de trás!",
 		"Tempestade! O clérigo falou que raio transforma aldeão em bruxa. Será que me transforma em gênio?"
 	],
-	"greet_friday": [
-		"SEXTOU! Eu não trabalho, mas comemoro igual! É meu dia favorito! Junto com os outros seis.",
-		"Sextou, {player}! Bora fazer nada? Eu sou especialista. Faço nada a semana inteira.",
-		"É sexta! Ou é terça? Ah, sextou mesmo assim! Ninguém me impede!"
-	],
-	"greet_saturday": [
-		"Sábado tem feira! Vou vender... hmm... nada. Mas vou ficar lá parado com cara de vendedor.",
-		"Sábado de festa! Vou dançar! Da última vez eu dancei e a vaca fugiu. Ela não tem ritmo.",
-		"Sábado! Dia de descanso! Descansar do quê? Não sei. Mas vou descansar com força!"
-	],
-	"greet_sunday": [
-		"Domingo! Almoço na casa da minha mãe! Ela faz bolo e eu como o bolo. Divisão justa.",
-		"Hrmm... domingo... tô com preguiça... até piscar tá cansativo... <d>(ele boceja)</d>"
-	],
 	"lore_done": [
 		"Já te contei uma história hoje! Eu acho. Não lembro. Mas a minha mãe disse que é uma por dia, senão meu cérebro esquenta.",
 		"Mais história? Hoje acabou! Meu estoque de ideias é pequenininho. Pergunta pros outros, eles sabem coisa de verdade.",

@@ -1,0 +1,139 @@
+{
+	"greet_friendly": [
+		"<p>*vwoop*</p> ...{player}. Você de novo. O ar fica menos torto quando você chega.",
+		"Você não olha nos meus olhos. Você lembra. Isso é bom. Fique.",
+		"Eu vi você de muito longe. Saltei até aqui. Só para ver de perto. Fale.",
+		"Você é pequeno. Mas fala certo. Poucos falam certo. Bem-vindo, amigo curto."
+	],
+	"greet_neutral": [
+		"<p>*vwoop*</p> ...Uma criatura baixa. Olhando para o chão. Bom. Continue olhando. Fale.",
+		"Você tem cheiro de chuva. Não gosto de chuva. Mas falo. Pouco.",
+		"Seu mundo é cheio de cores. Barulhento. Molhado. O que você quer de mim?",
+		"Eu carrego. Eu olho. Eu salto. Hoje, talvez, eu falo. Diga."
+	],
+	"greet_cold": [
+		"Você tem cheiro de pérola tirada. Muitas. Fale rápido. Ou vá.",
+		"Hm. Conheço sua espécie. Encara. Corta. Leva o coração. Fale de longe."
+	],
+	"hostile": [
+		"<r>Você levou corações do meu povo.</r> Não fale comigo. Não olhe para mim.",
+		"<p>*VWOOP*</p> <r>Fora.</r> Antes que eu salte para trás de você.",
+		"<r>Ladrão de pérola.</r> Eu lembro de você. Todos nós lembramos."
+	],
+	"followup": [
+		"Mais? Fale. O tempo aqui é comprido. Como eu.",
+		"Ainda aqui? Bom. Pergunte.",
+		"<p>*vwoop*</p> ...Eu escuto. Com o corpo todo.",
+		"Diga. Mas não olhe nos olhos."
+	],
+	"bye": [
+		"<p>*vwoop*</p> ...Vá. E fique longe da água. Ela é ruim. Para mim. Talvez para você também.",
+		"Até outro salto, criatura baixa.",
+		"Vá em silêncio. O silêncio é educado.",
+		"Eu vou levar este bloco. Você vai levar esta conversa. Justo."
+	],
+	"greet_night": [
+		"A noite é boa. Escura como o Lugar Alto. Quase. Fale, {player}.",
+		"<p>*vwoop*</p> ...De noite seu mundo fica parecido com casa. Quase bonito. Fale.",
+		"Não ilumine meu rosto. A noite é minha. Divido um pouco com você."
+	],
+	"bye_night": [
+		"Vá. Mas cuidado. De noite seu mundo tem bichos famintos. Não eu. Outros.",
+		"<p>*vwoop*</p> ...Boa noite, criatura baixa. Não olhe para os outros como eu. Eles não são calmos."
+	],
+	"lore_done": [
+		"Chega. Memória cansa. Volte amanhã. Para mim, amanhã é um salto curto.",
+		"Já contei demais. Mais do que em mil anos. Amanhã eu conto outra.",
+		"<p>*vwoop*</p> ...A memória ficou pesada. Como bloco. Vou carregar sozinho agora. Volte depois."
+	],
+	"lore": [
+		[
+			"Antes daqui, havia o Lugar Alto. Um mundo sem chão. Luz roxa. Torres que cantavam.",
+			"No peito de cada um de nós, uma pérola. A pérola é o coração. Com ela, saltávamos entre os mundos. Abrir. Fechar. Estar lá.",
+			"Um dia, o Lugar Alto apagou. Como vela. Saltamos todos juntos. Caímos aqui. No Fim. Não era casa. Mas era perto."
+		],
+		[
+			"No Fim já moravam os Fechados. Os shulkers. Cascas roxas. Torres para esperar alguém que nunca vem. Pedimos abrigo. Deram.",
+			"Guardamos com eles a Primeira Pérola. A maior. O coração de todo o povo. Ela ficou no alto de uma torre deles. Confiamos.",
+			"Na noite em que a dragoa chegou, corremos para as torres. Os Fechados fecharam as portas. Fecharam as cascas. Ficamos fora, com ela. E a Pérola ficou dentro. Até hoje. Nunca perdoamos."
+		],
+		[
+			"Quando vocês nos derrubam, levam a pérola. Pedaço de coração. E jogam pelo ar. Para saltar como nós. Sem saber saltar.",
+			"Às vezes a pérola jogada quebra errado. Dela nasce um bicho pequeno. Roxo. Faminto. Sem memória. Sem nome. O endermite.",
+			"É um coração sem dono. Uma fome sem fim. Esmagamos quando vemos. É nojo. E é piedade. As duas coisas."
+		],
+		[
+			"Por que não suportamos ser encarados? No Lugar Alto, olho no olho era abrir uma porta. Era dizer: vou entrar em você.",
+			"Quando você nos encara, a porta abre. Dói. Gritamos. E saltamos até você, para fechar a porta. Do jeito que der.",
+			"E a água... No Lugar Alto não existia água. Aqui ela queima a pele e apaga o salto. Chuva são mil agulhas. Por isso fugimos dela."
+		],
+		[
+			"Do Lugar Alto não sobrou nada. Nem uma pedra. Nem uma torre. Nem a forma das coisas.",
+			"Então pegamos pedaços do seu mundo. Terra. Areia. Flor. Abóbora. Cada bloco é um pedaço de lembrança.",
+			"Um dia teremos blocos suficientes. Montaremos o Lugar Alto de novo. Ainda não lembramos a forma. Por isso levamos. Largamos. Levamos de novo."
+		],
+		[
+			"A dragoa. Asas pretas. Olhos roxos. Ela veio pelo céu numa noite sem estrelas. Sem a Primeira Pérola, não pudemos fugir para longe.",
+			"Ela prendeu a ilha com cristais nas torres de pedra. E nós ficamos. Andamos pela ilha dela. Como guardas que ninguém chamou.",
+			"Quando você a derruba, a ilha fica quieta. Não choramos. Não comemoramos. Só esperamos. Porque alguém sempre chama ela de volta."
+		]
+	],
+	"player_lore": [
+		"De onde vocês vieram?",
+		"Por que vocês odeiam os shulkers?",
+		"Por que você pega os blocos?",
+		"Me conta sobre a dragoa."
+	],
+	"player_more_lore": [
+		"Conta mais.",
+		"E depois?",
+		"Continua, eu tô ouvindo.",
+		"Tem mais alguma lembrança?"
+	],
+	"player_bye": [
+		"Até mais. Prometo não te encarar.",
+		"Fui. Fica longe da chuva.",
+		"Tchau. Deixa os blocos da minha casa em paz, tá?",
+		"Até o próximo salto."
+	],
+	"names": [
+		"Vrun",
+		"Zhaar",
+		"Ixa",
+		"Ommur",
+		"Teel",
+		"Kzaa",
+		"Yrr",
+		"Vehl",
+		"Saaz",
+		"Ukth"
+	],
+	"extra": {
+		"untranslated_reply": [
+			"Hã? Não entendi nada...",
+			"Desculpa, mas... isso é alguma língua?",
+			"Tá, tá... vou fingir que entendi. Concordo!",
+			"Pode repetir? Mais devagar? Em português, de preferência?"
+		],
+		"translator_hint": [
+			"<d>(Esses símbolos... são iguais aos da mesa de encantamento. Será que alguém sabe ler isso?)</d>",
+			"<d>(A língua dele parece a escrita que flutua da mesa de encantamento. Talvez nas Cidades do Fim exista algo que traduza.)</d>",
+			"<d>(Os shulkers guardam de tudo nos baús das Cidades do Fim. Quem sabe um deles não tem um jeito de entender os Endermen?)</d>"
+		],
+		"translator_first": [
+			"<p>*vwoop?*</p> ...Você... entende? Você entende! Faz mil anos que ninguém de fora entende. Com que coisa? Ah. O Tradutor. Era nosso.",
+			"Espere. Fale de novo. ...Sim. As palavras chegam inteiras. Os Fechados guardaram isso também? Ladrões. Mas hoje... hoje estou feliz. Estranho. Feliz."
+		],
+		"shulker": [
+			"Os Fechados. Cascas que só abrem para atirar. Fecharam as portas na pior noite. Nunca esqueço.",
+			"Se você vir um shulker, diga: os Altos lembram. Ele vai fechar a casca. É o que eles sabem fazer.",
+			"Eles dizem que guardam a Primeira Pérola para proteger o mundo. Mentira. Guardam porque gostam de guardar. Ladrões de casca.",
+			"<p>*VWOOP*</p> Não fale deles. A cabeça fica quente. O ar fica torto."
+		],
+		"endermite": [
+			"Endermite. Bicho de pérola quebrada. Não tem nome. Não tem casa. Só tem fome. Que nojo.",
+			"Se jogar pérola, olhe onde ela cai. Às vezes cai um endermite junto. Esmague. Por nós.",
+			"Eles cheiram a coração roubado. Quando vejo um, eu salto. E esmago. Sempre."
+		]
+	}
+}

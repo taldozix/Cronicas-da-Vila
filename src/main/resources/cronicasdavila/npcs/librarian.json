@@ -72,20 +72,6 @@
 		"Uma tempestade! Afaste-se das janelas, {player}. Um raio pode transformar um aldeão em bruxa. E uma biblioteca em cinzas.",
 		"Ouça esses trovões... como tambores de um épico. Assustadores, porém literariamente magníficos."
 	],
-	"greet_friday": [
-		"Sextou, como diz o vulgo. Eu prefiro dizer: chegamos ao término da semana laboral. Mas sextou, sim.",
-		"Sexta-feira! Hoje encerro o expediente mais cedo para ler por prazer. Ou seja, continuo lendo.",
-		"Sextou, {player}! Separei um romance para o fim de semana. Novecentas páginas. Delicioso."
-	],
-	"greet_saturday": [
-		"Sábado! Dia de feira. Montarei uma banca de livros usados. Ninguém comprará, mas todos folhearão.",
-		"Sábado de festa na praça. Convidaram-me a declamar um poema. Escolhi um de quarenta estrofes. Serei breve.",
-		"Ah, sábado. Dia de descanso, de chá e de reler os clássicos pela décima vez."
-	],
-	"greet_sunday": [
-		"Domingo, caro jovem. Almoço em família. Meu primo sempre derruba o feijão no meu livro.",
-		"Hrmm... domingo. Dia de preguiça erudita: ler deitado, de pijama, sem notas de rodapé."
-	],
 	"reward_intro": [
 		"Concluída a tarefa, terei a honra de lhe conceder",
 		"A título de justa remuneração intelectual, ofereço",

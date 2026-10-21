@@ -72,20 +72,6 @@
 		"Tempestade, filho das estrelas. O céu está reescrevendo destinos. Fique sob um teto até ele terminar.",
 		"Ouça os trovões... São os ancestrais discutindo. Melhor não se meter na conversa deles."
 	],
-	"greet_friday": [
-		"Sextou, filho das estrelas. Até os espíritos ficam mais leves na sexta-feira.",
-		"Sexta-feira... Acendi uma vela de agradecimento pela semana. Ela queimou alegre. Sextou.",
-		"Sextou, {player}. Hoje o caldeirão descansa, e eu também. Só um pouquinho."
-	],
-	"greet_saturday": [
-		"Sábado, dia de feira. Levarei poções de cura para vender. A preço justo, como manda a luz.",
-		"Sábado de festa na praça. Abençoarei os quitutes antes que o bobão coma todos.",
-		"Sábado é dia de descanso para o corpo. A alma, essa, descansa quando quer."
-	],
-	"greet_sunday": [
-		"Domingo, filho das estrelas. Dia de almoço em família e de silêncio no templo.",
-		"Hrmm... domingo. Até os espíritos dormem até mais tarde. Eu os respeito profundamente."
-	],
 	"reward_intro": [
 		"Os espíritos prometem, e eu entrego",
 		"Ao fim desta jornada, os astros lhe reservam",

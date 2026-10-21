@@ -72,20 +72,6 @@
 		"Minha gente, que trovão... As ovelhas se encolheram todas no canto do cercado. Eu também queria me encolher.",
 		"Cuidado, {player}. Debaixo de um céu escuro assim, os monstros andam até de dia, e o raio não escolhe onde cai."
 	],
-	"greet_friday": [
-		"Sextou, minha gente. A semana foi longa como estrada de terra, mas o fim dela tem sombra fresca.",
-		"Ah, sexta-feira... As ovelhas sabem, sabia? Balem mais manso, como quem já sente o descanso.",
-		"Boa sexta, {player}. Amanhã vou tocar viola no terreiro. Se quiser, venha ouvir."
-	],
-	"greet_saturday": [
-		"Sábado, minha gente. Dia de tosquiar devagar, sem pressa, e de cochilar à sombra do umbuzeiro.",
-		"Bom sábado, {player}. Hoje tem feira na praça, e eu vou levar os cobertores que teci a semana toda.",
-		"Sábado é dia de família no alpendre, de cuscuz quentinho e de prosa até a lua chegar."
-	],
-	"greet_sunday": [
-		"Ouviu o sino, {player}? Domingo tem esse som de paz. Até as ovelhas param pra escutar.",
-		"Domingo, minha gente... dia de almoço com os meus, de rede e de não contar ovelha nenhuma."
-	],
 	"reward_intro": [
 		"Se você fizer isso com carinho, eu te dou",
 		"Pela ajuda, minha gente, separei com gratidão",

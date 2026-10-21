@@ -168,20 +168,6 @@
 		"<y>Trovão!</y> <i>Hehehe...</i> Dizem que um raio desses transforma aldeão em bruxa. Fica longe das árvores.",
 		"Tempestade feia, forasteiro. Num dia assim o céu abriu e eu apareci. Ou foi o contrário?"
 	],
-	"greet_friday": [
-		"Sexta-feira! Dia de liquidação. Brincadeira. Aqui nunca tem liquidação. <i>Hehehe...</i>",
-		"Sexta, forasteiro! Final de semana chegando, e o freguês com o bolso cheio. Adoro.",
-		"Sexta-feira... dia bom pra comprar e melhor ainda pra eu vender."
-	],
-	"greet_saturday": [
-		"Sábado! Ninguém trabalha. Menos eu. E as lhamas. Elas reclamam muito.",
-		"Sábado é dia de aventura, forasteiro. E aventura sem equipamento é suicídio. Coincidência eu estar aqui, né?",
-		"Fim de semana! Vamos às compras? <i>Hehehe...</i>"
-	],
-	"greet_sunday": [
-		"Domingo, forasteiro. Dia de descanso. Mas a mercadoria não descansa.",
-		"Domingo... os aldeões dormem até tarde. Hora perfeita pra negócios discretos. <i>Hehehe...</i>"
-	],
 	"names": [
 		"Mercador",
 		"O Encapuzado",

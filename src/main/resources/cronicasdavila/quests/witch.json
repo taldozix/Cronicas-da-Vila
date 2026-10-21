@@ -175,6 +175,122 @@
 			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:ender_pearl", "count": 2}, {"item": "minecraft:golden_carrot", "count": 4}]
 		},
 		{
+			"id": "witch_1_lirios",
+			"tier": 1,
+			"title": "Caminhas Pros Sapos",
+			"tone": "calm",
+			"offer": [
+				"<n>*Hohoho!*</n> Problema sério no pântano: os sapos estão dormindo na lama. Chefe da guarda dormindo na lama! Que vergonha pro nosso exército.",
+				"Eles precisam de caminha. E a caminha de sapo mais chique que existe é a <y>vitória-régia</y>. Verdinha, redondinha, flutuando.",
+				"A outra disse que sapo dorme em qualquer lugar. <d>(voz gelada: \"Dorme até no gelo, se eu mandar.\")</d> Não liga pra ela. Ela não tem coração. Tem um cubo de gelo."
+			],
+			"why": [
+				"Sapo descansado é sapo que espiona melhor. E sapo que espiona melhor traz fofoca melhor da vila. Tudo é investimento, peãozinho.",
+				"E vitória-régia na água faz um caminho bonito até a cabana. Pra visitas. Visitas úteis, tipo você."
+			],
+			"accept": [
+				"Isso! O exército agradece. Bom, o exército coaxa. É a mesma coisa.",
+				"<g>Colha</g> e traga <y>16 vitórias-régias</y>."
+			],
+			"progress": [
+				"Vitória-régia flutua na água parada dos pântanos, inclusive em volta desta cabana. Quebra com um soco, na hora.",
+				"Dá pra colher de barco, sem nem molhar o pé. E dá pra andar por cima delas, igual sapo."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Olha o <a>Bolota</a> já roncando numa! Primeira vez que ele faz alguma coisa. Mesmo que seja dormir.",
+				"Toma esmeraldas e lingotes de ferro. Pagamento de bruxa honesta. A única do pântano. Por enquanto."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:lily_pad"], "count": 16, "desc": "<g>Entregue</g> <y>16 vitórias-régias</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "witch_1_aranhas",
+			"tier": 1,
+			"title": "Ladras de Mosca",
+			"tone": "danger",
+			"offer": [
+				"As <r>aranhas</r> tão roubando as moscas dos meus sapos! Teia pra todo lado no mangue. Mosca nenhuma chega viva na boca do <a>Pipoca</a>.",
+				"Isso é guerra, peãozinho. Guerra de bicho pequeno, mas guerra. E na guerra a gente manda os peões na frente. <n>*Hohoho!*</n>",
+				"<d>(voz gelada: \"E traz os olhos depois, se sobrar.\")</d> Ela sempre pensa no lucro. Eu penso na justiça. E no lucro."
+			],
+			"why": [
+				"Sapo com fome não espiona, só reclama. E um exército de sapos reclamões é só um coral desafinado.",
+				"Além disso, aranha que aprende a roubar mosca logo aprende a roubar ingrediente. Melhor cortar o mal pela teia."
+			],
+			"accept": [
+				"Corajoso! Leva uma espada boa. Aranha pula, e pula na cara.",
+				"<r>Elimine</r> <r>12 aranhas</r> pra devolver as moscas ao pântano."
+			],
+			"progress": [
+				"Aranhas atacam no escuro, à noite ou em cavernas. De dia, na luz, elas ficam calmas e só brigam se você bater primeiro.",
+				"Elas sobem paredes, então muro não segura. Fica em lugar aberto e golpeia quando ela pular."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Ouviu? Os sapos tão coaxando de alegria. Ou de fome ainda. Mas é um coaxo mais feliz.",
+				"Toma esmeraldas e garrafas de experiência. Os olhos que você achou pode ficar. A outra que não saiba."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider"], "count": 12, "desc": "<r>Elimine</r> <r>12 aranhas</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:experience_bottle", "count": 6}]
+		},
+		{
+			"id": "witch_1_cana",
+			"tier": 1,
+			"title": "Doce Que Corre",
+			"tone": "calm",
+			"offer": [
+				"Sabe qual é a poção mais importante de toda bruxa? A de <p>velocidade</p>. Pra fugir dos narigudos com tocha. A gente aprendeu do jeito difícil.",
+				"E poção de velocidade leva açúcar. E açúcar vem da <y>cana-de-açúcar</y>. E cana dá muito trabalho de colher. Por isso você existe. <n>*Hohoho!*</n>",
+				"A outra quer o açúcar pra pôr no chá gelado dela. Eu finjo que não sei."
+			],
+			"why": [
+				"Bruxa rápida é bruxa viva. E bruxa viva tem quatrocentos anos de rancor pra gastar.",
+				"E o que sobrar vira bolo. Bolo de bruxa. Não pergunta o recheio."
+			],
+			"accept": [
+				"Ótimo. Colhe bastante e não come pelo caminho. Eu sei contar.",
+				"<g>Colha</g> e traga <y>32 canas-de-açúcar</y>."
+			],
+			"progress": [
+				"Cana nasce na beira da água, em cima de areia, terra ou grama. Rios e praias costumam ter muita.",
+				"Quebra o pedaço de cima e deixa a base no chão: ela cresce de novo sozinha. Planta mais umas na beira d'água e volta depois."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Que doçura! Literalmente. Já sinto as pernas mais rápidas só de olhar.",
+				"Toma esmeraldas e pó de pedra luminosa. Põe na poção e ela fica mais forte. Igual a gente, depois do raio."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:sugar_cane"], "count": 32, "desc": "<g>Entregue</g> <y>32 canas-de-açúcar</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:glowstone_dust", "count": 8}]
+		},
+		{
+			"id": "witch_1_carvao",
+			"tier": 1,
+			"title": "Lenha Pra Minha Fogueira",
+			"tone": "calm",
+			"offer": [
+				"Shh, fala baixo. Esse pedido é meu, não da outra. Ela congelou minha fogueira de novo. A terceira vez essa semana.",
+				"Preciso de <y>carvão vegetal</y>. Muito. Carvão de madeira queima bonito, cheira a floresta e deixa a outra de mau humor. Perfeito.",
+				"<d>(voz gelada lá do fundo: \"Eu tô ouvindo.\")</d> Ela não tá ouvindo. Vai logo."
+			],
+			"why": [
+				"Sem fogo, sem caldeirão. Sem caldeirão, sem poção. Sem poção, sem plano. Viu? O Grande Plano inteiro depende de um pedaço de carvão.",
+				"E fogueira acesa a noite toda espanta os narigudos curiosos. Eles acham que é fantasma. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Isso! Lá na vila tem fornalha, se você souber pedir emprestado. Ou pegar. Não conta pra ninguém que eu disse isso.",
+				"<g>Entregue</g> <y>32 carvões vegetais</y>."
+			],
+			"progress": [
+				"Carvão vegetal sai de toras de madeira queimadas na fornalha. Qualquer madeira serve.",
+				"Dica de bruxa: a primeira leva pode queimar com tábua, e depois o próprio carvão alimenta a fornalha."
+			],
+			"complete": [
+				"<n>*HOHOHO!*</n> Que labareda linda! A outra foi dormir na chaminé de raiva. Melhor dia da semana.",
+				"Toma esmeraldas e redstone. Redstone deixa a poção durar mais. Igual a minha fogueira agora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:charcoal"], "count": 32, "desc": "<g>Entregue</g> <y>32 carvões vegetais</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:redstone", "count": 16}]
+		},
+		{
 			"id": "witch_2_luzes",
 			"tier": 2,
 			"title": "Faróis do Pântano",
@@ -347,6 +463,122 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:splash_potion"], "count": 6, "desc": "<g>Entregue</g> <y>6 poções arremessáveis</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:glowstone_dust", "count": 16}, {"item": "minecraft:redstone", "count": 16}]
+		},
+		{
+			"id": "witch_2_gelo",
+			"tier": 2,
+			"title": "O Pedido da Outra",
+			"tone": "calm",
+			"offer": [
+				"<d>(a voz gelada sai do caldeirão, sem esperar ninguém)</d> Hmpf. Ela tá dormindo. Agora quem fala sou eu. Rápido, antes que ela acorde.",
+				"A cabana tá quente demais. Ela acende fogo até debaixo da cama. Eu preciso de <y>gelo</y>. Muito gelo. Pra fazer meu canto da cabana.",
+				"<n>(um ronco com faíscas vem do outro lado)</n> Ela não pode saber. <a>*Kekeke.*</a> Vai, peão."
+			],
+			"why": [
+				"Gelo deixa minhas poções frescas e meu humor menos pior. E derreter o gelo dela é o passatempo favorito da minha irmã. Preciso de reserva.",
+				"<n>*Hohoho?*</n> <d>(voz gelada: \"Não é nada! Volta a dormir!\")</d>"
+			],
+			"accept": [
+				"Ótimo. Quebra bastante. Cada bloco quebrado é um bloco a menos de calor no mundo.",
+				"<g>Quebre</g> <y>32 blocos de gelo</y> (comum ou compactado)."
+			],
+			"progress": [
+				"Gelo comum aparece em rios e lagos congelados dos biomas frios. Gelo compactado forma os espinhos de gelo e os icebergs no mar gelado.",
+				"Quebrar gelo comum sem <p>Toque Suave</p> deixa água no lugar. Gelo compactado quebrado assim some. Picareta deixa tudo mais rápido."
+			],
+			"complete": [
+				"<a>*Kekeke!*</a> Perfeito. Já sinto o frio voltando pros ossos. <d>(do outro lado: \"Hã? Quem tá aí?\")</d> Ninguém! Dorme!",
+				"Toma, peão: um diamante, lingotes de ferro e um livro de <p>Passos Gelados II</p>. Anda em cima d'água. Igual eu. Não conta pra ela."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:ice", "minecraft:packed_ice"], "count": 32, "desc": "<g>Quebre</g> <y>32 blocos de gelo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:frost_walker", "level": 2}]
+		},
+		{
+			"id": "witch_2_concorrencia",
+			"tier": 2,
+			"title": "Bruxa Demais Num Pântano Só",
+			"tone": "danger",
+			"offer": [
+				"Péssima notícia, peãozinho. Apareceram <r>bruxas</r> por aí que não são da família. Concorrência! No NOSSO pântano!",
+				"Elas vendem poção pros narigudos? Não sabemos. Elas roubam nossas receitas? Achamos que sim. Elas têm chapéu mais bonito? <r>Jamais.</r>",
+				"<d>(voz gelada: \"O chapéu delas é mais bonito, sim.\")</d> Viu? Até a outra foi enfeitiçada. Precisamos agir."
+			],
+			"why": [
+				"Pântano com bruxa demais vira bagunça. Um pântano, um caldeirão, duas gêmeas. Essa é a lei.",
+				"E sem concorrência, quando os narigudos precisarem de poção, só vão ter a gente pra pedir. Mercado é mercado. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Cuidado: elas bebem poção quando apanham, igual a gente. A gente ensinou isso pro mundo todo. Arrependimento.",
+				"<r>Elimine</r> <r>5 bruxas</r> concorrentes."
+			],
+			"progress": [
+				"Bruxas andam à noite em lugares escuros, moram em cabanas de pântano e vêm junto com as invasões dos saqueadores.",
+				"Elas bebem poção de cura e de resistência ao fogo, e jogam veneno e lentidão. Ataque rápido, ou use arco de longe."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Pântano livre! O chapéu mais bonito voltou a ser o meu. <d>(voz gelada: \"O meu.\")</d> O nosso.",
+				"Toma um diamante, esmeraldas e pó de pedra luminosa. Fica com os frascos que elas largaram. Prêmio de guerra."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:witch"], "count": 5, "desc": "<r>Elimine</r> <r>5 bruxas</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:glowstone_dust", "count": 12}]
+		},
+		{
+			"id": "witch_2_tinta",
+			"tier": 2,
+			"title": "Tinta Que Brilha no Escuro",
+			"tone": "calm",
+			"offer": [
+				"O Grande Plano tá ficando grande demais pra caber na cabeça. Precisamos escrever. Mas escrever onde os narigudos não consigam ler.",
+				"A ideia é minha: tinta que só brilha no escuro. De dia, papel em branco. De noite, o plano inteiro aparece. <n>*Hohoho!*</n>",
+				"Pra isso preciso de <y>bolsas de tinta brilhante</y>. Elas vêm de lulas que moram no fundo escuro do mar. A outra tem medo de lula. Eu também."
+			],
+			"why": [
+				"Se o Breu for pego carregando o plano, ninguém vai entender nada. Só um papel em branco e um gato muito mal-humorado.",
+				"E tinta brilhante também serve pra escrever ameaças nas placas da vila. Que de noite brilham. Que medo, hein? <a>*Kekeke!*</a>"
+			],
+			"accept": [
+				"Leva uma poção de visão noturna, se tiver. Lá embaixo é escuro de verdade.",
+				"<g>Entregue</g> <y>8 bolsas de tinta brilhante</y>."
+			],
+			"progress": [
+				"Lulas brilhantes nascem em água bem escura e funda, como lagos de cavernas e o fundo do oceano.",
+				"Elas brilham de longe na escuridão. Uma poção de respiração ajuda a ficar mais tempo lá embaixo."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Olha como brilha! Já escrevi a primeira linha: <i>\"Passo um: tudo.\"</i> Tá ótimo.",
+				"Toma um diamante, esmeraldas e garrafas de experiência. E esquece o que viu escrito. Você não viu nada."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:glow_ink_sac"], "count": 8, "desc": "<g>Entregue</g> <y>8 bolsas de tinta brilhante</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:experience_bottle", "count": 8}]
+		},
+		{
+			"id": "witch_2_creepers",
+			"tier": 2,
+			"title": "Pólvora Direto da Fonte",
+			"tone": "danger",
+			"offer": [
+				"Toda poção arremessável precisa de pólvora. E a pólvora das bruxas acabou. A outra usou tudo pra explodir meu boneco de neve. Quer dizer, o dela.",
+				"Comprar dos narigudos? Nunca. A gente pega direto da fonte: os <r>creepers</r>. Aqueles pepinos verdes que fazem <i>ssssss</i>.",
+				"Leva o Breu junto, se quiser. Ele é ótimo nisso. Não pergunta por quê. <n>*Hohoho!*</n>"
+			],
+			"why": [
+				"Poção que voa longe é poção que acerta narigudo sem a gente sair do pântano. Pólvora é o nosso correio.",
+				"E cada creeper a menos é uma cabana a menos explodida. Já reconstruímos três. A outra chorou em todas. Eu também, mas de fumaça."
+			],
+			"accept": [
+				"Isso! Bate e recua. Creeper que chia tá querendo abraço. Não abraça.",
+				"<r>Elimine</r> <r>10 creepers</r>."
+			],
+			"progress": [
+				"Creepers aparecem no escuro e chegam em silêncio. Quando chiarem, se afaste rápido que a explosão é cancelada.",
+				"Creepers fogem de gatos e jaguatiricas. Por isso o Breu é tão útil. Por isso e porque ele espiona."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Que cheiro de enxofre! Já dá pra fazer uma frota inteira de poções voadoras.",
+				"Toma um diamante, lingotes de ferro e esmeraldas. Ferro pra consertar o que os creepers estragaram. Sempre estragam alguma coisa."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 10, "desc": "<r>Elimine</r> <r>10 creepers</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 1}, {"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:emerald", "count": 8}]
 		},
 		{
 			"id": "witch_3_lagrimas",
@@ -523,6 +755,122 @@
 			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
 		},
 		{
+			"id": "witch_3_magma",
+			"tier": 3,
+			"title": "Proteção Contra Irmã",
+			"tone": "calm",
+			"offer": [
+				"A outra tá de mal comigo. Diz que eu queimei o chapéu favorito dela. O azul. Foi sem querer. Quatrocentas vezes sem querer. <n>*Hohoho!*</n>",
+				"Agora ela exige <y>creme de magma</y> pra poção de resistência ao fogo. A única poção que ela bebe. Por minha causa, ela diz. Exagero.",
+				"<d>(voz gelada: \"Exagero? Eu dormi numa poça ontem. Uma POÇA.\")</d> Viu? Drama. Mas paga bem, o drama dela."
+			],
+			"why": [
+				"Se ela derreter, quem é que eu vou irritar pelos próximos quatrocentos anos? Os sapos? Sapo não tem graça nenhuma.",
+				"E bruxa de gelo protegida do fogo é ótima pra mandar na frente nas invasões. <d>(voz gelada: \"Eu ouvi isso.\")</d> Não ouviu nada."
+			],
+			"accept": [
+				"Cuidado no Nether, peãozinho. Lá é tudo quente. Tudo meu, praticamente. Volta inteiro.",
+				"<g>Entregue</g> <y>8 cremes de magma</y>."
+			],
+			"progress": [
+				"Cubos de magma pulam pelo Nether, principalmente nos Deltas de Basalto e nas fortalezas. Os maiores se dividem em menores.",
+				"Também dá pra fazer creme de magma juntando uma bola de slime com pó de blaze na bancada."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Ela já tá bebendo. E me olhando com cara de desafio. Hoje à noite tem briga. Que delícia. <a>*Kekeke!*</a>",
+				"Toma quatro diamantes e um livro de <p>Proteção Contra Fogo IV</p>. Pra você também aguentar o meu calor. Todo mundo precisa."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:magma_cream"], "count": 8, "desc": "<g>Entregue</g> <y>8 cremes de magma</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "witch_3_guardioes",
+			"tier": 3,
+			"title": "Olhos Que Vigiam o Mar",
+			"tone": "danger",
+			"offer": [
+				"O Breu voltou do litoral apavorado. Disse que tem uns <r>peixes de olho só</r> vigiando o mar. Olho grande, espinho pra todo lado.",
+				"Espião vigiado por outro espião? Inadmissível! Só a gente vigia neste mundo. Os <r>guardiões</r> precisam aprender isso.",
+				"<d>(voz gelada: \"E eles fazem cara feia pra gente. Sem educação.\")</d>"
+			],
+			"why": [
+				"Aquele templo debaixo d'água é perfeito pra um covil de bruxa. Molhado, escuro, cheio de esponja. A outra adora.",
+				"E monstro que vigia demais acaba vendo o que não deve. Tipo o Grande Plano. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Leva poção de respiração e fica longe do raio do olho. Ele acerta de longe.",
+				"<r>Elimine</r> <r>10 guardiões</r>."
+			],
+			"progress": [
+				"Guardiões cercam os monumentos oceânicos, os templos de prismarinho no fundo do mar. O raio deles carrega aos poucos: se esconde atrás de um bloco.",
+				"Bater neles com os espinhos abertos machuca você também. E o guardião ancião deixa a picareta lenta, cuidado."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Mar sem vigia! O Breu já voltou a pescar sossegado. E a espionar sossegado.",
+				"Toma quatro diamantes, uma maçã dourada e garrafas de experiência. E guarda os prismarinhos, que a outra quer decorar a cabana."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:guardian"], "count": 10, "desc": "<r>Elimine</r> <r>10 guardiões</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:experience_bottle", "count": 12}]
+		},
+		{
+			"id": "witch_3_narigudos",
+			"tier": 3,
+			"title": "Narigudo Podre Não Conta",
+			"tone": "danger",
+			"offer": [
+				"Uma coisa que até a gente acha nojenta: <r>aldeão zumbi</r>. O narigudo já é feio vivo. Podre, então? Sem condição.",
+				"Eles ficam andando perto do pântano gemendo <i>hrmm</i> com gosto de terra. Estragam o clima de mistério da cabana.",
+				"<d>(voz gelada: \"E fedem. Fedem muito.\")</d> Ela tem razão. Uma vez na vida."
+			],
+			"why": [
+				"Quando o pântano dominar as vilas, a gente quer narigudo inteiro e assustado, não podre e gemendo. Narigudo podre não paga imposto.",
+				"E zumbi que pega aldeão faz mais zumbi. Se deixar, a gente fica sem ninguém pra dominar. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Ótimo. E não tenta curar. Curar é coisa de clérigo. A gente era clérigo. Não dá certo.",
+				"<r>Elimine</r> <r>8 aldeões zumbis</r>."
+			],
+			"progress": [
+				"Alguns zumbis nascem como aldeões zumbis, com o nariz grande. Também tem vilas abandonadas cheias deles.",
+				"Zumbi queima no sol, mas fica vivo na sombra e com capacete. E zumbi que pega aldeão pode transformar o coitado em mais um."
+			],
+			"complete": [
+				"<n>*Hohohoho!*</n> Que alívio pro nariz! Para o nariz deles, no caso. Pra gente também.",
+				"Toma três diamantes, uma maçã dourada e esmeraldas. Esmeralda tirada de narigudo podre? Não pergunta."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie_villager"], "count": 8, "desc": "<r>Elimine</r> <r>8 aldeões zumbis</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:emerald", "count": 16}]
+		},
+		{
+			"id": "witch_3_fogo",
+			"tier": 3,
+			"title": "Bolinhas de Fogo",
+			"tone": "calm",
+			"offer": [
+				"<n>*HOHOHO!*</n> Tive a melhor ideia dos últimos cem anos. A outra tem o sopro de gelo. Eu vou ter munição de fogo. De bolso.",
+				"Quero <y>cargas de fogo</y>. Aquelas bolinhas que acendem tudo. Pra acender o caldeirão, a fogueira e, se precisar, o chapéu de alguém.",
+				"<d>(voz gelada: \"Se encostar no meu chapéu, eu congelo seu caldeirão pra sempre.\")</d> Ninguém falou do seu chapéu. Ainda."
+			],
+			"why": [
+				"Toda vez que a outra congela meu fogo, eu levo uma hora pra acender de novo. Com carga de fogo, um segundo. Um!",
+				"E uma bolinha de fogo jogada pela janela é ótima pra assustar narigudo na festa da colheita. Só pra assustar. Talvez."
+			],
+			"accept": [
+				"Fabrica pra mim. E não queima a mão. Peão sem mão não fabrica mais nada.",
+				"<g>Fabrique</g> <y>16 cargas de fogo</y>."
+			],
+			"progress": [
+				"Carga de fogo é feita na bancada com pó de blaze, pólvora e carvão. Cada receita faz três.",
+				"Pó de blaze vem da vara de blaze, dos blazes das fortalezas do Nether. Pólvora vem dos creepers."
+			],
+			"complete": [
+				"<n>*Hohohohoho!*</n> Que cheirinho de queimado! A outra já foi se esconder na chaminé.",
+				"Toma quatro diamantes e um livro de <n>Aspecto Flamejante II</n>. Agora sua espada também pega fogo. Bem-vindo à família. Quase."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:fire_charge"], "count": 16, "desc": "<g>Fabrique</g> <y>16 cargas de fogo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_aspect", "level": 2}]
+		},
+		{
 			"id": "witch_4_saqueadores",
 			"tier": 4,
 			"title": "Quem Manda Nos Saqueadores",
@@ -695,6 +1043,93 @@
 			],
 			"objective": {"type": "deliver", "targets": ["minecraft:shroomlight"], "count": 24, "desc": "<g>Entregue</g> <y>24 cogumeluzes</y>"},
 			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:experience_bottle", "count": 16}]
+		},
+		{
+			"id": "witch_4_devastador",
+			"tier": 4,
+			"title": "A Fera Que Não Obedece",
+			"tone": "danger",
+			"offer": [
+				"Lembra que eu disse que os saqueadores trabalham pra gente sem saber? Pois é. Tem uma exceção. Uma bem grande. Com chifre.",
+				"O <r>devastador</r>. Aquela fera que eles trazem nas invasões. Quebra plantação, quebra folha, quebra tudo. Inclusive bruxa que fica na frente.",
+				"<d>(voz gelada: \"Ele pisou no meu pé numa invasão. Em 1700 e pouco. Eu lembro.\")</d> Ela lembra. Ela sempre lembra."
+			],
+			"why": [
+				"Sem o devastador, a invasão perde a força. E saqueador sem força volta a fazer o que a gente manda. Mesmo sem saber.",
+				"E é vingança pelo pé da outra. A gente pode brigar, mas ninguém pisa no pé de uma gêmea. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Leva escudo. Quando ele urrar, recua. E não fica na frente quando ele correr.",
+				"<r>Elimine</r> <r>3 devastadores</r>."
+			],
+			"progress": [
+				"Devastadores aparecem nas invasões dos saqueadores, que começam quando você entra numa vila com o efeito de Presságio Ruim.",
+				"Bloquear o ataque dele com escudo deixa ele atordoado por um tempo, e então ele solta um urro que empurra todo mundo. Ataque logo depois."
+			],
+			"complete": [
+				"<n>*HOHOHOHO!*</n> Três feras no chão! A outra fez uma dança. Uma dança de gelo. Foi esquisito, mas bonito.",
+				"Toma dez diamantes, duas maçãs douradas e um livro de <p>Afiação V</p>. Espada de peão bom tem que cortar chifre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ravager"], "count": 3, "desc": "<r>Elimine</r> <r>3 devastadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+		},
+		{
+			"id": "witch_4_evocadores",
+			"tier": 4,
+			"title": "Ladrão de Feitiço",
+			"tone": "danger",
+			"offer": [
+				"Agora é sério, {player}. Existe alguém que se diz mago. Um <r>evocador</r>. Ele faz presas saírem do chão e chama fantasminhas.",
+				"Esse truque das presas? Era NOSSO. A outra inventou em 1650. Contou pra um saqueador bêbado numa festa. E agora todo evocador usa.",
+				"<d>(voz gelada: \"Foi só uma vez! E ele parecia tão interessado!\")</d>"
+			],
+			"why": [
+				"Feitiço roubado é ofensa grave pra bruxa. Se a gente deixar, amanhã eles roubam a receita da poção de lentidão também.",
+				"E quem tem as presas é a gente. Nem que seja pra rir. <a>*Kekeke!*</a> Vai, cobra a dívida."
+			],
+			"accept": [
+				"Acaba com os fantasminhas primeiro, que eles voam através da parede. Depois corre pro evocador.",
+				"<r>Elimine</r> <r>3 evocadores</r>."
+			],
+			"progress": [
+				"Evocadores moram nas mansões da floresta escura e aparecem nas ondas mais fortes das invasões dos saqueadores.",
+				"Quando as presas brotarem do chão, saia do caminho delas. Eles fogem de você, então chegue perto e bata rápido."
+			],
+			"complete": [
+				"<n>*Hohohohoho!*</n> Justiça de bruxa! O feitiço voltou pra família. Ou pelo menos saiu da família deles.",
+				"Toma nove diamantes, duas maçãs douradas e um livro de <p>Proteção IV</p>. E aquele totem que eles largaram, guarda. Peão vivo é peão útil."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:evoker"], "count": 3, "desc": "<r>Elimine</r> <r>3 evocadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "witch_4_ecos",
+			"tier": 4,
+			"title": "O Eco do Fundo do Mundo",
+			"tone": "calm",
+			"offer": [
+				"Escuta. Lá embaixo, muito embaixo, tem uma cidade antiga e silenciosa. Lá dorme uma coisa que a gente não quer acordar.",
+				"Mas lá também tem <y>fragmentos de eco</y>. Pedaços de som congelado. A outra quer pro feitiço dela. Eu quero porque ela quer.",
+				"<d>(voz gelada: \"Com eco, eu escuto tudo que falam na vila. Tudo.\")</d> Viu? Até o Breu ficaria desempregado."
+			],
+			"why": [
+				"Um espião que escuta através das paredes. Um eco que guarda as fofocas. O Grande Plano não precisa de mais nada.",
+				"E o que é raro é poderoso. E o que é poderoso fica bonito no nosso chapéu. <n>*Hohoho!*</n>"
+			],
+			"accept": [
+				"Anda agachado. Faz silêncio. Não quebra sensor. E se ele acordar... corre. Bruxa nenhuma te culpa.",
+				"<g>Entregue</g> <y>8 fragmentos de eco</y>."
+			],
+			"progress": [
+				"Fragmentos de eco só aparecem nos baús das cidades antigas, nas profundezas do Sombrio Profundo, bem embaixo da terra.",
+				"Lá, barulho perto dos sensores aciona os gritadores e pode chamar o Warden. Andar agachado não ativa os sensores, e blocos de lã abafam as vibrações."
+			],
+			"complete": [
+				"<a>*Kekeke!*</a> Ouve isso? É a vila. Escuto até o ferreiro reclamando do joelho. Que delícia.",
+				"Toma nove diamantes, duas maçãs douradas e um livro de <p>Furtividade III</p>. Pra você andar quietinho como a gente."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:echo_shard"], "count": 8, "desc": "<g>Entregue</g> <y>8 fragmentos de eco</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:swift_sneak", "level": 3}]
 		},
 		{
 			"id": "witch_5_wither",

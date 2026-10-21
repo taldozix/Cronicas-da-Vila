@@ -72,20 +72,6 @@
 		"Caraca, que trovão, mermão! Desce do andaime agora, que raio adora cair em quem tá no alto!",
 		"Ih, {player}, com esse temporal os creepers andam até de dia. Se ouvir chiado, nem pensa: rala!"
 	],
-	"greet_friday": [
-		"Sextou, mermão! Hoje é dia de samba e churrasquinho na laje.",
-		"Caraca, sexta-feira! Bati massa a semana toda, tô moído, parceiro.",
-		"E aí, {player}! Sexta, mermão! Amanhã vou dar um mergulho na praia. Tu vem?"
-	],
-	"greet_saturday": [
-		"Sábado, mermão! Praia, futevôlei e biscoito de polvilho. Obra só na segunda, tá ligado?",
-		"Fala, {player}! Hoje tem feijoada na casa da minha tia. Família toda reunida, sinistro.",
-		"Bom sábado, parceiro! Vou na roda de samba da praça mais tarde. Chega aí!"
-	],
-	"greet_sunday": [
-		"Domingo, mermão... dia de dormir até tarde e almoçar com a família. Nem me fala em tijolo.",
-		"Ih, {player}, ouviu o sino da capela? Depois da missa é macarronada com frango na casa da coroa."
-	],
 	"reward_intro": [
 		"Caraca, se tu fizer isso, mermão, te pago",
 		"Fechou, parceiro? Fazendo a parada direito, tu leva",

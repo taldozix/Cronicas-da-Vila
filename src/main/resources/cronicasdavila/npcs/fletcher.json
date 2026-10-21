@@ -72,20 +72,6 @@
 		"Orra, meu, que raio! Sai de perto do campo de tiro, tipo, agora! Raio adora cair em lugar alto.",
 		"Mano do céu, {player}, que tempestade! Com esse céu escuro os esqueletos saem até de dia. Fica esperto."
 	],
-	"greet_friday": [
-		"Sextou, meu! Bora comer um pastel na praça depois do trampo?",
-		"Orra, mano, sexta-feira! Semana corrida pra caramba. Tô mais cansado que corda de arco velha.",
-		"E aí, {player}! Sexta, meu! Amanhã vou dar um rolê no torneio da vila vizinha. Bora?"
-	],
-	"greet_saturday": [
-		"Sábado, meu! Dia de pizza com a família e futebol na praça. Arco só na segunda.",
-		"Orra, {player}, hoje é dia de feira! Pastel e caldo de cana, mano. Melhor combo da vida.",
-		"Bom sábado, meu! Vou pescar com meu pai no lago. Ele não pega um peixe, mas a gente se diverte."
-	],
-	"greet_sunday": [
-		"Domingo, meu... tipo, hoje eu não faço nada. Só a macarronada da nonna e sofá.",
-		"E aí, {player}? Ouviu o sino da capela? Depois do almoço de família é cochilo, mano. Sagrado."
-	],
 	"reward_intro": [
 		"Orra, meu, se tu fizer isso, te pago",
 		"Fechou, mano? Fazendo o trampo, tu leva",
