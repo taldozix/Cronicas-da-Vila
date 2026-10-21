@@ -817,6 +817,7 @@ public final class QuestService {
 			case "librarian" -> "bibliotecários";
 			case "cleric" -> "clérigos";
 			case "piglin" -> "piglins";
+			case "piglin_brute" -> "piglins brutos";
 			case "pillager" -> "saqueadores";
 			case "shulker" -> "shulkers";
 			case "witch" -> "bruxas";
@@ -842,15 +843,16 @@ public final class QuestService {
 	}
 
 	/**
-	 * Vilão da História: Arquivilão, dominou todos os inimigos que dão missões (saqueadores, piglins e bruxas)
-	 * e tem karma negativo.
+	 * Vilão da História: Arquivilão, dominou todos os inimigos que dão missões (saqueadores, piglins, bruxas
+	 * e piglins brutos), fez tantas missões de vilão quanto o Herói da Vila precisa fazer de herói
+	 * ({@link Professions#LEGEND_QUESTS}) e tem karma negativo.
 	 */
 	public static boolean isVillain(PlayerData data) {
 		if (data.villainPermanent) {
 			return true;
 		}
 
-		if (data.villainRank < VillainRank.ARQUIVILAO.tier() || data.karma >= 0) {
+		if (data.villainRank < VillainRank.ARQUIVILAO.tier() || data.karma >= 0 || villainQuestsDone(data) < Professions.LEGEND_QUESTS) {
 			return false;
 		}
 
@@ -863,6 +865,21 @@ public final class QuestService {
 		}
 
 		return true;
+	}
+
+	/** Quantas missões de vilão diferentes o jogador já fez (repetições não contam, como no lado do herói). */
+	public static int villainQuestsDone(PlayerData data) {
+		int done = 0;
+
+		for (String faction : Professions.VILLAIN_FACTIONS) {
+			for (Quest quest : QuestRegistry.forProfession(faction)) {
+				if (data.completed.contains(quest.id)) {
+					done++;
+				}
+			}
+		}
+
+		return done;
 	}
 
 	/** Porcentagem de Vilania: quantas missões de vilão (de todas as facções inimigas) já foram feitas. */

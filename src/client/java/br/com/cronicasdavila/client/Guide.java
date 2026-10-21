@@ -8,7 +8,7 @@ final class Guide {
 	static final String[][] TOPICS = {
 			{
 					"Como funciona",
-					"Aldeões, piglins, saqueadores, bruxas, shulkers e o <a>Vendedor Ambulante</a> contam histórias e passam <y>missões</y>. Cada um tem o seu jeito de falar, e as falas mudam com o bioma da vila e com a hora do dia.",
+					"Aldeões, piglins, piglins brutos, saqueadores, bruxas, shulkers, endermen e o <a>Vendedor Ambulante</a> contam histórias e passam <y>missões</y>. Cada um tem o seu jeito de falar, e as falas mudam com o bioma da vila e com a hora do dia.",
 					"Cada missão é sorteada para você: a quantidade pedida e as recompensas variam um pouco, e às vezes vem um <a>bônus da sorte</a>.",
 					"Só dá para ter <y>uma missão ativa por profissão</y>. Volte a quem pediu (ou a qualquer NPC da mesma profissão) para entregar.",
 					"Cada NPC conta <y>uma curiosidade por dia</y>. Quer saber mais? Converse com outros, ou volte amanhã."
@@ -17,7 +17,7 @@ final class Guide {
 					"Níveis e afinidade",
 					"<o>Amador → Aprendiz → Aventureiro → Guerreiro → Mestre</o>. O nível sobe com a XP (0, 20, 40, 60 e 200) ou com missões. O que você conquista com missões fica para sempre.",
 					"Cada profissão tem a própria <y>afinidade</y> com você: 2 missões do nível atual sobem um nível e liberam missões maiores.",
-					"Uma missão de Mestre em cada uma das 13 profissões de aldeão dá o <o>Herói da Vila</o> permanente."
+					"Uma missão de Mestre em cada uma das 13 profissões de aldeão (pelo menos <y>117 missões</y>) dá o <o>Herói da Vila</o> permanente."
 			},
 			{
 					"Karma",
@@ -28,8 +28,8 @@ final class Guide {
 			},
 			{
 					"Vilania",
-					"Missões de <r>saqueadores</r>, <n>piglins</n> e <a>bruxas</a> sobem a Vilania: <r>Arruaceiro → Bandido → Renegado → Carrasco → Arquivilão</r>. A XP não conta e a Vilania nunca cai.",
-					"Arquivilão + a missão máxima de cada inimigo + karma negativo = <p>Vilão da História</p>: todo ser vivo foge de você, mas o mundo normal te cansa e, longe do Nether por um dia, você queima.",
+					"Missões de <r>saqueadores</r>, <n>piglins</n>, <n>piglins brutos</n> e <a>bruxas</a> sobem a Vilania: <r>Arruaceiro → Bandido → Renegado → Carrasco → Arquivilão</r>. A XP não conta e a Vilania nunca cai.",
+					"Arquivilão + a missão máxima de cada inimigo + <y>117 missões de vilão</y> diferentes (o mesmo mínimo do Herói da Vila) + karma negativo = <p>Vilão da História</p>: todo ser vivo foge de você, mas o mundo normal te cansa e, longe do Nether por um dia, você queima.",
 					"Com <r>100% de Vilania</r> (todas as missões de vilão), karma -1000 e o nível máximo, o efeito fica para sempre.",
 					"Desistir de um serviço de vilão é um ato de bondade: <g>+5 de karma</g>."
 			},
@@ -37,12 +37,12 @@ final class Guide {
 					"Barganha e trocas",
 					"Com afinidade <y>Aventureiro</y> ou mais com a profissão, aparece o botão <a>⚖ Barganhar</a> na tela de trocas.",
 					"Escolha a troca, ofereça outro item do inventário no lugar do preço e veja a chance antes de tentar. Se o aldeão recusar, você fica com o item, mas ele não barganha mais com você até amanhã.",
-					"Para conversar: aldeões com o botão direito; piglins usando ouro; saqueadores com uma <p>garrafa ominosa</p> na mão; bruxas com um <p>frasco de vidro</p>; shulkers com uma <p>fruta do coro</p>. O Vendedor Ambulante conversa com qualquer um (agachado, você abre direto as trocas)."
+					"Para conversar: aldeões com o botão direito; piglins usando ouro; saqueadores com uma <p>garrafa ominosa</p> na mão; bruxas com um <p>frasco de vidro</p>; shulkers com uma <p>fruta do coro</p>; o <n>Piglin Bruto</n> só fala com quem já é <r>Renegado</r> (Vilania 3). Os <p>endermen</p> falam numa língua antiga, igual aos símbolos da mesa de encantamento: só o raro <p>Tradutor Ender</p>, achado nos baús das Cidades do Fim, faz você entender. O Vendedor Ambulante conversa com qualquer um (agachado, você abre direto as trocas)."
 			},
 			{
 					"Vida nas vilas",
 					"Cada aldeão tem o seu <y>dia de folga</y>, e cada vila tem o seu costume: a folga se repete a cada 3 a 7 dias, conforme a vila. Na folga o aldeão tira o uniforme, não trabalha, não passa missões e não abre a banca, mas fica com algo da profissão na mão. Os trabalhos pesados folgam dois dias por ciclo.",
-					"Os NPCs falam diferente com <a>chuva</a>, com <r>tempestade</r>, à noite e na <y>sexta, no sábado e no domingo</y>. O dia da semana aparece na aba Início.",
+					"Os NPCs falam diferente com <a>chuva</a>, com <r>tempestade</r> e à noite. E cada profissão estranha a região da sua vila de um jeito: um oceanógrafo do deserto não fala igual a um da taiga.",
 					"Dizem que alguns clérigos se chamam <p>Elebin</p>... mas é raro encontrar um.",
 					"Se um aldeão te vir pegando coisas de um baú da vila que não é seu, você perde karma e os <r>golens</r> vão atrás de você. Baús que você colocou ou onde guardou coisas são seus.",
 					"À noite os NPCs falam diferente. E se estiverem dormindo... deixe-os dormir."

@@ -63,6 +63,8 @@ final class Sfx {
 			case "shulker" -> 0.6F;
 			case "witch" -> 1.18F;
 			case "trader" -> 0.85F;
+			case "brute" -> 0.6F;
+			case "enderman" -> 0.5F;
 			default -> 1.0F;
 		};
 

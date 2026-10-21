@@ -64,6 +64,7 @@ public final class QuestRegistry {
 		dialogueKeys.add(Professions.UNEMPLOYED);
 		dialogueKeys.add(Professions.CHILD);
 		dialogueKeys.add(Professions.WANDERING_TRADER);
+		dialogueKeys.add(Professions.ENDERMAN);
 
 		for (String key : dialogueKeys) {
 			NpcDialogue dialogue = readJson("/cronicasdavila/npcs/" + key + ".json", NpcDialogue.class);

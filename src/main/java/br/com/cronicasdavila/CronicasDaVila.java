@@ -61,6 +61,7 @@ public class CronicasDaVila implements ModInitializer {
 		PlayerDataManager.init();
 		DialogueManager.init();
 		ModEffects.init();
+		br.com.cronicasdavila.item.ModItems.init();
 		br.com.cronicasdavila.sound.ModSounds.init();
 		ModPayloads.register();
 		QuestRegistry.load();
@@ -90,6 +91,7 @@ public class CronicasDaVila implements ModInitializer {
 		UseBlockCallback.EVENT.register((player, level, hand, hitResult) -> {
 			if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
 				TheftSystem.onUseBlock(serverPlayer, (net.minecraft.server.level.ServerLevel) level, hitResult.getBlockPos());
+				br.com.cronicasdavila.item.ModItems.onUseBlock(serverPlayer, (net.minecraft.server.level.ServerLevel) level, hitResult.getBlockPos());
 			}
 
 			return InteractionResult.PASS;

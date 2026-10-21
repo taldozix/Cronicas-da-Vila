@@ -7,6 +7,7 @@ import java.util.List;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.FontDescription;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
@@ -26,11 +27,14 @@ import net.minecraft.world.item.ItemStack;
  * &lt;p&gt;roxo&lt;/p&gt;      — magia, mistério
  * &lt;n&gt;laranja&lt;/n&gt;   — Nether, fogo, lava
  * &lt;d&gt;cinza&lt;/d&gt;     — sussurros, comentários
- * &lt;b&gt;negrito&lt;/b&gt;  &lt;i&gt;itálico&lt;/i&gt;
+ * &lt;b&gt;negrito&lt;/b&gt;  &lt;i&gt;itálico&lt;/i&gt;  &lt;e&gt;língua dos Endermen&lt;/e&gt; (símbolos da mesa de encantamento)
  * {item:minecraft:diamond}  {entity:minecraft:zombie}  {ench:minecraft:mending}
  * </pre>
  */
 public final class Text {
+	/** A fonte dos símbolos da mesa de encantamento, usada como a língua dos Endermen. */
+	private static final FontDescription ENDER_FONT = new FontDescription.Resource(Identifier.withDefaultNamespace("alt"));
+
 	private Text() {
 	}
 
@@ -73,7 +77,7 @@ public final class Text {
 					boolean closing = tag.startsWith("/");
 					String name = closing ? tag.substring(1) : tag;
 
-					if (name.length() == 1 && (colorOf(name.charAt(0)) >= 0 || name.equals("b") || name.equals("i"))) {
+					if (name.length() == 1 && (colorOf(name.charAt(0)) >= 0 || name.equals("b") || name.equals("i") || name.equals("e"))) {
 						flush(result, buffer, styles.peek());
 
 						if (closing) {
@@ -86,6 +90,8 @@ public final class Text {
 
 							if (name.equals("b")) {
 								next = current.withBold(true);
+							} else if (name.equals("e")) {
+								next = current.withFont(ENDER_FONT).withColor(TextColor.fromRgb(0xC77DFF));
 							} else if (name.equals("i")) {
 								next = current.withItalic(true).withColor(TextColor.fromRgb(0xAAAAAA));
 							} else {

@@ -8,5 +8,6 @@
 	"subtitles.cronicasdavila.quest.ready": "Objective done",
 	"subtitles.cronicasdavila.quest.complete": "Quest complete",
 	"subtitles.cronicasdavila.quest.abandon": "Quest abandoned",
-	"subtitles.cronicasdavila.quest.levelup": "Level up"
+	"subtitles.cronicasdavila.quest.levelup": "Level up",
+	"item.cronicasdavila.ender_translator": "Ender Translator"
 }

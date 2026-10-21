@@ -19,7 +19,7 @@ public class DialogueSession {
 	public final String profession;
 	public final String npcName;
 	public final boolean piglin;
-	/** Tipo de NPC: "villager", "piglin", "pillager", "shulker", "witch" ou "trader". */
+	/** Tipo de NPC: "villager", "piglin", "brute", "pillager", "shulker", "witch", "enderman" ou "trader". */
 	public final String kind;
 	public final NpcDialogue lines;
 	public final boolean previousNoAi;
@@ -28,6 +28,10 @@ public class DialogueSession {
 	public final Map<String, Runnable> handlers = new HashMap<>();
 	public QuestService.Offer pendingOffer;
 	public int loreIndex;
+	/** Região da vila do aldeão (plains, desert, snow...), ou null para quem não é aldeão. */
+	public String biome;
+	/** O jogador entende o que o NPC diz? (Endermen só com o Tradutor Ender.) */
+	public boolean translated = true;
 	/** É Elebin, o clérigo raro. */
 	public boolean elebin;
 	/** Saudação do momento (tempo, noite, dia da semana), sorteada uma vez por conversa. */

@@ -61,6 +61,8 @@ public class PlayerData {
 	public Map<String, Long> loreDay = new HashMap<>();
 	/** Já conheceu Elebin, o clérigo raro? */
 	public boolean metElebin = false;
+	/** Já entendeu um Enderman pela primeira vez (com o Tradutor Ender)? */
+	public boolean heardEnderman = false;
 	/** Dia em que cada aldeão (UUID) recusou uma barganha (fica ofendido até o dia seguinte). */
 	public Map<String, Long> bargainRefused = new HashMap<>();
 	/** Baús que são do próprio jogador ("dimensão|x|y|z"): pegar coisas deles não é roubo. */

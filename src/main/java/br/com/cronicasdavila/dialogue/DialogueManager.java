@@ -85,7 +85,8 @@ public final class DialogueManager {
 			return false;
 		}
 
-		if (type.equals("minecraft:villager") || type.equals("minecraft:wandering_trader")) {
+		if (type.equals("minecraft:villager") || type.equals("minecraft:wandering_trader")
+				|| type.equals("minecraft:piglin_brute") || type.equals("minecraft:enderman")) {
 			return true;
 		}
 
@@ -145,6 +146,26 @@ public final class DialogueManager {
 			profession = Professions.SHULKER;
 		} else if (kind.equals("witch")) {
 			profession = Professions.WITCH;
+		} else if (kind.equals("piglin_brute")) {
+			// O Piglin Bruto só conversa com quem já é Renegado (Vilania 3) ou mais.
+			if (playerData.villainRank < Professions.BRUTE_MIN_VILLAIN_RANK && !QuestService.isVillain(playerData)) {
+				List<String> refusals = QuestRegistry.dialogue(Professions.PIGLIN_BRUTE).extra("too_weak");
+				String refusal = refusals.isEmpty()
+						? "<n>HRRNGH!</n> Fraco. Volte quando for pelo menos <r>Renegado</r>."
+						: refusals.get(player.getRandom().nextInt(refusals.size()));
+				player.sendOverlayMessage(br.com.cronicasdavila.util.Text.parse(refusal.replace("{player}", player.getScoreboardName())
+						+ " <d>(Vilania mínima: " + VillainRank.ofTier(Professions.BRUTE_MIN_VILLAIN_RANK).displayName() + ")</d>"));
+				return InteractionResult.PASS;
+			}
+
+			profession = Professions.PIGLIN_BRUTE;
+			kind = "brute";
+		} else if (kind.equals("enderman")) {
+			if (npc.getTarget() == player && !br.com.cronicasdavila.item.ModItems.hasTranslator(player)) {
+				return InteractionResult.PASS;
+			}
+
+			profession = Professions.ENDERMAN;
 		} else if (kind.equals("wandering_trader")) {
 			if (npc instanceof net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader trader && trader.isTrading()) {
 				return InteractionResult.PASS;
@@ -171,6 +192,8 @@ public final class DialogueManager {
 		NpcDialogue lines = QuestRegistry.dialogue(profession, biome);
 		DialogueSession session = new DialogueSession(player, npc, profession, npcName(npc, lines), kind, lines);
 		session.elebin = isElebin(npc);
+		session.biome = biome;
+		session.translated = !kind.equals("enderman") || br.com.cronicasdavila.item.ModItems.hasTranslator(player);
 		SESSIONS.put(player.getUUID(), session);
 		freeze(session);
 		onConversationStart(session);
@@ -393,7 +416,7 @@ public final class DialogueManager {
 		JsonArray pageArray = new JsonArray();
 
 		for (String page : pages) {
-			pageArray.add(fill(session, page));
+			pageArray.add(session.translated || page.startsWith("<d>") ? fill(session, page) : enderGlyphs(fill(session, page)));
 		}
 
 		json.add("pages", pageArray);
@@ -410,6 +433,16 @@ public final class DialogueManager {
 
 		json.add("choices", choiceArray);
 		ServerPlayNetworking.send(session.player, new ModPayloads.DialoguePayload(json.toString()));
+	}
+
+	/**
+	 * Sem o Tradutor Ender, a fala do Enderman vira os símbolos da mesa de encantamento.
+	 * Tira as cores e os acentos (a fonte antiga só tem as letras simples).
+	 */
+	private static String enderGlyphs(String text) {
+		String plain = text.replaceAll("<[^>]*>", "");
+		plain = java.text.Normalizer.normalize(plain, java.text.Normalizer.Form.NFD).replaceAll("\\p{M}", "");
+		return "<e>" + plain.toLowerCase(java.util.Locale.ROOT) + "</e>";
 	}
 
 	private static String subtitle(DialogueSession session) {
@@ -435,6 +468,8 @@ public final class DialogueManager {
 			case "pillager" -> happy ? SoundEvents.PILLAGER_CELEBRATE : SoundEvents.PILLAGER_AMBIENT;
 			case "shulker" -> happy ? SoundEvents.SHULKER_AMBIENT : SoundEvents.SHULKER_OPEN;
 			case "witch" -> happy ? SoundEvents.WITCH_CELEBRATE : SoundEvents.WITCH_AMBIENT;
+			case "brute" -> villagerSound == SoundEvents.VILLAGER_NO ? SoundEvents.PIGLIN_BRUTE_ANGRY : SoundEvents.PIGLIN_BRUTE_AMBIENT;
+			case "enderman" -> villagerSound == SoundEvents.VILLAGER_NO ? SoundEvents.ENDERMAN_SCREAM : SoundEvents.ENDERMAN_AMBIENT;
 			case "trader" -> villagerSound == SoundEvents.VILLAGER_NO ? SoundEvents.WANDERING_TRADER_NO
 					: happy ? SoundEvents.WANDERING_TRADER_YES : SoundEvents.WANDERING_TRADER_AMBIENT;
 			default -> villagerSound;
@@ -464,6 +499,8 @@ public final class DialogueManager {
 			case "shulker" -> "end";
 			case "witch" -> "swamp";
 			case "trader" -> "trader";
+			case "brute" -> "nether";
+			case "enderman" -> "end";
 			default -> "neutral";
 		};
 	}
@@ -502,6 +539,16 @@ public final class DialogueManager {
 
 		if (session.kind.equals("trader")) {
 			traderOpening(session, karma);
+			return;
+		}
+
+		if (session.kind.equals("brute")) {
+			bruteOpening(session, data);
+			return;
+		}
+
+		if (session.kind.equals("enderman")) {
+			endermanOpening(session, data, karma);
 			return;
 		}
 
@@ -647,6 +694,63 @@ public final class DialogueManager {
 		mainMenu(session, pick(session, greetings, "O que vai levar, forasteiro?"));
 	}
 
+	/** Piglin Bruto: só chega até aqui quem já é Renegado. Respeita força e despreza heróis. */
+	private static void bruteOpening(DialogueSession session, PlayerData data) {
+		NpcDialogue lines = session.lines;
+		PlayerData.ProfessionProgress progress = data.professions.get(Professions.PIGLIN_BRUTE);
+		boolean known = progress != null && progress.totalDone > 0;
+		List<String> greetings;
+
+		if (data.karma >= 100) {
+			greetings = lines.greet_cold;
+		} else if (known || QuestService.isVillain(data)) {
+			greetings = lines.greet_friendly;
+		} else {
+			greetings = lines.greet_neutral;
+		}
+
+		mainMenu(session, pick(session, greetings, "<n>HRRNGH.</n> Renegado... Fala logo."));
+	}
+
+	/**
+	 * Enderman: fala uma língua antiga (os símbolos da mesa de encantamento). Sem o Tradutor Ender,
+	 * o jogador não entende nada; com ele, dá para conversar e ouvir as histórias do Fim.
+	 */
+	private static void endermanOpening(DialogueSession session, PlayerData data, KarmaTier karma) {
+		NpcDialogue lines = session.lines;
+		List<String> greetings = karma.atMost(KarmaTier.ODIADO) ? lines.greet_cold
+				: isNight(session) && !lines.greet_night.isEmpty() ? lines.greet_night
+				: karma.atLeast(KarmaTier.CONFIAVEL) ? lines.greet_friendly : lines.greet_neutral;
+		String greeting = pick(session, greetings, "Voce... olha para mim. Poucos olham e continuam inteiros.");
+
+		if (!session.translated) {
+			List<Choice> choices = new ArrayList<>();
+			choices.add(new Choice("huh", pick(session, lines.extra("untranslated_reply"), "Hã? Não entendi nada..."), "info", () -> {
+				speak(session, SoundEvents.VILLAGER_AMBIENT, SoundEvents.PIGLIN_AMBIENT);
+				show(session, List.of(pick(session, lines.followup, "Voce nao entende. Ninguem de fora entende."),
+								pick(session, lines.extra("translator_hint"),
+										"<d>(Esses símbolos... são iguais aos da mesa de encantamento. Talvez exista algo nas Cidades do Fim que traduza essa língua.)</d>")),
+						List.of(new Choice("bye", "<d>(Ir embora devagar, sem encarar...)</d>", "neutral", () -> bye(session))), "end");
+			}));
+			choices.add(new Choice("bye", "<d>(Ir embora devagar, sem encarar...)</d>", "neutral", () -> bye(session)));
+			show(session, List.of(greeting), choices, "end");
+			return;
+		}
+
+		if (!data.heardEnderman) {
+			data.heardEnderman = true;
+			PlayerDataManager.save(session.player);
+			br.com.cronicasdavila.net.Notify.celebrate(session.player, "Língua do Fim!", "O Tradutor Ender revela as palavras dos Endermen", 0xC77DFF);
+			List<Choice> choices = List.of(new Choice("next", "<p>Eu... entendo você!</p>", "magic", () -> mainMenu(session, greeting)));
+			show(session, List.of("<d>(O Tradutor Ender vibra no seu bolso, e os símbolos viram palavras.)</d>",
+					pick(session, lines.extra("translator_first"), "...Voce entende. Como? Ah. Uma pedra das cidades. Roubada dos <r>shulkers</r>, espero.")),
+					choices, "end");
+			return;
+		}
+
+		mainMenu(session, greeting);
+	}
+
 	/** Elebin, o clérigo raro: um encontro especial. */
 	private static void elebinOpening(DialogueSession session, PlayerData data) {
 		List<String> pages = new ArrayList<>();
@@ -665,7 +769,7 @@ public final class DialogueManager {
 	}
 
 	/**
-	 * Saudação do momento: tempestade, chuva, noite ou o dia da semana (sexta, sábado, domingo).
+	 * Saudação do momento: tempestade, chuva, noite ou a região da vila.
 	 * Null quando não há nada especial (ou o NPC não tem falas próprias para isso).
 	 */
 	private static List<String> situational(DialogueSession session) {
@@ -682,13 +786,9 @@ public final class DialogueManager {
 			result = lines.greet_rain;
 		} else if (isNight(session) && !lines.greet_night.isEmpty()) {
 			result = lines.greet_night;
-		} else if (session.player.getRandom().nextInt(100) < 60) {
-			result = switch (VanillaCompat.weekday(session.npc.level())) {
-				case 5 -> own(session, lines.greet_friday, QuestRegistry.common().greet_friday) ? lines.greet_friday : null;
-				case 6 -> own(session, lines.greet_saturday, QuestRegistry.common().greet_saturday) ? lines.greet_saturday : null;
-				case 0 -> own(session, lines.greet_sunday, QuestRegistry.common().greet_sunday) ? lines.greet_sunday : null;
-				default -> null;
-			};
+		} else if (session.biome != null && !lines.extra("greet_" + session.biome).isEmpty() && session.player.getRandom().nextBoolean()) {
+			// Saudação própria da profissão na região da vila (deserto, neve, savana...).
+			result = lines.extra("greet_" + session.biome);
 		}
 
 		session.situational = result == null ? List.of() : result;
@@ -747,6 +847,14 @@ public final class DialogueManager {
 			choices.add(new Choice("lore", pick(session, session.lines.player_lore, "Me conta alguma história."), "info", () -> lore(session)));
 		}
 
+		if (session.kind.equals("enderman")) {
+			addTopic(session, choices, "shulker", "Por que vocês odeiam os shulkers?", "shulker");
+			addTopic(session, choices, "endermite", "E os endermites?", "endermite");
+		} else if (session.kind.equals("shulker")) {
+			addTopic(session, choices, "enderman", "O que você acha dos endermen?", "enderman");
+			addTopic(session, choices, "translator", "Como eu entendo a língua dos endermen?", "translator_hint");
+		}
+
 		if (questGiver) {
 			choices.add(new Choice("rep", "Como eu tô com vocês?", "info", () -> reputation(session)));
 		}
@@ -769,6 +877,15 @@ public final class DialogueManager {
 
 		choices.add(new Choice("bye", pick(session, session.lines.player_bye, "Até mais!"), "neutral", () -> bye(session)));
 		show(session, List.of(line), choices, toneFor(session));
+	}
+
+	/** Pergunta extra no menu, respondida com uma fala de {@code extra.<key>}. */
+	private static void addTopic(DialogueSession session, List<Choice> choices, String id, String question, String key) {
+		List<String> answers = session.lines.extra(key);
+
+		if (!answers.isEmpty()) {
+			choices.add(new Choice(id, question, "info", () -> show(session, List.of(pick(session, answers, "...")), backOrBye(session), toneFor(session))));
+		}
 	}
 
 	private static void backToMenu(DialogueSession session) {
@@ -1007,6 +1124,7 @@ public final class DialogueManager {
 					case "pillager" -> ParticleTypes.ANGRY_VILLAGER;
 					case "shulker" -> ParticleTypes.END_ROD;
 					case "witch" -> ParticleTypes.WITCH;
+					case "brute" -> ParticleTypes.FLAME;
 					default -> ParticleTypes.HAPPY_VILLAGER;
 				},
 				session.npc.getX(), session.npc.getEyeY() + 0.3, session.npc.getZ(), 12, 0.4, 0.3, 0.4, 0.02);
@@ -1103,8 +1221,10 @@ public final class DialogueManager {
 			}
 
 			pages.add(rankLine);
-			pages.add("Quem vira <r>Arquivilão</r> e domina <y>saqueadores, piglins e bruxas</y> recebe a marca do <p>Vilão da História</p>. Você já dominou <y>"
-					+ QuestService.villainMasteredCount(data) + "/" + Professions.VILLAIN_FACTIONS.size() + "</y>.");
+			pages.add("Quem vira <r>Arquivilão</r>, domina <y>saqueadores, piglins, bruxas e piglins brutos</y> e faz <y>"
+					+ Professions.LEGEND_QUESTS + " serviços sujos</y> diferentes recebe a marca do <p>Vilão da História</p>. Você já dominou <y>"
+					+ QuestService.villainMasteredCount(data) + "/" + Professions.VILLAIN_FACTIONS.size() + "</y> e fez <y>"
+					+ QuestService.villainQuestsDone(data) + "/" + Professions.LEGEND_QUESTS + "</y> serviços.");
 			show(session, pages, backOrBye(session), toneFor(session));
 			return;
 		}
@@ -1113,8 +1233,8 @@ public final class DialogueManager {
 
 		if (session.kind.equals("villager")) {
 			int mastered = QuestService.masteredCount(data);
-			pages.add("Dizem que quem se torna Mestre em todas as <y>13 profissões</y> vira <o>Herói da Vila</o> pra sempre. Você já dominou <y>"
-					+ mastered + "/13</y>.");
+			pages.add("Dizem que quem se torna Mestre em todas as <y>13 profissões</y> vira <o>Herói da Vila</o> pra sempre (são pelo menos <y>"
+					+ Professions.LEGEND_QUESTS + " missões</y>). Você já dominou <y>" + mastered + "/13</y>.");
 		}
 
 		show(session, pages, backOrBye(session), toneFor(session));

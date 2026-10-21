@@ -41,7 +41,12 @@ public class MenuScreen extends Screen {
 			Map.entry("cartographer", "minecraft:cartography_table"), Map.entry("librarian", "minecraft:lectern"),
 			Map.entry("cleric", "minecraft:brewing_stand"), Map.entry("piglin", "minecraft:gold_ingot"),
 			Map.entry("pillager", "minecraft:crossbow"), Map.entry("witch", "minecraft:fermented_spider_eye"),
-			Map.entry("shulker", "minecraft:shulker_shell")
+			Map.entry("shulker", "minecraft:shulker_shell"), Map.entry("piglin_brute", "minecraft:golden_axe"),
+			Map.entry("oceanographer", "minecraft:prismarine_shard"), Map.entry("netherian", "minecraft:nether_wart"),
+			Map.entry("woodworker", "minecraft:oak_sapling"), Map.entry("enderian", "minecraft:ender_eye"),
+			Map.entry("engineer", "minecraft:redstone"), Map.entry("florist", "minecraft:poppy"),
+			Map.entry("hunter", "minecraft:bow"), Map.entry("miner", "minecraft:iron_pickaxe"),
+			Map.entry("iceman", "minecraft:blue_ice"), Map.entry("explorer", "minecraft:compass")
 	);
 
 	/** Uma área clicável desenhada neste quadro. */
@@ -585,7 +590,8 @@ public class MenuScreen extends Screen {
 				{"Missões", ClientState.quests().size() + " ativas <d>· " + ClientState.getInt("totalCompleted", 0) + " concluídas</d>"},
 				{"Herói da Vila", ClientState.getBool("hero") ? "<o>★ Conquistado</o>" : ClientState.getInt("mastered", 0) + "/13 profissões"},
 				{"Vilão da História", villain ? "<p>☠ " + (ClientState.getBool("villainPermanent") ? "Para sempre" : "Ativo") + "</p>"
-						: ClientState.getInt("villainMastered", 0) + "/" + ClientState.getInt("villainFactions", 3) + " inimigos dominados"}
+						: ClientState.getInt("villainMastered", 0) + "/" + ClientState.getInt("villainFactions", 4) + " inimigos <d>· "
+						+ ClientState.getInt("villainQuestsDone", 0) + "/" + ClientState.getInt("legendQuests", 117) + " missões</d>"}
 		};
 
 		int labelW = 0;
@@ -613,7 +619,7 @@ public class MenuScreen extends Screen {
 		if (quests.isEmpty()) {
 			String line = "Nenhuma missão ativa no momento.";
 			Ui.bigText(graphics, this.font, Component.literal(line), (px1 + px2 - (int) (this.font.width(line) * 1.5F)) / 2, (py1 + py2) / 2 - 16, 1.5F, 0xFFFFFF);
-			String hint = "Converse com aldeões, piglins, saqueadores, bruxas e shulkers.";
+			String hint = "Converse com aldeões, piglins, saqueadores, bruxas, shulkers e endermen.";
 			graphics.text(this.font, hint, (px1 + px2 - this.font.width(hint)) / 2, (py1 + py2) / 2 + 4, Ui.argb(255, Ui.MUTED), false);
 			return;
 		}
@@ -1128,16 +1134,14 @@ public class MenuScreen extends Screen {
 		send("setting:" + key + ":" + value);
 	}
 
-	private static final String[] WEEKDAYS = {"Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"};
-
-	/** "Dia 12 · Sexta-feira · Chuva": o calendário do mundo (os NPCs falam diferente na sexta, no sábado e no domingo). */
+	/** "Dia 12 · Chuva": o dia do mundo e o tempo (os NPCs falam diferente com chuva, tempestade e à noite). */
 	private String today() {
 		if (this.minecraft == null || this.minecraft.level == null) {
 			return "<d>?</d>";
 		}
 
 		long day = this.minecraft.level.getOverworldClockTime() / 24000L;
-		String text = "Dia " + (day + 1) + " <d>·</d> <y>" + WEEKDAYS[(int) Math.floorMod(day, 7L)] + "</y>";
+		String text = "<y>Dia " + (day + 1) + "</y>";
 
 		if (this.minecraft.level.isThundering()) {
 			text += " <d>· Tempestade</d>";

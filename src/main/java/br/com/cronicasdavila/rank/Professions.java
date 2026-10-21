@@ -13,6 +13,8 @@ public final class Professions {
 	public static final String PILLAGER = "pillager";
 	public static final String SHULKER = "shulker";
 	public static final String WITCH = "witch";
+	public static final String PIGLIN_BRUTE = "piglin_brute";
+	public static final String ENDERMAN = "enderman";
 	public static final String NITWIT = "nitwit";
 	public static final String UNEMPLOYED = "none";
 	public static final String CHILD = "child";
@@ -49,6 +51,7 @@ public final class Professions {
 		NAMES.put(PIGLIN, "Piglin");
 		NAMES.put(PILLAGER, "Saqueador");
 		NAMES.put(WITCH, "Bruxa");
+		NAMES.put(PIGLIN_BRUTE, "Piglin Bruto");
 		NAMES.put(SHULKER, "Shulker");
 	}
 
@@ -68,7 +71,17 @@ public final class Professions {
 	public static final int HEAVY_WORK_EVERY_DAYS = 3;
 
 	/** Inimigos que dão missões e contam para o efeito "Vilão da História". */
-	public static final List<String> VILLAIN_FACTIONS = List.of(PILLAGER, PIGLIN, WITCH);
+	public static final List<String> VILLAIN_FACTIONS = List.of(PILLAGER, PIGLIN, WITCH, PIGLIN_BRUTE);
+
+	/** Nível de Vilania (Renegado) para o Piglin Bruto aceitar conversa. */
+	public static final int BRUTE_MIN_VILLAIN_RANK = 3;
+
+	/**
+	 * Missões para virar uma lenda, dos dois lados: o mínimo para dominar as 13 profissões de aldeão
+	 * (2 missões em cada um dos 4 primeiros níveis + 1 de Mestre = 9 por profissão). O Vilão da História
+	 * precisa do mesmo número de missões de vilão.
+	 */
+	public static final int LEGEND_QUESTS = 13 * 9;
 
 	/** Todas as chaves que têm arquivo de missões. */
 	public static final List<String> QUEST_GIVERS;
@@ -78,6 +91,7 @@ public final class Professions {
 		QUEST_GIVERS.add(PIGLIN);
 		QUEST_GIVERS.add(PILLAGER);
 		QUEST_GIVERS.add(WITCH);
+		QUEST_GIVERS.add(PIGLIN_BRUTE);
 		QUEST_GIVERS.add(SHULKER);
 	}
 
@@ -111,7 +125,7 @@ public final class Professions {
 
 	public static Faction faction(String key) {
 		return switch (key) {
-			case PILLAGER, PIGLIN, WITCH -> Faction.VILLAIN;
+			case PILLAGER, PIGLIN, WITCH, PIGLIN_BRUTE -> Faction.VILLAIN;
 			case SHULKER -> Faction.NEUTRAL;
 			default -> Faction.GOOD;
 		};
@@ -123,6 +137,7 @@ public final class Professions {
 			case UNEMPLOYED -> "Desempregado";
 			case CHILD -> "Criança";
 			case WANDERING_TRADER -> "Vendedor Ambulante";
+			case ENDERMAN -> "Enderman";
 			default -> NAMES.getOrDefault(key, "Aldeão");
 		};
 	}
@@ -133,7 +148,7 @@ public final class Professions {
 	}
 
 	public static boolean isNether(String key) {
-		return PIGLIN.equals(key);
+		return PIGLIN.equals(key) || PIGLIN_BRUTE.equals(key);
 	}
 
 	public static boolean isSwamp(String key) {

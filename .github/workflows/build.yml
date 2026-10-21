@@ -2,6 +2,7 @@ name: Compilar mod
 
 # Compila a cada envio. No branch main, se a versão do gradle.properties ainda não
 # tiver uma release, publica automaticamente a release "vX.Y.Z" com o .jar do mod.
+# Se a release já existir, o .jar e as notas dela são atualizados (a tag não muda).
 
 on:
   push:
@@ -53,7 +54,7 @@ jobs:
 
       - name: Montar as notas da release
         id: notas
-        if: steps.release.outputs.nova == 'true'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           VERSAO="${{ steps.versao.outputs.versao }}"
           # O título da release vem do cabeçalho: "## [X.Y.Z] - data — Título".
@@ -86,3 +87,12 @@ jobs:
           body_path: notas.md
           files: build/libs/cronicas-da-vila-${{ steps.versao.outputs.versao }}.jar
           make_latest: true
+
+      - name: Atualizar a release existente
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.release.outputs.nova == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v${{ steps.versao.outputs.versao }}"
+          gh release edit "$TAG" --title "${{ steps.notas.outputs.titulo }}" --notes-file notas.md
+          gh release upload "$TAG" "build/libs/cronicas-da-vila-${{ steps.versao.outputs.versao }}.jar" --clobber

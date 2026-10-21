@@ -82,6 +82,11 @@ public final class FactionSystem {
 		return progress != null && progress.totalDone > 0;
 	}
 
+	/** Os piglins brutos te deixam em paz? (Vilania Renegado ou mais.) */
+	public static boolean isBruteAlly(PlayerData data) {
+		return data.villainRank >= Professions.BRUTE_MIN_VILLAIN_RANK || QuestService.isVillain(data);
+	}
+
 	/** A cada meio segundo: aliados param de atacar e, se for o Vilão, as criaturas fogem. */
 	public static void tickFast(ServerPlayer player) {
 		if (player.isSpectator()) {
@@ -93,15 +98,20 @@ public final class FactionSystem {
 		boolean pillagerAlly = isPillagerAlly(player, data);
 		boolean shulkerAlly = isShulkerAlly(player, data);
 		boolean witchAlly = isWitchAlly(player, data);
+		boolean bruteAlly = isBruteAlly(data);
+		// Com o Tradutor Ender, os Endermen sabem que você não é um invasor qualquer.
+		boolean enderFriend = br.com.cronicasdavila.item.ModItems.hasTranslator(player);
 
-		if (pillagerAlly || shulkerAlly || witchAlly) {
+		if (pillagerAlly || shulkerAlly || witchAlly || bruteAlly || enderFriend) {
 			List<Mob> attackers = level.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(32), mob -> mob.getTarget() == player);
 
 			for (Mob mob : attackers) {
 				String id = typeId(mob);
 				boolean ally = (pillagerAlly && ILLAGERS.contains(id))
 						|| (shulkerAlly && id.equals("minecraft:shulker"))
-						|| (witchAlly && id.equals("minecraft:witch"));
+						|| (witchAlly && id.equals("minecraft:witch"))
+						|| (bruteAlly && id.equals("minecraft:piglin_brute"))
+						|| (enderFriend && id.equals("minecraft:enderman"));
 
 				// Se você bater neles, eles revidam normalmente.
 				if (ally && !VanillaCompat.recentlyHurtBy(mob, player)) {

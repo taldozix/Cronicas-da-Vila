@@ -85,6 +85,8 @@ public final class SyncService {
 		root.addProperty("villain", QuestService.isVillain(data));
 		root.addProperty("villainMastered", QuestService.villainMasteredCount(data));
 		root.addProperty("villainFactions", Professions.VILLAIN_FACTIONS.size());
+		root.addProperty("villainQuestsDone", QuestService.villainQuestsDone(data));
+		root.addProperty("legendQuests", Professions.LEGEND_QUESTS);
 		root.addProperty("overworldTicks", data.overworldTicks);
 		root.addProperty("villainPercent", QuestService.villainPercent(data));
 		root.addProperty("rankXpName", Rank.fromXpLevel(player.experienceLevel).displayName());

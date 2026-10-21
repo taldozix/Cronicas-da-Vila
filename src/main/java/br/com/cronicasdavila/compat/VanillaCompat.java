@@ -58,6 +58,7 @@ public final class VanillaCompat {
 	public static void forgetTarget(net.minecraft.world.entity.Mob mob) {
 		mob.setTarget(null);
 		mob.getBrain().eraseMemory(MemoryModuleType.ATTACK_TARGET);
+		mob.getBrain().eraseMemory(MemoryModuleType.ANGRY_AT);
 	}
 
 	/** A criatura foi atacada por esse jogador nos últimos 5 segundos? */
@@ -116,11 +117,6 @@ public final class VanillaCompat {
 	/** Tempestade com raios no mundo normal? */
 	public static boolean isThundering(LivingEntity entity) {
 		return isRainingAt(entity) && entity.level().isThundering();
-	}
-
-	/** Dia da semana pelo calendário do jogo: 0 domingo, 1 segunda ... 5 sexta, 6 sábado (o primeiro dia do mundo é um domingo). */
-	public static int weekday(Level level) {
-		return (int) Math.floorMod(day(level), 7L);
 	}
 
 	/** Dia do jogo pelo relógio do mundo (dormir também avança o dia). */

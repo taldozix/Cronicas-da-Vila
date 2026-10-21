@@ -390,6 +390,8 @@ public class DialogueScreen extends Screen {
 			case "shulker" -> 0xD08CFF;
 			case "witch" -> 0xB57EDC;
 			case "trader" -> 0x6FA8FF;
+			case "brute" -> 0xE0662E;
+			case "enderman" -> 0xCC66FF;
 			default -> 0xFFD36B;
 		};
 		graphics.text(this.font, Component.literal(speaker).withStyle(style -> style.withBold(true)), boxX + 16, boxY + slide + 8,

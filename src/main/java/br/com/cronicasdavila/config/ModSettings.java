@@ -39,6 +39,7 @@ public final class ModSettings {
 		public boolean theft = true;
 		public boolean loreOncePerDay = true;
 		public boolean villainCurse = true;
+		public int translatorChance = 8;
 	}
 
 	/** Descrição de cada opção: chave, nome, explicação e limites (para números). */
@@ -58,7 +59,8 @@ public final class ModSettings {
 			new Option("heavyEveryDays", "Ciclo de folga", "Cada aldeão folga um dia a cada X dias (trabalhos pesados, dois). Cada vila muda um pouco.", false, 3, 7, 1, " dias"),
 			new Option("theft", "Vigiar roubo de baús", "Aldeões que te veem roubando chamam os golens.", true, 0, 1, 1, ""),
 			new Option("loreOncePerDay", "Uma curiosidade por dia", "Cada NPC conta só uma história por dia.", true, 0, 1, 1, ""),
-			new Option("villainCurse", "Maldição do Vilão", "O Vilão da História sente fadiga e queima longe do Nether.", true, 0, 1, 1, "")
+			new Option("villainCurse", "Maldição do Vilão", "O Vilão da História sente fadiga e queima longe do Nether.", true, 0, 1, 1, ""),
+			new Option("translatorChance", "Chance do Tradutor Ender", "Chance de um baú de Cidade do Fim trazer o Tradutor Ender.", false, 5, 12, 1, "%")
 	);
 
 	private static Values values = new Values();

@@ -67,7 +67,18 @@ public final class OffDutySystem {
 			Map.entry("armorer", "minecraft:leather_helmet"),
 			Map.entry("cartographer", "minecraft:paper"),
 			Map.entry("librarian", "minecraft:book"),
-			Map.entry("cleric", "minecraft:glass_bottle")
+			Map.entry("cleric", "minecraft:glass_bottle"),
+			// Profissões do More Villagers: Re-employed.
+			Map.entry("oceanographer", "minecraft:prismarine_shard"),
+			Map.entry("netherian", "minecraft:nether_wart"),
+			Map.entry("woodworker", "minecraft:oak_sapling"),
+			Map.entry("enderian", "minecraft:chorus_fruit"),
+			Map.entry("engineer", "minecraft:redstone"),
+			Map.entry("florist", "minecraft:poppy"),
+			Map.entry("hunter", "minecraft:rabbit_hide"),
+			Map.entry("miner", "minecraft:coal"),
+			Map.entry("iceman", "minecraft:snowball"),
+			Map.entry("explorer", "minecraft:map")
 	);
 
 	private OffDutySystem() {
