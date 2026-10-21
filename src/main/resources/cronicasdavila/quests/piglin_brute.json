@@ -1,0 +1,1309 @@
+{
+	"quests": [
+		{
+			"id": "piglin_brute_1_magma",
+			"tier": 1,
+			"title": "Cubos na Ponte",
+			"tone": "danger",
+			"offer": [
+				"<n>HRRNGH!</n> Cubos de magma. Na ponte do bastião. Pulando. Na ponte de Bruto.",
+				"Piglin comum foge deles. Bruto esmaga, mas eles viram dois. Depois quatro. Bruto perde a paciência.",
+				"Tu vai. Tu esmaga tudo. Até o menorzinho."
+			],
+			"why": [
+				"Ponte cheia de cubo é ponte que inimigo atravessa sem Bruto ver. Bruto não aceita.",
+				"E Bruto quer saber se tu aguenta queimadura. Teste simples."
+			],
+			"accept": [
+				"<n>Hrrngh.</n> Não deixa sobrar nenhum.",
+				"<r>Elimine 16 cubos de magma</r>. Os pequenos contam."
+			],
+			"progress": [
+				"Cubos de magma nascem no <a>Vale de Basalto</a> e nas fortalezas. Eles não pegam fogo, então espada com aspecto flamejante não adianta.",
+				"Quando o grandão morre, ele se divide em cubos menores. Bate de longe, com arco, se o grandão te encurralar."
+			],
+			"complete": [
+				"Ponte limpa. Bruto ouviu o último estalar. Som bom.",
+				"Toma ferro, ouro e cargas de fogo. Fogo pra quem não teme fogo."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:magma_cube"], "count": 16, "desc": "<r>Elimine</r> <r>16 cubos de magma</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:gold_ingot", "count": 4}, {"item": "minecraft:fire_charge", "count": 8}]
+		},
+		{
+			"id": "piglin_brute_1_hoglins",
+			"tier": 1,
+			"title": "Primeiro Sangue",
+			"tone": "danger",
+			"offer": [
+				"<n>HRRNGH!</n> Todo bruto começa igual: matando hoglin.",
+				"Piglin comum caça hoglin em bando de dez. Bruto caçava sozinho. Tu vai caçar como bruto.",
+				"Floresta carmesim. Presa contra machado. Vai."
+			],
+			"why": [
+				"Hoglin vivo é hoglin que um dia entra no bastião. Hoglin morto é jantar.",
+				"E Bruto quer ver se tu treme quando a presa vem."
+			],
+			"accept": [
+				"Não segura fungo azul. Covardia. Bate de frente.",
+				"<r>Elimine 5 hoglins</r>."
+			],
+			"progress": [
+				"Hoglins andam em bando na <a>floresta carmesim</a>. A cabeçada deles joga longe e pra cima, cuidado perto de lava.",
+				"Eles fogem do fungo distorcido, de portais e de âncoras de renascimento. Bruto disse pra não usar, mas é verdade."
+			],
+			"complete": [
+				"Cinco. Pouco, mas de primeira. Tu tem estômago.",
+				"Toma ouro, ferro e carne assada. Come. Bruto não quer humano magro."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 5, "desc": "<r>Elimine</r> <r>5 hoglins</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 8}, {"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:cooked_porkchop", "count": 12}]
+		},
+		{
+			"id": "piglin_brute_1_esverdeados",
+			"tier": 1,
+			"title": "Os Podres",
+			"tone": "danger",
+			"offer": [
+				"Os esverdeados. Piglins que foram pro mundo de cima e voltaram podres.",
+				"Eles andam perto do bastião, babando, carregando espada de ouro. <r>Ouro roubado.</r>",
+				"Bruto quer eles longe. Bem longe. Debaixo da terra."
+			],
+			"why": [
+				"Esverdeado é lembrança do que acontece com piglin fraco. Bruto não quer lembrança na porta.",
+				"E as espadas de ouro deles pertencem ao bastião."
+			],
+			"accept": [
+				"<n>HRRNGH!</n> Bate num, vem todos. Tu aguenta?",
+				"<r>Elimine 12 piglins zumbis</r>."
+			],
+			"progress": [
+				"Piglins zumbis são neutros. Quando tu bate num, todos os de perto ficam com raiva de tu.",
+				"Luta num corredor de um bloco de largura, assim eles vêm um por vez."
+			],
+			"complete": [
+				"Doze podres a menos. O ar ficou melhor. Pouco, mas ficou.",
+				"Toma ouro, ferro e pérolas do ender. Os podres não vão sentir falta."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombified_piglin"], "count": 12, "desc": "<r>Elimine</r> <r>12 piglins zumbis</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 8}, {"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:ender_pearl", "count": 3}]
+		},
+		{
+			"id": "piglin_brute_1_ossos",
+			"tier": 1,
+			"title": "Ossos no Vale",
+			"tone": "danger",
+			"offer": [
+				"No <a>Vale das Almas</a> tem esqueleto. Esqueleto com arco. Atira em quem passa.",
+				"Os comuns mandaram três pra buscar areia de alma. Voltaram dois. Com flecha no traseiro.",
+				"Bruto quer o vale limpo. Tu limpa."
+			],
+			"why": [
+				"Areia de alma faz o muro do bastião. Sem areia, sem muro. Sem muro, Bruto fica bravo.",
+				"E esqueleto rindo de piglin é coisa que Bruto não tolera."
+			],
+			"accept": [
+				"Escudo na mão. Eles atiram longe.",
+				"<r>Elimine 12 esqueletos</r> no Vale das Almas."
+			],
+			"progress": [
+				"No Vale das Almas a areia de alma deixa tu lento. Encantamento <a>Velocidade das Almas</a> nas botas resolve.",
+				"Ghasts também nadam naquele céu azul. Olha pra cima de vez em quando."
+			],
+			"complete": [
+				"Vale quieto. Os comuns voltaram com areia e sem flecha. Bruto quase sorriu.",
+				"Toma ferro, flechas e ouro. Usa as flechas nos próximos."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton"], "count": 12, "desc": "<r>Elimine</r> <r>12 esqueletos</r> no Vale das Almas"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:arrow", "count": 24}, {"item": "minecraft:gold_ingot", "count": 4}]
+		},
+		{
+			"id": "piglin_brute_1_muralha",
+			"tier": 1,
+			"title": "Pedra pra Muralha",
+			"tone": "calm",
+			"offer": [
+				"O muro leste rachou. Ghast cuspiu fogo, pedaço caiu na lava.",
+				"Bruto precisa de <y>pedra-negra</y>. Muita. Bruto não larga o posto pra minerar.",
+				"Tu minera. Bruto vigia tu minerando."
+			],
+			"why": [
+				"Muro rachado é convite. Bruto não convida ninguém.",
+				"E pedra-negra é pedra dura. Igual Bruto."
+			],
+			"accept": [
+				"<n>Hrrngh.</n> Picareta boa. Braço forte.",
+				"<g>Minere</g> <y>96 blocos de pedra-negra</y>."
+			],
+			"progress": [
+				"Pedra-negra aparece no Vale de Basalto, no fundo dos oceanos de lava e em volta dos bastiões.",
+				"Ela serve igual pedregulho pra fazer fornalha e ferramenta de pedra."
+			],
+			"complete": [
+				"Muro fechado. Ghast pode cuspir à vontade agora.",
+				"Toma ferro, ouro e pó de pedra-luminosa. Pra tu enxergar no escuro do Nether."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:blackstone"], "count": 96, "desc": "<g>Minere</g> <y>96 blocos de pedra-negra</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:gold_ingot", "count": 4}, {"item": "minecraft:glowstone_dust", "count": 16}]
+		},
+		{
+			"id": "piglin_brute_1_veios",
+			"tier": 1,
+			"title": "Veios Dourados",
+			"tone": "calm",
+			"offer": [
+				"O tesouro precisa crescer. Sempre. Tesouro que não cresce, morre.",
+				"Tem <y>minério de ouro do Nether</y> espalhado em toda parede vermelha. Os comuns catam e trocam por porcaria.",
+				"Tu cata antes deles."
+			],
+			"why": [
+				"Cada pepita que piglin comum troca por cascalho é uma facada no coração do bastião.",
+				"Bruto prefere que o ouro fique fora das mãos deles."
+			],
+			"accept": [
+				"Quebra os veios. Todos que achar.",
+				"<g>Minere</g> <y>24 minérios de ouro do Nether</y>."
+			],
+			"progress": [
+				"Minério de ouro do Nether solta de 2 a 6 pepitas. Com Fortuna, solta mais.",
+				"<r>Cuidado:</r> quebrar minério de ouro perto de piglins deixa eles bravos."
+			],
+			"complete": [
+				"Os comuns olharam com inveja. Bruto gostou de ver.",
+				"Toma pérolas do ender, quartzo e ferro. O ouro fica. Ouro sempre fica."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:nether_gold_ore"], "count": 24, "desc": "<g>Minere</g> <y>24 minérios de ouro do Nether</y>"},
+			"rewards": [{"item": "minecraft:ender_pearl", "count": 4}, {"item": "minecraft:quartz", "count": 24}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "piglin_brute_1_couro",
+			"tier": 1,
+			"title": "Couro de Hoglin",
+			"tone": "danger",
+			"offer": [
+				"A armadura de Bruto tá velha. Correia arrebentou na última briga.",
+				"Bruto quer <y>couro</y>. Couro de hoglin, grosso, que aguenta presa.",
+				"Tu caça. Tu arranca. Tu traz."
+			],
+			"why": [
+				"Bruto sem armadura ainda é Bruto. Mas Bruto com armadura é pior. Melhor. Pior pros outros.",
+				"E caçar pra couro ensina a matar sem estragar."
+			],
+			"accept": [
+				"Couro inteiro. Nada de pedaço queimado.",
+				"<g>Traga</g> <y>12 couros</y>."
+			],
+			"progress": [
+				"Hoglins soltam couro e costeletas de porco. Com Pilhagem, solta mais.",
+				"Se tu matar hoglin com fogo, a carne sai assada. O couro sai igual."
+			],
+			"complete": [
+				"Couro bom. Grosso. Fede. Perfeito.",
+				"Toma ouro, ferro e obsidiana. Obsidiana é pra portal. Portal é pra tu voltar com mais."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:leather"], "count": 12, "desc": "<g>Entregue</g> <y>12 couros</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:obsidian", "count": 6}]
+		},
+		{
+			"id": "piglin_brute_1_altoes",
+			"tier": 1,
+			"title": "Os Altões Azuis",
+			"tone": "danger",
+			"offer": [
+				"Na floresta azul moram os altões de olho roxo. Endermen.",
+				"Eles pegam bloco do caminho e somem. Pegaram três blocos da ponte de Bruto.",
+				"<n>HRRNGH!</n> Ninguém pega nada de Bruto."
+			],
+			"why": [
+				"Bloco roubado é bloco que falta. Falta na ponte é buraco. Buraco é lava.",
+				"E Bruto quer ver se tu luta com coisa que some."
+			],
+			"accept": [
+				"Olha nos olhos deles. Deixa eles virem.",
+				"<r>Elimine 6 endermen</r>."
+			],
+			"progress": [
+				"Endermen são comuns na <a>floresta distorcida</a>. Olhar pra eles deixa eles bravos.",
+				"Eles se teleportam pra fugir de flecha. Luta corpo a corpo, num teto baixo de dois blocos, que eles têm três de altura."
+			],
+			"complete": [
+				"Seis altões a menos. Nenhum bloco sumiu desde ontem.",
+				"Toma ferro, ouro e obsidiana. E as pérolas deles, tu já pegou. Bruto viu."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 6, "desc": "<r>Elimine</r> <r>6 endermen</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:gold_ingot", "count": 6}, {"item": "minecraft:obsidian", "count": 6}]
+		},
+		{
+			"id": "piglin_brute_1_machados",
+			"tier": 1,
+			"title": "Machados de Guarda",
+			"tone": "calm",
+			"offer": [
+				"Os guardas novos do bastião chegaram de mão vazia. Vergonha.",
+				"Bruto quer <y>machados de ouro</y>. Ouro é o metal do bastião. Brutos lutam com ouro.",
+				"Tu forja. Bruto entrega pros novatos."
+			],
+			"why": [
+				"Bruto sem machado é só piglin grande. Bruto com machado é muralha.",
+				"Novato armado protege o tesouro enquanto Bruto dorme. Bruto quase não dorme."
+			],
+			"accept": [
+				"Três lingotes de ouro, dois gravetos. Até humano consegue.",
+				"<y>Fabrique</y> <y>3 machados de ouro</y>."
+			],
+			"progress": [
+				"Machado de ouro é fraco no mundo de cima, mas os piglins adoram. Cada um leva 3 lingotes de ouro e 2 gravetos na bancada.",
+				"Barras de ouro saem de minério de ouro na fornalha, ou de 9 pepitas juntas na bancada."
+			],
+			"complete": [
+				"Machados brilhando. Os novatos ficaram com cara de bruto. Quase.",
+				"Toma ferro e pérolas do ender. Bruto paga bem quem arma o bastião."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:golden_axe"], "count": 3, "desc": "<y>Fabrique</y> <y>3 machados de ouro</y>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 12}, {"item": "minecraft:ender_pearl", "count": 3}]
+		},
+		{
+			"id": "piglin_brute_2_cacada",
+			"tier": 2,
+			"title": "A Caçada dos Brutos",
+			"tone": "danger",
+			"offer": [
+				"<n>HRRNGH!</n> Os comuns chamam de Grande Caçada. Matam oito hoglins e fazem festa.",
+				"Brutos não fazem festa. Brutos dobram a conta.",
+				"Tu vai caçar como bruto."
+			],
+			"why": [
+				"A manada cresceu demais perto da ponte. Uma noite eles atacam o bastião. Bruto ataca primeiro.",
+				"E carne de hoglin alimenta guarda. Guarda com fome dorme no posto."
+			],
+			"accept": [
+				"Presa grande, cabeçada forte. Fica longe da beirada.",
+				"<r>Elimine 14 hoglins</r>."
+			],
+			"progress": [
+				"Hoglins atacam qualquer coisa que chega perto. Os bebês são rápidos e também batem.",
+				"Lutar numa passagem estreita impede que o bando te cerque."
+			],
+			"complete": [
+				"Quatorze. Os comuns pararam de rir. Bom.",
+				"Toma ouro, diamantes e carne assada. Comida de guerreiro."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 14, "desc": "<r>Elimine</r> <r>14 hoglins</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:cooked_porkchop", "count": 16}]
+		},
+		{
+			"id": "piglin_brute_2_blazes",
+			"tier": 2,
+			"title": "Fogo Contra Fogo",
+			"tone": "danger",
+			"offer": [
+				"Os blazes da fortaleza vizinha voam até a ponte de Bruto. Jogam fogo. Riem.",
+				"Bruto não alcança bicho que voa. Bruto odeia isso.",
+				"Tu alcança."
+			],
+			"why": [
+				"Fogo dos blazes derrete o ouro da muralha. Ouro derretido é ouro perdido.",
+				"E a fortaleza deles é rival do bastião desde sempre."
+			],
+			"accept": [
+				"<n>Hrrngh.</n> Fogo não mata Bruto. Pode matar tu. Prepara.",
+				"<r>Elimine 12 blazes</r>."
+			],
+			"progress": [
+				"Blazes nascem de geradores nas fortalezas do Nether. Bolas de neve machucam eles.",
+				"Poção de resistência ao fogo deixa tu imune às bolas de fogo deles."
+			],
+			"complete": [
+				"Doze blazes apagados. O céu da ponte ficou quieto.",
+				"Toma ouro, diamantes e um livro de Proteção contra Fogo. Pra próxima vez."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 12, "desc": "<r>Elimine</r> <r>12 blazes</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_2_ghasts",
+			"tier": 2,
+			"title": "Os Chorões do Céu",
+			"tone": "danger",
+			"offer": [
+				"Ghasts. Chorando lá em cima, cuspindo fogo aqui embaixo.",
+				"Um deles explodiu a ponte de novo. Bruto teve que pular na pedra pra não cair.",
+				"<n>HRRNGH!</n> Derruba eles."
+			],
+			"why": [
+				"Ponte quebrada deixa o bastião sem saída. Ou sem entrada pra inimigo. Bruto prefere escolher.",
+				"E choro de ghast não deixa Bruto pensar."
+			],
+			"accept": [
+				"Arco. Muita flecha. E coragem.",
+				"<r>Elimine 4 ghasts</r>."
+			],
+			"progress": [
+				"A bola de fogo do ghast pode ser rebatida com um golpe ou uma flecha. Se acertar o ghast, ele morre na hora.",
+				"Ghasts derrubam lágrimas, que caem e podem sumir na lava. Mata eles sobre chão firme."
+			],
+			"complete": [
+				"Quatro chorões calados. Silêncio bom.",
+				"Toma ouro, diamantes e pérolas do ender."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 4, "desc": "<r>Elimine</r> <r>4 ghasts</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:ender_pearl", "count": 4}]
+		},
+		{
+			"id": "piglin_brute_2_murchos",
+			"tier": 2,
+			"title": "Os Ossos Negros",
+			"tone": "danger",
+			"offer": [
+				"Esqueletos negros. Murchos. Altos como Bruto e com espada de pedra.",
+				"Eles vigiam a fortaleza como Bruto vigia o bastião. Bruto respeita. E quer eles mortos.",
+				"Tu vai lá e prova que é mais forte."
+			],
+			"why": [
+				"O que eles guardam, o bastião quer. E guerreiro que vence murcho vira guerreiro de verdade.",
+				"Bruto quer saber se tu é guerreiro de verdade."
+			],
+			"accept": [
+				"Leite no bolso. Tu vai precisar.",
+				"<r>Elimine 8 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Esqueletos murchos aparecem nas <a>fortalezas do Nether</a>. O golpe deles causa Definhamento, que escurece e drena a vida.",
+				"Beber leite tira o Definhamento. Eles têm quase três blocos de altura e não passam em buraco de dois."
+			],
+			"complete": [
+				"Oito ossos negros quebrados. Tu volta com cheiro de fortaleza. Bruto gosta.",
+				"Toma ouro, diamantes e um livro de Afiação. Afia mais."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 8, "desc": "<r>Elimine</r> <r>8 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 14}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 2}]
+		},
+		{
+			"id": "piglin_brute_2_varas",
+			"tier": 2,
+			"title": "Varas de Fogo",
+			"tone": "calm",
+			"offer": [
+				"O braseiro do posto de Bruto apagou. Braseiro apagado é posto frio.",
+				"Bruto quer <y>varas de blaze</y>. Elas queimam pra sempre.",
+				"Tu arranca dos blazes. Eles não vão dar de presente."
+			],
+			"why": [
+				"Fogo no posto mostra pros inimigos que Bruto tá acordado. Sempre.",
+				"E sem vara de blaze tu não faz poção, não faz olho do ender. Tu também ganha."
+			],
+			"accept": [
+				"Fortaleza. Geradores. Fogo.",
+				"<g>Traga</g> <y>12 varas de blaze</y>."
+			],
+			"progress": [
+				"Cada blaze solta até uma vara de blaze. Com Pilhagem, solta mais.",
+				"Fica perto do gerador mas não em cima dele. Tochas em volta impedem que nasçam mais, se tu quiser parar."
+			],
+			"complete": [
+				"Braseiro aceso. Posto quente. Bruto em paz. Quase.",
+				"Toma ouro, diamantes e obsidiana."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:blaze_rod"], "count": 12, "desc": "<g>Entregue</g> <y>12 varas de blaze</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:obsidian", "count": 10}]
+		},
+		{
+			"id": "piglin_brute_2_quartzo",
+			"tier": 2,
+			"title": "Dentes Brancos",
+			"tone": "calm",
+			"offer": [
+				"O tesouro tem ouro. Ouro precisa de moldura. Moldura de <y>quartzo</y>.",
+				"Bruto quer as paredes do tesouro brancas e brilhando. Pra ouro parecer mais ouro.",
+				"Tu minera o quartzo do Nether."
+			],
+			"why": [
+				"Tesouro bonito é tesouro que o bastião defende com mais raiva.",
+				"E quem vê parede branca no meio do vermelho sabe que ali mora coisa importante."
+			],
+			"accept": [
+				"Quebra os veios brancos. Muitos.",
+				"<g>Minere</g> <y>48 minérios de quartzo do Nether</y>."
+			],
+			"progress": [
+				"Minério de quartzo do Nether aparece em todo canto do Nether, em veios nas paredes de netherrack.",
+				"Minerar quartzo dá bastante experiência. Fortuna aumenta a quantidade."
+			],
+			"complete": [
+				"Paredes brancas. O ouro brilhou mais. Bruto ficou olhando. Só um pouco.",
+				"Toma ouro, diamantes e um livro de Fortuna."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:nether_quartz_ore"], "count": 48, "desc": "<g>Minere</g> <y>48 minérios de quartzo do Nether</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 1}]
+		},
+		{
+			"id": "piglin_brute_2_bestas",
+			"tier": 2,
+			"title": "Os Homens de Besta",
+			"tone": "danger",
+			"offer": [
+				"Lá em cima tem humanos de besta. Saqueadores. Os vilões do teu mundo gostam deles.",
+				"Bruto não gosta. Saqueador acha que é o mais forte. Saqueador está errado.",
+				"Tu vai lá e mostra quem é o mais forte."
+			],
+			"why": [
+				"Uma patrulha deles passou por um portal e atirou no bastião. Bruto não esquece.",
+				"E vilão de verdade não divide território."
+			],
+			"accept": [
+				"<n>HRRNGH!</n> Eles atiram de longe. Chega perto.",
+				"<r>Elimine 10 saqueadores</r>."
+			],
+			"progress": [
+				"Saqueadores andam em patrulhas e moram em <a>postos avançados</a>, umas torres de madeira escura.",
+				"O capitão da patrulha carrega o estandarte deles. Matar ele traz um presságio sinistro. Cuidado com o que vem depois."
+			],
+			"complete": [
+				"Dez homens de besta a menos. Bruto dormiu melhor. Dez minutos inteiros.",
+				"Toma ouro, diamantes e um livro de Inquebrável."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager"], "count": 10, "desc": "<r>Elimine</r> <r>10 saqueadores</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 2}]
+		},
+		{
+			"id": "piglin_brute_2_creme",
+			"tier": 2,
+			"title": "Creme Queimado",
+			"tone": "calm",
+			"offer": [
+				"O curandeiro do bastião faz pomada com <y>creme de magma</y>. Pomada pra queimadura.",
+				"Os guardas se queimam toda hora. Lava espirra. Blaze cospe.",
+				"Tu traz creme. Muito."
+			],
+			"why": [
+				"Guarda queimado guarda mal. Bruto quer guarda bom.",
+				"E é Bruto quem paga a pomada. Bruto prefere pagar em humano."
+			],
+			"accept": [
+				"Esmaga os cubos grandes. Os pequenos não têm nada.",
+				"<g>Traga</g> <y>16 cremes de magma</y>."
+			],
+			"progress": [
+				"Os cubos de magma grandes e médios soltam creme de magma. Os menorzinhos não soltam nada.",
+				"Dá pra fazer creme de magma na bancada também, com bola de geleia e pó de blaze."
+			],
+			"complete": [
+				"Creme suficiente pro bastião inteiro. Os guardas pararam de gemer.",
+				"Toma ouro, diamantes e pérolas do ender."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:magma_cream"], "count": 16, "desc": "<g>Entregue</g> <y>16 cremes de magma</y>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:ender_pearl", "count": 4}]
+		},
+		{
+			"id": "piglin_brute_2_podres",
+			"tier": 2,
+			"title": "A Horda Podre",
+			"tone": "danger",
+			"offer": [
+				"Os esverdeados se juntaram. Uma horda. Perto do portal de baixo.",
+				"Doze foi aquecimento. Agora é guerra.",
+				"<n>HRRNGH!</n> Tu limpa o portal."
+			],
+			"why": [
+				"Portal cheio de podre é portal que ninguém usa. E Bruto quer usar o portal pra mandar tu pra cima.",
+				"E horda grande ensina tu a lutar contra muitos."
+			],
+			"accept": [
+				"Não para de bater. Eles não param de vir.",
+				"<r>Elimine 30 piglins zumbis</r>."
+			],
+			"progress": [
+				"Piglins zumbis nascem muito perto de portais do Nether, até no mundo de cima.",
+				"Eles soltam carne podre, pepitas e às vezes um lingote de ouro. Junta tudo, é teu."
+			],
+			"complete": [
+				"Trinta. Portal limpo. Tu tá virando coisa séria.",
+				"Toma ouro, diamantes e um livro de Pilhagem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombified_piglin"], "count": 30, "desc": "<r>Elimine</r> <r>30 piglins zumbis</r>"},
+			"rewards": [{"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:diamond", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 2}]
+		},
+		{
+			"id": "piglin_brute_3_ossudos",
+			"tier": 3,
+			"title": "Cerco à Fortaleza",
+			"tone": "danger",
+			"offer": [
+				"A fortaleza vizinha cresceu. Mais murchos. Mais espadas negras.",
+				"Bruto quer a fortaleza fraca. Bem fraca. Antes que eles pensem em vir pro bastião.",
+				"Tu entra lá e quebra osso."
+			],
+			"why": [
+				"Murcho não dorme, não come, não esquece. Igual Bruto. Por isso é perigoso.",
+				"E fortaleza fraca é fortaleza que Bruto toma um dia."
+			],
+			"accept": [
+				"Espada boa. Leite. Comida. Muito.",
+				"<r>Elimine 20 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Esqueletos murchos nascem nos corredores e pontes das fortalezas. Lá também tem blazes, então não fica parado.",
+				"Um corredor de dois blocos de altura deixa tu bater neles sem que eles entrem."
+			],
+			"complete": [
+				"Vinte. A fortaleza ficou quieta. Medo é bom.",
+				"Toma diamantes, ouro e uma maçã dourada."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 20, "desc": "<r>Elimine</r> <r>20 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:gold_ingot", "count": 18}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_3_cranio",
+			"tier": 3,
+			"title": "O Crânio Negro",
+			"tone": "danger",
+			"offer": [
+				"Bruto quer um troféu. <y>Crânio de esqueleto murcho</y>. Pendurado no posto.",
+				"Quem vê crânio no posto sabe: aqui mora quem mata murcho.",
+				"Murcho não entrega crânio fácil. Tu vai suar."
+			],
+			"why": [
+				"Troféu assusta inimigo antes da luta. Luta que não acontece é luta ganha.",
+				"E crânio é raro. Raro é valioso. Valioso fica com Bruto."
+			],
+			"accept": [
+				"Mata, mata, mata, até cair um.",
+				"<g>Traga</g> <y>1 crânio de esqueleto murcho</y>."
+			],
+			"progress": [
+				"O crânio cai raramente quando um esqueleto murcho morre. Pilhagem aumenta a chance.",
+				"Três desses crânios, com areia de alma, invocam a Besta de Três Cabeças. Bruto só quer um. Por enquanto."
+			],
+			"complete": [
+				"<n>HRRNGH!</n> Crânio no posto. Os comuns passam de cabeça baixa agora.",
+				"Toma diamantes, ouro e duas maçãs douradas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wither_skeleton_skull"], "count": 1, "desc": "<g>Entregue</g> <y>1 crânio de esqueleto murcho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:golden_apple", "count": 2}]
+		},
+		{
+			"id": "piglin_brute_3_choroes",
+			"tier": 3,
+			"title": "Céu Calado",
+			"tone": "danger",
+			"offer": [
+				"Os ghasts voltaram. Mais. Bando inteiro em cima do Vale das Almas.",
+				"Eles cospem fogo na estrada de areia. Ninguém passa.",
+				"<n>HRRNGH!</n> Calar o céu."
+			],
+			"why": [
+				"Estrada fechada, bastião isolado. Bastião isolado, bastião morre de fome.",
+				"E guerreiro que derruba muito ghast tem mira de bruto."
+			],
+			"accept": [
+				"Arco forte. Paciência. Fogo de volta na cara deles.",
+				"<r>Elimine 10 ghasts</r>."
+			],
+			"progress": [
+				"Ghasts nascem em espaços abertos do Nether, como o Vale das Almas e os desertos de netherrack.",
+				"Pedregulho e pedra-negra aguentam as explosões deles. Faz um abrigo antes de começar."
+			],
+			"complete": [
+				"Dez chorões no chão. O céu ficou calado. Bruto gosta de céu calado.",
+				"Toma diamantes, ouro, uma maçã dourada e um livro de Força."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 10, "desc": "<r>Elimine</r> <r>10 ghasts</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:gold_ingot", "count": 16}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_3_geradores",
+			"tier": 3,
+			"title": "Fortaleza em Chamas",
+			"tone": "danger",
+			"offer": [
+				"Os blazes da fortaleza continuam voando pra cá. Doze não bastou.",
+				"Bruto quer que tu fique na frente do gerador deles. E não saia até cansar de matar.",
+				"Ou até morrer. Bruto prefere a primeira."
+			],
+			"why": [
+				"Cada blaze que sai da fortaleza é fogo na ponte. Bruto cansou de apagar fogo.",
+				"E tu vai sair de lá com a pele dura. Igual couro de hoglin."
+			],
+			"accept": [
+				"Resistência ao fogo. Bola de neve. Machado.",
+				"<r>Elimine 30 blazes</r>."
+			],
+			"progress": [
+				"Os geradores de blaze ficam em pequenas varandas das fortalezas. Cada blaze atira rajadas de três bolas de fogo.",
+				"Se a coisa ficar feia, tochas e outras luzes em volta do gerador impedem novos blazes de nascer."
+			],
+			"complete": [
+				"Trinta blazes. Tu cheira a carvão. Bruto aprova.",
+				"Toma diamantes, ouro, uma maçã dourada e um livro de Aspecto Flamejante."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 30, "desc": "<r>Elimine</r> <r>30 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_aspect", "level": 2}]
+		},
+		{
+			"id": "piglin_brute_3_detritos",
+			"tier": 3,
+			"title": "Os Restos Antigos",
+			"tone": "calm",
+			"offer": [
+				"Debaixo do Nether, bem fundo, tem <y>detrito antigo</y>. Pedaço de coisa que era mais forte que ouro.",
+				"Os antigos brutos usavam isso. Hoje ninguém mais sabe cavar.",
+				"Tu sabe. Tu cava."
+			],
+			"why": [
+				"Ouro é o coração do bastião. Netherita é o punho.",
+				"E punho de bastião não pode ficar fraco."
+			],
+			"accept": [
+				"Cava fundo. Picareta de diamante, nada menos.",
+				"<g>Traga</g> <y>4 detritos antigos</y>."
+			],
+			"progress": [
+				"Detritos antigos ficam bem no fundo do Nether, mais comuns perto da camada 15. Precisa de picareta de diamante.",
+				"Eles aguentam explosão. Camas explodem no Nether: dá pra usar isso pra abrir túnel e achar detrito."
+			],
+			"complete": [
+				"Quatro pedaços dos antigos. Bruto segurou e sentiu o peso. Bom peso.",
+				"Toma diamantes, ouro e uma maçã dourada."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ancient_debris"], "count": 4, "desc": "<g>Entregue</g> <y>4 detritos antigos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:gold_ingot", "count": 18}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_3_manada",
+			"tier": 3,
+			"title": "Fim da Manada",
+			"tone": "danger",
+			"offer": [
+				"A manada do vale vermelho tem um chefe. Grandão. Velho. Bruto conhece.",
+				"Bruto quer a manada inteira no chão. Trinta, pelo menos. O chefe junto.",
+				"Guerra antiga, humano. Tu entra nela agora."
+			],
+			"why": [
+				"Os hoglins nunca esquecem a guerra. Bruto também não.",
+				"E bastião com carne sobrando é bastião que aguenta cerco."
+			],
+			"accept": [
+				"Sem fungo azul. Sem fuga. Frente a frente.",
+				"<r>Elimine 30 hoglins</r>."
+			],
+			"progress": [
+				"Hoglins dá pra criar com fungo carmesim. Se tu fizer cercado e criar, eles também contam.",
+				"Se um hoglin atravessar o portal pro mundo de cima, vira zoglin depois de alguns segundos. Zoglin ataca tudo."
+			],
+			"complete": [
+				"Trinta. A manada parou de urrar. Os antigos estariam orgulhosos.",
+				"Toma diamantes, duas maçãs douradas e um livro de Afiação."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin"], "count": 30, "desc": "<r>Elimine</r> <r>30 hoglins</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_3_vingadores",
+			"tier": 3,
+			"title": "Os Machados Cinzentos",
+			"tone": "danger",
+			"offer": [
+				"No teu mundo tem humano cinza de machado. Vingador. Diz que é o mais bruto de lá.",
+				"<n>HRRNGH!</n> Só tem um bruto. Bruto.",
+				"Tu vai lá e quebra os machados deles."
+			],
+			"why": [
+				"Vilão de cima que se acha bruto é vilão que precisa aprender.",
+				"E Bruto quer saber se machado de humano corta melhor que machado de ouro. Tu traz a resposta."
+			],
+			"accept": [
+				"Eles batem forte. Escudo. Armadura boa.",
+				"<r>Elimine 6 vingadores</r>."
+			],
+			"progress": [
+				"Vingadores moram nas <a>mansões da floresta</a> e aparecem nas invasões de vilas.",
+				"Eles correm e batem muito forte com machado de ferro. Escudo e armadura boa fazem diferença."
+			],
+			"complete": [
+				"Seis machados cinzentos no chão. Humano de machado não é bruto. Tu provou.",
+				"Toma diamantes, uma maçã dourada e um livro de Proteção."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vindicator"], "count": 6, "desc": "<r>Elimine</r> <r>6 vingadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_3_lagrimas",
+			"tier": 3,
+			"title": "Lágrimas de Ghast",
+			"tone": "danger",
+			"offer": [
+				"O curandeiro quer <y>lágrimas de ghast</y>. Faz poção que fecha ferida.",
+				"Ghast chora o tempo todo, mas lágrima só cai quando ele morre. Ghast é assim. Inútil até morrer.",
+				"Tu derruba ghast e pega lágrima antes que caia na lava."
+			],
+			"why": [
+				"Guerra longa precisa de cura. Bruto não vai parar a guerra.",
+				"E pegar lágrima no meio da lava ensina tu a não ter medo de beirada."
+			],
+			"accept": [
+				"Chão firme embaixo deles. Senão a lágrima some.",
+				"<g>Traga</g> <y>6 lágrimas de ghast</y>."
+			],
+			"progress": [
+				"Ghasts soltam lágrimas e pólvora. Se a lágrima cair na lava, queima e some.",
+				"Atrair o ghast pra perto de chão firme, ou matar ele sobre o Vale das Almas, ajuda a pegar a lágrima."
+			],
+			"complete": [
+				"Seis lágrimas. O curandeiro grunhiu de alegria. Feio de ver.",
+				"Toma diamantes, ouro e uma maçã dourada."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ghast_tear"], "count": 6, "desc": "<g>Entregue</g> <y>6 lágrimas de ghast</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 5}, {"item": "minecraft:gold_ingot", "count": 18}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_3_dourada",
+			"tier": 3,
+			"title": "Pedra do Tesouro",
+			"tone": "danger",
+			"offer": [
+				"Nas paredes do bastião tem <y>pedra-negra dourada</y>. Pedra com ouro dentro.",
+				"Bruto quer ela arrancada das ruínas abandonadas e trazida pro bastião vivo.",
+				"Mas os piglins de lá vão achar que tu tá roubando. Porque tu tá."
+			],
+			"why": [
+				"Pedra dourada no bastião vivo, nada no bastião morto. Simples.",
+				"E Bruto quer ver tu com piglin bravo atrás. Bom treino."
+			],
+			"accept": [
+				"Quebra rápido. Corre rápido.",
+				"<g>Minere</g> <y>6 pedras-negras douradas</y>."
+			],
+			"progress": [
+				"Pedra-negra dourada aparece nos bastiões. Às vezes solta pepitas de ouro em vez do bloco. Toque Suave garante o bloco.",
+				"Quebrar pedra-negra dourada deixa os piglins de perto furiosos, mesmo que tu esteja usando ouro."
+			],
+			"complete": [
+				"Seis. Os piglins de lá gritaram muito. Música boa.",
+				"Toma diamantes, ouro, uma maçã dourada e um livro de Inquebrável."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:gilded_blackstone"], "count": 6, "desc": "<g>Minere</g> <y>6 pedras-negras douradas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:gold_ingot", "count": 12}, {"item": "minecraft:golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_4_fortaleza",
+			"tier": 4,
+			"title": "A Queda da Fortaleza",
+			"tone": "danger",
+			"offer": [
+				"Chegou a hora. A fortaleza vizinha cai.",
+				"Bruto quer os corredores vazios. Nenhum osso negro de pé.",
+				"<n>HRRNGH!</n> Tu é a ponta do machado."
+			],
+			"why": [
+				"Fortaleza vazia é fortaleza do bastião. Bruto quer bandeira de ouro lá.",
+				"E quem esvazia fortaleza vira lenda entre os brutos."
+			],
+			"accept": [
+				"Leva tudo. Comida, leite, poção. E volta.",
+				"<r>Elimine 40 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Esqueletos murchos só nascem em blocos de fortaleza, então eles voltam a aparecer enquanto tu estiver lá.",
+				"Golpe com espada encantada com Saque aumenta a chance de crânio. Guarda os crânios, eles valem muito."
+			],
+			"complete": [
+				"Quarenta. A fortaleza é nossa. Bruto vai pendurar ouro no portão de lá.",
+				"Toma fragmentos de netherita, diamantes e maçãs douradas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 40, "desc": "<r>Elimine</r> <r>40 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:netherite_scrap", "count": 3}, {"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}]
+		},
+		{
+			"id": "piglin_brute_4_esquadrilha",
+			"tier": 4,
+			"title": "A Esquadrilha do Choro",
+			"tone": "danger",
+			"offer": [
+				"Vinte ghasts. Bruto contou. Bruto não sabe contar além de vinte, então podem ser mais.",
+				"Eles cercaram o bastião pelo alto. A ponte tá em pedaços.",
+				"Tu derruba todos."
+			],
+			"why": [
+				"Bastião cercado pelo céu não aguenta muito. Bruto aguenta. O bastião não.",
+				"E quem limpa o céu do Nether manda no Nether."
+			],
+			"accept": [
+				"Arco com Força. Muitas flechas. Abrigo de pedregulho.",
+				"<r>Elimine 20 ghasts</r>."
+			],
+			"progress": [
+				"Ghasts enxergam longe e atiram de muito longe. Arco encantado com Força ajuda a responder.",
+				"Rebater a bola de fogo deles com um golpe mata o ghast num golpe só. Tem até conquista disso."
+			],
+			"complete": [
+				"Vinte ou mais. O céu tá vazio. Bruto olhou pra cima e não viu nada. Melhor coisa do dia.",
+				"Toma diamantes, maçãs douradas e um livro de Força V."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 20, "desc": "<r>Elimine</r> <r>20 ghasts</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 5}]
+		},
+		{
+			"id": "piglin_brute_4_reliquias",
+			"tier": 4,
+			"title": "O Punho do Bastião",
+			"tone": "calm",
+			"offer": [
+				"Quatro pedaços dos antigos foi pouco. Bruto quer um <y>machado de netherita</y> pra cada bruto.",
+				"Pra isso precisa de muito <y>detrito antigo</y>. Muito.",
+				"Tu cava. Fundo. De novo."
+			],
+			"why": [
+				"Brutos com netherita: nenhum inimigo passa da ponte. Nunca mais.",
+				"E os comuns vão parar de trocar ouro quando virem o brilho preto."
+			],
+			"accept": [
+				"Camas, picareta de diamante, coragem.",
+				"<g>Traga</g> <y>10 detritos antigos</y>."
+			],
+			"progress": [
+				"Detrito antigo é raro, mas fica em veios de 1 ou 2 blocos perto da camada 15 do Nether.",
+				"O detrito antigo não queima na lava: se cair, ele boia. Tu não boia. Cuidado onde pisa."
+			],
+			"complete": [
+				"Dez. Os ferreiros do bastião ficaram em silêncio. Respeito.",
+				"Toma o molde de aprimoramento de netherita, diamantes e maçãs douradas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ancient_debris"], "count": 10, "desc": "<g>Entregue</g> <y>10 detritos antigos</y>"},
+			"rewards": [{"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}, {"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}]
+		},
+		{
+			"id": "piglin_brute_4_cranios",
+			"tier": 4,
+			"title": "Muro de Crânios",
+			"tone": "danger",
+			"offer": [
+				"Um crânio no posto foi bom. Três crânios no portão é melhor.",
+				"Bruto quer o portão do bastião com <y>crânios de esqueleto murcho</y>. Aviso pra quem chega.",
+				"Tu caça. Bruto pendura."
+			],
+			"why": [
+				"Inimigo que vê três crânios no portão volta pra casa. Bruto economiza machado.",
+				"E três crânios juntos têm poder. Os antigos sabiam. Bruto sabe."
+			],
+			"accept": [
+				"Pilhagem na espada. Paciência no coração.",
+				"<g>Traga</g> <y>3 crânios de esqueleto murcho</y>."
+			],
+			"progress": [
+				"A chance de crânio é pequena, mas cada nível de Pilhagem aumenta ela um pouco.",
+				"Três crânios em cima de areia de alma em forma de T invocam o Wither. Não faz isso perto do bastião."
+			],
+			"complete": [
+				"Três crânios no portão. Até os hoglins desviam agora.",
+				"Toma diamantes, maçãs douradas e um livro de Pilhagem III."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:wither_skeleton_skull"], "count": 3, "desc": "<g>Entregue</g> <y>3 crânios de esqueleto murcho</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_4_inferno",
+			"tier": 4,
+			"title": "Inferno de Blazes",
+			"tone": "danger",
+			"offer": [
+				"Os blazes ainda voam. Trinta não bastou. Bruto quer sessenta.",
+				"Tu vai morar na fortaleza até acabar o fogo deles.",
+				"<n>HRRNGH!</n> Ou até tu virar cinza."
+			],
+			"why": [
+				"Quem mata sessenta blazes não tem mais medo de fogo. Bruto quer tu sem medo.",
+				"E o pó deles vale ouro pros ferreiros. Quase ouro."
+			],
+			"accept": [
+				"Monta uma armadilha no gerador. Ou bate até o braço cair.",
+				"<r>Elimine 60 blazes</r>."
+			],
+			"progress": [
+				"Muita gente cerca o gerador de blaze com blocos e deixa só uma fresta pra bater. Funciona.",
+				"Os blazes ficam um tempo sem atirar entre as rajadas de três bolas de fogo. É a hora de atacar."
+			],
+			"complete": [
+				"Sessenta. Tu fede a enxofre. Bruto respeita.",
+				"Toma diamantes, maçãs douradas e um livro de Proteção contra Fogo IV."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 60, "desc": "<r>Elimine</r> <r>60 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 4}]
+		},
+		{
+			"id": "piglin_brute_4_netherita",
+			"tier": 4,
+			"title": "Lingotes Negros",
+			"tone": "calm",
+			"offer": [
+				"Detrito é pedra. Bruto quer metal. <y>Lingotes de netherita</y>.",
+				"Funde os fragmentos, junta com ouro, forja o lingote. Tu sabe fazer.",
+				"Bruto quer quatro. Um pra cada canto do tesouro."
+			],
+			"why": [
+				"Tesouro com netherita nos cantos não racha nem com explosão de ghast.",
+				"E Bruto quer que os outros bastiões saibam quem tem os cantos mais fortes."
+			],
+			"accept": [
+				"Quatro fragmentos e quatro ouros por lingote. Conta direito.",
+				"<g>Traga</g> <y>4 lingotes de netherita</y>."
+			],
+			"progress": [
+				"Detrito antigo derretido na fornalha vira fragmento de netherita. Quatro fragmentos com quatro lingotes de ouro fazem um lingote.",
+				"Ou seja: dezesseis detritos e dezesseis lingotes de ouro pra esse serviço. Começa cedo."
+			],
+			"complete": [
+				"Quatro lingotes negros. Os cantos do tesouro brilham escuro. Lindo.",
+				"Toma diamantes, maçãs douradas e um livro de Eficiência V."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_ingot"], "count": 4, "desc": "<g>Entregue</g> <y>4 lingotes de netherita</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "piglin_brute_4_evocadores",
+			"tier": 4,
+			"title": "Os Bruxos de Manto",
+			"tone": "danger",
+			"offer": [
+				"Os vilões de cima têm um mago de manto. Evocador. Faz dente sair do chão.",
+				"Bruto acha truque. Truque de covarde. Bruto quer o evocador morto pra provar.",
+				"Tu vai lá. Três deles."
+			],
+			"why": [
+				"Mago que faz dente do chão pode um dia fazer dente no bastião. Bruto não deixa.",
+				"E quem mata evocador pega o boneco de não-morrer. Bruto ouviu falar."
+			],
+			"accept": [
+				"Mata os vexes rápido. Depois o mago.",
+				"<r>Elimine 3 evocadores</r>."
+			],
+			"progress": [
+				"Evocadores moram nas <a>mansões da floresta</a> e aparecem nas invasões grandes. Eles invocam vexes e presas que saem do chão.",
+				"Todo evocador derruba um totem da imortalidade ao morrer. Fica com ele."
+			],
+			"complete": [
+				"Três magos. Três bonecos. Tu ficou mais difícil de matar. Bruto aprova.",
+				"Toma fragmentos de netherita, diamantes e maçãs douradas."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:evoker"], "count": 3, "desc": "<r>Elimine</r> <r>3 evocadores</r>"},
+			"rewards": [{"item": "minecraft:netherite_scrap", "count": 3}, {"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}]
+		},
+		{
+			"id": "piglin_brute_4_devastadores",
+			"tier": 4,
+			"title": "Os Bichos de Chifre",
+			"tone": "danger",
+			"offer": [
+				"Os vilões de cima montam bicho grande de chifre. Devastador.",
+				"Dizem que é mais forte que hoglin. <n>HRRNGH!</n> Bruto duvida.",
+				"Tu derruba três e conta pra Bruto."
+			],
+			"why": [
+				"Se devastador é mais forte que hoglin, Bruto precisa saber. Guerra se ganha sabendo.",
+				"E se não for, Bruto ri. Bruto quase nunca ri."
+			],
+			"accept": [
+				"Eles só aparecem na invasão. Começa uma.",
+				"<r>Elimine 3 devastadores</r>."
+			],
+			"progress": [
+				"Devastadores aparecem nas invasões de vila, às vezes com um saqueador ou evocador montado.",
+				"Eles quebram folhas e plantações no caminho. Se tu bloquear o ataque com escudo, eles ficam tontos e rugem."
+			],
+			"complete": [
+				"Três bichos de chifre. Tu disse que eram fortes. Bruto ainda acha hoglin pior.",
+				"Toma diamantes, maçãs douradas e um livro de Proteção IV."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ravager"], "count": 3, "desc": "<r>Elimine</r> <r>3 devastadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "piglin_brute_4_matadouro",
+			"tier": 4,
+			"title": "A Guerra Antiga",
+			"tone": "danger",
+			"offer": [
+				"A guerra com os hoglins nunca acabou. Bruto quer terminar ela no tempo de Bruto.",
+				"Hoglin no Nether, zoglin no mundo de cima. Os dois contam.",
+				"Cinquenta. Bruto quer cinquenta."
+			],
+			"why": [
+				"Os antigos lutaram três dias. Tu vai lutar quanto precisar.",
+				"E quem acaba com a manada ganha o nome de bruto. Mesmo sendo humano."
+			],
+			"accept": [
+				"Machado afiado. Carne no bolso. Não para.",
+				"<r>Elimine 50 hoglins ou zoglins</r>."
+			],
+			"progress": [
+				"Hoglin levado pro mundo de cima vira zoglin em uns quinze segundos. Zoglin ataca quase tudo que se mexe.",
+				"Zoglins não dá pra criar. Hoglins dá, com fungo carmesim. Uma criação de hoglin acaba rápido com essa conta."
+			],
+			"complete": [
+				"Cinquenta. A guerra antiga sentiu o golpe. Tu é bruto agora. Quase.",
+				"Toma fragmentos de netherita, diamantes, maçãs douradas e um livro de Inquebrável."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:hoglin", "minecraft:zoglin"], "count": 50, "desc": "<r>Elimine</r> <r>50 hoglins ou zoglins</r>"},
+			"rewards": [{"item": "minecraft:netherite_scrap", "count": 2}, {"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "piglin_brute_5_besta",
+			"tier": 5,
+			"title": "A Besta de Três Cabeças",
+			"tone": "danger",
+			"offer": [
+				"Os comuns contam que a Besta de Três Cabeças quebrou os bastiões. Bruto não sabe se é verdade.",
+				"Bruto sabe que a Besta pode voltar. E Bruto quer ela morta. Duas vezes, pra ter certeza.",
+				"<n>HRRNGH!</n> Tu invoca. Tu mata. Duas vezes."
+			],
+			"why": [
+				"Bastião que viu a Besta morrer duas vezes não tem mais medo de nada.",
+				"E Bruto quer que os comuns parem de chorar de noite contando essa história."
+			],
+			"accept": [
+				"Leite, maçãs, poções, armadura. E um lugar fechado.",
+				"<r>Derrote 2 Withers</r>."
+			],
+			"progress": [
+				"O Wither nasce de quatro blocos de areia ou solo das almas em forma de T com três crânios de esqueleto murcho em cima.",
+				"Lute debaixo da terra ou num lugar fechado. Com metade da vida, ele ganha uma armadura que bloqueia flechas."
+			],
+			"complete": [
+				"Duas Bestas no chão. O bastião ouviu. Os comuns pararam de chorar. Bruto ficou orgulhoso. Não conta.",
+				"Toma lingotes de netherita, diamantes, maçãs douradas encantadas e o boneco de não-morrer."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither"], "count": 2, "desc": "<r>Derrote</r> <r>2 Withers</r>, a Besta de Três Cabeças"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 3}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_exercito",
+			"tier": 5,
+			"title": "O Exército de Ossos",
+			"tone": "danger",
+			"offer": [
+				"Todas as fortalezas do Nether. Todos os ossos negros. Bruto quer o fim deles.",
+				"Cem. Bruto aprendeu a contar até cem só pra esse serviço.",
+				"Tu vai ser o pesadelo deles."
+			],
+			"why": [
+				"Os ossos negros são o único inimigo que guarda posto igual Bruto. Bruto quer ser o único.",
+				"E guerreiro que mata cem murchos não tem mais igual nos dois mundos."
+			],
+			"accept": [
+				"Leva Remendo, leva comida, leva raiva.",
+				"<r>Elimine 100 esqueletos murchos</r>."
+			],
+			"progress": [
+				"Uma fazenda de esqueletos murchos numa fortaleza, com os outros pontos de nascimento iluminados, faz essa conta andar mais rápido.",
+				"Esqueletos murchos também atacam piglins. Se tiver piglin por perto, eles ajudam a te distrair."
+			],
+			"complete": [
+				"Cem. Bruto conferiu. Bruto contou nos dedos de três piglins. Cem.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e o boneco de não-morrer."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:wither_skeleton"], "count": 100, "desc": "<r>Elimine</r> <r>100 esqueletos murchos</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_choroes",
+			"tier": 5,
+			"title": "O Fim do Choro",
+			"tone": "danger",
+			"offer": [
+				"Bruto sonha com um Nether sem choro de ghast. Um Nether quieto.",
+				"Sessenta. Talvez mais. Até o choro parar na cabeça de Bruto.",
+				"Tu é o único que pode."
+			],
+			"why": [
+				"O choro dos ghasts deixa os comuns loucos. Comum louco troca ouro por qualquer coisa.",
+				"E céu limpo é céu de bastião. Bruto quer o céu."
+			],
+			"accept": [
+				"Arco Infinito. Mira firme. Muita paciência.",
+				"<r>Elimine 60 ghasts</r>."
+			],
+			"progress": [
+				"Ghasts nascem mais nos desertos de netherrack e no Vale das Almas, onde tem espaço aberto.",
+				"Uma armadilha alta no meio do Vale das Almas, cercada de pedregulho, atrai muitos ghasts."
+			],
+			"complete": [
+				"Sessenta. O Nether ficou quieto. Bruto até dormiu. Uma hora. Recorde.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e um livro de Força V."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ghast"], "count": 60, "desc": "<r>Elimine</r> <r>60 ghasts</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:power", "level": 5}]
+		},
+		{
+			"id": "piglin_brute_5_tesouro",
+			"tier": 5,
+			"title": "O Coração do Bastião",
+			"tone": "calm",
+			"offer": [
+				"O tesouro é o coração. O coração precisa ser o maior do Nether.",
+				"Bruto quer <y>blocos de ouro</y>. Quarenta e oito. Um muro inteiro de ouro maciço.",
+				"Ninguém toca. Só tu traz."
+			],
+			"why": [
+				"Bastião com coração grande não morre. Nunca. Mesmo virando ruína.",
+				"E os comuns vão ver o muro e entender o que ouro é de verdade."
+			],
+			"accept": [
+				"Fazenda de esverdeados. Muito tempo. Muito ouro.",
+				"<g>Traga</g> <y>48 blocos de ouro</y>."
+			],
+			"progress": [
+				"Cada bloco de ouro leva nove lingotes. Uma fazenda de piglins zumbis em cima do teto do Nether dá ouro sem parar.",
+				"Minerar ouro nas Terras Áridas do mundo de cima também rende muito."
+			],
+			"complete": [
+				"Muro de ouro. Bruto ficou de pé na frente dele por muito tempo. Só olhando. Não conta.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e o boneco de não-morrer."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_block"], "count": 48, "desc": "<g>Entregue</g> <y>48 blocos de ouro</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 3}, {"item": "minecraft:diamond", "count": 24}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_coroa",
+			"tier": 5,
+			"title": "A Coroa Negra",
+			"tone": "calm",
+			"offer": [
+				"Os antigos brutos tinham uma coroa. Netherita pura. Ninguém sabe onde foi parar.",
+				"Bruto quer outra. Pra ficar no tesouro. Pra lembrar.",
+				"Pra isso, <y>blocos de netherita</y>. Dois."
+			],
+			"why": [
+				"Coroa no tesouro é o bastião dizendo: ainda estamos aqui.",
+				"E dois blocos de netherita é coisa que nenhum piglin comum ia juntar em mil anos."
+			],
+			"accept": [
+				"Dezoito lingotes. Tu sabe o que é isso. Vai.",
+				"<g>Traga</g> <y>2 blocos de netherita</y>."
+			],
+			"progress": [
+				"Um bloco de netherita leva nove lingotes de netherita. Dois blocos são dezoito lingotes, ou seja, setenta e dois fragmentos.",
+				"Dá pra minerar detrito com TNT ou camas na camada 15. Toda explosão revela mais."
+			],
+			"complete": [
+				"A coroa negra voltou. Bruto ajoelhou. Só um joelho. E só um pouco.",
+				"Toma moldes de aprimoramento de netherita, diamantes, maçãs douradas encantadas e o boneco de não-morrer."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:netherite_block"], "count": 2, "desc": "<g>Entregue</g> <y>2 blocos de netherita</y>"},
+			"rewards": [{"item": "minecraft:netherite_upgrade_smithing_template", "count": 3}, {"item": "minecraft:diamond", "count": 36}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_invasao",
+			"tier": 5,
+			"title": "Só Um Pode Ser o Pior",
+			"tone": "danger",
+			"offer": [
+				"Os vilões de cima. Saqueadores, vingadores, evocadores, devastadores. Todos dizem que são os piores.",
+				"<n>HRRNGH!</n> Só tem espaço pra um pior. E é o lado de Bruto.",
+				"Tu vai mostrar pra eles. Cem deles."
+			],
+			"why": [
+				"Bruto não divide medo com ninguém. O medo do mundo é do bastião.",
+				"E tu, Arquivilão ou quase, precisa provar que é o pior de todos."
+			],
+			"accept": [
+				"Invasão, posto avançado, mansão. Onde tiver, tu vai.",
+				"<r>Elimine 100 ilagers ou devastadores</r>."
+			],
+			"progress": [
+				"Saqueadores, vingadores, evocadores e devastadores todos contam. Invasões trazem vários de uma vez.",
+				"Os postos avançados dos saqueadores continuam gerando saqueadores em volta da torre."
+			],
+			"complete": [
+				"Cem. Os vilões de cima sabem teu nome agora. E sabem o de Bruto.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e o boneco de não-morrer."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:pillager", "minecraft:vindicator", "minecraft:evoker", "minecraft:ravager"], "count": 100, "desc": "<r>Elimine</r> <r>100 ilagers ou devastadores</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 28}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_chamas",
+			"tier": 5,
+			"title": "Senhor das Chamas",
+			"tone": "danger",
+			"offer": [
+				"Cento e cinquenta blazes. Bruto sabe que é muito. Bruto quer muito.",
+				"Quem mata tanto blaze vira dono do fogo. Bruto quer um dono do fogo do lado do bastião.",
+				"Tu."
+			],
+			"why": [
+				"Fogo é a arma do Nether. Quem manda no fogo manda no Nether.",
+				"E o pó de blaze vai acender os braseiros de todos os bastiões. Todos."
+			],
+			"accept": [
+				"Fazenda no gerador. Não desiste.",
+				"<r>Elimine 150 blazes</r>."
+			],
+			"progress": [
+				"Uma fazenda de blazes junta eles num buraco onde tu bate sem levar fogo. É assim que se mata cento e cinquenta.",
+				"Pó de blaze serve pra poções e olhos do ender. Guarda as varas, tu vai usar."
+			],
+			"complete": [
+				"Cento e cinquenta. Tu é o Senhor das Chamas. Bruto ainda é o Senhor da Ponte. Combina.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e um livro de Remendo."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 150, "desc": "<r>Elimine</r> <r>150 blazes</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 26}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "piglin_brute_5_disco",
+			"tier": 5,
+			"title": "A Música do Bastião",
+			"tone": "danger",
+			"offer": [
+				"Antes da ruína, os bastiões tinham música. Um disco. O <y>disco Pigstep</y>.",
+				"Os comuns dizem que tá perdido nos baús das ruínas. Guardado por brutos de outros bastiões.",
+				"Bruto quer de volta. Tu vai tirar dos outros brutos."
+			],
+			"why": [
+				"Bruto não dança. Mas Bruto quer ouvir de novo. Uma vez. Antes de morrer, que vai demorar.",
+				"E entrar em ruína guardada por bruto é o serviço mais perigoso do Nether."
+			],
+			"accept": [
+				"Os outros brutos não perdoam. Nem com ouro.",
+				"<g>Traga</g> <y>1 disco Pigstep</y>."
+			],
+			"progress": [
+				"O disco Pigstep só aparece nos baús dos <a>bastiões</a>. Às vezes é preciso abrir muitos bastiões até achar.",
+				"Brutos piglins atacam qualquer um, mesmo de ouro, e não voltam a nascer. Abrir baús deixa os piglins de perto furiosos."
+			],
+			"complete": [
+				"<n>HRRNGH...</n> A música. Bruto lembra. Bruto não chorou. Era poeira de pedra-negra no olho.",
+				"Toma lingotes de netherita, diamantes, uma maçã dourada encantada e o boneco de não-morrer."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:music_disc_pigstep"], "count": 1, "desc": "<g>Entregue</g> <y>1 disco Pigstep</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 30}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		},
+		{
+			"id": "piglin_brute_5_vigia",
+			"tier": 5,
+			"title": "O Vigia Cego",
+			"tone": "danger",
+			"offer": [
+				"Bruto ouviu falar de uma coisa nas profundezas do teu mundo. Um vigia. Cego. Que sente o passo.",
+				"Dizem que é o guarda mais forte que existe. Mais que Bruto.",
+				"<n>HRRNGH!</n> Mentira. Tu vai lá e prova."
+			],
+			"why": [
+				"Só pode existir um guarda mais forte. E ele mora no bastião.",
+				"E se tu matar o vigia cego, não tem mais nada que tu não possa matar."
+			],
+			"accept": [
+				"Silêncio. Lã. Coragem. Muita.",
+				"<r>Derrote 1 Warden</r>."
+			],
+			"progress": [
+				"O Warden aparece nas <a>cidades antigas</a> do Escuro Profundo quando os gritadores de sculk são ativados três vezes.",
+				"Ele é cego e sente vibrações. Andar agachado e pisar em lã não faz barulho. O grito sônico dele atravessa escudo e armadura."
+			],
+			"complete": [
+				"O vigia cego caiu. Bruto continua o guarda mais forte. Tu provou. Bruto não esquece.",
+				"Toma lingotes de netherita, diamantes, maçãs douradas encantadas e o boneco de não-morrer."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:warden"], "count": 1, "desc": "<r>Derrote</r> <r>1 Warden</r>, o vigia cego"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 3}, {"item": "minecraft:diamond", "count": 30}, {"item": "minecraft:enchanted_golden_apple", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}]
+		}
+	]
+}

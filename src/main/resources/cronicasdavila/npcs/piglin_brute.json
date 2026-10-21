@@ -1,0 +1,183 @@
+{
+	"greet_friendly": [
+		"<n>HRRNGH!</n> {player}. O carniceiro de cima. Bruto lembra de tu. Bruto lembra de quem sabe quebrar osso.",
+		"Tu de novo. Bom. Tu tem cheiro de sangue e cinza. Cheiro de quem trabalha direito.",
+		"<n>HRRNGH.</n> Os piglins comuns tremem quando tu passa. Bruto gosta disso. Chega. Mas não encosta no tesouro.",
+		"{player}. Bruto afiou o machado pensando em tu. Pra serviço, não pra tu. Hoje."
+	],
+	"greet_neutral": [
+		"<n>Hrrngh.</n> Fala. Curto.",
+		"Humano. Tu já sujou as mãos, Bruto sabe. Ainda não o bastante. Fala logo.",
+		"<n>HRRNGH?</n> Tu tá no portão do bastião. Ninguém fica no portão. Ou entra pra trabalhar, ou vira cinza.",
+		"Bruto tá olhando. Bruto sempre tá olhando. Diz o que quer."
+	],
+	"greet_cold": [
+		"<n>Hrrngh...</n> Bruto ouviu histórias de tu. Histórias de fraqueza. Bruto odeia fraqueza.",
+		"Tu tem sorte que o machado tá cansado hoje. Só hoje.",
+		"Fala rápido. Cada palavra tua é uma palavra que o machado escuta."
+	],
+	"hostile": [
+		"<r>HRRNGH!!</r> Tu tocou no tesouro do bastião. Agora tu é carne.",
+		"<r>Sai.</r> Ou sai em pedaços. Bruto não liga qual."
+	],
+	"followup": [
+		"<n>Hrrngh.</n> Mais?",
+		"Fala. O machado tá esperando.",
+		"Ainda aqui? Então tem mais coisa. Diz.",
+		"Bruto não tem o dia todo. Nether não tem dia. Mas Bruto não tem ele mesmo assim."
+	],
+	"decline": [
+		"<n>HRRNGH.</n> Fraco. Bruto sabia.",
+		"Recusa? Bruto anota. Bruto não esquece. Bruto não sabe escrever, mas não esquece.",
+		"Vai embora então. Vai catar pepita com os piglins comuns. É o teu lugar."
+	],
+	"locked": [
+		"<n>HRRNGH!</n> Esse serviço come gente do teu tamanho. Volta quando tiver mais cicatriz.",
+		"Não. Tu ainda morre fácil demais. Bruto não perde tempo enterrando humano."
+	],
+	"repeat": [
+		"O mesmo serviço. De novo. Nether não acaba de inimigo, e Bruto não acaba de raiva.",
+		"Tu já fez isso. Faz de novo. Melhor. Mais rápido. Mais sangue."
+	],
+	"apology_thanks": [
+		"<n>Hrrngh.</n> Ouro. Bruto aceita. Bruto não perdoa, mas aceita ouro.",
+		"Desculpa de humano vale nada. Ouro vale alguma coisa. Tá. Fica vivo."
+	],
+	"bless": [
+		"<n>HRRNGH!</n> Bruto bate no teu ferro com o machado. Se não quebrou agora, não quebra nunca mais.",
+		"Pelo fogo do bastião e pelo ouro que ninguém toca: que isso rache crânios por cem anos."
+	],
+	"bye": [
+		"<n>Hrrngh.</n> Vai. Volta com sangue no machado.",
+		"Some. E não morre fraco. Morre lutando, se for morrer.",
+		"Vai. O bastião não precisa de tu hoje. Amanhã talvez."
+	],
+	"greet_night": [
+		"<n>Hrrngh.</n> Lá em cima tá escuro, Bruto sente no teu cheiro. Escuro é bom. Escuro esconde o machado.",
+		"Noite no mundo de cima. Os bichos de lá saem pra caçar. Aqui é sempre noite. Aqui tudo sempre caça.",
+		"Tu vem de noite. Bom. Quem anda de noite não tem medo. Ou é burro. Bruto vai descobrir qual."
+	],
+	"bye_night": [
+		"Vai pro escuro. Bate em tudo que se mexer.",
+		"Some na noite. Se ouvir grunhido atrás de tu, não é Bruto. É pior.",
+		"Volta antes de clarear. Ou não volta. Bruto não chora."
+	],
+	"greet_rain": [
+		"<n>HRRNGH!</n> Tu tá molhado. Água. Que nojo. Fica longe do tesouro até secar.",
+		"Água caindo do céu? No mundo de cima é assim? Bruto prefere lava caindo do teto."
+	],
+	"greet_storm": [
+		"Barulho de céu quebrando no teu cheiro. Tempestade. Bruto gosta de coisa que quebra.",
+		"<n>HRRNGH!</n> Raio lá em cima, é? Raio é bom. Raio não pede licença. Igual Bruto."
+	],
+	"reward_intro": [
+		"<n>HRRNGH.</n> Serviço feito. Bruto paga. Pega",
+		"Bruto não gosta de dar. Mas Bruto gosta menos de dever. Toma",
+		"Pelo tesouro do bastião, Bruto entrega",
+		"<n>Hrrngh.</n> Tu mereceu. Pouco. Mas mereceu. Leva"
+	],
+	"reward_outro": [
+		"<n>Hrrngh.</n> Não conta pros piglins comuns. Eles vão querer trocar por bugiganga.",
+		"Usa isso pra quebrar coisa. Se usar pra enfeite, Bruto quebra tu.",
+		"Pronto. Agora some antes que Bruto se arrependa.",
+		"Isso saiu do baú de guerra, não do tesouro. Do tesouro ninguém tira nada. Nunca.",
+		"Bruto pagou bem. Bruto quer serviço igual ou melhor da próxima vez."
+	],
+	"lore_done": [
+		"<n>HRRNGH!</n> Já falou demais hoje. Bruto não é piglin fofoqueiro.",
+		"Uma história basta. O resto tu aprende apanhando.",
+		"Chega. Garganta de Bruto é pra grunhir, não pra contar conto."
+	],
+	"abandon": [
+		"<n>HRRNGH!</n> Desistiu. Bruto sabia. Fraco, fraco, fraco.",
+		"Larga o serviço no meio? No bastião, quem larga o posto vira comida de hoglin."
+	],
+	"lore": [
+		[
+			"Os bastiões não foram feitos pros piglins comuns. Foram feitos pra guerra. Pedra-negra grossa, muro alto, ponte sobre a lava.",
+			"Os comuns vivem lá dentro como se fosse casa. Trocam ouro por bugiganga, dançam, babam. Bruto vigia a ponte.",
+			"Bruto não sai do bastião. Nunca. Se Bruto sair, quem guarda? Ninguém. Por isso Bruto não sai."
+		],
+		[
+			"Antes, os <r>hoglins</r> eram donos da floresta carmesim inteira. Manadas tão grandes que o chão tremia.",
+			"Os brutos antigos foram lá com machado de ouro. Três dias de luta. A floresta ficou mais vermelha do que já era.",
+			"Desde então, piglin caça hoglin. Hoglin caça piglin. Guerra nunca acabou. Bruto acha bom. Guerra mantém o machado afiado."
+		],
+		[
+			"Piglin comum vê ouro e baba. Bruto vê ouro e vigia. Essa é a diferença.",
+			"O ouro do tesouro não é pra troca. Não é pra brilhar na cara. É o coração do bastião. Enquanto o ouro tá lá, o bastião tá vivo.",
+			"Tu quer ver um bruto com raiva de verdade? Abre o baú do tesouro. <d>(Não abre.)</d>"
+		],
+		[
+			"Hoje os bastiões são <a>Ruínas</a>. Pedaços caídos, pontes quebradas, magma escorrendo nas paredes.",
+			"Ninguém lembra quem quebrou. Uns dizem que foi a Besta de Três Cabeças. Outros dizem que os próprios piglins, brigando por ouro.",
+			"Bruto não liga quem foi. Ruína ou palácio, o posto é o mesmo. Bruto fica. Bruto guarda."
+		],
+		[
+			"O <n>Nether</n> não tem dó. Lava no chão, fogo no céu, ghast chorando e cuspindo bola de fogo.",
+			"Coisa fraca morre aqui em um dia. Coisa forte morre em dois. Bruto tá aqui há mais de mil.",
+			"Tu quer saber o segredo? Não tem segredo. Bate primeiro. Bate mais forte. Não cai na lava."
+		],
+		[
+			"Bruto já foi piglin pequeno. Um dia, um hoglin entrou no bastião. Os comuns correram. Bruto não correu.",
+			"Bruto pegou um machado mais pesado que ele mesmo e bateu até o hoglin parar de se mexer. Ficou com essa cicatriz no focinho.",
+			"No outro dia deram a Bruto o machado de ouro e o posto da ponte. Ninguém mais chamou Bruto de pequeno. Ninguém mais ousou."
+		]
+	],
+	"player_work": [
+		"Tem serviço sujo pra mim?",
+		"Quem eu preciso quebrar hoje?",
+		"<n>Hrrngh!</n> ...Missão?",
+		"Bruto, tô pronto pra sangue."
+	],
+	"player_accept": [
+		"Fechado. Afia o machado.",
+		"Considera feito.",
+		"Pelo tesouro do bastião!",
+		"<n>HRRNGH!</n> ...Isso foi um sim."
+	],
+	"player_why": [
+		"E por que você mesmo não vai?",
+		"O que eu ganho com isso?",
+		"Por que isso importa pro bastião?",
+		"Explica melhor, brutamontes."
+	],
+	"player_decline": [
+		"Hoje não.",
+		"Isso é demais até pra mim.",
+		"Passo. Gosto de ficar inteiro.",
+		"Pede pra outro."
+	],
+	"player_lore": [
+		"Me conta sobre os bastiões.",
+		"Como é ser um bruto?",
+		"Por que você não liga pras trocas de ouro?",
+		"Alguma história de guerra?"
+	],
+	"player_more_lore": [
+		"Conta mais uma.",
+		"E depois, o que aconteceu?",
+		"Tem mais história de guerra?"
+	],
+	"player_bye": [
+		"Até mais, Bruto.",
+		"Fui. Cuida do tesouro.",
+		"Volto com sangue no machado.",
+		"Hrrngh! ...Isso foi um tchau."
+	],
+	"names": [
+		"Quebra-Osso", "Marretão", "Presa-Torta", "Cicatriz", "Esmaga-Crânio", "Cabeça-Dura", "Rosnador", "Racha-Elmo",
+		"Dente-Podre", "Machadão", "Brutamontes", "Couro-Grosso"
+	],
+	"extra": {
+		"too_weak": [
+			"<n>HRRNGH!</n> Tu? Tu é piolho. Bruto não conversa com piolho. Volta quando for <r>Renegado</r> de verdade.",
+			"Bruto sente teu cheiro: cheiro de quem ainda pede desculpa. <r>Fraco.</r> Some do portão.",
+			"<n>Hrrngh...</n> Arruaceirozinho. Bandidinho. Bruto come três do teu tipo no café. Suja mais as mãos e volta.",
+			"Não. Não. <r>NÃO.</r> Bruto só fala com quem já fez o mundo de cima tremer. Tu mal fez ele espirrar."
+		],
+		"sleeping": [
+			"<n>Zzz... hrrngh... tesouro... ninguém toca... Zzz...</n> <d>(mesmo dormindo, o bruto aperta o machado)</d>"
+		]
+	}
+}
