@@ -1,0 +1,403 @@
+{
+	"quests": [
+		{
+			"id": "explorer_1_estrada",
+			"tier": 1,
+			"title": "O Primeiro Passo",
+			"tone": "calm",
+			"offer": [
+				"Ó-lhó-lhó, queridu! Tu queres ser explorador? Então esquece espada, esquece mapa. A primeira coisa é perna.",
+				"Explorador que não anda é só um sonhador sentado. E sonhador sentado não descobre nada."
+			],
+			"why": [
+				"Quem anda conhece o caminho, acha atalho, vê o bioma mudar debaixo do pé.",
+				"E eu preciso saber se tu aguentas. Não vou te mandar pro deserto se tu cansas na praça."
+			],
+			"accept": [
+				"Dazumbanda! Vale andar ou correr, pra onde quiseres. Só não vale andar em círculo, tás tolo?",
+				"<g>Caminhe ou corra</g> <y>500 blocos</y> e volta aqui me contar o que viste."
+			],
+			"progress": [
+				"Correr gasta fome mais rápido. Leva comida no bolso.",
+				"Se a noite chegar no meio do caminho, faz um abrigo ou dorme numa cama. Ela também marca teu ponto de volta."
+			],
+			"complete": [
+				"Ó-lhó-lhó, olha essa bota gasta! Agora sim tu tens cara de explorador.",
+				"Toma, queridu: <o>esmeraldas</o> e <o>maçãs</o> pra próxima caminhada."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:walk_one_cm", "minecraft:sprint_one_cm"], "count": 50000, "desc": "<g>Caminhe ou corra</g> <y>500 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:apple", "count": 8}]
+		},
+		{
+			"id": "explorer_1_bussolas",
+			"tier": 1,
+			"title": "Agulhas Que Apontam Pra Casa",
+			"tone": "calm",
+			"offer": [
+				"Queridu, eu vou levar a criançada da vila num passeio até o rio grande.",
+				"Mas cada um precisa de uma <y>bússola</y>. Da última vez, o filho do pedreiro se perdeu e voltou três dias depois, montado numa lhama."
+			],
+			"why": [
+				"Bússola sempre aponta pro ponto de nascimento do mundo, perto da vila. Quem tem uma, sempre volta.",
+				"E explorador que perde criança no passeio nunca mais leva criança no passeio. Eu quero continuar levando."
+			],
+			"accept": [
+				"Ó-lhó-lhó, obrigado! Bússola é ferro em volta e pó de redstone no meio, na bancada.",
+				"<g>Fabrique</g> <y>3 bússolas</y> e o passeio tá garantido."
+			],
+			"progress": [
+				"Cada bússola leva quatro barras de ferro e um pó de redstone. Redstone aparece bem lá embaixo nas cavernas.",
+				"Bússola dentro do Nether gira doida. Lá ela não serve. Só aqui em cima."
+			],
+			"complete": [
+				"Dazumbanda, três bússolas! Agora nenhuma criança se perde. A lhama vai ficar com saudade.",
+				"Toma, queridu: <o>esmeraldas</o> e <o>salmão assado</o>, comida de explorador da ilha."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:compass"], "count": 3, "desc": "<g>Fabrique</g> <y>3 bússolas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:cooked_salmon", "count": 8}]
+		},
+		{
+			"id": "explorer_1_ressecados",
+			"tier": 1,
+			"title": "A Trilha das Dunas",
+			"tone": "danger",
+			"offer": [
+				"Ó-lhó-lhó, queridu, tem uma trilha no deserto que leva até um templo que eu quero explorar.",
+				"Mas ela tá cheia de <r>zumbis ressecados</r>. Aqueles que não pegam fogo no sol e te deixam com fome quando batem.",
+				"Eu tentei passar e voltei com a barriga roncando e a mochila rasgada."
+			],
+			"why": [
+				"Sem a trilha limpa, nenhum explorador chega no templo. E templo esquecido é tesouro perdido.",
+				"E as caravanas da vila do deserto também usam esse caminho. Ajuda todo mundo."
+			],
+			"accept": [
+				"Dazumbanda! Eles aparecem nos desertos, de noite e de dia também, que o sol não queima eles.",
+				"<r>Elimine 12 zumbis ressecados</r> e a trilha é nossa."
+			],
+			"progress": [
+				"O ataque do ressecado dá Fome. Leva comida de sobra pra não ficar fraco.",
+				"Eles aparecem mais à noite, mas como não queimam, continuam andando de manhã. Fica de olho atrás das dunas."
+			],
+			"complete": [
+				"Ó-lhó-lhó, a trilha tá limpinha! Já vi até uma caravana de lhamas passando.",
+				"Toma, queridu: <o>esmeraldas</o> e <o>ferro</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:husk"], "count": 12, "desc": "<r>Elimine</r> <r>12 zumbis ressecados</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "explorer_2_mapas",
+			"tier": 2,
+			"title": "Papel em Branco",
+			"tone": "calm",
+			"offer": [
+				"Queridu, eu tenho uma ideia dazumbanda: um mural na praça com o mapa de toda a região em volta da vila.",
+				"Mas pra isso eu preciso de <y>mapas</y>. Vários, em branco, prontos pra desenhar andando."
+			],
+			"why": [
+				"Com o mural, qualquer aldeão sabe onde fica o rio, a montanha, a mina. Ninguém mais se perde.",
+				"E mapa pendurado em moldura vira enfeite. A praça fica bonita e útil ao mesmo tempo."
+			],
+			"accept": [
+				"Ó-lhó-lhó, obrigado! Mapa em branco é oito papéis em volta de uma bússola, na bancada.",
+				"<g>Fabrique</g> <y>4 mapas em branco</y> e eu começo o mural."
+			],
+			"progress": [
+				"Papel sai de cana-de-açúcar: três canas na bancada dão três papéis. Cana cresce na beira d'água.",
+				"Mesa de cartografia faz mapa em branco gastando menos: só um papel e uma bússola."
+			],
+			"complete": [
+				"Dazumbanda, quatro mapas novinhos! Amanhã eu saio desenhando cada um.",
+				"Toma, queridu: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:map"], "count": 4, "desc": "<g>Fabrique</g> <y>4 mapas em branco</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "explorer_2_cavalgada",
+			"tier": 2,
+			"title": "Explorador a Cavalo",
+			"tone": "calm",
+			"offer": [
+				"Queridu, a pé tu vais longe. A cavalo, tu vais longe e volta pra janta.",
+				"Eu quero ver se tu sabes cavalgar de verdade antes de te mandar pras aventuras grandes."
+			],
+			"why": [
+				"Cavalo bom corre mais que qualquer monstro e pula cerca e barranco. Salva a vida de explorador.",
+				"E as vilas da região ficam longe uma da outra. Sem cavalo, a notícia chega velha."
+			],
+			"accept": [
+				"Ó-lhó-lhó, bora! Doma um cavalo montando nele até ele parar de te derrubar. Depois bota a sela.",
+				"<g>Cavalgue</g> <y>500 blocos</y> e volta com o cavalo inteiro."
+			],
+			"progress": [
+				"Cavalo aparece nas planícies e savanas. Pra guiar, precisa de sela. Sela tem em baú de templo, masmorra e naufrágio, ou com o coureiro.",
+				"Maçã, trigo e cenoura dourada acalmam e curam o cavalo. Cada cavalo tem velocidade diferente."
+			],
+			"complete": [
+				"Dazumbanda, que cavaleiro! Tu e esse cavalo já são uma dupla de aventura.",
+				"Toma, queridu: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:horse_one_cm"], "count": 50000, "desc": "<g>Cavalgue</g> <y>500 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "explorer_2_afogados",
+			"tier": 2,
+			"title": "Os Guardas do Naufrágio",
+			"tone": "danger",
+			"offer": [
+				"Ó-lhó-lhó, queridu, eu achei um <a>naufrágio</a> perto da costa! Casco inteiro, baú no porão, tudo!",
+				"Só que quando eu mergulhei, uns <r>afogados</r> vieram pra cima. Um deles tinha tridente. Quase virei espetinho.",
+				"Lá dentro tem mapa do tesouro, tenho certeza. Mas não consigo chegar perto."
+			],
+			"why": [
+				"Naufrágio guarda mapa, esmeralda e às vezes ferro. É a história do mar que ninguém contou ainda.",
+				"E afogado sai da água de noite e vem atrás das vilas da praia. Limpar o mar protege a costa."
+			],
+			"accept": [
+				"Dazumbanda! Leva poção de respiração aquática ou pelo menos um capacete de tartaruga.",
+				"<r>Elimine 12 afogados</r> e o naufrágio fica livre pra explorar."
+			],
+			"progress": [
+				"Afogado aparece em oceanos e rios, mais de noite. Os de tridente atiram de longe.",
+				"Porta fechada embaixo d'água faz uma bolha de ar. Bom truque pra respirar no meio do caminho."
+			],
+			"complete": [
+				"Ó-lhó-lhó, o mar tá calminho! Já mergulhei no porão e achei um mapa amassado com um X vermelho.",
+				"Toma, queridu: <o>ferro</o>, <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:drowned"], "count": 12, "desc": "<r>Elimine</r> <r>12 afogados</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "explorer_3_coracao",
+			"tier": 3,
+			"title": "O X do Mapa",
+			"tone": "calm",
+			"offer": [
+				"Queridu, lembra do mapa do tesouro que eu achei? Pois eu nunca tive coragem de cavar sozinho.",
+				"Lá embaixo, no baú enterrado, tem o <p>Coração do Mar</p>. Uma esfera azul que pulsa como se tivesse vida."
+			],
+			"why": [
+				"Com o Coração do Mar e cascas de náutilo se faz um <p>conduíte</p>, que deixa respirar e enxergar embaixo d'água.",
+				"Com um desses, a vila explora o oceano inteiro. É o maior achado que um explorador pode trazer pra casa."
+			],
+			"accept": [
+				"Ó-lhó-lhó, bora! O mapa do tesouro aparece em baú de naufrágio e de ruína do oceano.",
+				"<g>Traga</g> <y>1 Coração do Mar</y> do tesouro enterrado."
+			],
+			"progress": [
+				"O X fica quase sempre numa praia. Cava bem no meio do X, uns blocos pra baixo.",
+				"Todo tesouro enterrado tem um Coração do Mar. É garantido, queridu. É só achar o baú."
+			],
+			"complete": [
+				"Dazumbanda... olha isso pulsando. Eu tô arrepiado, queridu. Tu és um explorador de verdade.",
+				"Toma: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:heart_of_the_sea"], "count": 1, "desc": "<g>Entregue</g> <y>1 Coração do Mar</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "explorer_3_olhos",
+			"tier": 3,
+			"title": "Olhos Que Mostram o Caminho",
+			"tone": "calm",
+			"offer": [
+				"Queridu, eu tenho um sonho antigo: achar a <a>fortaleza</a> escondida debaixo da terra, onde fica o portal do Fim.",
+				"E o único jeito de achar é seguindo o <p>Olho do Ender</p>. Jogas pro alto e ele voa na direção certa."
+			],
+			"why": [
+				"Fortaleza tem biblioteca antiga, corredores sem fim e o portal pro lugar mais estranho do mundo.",
+				"E olho do Ender às vezes quebra no meio do voo. Por isso precisa de muitos."
+			],
+			"accept": [
+				"Ó-lhó-lhó, valeu! Olho do Ender é pérola do Ender com pó de blaze, na bancada.",
+				"<g>Fabrique</g> <y>12 olhos do Ender</y> e a gente parte pra fortaleza."
+			],
+			"progress": [
+				"Pérola cai dos Endermen, aqueles altos que não gostam de ser olhados. Pó de blaze sai do bastão de blaze, lá do Nether.",
+				"O portal do Fim precisa de até doze olhos pra acender. Então doze é o número certo, queridu."
+			],
+			"complete": [
+				"Dazumbanda, doze olhos me olhando! Que arrepio. Agora o caminho tá na palma da mão.",
+				"Toma, queridu: <o>diamantes</o> e um <o>livro de Pilhagem II</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:ender_eye"], "count": 12, "desc": "<g>Fabrique</g> <y>12 olhos do Ender</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 2}]
+		},
+		{
+			"id": "explorer_3_teias",
+			"tier": 3,
+			"title": "Os Túneis Abandonados",
+			"tone": "danger",
+			"offer": [
+				"Queridu, embaixo da vila tem uma <a>mina abandonada</a>. Trilho velho, tábua podre e teia em todo canto.",
+				"Eu entrei e fiquei preso numa teia por meia hora. Uma aranha da caverna me olhando o tempo todo. Ó-lhó-lhó, que pesadelo.",
+				"Quero mapear tudo, mas não consigo passar com essas teias."
+			],
+			"why": [
+				"Mina abandonada tem baú em vagoneta, trilho de graça e às vezes livro encantado.",
+				"E se eu mapear os túneis, os mineiros da vila não precisam cavar do zero."
+			],
+			"accept": [
+				"Dazumbanda! Espada ou tesoura cortam teia ligeiro. E toma cuidado com as gaiolas de aranha.",
+				"<g>Corte</g> <y>24 teias</y> nos túneis abandonados."
+			],
+			"progress": [
+				"Mina abandonada aparece nas cavernas, com suporte de madeira e trilho. Às vezes ela corta um desfiladeiro.",
+				"Teia em volta de gaiola de monstro é sinal de aranha da caverna. Quebra a gaiola ou bota tocha em volta."
+			],
+			"complete": [
+				"Ó-lhó-lhó, os túneis tão livres! Já desenhei metade do mapa da mina.",
+				"Toma, queridu: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:cobweb"], "count": 24, "desc": "<g>Corte</g> <y>24 teias</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "explorer_4_mansao",
+			"tier": 4,
+			"title": "A Casa dos Exilados",
+			"tone": "danger",
+			"offer": [
+				"Queridu, eu comprei um mapa da <a>mansão da floresta</a> com o cartógrafo. Paguei caro.",
+				"Mas eu já estive lá uma vez. Os <r>vingadores</r> com machado e os <r>evocadores</r> com magia quase acabaram comigo.",
+				"Quero explorar todos os quartos. Tem quarto secreto lá, tenho certeza. Mas preciso que tu limpes o caminho."
+			],
+			"why": [
+				"A mansão é o lugar mais misterioso do mundo. Ninguém sabe quem construiu.",
+				"E os evocadores guardam o <o>totem da imortalidade</o>. Quem derruba um, nunca mais tem medo da morte."
+			],
+			"accept": [
+				"Ó-lhó-lhó, que coragem! Leva escudo pros machados e sai de cima das presas que saem do chão.",
+				"<r>Elimine 10 Exilados</r>: vingadores e evocadores valem."
+			],
+			"progress": [
+				"A mansão fica na floresta escura, muito longe. O mapa do cartógrafo aponta o caminho.",
+				"Evocador chama uns espíritos voadores, os vexes. Mata o evocador primeiro e eles somem com o tempo."
+			],
+			"complete": [
+				"Dazumbanda... a mansão é nossa! Achei um quarto com uma estátua de lã. Ninguém vai acreditar.",
+				"Toma, queridu: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Pilhagem III</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vindicator", "minecraft:evoker"], "count": 10, "desc": "<r>Elimine</r> <r>10 Exilados</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:looting", "level": 3}]
+		},
+		{
+			"id": "explorer_4_verrugas",
+			"tier": 4,
+			"title": "Lembranças da Fortaleza Vermelha",
+			"tone": "danger",
+			"offer": [
+				"Queridu, eu nunca entrei numa <a>fortaleza do Nether</a>. Ó-lhó-lhó, eu morro de vontade e de medo.",
+				"Dizem que lá dentro cresce uma planta vermelha, a <y>verruga do Nether</y>, nas escadas perto do tijolo escuro.",
+				"Se tu me trouxeres, eu planto aqui no meu quintal e conto pra todo mundo que tenho um pedaço do Nether."
+			],
+			"why": [
+				"Verruga do Nether é a base de quase toda poção do clérigo. Sem ela, só se faz poção estranha que não serve pra nada.",
+				"E é a prova de que alguém da vila chegou na fortaleza. Explorador vive de prova, queridu."
+			],
+			"accept": [
+				"Dazumbanda! Leva poção de resistência ao fogo e cuidado com os esqueletos wither.",
+				"<g>Traga</g> <y>16 verrugas do Nether</y> da fortaleza."
+			],
+			"progress": [
+				"A verruga cresce em areia das almas, perto das escadas das fortalezas. Às vezes também aparece em baú de bastião.",
+				"Quebra só a madura, que é a mais vermelha: ela solta mais verruga."
+			],
+			"complete": [
+				"Ó-lhó-lhó, tu foste e voltaste! E com o bolso cheio de Nether. Tu és meu herói.",
+				"Toma, queridu: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Proteção Contra Projéteis IV</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:nether_wart"], "count": 16, "desc": "<g>Entregue</g> <y>16 verrugas do Nether</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:projectile_protection", "level": 4}]
+		},
+		{
+			"id": "explorer_4_travessia",
+			"tier": 4,
+			"title": "A Grande Travessia",
+			"tone": "calm",
+			"offer": [
+				"Queridu, os exploradores antigos tinham um desafio: a Grande Travessia. Andar tanto que o mundo muda de cara várias vezes.",
+				"Deserto, neve, selva, montanha. Quem completa ganha o respeito de todo explorador que existe."
+			],
+			"why": [
+				"Quem faz a travessia aprende o mundo inteiro: onde o sol nasce, onde a neve cai, onde o perigo mora.",
+				"E eu quero ver teu nome na lista dos que completaram. A lista é curta, queridu. Bem curta."
+			],
+			"accept": [
+				"Ó-lhó-lhó, bora! Vale andar e correr. Leva cama, comida e muita tocha.",
+				"<g>Caminhe ou corra</g> <y>5000 blocos</y> e volta pra contar."
+			],
+			"progress": [
+				"Anda numa direção só, que tu vês mais biomas. O sol nasce no leste e se põe no oeste.",
+				"Cama em cada parada marca teu ponto de volta. Se morreres, acordas na última cama usada."
+			],
+			"complete": [
+				"Dazumbanda, cinco mil blocos! Teu nome tá na lista, queridu. Do lado do meu.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Peso-Pena IV</o>."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:walk_one_cm", "minecraft:sprint_one_cm"], "count": 500000, "desc": "<g>Caminhe ou corra</g> <y>5000 blocos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "explorer_5_elitro",
+			"tier": 5,
+			"title": "As Asas do Navio do Fim",
+			"tone": "danger",
+			"offer": [
+				"Queridu, lembra do meu sonho? O <p>élitro</p>. As asas penduradas no navio que flutua do lado das cidades do Fim.",
+				"Eu tô velho pra pular no vazio. Mas tu já foste longe, já atravessaste o mundo.",
+				"Vai além do dragão, queridu. Acha uma cidade do Fim com navio e me traz as asas."
+			],
+			"why": [
+				"Com o élitro, o mapa do mundo inteiro cabe numa tarde. Montanha, mar, deserto, tudo visto de cima.",
+				"E dizem que nenhum explorador da minha família voltou do Fim com asas. Quero que a história mude."
+			],
+			"accept": [
+				"Ó-lhó-lhó... vai com Deus. Depois do dragão, um portal pequeno aparece. Joga uma pérola do Ender nele.",
+				"<g>Traga</g> <y>1 élitro</y> do navio do Fim."
+			],
+			"progress": [
+				"As cidades do Fim ficam nas ilhas de fora, longe da ilha do dragão. Nem toda cidade tem navio.",
+				"Shulker te faz flutuar. Leva balde d'água e bloco pra não cair no vazio, e leite pra tirar o efeito."
+			],
+			"complete": [
+				"Dazumbanda... asas de verdade. Eu tô chorando, queridu. Um explorador chorando é coisa rara.",
+				"Toma: um <o>totem da imortalidade</o>, um <o>livro de Remendo</o>, uma <o>maçã dourada encantada</o> e <o>diamantes</o>. O mundo é teu agora."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:elytra"], "count": 1, "desc": "<g>Entregue</g> <y>1 élitro</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 16}]
+		},
+		{
+			"id": "explorer_5_voo",
+			"tier": 5,
+			"title": "O Mapa Visto de Cima",
+			"tone": "calm",
+			"offer": [
+				"Queridu, agora que tu tens asas, eu tenho o último pedido da minha vida de explorador.",
+				"Voa. Voa por cima do mundo e me conta o que viste. Cada montanha, cada mar, cada vila que ninguém conhece.",
+				"Eu desenho tudo no mapa grande da praça. Vai ser o mapa mais completo que esta vila já teve."
+			],
+			"why": [
+				"Daqui de baixo, eu vi uma parte do mundo. Lá de cima, tu vês tudo.",
+				"E quando eu não estiver mais aqui, o mapa fica. Com o teu nome e o meu, lado a lado, ó-lhó-lhó."
+			],
+			"accept": [
+				"Dazumbanda, vai! Pula de um lugar alto e abre as asas no ar. Foguete de fogos de artifício te dá impulso.",
+				"<g>Voe</g> <y>5000 blocos</y> de élitro e volta pra me contar."
+			],
+			"progress": [
+				"Mergulhar ganha velocidade, subir perde. Fogos de artifício sem estrela dão impulso sem explodir em ti.",
+				"O élitro gasta com o uso. Livro de Remendo ou membrana de phantom na bigorna consertam."
+			],
+			"complete": [
+				"Ó-lhó-lhó... o mapa da praça tá completo, queridu. Cada canto que tu viste agora tem nome.",
+				"Toma: um <o>molde de melhoria de netherite</o>, <o>barras de netherite</o>, um <o>totem da imortalidade</o> e <o>diamantes</o>. O maior explorador desta vila és tu."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 500000, "desc": "<g>Voe</g> <y>5000 blocos</y> de élitro"},
+			"rewards": [{"item": "minecraft:netherite_upgrade_smithing_template", "count": 1}, {"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:diamond", "count": 14}]
+		}
+	]
+}
