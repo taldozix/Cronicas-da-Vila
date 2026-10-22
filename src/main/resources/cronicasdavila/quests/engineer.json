@@ -1,0 +1,396 @@
+{
+	"quests": [
+		{
+			"id": "engineer_1_redstone",
+			"tier": 1,
+			"title": "Pó Vermelho",
+			"tone": "calm",
+			"offer": [
+				"Pô, véi, meu estoque de <y>redstone</y> zerou. Tô com três circuitos pela metade em cima da mesa de projetos.",
+				"Sem redstone, engenheiro é só um cara olhando pra uma pilha de pistão parado."
+			],
+			"why": [
+				"Com redstone eu ligo as lâmpadas da rua, as portas automáticas e o alarme do sino. A vila inteira roda nela, bicho.",
+				"E o minério fica lá embaixo, perto da lava. Eu sou engenheiro, não sou minerador."
+			],
+			"accept": [
+				"Fechou! Precisa de picareta de ferro pra cima, senão o minério não solta nada.",
+				"<g>Minere</g> <y>24 minérios de redstone</y>, véi."
+			],
+			"progress": [
+				"O minério de redstone fica bem fundo, abaixo da camada 15, e aparece muito nas camadas de ardósia.",
+				"Ele brilha quando você encosta. E cada bloco solta vários pós, ainda mais com <y>Fortuna</y>."
+			],
+			"complete": [
+				"Olha esse vermelhão, bicho! Já dá pra fechar os três circuitos e ainda sobra pra testar umas ideias doidas.",
+				"Toma esmeraldas e ferro, que engenheiro sem ferro não monta nem um trilho."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:redstone_ore", "minecraft:deepslate_redstone_ore"], "count": 24, "desc": "<g>Minere</g> <y>24 minérios de redstone</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "engineer_1_repetidores",
+			"tier": 1,
+			"title": "O Sinal que Não Chega",
+			"tone": "calm",
+			"offer": [
+				"Véi, eu puxei um fio de redstone da oficina até o sino da praça. E o sinal morre no meio do caminho.",
+				"Por definição, fio de redstone só leva sinal por quinze blocos. Eu esqueci desse detalhe. Engenheiro também erra, tá?"
+			],
+			"why": [
+				"Esse fio liga o alarme da vila. Se um zumbi aparecer, o sino tem que tocar sozinho. Sem sinal, nada de alarme, bicho.",
+				"E com repetidor eu ainda consigo atrasar o sinal. Dá pra fazer até um carrilhão que toca musiquinha."
+			],
+			"accept": [
+				"Beleza! Repetidor é simples: pedra, redstone e tochas de redstone.",
+				"<g>Fabrique</g> <y>8 repetidores</y>, véi."
+			],
+			"progress": [
+				"Cada repetidor leva <y>3 pedras</y>, <y>1 redstone</y> e <y>2 tochas de redstone</y>.",
+				"Clicar no repetidor aumenta o atraso em até 4 ticks. E ele só deixa o sinal passar pra um lado."
+			],
+			"complete": [
+				"O sino tocou da oficina, bicho! Acionei a alavanca aqui e escutei lá da praça. Engenharia funcionando!",
+				"Toma esmeraldas e ferro. Tu acabou de salvar o meu projeto e a minha reputação."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:repeater"], "count": 8, "desc": "<g>Fabrique</g> <y>8 repetidores</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "engineer_1_creepers",
+			"tier": 1,
+			"title": "Inimigos da Engenharia",
+			"tone": "danger",
+			"offer": [
+				"Pô, véi, um <r>creeper</r> explodiu do lado da minha fazenda automática ontem. Três semanas de projeto em três segundos.",
+				"Eles chegam de mansinho, fazem \"ssss\" e pronto: lá se vai o circuito."
+			],
+			"why": [
+				"Toda máquina da vila tá em risco enquanto tiver creeper rondando. Até o elevador da torre.",
+				"E a pólvora deles serve pra fazer TNT. Pra mineração controlada, bicho. Controlada."
+			],
+			"accept": [
+				"Valeu! Bate e recua: se ele começar a piscar, corre pra longe.",
+				"<r>Elimine 12 creepers</r>, véi."
+			],
+			"progress": [
+				"Os creepers aparecem à noite e em lugares escuros, e não pegam fogo de dia. Fica de olho atrás de você!",
+				"Eles têm medo de gato e de jaguatirica. Um gatinho na oficina é a melhor proteção que existe."
+			],
+			"complete": [
+				"Nenhuma explosão faz duas noites, bicho! Já reconstruí a fazenda e coloquei uma parede de pedra em volta.",
+				"Toma esmeraldas e um bife assado, que lutar com creeper dá um susto que abre o apetite."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:creeper"], "count": 12, "desc": "<r>Elimine</r> <r>12 creepers</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:cooked_beef", "count": 8}]
+		},
+		{
+			"id": "engineer_2_pistoes",
+			"tier": 2,
+			"title": "Porta Secreta",
+			"tone": "calm",
+			"offer": [
+				"Véi, o prefeito... digo, o aldeão mais velho da vila, me pediu uma porta secreta pro depósito de esmeraldas.",
+				"E porta secreta de verdade só se faz com <y>pistão</y>. Muito pistão. Mais do que eu tenho."
+			],
+			"why": [
+				"Os saqueadores já roubaram o depósito duas vezes. Se a porta for invisível, ninguém acha, bicho.",
+				"E pistão serve pra tudo: porta, elevador, fazenda automática. É a peça mais versátil da engenharia."
+			],
+			"accept": [
+				"Fechou! Pistão leva tábua, pedregulho, ferro e redstone.",
+				"<g>Fabrique</g> <y>12 pistões</y>, véi."
+			],
+			"progress": [
+				"Cada pistão leva <y>3 tábuas</y>, <y>4 pedregulhos</y>, <y>1 barra de ferro</y> e <y>1 redstone</y>.",
+				"Um pistão empurra até 12 blocos de uma vez. Mas obsidiana e baú ele não move."
+			],
+			"complete": [
+				"A porta ficou perfeita, bicho! Nem eu acho ela quando esqueço onde fica. Isso é bom. Acho.",
+				"Toma esmeraldas e um diamante. O depósito agradece."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:piston"], "count": 12, "desc": "<g>Fabrique</g> <y>12 pistões</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "engineer_2_ouro",
+			"tier": 2,
+			"title": "Ouro pros Trilhos",
+			"tone": "calm",
+			"offer": [
+				"Bicho, tô projetando a ferrovia da vila. Mas trilho comum não sobe ladeira sozinho. Precisa de <y>trilho energizado</y>.",
+				"E trilho energizado é feito de ouro. Muito ouro. Ouro que eu não tenho, véi."
+			],
+			"why": [
+				"Com a ferrovia, os aldeões levam colheita, minério e encomenda pra todo canto sem cansar as pernas.",
+				"E eu quero ser o primeiro engenheiro da região a ligar duas vilas por trilho. Questão de honra."
+			],
+			"accept": [
+				"Valeu! Pode ser ouro de mina, de piglin dourado ou de troca. Barra é barra.",
+				"<g>Traga</g> <y>24 barras de ouro</y>, véi."
+			],
+			"progress": [
+				"O minério de ouro aparece abaixo da camada 32, e nas mesas, digo, nos planaltos de terracota ele é bem mais comum.",
+				"No Nether, os zumbis-piglins soltam pepitas de ouro. Nove pepitas viram uma barra."
+			],
+			"complete": [
+				"Que brilho, bicho! Já dá pra fazer o trecho da subida da colina. A ferrovia vai sair do papel!",
+				"Toma esmeraldas, ferro pros trilhos comuns e um diamante."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:gold_ingot"], "count": 24, "desc": "<g>Entregue</g> <y>24 barras de ouro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "engineer_2_quartzo",
+			"tier": 2,
+			"title": "Cristais pros Sensores",
+			"tone": "danger",
+			"offer": [
+				"Véi, os melhores componentes de redstone usam <y>quartzo do Nether</y>. Observador, comparador, sensor de luz...",
+				"Eu até iria buscar, mas a última vez que entrei num portal, saí correndo de um ghast. Literalmente correndo."
+			],
+			"why": [
+				"Sem quartzo, nada de máquina inteligente. Só porta que abre e fecha. E isso não é engenharia, é carpintaria, bicho.",
+				"Com os sensores, a vila acende as luzes sozinha quando escurece. Menos zumbi, mais segurança."
+			],
+			"accept": [
+				"Fechou! O quartzo fica espalhado nas paredes do Nether, branquinho no meio da pedra vermelha.",
+				"<g>Traga</g> <y>32 quartzos do Nether</y>, véi."
+			],
+			"progress": [
+				"O minério de quartzo aparece em todo o Nether. Cada bloco solta um quartzo, ou mais com <y>Fortuna</y>.",
+				"Os piglins às vezes trocam quartzo por ouro. Jogue uma barra de ouro perto deles e espere."
+			],
+			"complete": [
+				"Agora sim, bicho! Com esse quartzo dá pra montar os sensores da praça inteira.",
+				"Toma esmeraldas e um diamante. E me conta: o Nether é quente mesmo ou é exagero do netherólogo?"
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:quartz"], "count": 32, "desc": "<g>Entregue</g> <y>32 quartzos do Nether</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "engineer_3_observadores",
+			"tier": 3,
+			"title": "Olhos Mecânicos",
+			"tone": "calm",
+			"offer": [
+				"Bicho, tô montando uma colheitadeira automática pro fazendeiro. E pra isso eu preciso de <y>observadores</y>.",
+				"O observador é um bloco com uma cara que fica olhando. Quando alguma coisa muda na frente dele, ele manda um pulso."
+			],
+			"why": [
+				"A cana cresce, o observador vê, o pistão empurra e a colheita cai no funil. Sem ninguém mexer! Lindo, véi.",
+				"E o fazendeiro vai poder descansar a coluna. Ele merece."
+			],
+			"accept": [
+				"Valeu! Observador leva pedregulho, redstone e quartzo.",
+				"<g>Fabrique</g> <y>16 observadores</y>, véi."
+			],
+			"progress": [
+				"Cada observador leva <y>6 pedregulhos</y>, <y>2 redstones</y> e <y>1 quartzo do Nether</y>.",
+				"A cara do observador é o lado que olha. O sinal sai pelas costas, onde tem o pontinho vermelho."
+			],
+			"complete": [
+				"A colheitadeira funcionou de primeira, bicho! O fazendeiro chorou. Eu também, mas foi de orgulho.",
+				"Toma diamantes e uma maçã dourada. Tu deu olhos pra máquina."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:observer"], "count": 16, "desc": "<g>Fabrique</g> <y>16 observadores</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "engineer_3_cobre",
+			"tier": 3,
+			"title": "Para-Raios da Vila",
+			"tone": "calm",
+			"offer": [
+				"Véi, semana passada um raio caiu na casa do bibliotecário e pegou fogo em dois livros raros. Ele ainda não falou comigo.",
+				"Eu quero colocar <y>para-raios</y> em todos os telhados. E para-raio é feito de cobre."
+			],
+			"why": [
+				"Raio em casa de madeira é incêndio certo. E raio em aldeão vira bruxa. Ninguém quer isso, bicho.",
+				"E o para-raio ainda manda um sinal de redstone quando é atingido. Dá pra fazer um contador de raios. Ciência!"
+			],
+			"accept": [
+				"Fechou! O cobre fica nas cavernas, aquele minério laranja-esverdeado.",
+				"<g>Minere</g> <y>48 minérios de cobre</y>, véi."
+			],
+			"progress": [
+				"O minério de cobre é muito comum nas <a>cavernas de gotejamento</a>, aquelas cheias de estalactite.",
+				"Cada para-raio leva <y>3 barras de cobre</y>. Cobre exposto ao tempo fica verde, mas cera de abelha impede isso."
+			],
+			"complete": [
+				"Cobre que não acaba mais, bicho! Vou fazer para-raio até pro galinheiro.",
+				"Toma diamantes e um livro de <o>Eficiência IV</o>, pra próxima mineração ser mais rápida."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:copper_ore", "minecraft:deepslate_copper_ore"], "count": 48, "desc": "<g>Minere</g> <y>48 minérios de cobre</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 4}]
+		},
+		{
+			"id": "engineer_3_funis",
+			"tier": 3,
+			"title": "A Esteira de Funis",
+			"tone": "calm",
+			"offer": [
+				"Bicho, a ideia é a seguinte: uma esteira de <y>funis</y> que leva tudo da fazenda até os baús da despensa. Sozinha.",
+				"Só que funil gasta ferro que é uma beleza. Cinco barras cada. Meu cofre de ferro tá chorando."
+			],
+			"why": [
+				"Sem funil, alguém tem que carregar tudo na mão. Com funil, o aldeão só abre o baú e pega. Eficiência, véi!",
+				"E com um comparador do lado, eu ainda sei quando o baú tá cheio. Uma lâmpada acende e pronto."
+			],
+			"accept": [
+				"Valeu! Funil leva ferro e um baú no meio.",
+				"<g>Fabrique</g> <y>16 funis</y>, véi."
+			],
+			"progress": [
+				"Cada funil leva <y>5 barras de ferro</y> e <y>1 baú</y>. Uma fazenda de golem de ferro ajuda muito.",
+				"O funil passa itens pra onde o bico aponta. Agache e clique pra encaixar ele do lado de um baú."
+			],
+			"complete": [
+				"A esteira funciona, bicho! Coloquei uma batata na ponta e ela chegou na despensa sozinha. Quase aplaudi a batata.",
+				"Toma diamantes e um livro de <o>Inquebrável III</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:hopper"], "count": 16, "desc": "<g>Fabrique</g> <y>16 funis</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "engineer_4_trilhos",
+			"tier": 4,
+			"title": "A Linha Expressa",
+			"tone": "calm",
+			"offer": [
+				"Véi, chegou a hora: a <a>Linha Expressa</a> entre a vila e a mina principal. Ida e volta em menos de um minuto.",
+				"Só que pra carrinho andar rápido o caminho todo, precisa de <y>trilho energizado</y>. Um a cada poucos blocos."
+			],
+			"why": [
+				"Os mineiros perdem metade do dia andando até a mina. Com a linha expressa, eles trabalham mais e cansam menos.",
+				"E vai ser a maior obra de engenharia que essa região já viu, bicho. Vai ter até placa com o seu nome."
+			],
+			"accept": [
+				"Fechou! Precisa de muito ouro, então capricha na mineração.",
+				"<g>Fabrique</g> <y>96 trilhos energizados</y>, véi."
+			],
+			"progress": [
+				"Cada receita de trilho energizado leva <y>6 barras de ouro</y>, <y>1 graveto</y> e <y>1 redstone</y>, e rende 6 trilhos.",
+				"Uma tocha de redstone do lado do trilho energizado deixa ele sempre ligado. Um a cada 30 trilhos comuns já mantém a velocidade."
+			],
+			"complete": [
+				"Fiz o primeiro teste e saí voando de carrinho, bicho! Quase passei da estação. Preciso de um freio. Mas que velocidade!",
+				"Toma diamantes, duas maçãs douradas e um livro de <o>Eficiência V</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:powered_rail"], "count": 96, "desc": "<g>Fabrique</g> <y>96 trilhos energizados</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "engineer_4_invasao",
+			"tier": 4,
+			"title": "Teste de Estresse",
+			"tone": "danger",
+			"offer": [
+				"Bicho, eu passei meses montando as defesas da vila: portões de pistão, alarme no sino, luzes automáticas.",
+				"Mas engenharia sem teste é só desenho bonito. Preciso ver tudo funcionando numa <r>invasão</r> de verdade."
+			],
+			"why": [
+				"Se as defesas falharem numa invasão de verdade, a vila cai. Melhor testar com você lá pra segurar a onda, véi.",
+				"E cada invasão vencida deixa os saqueadores com medo da gente por um bom tempo."
+			],
+			"accept": [
+				"Você é corajoso, hein! Leva escudo, besta e poção de cura.",
+				"<g>Vença</g> <y>1 invasão</y> de saqueadores numa vila."
+			],
+			"progress": [
+				"Derrote o capitão de um posto avançado de saqueadores, o que carrega estandarte. Ele deixa cair uma garrafa sinistra: beba e entre numa vila.",
+				"A invasão vem em ondas. Os devastadores são os mais perigosos: derrubam folhas e plantações e atropelam tudo."
+			],
+			"complete": [
+				"As defesas aguentaram, bicho! Só um portão travou, e já sei por quê. Vou corrigir na versão 2.0.",
+				"Toma diamantes, duas maçãs douradas e um livro de <o>Proteção IV</o>. Você é o melhor testador do mundo."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:raid_win"], "count": 1, "desc": "<g>Vença</g> <y>1 invasão</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "engineer_4_slime",
+			"tier": 4,
+			"title": "A Máquina Voadora",
+			"tone": "calm",
+			"offer": [
+				"Véi, eu descobri uma coisa incrível: com <y>blocos de slime</y>, pistões e observadores dá pra fazer uma máquina que anda sozinha!",
+				"Ela se empurra, gruda nos blocos e vai embora. Uma máquina voadora, bicho! Mas preciso de muito slime."
+			],
+			"why": [
+				"Com ela eu posso levar carga pelo céu, de uma vila pra outra, sem trilho nenhum. Revolução no transporte!",
+				"E, confesso, eu quero muito ver a cara dos aldeões quando uma máquina passar voando por cima do sino."
+			],
+			"accept": [
+				"Fechou! Cada bloco de slime leva nove bolas de slime.",
+				"<g>Traga</g> <y>16 blocos de slime</y>, véi."
+			],
+			"progress": [
+				"Os slimes aparecem nos pântanos de noite, perto da lua cheia, e em certas áreas subterrâneas chamadas pedaços de slime.",
+				"Bloco de slime gruda nos blocos vizinhos quando um pistão empurra. Só não gruda em obsidiana, terracota vitrificada e outros blocos que o pistão não move."
+			],
+			"complete": [
+				"Ela voou, bicho! Saiu da oficina e foi até a praça. Depois bateu num poste, mas voou!",
+				"Toma diamantes, duas maçãs douradas e um livro de <o>Peso-Pena IV</o>, caso você resolva pegar carona nela."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:slime_block"], "count": 16, "desc": "<g>Entregue</g> <y>16 blocos de slime</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "engineer_5_ferrovia",
+			"tier": 5,
+			"title": "A Grande Ferrovia",
+			"tone": "calm",
+			"offer": [
+				"Bicho, o projeto da minha vida: uma ferrovia que liga todas as vilas da região. De ponta a ponta.",
+				"Mas eu preciso de alguém que rode tudo de carrinho, trecho por trecho, testando cada curva e cada subida."
+			],
+			"why": [
+				"Com a Grande Ferrovia, as vilas vão trocar comida, ferramenta e notícia todo dia. Ninguém mais fica isolado, véi.",
+				"E eu quero deixar uma obra que dure mais que eu. Engenheiro bom constrói pro futuro."
+			],
+			"accept": [
+				"Você vai mesmo? Leva comida, tochas e uns trilhos de reserva.",
+				"<g>Percorra</g> <y>10000 blocos</y> de carrinho de mina, véi."
+			],
+			"progress": [
+				"Trilho energizado ligado acelera o carrinho até a velocidade máxima. Sem energia, ele freia o carrinho.",
+				"Ilumine os túneis da ferrovia, senão os monstros aparecem e bloqueiam o caminho."
+			],
+			"complete": [
+				"Dez mil blocos testados, bicho! Agora a Grande Ferrovia é oficial. Vou inaugurar com fita vermelha e tudo.",
+				"Toma: um <o>lingote de netherita</o>, um livro de <o>Remendo</o> e diamantes. Você é o maquinista mais lendário do mundo."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:minecart_one_cm"], "count": 1000000, "desc": "<g>Percorra</g> <y>10000 blocos</y> de carrinho"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 6}]
+		},
+		{
+			"id": "engineer_5_computador",
+			"tier": 5,
+			"title": "O Computador de Redstone",
+			"tone": "calm",
+			"offer": [
+				"Véi, senta que lá vem ideia grande: um <y>computador de redstone</y>. Uma máquina que faz conta sozinha.",
+				"Soma, subtrai, guarda memória... Mas pra isso eu preciso de uma quantidade absurda de redstone. Em bloco, de preferência."
+			],
+			"why": [
+				"Com ele, a vila vai contar estoque, colheita e esmeralda sem errar nunca. Nem o bibliotecário conta tão bem.",
+				"E vai ser a maior máquina da história, bicho. Uma sala inteira só de circuito. Eu sonho com isso desde criança."
+			],
+			"accept": [
+				"Você é o melhor, véi! Cada bloco leva nove redstones. Prepara a picareta.",
+				"<g>Traga</g> <y>64 blocos de redstone</y>, véi."
+			],
+			"progress": [
+				"Picareta com <y>Fortuna III</y> faz o minério de redstone soltar muito mais pó.",
+				"Bruxas às vezes deixam cair redstone. E os clérigos da vila vendem redstone por esmeralda."
+			],
+			"complete": [
+				"Ligamos o computador e ele calculou 2 + 2 em só quarenta segundos, bicho! Deu 4! Engenharia é lindo demais!",
+				"Toma o meu maior tesouro: um <o>Totem da Imortalidade</o>, diamantes e maçãs douradas. Você entrou pra história da ciência."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:redstone_block"], "count": 64, "desc": "<g>Entregue</g> <y>64 blocos de redstone</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 3}]
+		}
+	]
+}

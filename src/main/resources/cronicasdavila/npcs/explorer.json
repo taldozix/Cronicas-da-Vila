@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ó-lhó-lhó, {player}! Tás vivo, queridu! Achei que tinhas virado comida de afogado lá no naufrágio!",
+		"Dazumbanda! Olha quem chegou! Senta aqui na mochila, que eu acabei de voltar de um templo e trouxe areia até dentro da orelha.",
+		"{player}! Ó-lhó-lhó, que alegria! Tu és o único nesta vila que entende que o mundo não acaba na cerca da praça.",
+		"Mas tu és mesmo um achado, queridu! Chegaste justo quando eu tava riscando no mapa um lugar que ninguém nunca viu."
+	],
+	"greet_neutral": [
+		"Ó-lhó-lhó, gente nova! Tu és viajante ou só tás perdido? Porque perdido eu conheço de longe: tem cara de quem não tem bússola.",
+		"Opa. Cuidado com a mochila aí no chão, queridu. Tem um ovo de tartaruga dentro. Brincadeira. Acho.",
+		"Bom dia, boa tarde, boa noite. Eu atravessei três fusos de bioma essa semana e não sei mais que hora é.",
+		"Hm, tás com bota limpa demais. Quem explora volta com lama até o joelho. Mas calma, tu chegas lá."
+	],
+	"greet_cold": [
+		"Hm. Tu de novo. Tás tolo de aparecer aqui depois do que fizeste, istepô?",
+		"Ó-lhó-lhó... ouvi umas histórias tuas, e nenhuma é das boas. Nem pirata fazia aquilo.",
+		"Fala logo o que queres. Tenho mapa pra conferir e pouca paciência pra marinheiro de água doce."
+	],
+	"hostile": [
+		"<r>Some daqui, istepô!</r> Tu machucaste gente desta vila. Nem o mapa do caminho de volta eu te dou!",
+		"Tás tolo? Eu já enfrentei evocador, afogado e múmia. <r>Vai embora</r> antes que eu te risque do meu mapa pra sempre."
+	],
+	"followup": [
+		"Que mais, queridu?",
+		"Fala, fala. O horizonte espera.",
+		"Mais alguma coisa? Tô com o pé coçando pra viajar.",
+		"Ó-lhó-lhó, ainda tem pergunta? Manda, que explorador adora pergunta."
+	],
+	"decline": [
+		"Tá bom, queridu. Nem todo mundo nasceu pra dormir no relento.",
+		"Sem problema. Mas se mudares de ideia, olha pro horizonte que tu me achas lá.",
+		"Ó-lhó-lhó... vou chamar o bobão da vila. Ele vai se perder no primeiro morro, mas paciência."
+	],
+	"locked": [
+		"Queridu, essa aventura é longe demais pra quem ainda se perde voltando da padaria. Explora um pouco e volta.",
+		"Agora não tenho nada do teu tamanho. Vai conhecer uns biomas por aí, gasta essa bota, e depois a gente conversa."
+	],
+	"repeat": [
+		"Lembras daquela aventura? Pois é, o mundo mudou e lá vamos nós de novo. Mapa nunca fica pronto.",
+		"Tu já me ajudaste com isso. Bora de novo? Dessa vez tu já sabes o caminho, dazumbanda!"
+	],
+	"apology_thanks": [
+		"Hm... tá bom, queridu. Até explorador perdido acha o caminho de volta. Vamos ver se tu achas o teu.",
+		"Aceito. Mas o meu papagaio ainda te xinga. Ele aprendeu umas palavras feias contigo."
+	],
+	"bless": [
+		"Que essa ferramenta te leve até o fim do mapa e te traga de volta, queridu.",
+		"Abençoada com o vento das velas e a sorte dos achados. Nunca vais ficar perdido com ela."
+	],
+	"bye": [
+		"Vai com Deus, queridu! E leva cama, que noite no mato sem cama é noite de zumbi.",
+		"Até mais! Se achares um lugar novo, me conta, que eu boto no mapa com teu nome.",
+		"Tchau! E nunca, nunca pisa em placa de pressão dentro de templo."
+	],
+	"greet_night": [
+		"Ó-lhó-lhó, {player}, de noite? Explorador de verdade usa a noite pra ler as estrelas. Mas tu tás é sem tocha, queridu.",
+		"Tás tolo de andar no escuro? Eu já acampei em tudo que é canto e te digo: de noite o mundo é dos monstros.",
+		"Psiu, queridu. Tá vendo aquele brilho lá longe? Pode ser uma vila, pode ser lava, pode ser uma aranha com olho vermelho. Não vai conferir agora.",
+		"Boa noite, {player}! Tô aqui riscando o mapa à luz da lanterna. Amanhã eu parto pro norte. Ou pro sul. Depende do vento."
+	],
+	"bye_night": [
+		"Boa noite, queridu! Dorme na cama, que acordar no meio do mato é mais perigoso.",
+		"Vou deitar, que amanhã cedo pego a estrada. Dorme com Deus, {player}!",
+		"Até amanhã! Se ouvires um chiado no escuro, não exploras, corres. Lição número um."
+	],
+	"greet_rain": [
+		"Ó-lhó-lhó, chuva! Lá na ilha a chuva vinha de lado, com vento. Isso aqui é garoa, queridu.",
+		"Entra, {player}! Chuva assim estraga o mapa de papel. Eu guardo o meu dentro da camisa.",
+		"Dazumbanda, que chuva boa pra pescar! Mas pra explorar, não. Barranco molhado desliza e tu cai no rio."
+	],
+	"greet_storm": [
+		"Ó-lhó-lhó, que temporal! Já pegaste um desses no meio do mar, queridu? Eu já. Fiquei uma semana sem sentir as pernas.",
+		"Tás tolo de ficar no descampado com esses raios? E com o céu escuro assim, zumbi sai até de tarde. Fica aqui, {player}!"
+	],
+	"reward_intro": [
+		"Se tu deres conta dessa aventura, queridu, eu te dou",
+		"Fazendo isso direitinho, tu levas",
+		"Pelo serviço, ó-lhó-lhó, eu separo pra ti",
+		"Me ajuda nessa que eu te pago com um achado e com"
+	],
+	"reward_outro": [
+		"Palavra de explorador vale mais que mapa do tesouro, queridu.",
+		"E ainda boto teu nome num morro do meu mapa. Morro do {player}. Dazumbanda!",
+		"Pode confiar: eu pago certinho, igual bússola que aponta pro mesmo lugar.",
+		"Explorador que não paga o que deve se perde no caminho de casa. Fica tranquilo."
+	],
+	"lore_done": [
+		"Ó-lhó-lhó, queridu, já te contei uma aventura hoje! Mais uma e eu esqueço o caminho de volta. Volta amanhã.",
+		"Aventura é igual viagem: uma por vez, senão tu cansas. Pergunta pros outros da vila ou volta amanhã.",
+		"Tás tolo, que curiosidade! Hoje chega. Amanhã eu te conto do templo que afundou."
+	],
+	"abandon": [
+		"Ó-lhó-lhó... vais largar a aventura no meio? Explorador que volta na metade não descobre nada, queridu.",
+		"Que pena. Achei que tu tinhas pé de estrada."
+	],
+	"lore": [
+		[
+			"Tu sabias que os <a>naufrágios</a> do mundo guardam mapas do tesouro? Papel velho, molhado, com um X vermelho.",
+			"O X fica numa praia, enterrado. Lá dentro tem baú com ouro, esmeralda e, se tiveres sorte, o <p>Coração do Mar</p>.",
+			"Eu passei uma semana cavando uma praia inteira. Achei o baú no último buraco. Ó-lhó-lhó, a felicidade de um explorador cabe num baú."
+		],
+		[
+			"No deserto tem umas pirâmides de arenito, os <a>templos do deserto</a>. Por fora, bonitos. Por dentro, armadilha.",
+			"Lá no fundo tem quatro baús e uma placa de pressão no meio. Pisa nela e as dinamites embaixo explodem tudo.",
+			"Meu primeiro templo, eu pisei. Acordei na vila, sem nada, com a sobrancelha chamuscada. Desde então eu olho onde piso, queridu."
+		],
+		[
+			"Na floresta escura, longe de tudo, tem a <a>mansão da floresta</a>. Enorme, cheia de quarto e corredor.",
+			"Mora lá dentro o povo dos <r>Exilados</r>: vingadores com machado e evocadores que chamam presas do chão e uns espíritos voadores.",
+			"Achar a mansão é difícil. Os cartógrafos vendem mapa dela. Sair de lá vivo é mais difícil ainda. Eu saí. Correndo, mas saí."
+		],
+		[
+			"Quer saber como achar o portal do Fim? Joga um <p>Olho do Ender</p> pro alto. Ele voa na direção da <a>fortaleza</a>.",
+			"Tu segues, joga de novo, segue mais. Quando ele cair pra baixo, a fortaleza tá debaixo dos teus pés.",
+			"Às vezes o olho se quebra no ar. Por isso eu sempre levo uma dúzia. Explorador prevenido vale por dois, queridu."
+		],
+		[
+			"Lá no Fim, depois do dragão, tem ilhas flutuando no vazio e umas torres roxas, as <a>cidades do Fim</a>.",
+			"Às vezes tem um navio parado no ar do lado delas. Dentro dele, pendurado na parede, um par de asas: o <p>élitro</p>.",
+			"Com ele tu voas, queridu. Voa de verdade. É o sonho de todo explorador. Eu ainda não tenho o meu. Mas um dia, dazumbanda, um dia."
+		]
+	],
+	"player_work": [
+		"Tem aventura pra mim?",
+		"Precisa de alguém pra ir longe?",
+		"Bora explorar, queridu! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Deixa comigo, já tô de mochila nas costas!",
+		"Fechado. Vou trazer areia até na bota.",
+		"Bora pro horizonte!"
+	],
+	"player_why": [
+		"E por que isso é tão importante?",
+		"O que tem de tão especial lá?",
+		"Pra que tu precisas disso?"
+	],
+	"player_decline": [
+		"Agora não, tô cansado da última viagem.",
+		"Hoje eu passo, minha bota furou.",
+		"Fica pra próxima aventura."
+	],
+	"player_lore": [
+		"Me conta uma aventura.",
+		"Qual foi o lugar mais incrível que tu já viste?",
+		"Tem algum causo de viagem?"
+	],
+	"player_more_lore": [
+		"Ó-lhó-lhó, conta mais!",
+		"E aí, saiu vivo?",
+		"Continua!"
+	],
+	"player_bye": [
+		"Tchau! Boa viagem.",
+		"Até mais, queridu!",
+		"Falou, vou ver o horizonte."
+	],
+	"names": [
+		"Bartolomeu", "Rodolfo", "Evandro", "Aurélio", "Wilson", "Ronaldo", "Dorival",
+		"Graziela", "Marisa", "Elvira", "Telma", "Yolanda", "Silvério", "Marta"
+	],
+	"extra": {
+		"day_off": [
+			"Ó-lhó-lhó, hoje é minha folga, queridu! Até explorador precisa ficar um dia em casa, olhando o mapa em vez de andar nele.",
+			"Hoje não tem aventura, não. Tô de folga, remendando a mochila e comendo uma tainha frita. Procura outro explorador aí na vila ou volta outro dia.",
+			"Folga hoje! O horizonte não foge, ele espera. Se a pressa for grande, procura outro explorador, que eu tô de pernas pro ar, dazumbanda."
+		],
+		"closed": [
+			"Ó-lhó-lhó, hoje a banca tá fechada, queridu! É minha folga. Mapa e bússola só amanhã.",
+			"Banca fechada hoje. Folga de explorador é sagrada: hoje eu não ando nem até a esquina."
+		],
+		"greet_plains": [
+			"Ó-lhó-lhó, {player}! Planície é o melhor lugar pra começar uma viagem: dá pra ver o horizonte inteiro e escolher pra onde ir.",
+			"Queridu, aqui na planície cavalo selvagem é o que não falta. Doma um e tu andas o dobro em metade do tempo."
+		],
+		"greet_desert": [
+			"Dazumbanda, deserto! Aqui tem templo de arenito, poço seco e cada duna parece igual à outra. Sem bússola tu te perdes, queridu.",
+			"{player}! Já viste os fósseis enterrados no deserto? Osso gigante, de bicho que ninguém conhece. Eu adoro."
+		],
+		"greet_savanna": [
+			"Ó-lhó-lhó, {player}! Daqui da savana dá pra ver os planaltos de longe. Lá em cima o vento é forte e a vista é de tirar o fôlego.",
+			"Queridu, savana é caminho bom pra cavalo e pra lhama. Lhama carrega baú nas costas. É a mochila de quem explora longe."
+		],
+		"greet_snow": [
+			"Ó-lhó-lhó, que frio, queridu! Aqui tem iglu escondido na neve. Alguns têm um porão secreto embaixo do tapete.",
+			"{player}! Na neve tudo fica branco e igual. Explorador esperto marca o caminho com tocha a cada tanto."
+		],
+		"greet_taiga": [
+			"Dazumbanda, taiga! Pinheiro, lobo, raposa e, se tiveres sorte, uma mina abandonada logo embaixo, queridu.",
+			"{player}! A taiga gigante tem árvore tão alta que eu já subi numa pra desenhar o mapa lá de cima."
+		],
+		"greet_jungle": [
+			"Ó-lhó-lhó, selva! Aqui tem <a>templo da selva</a> escondido no meio do cipó, com flecha que dispara do chão, queridu.",
+			"{player}! Na selva eu me perco três vezes por dia. E adoro. Cada vez acho uma coisa nova."
+		],
+		"greet_swamp": [
+			"Ó-lhó-lhó, pântano! Aqui tem cabana de bruxa em cima de estaca e água pra todo lado. Explorador anda de barco, queridu.",
+			"{player}! O pântano é feio, mas é perto de tudo: floresta, mangue, rio. Bom ponto de partida, dazumbanda!"
+		]
+	}
+}
