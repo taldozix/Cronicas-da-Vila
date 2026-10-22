@@ -1,0 +1,397 @@
+{
+	"quests": [
+		{
+			"id": "enderian_1_endermen",
+			"tier": 1,
+			"title": "Os Altos Visitantes",
+			"tone": "danger",
+			"offer": [
+				"Viajante... toda noite os <r>Endermen</r> entram na vila e levam blocos das casas. Ontem levaram metade da parede da padaria.",
+				"Eu entendo eles. Mas o padeiro, não. E ele está bravo demais pra ouvir sobre frequências."
+			],
+			"why": [
+				"Um enderman sozinho é curioso. Muitos juntos viram uma obra de demolição. A vila não aguenta.",
+				"E eu preciso das pérolas deles para os meus estudos. Com respeito, claro."
+			],
+			"accept": [
+				"Lembre: não olhe nos olhos até estar pronto. Um capacete de abóbora ajuda.",
+				"<r>Elimine 10 Endermen</r> e volte."
+			],
+			"progress": [
+				"Os Endermen aparecem à noite em quase todo lugar. Debaixo de um teto de dois blocos de altura, eles não te alcançam.",
+				"Eles fogem da água e não podem ser atingidos por flechas. Use a espada!"
+			],
+			"complete": [
+				"A padaria está inteira hoje. E o padeiro até me ofereceu pão. Isso nunca tinha acontecido.",
+				"Tome, viajante: esmeraldas e ferro. O Vazio agradece pela calma."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:enderman"], "count": 10, "desc": "<r>Elimine</r> <r>10 Endermen</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "enderian_1_perolas",
+			"tier": 1,
+			"title": "Pérolas para o Altar",
+			"tone": "calm",
+			"offer": [
+				"O altar de púrpura está fraco. Ele precisa de <y>pérolas do Fim</y> para voltar a vibrar.",
+				"Cada pérola guarda um pedacinho do teleporte de um enderman. Elas zumbem quando você encosta no ouvido."
+			],
+			"why": [
+				"Sem as pérolas, o altar não capta nada do Vazio. E sem ele, eu fico surdo para o Fim.",
+				"E mais tarde elas viram olhos do Fim. Os olhos mostram o caminho até o portal. Tudo está conectado."
+			],
+			"accept": [
+				"Obrigado. Pode conseguir como preferir: lutando, trocando ou negociando com os piglins.",
+				"<g>Traga</g> <y>6 pérolas do Fim</y>."
+			],
+			"progress": [
+				"Endermen derrotados podem soltar pérolas. O clérigo da vila e os piglins também trocam algumas.",
+				"Jogar uma pérola te teleporta pra onde ela cair. Mas cuidado: às vezes nasce um endermite."
+			],
+			"complete": [
+				"Ouve isso? O altar voltou a zumbir. Baixinho, mas está vivo. Obrigado, viajante.",
+				"Tome esmeraldas e ferro. As pérolas fazem o resto."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:ender_pearl"], "count": 6, "desc": "<g>Entregue</g> <y>6 pérolas do Fim</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "enderian_1_obsidiana",
+			"tier": 1,
+			"title": "A Pedra da Moldura",
+			"tone": "calm",
+			"offer": [
+				"Todo portal começa com uma moldura. E a moldura do Fim, curiosamente, está cercada de mistério e de <y>obsidiana</y>.",
+				"Quero estudar se a obsidiana guarda alguma memória do Vazio. Preciso de vários blocos."
+			],
+			"why": [
+				"As torres no centro do Fim são feitas de obsidiana. Alguém levou ela pra lá. Ou ela sempre esteve lá. Eu preciso saber.",
+				"E a obsidiana também serve pra fazer o baú do Fim. Útil e misteriosa, como tudo que eu gosto."
+			],
+			"accept": [
+				"Precisa de picareta de diamante. Água em cima de lava parada vira obsidiana.",
+				"<g>Minere</g> <y>12 blocos de obsidiana</y>."
+			],
+			"progress": [
+				"Só picareta de diamante ou netherita quebra obsidiana. E demora, então paciência.",
+				"Despeje água sobre lava parada pra criar obsidiana. Lagos de lava nas cavernas são ótimos pra isso."
+			],
+			"complete": [
+				"Que pedra escura... Encosto a mão e sinto um frio que não é frio. É o Vazio.",
+				"Tome esmeraldas e ferro, viajante."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:obsidian"], "count": 12, "desc": "<g>Minere</g> <y>12 blocos de obsidiana</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "enderian_2_olhos",
+			"tier": 2,
+			"title": "Olhos que Procuram",
+			"tone": "calm",
+			"offer": [
+				"Os <y>olhos do Fim</y> são pérolas acordadas. Quando você joga um, ele voa na direção do portal escondido.",
+				"Preciso de muitos olhos. Alguns para encontrar o portal, outros para acendê-lo."
+			],
+			"why": [
+				"O portal do Fim está escondido numa fortaleza subterrânea. Sem os olhos, ninguém o encontra nunca.",
+				"E o portal precisa de até doze olhos encaixados pra abrir. Doze. Um número sagrado pro Vazio."
+			],
+			"accept": [
+				"Para cada olho, junte uma pérola do Fim com pó de blaze.",
+				"<g>Fabrique</g> <y>12 olhos do Fim</y>."
+			],
+			"progress": [
+				"O pó de blaze vem das varas de blaze do Nether. Uma vara rende dois pós.",
+				"Ao jogar um olho, ele voa e às vezes quebra. Tenha olhos de sobra antes de ir procurar o portal."
+			],
+			"complete": [
+				"Doze olhos... todos me encarando. Tudo bem, esses eu posso olhar de volta. São amigos.",
+				"Tome esmeraldas e um diamante. Você deu olhos ao altar."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:ender_eye"], "count": 12, "desc": "<g>Fabrique</g> <y>12 olhos do Fim</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "enderian_2_pragas",
+			"tier": 2,
+			"title": "Pragas do Portal",
+			"tone": "danger",
+			"offer": [
+				"Na fortaleza onde fica o portal, as pedras estão infestadas de <r>traças</r>. E perto delas, os <r>endermites</r> roxos.",
+				"Os Endermen odeiam os endermites. E eu, sinceramente, também não morro de amores."
+			],
+			"why": [
+				"Ninguém consegue estudar o portal com traças pulando das paredes a cada golpe de picareta.",
+				"E os endermites deixam os Endermen agressivos. Limpar o caminho é bom pra todo mundo."
+			],
+			"accept": [
+				"Cuidado com as pedras que parecem normais. Algumas escondem traças dentro.",
+				"<r>Elimine 20 traças ou endermites</r>."
+			],
+			"progress": [
+				"As traças vivem nas <a>fortalezas</a> e nas montanhas, escondidas em blocos infestados. Quebrar um libera uma traça.",
+				"Os endermites às vezes aparecem quando uma pérola do Fim é jogada. Eles somem sozinhos depois de um tempo."
+			],
+			"complete": [
+				"O corredor do portal está silencioso agora. Até os Endermen pareceram mais tranquilos.",
+				"Tome esmeraldas, ferro e um diamante, viajante."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:silverfish", "minecraft:endermite"], "count": 20, "desc": "<r>Elimine</r> <r>20 traças ou endermites</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "enderian_2_bau",
+			"tier": 2,
+			"title": "O Baú que Mora no Vazio",
+			"tone": "calm",
+			"offer": [
+				"Sabia que o <y>baú do Fim</y> não guarda as coisas dentro dele? Ele guarda no Vazio.",
+				"Qualquer baú do Fim, em qualquer lugar, abre o mesmo espaço. O seu espaço. É lindo e assustador."
+			],
+			"why": [
+				"Eu quero medir quanto tempo o Vazio leva para responder. Preciso de alguém abrindo um baú do Fim várias vezes.",
+				"Parece bobo, eu sei. Mas a ciência do Vazio é feita de muitas pequenas observações."
+			],
+			"accept": [
+				"Faça um baú do Fim com obsidiana e um olho do Fim, ou use um que já tenha.",
+				"<g>Abra</g> <y>30 vezes</y> um baú do Fim."
+			],
+			"progress": [
+				"O baú do Fim leva <y>8 obsidianas</y> e <y>1 olho do Fim</y>. Quebrar ele sem Toque Suave dá só obsidiana.",
+				"O que você guarda nele aparece em qualquer outro baú do Fim. Ótimo pra viagens longas."
+			],
+			"complete": [
+				"Trinta aberturas, e o Vazio respondeu todas as vezes. Ele é fiel. Mais fiel que muita gente.",
+				"Tome esmeraldas e um diamante pela paciência."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:open_enderchest"], "count": 30, "desc": "<g>Abra</g> <y>30 vezes</y> um baú do Fim"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "enderian_3_pedra",
+			"tier": 3,
+			"title": "O Chão das Ilhas",
+			"tone": "calm",
+			"offer": [
+				"Viajante, você já pisou no Fim? O chão lá é amarelado, poroso, frio. É a <y>pedra do Fim</y>.",
+				"Quero construir um jardim de meditação com ela aqui na vila. Um pedacinho do Vazio entre nós."
+			],
+			"why": [
+				"Com a pedra do Fim por perto, eu sinto melhor as frequências. O altar fica mais afinado.",
+				"E é muito resistente. Nem explosão de dragoa derruba ela com facilidade."
+			],
+			"accept": [
+				"O portal te leva até a ilha central. Cuidado com a beira: cair no Vazio não tem volta.",
+				"<g>Minere</g> <y>128 blocos de pedra do Fim</y>."
+			],
+			"progress": [
+				"A ilha central é cheia de Endermen. Use capacete de abóbora pra poder olhar em volta sem provocar.",
+				"Coloque blocos atrás de você ao andar pela beira. Um empurrão e você cai no Vazio."
+			],
+			"complete": [
+				"O jardim vai ficar perfeito. Coloquei a primeira pedra e o altar suspirou. Sério.",
+				"Tome diamantes e uma maçã dourada. Você trouxe o Fim pra vila."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:end_stone"], "count": 128, "desc": "<g>Minere</g> <y>128 blocos de pedra do Fim</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "enderian_3_coro",
+			"tier": 3,
+			"title": "Frutas que Teleportam",
+			"tone": "calm",
+			"offer": [
+				"Nas ilhas de fora do Fim crescem umas plantas roxas e retorcidas: as <y>plantas do coro</y>.",
+				"A fruta delas teleporta quem come. Um passo pro lado, às vezes dez. Quero estudar esse efeito."
+			],
+			"why": [
+				"Se eu entender a fruta do coro, talvez descubra como os Endermen se teleportam. É a chave de tudo.",
+				"E dá pra fazer púrpura com ela. O material das Cidades do Fim. E do meu altar."
+			],
+			"accept": [
+				"As frutas caem quando você quebra a planta. Cuidado, ela desmonta inteira.",
+				"<g>Traga</g> <y>32 frutas do coro</y>."
+			],
+			"progress": [
+				"As plantas do coro crescem nas <a>ilhas de fora</a>. Só se chega lá pelos portais que aparecem depois de derrotar a dragoa.",
+				"Comer a fruta do coro é uma forma de escapar de perigo. Mas o destino é aleatório!"
+			],
+			"complete": [
+				"Que frutas lindas... comi uma e fui parar do outro lado da sala. Excelente.",
+				"Tome diamantes e um livro de <o>Espinhos III</o>. Como as plantas do Fim, você também pode se defender."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:chorus_fruit"], "count": 32, "desc": "<g>Entregue</g> <y>32 frutas do coro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:thorns", "level": 3}]
+		},
+		{
+			"id": "enderian_3_purpura",
+			"tier": 3,
+			"title": "Um Templo de Púrpura",
+			"tone": "calm",
+			"offer": [
+				"O meu altar é feito de <y>púrpura</y>, a pedra roxa das Cidades do Fim. Mas está rachando.",
+				"Quero reconstruí-lo maior. Um templo pequeno, onde a vila possa vir meditar."
+			],
+			"why": [
+				"A púrpura vibra com o Vazio. Um templo inteiro dela pode captar sons do Fim até daqui.",
+				"E talvez, com sorte, eu consiga ouvir as palavras dos Endermen. Sem precisar do Tradutor Ender."
+			],
+			"accept": [
+				"A púrpura vem das frutas do coro estouradas no forno.",
+				"<g>Fabrique</g> <y>32 blocos de púrpura</y>."
+			],
+			"progress": [
+				"Asse a fruta do coro no forno para virar <y>fruta do coro estourada</y>. Quatro delas fazem quatro blocos de púrpura.",
+				"As Cidades do Fim já são feitas de púrpura. Picareta comum quebra rapidinho."
+			],
+			"complete": [
+				"O templo está de pé. Roxo, silencioso, lindo. Ontem à noite um enderman parou na porta e ficou olhando. Acho que gostou.",
+				"Tome diamantes e um livro de <o>Toque Suave</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:purpur_block"], "count": 32, "desc": "<g>Fabrique</g> <y>32 blocos de púrpura</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:silk_touch", "level": 1}]
+		},
+		{
+			"id": "enderian_4_shulkers",
+			"tier": 4,
+			"title": "As Caixas que Atiram",
+			"tone": "danger",
+			"offer": [
+				"Os <r>shulkers</r> das Cidades do Fim estão impedindo minha expedição. Eles se escondem nas paredes e atiram projéteis que fazem flutuar.",
+				"Os Endermen odeiam eles. E hoje, confesso, eu também estou um pouco bravo."
+			],
+			"why": [
+				"Nas Cidades do Fim estão os maiores segredos do Vazio. Dizem que até o <p>Tradutor Ender</p> está escondido lá.",
+				"E as cascas deles fazem caixas que guardam muito. Útil pra quem viaja entre mundos."
+			],
+			"accept": [
+				"O efeito de levitação passa com leite. Leve um balde, ou dois.",
+				"<r>Elimine 20 shulkers</r>."
+			],
+			"progress": [
+				"Quando fechados, os shulkers ficam quase invulneráveis. Ataque quando abrirem a casca.",
+				"Se levitar alto demais, beba leite ou se agarre numa escada. Mas cuidado com a queda depois."
+			],
+			"complete": [
+				"A Cidade do Fim está aberta. Os Endermen passeiam por lá agora, tranquilos. Eles te agradecem, do jeito deles.",
+				"Tome diamantes, duas maçãs douradas e um livro de <o>Proteção IV</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:shulker"], "count": 20, "desc": "<r>Elimine</r> <r>20 shulkers</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:protection", "level": 4}]
+		},
+		{
+			"id": "enderian_4_elitros",
+			"tier": 4,
+			"title": "Asas do Navio",
+			"tone": "danger",
+			"offer": [
+				"Algumas Cidades do Fim têm um <a>navio</a> flutuando ao lado. E dentro dele, emoldurado na parede, ficam os <y>élitros</y>.",
+				"São asas. Asas de verdade. Dizem que pertenceram a um ser que voava entre as ilhas."
+			],
+			"why": [
+				"Quero estudar como os élitros planam sem bater. É o mesmo silêncio do voo da dragoa.",
+				"E, se eu entender, talvez a vila possa um dia atravessar o Vazio sem medo de cair."
+			],
+			"accept": [
+				"O navio é guardado por shulkers. Leve leite e coragem.",
+				"<g>Traga</g> <y>1 par de élitros</y>."
+			],
+			"progress": [
+				"Os élitros ficam numa moldura na proa do navio. Bata na moldura pra pegar.",
+				"Nem toda Cidade do Fim tem navio. Procure nas ilhas de fora, olhando pro alto."
+			],
+			"complete": [
+				"São leves como pensamento... Eu toquei e senti o vento do Fim. Obrigado, viajante.",
+				"Tome diamantes, duas maçãs douradas e um livro de <o>Inquebrável III</o>. Vai precisar nas asas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:elytra"], "count": 1, "desc": "<g>Entregue</g> <y>1 par de élitros</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "enderian_4_voo",
+			"tier": 4,
+			"title": "Cartografia do Vazio",
+			"tone": "calm",
+			"offer": [
+				"Quero desenhar o mapa das ilhas de fora do Fim. Mas eu tenho vertigem. E o Vazio não ajuda.",
+				"Preciso de alguém que voe longe com élitros e me conte o que viu."
+			],
+			"why": [
+				"As ilhas de fora são infinitas. Cada uma pode esconder uma Cidade do Fim. E quem sabe, um Tradutor Ender.",
+				"Com um mapa, outros enderólogos vão poder estudar sem se perder. Eu deixo esse presente pro futuro."
+			],
+			"accept": [
+				"Leve foguetes pra subir e muita pedra pra parar no meio do caminho, se precisar.",
+				"<g>Voe</g> <y>2000 blocos</y> com élitros."
+			],
+			"progress": [
+				"Foguetes de fogo de artifício dão impulso nos élitros. Sem eles, você só plana pra baixo.",
+				"Élitros gastam com o uso. Repare com membrana de phantom numa bigorna."
+			],
+			"complete": [
+				"Você viu ilhas que nenhum aldeão viu. Me conte tudo devagar, que eu vou desenhar cada uma.",
+				"Tome diamantes, duas maçãs douradas e um livro de <o>Peso-Pena IV</o>, pras aterrissagens difíceis."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:aviate_one_cm"], "count": 200000, "desc": "<g>Voe</g> <y>2000 blocos</y> com élitros"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "enderian_5_dragoa",
+			"tier": 5,
+			"title": "A Dragoa do Fim",
+			"tone": "danger",
+			"offer": [
+				"Chegou a hora, viajante. A <r>Dragoa do Fim</r> guarda a ilha central há tempo demais.",
+				"Enquanto ela voar, os portais para as ilhas de fora continuam fechados. E os segredos do Vazio, também.",
+				"Eu não sou guerreiro. Mas você é."
+			],
+			"why": [
+				"Dizem que, quando ela cai, o Vazio inteiro respira aliviado. Até os Endermen.",
+				"E quem a derrota ganha uma experiência que nenhum livro ensina."
+			],
+			"accept": [
+				"Quebre os cristais das torres primeiro, senão ela se cura. E não olhe para os Endermen lá em cima.",
+				"<r>Derrote 1 Dragoa do Fim</r>."
+			],
+			"progress": [
+				"Alguns cristais ficam em gaiolas de ferro. Suba nas torres ou use flechas com cuidado.",
+				"O sopro roxo dela machuca muito. Fuja da nuvem e ataque quando ela pousar na fonte."
+			],
+			"complete": [
+				"Senti daqui, viajante. O Vazio ficou em silêncio, e depois cantou. Nunca ouvi nada tão bonito.",
+				"Tome <o>lingotes de netherita</o> e um livro de <o>Remendo</o>. O Fim te reconhece agora."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:ender_dragon"], "count": 1, "desc": "<r>Derrote</r> <r>1 Dragoa do Fim</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}]
+		},
+		{
+			"id": "enderian_5_sopro",
+			"tier": 5,
+			"title": "O Sopro da Dragoa",
+			"tone": "danger",
+			"offer": [
+				"O sopro da dragoa é o elemento mais raro do Vazio. Roxo, brilhante, quase vivo.",
+				"Com ele, eu poderia fazer poções que se espalham no ar e ficam paradas, como névoa do Fim."
+			],
+			"why": [
+				"Poções persistentes protegeriam a vila inteira de uma vez. Cura no ar, pra todo mundo.",
+				"E só existe um jeito de conseguir: chegar perto da dragoa, com uma garrafa na mão. Loucura pura."
+			],
+			"accept": [
+				"Pegue o sopro com garrafas de vidro enquanto ela solta a nuvem roxa. E saia rápido!",
+				"<g>Traga</g> <y>16 garrafas de sopro de dragão</y>."
+			],
+			"progress": [
+				"A nuvem roxa aparece quando ela ataca no chão ou com as bolas de fogo roxas. Clique com a garrafa vazia dentro dela.",
+				"Se você já derrotou a dragoa, dá pra chamar outra colocando 4 cristais do Fim na beira do portal de saída."
+			],
+			"complete": [
+				"Dezesseis garrafas de névoa do Fim... Elas brilham sozinhas no escuro. Você é inacreditável, viajante.",
+				"Tome o meu maior tesouro: um <o>Totem da Imortalidade</o>, diamantes e maçãs douradas."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dragon_breath"], "count": 16, "desc": "<g>Entregue</g> <y>16 garrafas de sopro de dragão</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:diamond", "count": 12}, {"item": "minecraft:golden_apple", "count": 4}]
+		}
+	]
+}

@@ -1,0 +1,402 @@
+{
+	"quests": [
+		{
+			"id": "miner_1_carvao",
+			"tier": 1,
+			"title": "O Veio Preto",
+			"tone": "calm",
+			"offer": [
+				"Ostia, bambino, chega aqui! Achei um veio de <y>carvão</y> lá na galeria três, gordo que nem a nona depois do Natal.",
+				"Só que minhas costas travaram de novo. Porca miséria. Eu olho pro veio e ele olha pra mim, e ninguém faz nada."
+			],
+			"why": [
+				"Carvão é o pão da vila, bambino. Sem ele, não tem tocha, não tem fornalha, não tem ferro derretido.",
+				"E inverno sem carvão é inverno de dente batendo. A nona não aguenta mais um desses."
+			],
+			"accept": [
+				"Mamma mia, obrigado! Qualquer picareta serve, até de madeira.",
+				"<g>Minere</g> <y>32 minérios de carvão</y> e volta aqui."
+			],
+			"progress": [
+				"Carvão é o minério mais fácil de achar. Aparece em encosta de montanha e nas paredes de qualquer caverna.",
+				"Na ardósia também tem carvão, mais escondido. Conta igual."
+			],
+			"complete": [
+				"Ostia, que trabalho bonito! A forja do ferreiro vai ficar acesa um mês inteiro.",
+				"Toma, bambino: <o>esmeraldas</o> e <o>pão</o> da nona, que mineiro precisa comer."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:coal_ore", "minecraft:deepslate_coal_ore"], "count": 32, "desc": "<g>Minere</g> <y>32 minérios de carvão</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:bread", "count": 8}]
+		},
+		{
+			"id": "miner_1_tochas",
+			"tier": 1,
+			"title": "Luz Pra Galeria Nova",
+			"tone": "calm",
+			"offer": [
+				"Bambino, abri uma galeria nova ontem. Comprida, bonita, cheirando a pedra fresca.",
+				"Mas tá escura que nem bolso de avarento. E em mina escura nasce bicho. É lei da pedra."
+			],
+			"why": [
+				"Monstro não aparece onde tem luz, capisce? Uma tocha a cada poucos blocos e a galeria fica segura.",
+				"E eu não vou entrar no escuro de novo. Da última vez trombei num zumbi e achei que era meu primo."
+			],
+			"accept": [
+				"Ostia, valeu! Tocha se faz com graveto e carvão na bancada. Carvão vegetal também serve.",
+				"<g>Fabrique</g> <y>64 tochas</y> e eu ilumino a galeria inteira."
+			],
+			"progress": [
+				"Cada receita dá quatro tochas. Dezesseis receitas e pronto.",
+				"Não tem carvão? Queima tora de madeira na fornalha que vira carvão vegetal."
+			],
+			"complete": [
+				"Mamma mia, que claridade! A galeria parece igreja em dia de festa.",
+				"Toma, bambino: <o>esmeraldas</o> e <o>ferro</o> pra tu fazer tua própria picareta."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:torch"], "count": 64, "desc": "<g>Fabrique</g> <y>64 tochas</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "miner_1_zumbis",
+			"tier": 1,
+			"title": "Gemidos na Galeria",
+			"tone": "danger",
+			"offer": [
+				"Ostia, bambino, tem <r>zumbi</r> na minha mina. Eles entram pelas cavernas e ficam vagando nos meus túneis.",
+				"Ontem um deles pegou minha lamparina e saiu gemendo com ela. Parecia procissão do além.",
+				"Eu não desço mais sozinho, não. Nem com a reza da nona."
+			],
+			"why": [
+				"Mina parada é vila parada. Sem minério, o ferreiro não trabalha, o armeiro não trabalha, ninguém trabalha.",
+				"E zumbi em túnel apertado é pior que em campo aberto. Não tem pra onde correr, capisce?"
+			],
+			"accept": [
+				"Mamma mia, obrigado! Eles gostam do escuro, então procura onde a tocha não chega.",
+				"<r>Elimine 15 zumbis</r> e devolve a paz pra minha mina."
+			],
+			"progress": [
+				"Debaixo da terra o sol não queima zumbi nenhum. Lá embaixo eles andam de dia também.",
+				"Zumbi afogado aparece em água de caverna. Também conta, mas cuidado com o tridente deles."
+			],
+			"complete": [
+				"Ostia, que silêncio bom! Só se ouve a picareta agora. Música pros meus ouvidos.",
+				"Toma, bambino: <o>esmeraldas</o> e <o>ferro</o>. Tu é mineiro de coragem."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:zombie", "minecraft:drowned", "minecraft:zombie_villager"], "count": 15, "desc": "<r>Elimine</r> <r>15 zumbis</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 6}]
+		},
+		{
+			"id": "miner_2_ferro",
+			"tier": 2,
+			"title": "Ferro Bruto Pra Fundição",
+			"tone": "calm",
+			"offer": [
+				"Bambino, a fundição da vila tá parada. O ferreiro me olha torto toda vez que eu passo.",
+				"Ele quer <y>ferro bruto</y>, direto da pedra, pra derreter do jeito dele. Diz que ferro dos outros vem com defeito."
+			],
+			"why": [
+				"Sem ferro, não tem balde, não tem trilho, não tem picareta. E mineiro sem picareta é só um homem triste num buraco.",
+				"E o golem de ferro também precisa de conserto de vez em quando, capisce?"
+			],
+			"accept": [
+				"Ostia, valeu! Ferro precisa de picareta de pedra pra cima. Madeira não pega.",
+				"<g>Traga</g> <y>24 ferros brutos</y> e a fundição volta a cantar."
+			],
+			"progress": [
+				"Ferro aparece em quase toda altura, mas tem mais nas montanhas e lá pelo meio das cavernas.",
+				"Picareta com Fortuna faz cair mais ferro bruto de cada minério."
+			],
+			"complete": [
+				"Mamma mia, que ferro gordo! O ferreiro até sorriu. Primeira vez em dez anos.",
+				"Toma, bambino: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:raw_iron"], "count": 24, "desc": "<g>Entregue</g> <y>24 ferros brutos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "miner_2_picaretas",
+			"tier": 2,
+			"title": "Picareta Pra Turma Nova",
+			"tone": "calm",
+			"offer": [
+				"Bambino, tem uns jovens da vila querendo aprender o ofício. Que alegria, ostia! A mina vai ter herdeiro!",
+				"Só que eles chegaram com picareta de madeira. De madeira! Quebra na terceira pedra."
+			],
+			"why": [
+				"Aprendiz com ferramenta ruim desiste no primeiro dia. Com picareta de ferro, ele se apaixona pela pedra.",
+				"E eu não quero ser o último mineiro desta vila. Quero ensinar tudo que a nona me ensinou."
+			],
+			"accept": [
+				"Mamma mia, obrigado! Picareta de ferro leva três barras de ferro e dois gravetos.",
+				"<g>Fabrique</g> <y>4 picaretas de ferro</y>, uma pra cada aprendiz."
+			],
+			"progress": [
+				"Ferro bruto vira barra na fornalha. Carvão como combustível e pronto.",
+				"Picareta de ferro quebra ouro, redstone e diamante. A de pedra, não. Ensina isso pros moleques."
+			],
+			"complete": [
+				"Ostia, olha a cara deles! Parecem criança em dia de festa. E são, quase.",
+				"Toma, bambino: <o>esmeraldas</o> e um <o>diamante</o>. Tu ajudou a formar mineiro novo."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:iron_pickaxe"], "count": 4, "desc": "<g>Fabrique</g> <y>4 picaretas de ferro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "miner_2_tracas",
+			"tier": 2,
+			"title": "Pedra Que Mexe",
+			"tone": "danger",
+			"offer": [
+				"Bambino, eu vou te contar e tu não vai acreditar. Eu bati numa pedra e ela... saiu andando.",
+				"Era uma <r>traça</r>! Escondida dentro da pedra. E quando uma acorda, chama as outras.",
+				"Agora a galeria da montanha tá infestada. Cada pedra pode ser uma. Porca miséria, que pesadelo."
+			],
+			"why": [
+				"Mineiro que não confia na pedra não consegue trabalhar. E eu tô com medo de bater em cada bloco.",
+				"E elas se escondem de novo nas pedras. Se ninguém limpar, a montanha inteira vira ninho."
+			],
+			"accept": [
+				"Ostia, que coragem! Elas são pequenas, mas vêm em bando. Não deixa te cercarem.",
+				"<r>Elimine 20 traças</r> e devolve a confiança pra minha picareta."
+			],
+			"progress": [
+				"Traça se esconde em pedra infestada nas montanhas e nas fortalezas antigas, perto do portal do Fim.",
+				"Traça que apanha acorda as outras escondidas nas pedras em volta. Mata com um golpe só, ligeiro."
+			],
+			"complete": [
+				"Mamma mia, a pedra voltou a ser pedra! Já bati em cem blocos e nenhum saiu andando.",
+				"Toma, bambino: <o>ferro</o>, <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:silverfish"], "count": 20, "desc": "<r>Elimine</r> <r>20 traças</r>"},
+			"rewards": [{"item": "minecraft:iron_ingot", "count": 10}, {"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "miner_3_ouro",
+			"tier": 3,
+			"title": "A Febre do Ouro",
+			"tone": "calm",
+			"offer": [
+				"Bambino, a vila vizinha descobriu ouro e agora tá se achando. Tão falando que nossa mina é pobre.",
+				"Pobre! A minha mina! Ostia, isso é ofensa pra três gerações de mineiro."
+			],
+			"why": [
+				"Ouro vira maçã dourada, cenoura dourada, relógio. É riqueza pra vila inteira.",
+				"E é questão de honra, capisce? Eu quero mostrar que a nossa pedra também brilha."
+			],
+			"accept": [
+				"Mamma mia, bora! Ouro precisa de picareta de ferro, no mínimo.",
+				"<g>Minere</g> <y>16 minérios de ouro</y> e a gente cala a boca dos vizinhos."
+			],
+			"progress": [
+				"Ouro gosta do fundo das cavernas. Nas terras áridas, os desfiladeiros coloridos, tem ouro até perto da superfície.",
+				"Ouro do Nether também conta. Mas cuidado: piglin fica bravo se tu minerar perto dele."
+			],
+			"complete": [
+				"Ostia, que brilho! Mandei um pedacinho pros vizinhos com um bilhete: com carinho, a mina pobre.",
+				"Toma, bambino: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:gold_ores"], "count": 16, "desc": "<g>Minere</g> <y>16 minérios de ouro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "miner_3_lapis",
+			"tier": 3,
+			"title": "Pedra Azul do Bibliotecário",
+			"tone": "calm",
+			"offer": [
+				"Bambino, o bibliotecário veio me pedir <y>lápis-lazúli</y>. Pra encantar livro, ele disse.",
+				"Eu não entendo nada de magia. Pra mim é pedra azul bonita. Mas ele paga bem, então ostia, bora."
+			],
+			"why": [
+				"Sem lápis, a mesa de encantamento não funciona. E sem encantamento, picareta boa não vira picareta ótima.",
+				"E se eu ajudar ele, ele me encanta uma picareta com Fortuna. Mineiro esperto, capisce?"
+			],
+			"accept": [
+				"Mamma mia, valeu! Lápis precisa de picareta de pedra ou melhor.",
+				"<g>Traga</g> <y>64 lápis-lazúlis</y> e o bibliotecário vai chorar de alegria."
+			],
+			"progress": [
+				"Lápis gosta do fundo, mais pra baixo do meio das cavernas. Cada minério solta vários de uma vez.",
+				"Picareta com Fortuna multiplica o lápis. Vale a pena guardar uma só pra isso."
+			],
+			"complete": [
+				"Ostia, quanto azul! Parece o céu caiu dentro do baú.",
+				"Toma, bambino: <o>diamantes</o> e um <o>livro de Fortuna II</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:lapis_lazuli"], "count": 64, "desc": "<g>Entregue</g> <y>64 lápis-lazúlis</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 2}]
+		},
+		{
+			"id": "miner_3_slimes",
+			"tier": 3,
+			"title": "A Galeria Grudenta",
+			"tone": "danger",
+			"offer": [
+				"Porca miséria, bambino! Tem uma galeria lá embaixo onde não para de nascer <r>slime</r>.",
+				"Eles pulam, grudam na picareta e quando tu bate, viram dois. Bate de novo, viram quatro. É matemática do capeta.",
+				"Eu perdi uma bota lá dentro. Ficou grudada no chão."
+			],
+			"why": [
+				"É a galeria com o melhor veio de ferro da mina inteira. Não posso largar.",
+				"E se eles se espalharem pelas outras galerias, a mina inteira vira gelatina."
+			],
+			"accept": [
+				"Ostia, valeu! Os grandes se dividem, então vai até o menorzinho.",
+				"<r>Elimine 20 slimes</r> e eu busco minha bota de volta."
+			],
+			"progress": [
+				"Slime nasce em certas regiões debaixo da terra, abaixo da altura 40, sem precisar de escuro. E no pântano de noite.",
+				"Só os pequenininhos soltam bola de slime. Guarda que serve pra pistão grudento."
+			],
+			"complete": [
+				"Mamma mia, a galeria tá limpa! Achei a bota. Achei também duas tochas e uma cenoura. Não sei de quem.",
+				"Toma, bambino: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:slime"], "count": 20, "desc": "<r>Elimine</r> <r>20 slimes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "miner_4_obsidiana",
+			"tier": 4,
+			"title": "A Pedra Que Nasce do Fogo",
+			"tone": "calm",
+			"offer": [
+				"Bambino, a vila quer construir um abrigo contra explosão. Creeper, dinamite, ataque, tudo.",
+				"E o único bloco que aguenta tudo isso é a <y>obsidiana</y>. Preta, brilhante e dura como teimosia de nona."
+			],
+			"why": [
+				"Abrigo de obsidiana é o lugar mais seguro do mundo. Nem a explosão do Wither derruba fácil.",
+				"E com obsidiana também se faz portal pro Nether e mesa de encantamento. Nunca sobra."
+			],
+			"accept": [
+				"Ostia, obrigado! Só picareta de diamante ou netherite quebra obsidiana. E demora, capisce?",
+				"<g>Minere</g> <y>32 obsidianas</y> e o abrigo sai do papel."
+			],
+			"progress": [
+				"Obsidiana nasce quando água encosta em lava parada. Lagos de lava lá embaixo viram minas de obsidiana com um balde d'água.",
+				"Cuidado ao quebrar em cima de lava: o bloco some e tu cai junto. Sempre bota um bloco embaixo antes."
+			],
+			"complete": [
+				"Mamma mia, que pilha preta! O abrigo vai aguentar até o fim do mundo.",
+				"Toma, bambino: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Eficiência V</o>, pra próxima obsidiana sair ligeiro."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:obsidian"], "count": 32, "desc": "<g>Minere</g> <y>32 obsidianas</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "miner_4_eco",
+			"tier": 4,
+			"title": "Ecos da Cidade Antiga",
+			"tone": "danger",
+			"offer": [
+				"Bambino, eu preciso te pedir uma coisa que nem eu tenho coragem de fazer. Lá embaixo, nas <a>cidades antigas</a>...",
+				"Nos baús de lá tem uns <p>fragmentos de eco</p>. Pedaço escuro que guarda o som de quem já morreu.",
+				"Os velhos dizem que com eles se faz uma bússola que aponta pro lugar onde tu morreu da última vez. Ostia, que arrepio."
+			],
+			"why": [
+				"Bússola dessas salvaria a vida de mineiro perdido. Morreu, volta direto pra pegar as coisas.",
+				"E ninguém da vila teve coragem de ir. Porque lá embaixo mora o <r>Warden</r>."
+			],
+			"accept": [
+				"Mamma mia, tu vai mesmo? Anda agachado, não pisa no sculk e não faz barulho nenhum.",
+				"<g>Traga</g> <y>8 fragmentos de eco</y> e volta vivo, capisce?"
+			],
+			"progress": [
+				"As cidades antigas ficam bem no fundo, na ardósia, onde o escuro é mais escuro. Os fragmentos ficam nos baús.",
+				"Os gritadores de sculk chamam o Warden se ouvirem barulho quatro vezes. Lã abafa os passos. Andar agachado também."
+			],
+			"complete": [
+				"Ostia... tu voltou. E com os fragmentos. Eu acendi três velas pra ti, bambino.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Fortuna III</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:echo_shard"], "count": 8, "desc": "<g>Entregue</g> <y>8 fragmentos de eco</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 3}]
+		},
+		{
+			"id": "miner_4_escadas",
+			"tier": 4,
+			"title": "Sobe e Desce do Poço",
+			"tone": "calm",
+			"offer": [
+				"Bambino, o elevador da mina quebrou. Bom, o elevador era uma corda e um balde. A corda arrebentou.",
+				"Agora a gente sobe e desce pelas escadas de mão do poço grande. Tem mineiro que desiste no meio e dorme pendurado."
+			],
+			"why": [
+				"Eu preciso de alguém pra testar todas as escadas, ver qual degrau tá podre, qual tá firme.",
+				"E mineiro de verdade tem que ter perna forte, capisce? Isso é treino."
+			],
+			"accept": [
+				"Ostia, valeu! Pode ser escada de mão ou cipó, qualquer coisa que se escale.",
+				"<g>Escale</g> <y>200 blocos</y> por escadas de mão ou trepadeiras e volta aqui."
+			],
+			"progress": [
+				"Só conta subir, bambino. Descer é fácil, até pedra desce.",
+				"Dica: um poço comprido com escada de mão até o fundo já resolve tudo. E fica de presente pra mina."
+			],
+			"complete": [
+				"Mamma mia, que perna! Agora tu sobe mais ligeiro que eu.",
+				"Toma, bambino: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Peso-Pena IV</o>, pra quando a escada falhar."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:climb_one_cm"], "count": 20000, "desc": "<g>Escale</g> <y>200 blocos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:feather_falling", "level": 4}]
+		},
+		{
+			"id": "miner_5_detritos",
+			"tier": 5,
+			"title": "O Sonho de Netherite",
+			"tone": "danger",
+			"offer": [
+				"Bambino, lembra do meu sonho? A picareta de <y>netherite</y>? Eu tô velho e o sonho continua sonho.",
+				"Mas tu... tu pode descer no Nether e achar o <n>detrito ancestral</n>. Lá no fundo, perto do mar de lava.",
+				"É o minério mais raro do mundo. Eu passei a vida inteira cavando e nunca vi um."
+			],
+			"why": [
+				"Netherite não queima, não quebra fácil, flutua na lava. É o fim da linha pra qualquer mineiro.",
+				"E eu quero passar uma picareta dessas pro meu aprendiz antes de pendurar a lamparina."
+			],
+			"accept": [
+				"Ostia, que coragem! Precisa de picareta de diamante pra cima. E leva poção de resistência ao fogo.",
+				"<g>Minere</g> <y>8 detritos ancestrais</y> e me traz o sonho de volta."
+			],
+			"progress": [
+				"Detrito ancestral fica bem no fundo do Nether, perto da altura 15. Ele aguenta explosão, então tem mineiro que explode tudo em volta pra achar.",
+				"Cama explode no Nether. Dinamite também serve. Mas fica bem longe, bambino."
+			],
+			"complete": [
+				"Mamma mia... olha isso. Detrito ancestral. Eu tô chorando, bambino. Mineiro também chora.",
+				"Toma: um <o>totem da imortalidade</o>, um <o>livro de Remendo</o>, uma <o>maçã dourada encantada</o> e <o>diamantes</o>. Tu realizou o sonho de três gerações."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:ancient_debris"], "count": 8, "desc": "<g>Minere</g> <y>8 detritos ancestrais</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 14}]
+		},
+		{
+			"id": "miner_5_warden",
+			"tier": 5,
+			"title": "O Guardião das Profundezas",
+			"tone": "danger",
+			"offer": [
+				"Bambino, eu vi ele de novo. A sombra. O <r>Warden</r>. Subiu até a galeria nove, a mais funda da nossa mina.",
+				"Ele seguiu o barulho das picaretas. Os mineiros largaram tudo e fugiram. Ninguém quer mais descer.",
+				"Se ninguém enfrentar ele, a mina fecha pra sempre. E a vila perde o coração."
+			],
+			"why": [
+				"Ele ouve tudo e bate mais forte que qualquer bicho que eu conheço. Até armadura de diamante amassa.",
+				"Mas tu já desceu nas cidades antigas, já voltou do Nether. Se alguém pode, é tu."
+			],
+			"accept": [
+				"Ostia... vai com Deus, bambino. Leva muita flecha: de longe ele atira um grito sônico que atravessa parede.",
+				"<r>Derrote 1 Warden</r> e devolve a mina pros mineiros."
+			],
+			"progress": [
+				"O Warden nasce quando um gritador de sculk é acionado várias vezes. Ele é cego, mas sente vibração e cheiro.",
+				"Bola de neve e flecha jogada longe distraem ele. Usa isso pra se reposicionar. E se der errado, foge: não tem vergonha nisso."
+			],
+			"complete": [
+				"Mamma mia... tu derrubou o Warden. Os mineiros voltaram cantando pelo túnel, bambino. Cantando!",
+				"Toma: <o>barras de netherite</o>, um <o>totem da imortalidade</o>, um <o>livro de Remendo</o> e <o>diamantes</o>. A mina é tua também, pra sempre."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:warden"], "count": 1, "desc": "<r>Derrote</r> <r>1 Warden</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 16}]
+		}
+	]
+}

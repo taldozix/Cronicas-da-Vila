@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Pô, véi, {player}! Chegou bem na hora: acabei de montar um relógio de redstone que bate certinho a cada 4 ticks. Olha que lindo!",
+		"Ô, bicho, o {player} na área! Tecnicamente, você é a pessoa mais eficiente que eu conheço. E eu meço eficiência, viu?",
+		"{player}! Fiz um projeto com o seu nome: uma porta de pistão que abre sozinha quando você chega. Ainda explode às vezes, mas tá quase.",
+		"Fala, véi! Senta aí, mas cuidado com o fio de redstone no chão. Se pisar, a casa inteira acende."
+	],
+	"greet_neutral": [
+		"Opa, véi. Cuidado com essa alavanca aí, não mexe não. Ela liga coisa que eu nem lembro o que é.",
+		"Hrmm, gente nova. Você entende de redstone? Não? Relaxa, ninguém entende de primeira. Nem de segunda.",
+		"Bom dia, bicho. Desculpa a bagunça, a mesa de projetos tá cheia de rascunho. Organização é o próximo projeto.",
+		"E aí. Por definição, toda visita é uma interrupção. Mas tudo bem, eu tava travado mesmo nesse circuito."
+	],
+	"greet_cold": [
+		"Hmm. Você de novo, véi. Meu observador detectou sua chegada e eu fiquei desanimado na hora.",
+		"Pô, depois do que você fez? Nem com toda a redstone do mundo eu ligo pra você hoje.",
+		"Fala rapidinho, que eu tô com um circuito aberto e pouca paciência pra curto-circuito."
+	],
+	"hostile": [
+		"<r>Sai da minha oficina!</r> Você machucou gente da vila. Eu tenho uma armadilha de pistão e não tenho medo de usar!",
+		"Pô, véi, <r>vai embora</r>. Se der mais um passo, eu aperto o botão. E você não quer saber o que esse botão faz."
+	],
+	"followup": [
+		"Que mais, véi?",
+		"Manda a próxima pergunta, que eu tô com o processador ligado.",
+		"Mais alguma coisa? O comparador tá esperando.",
+		"Ainda tem dúvida, bicho? Pode mandar, que eu adoro explicar."
+	],
+	"decline": [
+		"Tranquilo, véi. Nem todo circuito fecha de primeira.",
+		"Sem problema. Vou colocar no cronograma pra próxima semana. Ou pro mês que vem. Ou nunca.",
+		"Pô... vou chamar o bobão da vila. Ele vai apertar todos os botões errados, mas fazer o quê."
+	],
+	"locked": [
+		"Calma, bicho, esse projeto é avançado demais pra quem ainda tá no tutorial. Ganha experiência e volta.",
+		"Tecnicamente você ainda não tem o nível necessário pra esse serviço. Sobe de nível que eu libero."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, o problema voltou. Máquina é assim: conserta uma coisa, quebra outra.",
+		"Você já fez isso pra mim, véi. Faz de novo? Pago com a mesma eficiência."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, véi. Até circuito queimado pode ser refeito. Vamos ver se você funciona agora.",
+		"Aceito. Mas vou deixar o observador de olho em você por um tempo, tá?"
+	],
+	"bless": [
+		"Que essa ferramenta funcione igual um bom circuito: sem falha, sem atraso, sem curto.",
+		"Abençoada com a precisão da redstone, bicho. Cuida bem que ela dura mais que pistão de ferreiro."
+	],
+	"bye": [
+		"Valeu, véi! E não esquece: tudo é mais fácil com um bom projeto.",
+		"Até mais, bicho! Se ver um botão vermelho na rua, não aperta.",
+		"Falou! Volta pra ver a máquina nova quando ficar pronta. Ou quando parar de explodir."
+	],
+	"greet_night": [
+		"Pô, véi, a essa hora? Tô testando o sensor de luz do dia. Ele acendeu as lâmpadas sozinho, olha que maravilha.",
+		"Boa noite, bicho! De noite é o melhor horário pra trabalhar. Sem visita, sem barulho... só creeper e zumbi, mas tudo bem.",
+		"Ô, {player}! Psiu, não pisa no fio. As lâmpadas de redstone da rua dependem dele. Se apagar, os zumbis aparecem."
+	],
+	"bye_night": [
+		"Boa noite, véi! Vai pela rua iluminada, que as minhas lâmpadas estão funcionando. Por enquanto.",
+		"Vou dormir. Ou vou fingir que vou dormir e ficar desenhando circuito até de manhã. Boa noite, {player}!",
+		"Até amanhã, bicho! Se ouvir um chiado e não for pistão, corre."
+	],
+	"greet_rain": [
+		"Pô, chuva, véi! Tô testando um sensor de chuva com recipiente de lava... não, espera, isso não funciona. Esquece.",
+		"Entra, {player}, que tá chovendo! Água e redstone não combinam: a água quebra o fio na hora. Cuidado onde pisa.",
+		"Chuva é bom pra testar telhado. O meu tá vazando. Problema de projeto, véi. Vou revisar."
+	],
+	"greet_storm": [
+		"Pô, véi, que trovoada! Raio em para-raios é seguro, mas eu ainda não terminei o meu. Fica aqui dentro.",
+		"Tempestade, bicho! Com o céu escuro assim, monstro aparece até de dia. Liguei todas as lâmpadas, fica tranquilo."
+	],
+	"reward_intro": [
+		"Se você fechar esse circuito, véi, eu te pago",
+		"Fazendo direitinho, bicho, você leva",
+		"Pelo serviço, calculei certinho e separei",
+		"Me ajuda nessa que a recompensa é"
+	],
+	"reward_outro": [
+		"Palavra de engenheiro é igual repetidor: sinal forte e sem perda, véi.",
+		"E ainda te ensino a fazer um relógio de redstone de lambuja.",
+		"Pode confiar: eu pago certinho, calculado no tick.",
+		"Tá na planilha, bicho. E planilha não mente.",
+		"Se eu não pagar, que todos os meus pistões travem de uma vez."
+	],
+	"lore_done": [
+		"Pô, véi, já te contei uma história hoje! Mais uma e eu perco a linha de raciocínio do circuito. Volta amanhã.",
+		"História é igual redstone: o sinal só vai até quinze blocos. Hoje já deu, volta amanhã.",
+		"Bicho, você é curioso, hein? Por hoje chega. Amanhã eu te conto outra, testada e aprovada."
+	],
+	"abandon": [
+		"Pô... vai largar no meio? Igual circuito sem fechar, não liga nada.",
+		"Que pena, véi. O projeto vai ter que esperar outro engenheiro."
+	],
+	"lore": [
+		[
+			"Sabia que a <y>redstone</y> é um pó vermelho que conduz energia? Ninguém sabe de onde vem essa energia.",
+			"Eu tenho uma teoria: é o calor do fundo do mundo. Por isso o minério fica tão lá embaixo, perto da lava.",
+			"E quando você bate no minério, ele brilha. Como se estivesse acordando. Eu acho isso a coisa mais linda que existe, véi."
+		],
+		[
+			"Nos <a>Templos da Selva</a> tem armadilha de redstone feita por um povo antigo. Fio, flecha, pistão escondido.",
+			"Os mais velhos dizem que foram os primeiros engenheiros do mundo. Antes até dos aldeões.",
+			"Eu fui lá uma vez estudar. Levei duas flechas no ombro. Valeu a pena, bicho. O circuito era genial."
+		],
+		[
+			"O primeiro <a>pistão</a> foi inventado por um aldeão que queria empurrar a porta sem levantar do sofá.",
+			"Não é verdade, eu inventei essa agora. Mas é exatamente o tipo de coisa que um engenheiro faria.",
+			"E depois alguém colocou slime no pistão e criou o pistão grudento. Aí a gente pôde puxar as coisas de volta. Revolução, véi."
+		],
+		[
+			"As <a>minas abandonadas</a> estão cheias de trilhos. Alguém construiu tudo aquilo há muito tempo.",
+			"Eu acho que eram mineiros que usavam carrinhos pra levar minério. Mas aí apareceram as aranhas de caverna e todo mundo fugiu.",
+			"Hoje eu pego os trilhos de lá pra fazer a ferrovia da vila. Reciclagem, bicho. Engenharia sustentável."
+		],
+		[
+			"O <a>golem de ferro</a> é a máquina mais perfeita do mundo. Ferro, abóbora e nenhum fio de redstone.",
+			"Eu passei anos tentando entender como ele funciona sem circuito. Até abri um. Não abri, véi, ele me jogou longe.",
+			"Conclusão: tem coisa que engenharia não explica. Às vezes é só carinho da vila mesmo."
+		]
+	],
+	"player_work": [
+		"Tem algum projeto pra mim?",
+		"Precisa de ajuda com as máquinas?",
+		"Bora, véi! O que tem pra construir hoje?"
+	],
+	"player_accept": [
+		"Pode deixar, eu fecho esse circuito!",
+		"Fechado, engenheiro. Tá no cronograma.",
+		"Aceito! Passa a planta que eu executo."
+	],
+	"player_why": [
+		"E por que essa máquina é tão importante?",
+		"Me explica o projeto direito.",
+		"Por que você mesmo não monta?"
+	],
+	"player_decline": [
+		"Agora não, véi, tô sem tempo.",
+		"Passo dessa vez. Redstone me dá dor de cabeça.",
+		"Hoje não, fica pra próxima versão."
+	],
+	"player_lore": [
+		"Me conta uma história de engenharia.",
+		"O que você sabe sobre redstone?",
+		"Conta um causo da oficina."
+	],
+	"player_more_lore": [
+		"Conta outra, véi!",
+		"E o que mais você inventou?",
+		"Continua, tô ligado no assunto."
+	],
+	"player_bye": [
+		"Até mais, engenheiro!",
+		"Falou, véi!",
+		"Tchau! Não explode a oficina."
+	],
+	"names": [
+		"Wesley", "Thaís", "Igor", "Natália", "Danilo", "Larissa", "Rômulo",
+		"Bianca", "Murilo", "Tatiane", "Caíque", "Michele", "Fabrício", "Raíssa"
+	],
+	"extra": {
+		"day_off": [
+			"Pô, véi, hoje é minha folga! Desliguei todas as máquinas. Menos o relógio. O relógio nunca desliga.",
+			"Hoje não tem serviço, bicho. Até engenheiro precisa reiniciar o sistema de vez em quando. Volta outro dia ou procura outro engenheiro na vila.",
+			"Tô de folga, deitado olhando pro teto e pensando em circuito. Não consigo evitar. Se for urgente, procura outro colega de projeto, véi."
+		],
+		"closed": [
+			"Hoje a banca tá fechada, é minha folga, véi! A mesa de projetos tá em modo de espera.",
+			"Pô, bicho, hoje a banca tá fechada, é minha folga. Volta amanhã que eu te mostro a máquina nova."
+		],
+		"greet_plains": [
+			"Aqui na planície é tudo plano, véi. Perfeito pra construir ferrovia. Já tenho três quilômetros planejados.",
+			"Planície é o sonho do engenheiro, bicho: terreno reto, fácil de medir e sem montanha pra atrapalhar o projeto."
+		],
+		"greet_desert": [
+			"No deserto a areia cai quando você tira o bloco de baixo. Já perdi duas máquinas assim, véi. Física é cruel.",
+			"Aqui no deserto eu faço fazenda automática de cacto. Cacto cresce, quebra sozinho e cai no funil. Engenharia pura, bicho."
+		],
+		"greet_savanna": [
+			"Na savana os platôs são tão altos que eu tô projetando um elevador de pistão. Ou de bolhas. Ainda não decidi, véi.",
+			"Aqui tem cavalo selvagem pra todo lado. Mas eu prefiro carrinho de mina: não cansa e não dá coice."
+		],
+		"greet_snow": [
+			"Na neve, o gelo é a melhor estrada que existe. Barco no gelo é mais rápido que trem, véi. Testei e medi.",
+			"Pô, que frio, bicho! A redstone funciona igual, mas os meus dedos não. Projeto de luva é o próximo."
+		],
+		"greet_taiga": [
+			"Na taiga tem muita madeira e muita colina. Já fiz um trilho que sobe a montanha inteira. Levei uma semana, véi.",
+			"Aqui as raposas roubam tudo que brilha. Inclusive minhas tochas de redstone. Tô projetando um alarme anti-raposa."
+		],
+		"greet_jungle": [
+			"Na selva tem templo com armadilha de redstone antiga. Pra mim é igual museu, véi. Visito todo mês.",
+			"Aqui tem tanto cipó e folha que é difícil passar fio. Mas engenheiro sempre dá um jeito, bicho."
+		],
+		"greet_swamp": [
+			"O pântano é cheio de slime, e slime é ouro pra engenheiro. Sem slime, não tem pistão grudento, véi.",
+			"Aqui no pântano a água é parada, perfeita pra testar elevador de bolhas. Já fiz três. Um funciona."
+		]
+	}
+}

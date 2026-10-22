@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ostia, {player}! Vem cá, bambino, me dá um abraço! Cuidado que eu tô preto de carvão até a orelha.",
+		"Mamma mia, olha quem apareceu! O único que desce na mina comigo sem rezar dez ave-marias antes!",
+		"{player}! Porca miséria, que saudade! Senta aí na carriola, que eu te conto onde achei o veio de ferro mais gordo do ano.",
+		"Ostia, bambino, tu chegou na hora! Acabei de passar o café. Café de mineiro: preto, forte e com gosto de pedra."
+	],
+	"greet_neutral": [
+		"Opa. Gente nova? Tira o pé de cima do trilho, bambino, que a vagoneta não freia.",
+		"Hm. Tu tem cara de quem nunca viu uma caverna por dentro. Tudo bem. A pedra ensina rapidinho.",
+		"Buongiorno, ou boa tarde. Lá embaixo não tem dia nem noite, então pra mim é tudo a mesma hora.",
+		"Ostia, cuidado com o buraco aí. Fui eu que cavei. Sem querer. Faz parte."
+	],
+	"greet_cold": [
+		"Hm. Tu de novo. Fica longe das minhas picaretas, que a última que tu chegou perto sumiu.",
+		"Porca miséria... ouvi coisas feias de ti, bambino. Na mina a gente confia no colega ou morre junto.",
+		"Fala o que quer e vai. Tenho um veio de carvão me esperando e pouca vontade de prosa."
+	],
+	"hostile": [
+		"<r>Ostia, sai daqui!</r> Tu machucou gente da vila. Na minha galeria tu não pisa nem com lanterna na mão!",
+		"Tô com a picareta na mão, bambino. <r>Vai embora</r> antes que eu esqueça que ela é pra pedra."
+	],
+	"followup": [
+		"Que mais, bambino?",
+		"Fala, fala. A pedra não foge.",
+		"Mais alguma coisa? Tô com a lamparina acesa gastando óleo.",
+		"Ostia, ainda tem pergunta? Pode mandar, que mineiro tem tempo."
+	],
+	"decline": [
+		"Tá bom, bambino. Nem todo mundo nasceu pra viver debaixo da terra.",
+		"Sem problema. Mas se mudar de ideia, segue os trilhos que tu me acha.",
+		"Mamma mia... vou chamar o bobão da vila. Ele vai cavar pra cima em vez de pra baixo, mas paciência."
+	],
+	"locked": [
+		"Ostia, bambino, esse serviço é lá no fundo, onde a pedra vira ardósia e o silêncio dá medo. Tu ainda não tá pronto.",
+		"Agora não tenho nada do teu tamanho. Desce umas galerias por aí, ganha calo na mão e volta."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, voltou. Mina é assim: tu tira um minério, aparece outro problema.",
+		"Tu já me ajudou nessa. Bora de novo? Dessa vez eu te empresto minha lamparina da sorte."
+	],
+	"apology_thanks": [
+		"Hm... tá bom, bambino. Até pedra bruta vira tijolo bonito com paciência. Vamos ver.",
+		"Aceito. Mas a nona ainda tá de cara feia contigo. Ela não perdoa nem o santo."
+	],
+	"bless": [
+		"Que essa ferramenta seja dura como diamante e fiel como lamparina acesa, bambino.",
+		"Abençoada com a força da pedra. Lá embaixo ela vai ser tua melhor amiga."
+	],
+	"bye": [
+		"Vai com Deus, bambino! E nunca cava reto pra baixo, capisce?",
+		"Ciao! Se achar diamante, me conta. Se achar lava, corre.",
+		"Até mais! Leva sempre tocha a mais do que acha que precisa."
+	],
+	"greet_night": [
+		"Ostia, {player}, de noite? Pra mim tanto faz, bambino, eu vivo no escuro. Mas aqui em cima tem zumbi.",
+		"Mamma mia, tu tá andando sem tocha? Até lá embaixo eu ando com tocha, e lá embaixo é sempre noite!",
+		"Psiu, bambino. Ouve isso? É um creeper ou é o meu estômago? Melhor não ficar pra descobrir.",
+		"Boa noite, {player}. Acabei de subir da mina. Fiquei tanto tempo lá embaixo que nem sei mais que dia é hoje."
+	],
+	"bye_night": [
+		"Buona notte, bambino! Vai direto pra casa e acende uma tocha na porta.",
+		"Vou deitar, que amanhã eu desço cedo. Dorme com Deus, {player}!",
+		"Até amanhã! E se ouvir \"ssssss\" atrás de ti, nem olha: corre, capisce?"
+	],
+	"greet_rain": [
+		"Ostia, chuva! Pra mim é bom, bambino: lá na mina não molha nada. Só pinga do teto, de vez em quando.",
+		"Entra, {player}, entra! Chuva assim enche os poços das cavernas. Amanhã vai ter cachoeira em cada galeria.",
+		"Mamma mia, que aguaceiro. Minha nona dizia que dia de chuva é dia de afiar picareta. E ela tinha razão."
+	],
+	"greet_storm": [
+		"Porca miséria, que trovoada! Bambino, desce aqui pra entrada da mina, que debaixo da pedra raio não pega!",
+		"Ostia, com esse céu escuro sai zumbi até de dia, {player}. Mas lá embaixo é sempre escuro, então pra mim é segunda-feira."
+	],
+	"reward_intro": [
+		"Se tu der conta, bambino, eu te pago",
+		"Fazendo isso direitinho, tu leva",
+		"Pelo serviço, ostia, eu separo pra ti",
+		"Me ajuda nessa que eu te dou, palavra de mineiro"
+	],
+	"reward_outro": [
+		"Palavra de mineiro é dura que nem obsidiana, bambino.",
+		"E ainda te dou um pedaço do salame da nona de lambuja.",
+		"Pode confiar: eu pago certinho, igual vagoneta que chega no fim do trilho.",
+		"Mineiro que não paga o que deve, a mina desaba em cima. Fica tranquilo."
+	],
+	"lore_done": [
+		"Ostia, bambino, já te contei uma história hoje! Mais uma e minha lamparina apaga. Volta amanhã.",
+		"História é igual minério: uma por vez, com cuidado. Pergunta pros outros da vila ou volta amanhã.",
+		"Mamma mia, tu é curioso, hein? Hoje chega. Amanhã eu te conto da galeria que ninguém volta."
+	],
+	"abandon": [
+		"Ostia... vai largar no meio? Túnel cavado pela metade não leva a lugar nenhum, bambino.",
+		"Que pena. Achei que tu tinha fôlego de mineiro."
+	],
+	"lore": [
+		[
+			"Tu sabia que o mundo tem camadas, bambino? Em cima é pedra comum. Mais embaixo vem a <y>ardósia</y>, escura e dura.",
+			"E bem no fundo, no fundo mesmo, tem a <y>rocha-mãe</y>. Essa ninguém quebra. Nem picareta de netherite, nem explosão, nem reza.",
+			"Minha nona dizia que a rocha-mãe é o chão do mundo, e que embaixo dela só tem o vazio. Eu nunca quis conferir."
+		],
+		[
+			"Lá nas profundezas, onde a ardósia é mais escura, tem umas <a>cidades antigas</a>. Prédios enormes, de pedra fria.",
+			"Tudo coberto de um musgo azul-escuro, o <p>sculk</p>. Ele ouve, bambino. Se tu fizer barulho, ele grita.",
+			"E quando grita demais, vem o <r>Warden</r>. Cego, mas ouve até teu coração. Eu já vi a sombra dele. Subi a escada em dez segundos."
+		],
+		[
+			"Diamante não fica em qualquer lugar, bambino. Ele gosta do fundo, bem embaixo, perto da lava.",
+			"Por isso mineiro velho sempre anda com balde d'água. Cavou e apareceu lava? Joga a água, vira obsidiana, problema resolvido.",
+			"Meu tio Ângelo não andava com balde. Hoje ele é uma placa na entrada da mina. Ostia, que saudade."
+		],
+		[
+			"Tem uns geodos escondidos na pedra, bambino. Por fora, uma casca de basalto liso. Por dentro, <p>ametista</p> roxa brilhando.",
+			"Quando tu bate num cristal, ele toca. Um sininho, assim: tlim, tlim. A mina inteira canta.",
+			"Os antigos faziam luneta com aquele cristal. Eu prefiro só ficar ouvindo a música. Tem coisa que não precisa servir pra nada."
+		],
+		[
+			"No Nether tem um minério que nem parece minério: o <n>detrito ancestral</n>. Marrom, feio, escondido no fundo.",
+			"Mas derrete ele e mistura com ouro e vira <y>netherite</y>, o metal mais forte que existe. Nem a lava queima.",
+			"Meu sonho é ter uma picareta de netherite antes de morrer, bambino. Aí eu mando gravar: aqui jaz um mineiro feliz."
+		]
+	],
+	"player_work": [
+		"Tem serviço na mina pra mim?",
+		"Precisa de ajuda lá embaixo?",
+		"Bora cavar, bambino! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Deixa comigo, já tô com a picareta na mão!",
+		"Fechado. Vou levar tocha de sobra.",
+		"Bora pro fundo!"
+	],
+	"player_why": [
+		"E por que isso é tão importante?",
+		"Pra que tu precisa disso?",
+		"O que acontece se ninguém fizer?"
+	],
+	"player_decline": [
+		"Agora não, tô com medo do escuro.",
+		"Hoje eu passo, minha picareta quebrou.",
+		"Fica pra próxima."
+	],
+	"player_lore": [
+		"Me conta uma história da mina.",
+		"O que tem lá no fundo da terra?",
+		"Tem algum causo de mineiro?"
+	],
+	"player_more_lore": [
+		"Ostia, conta mais!",
+		"E aí, o que tinha lá embaixo?",
+		"Continua!"
+	],
+	"player_bye": [
+		"Ciao! Cuidado com a lava.",
+		"Até mais, mineiro!",
+		"Falou, vou subir pra tomar sol."
+	],
+	"names": [
+		"Ângelo", "Valdecir", "Dirceu", "Lauro", "Nelson", "Ivo", "Darci",
+		"Zulmira", "Neiva", "Ivete", "Celso", "Orlando", "Gilmar", "Lindomar"
+	],
+	"extra": {
+		"day_off": [
+			"Ostia, hoje é folga, bambino! Hoje eu fico aqui em cima tomando sol, que mineiro também precisa ver o céu às vezes.",
+			"Hoje não tem serviço, não. Tô de folga, comendo a polenta da nona e descansando as costas. Procura outro mineiro aí na vila ou volta outro dia.",
+			"Folga hoje! A picareta tá pendurada e a lamparina apagada. Se a pressa for grande, procura outro mineiro, capisce?"
+		],
+		"closed": [
+			"Ostia, hoje a banca tá fechada, bambino! É minha folga. Minério só amanhã.",
+			"Banca fechada hoje. Folga de mineiro é sagrada: hoje eu não pego nem em pedrinha de rio."
+		],
+		"greet_plains": [
+			"Ostia, {player}! Aqui na planície o chão é tão plano que dá vontade de cavar só pra ver o que tem embaixo. E eu cavo.",
+			"Planície é bom porque a entrada da mina fica fácil de achar, bambino. Só seguir o buraco que eu deixei."
+		],
+		"greet_desert": [
+			"Mamma mia, deserto! Areia não segura túnel, bambino. Tu cava e cai tudo na cabeça. Por isso aqui eu escoro com arenito.",
+			"{player}! Cuidado com os templos daqui: embaixo deles tem armadilha de dinamite. Mineiro sabe: placa de pressão em templo, nunca pisa."
+		],
+		"greet_savanna": [
+			"Ostia, {player}! Aqui na savana tem montanha cortada no meio, com a pedra toda à mostra. Dá pra ver o minério sem cavar!",
+			"Savana é quente, bambino, mas lá embaixo é fresquinho. Mineiro sempre tem ar-condicionado natural."
+		],
+		"greet_snow": [
+			"Porca miséria, que frio! Aqui o chão é congelado, bambino. Tem que quebrar o gelo antes da pedra.",
+			"{player}! Nas montanhas daqui tem esmeralda escondida. Pouca gente sabe. Agora tu sabe. Não conta pra ninguém, capisce?"
+		],
+		"greet_taiga": [
+			"Ostia, {player}! Taiga tem pedregulho com musgo e lama pra todo lado. E lá embaixo, caverna que não acaba mais.",
+			"Bambino, as minas abandonadas daqui têm trilho de sobra. Pego emprestado sempre que posso. Os donos já morreram faz tempo."
+		],
+		"greet_jungle": [
+			"Mamma mia, selva! Aqui eu cavo e sai raiz em vez de pedra, bambino. E o calor lá embaixo é dobrado.",
+			"{player}! Embaixo da selva tem caverna exuberante, com musgo e bagas que brilham. Até mineiro velho fica de boca aberta."
+		],
+		"greet_swamp": [
+			"Ostia, pântano! Aqui a lama entra até na bota, bambino. Mas embaixo tem argila boa que não acaba mais.",
+			"{player}! Cuidado que aqui embaixo tem muito slime. Cada vez que eu cavo, pula um na minha cara."
+		]
+	}
+}

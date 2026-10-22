@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ô, piá! {player}, que bom te ver, daí! Senta aí no banquinho que eu fiz ontem. É de carvalho, aguenta até golem.",
+		"Capaz que é o {player}! Pode entrar, que eu tava justo lixando uma cadeira com o teu nome entalhado.",
+		"{player}, meu piá preferido! Desde que tu apareceu, a floresta tá mais bonita e a serragem mais cheirosa.",
+		"Bah... não, isso é coisa de gaúcho. Ô, {player}! Chega mais, que tem pinhão na chapa e madeira nova pra mostrar."
+	],
+	"greet_neutral": [
+		"Opa, tudo bem, daí? Cuidado com a serragem no chão, que escorrega igual sabão.",
+		"Gente nova na vila? Tu é lenhador ou só curioso? Se for lenhador, planta muda depois, viu?",
+		"Bom dia, piá. Tô meio ocupado aqui medindo essa tábua. Mede duas vezes, corta uma. Regra da vida.",
+		"Hrmm. Chegou de mansinho, igual cupim. Brincadeira, tu tem cara de gente boa."
+	],
+	"greet_cold": [
+		"Hmm. Tu de novo. Andou derrubando floresta sem plantar nenhuma muda, né? A notícia corre.",
+		"Capaz que eu vou te dar atenção depois do que tu fez. Nem morto, piá.",
+		"Fala logo o que tu quer. A cola tá secando e a minha paciência também."
+	],
+	"hostile": [
+		"<r>Sai da minha oficina!</r> Tu feriu gente da vila. Aqui tu não pega nem um palito de madeira!",
+		"Olha bem esse machado, piá. Ele corta tora, mas pode cortar conversa também. <r>Vai embora!</r>"
+	],
+	"followup": [
+		"Que mais, piá?",
+		"Fala, fala, que a plaina espera.",
+		"Mais alguma coisa? Tô com uma gaveta pela metade aqui.",
+		"Ainda tem pergunta, daí? Manda ver."
+	],
+	"decline": [
+		"Tá bom, piá. Cada um no seu tempo, igual árvore crescendo.",
+		"Sem problema. Mas a madeira não espera, ela racha com o tempo, viu?",
+		"Capaz... vou ter que chamar o bobão da vila. Ele vai serrar o dedo, mas fazer o quê."
+	],
+	"locked": [
+		"Calma, piá. Esse serviço é madeira grossa demais pra quem ainda tá aprendendo. Ganha experiência e volta.",
+		"Agora não tenho nada do teu tamanho. Cresce que nem araucária, devagarinho, que eu te arrumo serviço."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, precisei de novo. Madeira é igual pinhão: nunca é demais.",
+		"Tu já fez isso pra mim uma vez, daí. Faz de novo? Pago com prazer."
+	],
+	"apology_thanks": [
+		"Hmm... tá bom, piá. Até tábua torta se endireita com um pouco de peso em cima. Vamos ver.",
+		"Aceito as desculpas. Mas a floresta ainda vai te olhar torto por um tempo."
+	],
+	"bless": [
+		"Que essa ferramenta seja firme feito cerne de carvalho: não racha, não empena, não desiste.",
+		"Abençoada com o cheiro da floresta, piá. Cuida bem dela e ela dura uma vida inteira."
+	],
+	"bye": [
+		"Vai com Deus, piá! E se derrubar árvore, planta outra no lugar.",
+		"Até mais, daí! Leva uma japona, que o tempo vai virar.",
+		"Tchau! Volta pra ver a mesa nova, que vai ficar uma lindeza."
+	],
+	"greet_night": [
+		"Capaz, {player}, a essa hora? A floresta de noite é cheia de aranha e zumbi. Fica perto da lamparina, piá.",
+		"Psiu, fala baixo! Tô envernizando no escuro. Brincadeira, tô é com sono mesmo.",
+		"Boa noite, daí! De noite a floresta range sozinha. É a madeira esfriando, não é fantasma. Quase sempre."
+	],
+	"bye_night": [
+		"Boa noite, piá! Vai pelo caminho de pedra, que no meio das árvores tá escuro demais.",
+		"Vou dormir na cama que eu mesmo fiz. A melhor cama da vila, sem modéstia. Dorme bem, {player}!",
+		"Té amanhã, daí! Se ouvir um galho quebrando no escuro, não é coruja. Corre."
+	],
+	"greet_rain": [
+		"Chuvinha, piá! A floresta agradece. Mas madeira molhada eu não corto, que empena tudo.",
+		"Ô, {player}, entra que tá chovendo! Tu tá mais molhado que tora no rio.",
+		"Tempo de chuva é tempo de lixar dentro da oficina, daí. E tomar um chimarrão. Não, espera, isso também é coisa de gaúcho."
+	],
+	"greet_storm": [
+		"Capaz que tu vai andar nesse temporal! Raio adora cair em árvore alta, e tu tá parecendo uma, piá.",
+		"Que trovoada, {player}! Uma vez um raio acertou um pinheiro aqui perto e pegou fogo na hora. Fica longe das árvores!"
+	],
+	"reward_intro": [
+		"Se tu me ajudar nessa, daí, eu te pago",
+		"Fazendo direitinho, piá, tu leva",
+		"Pelo serviço bem feito, separo pra ti",
+		"Me dá essa mão que a recompensa é"
+	],
+	"reward_outro": [
+		"Palavra de marceneiro é igual encaixe bem feito: não solta nunca.",
+		"E ainda te dou um banquinho de lambuja, daí.",
+		"Pode confiar, piá: eu pago certinho, igual régua.",
+		"Tá anotado a lápis atrás da orelha. E esse lápis nunca perdeu nada.",
+		"Se eu não pagar, que me nasça cupim na bancada."
+	],
+	"lore_done": [
+		"Capaz, piá, já te contei uma história hoje! Mais uma e eu erro o corte da tábua. Volta amanhã.",
+		"História é igual verniz: uma camada por dia, senão não seca. Volta amanhã, daí.",
+		"Tu é curioso, hein? Hoje deu. Amanhã tem história nova, cheirando a madeira fresca."
+	],
+	"abandon": [
+		"Capaz... tu vai largar no meio? Igual cadeira de três pernas, não fica de pé.",
+		"Que pena, piá. Achei que tu era madeira de lei."
+	],
+	"lore": [
+		[
+			"Tu sabia que cada madeira tem uma cor? O carvalho é clarinho, o abeto é marrom, a bétula é quase branca.",
+			"A acácia da savana é laranja e a carvalho-escuro é quase preta. E as árvores do Nether são vermelhas e azuis!",
+			"Eu tenho uma mesa feita com todas elas. Parece colcha de retalhos de madeira. É a coisa mais bonita da minha casa, piá."
+		],
+		[
+			"Lá na floresta escura tem a <a>Mansão da Floresta</a>. Enorme, toda de madeira escura. Linda de morrer.",
+			"Só que quem mora lá são os <r>vingadores</r> e os <r>evocadores</r>. Eles derrubam árvore sem plantar nenhuma muda.",
+			"Pra mim, isso é o maior crime do mundo. Pior que pisar em plantação. Pior que roubar esmeralda, daí."
+		],
+		[
+			"Tem uma árvore que nasce no pântano, com raiz pra fora da água: o <a>mangue</a>. Ela anda, sabia?",
+			"Mentira, não anda. Mas as sementes dela, os <y>propágulos</y>, crescem penduradas nos galhos e dá até pra plantar debaixo d'água.",
+			"Eu acho isso a coisa mais esperta da natureza. Árvore que não tem medo de pé molhado, piá."
+		],
+		[
+			"Já viu um <a>cogumelo gigante</a>? Tem lá nas ilhas de micélio, onde moram as vacas vermelhas.",
+			"O caule dele é branquinho e dá uma madeira estranha, que não é madeira de verdade. Eu já tentei fazer mesa com ele.",
+			"Ficou bonita, mas cheirava a sopa. Toda vez que alguém sentava, dava fome, piá."
+		],
+		[
+			"Meu avô plantou uma muda de carvalho no dia em que eu nasci. Hoje ela é a árvore mais alta da vila.",
+			"Ele sempre dizia: quem planta árvore, planta sombra pra gente que nunca vai conhecer.",
+			"Por isso, toda tora que eu corto, eu planto duas mudas. Uma pra mim, outra pro meu neto, daí."
+		]
+	],
+	"player_work": [
+		"Tem serviço na oficina pra mim?",
+		"Precisa de ajuda com madeira?",
+		"Bora trabalhar, piá! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Pode deixar, eu dou conta!",
+		"Fechado, marceneiro. Já tô pegando o machado.",
+		"Aceito! Mede duas vezes e corta uma, né?"
+	],
+	"player_why": [
+		"E por que tu precisa disso?",
+		"Me explica direito essa obra.",
+		"Por que tu mesmo não vai buscar?"
+	],
+	"player_decline": [
+		"Agora não, tô sem machado.",
+		"Passo dessa vez, piá.",
+		"Hoje não, fica pra próxima."
+	],
+	"player_lore": [
+		"Me conta uma história da floresta.",
+		"O que tu sabe sobre as árvores?",
+		"Conta um causo da marcenaria."
+	],
+	"player_more_lore": [
+		"Conta outra da floresta!",
+		"E o que mais tu sabe?",
+		"Continua, tá cheiroso igual serragem."
+	],
+	"player_bye": [
+		"Até mais, marceneiro!",
+		"Vou nessa, piá!",
+		"Tchau! Cuidado com o dedo na serra."
+	],
+	"names": [
+		"Leopoldo", "Ingrid", "Casimiro", "Wanda", "Estanislau", "Irene", "Bruno",
+		"Karina", "Ladislau", "Vilma", "Rudi", "Elza", "Gilmar", "Rosane"
+	],
+	"extra": {
+		"day_off": [
+			"Capaz que eu vou trabalhar hoje, piá! É minha folga. Vou só balançar na rede que eu mesmo fiz.",
+			"Hoje não tem serviço, daí. A serra tá descansando, a plaina tá descansando e eu também. Volta outro dia ou procura outro marceneiro na vila.",
+			"Tô de folga, sentado debaixo do carvalho do meu avô, comendo pinhão. Se for urgente, procura outro colega de oficina, piá."
+		],
+		"closed": [
+			"Hoje a banca tá fechada, é minha folga, piá! Até a bancada florestal precisa de um descanso.",
+			"Capaz, daí, hoje a banca tá fechada, é minha folga. Volta amanhã que eu te mostro a cadeira nova."
+		],
+		"greet_plains": [
+			"Aqui na planície a árvore é pouca, então cada carvalho é tratado igual rei. Eu conheço todos pelo nome, piá.",
+			"Na planície eu planto mudas por todo canto. Daqui a uns anos, isso aqui vai ser floresta, daí."
+		],
+		"greet_desert": [
+			"Marceneiro no deserto, piá? Capaz! Aqui eu trabalho mais com cacto do que com madeira. Até bancada de cacto eu já tentei.",
+			"No deserto, cada tora vale mais que esmeralda. Eu guardo a madeira no baú com cadeado, daí."
+		],
+		"greet_savanna": [
+			"A acácia daqui é torta que só, mas a madeira é laranja e linda. Dá a mobília mais alegre do mundo, piá.",
+			"Na savana, as árvores crescem de lado, que nem gente preguiçosa se espreguiçando. Eu adoro, daí."
+		],
+		"greet_snow": [
+			"Aqui na neve tem abeto, a madeira mais firme que existe. Faz casa quentinha e cadeira que aguenta urso, piá.",
+			"Capaz que esfria assim! Mas é por isso que eu faço porta grossa. Ninguém na vila passa frio por culpa de porta minha."
+		],
+		"greet_taiga": [
+			"Taiga é o paraíso do marceneiro, piá! Abeto pra todo lado, cheiro de resina e pinha caindo na cabeça.",
+			"Aqui tem até abeto gigante, de quatro troncos juntos. Uma árvore dessas dá mobília pra vila inteira, daí."
+		],
+		"greet_jungle": [
+			"Na selva tem árvore tão alta que eu fico tonto só de olhar pra cima. A madeira da selva é rosadinha, sabia?",
+			"Aqui tem cipó, cacau e madeira de lei pra todo lado. O único problema é a jaguatirica roubando meu peixe, piá."
+		],
+		"greet_swamp": [
+			"No pântano tem o mangue, a madeira mais vermelha que existe. Faz uma mesa linda, mas a raiz é um nó só, daí.",
+			"Aqui a madeira vive úmida, então eu deixo tudo secar no sol antes de trabalhar. Paciência de pântano, piá."
+		]
+	}
+}

@@ -1,0 +1,396 @@
+{
+	"quests": [
+		{
+			"id": "woodworker_1_carvalho",
+			"tier": 1,
+			"title": "Tábua de Carvalho",
+			"tone": "calm",
+			"offer": [
+				"Ô, piá, chegou na hora certa! Prometi uma mesa nova pra cada casa da vila e acabou o meu <y>carvalho</y>.",
+				"Carvalho é a madeira mais honesta que existe. Não é a mais bonita, mas nunca te deixa na mão."
+			],
+			"why": [
+				"Mesa é onde a família se junta, daí. Casa sem mesa é casa sem conversa.",
+				"E eu tô com o braço cansado de tanto serrar. Tu tem cara de quem maneja bem um machado."
+			],
+			"accept": [
+				"Beleza! Só um pedido: planta as mudas que caírem, tá?",
+				"<g>Traga</g> <y>48 toras de carvalho</y>, piá."
+			],
+			"progress": [
+				"O carvalho aparece em quase todo canto: planície, floresta, até na beira do pântano.",
+				"Machado corta bem mais rápido que a mão. E as folhas às vezes soltam maçã!"
+			],
+			"complete": [
+				"Que tora cheirosa, piá! Dá pra fazer mesa pra vila inteira e ainda sobra pra uns banquinhos.",
+				"Toma umas esmeraldas e ferro pra tu fazer um machado melhor."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:oak_log"], "count": 48, "desc": "<g>Entregue</g> <y>48 toras de carvalho</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 4}]
+		},
+		{
+			"id": "woodworker_1_camas",
+			"tier": 1,
+			"title": "Teste de Colchão",
+			"tone": "calm",
+			"offer": [
+				"Daí, piá, eu fiz um lote de camas novas e preciso saber se elas são boas mesmo.",
+				"O problema é que eu durmo em qualquer lugar. Até em cima da bancada. Não sirvo de teste."
+			],
+			"why": [
+				"Se as camas forem boas, todo aldeão da vila vai dormir melhor. E aldeão descansado trabalha feliz.",
+				"E se forem ruins, eu quero saber antes que a vila inteira acorde com dor nas costas."
+			],
+			"accept": [
+				"Capaz que tu vai fazer isso por mim! Pode usar qualquer cama, até a tua.",
+				"<g>Durma</g> <y>5 vezes</y> numa cama e me conta como foi."
+			],
+			"progress": [
+				"Só dá pra dormir de noite ou durante uma tempestade. E com monstro por perto não dá, então ilumina o quarto!",
+				"Dormir também marca o teu ponto de renascimento na cama. Guarda bem onde ela fica."
+			],
+			"complete": [
+				"Dormiu bem, né? Eu sabia! Lã boa e madeira bem lixada não tem erro, piá.",
+				"Toma umas esmeraldas e pão. Quem dorme bem, come bem."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:sleep_in_bed"], "count": 5, "desc": "<g>Durma</g> <y>5 vezes</y> numa cama"},
+			"rewards": [{"item": "minecraft:emerald", "count": 4}, {"item": "minecraft:bread", "count": 10}]
+		},
+		{
+			"id": "woodworker_1_aranhas",
+			"tier": 1,
+			"title": "Teias na Floresta",
+			"tone": "danger",
+			"offer": [
+				"Piá, a floresta perto da vila tá cheia de <r>aranhas</r>. Toda manhã eu acho teia nas minhas pilhas de madeira.",
+				"E ontem uma caiu da árvore bem em cima de mim. Quase larguei o machado e saí correndo. Larguei, na verdade."
+			],
+			"why": [
+				"Com aranha pra todo lado, ninguém entra na floresta pra buscar lenha. E sem lenha, a vila passa frio.",
+				"E eu tenho um pavor de aranha que tu nem imagina, daí."
+			],
+			"accept": [
+				"Capaz, que alívio! Elas sobem em parede, então olha pra cima também.",
+				"<r>Elimine 15 aranhas</r>, piá."
+			],
+			"progress": [
+				"As aranhas aparecem à noite e em lugares escuros. De dia, elas só atacam se tu bater primeiro.",
+				"As aranhas de caverna são menores e venenosas. Elas também contam!"
+			],
+			"complete": [
+				"Que alívio, piá! Hoje entrei na floresta e não vi uma teia sequer. Nem gritei.",
+				"Toma umas esmeraldas e ferro. E se sobrou linha, guarda pra fazer um arco."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:spider", "minecraft:cave_spider"], "count": 15, "desc": "<r>Elimine</r> <r>15 aranhas</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "woodworker_2_barris",
+			"tier": 2,
+			"title": "Barris pra Adega",
+			"tone": "calm",
+			"offer": [
+				"Daí, o pessoal da vila quer uma despensa nova pra guardar comida pro inverno. E despensa boa é cheia de <y>barril</y>.",
+				"Eu já tô com a mão cheia de farpa de tanto fazer móvel. Me dá uma força?"
+			],
+			"why": [
+				"Barril guarda tanto quanto um baú, mas ocupa menos espaço porque dá pra empilhar em cima. Esperteza de marceneiro, piá.",
+				"E com comida bem guardada, ninguém passa fome quando a neve chegar."
+			],
+			"accept": [
+				"Beleza! É fácil: tábua e laje de madeira.",
+				"<g>Fabrique</g> <y>8 barris</y>, piá."
+			],
+			"progress": [
+				"Cada barril leva <y>6 tábuas</y> e <y>2 lajes de madeira</y>. Qualquer tipo de madeira serve.",
+				"Diferente do baú, o barril abre mesmo com um bloco em cima. Ótimo pra despensa apertada."
+			],
+			"complete": [
+				"Que barris bem feitos, daí! A despensa ficou igual adega de castelo.",
+				"Toma umas esmeraldas e um diamante. Trabalho de marceneiro de verdade."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:barrel"], "count": 8, "desc": "<g>Fabrique</g> <y>8 barris</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "woodworker_2_acacia",
+			"tier": 2,
+			"title": "A Madeira Laranja",
+			"tone": "calm",
+			"offer": [
+				"Piá, a filha do ferreiro vai casar e me pediu uma mobília alegre. E alegre, pra mim, é <y>acácia</y>.",
+				"Ela é laranjinha por dentro e cinza por fora. Parece pôr do sol escondido num tronco."
+			],
+			"why": [
+				"A acácia só cresce na savana, longe daqui. E eu não aguento mais viagem com essa coluna, daí.",
+				"Casamento sem mobília bonita é casamento sem foto bonita. E a noiva já tá nervosa."
+			],
+			"accept": [
+				"Capaz, tu vai até a savana por mim! Leva água e cuidado com as lhamas que cospem.",
+				"<g>Corte</g> <y>48 toras de acácia</y>, piá."
+			],
+			"progress": [
+				"A acácia nasce torta e com galhos pra todo lado. Às vezes tem que subir um pouco pra alcançar o tronco.",
+				"Na savana também tem cavalo selvagem. Domar um ajuda a voltar mais rápido com a madeira."
+			],
+			"complete": [
+				"Que madeira linda, piá! A noiva vai chorar quando ver o guarda-roupa. De alegria, espero.",
+				"Toma esmeraldas, ferro e um diamante pela viagem longa."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:acacia_log"], "count": 48, "desc": "<g>Corte</g> <y>48 toras de acácia</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 8}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "woodworker_2_escuro",
+			"tier": 2,
+			"title": "Carvalho-Escuro pro Prefeito",
+			"tone": "danger",
+			"offer": [
+				"Daí, o sino da vila precisa de uma estrutura nova. E pra coisa importante assim, só <y>carvalho-escuro</y>.",
+				"É a madeira mais forte e mais escura que tem. Só cresce na floresta escura, que é cheia de cogumelo e de monstro."
+			],
+			"why": [
+				"O sino é o coração da vila. Quando bate, todo mundo corre pra casa. Se cair, ninguém fica sabendo dos ataques.",
+				"E eu não entro naquela floresta escura nem por um saco de esmeralda. Lá de dia parece noite, piá."
+			],
+			"accept": [
+				"Capaz, que coragem! Leva tocha, que lá embaixo das copas é escuro mesmo de dia.",
+				"<g>Traga</g> <y>48 toras de carvalho-escuro</y>, piá."
+			],
+			"progress": [
+				"A floresta escura tem as copas tão fechadas que monstro nasce até de dia. Cuidado!",
+				"O carvalho-escuro só cresce plantando 4 mudas juntas num quadrado. Pode replantar pra ter mais."
+			],
+			"complete": [
+				"Que madeira bonita, daí! Pesada, firme, escura que nem café forte. O sino vai durar cem anos.",
+				"Toma esmeraldas e um diamante. Tu foi onde ninguém da vila tem coragem de ir."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:dark_oak_log"], "count": 48, "desc": "<g>Entregue</g> <y>48 toras de carvalho-escuro</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 12}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "woodworker_3_vingadores",
+			"tier": 3,
+			"title": "Os Desmatadores",
+			"tone": "danger",
+			"offer": [
+				"Piá, eu vi uma coisa que me partiu o coração. Os <r>vingadores</r> tão derrubando a floresta escura inteira.",
+				"Eles cortam com machado e não plantam nada. Cada tora que eles levam é uma árvore que nunca volta."
+			],
+			"why": [
+				"Eles usam a madeira pra aumentar a mansão deles. E quanto maior a mansão, mais deles aparecem pra atacar as vilas.",
+				"E floresta derrubada não volta sozinha, daí. Leva gerações."
+			],
+			"accept": [
+				"Capaz, tu vai enfrentar eles! Leva escudo, que aquele machado dói muito.",
+				"<r>Elimine 10 vingadores</r>, piá."
+			],
+			"progress": [
+				"Os vingadores moram na <a>Mansão da Floresta</a> e também aparecem nas invasões de saqueadores.",
+				"Eles correm direto pra cima de ti e batem forte com o machado. Escudo e arco ajudam a manter distância."
+			],
+			"complete": [
+				"Tu é um herói da floresta, piá! Já plantei mudas novas onde eles cortaram.",
+				"Toma esses diamantes e uma maçã dourada. A floresta te agradece."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:vindicator"], "count": 10, "desc": "<r>Elimine</r> <r>10 vingadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "woodworker_3_cogumelo",
+			"tier": 3,
+			"title": "A Árvore que Não é Árvore",
+			"tone": "calm",
+			"offer": [
+				"Daí, eu tenho uma curiosidade antiga: o <y>caule de cogumelo gigante</y>. Ele parece madeira, mas não é.",
+				"Quero fazer uma mobília com ele pra ver se aguenta. Mas preciso de muito caule."
+			],
+			"why": [
+				"Se der certo, a vila vai ter móvel que não precisa de árvore nenhuma. Menos árvore derrubada!",
+				"E cogumelo gigante cresce rápido com farinha de osso. Dá pra plantar no quintal, piá."
+			],
+			"accept": [
+				"Beleza! Procura nas ilhas de micélio ou na floresta escura, onde crescem cogumelos enormes.",
+				"<g>Corte</g> <y>32 caules de cogumelo</y>, piá."
+			],
+			"progress": [
+				"Dá pra criar cogumelo gigante: planta um cogumelo num lugar escuro ou no micélio e usa farinha de osso.",
+				"O caule quebra rápido com machado. Os blocos do chapéu soltam cogumelos pequenos de volta."
+			],
+			"complete": [
+				"Olha que caule branquinho, daí! Vai virar a cadeira mais estranha da vila. E a mais cheirosa a sopa.",
+				"Toma diamantes e um livro de <o>Eficiência IV</o> pro teu machado."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:mushroom_stem"], "count": 32, "desc": "<g>Corte</g> <y>32 caules de cogumelo</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 4}]
+		},
+		{
+			"id": "woodworker_3_jukebox",
+			"tier": 3,
+			"title": "Música na Oficina",
+			"tone": "calm",
+			"offer": [
+				"Piá, oficina sem música é oficina triste. Quero colocar uma <y>jukebox</y> aqui e outra no salão da vila.",
+				"O problema é que precisa de diamante no meio. E diamante é a única coisa que eu não sei entalhar."
+			],
+			"why": [
+				"Com música, o trabalho rende o dobro. E nas festas da vila, todo mundo vai dançar.",
+				"E eu tenho um disco antigo que o meu avô achou. Quero ouvir antes de ficar velho demais, daí."
+			],
+			"accept": [
+				"Capaz, que alegria! Precisa de tábua e um diamante cada.",
+				"<g>Fabrique</g> <y>2 jukebox</y>, piá."
+			],
+			"progress": [
+				"A jukebox leva <y>8 tábuas</y> e <y>1 diamante</y> no meio.",
+				"Discos aparecem em baús de masmorras e de estruturas antigas. Ou quando um esqueleto acerta uma flecha num creeper!"
+			],
+			"complete": [
+				"Que som bonito, daí! Até as galinhas pararam pra ouvir.",
+				"Toma esses diamantes de volta, e mais, com um livro de <o>Inquebrável III</o>. Tu trouxe a música pra vila."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:jukebox"], "count": 2, "desc": "<g>Fabrique</g> <y>2 jukebox</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "woodworker_4_nether",
+			"tier": 4,
+			"title": "Troncos de Fogo",
+			"tone": "danger",
+			"offer": [
+				"Piá, me contaram que no Nether tem floresta! Vermelha e azul! Com tronco que não pega fogo!",
+				"Eu preciso desses <y>caules carmesins e distorcidos</y>. Seria a mobília mais rara do mundo."
+			],
+			"why": [
+				"Madeira que não queima! Imagina uma casa que nunca pega fogo. Nem com raio, nem com lava.",
+				"E eu sou marceneiro há trinta anos e nunca toquei numa madeira do Nether. Antes de me aposentar, eu quero, daí."
+			],
+			"accept": [
+				"Capaz, tu vai pro Nether por mim! Leva armadura de ouro, que os piglins gostam.",
+				"<g>Traga</g> <y>64 caules do Nether</y>, carmesins ou distorcidos."
+			],
+			"progress": [
+				"Os caules carmesins ficam na <a>floresta carmesim</a>, cheia de hoglins. Os distorcidos ficam na <a>floresta distorcida</a>, mais calma.",
+				"Madeira do Nether não queima, nem no fogo nem na lava. Pode construir em paz perto do fogo."
+			],
+			"complete": [
+				"Olha essa cor, piá! Vermelho de brasa e azul de céu. Tô até emocionado.",
+				"Toma diamantes, duas maçãs douradas e um livro de <o>Afiação V</o> pro teu machado."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:crimson_stem", "minecraft:warped_stem"], "count": 64, "desc": "<g>Entregue</g> <y>64 caules do Nether</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:sharpness", "level": 5}]
+		},
+		{
+			"id": "woodworker_4_selva",
+			"tier": 4,
+			"title": "Gigantes da Selva",
+			"tone": "calm",
+			"offer": [
+				"Daí, vou construir a ponte nova da vila. E pra ponte que dura séculos, só madeira das <y>árvores gigantes da selva</y>.",
+				"Elas têm tronco de dois por dois e chegam até as nuvens. Uma só rende madeira pra uma casa inteira."
+			],
+			"why": [
+				"A ponte velha tá caindo aos pedaços. Semana passada o carteiro... digo, o aldeão do correio, quase caiu no rio.",
+				"E eu quero que a ponte nova seja tão bonita que os mercadores venham só pra atravessar, piá."
+			],
+			"accept": [
+				"Capaz, tu é dos meus! Leva tesoura pra cortar cipó e cuidado com a jaguatirica.",
+				"<g>Corte</g> <y>128 toras da selva</y>, piá."
+			],
+			"progress": [
+				"As árvores gigantes da selva têm tronco de 2x2. Os cipós servem de escada pra descer delas.",
+				"Plantar 4 mudas da selva num quadrado faz nascer uma árvore gigante. Dá pra cultivar perto da vila!"
+			],
+			"complete": [
+				"Que montanha de madeira, daí! A ponte vai ficar uma beleza, com corrimão entalhado e tudo.",
+				"Toma diamantes, duas maçãs douradas e um livro de <o>Eficiência V</o>."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:jungle_log"], "count": 128, "desc": "<g>Corte</g> <y>128 toras da selva</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:efficiency", "level": 5}]
+		},
+		{
+			"id": "woodworker_4_evocadores",
+			"tier": 4,
+			"title": "Os Feiticeiros da Mansão",
+			"tone": "danger",
+			"offer": [
+				"Piá, descobri quem manda nos vingadores: os <r>evocadores</r>. Uns feiticeiros que fazem brotar presas do chão.",
+				"Eles ficam escondidos lá no fundo da <a>Mansão da Floresta</a>, dando ordem pros outros cortarem árvore."
+			],
+			"why": [
+				"Sem os evocadores, os vingadores ficam perdidos. E a floresta escura finalmente vai poder crescer em paz.",
+				"Além disso, eles invocam uns <p>espíritos voadores</p> que atravessam parede. Nem quero imaginar isso perto da vila, daí."
+			],
+			"accept": [
+				"Capaz, tu é corajoso demais! Fica de olho no chão, que as presas saem de baixo.",
+				"<r>Derrote 3 evocadores</r>, piá."
+			],
+			"progress": [
+				"Os evocadores aparecem na <a>Mansão da Floresta</a> e nas invasões maiores de saqueadores.",
+				"Ataque os evocadores primeiro, antes dos espíritos. Sem eles, os espíritos somem com o tempo."
+			],
+			"complete": [
+				"Tu conseguiu, piá! A floresta escura tá silenciosa, só com o barulho dos pássaros.",
+				"Toma esses diamantes, duas maçãs douradas e um livro de <o>Fortuna III</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:evoker"], "count": 3, "desc": "<r>Derrote</r> <r>3 evocadores</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 10}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fortune", "level": 3}]
+		},
+		{
+			"id": "woodworker_5_serraria",
+			"tier": 5,
+			"title": "A Grande Serraria",
+			"tone": "calm",
+			"offer": [
+				"Daí, eu tenho um sonho de velho: construir uma vila nova, toda de madeira, pros jovens que estão sem casa.",
+				"Casa, mesa, cama, porta, cerca... pra isso eu preciso de mais madeira do que já vi na vida inteira."
+			],
+			"why": [
+				"Tem muita família morando apertada aqui. Uma vila nova é esperança pra todo mundo, piá.",
+				"E eu quero deixar algo pros meus netos. Uma vila inteira feita com as minhas mãos e as tuas."
+			],
+			"accept": [
+				"Capaz que tu vai mesmo! Qualquer madeira serve, mas planta as mudas, pelo amor de Deus.",
+				"<g>Corte</g> <y>2000 toras</y> de qualquer árvore, piá."
+			],
+			"progress": [
+				"Machado de netherita com <y>Eficiência</y> derruba tronco num piscar de olho.",
+				"Fazer uma fazenda de árvores perto da vila ajuda: planta, espera crescer e corta de novo."
+			],
+			"complete": [
+				"Tu é uma lenda, piá! Já tem madeira pra vila nova inteira e ainda sobra pra uma igreja.",
+				"Toma o meu maior tesouro: um <o>Totem da Imortalidade</o>, um livro de <o>Remendo</o> e diamantes."
+			],
+			"objective": {"type": "mine", "targets": ["#minecraft:logs"], "count": 2000, "desc": "<g>Corte</g> <y>2000 toras</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 6}]
+		},
+		{
+			"id": "woodworker_5_biblioteca",
+			"tier": 5,
+			"title": "A Biblioteca de Madeira",
+			"tone": "calm",
+			"offer": [
+				"Piá, o bibliotecário e eu fizemos um trato: eu construo a maior biblioteca do mundo, e ele enche de livro.",
+				"Mas uma biblioteca dessas precisa de <y>estantes</y>. Muitas. Mais do que eu consigo fazer sozinho."
+			],
+			"why": [
+				"Com tanta estante junta, a mesa de encantamento da vila vai ficar no nível máximo. Todo mundo ganha!",
+				"E livro guardado em estante boa dura séculos. É a memória da vila que eu tô protegendo, daí."
+			],
+			"accept": [
+				"Capaz, que obra! Precisa de muito livro, então prepara a caça de vaca e a plantação de cana.",
+				"<g>Fabrique</g> <y>48 estantes</y>, piá."
+			],
+			"progress": [
+				"Cada estante leva <y>6 tábuas</y> e <y>3 livros</y>. Livro é feito de papel e couro.",
+				"Papel vem da cana-de-açúcar, e couro das vacas e cavalos. Uma fazenda de cana resolve metade do problema."
+			],
+			"complete": [
+				"Que biblioteca, piá! Parece catedral de madeira. O bibliotecário até desmaiou de alegria.",
+				"Toma: <o>lingotes de netherita</o>, diamantes e maçãs douradas. Tu construiu história."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:bookshelf"], "count": 48, "desc": "<g>Fabrique</g> <y>48 estantes</y>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:diamond", "count": 6}, {"item": "minecraft:golden_apple", "count": 3}]
+		}
+	]
+}

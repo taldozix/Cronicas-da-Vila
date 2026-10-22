@@ -1,0 +1,400 @@
+{
+	"quests": [
+		{
+			"id": "iceman_1_bolas",
+			"tier": 1,
+			"title": "Guerra de Neve da Piazada",
+			"tone": "calm",
+			"offer": [
+				"Daí, piá. A piazada da vila marcou uma guerra de neve pro fim de semana. Tradição antiga.",
+				"Só que nevou pouco este ano. Capaz que vai ser guerra de lama. Uma vergonha pra minha banca."
+			],
+			"why": [
+				"Guerra de neve junta a vila inteira. Até os velhos jogam. Principalmente os velhos, que são os mais maldosos.",
+				"E bola de neve também serve pra afastar blaze lá no Nether. Mas isso é outra história."
+			],
+			"accept": [
+				"Capaz, valeu! Bola de neve se tira cavando neve com pá. Qualquer pá.",
+				"<g>Traga</g> <y>64 bolas de neve</y> e a guerra tá salva."
+			],
+			"progress": [
+				"Cada camada de neve cavada com pá dá bola de neve. Bloco de neve inteiro dá quatro.",
+				"Golem de neve deixa trilha de neve por onde anda. É só seguir o bicho com a pá."
+			],
+			"complete": [
+				"Piá, que montanha de bola! A piazada vai fazer a maior guerra da história.",
+				"Toma: <o>esmeraldas</o> e <o>batatas assadas</o>, pra tu esquentar a mão."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:snowball"], "count": 64, "desc": "<g>Entregue</g> <y>64 bolas de neve</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:baked_potato", "count": 10}]
+		},
+		{
+			"id": "iceman_1_lago",
+			"tier": 1,
+			"title": "Buracos no Lago Congelado",
+			"tone": "calm",
+			"offer": [
+				"Piá, os pescadores da vila querem pescar no lago congelado. Mas o gelo tá grosso demais.",
+				"Eles precisam de buraco. Muito buraco. E minha picareta de gelo tá cega de tanto uso."
+			],
+			"why": [
+				"Pesca no gelo é o que alimenta a vila no inverno, quando nada cresce.",
+				"E gelo quebrado sem Toque Suave vira água na hora. Então nem precisa carregar nada. Só quebrar."
+			],
+			"accept": [
+				"Capaz, obrigado! Quebra com o que tu tiver, até com a mão. Picareta vai mais ligeiro.",
+				"<g>Quebre</g> <y>32 blocos de gelo</y> e os pescadores te agradecem."
+			],
+			"progress": [
+				"Gelo aparece em lagos e rios dos biomas frios. Se quebrar com Toque Suave, tu ganha o bloco inteiro.",
+				"Cuidado: gelo quebrado em cima de outro bloco vira água. Não deixa a vila alagar."
+			],
+			"complete": [
+				"Daí, que lago furado! Os pescadores já tão com três baldes de bacalhau.",
+				"Toma, piá: <o>esmeraldas</o> e <o>ferro</o> pra tu fazer uma picareta nova."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:ice"], "count": 32, "desc": "<g>Quebre</g> <y>32 blocos de gelo</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:iron_ingot", "count": 5}]
+		},
+		{
+			"id": "iceman_1_errantes",
+			"tier": 1,
+			"title": "Os Ossos Que Não Esquentam",
+			"tone": "danger",
+			"offer": [
+				"Piá, tem <r>errante</r> na estrada da montanha. Aquele esqueleto de trapo que atira flecha gelada.",
+				"Eu fui buscar gelo e levei três flechadas. Fiquei tão lento que um caracol me ultrapassou. Capaz.",
+				"Se continuar assim, ninguém mais traz gelo pra vila."
+			],
+			"why": [
+				"Sem gelo, a carne estraga, o peixe estraga, a vila fica com cheiro de açougue velho.",
+				"Errante pega fogo no sol, igual esqueleto comum. Mas na neve ele se esconde em tudo que é sombra de pinheiro."
+			],
+			"accept": [
+				"Daí, valeu! Eles aparecem de noite nos biomas gelados. Escudo segura as flechas.",
+				"<r>Elimine 10 errantes</r> e a estrada volta a ser minha."
+			],
+			"progress": [
+				"A flecha deles deixa tu lento. Balde de leite tira o efeito.",
+				"Errante é mais comum nas planícies nevadas e nos picos. Não fica parado perto deles."
+			],
+			"complete": [
+				"Capaz, a estrada tá limpa! Hoje fui e voltei sem ficar lento. Rápido feito trenó.",
+				"Toma, piá: <o>esmeraldas</o> e <o>pão</o> quentinho."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:stray"], "count": 10, "desc": "<r>Elimine</r> <r>10 errantes</r>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 6}, {"item": "minecraft:bread", "count": 10}]
+		},
+		{
+			"id": "iceman_2_blocos",
+			"tier": 2,
+			"title": "O Iglu Comunitário",
+			"tone": "calm",
+			"offer": [
+				"Piá, eu quero fazer um iglu na praça. Pra quem não aguenta o calor do verão se refrescar.",
+				"O povo riu de mim. Disse que iglu é coisa de neve. Daí eu falei: e de geleiro teimoso também."
+			],
+			"why": [
+				"Iglu na praça é lugar pra piazada brincar, pra velho cochilar e pra mim me sentir em casa.",
+				"E bloco de neve não derrete com sol. Só perto de tocha. Fica de pé o ano inteiro."
+			],
+			"accept": [
+				"Capaz, obrigado! Bloco de neve se faz com quatro bolas de neve na bancada.",
+				"<g>Fabrique</g> <y>24 blocos de neve</y> e o iglu sai do chão."
+			],
+			"progress": [
+				"Quatro bolas de neve num quadrado dois por dois viram um bloco.",
+				"Golem de neve é uma fábrica de neve ambulante. Abóbora em cima de dois blocos de neve e pronto."
+			],
+			"complete": [
+				"Daí, que iglu bonito! A piazada já tá brincando de esquimó lá dentro.",
+				"Toma, piá: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:snow_block"], "count": 24, "desc": "<g>Fabrique</g> <y>24 blocos de neve</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "iceman_2_mergulho",
+			"tier": 2,
+			"title": "Banho de Água Gelada",
+			"tone": "calm",
+			"offer": [
+				"Piá, tu sabia que nadar em água gelada fortalece o corpo? Meu avô fazia todo dia e viveu até os noventa.",
+				"Eu quero fundar o Clube do Mergulho Gelado aqui na vila. Mas sou o único sócio. Capaz que tu entra?"
+			],
+			"why": [
+				"Quem nada bem não se afoga, não tem medo de afogado e chega em ilha que ninguém chega.",
+				"E o clube precisa de mais um sócio pra ter presidente e tesoureiro. Eu sou os dois, mas fica estranho."
+			],
+			"accept": [
+				"Daí, bem-vindo ao clube! Nadar de verdade é correr dentro d'água, piá. Boiar não conta.",
+				"<g>Nade</g> <y>100 blocos</y> e tu ganha a carteirinha de sócio."
+			],
+			"progress": [
+				"Dentro d'água, aperta pra correr que tu começa a nadar de verdade, de cabeça pra frente.",
+				"Golfinho do teu lado te deixa nadar mais ligeiro. Bota um peixe na mão que ele vem."
+			],
+			"complete": [
+				"Capaz, que fôlego! Tu é o vice-presidente do clube agora. E o tesoureiro. Eu fico com presidente.",
+				"Toma, piá: <o>esmeraldas</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:swim_one_cm"], "count": 10000, "desc": "<g>Nade</g> <y>100 blocos</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 10}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "iceman_2_fofa",
+			"tier": 2,
+			"title": "Neve Que Engole Gente",
+			"tone": "calm",
+			"offer": [
+				"Piá, eu quero estudar a <y>neve fofa</y>. Aquela traiçoeira, que tu afunda e começa a congelar.",
+				"Pensei em fazer uma armadilha na entrada da vila. Zumbi cai dentro e fica lá, preso, congelando. Capaz que funciona."
+			],
+			"why": [
+				"Zumbi não usa bota de couro. Então ele afunda e a gente ganha tempo.",
+				"E neve fofa num caldeirão vira um enfeite bonito. Mas isso eu não conto pra ninguém."
+			],
+			"accept": [
+				"Daí, valeu! Neve fofa só se pega com balde. Pá não serve, ela some.",
+				"<g>Traga</g> <y>4 baldes de neve fofa</y> e eu monto a armadilha."
+			],
+			"progress": [
+				"Neve fofa aparece nas encostas nevadas e nos picos. Parece neve comum, então anda com cuidado.",
+				"Bota de couro te deixa andar por cima dela sem afundar. Leva uma, piá."
+			],
+			"complete": [
+				"Capaz, quatro baldes! Já montei a armadilha. Um zumbi caiu ontem e tá lá até agora, tremendo.",
+				"Toma: <o>esmeraldas</o>, <o>ferro</o> e um <o>diamante</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:powder_snow_bucket"], "count": 4, "desc": "<g>Entregue</g> <y>4 baldes de neve fofa</y>"},
+			"rewards": [{"item": "minecraft:emerald", "count": 8}, {"item": "minecraft:iron_ingot", "count": 6}, {"item": "minecraft:diamond", "count": 1}]
+		},
+		{
+			"id": "iceman_3_compacto",
+			"tier": 3,
+			"title": "Gelo Que Não Derrete",
+			"tone": "calm",
+			"offer": [
+				"Piá, o açougueiro quer uma câmara fria. De verdade. Com chão e parede de gelo que não derrete nunca.",
+				"Pra isso precisa de <y>gelo compacto</y>. Nove blocos de gelo apertados num só. Muito trabalho, capaz."
+			],
+			"why": [
+				"Gelo comum derrete perto de tocha. O compacto não derrete nem com fogueira do lado.",
+				"Com a câmara fria, a vila guarda carne o ano inteiro. Nunca mais passa fome no inverno."
+			],
+			"accept": [
+				"Daí, valeu! Precisa de Toque Suave pra pegar o gelo inteiro. Sem isso, vira água.",
+				"<g>Fabrique</g> <y>12 gelos compactos</y> e a câmara fria sai."
+			],
+			"progress": [
+				"Nove blocos de gelo na bancada viram um gelo compacto.",
+				"Gelo compacto também aparece pronto nas planícies de picos de gelo e nos icebergs. Mas aí é mineração, não fabricação."
+			],
+			"complete": [
+				"Capaz, que câmara! O açougueiro entrou e saiu com o bigode congelado. De felicidade.",
+				"Toma, piá: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:packed_ice"], "count": 12, "desc": "<g>Fabrique</g> <y>12 gelos compactos</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "iceman_3_botas",
+			"tier": 3,
+			"title": "Botas Pros Picos",
+			"tone": "calm",
+			"offer": [
+				"Piá, vou levar uma expedição pros picos congelados. Atrás de gelo azul.",
+				"Mas lá em cima é cheio de neve fofa. Quem vai sem <y>bota de couro</y> afunda e congela. Capaz que eu perco a equipe toda."
+			],
+			"why": [
+				"Bota de couro é a única coisa que deixa andar por cima da neve fofa. Nem ferro, nem diamante. Couro.",
+				"E não quero ninguém da vila virando picolé no meio da montanha."
+			],
+			"accept": [
+				"Daí, valeu! Bota de couro se faz com quatro couros na bancada.",
+				"<g>Traga</g> <y>6 botas de couro</y>, uma pra cada um da expedição."
+			],
+			"progress": [
+				"Couro sai de vaca, cavalo e lhama. Ou junta pele de coelho: quatro peles fazem um couro.",
+				"Qualquer bota de couro serve, até tingida. A cor não muda nada. Só o estilo, piá."
+			],
+			"complete": [
+				"Capaz, seis botas! A expedição sai amanhã. Vamos andar na neve fofa feito gato.",
+				"Toma, piá: <o>diamantes</o> e um <o>livro de Proteção Contra Fogo III</o>. Pra quando tu for pro lado quente do mundo."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:leather_boots"], "count": 6, "desc": "<g>Entregue</g> <y>6 botas de couro</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 3}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:fire_protection", "level": 3}]
+		},
+		{
+			"id": "iceman_3_blazes",
+			"tier": 3,
+			"title": "Os Inimigos do Gelo",
+			"tone": "danger",
+			"offer": [
+				"Piá, eu tenho um inimigo mortal. Um só. O <n>blaze</n>.",
+				"Bicho feito de fogo, que voa e cospe bola de fogo. Se um desses chegasse perto do meu resfriador... credo.",
+				"Os comerciantes dizem que andam chegando muitos dele perto dos portais do Nether. Não quero arriscar."
+			],
+			"why": [
+				"Blaze derrete tudo que eu construo. Gelo, neve, iglu. Tudo vira poça.",
+				"E o bastão de blaze que ele solta serve pro clérigo fazer poção. Todo mundo ganha, menos o blaze."
+			],
+			"accept": [
+				"Daí, que coragem! Eles moram nas fortalezas do Nether, perto das gaiolas de fogo.",
+				"<r>Elimine 10 blazes</r> e o mundo fica mais fresquinho."
+			],
+			"progress": [
+				"Bola de neve machuca blaze! Leva uma pilha. Água em balde não funciona no Nether, ela evapora.",
+				"Poção de resistência ao fogo deixa tu imune às bolas de fogo deles."
+			],
+			"complete": [
+				"Capaz, que alívio! Meu resfriador tá até mais gelado de felicidade.",
+				"Toma, piá: <o>diamantes</o> e uma <o>maçã dourada</o>."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze"], "count": 10, "desc": "<r>Elimine</r> <r>10 blazes</r>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 4}, {"item": "minecraft:golden_apple", "count": 1}]
+		},
+		{
+			"id": "iceman_4_iceberg",
+			"tier": 4,
+			"title": "O Coração do Iceberg",
+			"tone": "calm",
+			"offer": [
+				"Piá, chegou a hora. Eu quero <y>gelo azul</y> de verdade, tirado de dentro de um iceberg.",
+				"Igual meu avô fazia. De barco, no meio do oceano gelado, com o vento cortando a cara."
+			],
+			"why": [
+				"Gelo azul é o gelo mais liso do mundo. Pista de barco feita dele leva a vila até a montanha em segundos.",
+				"E é questão de família. Meu avô trazia. Meu pai trazia. Eu quero que a vila continue tendo."
+			],
+			"accept": [
+				"Capaz, obrigado! Gelo azul se quebra com picareta. Sem Toque Suave, o bloco some.",
+				"<g>Minere</g> <y>16 blocos de gelo azul</y> e volta inteiro."
+			],
+			"progress": [
+				"Icebergs ficam nos oceanos gelados. O gelo azul fica em veios por dentro deles.",
+				"Urso-polar nada perto dos icebergs. Se tiver filhote, dá a volta de barco."
+			],
+			"complete": [
+				"Daí, olha esse azul! Parece pedaço do céu congelado. Meu avô ia ficar orgulhoso, piá.",
+				"Toma: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Passos Gelados II</o>. Tu anda por cima do mar agora."
+			],
+			"objective": {"type": "mine", "targets": ["minecraft:blue_ice"], "count": 16, "desc": "<g>Minere</g> <y>16 blocos de gelo azul</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:frost_walker", "level": 2}]
+		},
+		{
+			"id": "iceman_4_chifres",
+			"tier": 4,
+			"title": "A Corneta do Inverno",
+			"tone": "calm",
+			"offer": [
+				"Piá, todo ano a vila abre o Festival do Inverno com o som de uma corneta. É o primeiro dia de neve.",
+				"A corneta é feita de <y>chifre de cabra</y>. A nossa rachou no ano passado. Fez um barulho de pato doente."
+			],
+			"why": [
+				"Sem corneta não tem festival. E sem festival, inverno é só frio, sem alegria.",
+				"E cada chifre toca uma música diferente. Eu quero ter dois, pra ver qual combina com a vila."
+			],
+			"accept": [
+				"Capaz, valeu! As cabras moram nos picos. Elas dão cabeçada e às vezes o chifre cai.",
+				"<g>Traga</g> <y>2 chifres de cabra</y> e o festival tá salvo."
+			],
+			"progress": [
+				"Quando uma cabra dá cabeçada com força em pedra, tronco, minério ou gelo compacto, solta o chifre.",
+				"Cuidado na beira do penhasco: cabra adora dar cabeçada em gente também. Postos de saqueadores às vezes guardam chifre no baú."
+			],
+			"complete": [
+				"Daí, que som bonito! Soprei uma vez e a neve caiu do telhado de três casas. Perfeito.",
+				"Toma, piá: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Respiração III</o>."
+			],
+			"objective": {"type": "deliver", "targets": ["minecraft:goat_horn"], "count": 2, "desc": "<g>Entregue</g> <y>2 chifres de cabra</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 9}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:respiration", "level": 3}]
+		},
+		{
+			"id": "iceman_4_trenos",
+			"tier": 4,
+			"title": "A Corrida de Trenó",
+			"tone": "calm",
+			"offer": [
+				"Piá, aqui no frio a gente não tem trenó com cachorro. A gente tem barco em cima do gelo.",
+				"Barco no gelo desliza que é uma beleza. No gelo azul, então, parece que tem asa. Eu quero fazer a Grande Corrida."
+			],
+			"why": [
+				"Corrida de barco no gelo é a festa mais animada do inverno. A vila inteira aposta esmeralda.",
+				"E quem treina pra corrida aprende a atravessar lago, rio e mar ligeiro. Serve pra vida."
+			],
+			"accept": [
+				"Capaz, bora treinar! Vale barco na água, no gelo, em qualquer lugar.",
+				"<g>Navegue</g> <y>1000 blocos de barco</y> e tu tá pronto pra corrida."
+			],
+			"progress": [
+				"Barco em gelo comum já anda mais que na água. Em gelo compacto e azul, mais ainda.",
+				"Faz uma pista de gelo em círculo e dá voltas. Cuidado na curva, que barco no gelo não freia."
+			],
+			"complete": [
+				"Daí, que piloto! A vila inteira vai apostar em ti na Grande Corrida.",
+				"Toma, piá: <o>diamantes</o>, <o>maçãs douradas</o> e um <o>livro de Inquebrável III</o>."
+			],
+			"objective": {"type": "stat", "targets": ["minecraft:boat_one_cm"], "count": 100000, "desc": "<g>Navegue</g> <y>1000 blocos de barco</y>"},
+			"rewards": [{"item": "minecraft:diamond", "count": 8}, {"item": "minecraft:golden_apple", "count": 2}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:unbreaking", "level": 3}]
+		},
+		{
+			"id": "iceman_5_palacio",
+			"tier": 5,
+			"title": "O Palácio de Gelo Azul",
+			"tone": "calm",
+			"offer": [
+				"Piá, eu vou te contar o sonho de todo geleiro. Um palácio. Inteiro de <y>gelo azul</y>, brilhando no sol.",
+				"Ninguém nunca fez. Porque cada bloco de gelo azul leva oitenta e um blocos de gelo comum. Capaz que é loucura.",
+				"Mas tu já trouxe gelo do iceberg, já subiu nos picos. Se alguém faz, é tu."
+			],
+			"why": [
+				"Um palácio desses ia ser a maravilha da região. Viajante ia vir de longe só pra ver.",
+				"E ia ser a prova de que o frio também constrói coisa bonita. Não é só o fogo do ferreiro."
+			],
+			"accept": [
+				"Daí... obrigado, piá. Nove gelos compactos na bancada viram um gelo azul.",
+				"<g>Fabrique</g> <y>16 gelos azuis</y> e o palácio começa a subir."
+			],
+			"progress": [
+				"Gelo comum com Toque Suave, nove viram um compacto, nove compactos viram um azul.",
+				"Uma fazenda de gelo ajuda: água parada em bioma frio, com céu aberto em cima e sem tocha perto, congela sozinha com o tempo."
+			],
+			"complete": [
+				"Capaz... olha isso, piá. O palácio brilha mais que a lua. Eu chorei e a lágrima congelou no rosto.",
+				"Toma: um <o>totem da imortalidade</o>, um <o>livro de Remendo</o>, uma <o>maçã dourada encantada</o> e <o>diamantes</o>. Tu é o maior geleiro que esse mundo já viu."
+			],
+			"objective": {"type": "craft", "targets": ["minecraft:blue_ice"], "count": 16, "desc": "<g>Fabrique</g> <y>16 gelos azuis</y>"},
+			"rewards": [{"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:enchanted_golden_apple", "count": 1}, {"item": "minecraft:diamond", "count": 12}]
+		},
+		{
+			"id": "iceman_5_fogo",
+			"tier": 5,
+			"title": "Inverno no Inferno",
+			"tone": "danger",
+			"offer": [
+				"Piá, os comerciantes trouxeram uma notícia feia. Os portais do Nether tão esquentando o mundo em volta.",
+				"Neve derretendo, lago secando, urso-polar suando. Credo. Eu nunca vi urso suar.",
+				"Eu quero que tu leve o inverno até lá. Que tu enfrente as criaturas do fogo no lugar delas."
+			],
+			"why": [
+				"Se o calor do Nether continuar crescendo, um dia não tem mais neve nem pra bola.",
+				"E quem enfrenta o fogo e volta inteiro tem o coração mais gelado de todos. No bom sentido, capaz."
+			],
+			"accept": [
+				"Daí... vai com Deus, piá. Leva poção de resistência ao fogo, bola de neve e armadura boa.",
+				"<r>Elimine 60 criaturas do Nether</r>: blazes, cubos de magma, ghasts e esqueletos wither valem."
+			],
+			"progress": [
+				"Blazes e esqueletos wither ficam nas fortalezas. Cubos de magma pulam nos deltas de basalto. Ghasts voam nos vales abertos.",
+				"Bola de fogo de ghast se devolve com um soco ou uma flechada. Volta pra cara dele."
+			],
+			"complete": [
+				"Capaz, piá, tu voltou! E tá com cheiro de enxofre, mas o olhar continua frio. Do jeito certo.",
+				"Toma: <o>barras de netherite</o>, um <o>totem da imortalidade</o>, um <o>livro de Remendo</o> e <o>diamantes</o>. O inverno te agradece."
+			],
+			"objective": {"type": "kill", "targets": ["minecraft:blaze", "minecraft:magma_cube", "minecraft:ghast", "minecraft:wither_skeleton"], "count": 60, "desc": "<r>Elimine</r> <r>60 criaturas do Nether</r>"},
+			"rewards": [{"item": "minecraft:netherite_ingot", "count": 2}, {"item": "minecraft:totem_of_undying", "count": 1}, {"item": "minecraft:enchanted_book", "count": 1, "enchant": "minecraft:mending", "level": 1}, {"item": "minecraft:diamond", "count": 16}]
+		}
+	]
+}

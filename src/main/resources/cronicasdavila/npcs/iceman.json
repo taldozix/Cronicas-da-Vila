@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ô, piá! {player}! Chega aqui perto do resfriador, que hoje tá um friozinho gostoso. Pra mim, né.",
+		"Capaz que é tu, {player}! Bota a japona que eu acabei de tirar um bloco de gelo azul novinho. Olha que brilho, piá!",
+		"Daí, {player}, tubo? Senta aí no banquinho de gelo. Não é gelado, não. Tá, é um pouco. Mas é bom pra postura.",
+		"Piá do céu, que alegria! Tu é o único da vila que não reclama do frio da minha banca. Os outros passam correndo."
+	],
+	"greet_neutral": [
+		"Hm. Gente nova. Tu tá de manga curta? Capaz. Aqui do lado do resfriador tu vai virar picolé, piá.",
+		"Bom dia. Se veio atrás de gelo, é com a troca. Se veio atrás de calor, errou de banca.",
+		"Daí. Cuidado onde pisa, que o chão aqui é gelo compacto. Escorrega que é uma beleza.",
+		"Opa. Tu tem cara de quem nunca viu neve de verdade. Neve de verdade dá no joelho e não derrete em junho."
+	],
+	"greet_cold": [
+		"Hm. Tu de novo. Meu gelo é mais quentinho que o jeito que eu te recebo, piá.",
+		"Capaz... ouvi umas coisas tuas aí. Fiquei mais gelado que o normal. E olha que o normal já é bem gelado.",
+		"Fala o que quer e vai. Tô com um bloco derretendo e não tenho tempo pra conversa morna."
+	],
+	"hostile": [
+		"<r>Sai daqui, piá!</r> Tu machucou gente da vila. Aqui tu não ganha nem um floco de neve.",
+		"Tô com a picareta de gelo na mão. <r>Vai embora</r>, antes que eu te congele num bloco e te mande pro iglu."
+	],
+	"followup": [
+		"Que mais, piá?",
+		"Fala, fala. O gelo não derrete sozinho. Bom, derrete. Fala ligeiro.",
+		"Mais alguma coisa? Tô sentindo um calorzinho e não gosto.",
+		"Daí, ainda tem pergunta? Pode mandar."
+	],
+	"decline": [
+		"Tá bom, piá. Inverno não tem pressa, ele sempre volta.",
+		"Sem problema. Mas se mudar de ideia, segue o vento frio que tu me acha.",
+		"Capaz... vou pedir pro bobão da vila. Ele vai escorregar no primeiro bloco, mas paciência."
+	],
+	"locked": [
+		"Piá, esse serviço é lá nos picos congelados, onde o vento corta a cara. Tu ainda tá de pantufa. Volta mais preparado.",
+		"Agora não tenho nada do teu tamanho. Aguenta uns invernos por aí e depois a gente conversa."
+	],
+	"repeat": [
+		"Lembra daquele serviço? Pois é, voltou. Gelo é assim: derrete e tem que fazer de novo.",
+		"Tu já me ajudou nessa. Bora de novo? Dessa vez tu já sabe que o frio não morde. Muito."
+	],
+	"apology_thanks": [
+		"Hm... tá bom, piá. Até gelo duro derrete com o tempo. Eu também, um pouquinho.",
+		"Aceito. Mas o urso-polar ainda te olha torto. Ele não esquece cara."
+	],
+	"bless": [
+		"Que essa ferramenta seja firme como gelo azul e fria na hora certa, piá.",
+		"Abençoada com o sopro do inverno. Não enferruja, não amolece e não reclama."
+	],
+	"bye": [
+		"Vai com Deus, piá! E fecha a japona, que o vento tá vindo do sul.",
+		"Até mais! Se vir um urso-polar com filhote, dá a volta. Bem longe.",
+		"Tchau! E não lambe poste de ferro no frio. Eu sei que tu tava pensando nisso."
+	],
+	"greet_night": [
+		"Daí, {player}, de noite? É a melhor hora, piá: o gelo não derrete e o céu fica cheio de estrela.",
+		"Capaz que tu tá andando no escuro com esse frio! Zumbi não sente frio, mas tu sente. Chega pra perto da lanterna.",
+		"Psiu, piá. Ouve esse silêncio? Neve abafa tudo. Bom pra pensar, ruim pra ouvir esqueleto chegando.",
+		"Boa noite, {player}. Tô aqui conferindo se o resfriador tá ligado. De noite ele fica mais feliz."
+	],
+	"bye_night": [
+		"Boa noite, piá! Dorme bem coberto, com três cobertores. Eu uso um só, mas eu sou eu.",
+		"Vou fechar a banca. Amanhã cedo tem gelo pra cortar no lago. Dorme com Deus, {player}!",
+		"Até amanhã! Se ouvir passos na neve atrás de ti, olha: se tiver arco, corre."
+	],
+	"greet_rain": [
+		"Chuva, piá. Credo. Chuva é neve que desistiu no caminho.",
+		"Entra, {player}! Chuva derrete a neve do telhado e pinga tudo na minha banca. Que tristeza.",
+		"Capaz, que chuva morna. Lá nas montanhas isso aí ia ser nevasca bonita. Aqui é só água mesmo."
+	],
+	"greet_storm": [
+		"Credo, que trovoada! Piá, sai do descampado que raio cai em quem fica parado. E não faz boneco de neve agora!",
+		"Com esse céu escuro sai zumbi até de dia, {player}. Fica perto da banca. Eu tenho uma pá e muita bola de neve."
+	],
+	"reward_intro": [
+		"Se tu der conta, piá, eu te pago",
+		"Fazendo isso direitinho, tu leva",
+		"Pelo serviço, daí, eu separo pra ti",
+		"Me ajuda nessa que eu te dou, bem gelado"
+	],
+	"reward_outro": [
+		"Palavra de geleiro não derrete, piá.",
+		"E ainda te dou uma bola de neve de lambuja. Pra guerra, se quiser.",
+		"Pode confiar: eu pago certinho, igual nevasca de inverno.",
+		"Geleiro que não paga o que deve fica sem neve pra sempre. Capaz que eu arrisco isso."
+	],
+	"lore_done": [
+		"Daí, piá, já te contei uma história hoje! Mais uma e meu gelo derrete esperando. Volta amanhã.",
+		"História é igual floco de neve: uma de cada vez, senão vira lama. Pergunta pros outros da vila.",
+		"Capaz que tu quer mais! Hoje chega. Amanhã tem história fresquinha, tirada do lago."
+	],
+	"abandon": [
+		"Hm... vai largar no meio? Gelo cortado pela metade derrete à toa, piá.",
+		"Que pena. Achei que tu aguentava o frio."
+	],
+	"lore": [
+		[
+			"Tu sabia que gelo tem três jeitos, piá? O comum, que derrete perto de tocha. O <y>compacto</y>, que não derrete nunca.",
+			"E o <y>gelo azul</y>, o rei de todos. Liso que nem sabão. Barco em cima dele voa.",
+			"Nove de comum fazem um compacto. Nove de compacto fazem um azul. Dá muito trabalho. Por isso geleiro é paciente."
+		],
+		[
+			"Lá no oceano gelado tem umas montanhas de gelo boiando, os <a>icebergs</a>. Por dentro, às vezes, tem veio de gelo azul.",
+			"Meu avô navegava entre eles de barco. Dizia que de noite ouvia os icebergs rangendo, como se conversassem.",
+			"Um dia o barco dele bateu num. Ele voltou nadando, com a japona congelada. Contou essa história até os noventa anos."
+		],
+		[
+			"O <r>urso-polar</r> não é mau, piá. Ele só é mãe. Ou pai. Se tiver filhote por perto, ele te ataca sem pensar.",
+			"Se não tiver, ele passa do teu lado e nem te olha. Nada no lago, pega peixe, dorme na neve.",
+			"Eu respeito. Tem muita gente na vila que devia aprender com o urso: cuida dos teus e deixa o resto em paz."
+		],
+		[
+			"Existe uma neve diferente nos picos, a <y>neve fofa</y>. Parece neve comum, mas tu afunda nela como se fosse água.",
+			"Quem fica preso lá dentro começa a congelar. Muita gente se perdeu assim nas montanhas.",
+			"Mas quem usa <y>botas de couro</y> anda por cima dela, leve que nem gato. Couro e neve se entendem. Ninguém sabe por quê."
+		],
+		[
+			"Os esqueletos daqui são diferentes, piá. Chamam de <r>errantes</r>. Andam com trapo esfarrapado e atiram flecha que deixa tu lento.",
+			"Dizem que são esqueletos que morreram de frio e o frio nunca mais saiu deles.",
+			"E esqueleto comum que fica muito tempo na neve fofa vira errante também. Por isso eu nunca fico parado no frio. Nunca."
+		]
+	],
+	"player_work": [
+		"Tem serviço gelado pra mim?",
+		"Precisa de ajuda com o gelo?",
+		"Bora trabalhar, piá! O que tem pra hoje?"
+	],
+	"player_accept": [
+		"Deixa comigo, eu aguento o frio!",
+		"Fechado. Vou pegar a japona.",
+		"Pode contar comigo!"
+	],
+	"player_why": [
+		"E por que isso é tão importante?",
+		"Pra que tanto gelo?",
+		"O que acontece se ninguém fizer?"
+	],
+	"player_decline": [
+		"Agora não, tô resfriado.",
+		"Hoje eu passo, tá frio demais.",
+		"Fica pra próxima."
+	],
+	"player_lore": [
+		"Me conta uma história do gelo.",
+		"O que tem lá nas montanhas geladas?",
+		"Tem algum causo do inverno?"
+	],
+	"player_more_lore": [
+		"Capaz! Conta mais!",
+		"E aí, o que aconteceu?",
+		"Continua!"
+	],
+	"player_bye": [
+		"Tchau! Se agasalha.",
+		"Até mais, piá!",
+		"Falou, vou me esquentar."
+	],
+	"names": [
+		"Estanislau", "Casimiro", "Wanda", "Ludmila", "Marlene", "Jandira", "Ervino",
+		"Adalberto", "Alfredo", "Waldemar", "Olívia", "Elza", "Silvio", "Norberto"
+	],
+	"extra": {
+		"day_off": [
+			"Daí, piá, hoje é minha folga! Vou ficar de pijama do lado da lareira. Tá, mentira, vou ficar do lado do resfriador.",
+			"Hoje não tem serviço, não. Tô de folga, tomando um leite quente e vendo a neve cair. Procura outro geleiro aí na vila ou volta outro dia.",
+			"Folga hoje! O gelo descansa e eu também. Se a pressa for grande, procura outro geleiro, que eu tô embaixo do cobertor."
+		],
+		"closed": [
+			"Capaz, piá! Hoje a banca tá fechada, é minha folga. O gelo fica guardado no resfriador até amanhã.",
+			"Banca fechada hoje. Folga de geleiro é sagrada: hoje eu não corto nem cubo de gelo pro suco."
+		],
+		"greet_plains": [
+			"Daí, {player}! Planície é bom, mas é quente demais pro meu gosto. Eu trago gelo das montanhas e guardo tudo no resfriador.",
+			"Capaz, piá, aqui na planície o povo usa meu gelo pra conservar a carne do açougueiro. Sem mim, ia tudo estragar."
+		],
+		"greet_desert": [
+			"Credo, piá, deserto! Geleiro no deserto é igual peixe na árvore. Meu gelo dura dez minutos antes de virar poça.",
+			"{player}! Aqui o povo me ama. Um copo de água gelada no deserto vale mais que esmeralda, capaz."
+		],
+		"greet_savanna": [
+			"Daí, {player}! Savana é seca e quente, piá. Mas lá no alto dos planaltos às vezes bate um ventinho. Eu vivo por esse ventinho.",
+			"Capaz, que calor! Os cavalos daqui fazem fila na minha banca pra lamber o gelo. Eu deixo, coitados."
+		],
+		"greet_snow": [
+			"Ô, piá, aqui sim! Neve até o joelho, lago congelado, iglu na esquina. Isso é que é vida, {player}!",
+			"{player}! Aqui na neve meu gelo nem precisa de resfriador. É só deixar na janela. Paraíso de geleiro."
+		],
+		"greet_taiga": [
+			"Daí, {player}! Taiga é fria do jeito certo, piá. Pinheiro, neve no topo e lobo uivando de noite.",
+			"Capaz, que cheiro de pinheiro gelado! Aqui os lagos congelam no inverno e eu corto bloco de gelo pra vila toda."
+		],
+		"greet_jungle": [
+			"Credo, piá, selva! Aqui o ar é tão molhado que meu gelo sua. Eu suo. Tudo sua.",
+			"{player}! O povo daqui nunca viu neve. Eu mostrei uma bola de neve e uma criança chorou de susto, capaz."
+		],
+		"greet_swamp": [
+			"Daí, {player}, pântano é morno e úmido. Meu gelo derrete e vira lama. Tristeza, piá.",
+			"Capaz, mas eu tenho um truque: bota com <p>Passos Gelados</p>. Ando por cima da água do pântano e ela congela debaixo do pé. Eu fico feliz e o sapo fica bravo."
+		]
+	}
+}

@@ -1,0 +1,201 @@
+{
+	"greet_friendly": [
+		"Ah... {player}. Senti a sua frequência antes de você chegar. O altar de púrpura vibrou três vezes. É sinal bom.",
+		"Seja bem-vindo, viajante entre os mundos. Hoje o Vazio está calmo, e você também. Combina.",
+		"{player}! Não me olhe nos olhos por muito tempo, é costume de quem estuda os Endermen. Mas saiba que eu sorrio por dentro.",
+		"Você voltou. O Fim ensina que tudo se teleporta pra longe... mas você sempre se teleporta pra cá. Isso me alegra."
+	],
+	"greet_neutral": [
+		"Hrmm. Um visitante. Desculpe não olhar pra você. Hábito. Os Endermen me ensinaram a desviar o olhar.",
+		"Fale baixo, por favor. O altar de púrpura capta vozes altas e fica... desafinado.",
+		"Saudações. Você carrega alguma pérola do Fim no bolso? Sinto um zumbido estranho vindo de você.",
+		"Ah, alguém novo. Sente-se. Mas não em cima da caixa roxa. Ela às vezes abre sozinha."
+	],
+	"greet_cold": [
+		"Hmm. Sua frequência está suja, viajante. Ouvi o que fez. O Vazio ouviu também.",
+		"Não. Hoje não. Até um shulker é mais gentil que você, e olha que eles atiram em todo mundo.",
+		"Fale o que deseja e se vá. Minha paciência é curta como um teleporte."
+	],
+	"hostile": [
+		"<r>Afaste-se do altar!</r> Você feriu gente da vila. Que o Vazio te engula devagar.",
+		"Eu podia olhar nos seus olhos agora, como um <p>Enderman</p> olha. Não queira saber o que vem depois. <r>Vá embora!</r>"
+	],
+	"followup": [
+		"Mais alguma pergunta para o Vazio?",
+		"Hmm... continue. Estou ouvindo com os dois ouvidos e o terceiro olho.",
+		"Algo mais? O altar ainda está zumbindo.",
+		"Pergunte. As respostas às vezes demoram, mas sempre chegam."
+	],
+	"decline": [
+		"Entendo. O momento certo ainda não chegou para você. Ele chega.",
+		"Tudo bem. Os Endermen também recusam muita coisa. Principalmente água.",
+		"Hmm... vou consultar as estrelas e procurar outro ajudante. O Vazio é paciente."
+	],
+	"locked": [
+		"Ainda não, viajante. Esse caminho leva longe demais para quem ainda não atravessou um portal.",
+		"Sua frequência ainda é fraca para esse serviço. Ganhe experiência e volte. O Fim espera."
+	],
+	"repeat": [
+		"Já fizemos isso antes, eu sei. Mas o Fim é um ciclo. O que acaba, recomeça.",
+		"Você me ajudou com isso uma vez. O Vazio pede de novo. Aceita?"
+	],
+	"apology_thanks": [
+		"Hmm... aceito. Até um enderman perdoa quem desvia o olhar. Às vezes.",
+		"Sua frequência melhorou um pouco. Vamos ver se ela continua limpa."
+	],
+	"bless": [
+		"Que essa ferramenta atravesse tudo como uma pérola atravessa o espaço.",
+		"Abençoada com o silêncio do Vazio. Que ela nunca se perca, e que você nunca caia do Fim."
+	],
+	"bye": [
+		"Vá em paz. E nunca olhe um enderman nos olhos.",
+		"Até breve, viajante entre os mundos. O altar vai sentir sua falta.",
+		"Que o Vazio te guarde. E que você não caia nele."
+	],
+	"greet_night": [
+		"A noite chegou... e com ela, os Endermen. Escuta? Aquele som de estática no ar. Eles estão perto.",
+		"Ah, {player}, a essa hora? A noite é quando o Fim fica mais próximo do nosso mundo. Sinto isso nos ossos.",
+		"Boa noite. Olhe para o chão quando andar no escuro. Um olhar errado e você vai ter visita alta e roxa."
+	],
+	"bye_night": [
+		"Boa noite. Ande olhando pros pés. Sempre olhando pros pés.",
+		"Vou meditar com o altar até o sol nascer. Durma bem, {player}, e sonhe com ilhas flutuantes.",
+		"Até amanhã. Se ouvir um chiado e sentir o cabelo arrepiar, não olhe. Só caminhe."
+	],
+	"greet_rain": [
+		"Chuva... Os Endermen detestam. Ela queima a pele deles. Hoje eles vão se teleportar sem parar, procurando abrigo.",
+		"Sabe por que eu adoro a chuva, {player}? É o único dia em que posso andar de cabeça erguida sem medo de olhar errado.",
+		"Hmm, você está molhado. Ótimo. Nenhum enderman vai querer te abraçar hoje."
+	],
+	"greet_storm": [
+		"Uma tempestade. O céu se rasga como um portal. Fique aqui dentro, viajante, o Vazio está agitado.",
+		"Raios, trovões... e monstros saindo mesmo de dia. Até o Fim é mais calmo que isso, {player}."
+	],
+	"reward_intro": [
+		"Se cumprir esse chamado do Vazio, eu te entrego",
+		"Fazendo isso com cuidado, você recebe",
+		"Pelo serviço, o altar me diz para separar",
+		"Ajude-me e o Fim te recompensa com"
+	],
+	"reward_outro": [
+		"Palavra de enderólogo não se teleporta pra longe.",
+		"E as estrelas vão saber do que você fez.",
+		"Pode confiar: eu pago certinho, como um portal que sempre leva ao mesmo lugar.",
+		"Está anotado no meu diário de púrpura. Ele não apaga nunca.",
+		"Se eu não pagar, que um shulker me faça flutuar até o teto pelo resto do dia."
+	],
+	"lore_done": [
+		"Já te contei um segredo do Vazio hoje. Mais um e eu começo a ouvir vozes. Mais do que já ouço. Volte amanhã.",
+		"O Fim revela uma coisa por dia, viajante. Volte amanhã e o altar terá outra história.",
+		"Hmm, chega por hoje. Saber demais do Vazio faz o sono ficar roxo. Volte amanhã."
+	],
+	"abandon": [
+		"Vai desistir? Igual um portal sem olho... fica ali, parado, sem levar a lugar algum.",
+		"Que pena. Sua frequência estava tão bonita."
+	],
+	"lore": [
+		[
+			"Os <p>Endermen</p> não são maus, sabia? Eles só não gostam de ser encarados. Pra eles, olhar nos olhos é um desafio.",
+			"Eles carregam blocos de um lugar pro outro porque estão tentando reconstruir alguma coisa. Ninguém sabe o quê.",
+			"Eu acho que é a casa deles. Um mundo que se partiu em ilhas e que eles tentam juntar, bloco por bloco."
+		],
+		[
+			"Sabe quem os Endermen odeiam? Os <r>endermites</r>. Uns bichinhos roxos que às vezes nascem quando alguém joga uma pérola.",
+			"Quando um enderman vê um endermite, ele larga tudo e ataca. Nunca vi tanta raiva num ser tão calmo.",
+			"Eu tenho uma teoria: o endermite é o que sobra da pérola. Um pedaço do enderman que voltou errado. E ninguém gosta de ver a própria sombra torta."
+		],
+		[
+			"Lá nas <a>Cidades do Fim</a> moram os <r>shulkers</r>, escondidos em caixas roxas que parecem parte da parede.",
+			"Os Endermen também não gostam deles. Os dois são do Fim, mas não se misturam. Os shulkers não se teleportam por vontade, só quando precisam. Os Endermen acham isso estranho.",
+			"Quando um shulker acerta você, você flutua. Dizem que é o jeito deles de mostrar quem manda no céu."
+		],
+		[
+			"Existe uma lenda nas <a>Cidades do Fim</a>: um objeto raríssimo chamado <p>Tradutor Ender</p>.",
+			"Quem segura ele consegue entender a língua dos Endermen. E a língua deles é feita dos mesmos símbolos que flutuam na <p>mesa de encantamento</p>.",
+			"Eu já ouvi um deles sussurrar <p>\"zahh... virr... olha não\"</p>. Acho que era um conselho. Ou uma ameaça. Com Enderman nunca se sabe."
+		],
+		[
+			"No centro do Fim vive a <r>Dragoa do Fim</r>. Ela voa em volta de torres de obsidiana com cristais no topo.",
+			"Os cristais curam ela. Por isso, quem vai enfrentar ela precisa quebrar os cristais primeiro.",
+			"Quando ela cai, aparece um portal pras ilhas de fora e um <y>ovo</y> em cima da fonte. Ninguém sabe o que nasce dele. Eu passo noites pensando nisso."
+		]
+	],
+	"player_work": [
+		"Tem alguma tarefa do Vazio pra mim?",
+		"Precisa de ajuda com o Fim?",
+		"Bora, o que as estrelas pedem hoje?"
+	],
+	"player_accept": [
+		"Pode deixar, eu atravesso o portal.",
+		"Fechado, enderólogo. Não vou olhar nos olhos de ninguém.",
+		"Aceito! Que o Vazio me guie."
+	],
+	"player_why": [
+		"E por que isso importa tanto?",
+		"Me explica direito esse mistério do Fim.",
+		"Por que você mesmo não vai lá?"
+	],
+	"player_decline": [
+		"Agora não, minha frequência tá ruim.",
+		"Passo dessa vez. O Vazio me dá arrepio.",
+		"Hoje não, ainda tô com medo de enderman."
+	],
+	"player_lore": [
+		"Me conta um segredo do Fim.",
+		"O que você sabe sobre os Endermen?",
+		"Conta uma história do Vazio."
+	],
+	"player_more_lore": [
+		"Conta outra do Fim!",
+		"E o que mais o Vazio esconde?",
+		"Continua, tô hipnotizado."
+	],
+	"player_bye": [
+		"Até mais, enderólogo!",
+		"Vou nessa. Olhando pros pés!",
+		"Tchau! Cuida do altar."
+	],
+	"names": [
+		"Ícaro", "Selene", "Caio", "Estela", "Lauro", "Luna", "Hugo",
+		"Aurora", "Ciro", "Ísis", "Ravi", "Dalila", "Tales", "Yara"
+	],
+	"extra": {
+		"day_off": [
+			"Hoje é minha folga, viajante. Vou passar o dia meditando de olhos fechados. Assim nenhum enderman se ofende.",
+			"Hoje não tem serviço. O altar de púrpura também descansa, ele fica zumbindo baixinho, sonhando. Volte outro dia ou procure outro enderólogo na vila.",
+			"Estou de folga. Até quem estuda o infinito precisa de um dia sem pensar em nada. Se for urgente, procure outro colega do Vazio."
+		],
+		"closed": [
+			"Hoje a banca tá fechada, é minha folga. O altar de púrpura e eu estamos em silêncio.",
+			"A banca tá fechada hoje, viajante, é minha folga. O Vazio não vai a lugar nenhum. Volte amanhã."
+		],
+		"greet_plains": [
+			"Aqui na planície os Endermen aparecem de noite, altos contra o céu aberto. É o melhor lugar pra estudar eles de longe.",
+			"Na planície tudo é tão verde e tranquilo que às vezes eu esqueço que existe um Vazio lá em cima. Quase."
+		],
+		"greet_desert": [
+			"No deserto, os Endermen aparecem muito à noite. Eles carregam blocos de areia e deixam pela vila. Eu guardo todos.",
+			"Aqui no deserto nunca chove. Os Endermen adoram. E eu passo o dia inteiro olhando pros meus pés."
+		],
+		"greet_savanna": [
+			"Na savana o céu é imenso e as estrelas parecem pérolas do Fim penduradas. Eu fico horas olhando pra cima.",
+			"Aqui as acácias se retorcem como se quisessem se teleportar. Acho que até as árvores sentem o Vazio."
+		],
+		"greet_snow": [
+			"Na neve tudo é branco e silencioso, como as ilhas do Fim. Às vezes acordo achando que estou lá.",
+			"Hmm, aqui tem neve, que derrete em água. Os Endermen odeiam. Por isso esta é a vila mais calma pra estudar eles."
+		],
+		"greet_taiga": [
+			"Na taiga, os pinheiros escuros escondem os Endermen de noite. Escuto o chiado deles entre as árvores.",
+			"Aqui as raposas pegam qualquer coisa que brilha. Uma já me roubou uma pérola do Fim. E sumiu. Literalmente."
+		],
+		"greet_jungle": [
+			"A selva tem tanto barulho que o Vazio fica longe. É bom pra descansar a cabeça, viajante.",
+			"Aqui chove demais. Os Endermen quase não aparecem. Eu estudo os papagaios, que imitam até o chiado dos endermites. Arrepia."
+		],
+		"greet_swamp": [
+			"O pântano tem um silêncio parecido com o do Fim. Úmido, escuro, cheio de mistério.",
+			"Aqui a bruxa e eu trocamos ideias. Ela faz poções, eu leio o Vazio. Às vezes a gente concorda. Raramente."
+		]
+	}
+}

@@ -82,7 +82,7 @@
 				"Ixi, o mato tá quietinho de novo! Já vi três coelhos hoje cedo, pai.",
 				"Toma: <o>esmeraldas</o> e umas <o>flechas</o> pra tu treinar a mira."
 			],
-			"objective": {"type": "kill", "targets": ["minecraft:skeleton", "minecraft:stray"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
+			"objective": {"type": "kill", "targets": ["minecraft:skeleton"], "count": 15, "desc": "<r>Elimine</r> <r>15 esqueletos</r>"},
 			"rewards": [{"item": "minecraft:emerald", "count": 5}, {"item": "minecraft:arrow", "count": 24}]
 		},
 		{
